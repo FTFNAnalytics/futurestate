@@ -4,7 +4,7 @@ The owner instructed: “You will make a determination on each of them. This doe
 
 This supersedes the human-review and coordination prerequisites in the earlier handoffs. Codex is the actual AI decision-maker; no human identity, independent review or participant observation is fabricated. The existing numerical content targets remain. Local development continues without another approval request.
 
-## Completed determinations and implementation
+## Initial September 25 determinations and implementation
 
 - All 25 backlog items: 11 qualified uses and 14 rejected inferences, each with its own rationale, exact research/artifact hashes and evidence-only reopening condition. The September 14 research receipts are unchanged; the September 25 decisions are separate.
 - All 103 reviewed portfolio identities: 39 existing Atlas identities, 32 Montana projects, ten localized place notes, eighteen national/supranational orientations and four additional editorial identities. Every record has an explicit scope/counting decision. The inventory supports 54 eligible project candidates and 25 eligible place candidates, not completed-content totals. At least 46 more distinct projects and 45 more places still need identification.
@@ -21,7 +21,7 @@ The project hub links all five new dossiers. Exact current determination notices
 - [Review policy](../app/src/data/build-review-policy.json)
 - [Backlog, Montana, orientation and language decisions](../app/src/data/owner-authorized-adjudications.json)
 - [Remaining portfolio identity decisions](../app/src/data/portfolio-eligibility-decisions.json)
-- [Five completed proposal-stage dossiers](../app/src/data/montana-project-dossiers.json)
+- [Current complete 32-project Montana dossier cohort](../app/src/data/montana-project-dossiers.json)
 - [Current operations](../app/src/data/phase-207-current-operations.json)
 
 The September 22 census and review packets are retained historical inputs. Their null human fields and older pending requests do not override the new policy. A changed evidence input invalidates its matching decision and requires actual AI re-review, not a human signature.
@@ -46,12 +46,14 @@ The initial eligibility records and later completed dossier records remain separ
 
 ## September 27 continuation
 
+The [complete 32-project Montana cohort](montana-cohort-completion-2026-09-27.md) is now integrated. Twenty-seven substantive dossiers were added, including the five prepared manuscripts; the original five dossier objects remain unchanged. The dedicated cohort index, all project relationships, catalog search, exports and exact-source checks cover all 32. Full generation and validation passed at 23:23:46.947 UTC as candidate `3b7e00a7`; the linked record gives exact evidence. This completes this cohort, not the wider 100-project/70-place target. [Five localized place manuscripts](place-next-five-2026-09-27.md) are authored and input-verified for the next application batch, not yet integrated or counted as completed pages.
+
 Four AI-reviewed translations are now integrated: French Canadian and Latin American Spanish for Advanced Manufacturing and Agriculture and Bioeconomy. New reading URLs avoid the historical human-review label; the old contracts remain clearly identified history. Exact source clarification propagation, language metadata, reciprocal language navigation, catalog and export support are implemented. Thirty translations remain. See the [current integration and verification record](translation-integration-2026-09-27.md). The verification section above describes the prior completed candidate, not an automatic pass for these newer edits.
 
 ## Next build stages — no human gate
 
 1. Complete exact-version AI review of the 33 selected articles and 58 annual readings, applying actual corrections and retaining source-access limits. Reachable historical material is not blanket-approved by identity decisions.
-2. Continue substantive project/place batches. Build the remaining 27 eligible Montana project dossiers and the localized place accounts; split the Space Coast, Nevada, Amtrak-place and NNSA-place comparisons before counting their children. Discover the remaining distinct identities needed for 100 projects and 70 places.
+2. Continue substantive project/place batches. The 32-project Montana cohort is built; expand the localized place accounts next. Split the Space Coast, Nevada, Amtrak-place and NNSA-place comparisons before counting their children. Discover the remaining distinct identities needed for 100 projects and 70 places.
 3. Implement the remaining 30 translation texts in coherent batches. Four complete AI-reviewed texts are integrated with dated-source/correction context through a separate current projection; original contract fields remain historical. Use the decided locales and mapping, not a new coordination request.
 4. Complete AI-led usability/accessibility assessment and fix technical findings. Do not describe it as a real human study.
 5. Continue evidence acquisition for the three measurement pilots. Missing accepted-output/service-period data is a factual limit; adjudicate available claims without manufacturing a series or waiting for a human reviewer.

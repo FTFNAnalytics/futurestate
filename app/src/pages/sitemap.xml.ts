@@ -152,6 +152,7 @@ export const GET: APIRoute = async () => {
   const routes = [...new Set([
     urlEntry('/method/portfolio-decisions/', new Date(montanaDossiers.authored_date)),
     ...montanaDossiers.records.map(record=>urlEntry(record.route,new Date(record.authored_date))),
+    urlEntry('/atlas/projects/montana-bead/',new Date(montanaDossiers.updated_date)),
     ...translatedReaders.map(record=>urlEntry(record.route,new Date(record.integration_date))),
     ...staticRoutes.map((path) => urlEntry(path)),
     ...(await getCollection('updates')).map(update=>urlEntry(`/updates/${update.data.id}/`,update.data.effective_date)),

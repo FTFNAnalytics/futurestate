@@ -39,7 +39,7 @@ for(const a of corpus.records.filter(r=>r.identity_evidence)){
  for(const n of a.source_notes)for(const field of ['locator','scope','access'])assert(text.includes(n[field]),`${a.record_id}: missing source note`);
  for(const n of a.language_notes??[]){assert(html.includes(`lang="${n.lang}"`));for(const field of ['term','reading','review_status'])assert(text.includes(n[field]),`${a.record_id}: missing language note`);}
 }
-for(let page=1;page<=4;page++){const html=await read(`dist/reference/explore/${page}/index.html`);assert((html.match(/class="record-card"/g)??[]).length<=40);assert(html.includes('Reader catalog pages'));}
+for(let page=1;page<=Math.ceil(readerCatalog.length/40);page++){const html=await read(`dist/reference/explore/${page}/index.html`);assert((html.match(/class="record-card"/g)??[]).length<=40);assert(html.includes('Reader catalog pages'));}
 for(const r of ops.receipts)for(const route of r.affected_routes){if(route.endsWith('.json'))continue;const html=await read(`dist${route}index.html`);assert(html.includes(r.receipt_id),`Missing project check at ${route}`);}
 for(const note of ops.pilot_research_followups??[])for(const route of note.affected_routes){
  const html=await read(`dist${route}index.html`),text=decodeHtmlText(html);

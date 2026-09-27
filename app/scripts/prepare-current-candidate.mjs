@@ -9,7 +9,7 @@ const input=await readShelfInputs(root),ledger=JSON.parse(await readFile(join(ro
 const membership=expectedShelfMembership(input,ledger);
 const shelfPages=Object.values(membership).reduce((sum,ids)=>sum+Math.max(1,Math.ceil(ids.length/40)),0);
 const montanaDossiers=JSON.parse(await readFile(join(root,'src/data/montana-project-dossiers.json'),'utf8'));
-manifest.expected_build.static_pages=10233+Math.ceil(readerCatalog.length/40)+2+shelfPages+input.readerPathways.length+input.updates.length+montanaDossiers.records.length+1+translatedReaders.length;
+manifest.expected_build.static_pages=10233+Math.ceil(readerCatalog.length/40)+2+shelfPages+input.readerPathways.length+input.updates.length+montanaDossiers.records.length+2+translatedReaders.length;
 applyExportInventory(manifest, await declaredPublicJsonExports(root));
 manifest.expected_build.updates=(await readdir(join(root,'src/content/updates'))).filter(f=>f.endsWith('.json')).length;
 // This is current rendered membership, not the immutable Phase 55Q launch delta.

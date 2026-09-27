@@ -3,6 +3,9 @@ import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
+import {assertMontanaDossiers} from './lib/assert-montana-dossiers.mjs';
+import {montanaContextFor,montanaConnections} from '../src/lib/montana-dossiers.mjs';
+import {readerCatalog,searchReaders} from '../src/lib/reader-catalog.mjs';
 const root=fileURLToPath(new URL('../../',import.meta.url));
 const read=async p=>JSON.parse(await readFile(join(root,p),'utf8'));
 const hash=v=>createHash('sha256').update(JSON.stringify(v)).digest('hex');
@@ -28,22 +31,20 @@ assert.equal(decisions.portfolio.montana.source_sha256,reconciliation.source_sha
 const count=kind=>portfolio.canonical.filter(r=>r.kind===kind).reduce((n,r)=>n+r.eligible_count,0)+portfolio.new_editorial_candidates.filter(r=>r.kind===kind).length+(kind==='Project'?32:portfolio.named_places.length);
 assert.equal(portfolio.summary.eligible_project_candidates,count('Project'));assert.equal(portfolio.summary.eligible_place_candidates,count('Place'));
 assert.equal(portfolio.summary.additional_distinct_project_candidates_needed,100-count('Project'));assert.equal(portfolio.summary.additional_distinct_place_candidates_needed,70-count('Place'));
-assert.deepEqual(dossiers.records.map(r=>r.record_id),decisions.portfolio.next_project_batch);
-assert.equal(dossiers.records.length,5);assert.equal(new Set(dossiers.records.map(r=>r.route)).size,5);
-assert.equal(dossiers.deployment_source.sha256,reconciliation.source_sha256);
+assertMontanaDossiers(dossiers,baseline,reconciliation,decisions.portfolio.next_project_batch);
+const manuscript=dossiers.completion.source_manuscript;assert.equal(createHash('sha256').update(await readFile(join(root,manuscript.path))).digest('hex'),manuscript.sha256);
 for(const d of dossiers.records){
- const p=baseline.projects.find(p=>p.project_id===d.record_id),s=reconciliation.records.find(s=>s.project_id===d.record_id),g=baseline.subgrantees.find(g=>g.subgrantee_id===p.subgrantee_id);
- const {sha256,...payload}=d;assert.equal(sha256,hash(payload));
- assert.equal(d.source_identity.project_record_sha256,hash(p));assert.equal(d.source_identity.reconciliation_record_sha256,hash(s));assert.equal(d.source_identity.subgrantee_record_sha256,hash(g));
- assert.equal(d.source_identity.uei,p.uei);assert.equal(d.source_identity.csv_row,s.csv_row);assert.equal(d.source_name,s.name);
- for(const key of ['bead_support_usd','subgrantee_match_usd','raw_technology_codes','intersects_tribal_land'])assert.deepEqual(d.proposal[key],p[key]);
- assert.equal(d.proposal.broadband_serviceable_location_rows,p.bsl_count);assert.equal(d.proposal.community_anchor_institution_rows,p.cai_count);
- assert.equal(d.proposal.tribal_consent_field,p.tribal_consent_name);
- for(const key of ['estimated_subaward_date','estimated_performance_start','estimated_performance_end'])assert.equal(d.proposal[key],s[key]);
- assert.deepEqual(d.operating_observations,[]);assert.equal(p.outcome_state,null);
- assert.equal(d.sections.length,3);assert(d.sections.every(s=>s.text.length>200));
- assert(d.next_artifacts[0].includes(d.record_id));assert(d.next_artifacts[1].includes(d.record_id));
- for(const id of d.related_project_ids)assert(dossiers.records.some(r=>r.record_id===id&&r.source_identity.uei===d.source_identity.uei));
+ assert.equal(readerCatalog.filter(r=>r.id===d.record_id).length,1);assert.equal(readerCatalog.find(r=>r.id===d.record_id).route,d.route);
+ assert(searchReaders(readerCatalog,d.record_id,'Project').some(r=>r.id===d.record_id));assert(searchReaders(readerCatalog,d.source_identity.uei,'Project').some(r=>r.id===d.record_id));
+ const siblings=montanaConnections(d,dossiers).same_operator;
+ assert.deepEqual(siblings.map(r=>r.record_id),baseline.projects.filter(r=>r.uei===d.source_identity.uei&&r.project_id!==d.record_id).map(r=>r.project_id).sort((a,b)=>dossiers.records.findIndex(r=>r.record_id===a)-dossiers.records.findIndex(r=>r.record_id===b)));
+ assert.equal(montanaContextFor(d,dossiers).record_id,d.record_id);
 }
+for(const mutate of [
+ d=>{d.records.find(r=>r.record_id==='CM61-BEAD-MT-4678').proposal.broadband_serviceable_location_rows=21;},
+ d=>{d.reporting_contexts.find(r=>r.record_id==='CM61-BEAD-MT-4218').reporting_contract='LEO quarterly and ten-year post-availability contract';},
+ d=>{d.records.find(r=>r.record_id==='CM61-BEAD-MT-4206').related_project_ids=['CM61-BEAD-MT-4218'];},
+ d=>{d.records.find(r=>r.record_id==='CM61-BEAD-MT-4644').operating_observations=[{active_subscriptions:0}];}
+]){const changed=structuredClone(dossiers);mutate(changed);for(const r of changed.records){const {sha256,...payload}=r;r.sha256=hash(payload);}assert.throws(()=>assertMontanaDossiers(changed,baseline,reconciliation,decisions.portfolio.next_project_batch));}
 assert.deepEqual(decisions.language.locales.map(r=>r.locale),['fr-CA','es-419']);assert.equal(decisions.language.human_approval_required,false);
-console.log('Authorized build assertions passed: 103 explicit identity/counting decisions; 54 project and 25 place candidates; five source-pinned proposal dossiers; no invented operating observations.');
+console.log('Authorized build assertions passed: 103 identity/counting decisions; 54 project and 25 place candidates; all 32 source-pinned Montana proposal dossiers, with five original records unchanged; exact reporting/anchor/UEI distinctions, searchable identities and no invented operating observations.');

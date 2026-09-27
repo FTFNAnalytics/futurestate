@@ -3,6 +3,7 @@ import BaseLayout from '../../../../components/layout/BaseLayout.astro';
 import MetaPill from '../../../../components/ui/MetaPill.astro';
 import dossiers from '../../../../data/montana-project-dossiers.json';
 import {getCollection} from 'astro:content';
+import {montanaContextFor,montanaConnections} from '../../../../lib/montana-dossiers.mjs';
 
 export function getStaticPaths() {
   return dossiers.records.map(record => ({params:{project:record.slug},props:{record}}));
@@ -11,7 +12,8 @@ const {record}=Astro.props;
 const sources=await getCollection('sources');
 const citations=record.source_ids.map(id=>sources.find(s=>s.data.id===id)!.data);
 const money=(value:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(value);
-const related=dossiers.records.filter(r=>record.related_project_ids.includes(r.record_id));
+const context=montanaContextFor(record);
+const connections=montanaConnections(record);
 ---
 <BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}>
   <article class="page-section dossier" data-montana-dossier={record.record_id}>
@@ -20,6 +22,7 @@ const related=dossiers.records.filter(r=>record.related_project_ids.includes(r.r
     <p class="lede">{record.answer}</p>
     <div class="meta-row"><MetaPill label={record.record_id}/><MetaPill label="Proposal baseline, not operating results" tone="review"/></div>
     <p>{record.review_state}. Written and AI-reviewed {record.authored_date} under the <a href="/method/editorial-review/">owner-authorized review policy</a>.</p>
+    <p class="card-note">Reporting and relationship context reviewed {dossiers.completion.review_date}; original article dates are retained.</p>
     <section>
       <h2>Exact project identity</h2>
       <dl><dt>Name in the deployment source</dt><dd>{record.source_name}</dd><dt>Subgrantee legal name</dt><dd>{record.source_identity.legal_name}</dd><dt>UEI</dt><dd>{record.source_identity.uei}</dd><dt>Source location</dt><dd>Deployment CSV row {record.source_identity.csv_row}; project {record.record_id}</dd></dl>
@@ -27,7 +30,7 @@ const related=dossiers.records.filter(r=>record.related_project_ids.includes(r.r
     </section>
     <section>
       <h2>What the retained proposal records</h2>
-      <dl><dt>BEAD support (US dollars)</dt><dd>{money(record.proposal.bead_support_usd)}</dd><dt>Subgrantee match (US dollars)</dt><dd>{money(record.proposal.subgrantee_match_usd)}</dd><dt>Broadband-serviceable location rows</dt><dd>{record.proposal.broadband_serviceable_location_rows.toLocaleString('en-US')}</dd><dt>Community-anchor-institution rows</dt><dd>{record.proposal.community_anchor_institution_rows.toLocaleString('en-US')}</dd><dt>Raw technology codes</dt><dd>{record.proposal.raw_technology_codes.join(', ')} — not interpreted as a performance guarantee</dd></dl>
+      <dl><dt>BEAD support (US dollars)</dt><dd>{money(record.proposal.bead_support_usd)}</dd><dt>Subgrantee match (US dollars)</dt><dd>{money(record.proposal.subgrantee_match_usd)}</dd><dt>Broadband-serviceable location rows</dt><dd>{record.proposal.broadband_serviceable_location_rows.toLocaleString('en-US')}</dd><dt>Community-anchor-institution rows</dt><dd>{record.proposal.community_anchor_institution_rows.toLocaleString('en-US')}</dd><dt>Raw technology codes</dt><dd data-montana-technology>{record.proposal.raw_technology_codes.length?record.proposal.raw_technology_codes.join(', '):'None recorded in the retained baseline'} — not interpreted as a performance guarantee</dd><dt>Recipient inventory</dt><dd>{context.cohort_kind}</dd><dt>Retained reporting designation</dt><dd data-montana-reporting>{context.reporting_contract}</dd><dt>Raw deployment project type</dt><dd>{context.raw_deployment_project_type} — preserved without decoding</dd></dl>
       <p>Funding and identity were reconciled against the retained <a href={dossiers.deployment_source.url}>deployment-project CSV</a>. Location counts and raw codes come from the dated local cohort assembled from the location and institution sources below; they are not operating observations.</p>
     </section>
     {record.sections.map(section=><section><h2>{section.heading}</h2><p>{section.text}</p></section>)}
@@ -44,11 +47,12 @@ const related=dossiers.records.filter(r=>record.related_project_ids.includes(r.r
     <section>
       <h2>Sources and provenance</h2>
       <ul>{citations.map(source=><li><a href={source.url}>{source.name}</a> — {source.known_limitations}</li>)}</ul>
-      <details><summary>Exact retained input and dossier hashes</summary><p>Deployment-file SHA-256: <code>{dossiers.deployment_source.sha256}</code></p><p>Dossier SHA-256: <code>{record.sha256}</code></p><p><a href="/data/build-decisions.json">Download decisions, exact inputs and all five dossiers</a></p></details>
+      <details><summary>Exact retained input and dossier hashes</summary><p>Deployment-file SHA-256: <code>{dossiers.deployment_source.sha256}</code></p><p>Dossier SHA-256: <code>{record.sha256}</code></p><p><a href="/data/build-decisions.json">Download decisions, exact inputs and all {dossiers.records.length} dossiers</a></p></details>
       <p>{dossiers.privacy_boundary}</p>
     </section>
-    {related.length>0&&<section><h2>Same operator, separate projects</h2><ul>{related.map(r=><li><a href={r.route}>{r.title}</a> — {r.record_id}</li>)}</ul></section>}
-    <p><a href="/atlas/projects/">All project dossiers</a> · <a href="/atlas/projects/montana-bead-completed-quarter/">Montana program context</a> · <a href="/atlas/places/montana-bead-delivery/">Montana place system</a></p>
+    {connections.same_operator.length>0&&<section data-montana-same-operator><h2>Same operator, separate projects</h2><p>These records share the exact subgrantee UEI. Their project identities, eligible cohorts and evidence remain separate.</p><ul>{connections.same_operator.map(r=><li><a href={r.route}>{r.title}</a> — {r.record_id}</li>)}</ul></section>}
+    {connections.distinct_entity.length>0&&<section data-montana-distinct-entity><h2>Similar name, distinct legal entity</h2><ul>{connections.distinct_entity.map(link=><li><a href={link.record.route}>{link.record.title}</a> — {link.relation}</li>)}</ul></section>}
+    <p><a href="/atlas/projects/montana-bead/">All Montana project dossiers</a> · <a href="/atlas/projects/">Project Atlas</a> · <a href="/atlas/projects/montana-bead-completed-quarter/">Montana program context</a> · <a href="/atlas/places/montana-bead-delivery/">Montana place system</a></p>
   </article>
 </BaseLayout>
 <style>

@@ -9,7 +9,7 @@ const governed = projects.filter((record) => record.coverage.tier_id === "Tier A
 const curated = projects.filter((record) => record.coverage.tier_id === "Tier B");
 ---
 
-<BaseLayout title="Project Atlas | FTFN" description="Named project and adoption cases, plus five distinct Montana proposal-stage dossiers, with explicit evidence boundaries and next artifacts.">
+<BaseLayout title="Project Atlas | FTFN" description={`Named project and adoption cases, plus ${montanaDossiers.records.length} distinct Montana proposal-stage dossiers, with explicit evidence boundaries and next artifacts.`}>
   <section class="page-section">
     <div class="eyebrow">Atlas / Projects</div>
     <h1 class="page-title">Named projects, explicit evidence boundaries.</h1>
@@ -27,9 +27,10 @@ const curated = projects.filter((record) => record.coverage.tier_id === "Tier B"
   </section>
 
   <section class="page-section">
-    <h2>New: five distinct Montana broadband projects</h2>
+    <h2>{montanaDossiers.records.length} distinct Montana broadband projects</h2>
     <p>Owner-authorized AI review has cleared these identities and their bounded proposal-stage accounts. The program parent remains context and is not counted again. <a href="/method/portfolio-decisions/">See the counting decisions</a>.</p>
-    <div class="grid">{montanaDossiers.records.map(record=><article class="record-card"><div class="eyebrow">{record.record_id}</div><h3><a href={record.route}>{record.title}</a></h3><p>{record.answer}</p><p class="card-note">Proposal identity and funding, not construction or service acceptance.</p></article>)}</div>
+    <p><a class="button" href="/atlas/projects/montana-bead/">Browse all {montanaDossiers.records.length} Montana dossiers</a></p>
+    <div class="grid">{montanaDossiers.records.slice(0,6).map(record=><article class="record-card"><div class="eyebrow">{record.record_id}</div><h3><a href={record.route}>{record.title}</a></h3><p>{record.answer}</p><p class="card-note">Proposal identity and funding, not construction or service acceptance.</p></article>)}</div>
   </section>
 
   <section class="page-section review-columns">
