@@ -5,6 +5,7 @@ import {join} from 'node:path';
 import {thinTopicEditions} from './content-205-216/thin-topic-editions.mjs';
 import {deepenThinTopics} from './content-205-216/thin-topic-case-depth.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import {selectedArticleReviewFor,selectedReviewDate} from '../src/lib/selected-article-reviews.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=async path=>JSON.parse(await readFile(join(root,path),'utf8'));
 const corpus=await read('src/data/phase-205-216-current-editorial.json');
@@ -74,7 +75,7 @@ function assertReviewBoundary(article){
 }
 for(const article of reviewed){
   assertReviewBoundary(article);
-  const card=readerCatalog.find(r=>r.id===article.record_id);assert.equal(card.date,'2026-09-22');assert.equal(card.summary,article.answer);
+  const card=readerCatalog.find(r=>r.id===article.record_id);assert.equal(card.date,selectedArticleReviewFor(article,{route:article.route})?selectedReviewDate:'2026-09-22');assert.equal(card.summary,article.answer);
   assert.throws(()=>assertReviewBoundary({...article,approved:true}));
   assert.throws(()=>assertReviewBoundary({...article,authored_date:'2026-09-22'}));
   assert.throws(()=>assertReviewBoundary({...article,source_notes:article.source_notes.map(n=>({...n,checked_date:'2026-09-14'}))}));

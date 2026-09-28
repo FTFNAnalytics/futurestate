@@ -19,7 +19,7 @@ const {classification}=await getShelfCatalog();
   </section>
   <section class="page-section" data-selected-review-index>
     <h2>{reviews.reviewed_articles} of {reviews.selected_article_target} selected articles assessed by AI</h2>
-    <p>These exact-version decisions were made {reviews.decision_date}. {reviews.remaining_selected_articles} selected articles and the 58 annual assessments remain. A decision accepts a bounded editorial treatment, not every linked claim or a newly verified operating result. Earlier human-review fields remain history.</p>
+    <p>These exact-version decisions were made {reviews.decision_date}. All {reviews.selected_article_target} selected articles now carry their decisions and required corrections; the 58 annual assessments and reachable-content review remain separate work. A decision accepts a bounded editorial treatment, not every linked claim or a newly verified operating result. Complete original paragraphs and earlier human-review fields remain history.</p>
     <ul>{reviews.records.map(r=><li><a href={`${r.route}#${r.record_id}-ai-review`}>{r.title}</a> — {r.decision}</li>)}</ul>
     <p><a href="/data/build-decisions.json">Exact decisions, located findings and input hashes</a></p>
   </section>

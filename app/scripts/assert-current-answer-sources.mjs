@@ -3,6 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import {selectedArticleReviewFor,selectedReviewDate} from '../src/lib/selected-article-reviews.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=async path=>JSON.parse(await readFile(join(root,path),'utf8'));
@@ -29,7 +30,7 @@ function assertBoundary(article,count){
 for(const [i,article]of articles.entries()){
   assertBoundary(article,expectedSourceCounts[i]);
   const card=readerCatalog.find(r=>r.id===article.record_id);
-  assert.equal(card.title,article.title);assert.equal(card.summary,article.answer);assert.equal(card.date,article.updated_date);
+  assert.equal(card.title,article.title);assert.equal(card.summary,article.answer);assert.equal(card.date,selectedArticleReviewFor(article,{route:article.route})?selectedReviewDate:article.updated_date);
   assert.throws(()=>assertBoundary({...article,approved:true},expectedSourceCounts[i]));
   assert.throws(()=>assertBoundary({...article,authored_date:'2026-09-22'},expectedSourceCounts[i]));
   assert.throws(()=>assertBoundary({...article,source_notes:article.source_notes.slice(1)},expectedSourceCounts[i]));

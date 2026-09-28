@@ -1,0 +1,738 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-27",
+  "review_mode": "user_authorized_ai_editorial_judgment",
+  "scope": "Four annual records and their two explicitly compared essay presentations. Twenty-one claim prompts assessed; new primary checks limited to the listed AEMO, FAA and NOAA material. Other primary findings are dated retained checks, not newly repeated inspections.",
+  "packet": {
+    "path": "docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json",
+    "whole_file_sha256": "74d36b9e88321ac809c6bccfaf05a161a6a833a128cc2312004b50cde8200594",
+    "old_candidate_binding_is_not_current_acceptance": true,
+    "human_reviewer_and_return_fields_unchanged": true
+  },
+  "counts": {
+    "annual_records": 4,
+    "paired_essay_presentations": 2,
+    "claim_findings": 21,
+    "reading_presentations": 6,
+    "sections": 30,
+    "paragraphs": 54,
+    "required_presentation_changes": 7,
+    "new_primary_source_checks": 3,
+    "remaining_annual_assessments": 54
+  },
+  "source_checks": [
+    {
+      "id": "annual-ai-aemo-q1-2026-20260927",
+      "source_id": "source-161-aemo-q1-2026-qed",
+      "checked_date": "2026-09-27",
+      "kind": "new_primary_pdf_selected_page_inspection",
+      "url": "https://www.aemo.com.au/-/media/files/major-publications/qed/2026/qed-q1-2026.pdf?rev=0567011109cc484c80e0d82ea40df323&sc_lang=en",
+      "discovery_url": "https://www.aemo.com.au/energy-systems/major-publications/quarterly-energy-dynamics-qed",
+      "capture": {
+        "path": "outputs/source-acquisition/2026-09-27-annual-first-four/aemo-q1-2026.pdf",
+        "sha256": "5f76225b5ba6452ecb4999c7f5f5f13bbe0036ebbcd6a8ebb2a8edecbb4a6aab",
+        "bytes": 3945743,
+        "physical_pages": 92,
+        "visually_inspected_physical_pages": [
+          1,
+          2,
+          24,
+          38,
+          39
+        ]
+      },
+      "locator": "April 2026 cover; purpose on physical page 2; section 2.3 and footnotes 19–20 on physical/printed page 24; section 2.4.3 and footnote 33 on page 38; regional paragraph on page 39.",
+      "finding": "Q1 covers January–March 2026. The 46.5% NEM renewable generation share excludes battery discharge and pumped-hydro production from numerator and denominator. Generation includes estimated distributed PV. The 98.8% South Australian renewable-and-storage share is the half-hour ending 1500 on January 31, 2026; that calculation includes storage discharge and estimated distributed PV. These are different measures, neither an individual battery reliability result.",
+      "access": "Read-only official web inspection and local public PDF download. Initial restricted-network attempts failed; the plain PDF URL returned HTTP 403 with curl. The exact revision link published on the official index downloaded successfully. Full listed pages, headings and relevant footnotes were inspected as Poppler-rendered images. Other pages and raw dispatch series were not inspected or reconstructed.",
+      "independent_statistical_reconstruction": false
+    },
+    {
+      "id": "annual-ai-faa-fy2025-20260927",
+      "source_id": "source-161-faa-aerospace-forecast-2026-2046",
+      "checked_date": "2026-09-27",
+      "kind": "new_primary_pdf_selected_page_inspection",
+      "url": "https://www.faa.gov/data_research/aviation/aerospace_forecasts/FY_2026-2046_Full_Forecast_Document_Tables.pdf",
+      "capture": {
+        "path": "outputs/source-acquisition/2026-09-27-annual-first-four/faa-2026-2046.pdf",
+        "sha256": "706bb9f79fa84c01fe2dc1a5476160f23b80d1c3b79b6067fbc56fa4fdf25375",
+        "bytes": 1225448,
+        "physical_pages": 129,
+        "visually_inspected_physical_pages": [
+          51,
+          52
+        ]
+      },
+      "locator": "FAA Aerospace Forecast FY2026–2046, Commercial Space Transportation, FY2025 results; physical pages 51–52, printed pages 48–49, including footnote 13.",
+      "finding": "FAA reports 195 licensed launches, nine licensed reentries and eight licensed operations resulting in mishaps in FY2025. The launch universe includes 15 U.S.-licensed launches from Mahia, New Zealand; it is not restricted to U.S. launch sites and is not a global launch total. Operations resulting in mishaps cannot be relabelled failed payloads, launch-only mishaps or weather-caused failures from these aggregate counts.",
+      "access": "Official PDF downloaded after initial restricted-network failure. Both listed complete pages were visually inspected as local Poppler-rendered images. Report counts were checked, not independently reconstructed from operation-level records. No individual mishap investigation or later reporting revision was inspected.",
+      "independent_statistical_reconstruction": false
+    },
+    {
+      "id": "annual-ai-noaa-2025-20260927",
+      "source_id": "source-161-noaa-us-climate-2025",
+      "checked_date": "2026-09-27",
+      "kind": "new_primary_html_section_inspection",
+      "url": "https://www.ncei.noaa.gov/news/national-climate-202513",
+      "locator": "Annual 2025 assessment, temperature discussion separately covering the contiguous United States, Alaska and Hawaii.",
+      "finding": "The article states different geographic frames and historical baselines: contiguous-U.S. annual temperature against the twentieth century, Alaska against 1925–2000 and Hawaii against 1991–2020. This supports the reading’s regional/baseline distinction, not a named asset’s local exposure or incident cause.",
+      "access": "Relevant public HTML temperature text inspected through read-only web retrieval. No byte capture or independent station-data reconstruction; no claim to have inspected every extreme-event attachment.",
+      "capture": null,
+      "independent_statistical_reconstruction": false
+    }
+  ],
+  "retained_supplemental_checks": [
+    {
+      "source_id": "source-56k-moss-landing-go167-corrective-action-2025",
+      "payload_sha256": "de36e0d02eef622b05e5703817d2bb0eaf29522d9b683bce1a3fe8defbef1342",
+      "primary_checked_date": "2026-09-23",
+      "locator": "August 18, 2025 company response to audit GA2025-06ML: cover identity and audit dates on page 1; visible finding-status labels on pages 3-12. Findings 4 and 6 (page 4) and 17 (page 8) retain label/prose differences; finding 28 on page 12 mentions the ML300 fire impact.",
+      "not_reinspected_this_assessment": true
+    },
+    {
+      "source_id": "source-usgs-mineral-commodity-summaries",
+      "payload_sha256": "564fafd8acd1ff68f0c48f98857ced9aa969f2aebd47c622fb4a2177c84baa93",
+      "primary_checked_date": "2026-09-23",
+      "locator": "PDF pages 1, 4, 9, 15, 18-19, 122-123 and 220; printed pages 5, 11 (Figure 2), 14-15 (complete Table 3), 118-119 (complete Lithium chapter), 216 (Appendices A/B); complete revision-history text.",
+      "not_reinspected_this_assessment": true
+    },
+    {
+      "source_id": "source-doe-thacker-pass-loan-2024",
+      "payload_sha256": "6c3b9320e8f7d3b9eafe2eccb6fd10344af86c87522c8aa0d79559340bcc5e87",
+      "primary_checked_date": "2026-09-23",
+      "locator": "Project Summary; Project Statistics / Financial Summary; both closing-related footnotes",
+      "not_reinspected_this_assessment": true
+    }
+  ],
+  "records": [
+    {
+      "record_id": "203-CASE-11",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_source_scope_qualification",
+      "rationale": "Retain the bounded contract chronology and next-evidence framework. Qualify the opening paragraph because the audit, operator response and equipment inventory are inherited source-profile context here, not item-level primary checks newly performed for this assessment.",
+      "readings": [
+        {
+          "record_id": "203-CASE-11",
+          "route": "/reference/state-of-future-systems/case-gateway-battery-storage/",
+          "original_payload_sha256": "89b13399dcc2ae8f2d7e9af2f008c582cb83f68e175ac933cd7ed9adc403fc0a",
+          "current_reading_sha256": "2846c70f000695ae5e23b68f275c9bdca14600ca6260c7854c871c3f9a0c5aa1",
+          "existing_review_payload_sha256": "c1091366b663e929139e7daec4b9bcaf4447b3ff910def372877712ef58efd7c",
+          "source_profiles": [
+            {
+              "source_id": "source-56b-eia860-2023",
+              "path": "app/src/content/sources/source-56b-eia860-2023.json",
+              "whole_file_sha256": "195b790dd62af52c5022f2683c24409f9814f57641be92b932caacde914af651"
+            },
+            {
+              "source_id": "source-56c-gateway-cpuc-audit-2025",
+              "path": "app/src/content/sources/source-56c-gateway-cpuc-audit-2025.json",
+              "whole_file_sha256": "51d7ea973866d6639b94698e2e81303dc8edd188a7cb569c62a2197102f638fc"
+            },
+            {
+              "source_id": "source-56c-gateway-cpuc-audit-response-2025",
+              "path": "app/src/content/sources/source-56c-gateway-cpuc-audit-response-2025.json",
+              "whole_file_sha256": "12c1d7265065881f550afd8aa18f57f5fb7ef57dc749c2fb559166847b101411"
+            },
+            {
+              "source_id": "source-56d-gateway-cpuc-resolution-e5428-2025",
+              "path": "app/src/content/sources/source-56d-gateway-cpuc-resolution-e5428-2025.json",
+              "whole_file_sha256": "ed28a8e479c954305d2728c2c88eb1622824d73497d9622aa589970fbe68900c"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                0,
+                "paragraphs",
+                0
+              ],
+              "prior": "The CPUC audit identifies conditions requiring response. The operator's response provides its account of corrective actions and risk, which remains attributed until the relevant regulator or later evidence verifies it. Annual EIA information can help identify the equipment but does not determine the operating implications of the audit. Readers should preserve the date and scope of each document so that a later response is not described as though it had already resolved every earlier finding. The distinction is essential to an accurate chronology.",
+              "replacement": "The inherited source profiles identify a CPUC audit, an operator response and annual EIA equipment data. This assessment has not newly checked the underlying audit findings, response items or inventory rows. Those records have different evidentiary roles: an operator's claimed corrective work is not regulator-verified closure, and equipment inventory is not an operating-performance measure. Item-level conclusions require the exact dated primary records and a matched verification trail. The distinction preserves an accurate chronology without implying that every earlier finding has been resolved."
+            }
+          ]
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "GATEWAY-01",
+          "claim_payload_sha256": "5005654a1ce31a3a80ffe6a06f3393b6352b6fd232a94a1e9b935a27adcbc497",
+          "disposition": "qualify",
+          "rationale": "The three retained profiles distinguish regulator findings, operator assertions and inventory, but contain no item-level primary locators. Make that access limit explicit; do not claim newly verified findings or closure.",
+          "evidence_basis": "inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "GATEWAY-02",
+          "claim_payload_sha256": "7ec4caf049a79405eaa2d26c9ae2a9da4144e31f4555abcb54824bc9b924384d",
+          "disposition": "retain",
+          "rationale": "The retained September 23 E-5428 inspection separates the November 20 adoption/effect from the November 24 transmittal and locates the operative order. The current paragraph stays within that dated contract decision.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "GATEWAY-03",
+          "claim_payload_sha256": "4e91b3718c0db4515f2b5726c5bf6702b04dc4a64a29c0e2639ea55f146a1d27",
+          "disposition": "retain",
+          "rationale": "The retained table/history/footnote observations distinguish nameplate, compliance capacity and future delivery terms. Current wording does not treat either MW quantity as measured restoration.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "GATEWAY-04",
+          "claim_payload_sha256": "015df58f230bd065b0d3db8ba09821b4284d2691870ff3958e7ec9caaea6cae3",
+          "disposition": "retain",
+          "rationale": "The 2025 partial-return and offline-building account is explicitly historical and the output/resource distinction is retained. No September 2026 operating or closure conclusion is accepted.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "GATEWAY-05",
+          "claim_payload_sha256": "8370cff0e7fc93f08d951a10bdf07c170f61135440432c8d59549de2f8778384",
+          "disposition": "retain",
+          "rationale": "The final paragraph proposes future item-level verification and compatible later observations. It makes no current safety, financial, failure or series-admission claim.",
+          "evidence_basis": "editorial_framework_assessment",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "922cd9b1894eb782bcfd760f391972341b91101ec4656cdc9b21efb87f5f1bfd"
+    },
+    {
+      "record_id": "203-CASE-13",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_bounded_current_reading",
+      "rationale": "The current Victorian Big Battery reading separates the commissioning incident, conditional no-objection, NEM registration window and later SIPS service announcement. Accept this editorial account with its existing attribution and later-performance limitations; no new source check or investigation replication is claimed for this case.",
+      "readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "original_payload_sha256": "a26e33103bc61c43d0f0ab476c4b226262107038931b0668486fa5f8c3c30a5c",
+          "current_reading_sha256": "10bda32ce1bd234f140cdc957fae470e44b129d81e77e512677a190cb267571e",
+          "existing_review_payload_sha256": "f59ae292edffdf81b15dd5e8131539e68937fb215a29df8ff975029595b0ede0",
+          "source_profiles": [
+            {
+              "source_id": "source-56e-vbb-esv-fire-findings-2021",
+              "path": "app/src/content/sources/source-56e-vbb-esv-fire-findings-2021.json",
+              "whole_file_sha256": "2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-registration-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-registration-2021.json",
+              "whole_file_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-operational-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-operational-2021.json",
+              "whole_file_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-investigations",
+              "path": "app/src/content/sources/source-56e-vbb-esv-investigations.json",
+              "whole_file_sha256": "48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "required_presentation_changes": []
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "VBB-01",
+          "claim_payload_sha256": "f1b69ef0910547e666cf5d5216340a35d7f39dc11d5d537c50c3b2704caa9c83",
+          "disposition": "retain",
+          "rationale": "Current title and overview use Victorian Big Battery. The retained official-index and statement checks distinguish the September 28, 2021 statement from the July 30 fire and later inspection dates.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "VBB-02",
+          "claim_payload_sha256": "fcceb4dd0f1bce147c3a22c5655b1fa4bafabed7648180c38bbbd539626b2434",
+          "disposition": "retain",
+          "rationale": "Most-likely coolant-leak attribution and offline protection factors are assigned to ESV and its described evidence. The text explicitly disclaims independent reproduction.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "VBB-03",
+          "claim_payload_sha256": "63475a1c8a30ad1211ee310c51c6b9b1652c99cd01019d3bf0302435d6657338",
+          "disposition": "retain",
+          "rationale": "Conditional no-objection is tied to specified measures; further fire-spread and enforcement assessments remain open at that historical date. This is not unconditional present clearance.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "VBB-04",
+          "claim_payload_sha256": "fd25f4641b26362b245cc4bafee96cede3b32ab89879b377cf5abaf8ac61f09c",
+          "disposition": "retain",
+          "rationale": "October 8 is the update date and since July 1 is its registration window. The paragraph supplies neither an exact registration day nor an operating start.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "VBB-05",
+          "claim_payload_sha256": "09cb93e0b1baf7abf4885cd3388837e37fc25f515a09225edc7b6ef7a58b3b67",
+          "disposition": "retain",
+          "rationale": "The December 8 announcement supports announced reserve service up to 250 MW, not a reinterpretation of the 300 MW/450 MWh facility as demonstrated dispatch. Underlying contract and later telemetry remain uninspected.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "VBB-06",
+          "claim_payload_sha256": "56fd2fe89767fd83587494b0823c0ec688b734719c3d2e34e36c8d6ef5158f61",
+          "disposition": "retain",
+          "rationale": "The proposed next work requests configuration-matched correction verification and later operating observations. It does not infer permanent failure, uninterrupted service or universal safety.",
+          "evidence_basis": "editorial_framework_assessment",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "409f11e02e485025d31e9da8805507f968a38fecae4e194e2607204ece976780"
+    },
+    {
+      "record_id": "203-SYNTHESIS-08",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_definition_and_scope_corrections",
+      "rationale": "Retain the climate-versus-asset and recovery framework. Clarify the incompatible AEMO definitions, replace ambiguous system-protection participation with distinct NEM/SIPS milestones, and make the FAA licensing universe explicit in both annual and essay presentations.",
+      "readings": [
+        {
+          "record_id": "203-SYNTHESIS-08",
+          "route": "/reference/state-of-future-systems/synthesis-climate-infrastructure-reliability/",
+          "original_payload_sha256": "76d0af628095047fd694eddcb8b3efb53795a4b0a73df3945e0f8d5806ae4606",
+          "current_reading_sha256": "c0414e9ad7175e716401aaf942a3c607f2dfff405d7381165e3e984a074c74bb",
+          "existing_review_payload_sha256": "25d61005d2700d96f172cc22b40587cf6938e36612ca4ef87d447bbf9c6d3bd1",
+          "source_profiles": [
+            {
+              "source_id": "source-161-aemo-q1-2026-qed",
+              "path": "app/src/content/sources/source-161-aemo-q1-2026-qed.json",
+              "whole_file_sha256": "f64b848c38e11bcf65d1fd203fd62c28c5abd40661ec1eaefc4406c82942bd41"
+            },
+            {
+              "source_id": "source-161-faa-aerospace-forecast-2026-2046",
+              "path": "app/src/content/sources/source-161-faa-aerospace-forecast-2026-2046.json",
+              "whole_file_sha256": "62141abbea59c7aee44459cc5cd45cdb5de12e7205c40be8c59a8da4be913cae"
+            },
+            {
+              "source_id": "source-161-noaa-us-climate-2025",
+              "path": "app/src/content/sources/source-161-noaa-us-climate-2025.json",
+              "whole_file_sha256": "131e1bfb490e5e3cf97b592b2777807f2fce3312f609b6401055d066fc5d16c6"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-fire-findings-2021",
+              "path": "app/src/content/sources/source-56e-vbb-esv-fire-findings-2021.json",
+              "whole_file_sha256": "2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-registration-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-registration-2021.json",
+              "whole_file_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-operational-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-operational-2021.json",
+              "whole_file_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-investigations",
+              "path": "app/src/content/sources/source-56e-vbb-esv-investigations.json",
+              "whole_file_sha256": "48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5"
+            },
+            {
+              "source_id": "source-faa-shuttle-landing-facility-license",
+              "path": "app/src/content/sources/source-faa-shuttle-landing-facility-license.json",
+              "whole_file_sha256": "483bee30bd6acac6449b593e721e51e59571c7474d9cfbaf3c4293d387a8c86d"
+            },
+            {
+              "source_id": "source-faa-starship-lc39a-final-eis-rod",
+              "path": "app/src/content/sources/source-faa-starship-lc39a-final-eis-rod.json",
+              "whole_file_sha256": "c4b1d164c2113221105eb3c584373af60ed398ffae5816325a3fd7672dac2ecc"
+            }
+          ],
+          "retained_contexts": [
+            {
+              "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+              "collection": "evidence_receipts",
+              "payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+              "checked_date": "2026-09-15"
+            }
+          ],
+          "sections_reviewed": 6,
+          "paragraphs_reviewed": 12,
+          "overview_reviewed": true,
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                1,
+                "paragraphs",
+                0
+              ],
+              "prior": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victorian Big Battery's maintenance condition.",
+              "replacement": "AEMO's Q1 2026 report gives a 46.5% renewable share of National Electricity Market generation for January–March; this calculation excludes battery discharge and pumped-hydro production from both renewable and total generation. Separately, South Australia's renewable-and-storage share reached 98.8% in the half-hour ending 1500 on January 31, using a definition that includes storage discharge. Both calculations include estimated distributed solar generation. Different periods, geographies and storage rules prevent direct equivalence; neither figure measures an individual battery's reliability."
+            },
+            {
+              "path": [
+                "sections",
+                2,
+                "paragraphs",
+                0
+              ],
+              "prior": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+              "replacement": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material, NEM market registration and the later SIPS reserve-service announcement. AEMO's October 8, 2021 update lists registrations since July 1; its December 8 announcement describes the separately contracted reserve service. Neither milestone establishes corrective-action closure or a compatible annual operating series. The chronology is not a general safety or reliability verdict."
+            },
+            {
+              "path": [
+                "sections",
+                3,
+                "paragraphs",
+                0
+              ],
+              "prior": "FAA's FY2025 account records 195 licensed launches, nine licensed reentries and eight licensed operations resulting in mishaps. These are separate measures. The occurrence of a mishap does not, from these aggregate counts alone, establish a weather cause, infrastructure failure or failed payload deployment. A named event would need its own scope and official findings.",
+              "replacement": "FAA's FY2025 account reports 195 licensed launches, nine licensed reentries and eight licensed operations resulting in mishaps. This is a U.S.-licensed universe that includes launches outside U.S. territory, not all global launches. Operations with mishaps are not a launch-only failure count. These aggregates do not establish weather causes, infrastructure failure or failed payload deployment; a named event needs its own scope and official findings."
+            }
+          ]
+        },
+        {
+          "record_id": "200-MONOGRAPH-08",
+          "route": "/reference/constraint-monographs/climate-infrastructure-reliability/",
+          "original_payload_sha256": "724dfa15362b4aa800558ddc59d5f9a35c7ee25b33392f891598a80ed3f2c8fd",
+          "current_reading_sha256": "7a71c202b3f674d74779032a018ff67c3058c29f1e1de4f6e5d5b396bb75deff",
+          "existing_review_payload_sha256": "9e8124821152f4953d46046bc9c4adc407f7acccc312d2d6a7b06069ec7c5b3e",
+          "source_profiles": [
+            {
+              "source_id": "source-161-aemo-q1-2026-qed",
+              "path": "app/src/content/sources/source-161-aemo-q1-2026-qed.json",
+              "whole_file_sha256": "f64b848c38e11bcf65d1fd203fd62c28c5abd40661ec1eaefc4406c82942bd41"
+            },
+            {
+              "source_id": "source-161-faa-aerospace-forecast-2026-2046",
+              "path": "app/src/content/sources/source-161-faa-aerospace-forecast-2026-2046.json",
+              "whole_file_sha256": "62141abbea59c7aee44459cc5cd45cdb5de12e7205c40be8c59a8da4be913cae"
+            },
+            {
+              "source_id": "source-161-noaa-us-climate-2025",
+              "path": "app/src/content/sources/source-161-noaa-us-climate-2025.json",
+              "whole_file_sha256": "131e1bfb490e5e3cf97b592b2777807f2fce3312f609b6401055d066fc5d16c6"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-fire-findings-2021",
+              "path": "app/src/content/sources/source-56e-vbb-esv-fire-findings-2021.json",
+              "whole_file_sha256": "2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-registration-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-registration-2021.json",
+              "whole_file_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-operational-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-operational-2021.json",
+              "whole_file_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-investigations",
+              "path": "app/src/content/sources/source-56e-vbb-esv-investigations.json",
+              "whole_file_sha256": "48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5"
+            },
+            {
+              "source_id": "source-faa-shuttle-landing-facility-license",
+              "path": "app/src/content/sources/source-faa-shuttle-landing-facility-license.json",
+              "whole_file_sha256": "483bee30bd6acac6449b593e721e51e59571c7474d9cfbaf3c4293d387a8c86d"
+            },
+            {
+              "source_id": "source-faa-starship-lc39a-final-eis-rod",
+              "path": "app/src/content/sources/source-faa-starship-lc39a-final-eis-rod.json",
+              "whole_file_sha256": "c4b1d164c2113221105eb3c584373af60ed398ffae5816325a3fd7672dac2ecc"
+            }
+          ],
+          "retained_contexts": [
+            {
+              "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+              "collection": "evidence_receipts",
+              "payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+              "checked_date": "2026-09-15"
+            }
+          ],
+          "sections_reviewed": 6,
+          "paragraphs_reviewed": 12,
+          "overview_reviewed": true,
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                1,
+                "paragraphs",
+                0
+              ],
+              "prior": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victorian Big Battery's maintenance condition.",
+              "replacement": "AEMO's Q1 2026 report gives a 46.5% renewable share of National Electricity Market generation for January–March; this calculation excludes battery discharge and pumped-hydro production from both renewable and total generation. Separately, South Australia's renewable-and-storage share reached 98.8% in the half-hour ending 1500 on January 31, using a definition that includes storage discharge. Both calculations include estimated distributed solar generation. Different periods, geographies and storage rules prevent direct equivalence; neither figure measures an individual battery's reliability."
+            },
+            {
+              "path": [
+                "sections",
+                2,
+                "paragraphs",
+                0
+              ],
+              "prior": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+              "replacement": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material, NEM market registration and the later SIPS reserve-service announcement. AEMO's October 8, 2021 update lists registrations since July 1; its December 8 announcement describes the separately contracted reserve service. Neither milestone establishes corrective-action closure or a compatible annual operating series. The chronology is not a general safety or reliability verdict."
+            },
+            {
+              "path": [
+                "sections",
+                3,
+                "paragraphs",
+                0
+              ],
+              "prior": "FAA's FY2025 account records 195 licensed launches, nine licensed reentries and eight licensed operations resulting in mishaps. These are separate measures. The occurrence of a mishap does not, from these aggregate counts alone, establish a weather cause, infrastructure failure or failed payload deployment. A named event would need its own scope and official findings.",
+              "replacement": "FAA's FY2025 account reports 195 licensed launches, nine licensed reentries and eight licensed operations resulting in mishaps. This is a U.S.-licensed universe that includes launches outside U.S. territory, not all global launches. Operations with mishaps are not a launch-only failure count. These aggregates do not establish weather causes, infrastructure failure or failed payload deployment; a named event needs its own scope and official findings."
+            }
+          ]
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "CLIMATE-01",
+          "claim_payload_sha256": "56aa385b6b6ffbb116087400702f87522908356c2146d1cbb77758fc19fd16da",
+          "disposition": "retain",
+          "rationale": "The newly inspected NOAA HTML supports the region/baseline distinction. The general paragraph does not transfer a regional annual anomaly into asset exposure or causation.",
+          "evidence_basis": "new_primary_html_section_inspection",
+          "new_primary_inspection_this_assessment": true
+        },
+        {
+          "claim_id": "CLIMATE-02",
+          "claim_payload_sha256": "c668bc948eb30a118dfcfdbd4f874b0bf429efec403bb405de8818a0a63ce020",
+          "disposition": "qualify",
+          "rationale": "Both figures are supported on the inspected AEMO pages, but supply wording obscures different generation definitions. Add the quarter, half-hour endpoint and storage treatment; no raw-data reconstruction or asset reliability claim.",
+          "evidence_basis": "new_primary_pdf_selected_page_inspection",
+          "new_primary_inspection_this_assessment": true
+        },
+        {
+          "claim_id": "CLIMATE-03",
+          "claim_payload_sha256": "086444d89ed2a8acbfa28de7ab829611fd215717436f820c96770354ed2671cf",
+          "disposition": "correct",
+          "rationale": "System-protection participation is too ambiguous next to registration. State NEM registration separately from the later SIPS reserve-service announcement in both paired readings.",
+          "evidence_basis": "retained_primary_check_and_editorial_assessment",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "CLIMATE-04",
+          "claim_payload_sha256": "91479ea38cfac707ca33f617947dd0b5be472b26e0605d6a8fb9bbeee1ea18b6",
+          "disposition": "qualify",
+          "rationale": "The inspected FAA pages support 195 launches, nine reentries and eight operations with mishaps. Identify the U.S.-licensed universe, including non-U.S. sites; do not infer a launch-only failure rate or weather cause.",
+          "evidence_basis": "new_primary_pdf_selected_page_inspection",
+          "new_primary_inspection_this_assessment": true
+        },
+        {
+          "claim_id": "CLIMATE-05",
+          "claim_payload_sha256": "c4f8fd6dcf9808d67bf5b4d87e8ce35c838ac587246977f194f215ec3636f526",
+          "disposition": "retain",
+          "rationale": "Both presentations retain the exact September 15 SLF renewal finding and distinguish site authority from vehicle/mission authority. The October 9 follow-up remains future work, not a completed inspection.",
+          "evidence_basis": "retained_evidence_receipt",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "15acb53ce0c406ebb4f90ed3acc25e336a8336f050168962021f96b602d8b2fa"
+    },
+    {
+      "record_id": "203-SYNTHESIS-10",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_bounded_current_reading",
+      "rationale": "Accept the current annual and paired-essay treatment. Its company/regulator, conventional-plant/battery, registration/service and Rhyolite Ridge/Thacker Pass distinctions stay within the retained located checks. No new current-safety or causal recovery classification follows.",
+      "readings": [
+        {
+          "record_id": "203-SYNTHESIS-10",
+          "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
+          "original_payload_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
+          "current_reading_sha256": "023a6e17ea621f484fa666fd5ea3566af54fc4dd612490e840fac68df583142e",
+          "existing_review_payload_sha256": "de33a2427db8e52ea6263527f6c8944594ef2fe30966ea2d3df75aa155063f75",
+          "source_profiles": [
+            {
+              "source_id": "source-usgs-mineral-commodity-summaries",
+              "path": "app/src/content/sources/source-usgs-mineral-commodity-summaries.json",
+              "whole_file_sha256": "fd4d8bc3a78422cee12b975f22f930af6f4f7c1f2ebf7e9816a0719e2e33b7d1"
+            },
+            {
+              "source_id": "source-doe-thacker-pass-loan-2024",
+              "path": "app/src/content/sources/source-doe-thacker-pass-loan-2024.json",
+              "whole_file_sha256": "955032305871d77c9f4b4001e0c57322edbeaa5dd2f51ebd6d70625505c68849"
+            },
+            {
+              "source_id": "source-56k-moss-landing-go167-corrective-action-2025",
+              "path": "app/src/content/sources/source-56k-moss-landing-go167-corrective-action-2025.json",
+              "whole_file_sha256": "e1f20c48503a2f9c3ed4fb5929c622c27d41172c48fa7e4692049497af299d2c"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-fire-findings-2021",
+              "path": "app/src/content/sources/source-56e-vbb-esv-fire-findings-2021.json",
+              "whole_file_sha256": "2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-registration-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-registration-2021.json",
+              "whole_file_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-operational-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-operational-2021.json",
+              "whole_file_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-investigations",
+              "path": "app/src/content/sources/source-56e-vbb-esv-investigations.json",
+              "whole_file_sha256": "48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5"
+            },
+            {
+              "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+              "path": "app/src/content/sources/source-ndep-rhyolite-ridge-water-permit-2025.json",
+              "whole_file_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 6,
+          "paragraphs_reviewed": 12,
+          "overview_reviewed": true,
+          "required_presentation_changes": []
+        },
+        {
+          "record_id": "200-MONOGRAPH-10",
+          "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
+          "original_payload_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
+          "current_reading_sha256": "312336c78f653b5cf8ba95f1dbc013907701b382c15988bac494bb239b7fea4d",
+          "existing_review_payload_sha256": "dc2d15dd6261f30cf4742d0c55408b105ac14ec8624fe281345ba1be786ac56b",
+          "source_profiles": [
+            {
+              "source_id": "source-usgs-mineral-commodity-summaries",
+              "path": "app/src/content/sources/source-usgs-mineral-commodity-summaries.json",
+              "whole_file_sha256": "fd4d8bc3a78422cee12b975f22f930af6f4f7c1f2ebf7e9816a0719e2e33b7d1"
+            },
+            {
+              "source_id": "source-doe-thacker-pass-loan-2024",
+              "path": "app/src/content/sources/source-doe-thacker-pass-loan-2024.json",
+              "whole_file_sha256": "955032305871d77c9f4b4001e0c57322edbeaa5dd2f51ebd6d70625505c68849"
+            },
+            {
+              "source_id": "source-56k-moss-landing-go167-corrective-action-2025",
+              "path": "app/src/content/sources/source-56k-moss-landing-go167-corrective-action-2025.json",
+              "whole_file_sha256": "e1f20c48503a2f9c3ed4fb5929c622c27d41172c48fa7e4692049497af299d2c"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-fire-findings-2021",
+              "path": "app/src/content/sources/source-56e-vbb-esv-fire-findings-2021.json",
+              "whole_file_sha256": "2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-registration-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-registration-2021.json",
+              "whole_file_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773"
+            },
+            {
+              "source_id": "source-56e-vbb-aemo-operational-2021",
+              "path": "app/src/content/sources/source-56e-vbb-aemo-operational-2021.json",
+              "whole_file_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1"
+            },
+            {
+              "source_id": "source-56e-vbb-esv-investigations",
+              "path": "app/src/content/sources/source-56e-vbb-esv-investigations.json",
+              "whole_file_sha256": "48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5"
+            },
+            {
+              "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+              "path": "app/src/content/sources/source-ndep-rhyolite-ridge-water-permit-2025.json",
+              "whole_file_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 6,
+          "paragraphs_reviewed": 12,
+          "overview_reviewed": true,
+          "required_presentation_changes": []
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "RESTART-01",
+          "claim_payload_sha256": "0870b16978d35f17ff599bb62780058b6f13ce9014accf2892bfa3367b79eea6",
+          "disposition": "retain",
+          "rationale": "The retained September 23 observation ledger records 28 company status labels: 13 complete and 15 in progress, with label/prose differences preserved. The current text calls them company positions and separates the conventional plant audit from the January 2025 battery-fire investigation. No new recount of the PDF or regulator closure is claimed today.",
+          "evidence_basis": "retained_primary_check_and_observation_ledger",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "RESTART-02",
+          "claim_payload_sha256": "cfa09c4b67c83a71ce8ed8ba33bebcd19d16b4137cff7d3617c413aae03ddf45",
+          "disposition": "retain",
+          "rationale": "Both paired presentations explicitly distinguish the October 8 NEM update from the December 8 SIPS announcement. Neither adjacent paragraph treats those milestones as corrective closure or a later annual performance series.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "RESTART-03",
+          "claim_payload_sha256": "7ff17d5f1c7f172dc9a5f5a43c4e47e487d4e0dcd37666e6fe3929e907c20192",
+          "disposition": "retain",
+          "rationale": "The retained USGS version/selected-page and DOE HTML observations support national minerals context and historical closed-loan/designed-output wording. There is no claim of a Thacker Pass incident or actual output, and no fresh statistical or loan verification today.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "RESTART-04",
+          "claim_payload_sha256": "9e0e871efb4edcae87a516fbe75d85d97d7f63ad50d99825a56625c9debfafd3",
+          "disposition": "retain",
+          "rationale": "The paragraph names Rhyolite Ridge and NEV2020107 Renewal 2025 Revision 00 separately from Thacker Pass. Retained clause checks support requirements, not completed inspections, present operation or violations. The signature and later permit status remain unverified.",
+          "evidence_basis": "retained_primary_check",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "RESTART-05",
+          "claim_payload_sha256": "6ba83ae50c6cca9fc73a74be647f7ce87a20c04c4a720213103c1d6f55571c9d",
+          "disposition": "retain",
+          "rationale": "Permission, actual restart and sustained service remain separate analytical steps. Neither the framework nor either battery case implies a new finding of unsafe conditions, proved causal recovery or universal safety.",
+          "evidence_basis": "editorial_framework_assessment",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "0c3033a738aa3aee8fab6627be3bc472984d1aabfd0e98df51e324e293943659"
+    }
+  ],
+  "boundaries": {
+    "application_projection_integrated": false,
+    "all_annual_records_reviewed": false,
+    "independent_human_review": false,
+    "all_linked_sources_newly_inspected": false,
+    "browser_automation_used": false,
+    "live_primary_pdf_and_html_reading_performed": true,
+    "raw_statistics_reconstructed": false,
+    "operating_month_completed": false,
+    "hosting_or_release_authorized": false,
+    "external_contacts": 0
+  },
+  "next_step": "Apply these exact dated decisions and seven field corrections to all six designated current presentations; preserve earlier readers, review versions and source-access dates, then add negative drift tests and run full validation. No human approval gate remains."
+}
