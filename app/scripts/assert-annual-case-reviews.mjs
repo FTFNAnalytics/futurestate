@@ -5,6 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {join} from 'node:path';
 import {annualCaseReviews, annualCaseReview, applyAnnualCaseReview, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate, annualReviewVersions} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import {annualAiReviewFor,annualAiReviewStatus} from '../src/lib/annual-ai-reviews.mjs';
 import {searchReaders} from '../src/lib/reader-search.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const raw = p => readFile(join(root, p), 'utf8');
@@ -410,8 +411,9 @@ for (const a of pack.records) {
   assert.equal(title,review?.title_replacement?.replacement_text??a.title);
   assert.equal(annualCaseTitle(a,{asOfDate:'2026-09-21'}),a.title);
   assert.equal(annualCaseTitle(a,{route:'/wrong/'}),a.title);
-  assert.equal(catalog.title, title); assert.equal(catalog.summary, overview); assert.equal(catalog.status, a.review_status);
-  assert.equal(catalog.date, review ? annualReviewDate(review) : a.authored_date);
+  const ai=annualAiReviewFor(a,{route:catalog.route});
+  assert.equal(catalog.title, title); assert.equal(catalog.summary, overview); assert.equal(catalog.status, ai?annualAiReviewStatus:a.review_status);
+  assert.equal(catalog.date, ai?ai.decision.review_date:review ? annualReviewDate(review) : a.authored_date);
   assert.equal(sections.length, a.sections.length);
   if (JSON.stringify(sections) !== JSON.stringify(a.sections)) changedBodies++;
   sections.forEach((s, i) => {

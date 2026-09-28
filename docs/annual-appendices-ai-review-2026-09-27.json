@@ -1,0 +1,745 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-27",
+  "review_mode": "user_authorized_ai_editorial_judgment",
+  "scope": "Five complete annual appendices; all overviews and 25 sections; retained source identity/limitation fields, two prior clarification objects, local correction workflow, historical language contracts, current AI policy and implemented-translation inventory. No fresh primary retrieval, PDF or browser inspection, complete translation rereview or human observations.",
+  "counts": {
+    "annual_records": 5,
+    "paired_essay_presentations": 0,
+    "sections": 25,
+    "paragraphs": 25,
+    "section_findings": 25,
+    "required_presentation_changes": 4,
+    "source_profiles": 6,
+    "local_evidence_files": 5,
+    "new_primary_checks": 0,
+    "total_annual_assessments_including_prior_sixteen": 21,
+    "remaining_annual_assessments": 37
+  },
+  "input_files": [
+    {
+      "path": "app/src/data/phase-204-reader-completion.json",
+      "whole_file_sha256": "38ffd8b3e44dc671dd6590f80658240b6e533c645e5cf5fc3e84f345009d9125"
+    },
+    {
+      "path": "app/src/data/annual-case-reviews.json",
+      "whole_file_sha256": "e1e2c92f78471c615363c2684d6169c5f18f0d2e27c5ab248c4cbbad76a0ac7f"
+    },
+    {
+      "path": "app/src/data/build-review-policy.json",
+      "whole_file_sha256": "7d929a7cd0a4904338f74ada8645c038703fc7bdffc383d9dd4d9d48a35d5d30"
+    },
+    {
+      "path": "app/src/data/phase-203-state-of-future-systems-2026.json",
+      "whole_file_sha256": "5623c3d52263ab65628edc38d987dc33a31d19909312be1a282dd56c027d9021"
+    },
+    {
+      "path": "app/src/data/phase-201-change-intelligence-correction-service.json",
+      "whole_file_sha256": "e58c8fe9e2c57d5a5a36811f91f42c7f92fde1c98ac486cce67d776e43bad984"
+    },
+    {
+      "path": "app/src/data/phase-202-accessible-multilingual-low-bandwidth-editions.json",
+      "whole_file_sha256": "3f2d0494cc16dfb192f0ab909a0c035411c6884b0a4563528019ce8917416f26"
+    },
+    {
+      "path": "app/src/data/ai-reviewed-translations.json",
+      "whole_file_sha256": "fc249ac7f3395c346dad76c2964cbfd8b8509afe731eb1cc75d1976d709b572b"
+    },
+    {
+      "path": "app/src/content/sources/source-161-lbnl-data-center-energy-usage-2024.json",
+      "whole_file_sha256": "0a31c39d4b27d17075a368fb20ba2ff7f91b569594d3447cc3019c65c8edf7a6"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "203-APPENDIX-01",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept the methods framework with one current-review-policy correction. The existing September 23 correction properly identifies the LBNL scenario study as additional support, separate from Queued Up. Replace the blanket human-review-pending instruction with exact-version AI authority and distinct evidence limits.",
+      "readings": [
+        {
+          "record_id": "203-APPENDIX-01",
+          "route": "/reference/state-of-future-systems/appendix-methods/",
+          "title": "Methods: identify the claim before judging the evidence",
+          "original_payload_sha256": "97f1b5c3f210fd837c9119074d49d9c6d45855f9a5fed76e570711ece26d8c10",
+          "current_reading_sha256": "59ebbec874d5385bb83e5cc8561115b8b71d0c49dcc43676bacee55050364131",
+          "existing_review_payload_sha256": "32a06bf615c62a809f9eb3f73ebcf61688c2f22234f56741ec8722723f56a771",
+          "existing_review_absent": false,
+          "source_profiles": [
+            {
+              "source_id": "source-161-nerc-ltra-2025",
+              "path": "app/src/content/sources/source-161-nerc-ltra-2025.json",
+              "whole_file_sha256": "f6fab153b01247eed49eadeb9536981da97728b34266aa297cdfe32476850ea2"
+            },
+            {
+              "source_id": "source-161-lbnl-queued-up-2026",
+              "path": "app/src/content/sources/source-161-lbnl-queued-up-2026.json",
+              "whole_file_sha256": "f8e5ebc952308547cbc289356458b00014b2def9161e8924521199e3f2c0ac44"
+            },
+            {
+              "source_id": "source-161-eia-battery-capacity-aug-2026",
+              "path": "app/src/content/sources/source-161-eia-battery-capacity-aug-2026.json",
+              "whole_file_sha256": "0df4907d43d7e733e21dbd59aa53c32a07c0fd141d17534bdec0aeb5c5ccadd4"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Identify the object and authority",
+              "payload_sha256": "9a3e3f64aece15d1a39949d0f5d72a4c240f6b9ab9199b53ddee539320dc1a77"
+            },
+            {
+              "heading": "Keep dates and stages separate",
+              "payload_sha256": "612f0d4551955d9d89f636ef1a8fad8138f4da002f0151f281a34f380afa66fc"
+            },
+            {
+              "heading": "Admit a measure only within its definition",
+              "payload_sha256": "0915c4b3033aeee0e1545e07c849990ab010594eaf267bebe2a6a7c7e764b6dd"
+            },
+            {
+              "heading": "Distinguish description from explanation",
+              "payload_sha256": "2812dcdfacb9c907a9e5c1336d22b8287b9dcfbd1fd7113b8e111802fc09e1bd"
+            },
+            {
+              "heading": "How to use the report",
+              "payload_sha256": "7162bbdc3ff3d6268156fbc3671e350b4dd79af35e6479d374d95661aca7e12c"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                4,
+                "paragraphs",
+                0
+              ],
+              "prior": "Read the chapter for the question and the relationship, then use the linked source and method resources to inspect the underlying scope. Treat a proposed next artifact as a research requirement, not as evidence that the artifact has already appeared. The authored date records this editorial work; the inherited cutoff remains September 1. Independent subject review is still pending for these reader assets. A source correction or later decision belongs in a dated continuation, preserving the earlier edition so readers can understand what changed and why.",
+              "replacement": "Read the chapter for the question and relationship, then inspect the linked sources and methods for their scope. A proposed next artifact is a research requirement, not evidence that it has appeared. The original authored date and September 1 inherited cutoff remain unchanged. Under the September 25 user instruction, Codex makes explicitly labeled, exact-version AI editorial decisions; a human signature is not a prerequisite for continuing the build. Decisions and remaining evidence limits are shown on their own records, not inferred for the entire collection. A later correction belongs in a dated continuation that preserves earlier wording and status. AI review is not a human study or fresh primary-source inspection."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "local_evidence_inputs": [
+        {
+          "path": "app/src/data/build-review-policy.json",
+          "whole_file_sha256": "7d929a7cd0a4904338f74ada8645c038703fc7bdffc383d9dd4d9d48a35d5d30",
+          "relation": "Current user-authorized AI decision policy; not independent human approval."
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "203-APPENDIX-01-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Identify the object and authority",
+          "claim_payload_sha256": "9a3e3f64aece15d1a39949d0f5d72a4c240f6b9ab9199b53ddee539320dc1a77",
+          "disposition": "retain",
+          "rationale": "Retain entity, issuer and artifact distinctions, including government hosting versus operator authorship and authorization versus completed-asset acceptance. These are interpretive rules, not added observations.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-01-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Keep dates and stages separate",
+          "claim_payload_sha256": "612f0d4551955d9d89f636ef1a8fad8138f4da002f0151f281a34f380afa66fc",
+          "disposition": "retain",
+          "rationale": "Retain publication, event, observation and check dates, and the warning that stages need not form a universal linear ladder. No change to the inherited cutoff is justified by a later editorial decision.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-01-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Admit a measure only within its definition",
+          "claim_payload_sha256": "0915c4b3033aeee0e1545e07c849990ab010594eaf267bebe2a6a7c7e764b6dd",
+          "disposition": "retain",
+          "rationale": "Retain the corrected distinction between the LBNL data-center study and queue report, including estimates versus future scenarios. The September 23 landing-page check did not inspect full-report assumptions, numerical tables or inputs, and admits no calculated measure.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-01-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Distinguish description from explanation",
+          "claim_payload_sha256": "2812dcdfacb9c907a9e5c1336d22b8287b9dcfbd1fd7113b8e111802fc09e1bd",
+          "disposition": "retain",
+          "rationale": "Retain temporal-order versus causality and compatible-population requirements. Descriptive narratives are allowed without a manufactured composite score or league table.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-01-SECTION-5",
+          "section_index": 4,
+          "section_heading": "How to use the report",
+          "claim_payload_sha256": "7162bbdc3ff3d6268156fbc3671e350b4dd79af35e6479d374d95661aca7e12c",
+          "disposition": "qualify",
+          "rationale": "Replace blanket independent-review-pending wording with the user-authorized AI decision policy. Exact-version decisions do not approve every linked claim, manufacture human testing or reset original source dates; earlier status remains history.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "cdfe07c1e63a87cbaa89cc3ca2b28f2ab52dff32bb12de7edd0f75ae0d506f9f"
+    },
+    {
+      "record_id": "203-APPENDIX-02",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete current source-catalogue appendix. Its earlier lineage correction is supported by exact local comparisons: twelve expanded synthesis/essay pairs and forty-six source-list subsets. The rest correctly separates stable identity, artifact revision, issuer role, access health and evidentiary support.",
+      "readings": [
+        {
+          "record_id": "203-APPENDIX-02",
+          "route": "/reference/state-of-future-systems/appendix-source-catalogue/",
+          "title": "Source catalogue: follow the issuer, artifact and revision",
+          "original_payload_sha256": "a2b5ff9b2ec0f5885cfb51d68ef9e6e166f61cd0613773692bae42524cec9818",
+          "current_reading_sha256": "040172aff22f5a37a996971e94a3a763a81c3a944f628d53022e21f75986229c",
+          "existing_review_payload_sha256": "615b497b64e81dc8a8824e95d6d936a0b115ca93ce843004264a6de2d45b9ddb",
+          "existing_review_absent": false,
+          "source_profiles": [
+            {
+              "source_id": "source-161-lbnl-queued-up-2026",
+              "path": "app/src/content/sources/source-161-lbnl-queued-up-2026.json",
+              "whole_file_sha256": "f8e5ebc952308547cbc289356458b00014b2def9161e8924521199e3f2c0ac44"
+            },
+            {
+              "source_id": "source-161-nist-tsmc-investment-july-2026",
+              "path": "app/src/content/sources/source-161-nist-tsmc-investment-july-2026.json",
+              "whole_file_sha256": "d6494e41bdfff373e0a0d8feacda6320a770a2b40e56aebb30fe96dc3d1a4153"
+            },
+            {
+              "source_id": "source-161-nist-compute-supply-chain-lois-july-2026",
+              "path": "app/src/content/sources/source-161-nist-compute-supply-chain-lois-july-2026.json",
+              "whole_file_sha256": "c29261590870b4e8ab8e2d34cb856eeeab9aec0644ed6bacd934ff8f74648647"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Separate a source family from an exact artifact",
+              "payload_sha256": "879a6ec7f1ccf297090c2a7ae4ae9f2d51e81be16fb58a4e711f024e4c2c48a2"
+            },
+            {
+              "heading": "Record the role each source plays",
+              "payload_sha256": "d5bb974729e78ec0d555aabc4fef9f562f7094ae2a90e2bb0f2ea2eabf834677"
+            },
+            {
+              "heading": "Preserve revisions and retrieval dates",
+              "payload_sha256": "f61d3256fae41f422491efb4c68ea3c6981b444a72bdd0c4bc6ab2b63da7ca4a"
+            },
+            {
+              "heading": "Make the route from chapter to evidence visible",
+              "payload_sha256": "66962f9d4ab336c5555402072fd75937776e6e1a165bd03b831fadd38121563c"
+            },
+            {
+              "heading": "Handle access limits honestly",
+              "payload_sha256": "771b22a53dd8fd0d90f717399b26f2d88353cb2b85e1c4ad7ccff09465968ba1"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "local_evidence_inputs": [
+        {
+          "path": "app/src/data/phase-203-state-of-future-systems-2026.json",
+          "whole_file_sha256": "5623c3d52263ab65628edc38d987dc33a31d19909312be1a282dd56c027d9021",
+          "relation": "Original 58 report contracts for the exact local lineage comparison."
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "203-APPENDIX-02-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Separate a source family from an exact artifact",
+          "claim_payload_sha256": "879a6ec7f1ccf297090c2a7ae4ae9f2d51e81be16fb58a4e711f024e4c2c48a2",
+          "disposition": "retain",
+          "rationale": "Retain portal/family versus exact-artifact distinction and rolling-URL limitations. A stable ID preserves an editorial relationship, not immutable remote content.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-02-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Record the role each source plays",
+          "claim_payload_sha256": "d5bb974729e78ec0d555aabc4fef9f562f7094ae2a90e2bb0f2ea2eabf834677",
+          "disposition": "retain",
+          "rationale": "Retain the different roles of company announcements, regulatory decisions, statistical releases and oversight work; official hosting is not independent verification.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-02-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Preserve revisions and retrieval dates",
+          "claim_payload_sha256": "f61d3256fae41f422491efb4c68ea3c6981b444a72bdd0c4bc6ab2b63da7ca4a",
+          "disposition": "retain",
+          "rationale": "Retain version lineage and retrieval-versus-observation dates. Successful access cannot revalidate all claims, and revisiting an investment announcement does not turn it into delivered capacity.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-02-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Make the route from chapter to evidence visible",
+          "claim_payload_sha256": "66962f9d4ab336c5555402072fd75937776e6e1a165bd03b831fadd38121563c",
+          "disposition": "retain",
+          "rationale": "Retain the corrected 12/46 local source-lineage account, checked against the exact original Phase 203 and Phase 204 objects. It concerns original reader drafts, not a claim that later source checks were part of the September baseline or that bibliography length proves support.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-02-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Handle access limits honestly",
+          "claim_payload_sha256": "771b22a53dd8fd0d90f717399b26f2d88353cb2b85e1c4ad7ccff09465968ba1",
+          "disposition": "retain",
+          "rationale": "Retain access failure versus artifact/event absence and the identity/version requirement for alternative copies. No fresh link-health or primary-source sweep occurred in this assessment.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "748b1ede63f698198ded815819b5d36a5300b524b2356c584d5e92f618842022"
+    },
+    {
+      "record_id": "203-APPENDIX-03",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept the eight-stage correction account with one clarification of its present role. The inherited workflow is accurately described; current decisions live in separate dated records, so the appendix should not read as a declaration that no correction has occurred anywhere.",
+      "readings": [
+        {
+          "record_id": "203-APPENDIX-03",
+          "route": "/reference/state-of-future-systems/appendix-corrections/",
+          "title": "Corrections: preserve the old claim and explain the new decision",
+          "original_payload_sha256": "d695bc3e451e016cbf17e6d902adf92cf95ae2a7d4a616457379ea7ea9b176d2",
+          "current_reading_sha256": "d40c5516f989d954397db263e539c92d2b5f1626000e1309270f7c7e86f9632c",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-161-eia-battery-capacity-aug-2026",
+              "path": "app/src/content/sources/source-161-eia-battery-capacity-aug-2026.json",
+              "whole_file_sha256": "0df4907d43d7e733e21dbd59aa53c32a07c0fd141d17534bdec0aeb5c5ccadd4"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Intake and identity resolution",
+              "payload_sha256": "6a2c6592a8c4ae61d4714e3107a16441b38624ae0463f563668177b61a9e00fb"
+            },
+            {
+              "heading": "Source difference and evidence review",
+              "payload_sha256": "e18fafd825572e65f0f4e83e700d7b23be7d3d4ef6536483e33ad6dcefa15a57"
+            },
+            {
+              "heading": "Impact mapping and decision",
+              "payload_sha256": "19c155ece17fff064cbec198adbcd818adafbc31c251c444e54b9d15569fcc6a"
+            },
+            {
+              "heading": "Propagation and verification",
+              "payload_sha256": "f8bb7354b6f567955a9dfca98e7a0c667e9f57f0e5222c9db86df76ecbd67ccd"
+            },
+            {
+              "heading": "What readers should see",
+              "payload_sha256": "0440d948489898cdda35a2c87df0387e4caa709e25bc45b3a4f7b399706e916e"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                4,
+                "paragraphs",
+                0
+              ],
+              "prior": "A useful notice states the affected claim, the earlier and revised interpretation, the controlling evidence and whether the change alters a material conclusion. It should distinguish the date of the underlying event from the date of correction. Historical editions remain valuable because they show what information supported an earlier reading. This appendix describes the inherited process; it does not claim that a new correction has been adjudicated for any case. The linked correction resources provide the appropriate place to inspect actual decisions and their continuation history.",
+              "replacement": "A useful notice identifies the affected claim, earlier and revised interpretation, controlling evidence and any material conclusion that changes. The underlying event date remains separate from the correction date. Historical editions show what supported an earlier reading. This appendix explains the inherited process; it is not itself a decision receipt for another case, and its original workflow snapshot is not a current count of corrections. Inspect the linked correction resources, updates and exact-version AI decisions for actual determinations and their continuation history. Preparing or validating those records does not establish that they have been published."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "local_evidence_inputs": [
+        {
+          "path": "app/src/data/phase-201-change-intelligence-correction-service.json",
+          "whole_file_sha256": "e58c8fe9e2c57d5a5a36811f91f42c7f92fde1c98ac486cce67d776e43bad984",
+          "relation": "Eight inherited workflow stages and empty historical decision array, not a current total of decisions."
+        },
+        {
+          "path": "app/src/data/build-review-policy.json",
+          "whole_file_sha256": "7d929a7cd0a4904338f74ada8645c038703fc7bdffc383d9dd4d9d48a35d5d30",
+          "relation": "Actual authority for AI editorial decisions without inventing human review."
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "203-APPENDIX-03-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Intake and identity resolution",
+          "claim_payload_sha256": "6a2c6592a8c4ae61d4714e3107a16441b38624ae0463f563668177b61a9e00fb",
+          "disposition": "retain",
+          "rationale": "Retain challenged-claim intake, identity/version resolution and recoverable prior statements. An unresolved submission is not automatically an accepted finding.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-03-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Source difference and evidence review",
+          "claim_payload_sha256": "e18fafd825572e65f0f4e83e700d7b23be7d3d4ef6536483e33ad6dcefa15a57",
+          "disposition": "retain",
+          "rationale": "Retain source-difference analysis followed by evidence-impact review; plans, context and admitted observations are not equivalent changed states.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-03-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Impact mapping and decision",
+          "claim_payload_sha256": "19c155ece17fff064cbec198adbcd818adafbc31c251c444e54b9d15569fcc6a",
+          "disposition": "retain",
+          "rationale": "Retain dependency mapping and the six named dispositions with reviewer, rationale, date and receipt. The actor may be the authorized AI; no fabricated human sign-off is implied.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-03-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Propagation and verification",
+          "claim_payload_sha256": "f8bb7354b6f567955a9dfca98e7a0c667e9f57f0e5222c9db86df76ecbd67ccd",
+          "disposition": "retain",
+          "rationale": "Retain propagation and verification/notice stages, with structural tests separate from substantive evidence assessment and publication separately authorized.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-03-SECTION-5",
+          "section_index": 4,
+          "section_heading": "What readers should see",
+          "claim_payload_sha256": "0440d948489898cdda35a2c87df0387e4caa709e25bc45b3a4f7b399706e916e",
+          "disposition": "qualify",
+          "rationale": "Clarify that this appendix describes a process and is not itself a case-specific receipt. Actual corrections and AI judgments can exist in separate dated records without rewriting the original workflow snapshot or implying a hosted release.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "842ee838549ec5e5e52ae448d0631d5cc2e49007b98f8cdb073629e1e43a2783"
+    },
+    {
+      "record_id": "203-APPENDIX-04",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with two current-policy/status corrections. The plain-language, semantic HTML, limitation-preservation and revision requirements remain useful. Preserve the inherited human-review contracts as historical requirements, but explain the later AI authorization and the ten actually implemented translations without claiming human/device/assistive-technology validation.",
+      "readings": [
+        {
+          "record_id": "203-APPENDIX-04",
+          "route": "/reference/state-of-future-systems/appendix-accessibility/",
+          "title": "Accessible use and translation: preserve meaning across reading formats",
+          "original_payload_sha256": "147994ad680f56ba88200ff605a80dc9d8586923fd22e97bda9c85d121663da0",
+          "current_reading_sha256": "b16be3783e60a2f0f823510b40cfe1b110969b22035813a43e8ded85f9d8afc9",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-161-nist-tsmc-investment-july-2026",
+              "path": "app/src/content/sources/source-161-nist-tsmc-investment-july-2026.json",
+              "whole_file_sha256": "d6494e41bdfff373e0a0d8feacda6320a770a2b40e56aebb30fe96dc3d1a4153"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Plain language must preserve the claim",
+              "payload_sha256": "4c70fade78f79e49ba672c5feadab5e0e334e556cc1b83ecff1a1e3d34863511"
+            },
+            {
+              "heading": "A low-bandwidth edition needs functional content",
+              "payload_sha256": "304da47cedf0d5b151f6ad02902d24ba6a34892db5dcc252cebd41999fea24ef"
+            },
+            {
+              "heading": "Translation is a reviewed interpretation",
+              "payload_sha256": "2d019bd6926c3e71eb0dd0a3f3adedcb0ea5eb9354aac9c76f5b2382729f8e3a"
+            },
+            {
+              "heading": "Versions and corrections must travel together",
+              "payload_sha256": "e267c9f52c82dd9d4470f81e13961a6cc204cf48a324b897ee8e672fda7e10ce"
+            },
+            {
+              "heading": "What this report currently offers",
+              "payload_sha256": "239481b74f996149601238897862a9b5b5b83bbe56634e2abdeaaacae1ea5fe0"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                2,
+                "paragraphs",
+                0
+              ],
+              "prior": "French and Spanish editions need to preserve meaning, proper names, source identifiers and evidence states. Technical and institutional terms require particular care because a familiar translation can imply a different legal or administrative concept. The reviewer should compare the translated passage with the canonical English record and its source scope, not merely check fluency. The inherited process requires a translator, a qualified reviewer and a dated approval receipt. Until those decisions occur, a translation remains a draft and should not be presented as a reviewed public edition.",
+              "replacement": "French and Spanish editions must preserve meaning, proper names, source identifiers, evidence states and institutional scope. Their text should be compared with the exact canonical English version, not assessed for fluency alone. The inherited Phase 202 contracts called for a translator, qualified human reviewer and dated receipt; those contracts remain visible as history. The September 25 user instruction instead authorizes Codex to make explicitly labeled AI translation and editorial decisions without waiting for a human signature. The current locales are fr-CA and es-419. Each accepted translation needs its own input version, terminology findings and dated AI decision. This does not claim independent human review or approval of unassessed translations."
+            },
+            {
+              "path": [
+                "sections",
+                4,
+                "paragraphs",
+                0
+              ],
+              "prior": "These reader assets provide substantive English editorial drafts with an inherited September 1 cutoff and a September 10 authored date. Their presence does not claim independent subject approval, translated approval or a new tested accessibility certification. The linked resources show the existing reading and method framework, while the Phase 202 contracts describe the requirements for further editions. Readers should be able to choose a format without losing source scope, uncertainty or correction history. That consistency is the substantive goal of accessible publication, alongside the practical usability of the interface.",
+              "replacement": "The original English readers preserve their September 1 inherited cutoff and September 10 authored date. As of this September 27 editorial assessment, ten exact-version AI-reviewed French and Spanish readings across five topics are integrated locally; twenty-four required translation texts remain. Their original human-review contracts and unperformed human-return fields remain unchanged as history. Current reader decisions and the translation index distinguish completed AI assessments from unfinished work. None of this certifies device, assistive-technology or participant-tested accessibility, and it does not authorize publication. All formats should preserve source scope, uncertainty and correction history."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "local_evidence_inputs": [
+        {
+          "path": "app/src/data/phase-202-accessible-multilingual-low-bandwidth-editions.json",
+          "whole_file_sha256": "3f2d0494cc16dfb192f0ab909a0c035411c6884b0a4563528019ce8917416f26",
+          "relation": "Original mode contracts and human-review wording retained as historical provenance."
+        },
+        {
+          "path": "app/src/data/build-review-policy.json",
+          "whole_file_sha256": "7d929a7cd0a4904338f74ada8645c038703fc7bdffc383d9dd4d9d48a35d5d30",
+          "relation": "Superseding user authority and unperformed human-testing boundary."
+        },
+        {
+          "path": "app/src/data/ai-reviewed-translations.json",
+          "whole_file_sha256": "fc249ac7f3395c346dad76c2964cbfd8b8509afe731eb1cc75d1976d709b572b",
+          "relation": "Exact ten integrated AI translation records, locale choices and 24-remaining boundary; not a rereview of all translated paragraphs."
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "203-APPENDIX-04-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Plain language must preserve the claim",
+          "claim_payload_sha256": "4c70fade78f79e49ba672c5feadab5e0e334e556cc1b83ecff1a1e3d34863511",
+          "disposition": "retain",
+          "rationale": "Retain plain-language scope, denominators, names, source links and distinctions such as investment commitment versus completed facility. Simplification must not strengthen a claim.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-04-SECTION-2",
+          "section_index": 1,
+          "section_heading": "A low-bandwidth edition needs functional content",
+          "claim_payload_sha256": "304da47cedf0d5b151f6ad02902d24ba6a34892db5dcc252cebd41999fea24ef",
+          "disposition": "retain",
+          "rationale": "Retain semantic text-first HTML, direct source access, table/visual alternatives and non-color-only meaning as requirements, not proof of actual device or assistive-technology testing. This assessment does not certify accessibility.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-04-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Translation is a reviewed interpretation",
+          "claim_payload_sha256": "2d019bd6926c3e71eb0dd0a3f3adedcb0ea5eb9354aac9c76f5b2382729f8e3a",
+          "disposition": "qualify",
+          "rationale": "Replace the human-review prerequisite with a dated explanation of the original contracts and superseding user-authorized AI process. Preserve fr-CA/es-419 locale decisions, exact input versions, terminology/subject scope and named AI provenance rather than falsely filling human approval fields.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-04-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Versions and corrections must travel together",
+          "claim_payload_sha256": "e267c9f52c82dd9d4470f81e13961a6cc204cf48a324b897ee8e672fda7e10ce",
+          "disposition": "retain",
+          "rationale": "Retain dependency/version review across canonical and translated editions. A new source correction cannot inherit an older translation decision automatically.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-04-SECTION-5",
+          "section_index": 4,
+          "section_heading": "What this report currently offers",
+          "claim_payload_sha256": "239481b74f996149601238897862a9b5b5b83bbe56634e2abdeaaacae1ea5fe0",
+          "disposition": "qualify",
+          "rationale": "Replace English-only/current-pending shorthand with the actual limited state: ten integrated AI-reviewed translations across five topics, twenty-four texts remaining, unchanged historical human fields and no human-study or accessibility-certification claim.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "a8e47e8855d47c48269ec8f96a805198d702085e3f2feb4531d0b3c0f452aaa4"
+    },
+    {
+      "record_id": "203-APPENDIX-05",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete limitations appendix without new wording. It accurately treats selection, accessibility of evidence, missing denominators, comparability and future artifacts as explicit limits rather than failure claims. Its account of unfinished external work does not impose a new human gate.",
+      "readings": [
+        {
+          "record_id": "203-APPENDIX-05",
+          "route": "/reference/state-of-future-systems/appendix-limitations/",
+          "title": "Limitations and open research: make the missing evidence specific",
+          "original_payload_sha256": "3964b41aac870ef9d5e8c5ba1d2e63fac073bed6fe847a2cb924bce5441d85b0",
+          "current_reading_sha256": "4559d6a9b2ff01626a6679990a37788e1b562c9419388c499fa380d3cae3e03b",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-161-lbnl-queued-up-2026",
+              "path": "app/src/content/sources/source-161-lbnl-queued-up-2026.json",
+              "whole_file_sha256": "f8e5ebc952308547cbc289356458b00014b2def9161e8924521199e3f2c0ac44"
+            },
+            {
+              "source_id": "source-161-lbnl-data-center-energy-usage-2024",
+              "path": "app/src/content/sources/source-161-lbnl-data-center-energy-usage-2024.json",
+              "whole_file_sha256": "0a31c39d4b27d17075a368fb20ba2ff7f91b569594d3447cc3019c65c8edf7a6"
+            },
+            {
+              "source_id": "source-161-nerc-ltra-2025",
+              "path": "app/src/content/sources/source-161-nerc-ltra-2025.json",
+              "whole_file_sha256": "f6fab153b01247eed49eadeb9536981da97728b34266aa297cdfe32476850ea2"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Coverage is not representativeness",
+              "payload_sha256": "18045619747a0f6e9fc6c162ec3e49fce59c4dc1ea50db8ed728d71231c3a527"
+            },
+            {
+              "heading": "A missing value has a reason",
+              "payload_sha256": "0443c75f3047536bfb8b59d430b17054a74047ab5faf5a691a24561b404c267a"
+            },
+            {
+              "heading": "Comparability and attribution remain demanding",
+              "payload_sha256": "e2a232abcec99999616f90d9bfc10716905d983b8204ccd3baa01cba8787c367"
+            },
+            {
+              "heading": "Specify the next decisive artifact",
+              "payload_sha256": "1669f707ae24b1e03f1724c85140f4b516868a8729450a6f246694a23fe3b952"
+            },
+            {
+              "heading": "What completion means for this edition",
+              "payload_sha256": "7634dd90d3247cfa01bf95a86b2a5c890f056b9b9d2d1c7fb348645e44f9bcf0"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "local_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-APPENDIX-05-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Coverage is not representativeness",
+          "claim_payload_sha256": "18045619747a0f6e9fc6c162ec3e49fce59c4dc1ea50db8ed728d71231c3a527",
+          "disposition": "retain",
+          "rationale": "Retain selection and disclosure bias, English-language discovery limits and the distinction between a useful case collection and a statistical sample. More records do not measure a system's advancement.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-05-SECTION-2",
+          "section_index": 1,
+          "section_heading": "A missing value has a reason",
+          "claim_payload_sha256": "0443c75f3047536bfb8b59d430b17054a74047ab5faf5a691a24561b404c267a",
+          "disposition": "retain",
+          "rationale": "Retain distinct reasons for null outcomes: unfinished observation periods, incompatible denominators, access problems and unadmitted evidence. Queue records and scenarios are not failures or realized results.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-05-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Comparability and attribution remain demanding",
+          "claim_payload_sha256": "e2a232abcec99999616f90d9bfc10716905d983b8204ccd3baa01cba8787c367",
+          "disposition": "retain",
+          "rationale": "Retain definition/population changes, ambiguity of completion/acceptance and the extra demands of causal inference. Scores cannot repair unsupported comparison.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-05-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Specify the next decisive artifact",
+          "claim_payload_sha256": "1669f707ae24b1e03f1724c85140f4b516868a8729450a6f246694a23fe3b952",
+          "disposition": "retain",
+          "rationale": "Retain entity, issuer, artifact, scope, trigger and residual uncertainty for the next research return. Adjacent announcements are not substitutes for the missing observation.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-APPENDIX-05-SECTION-5",
+          "section_index": 4,
+          "section_heading": "What completion means for this edition",
+          "claim_payload_sha256": "7634dd90d3247cfa01bf95a86b2a5c890f056b9b9d2d1c7fb348645e44f9bcf0",
+          "disposition": "retain",
+          "rationale": "Retain the boundary between a completed editorial structure and actual external projects, future gates or operating/user outcomes. Dated continuation and underrepresented coverage remain substantive work, not human-signature prerequisites.",
+          "evidence_basis": "exact_local_records_retained_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "1188b3bab876cb2c95b273d8511eda3955f97b9ef5575bb2a878a844bdc4b8ec"
+    }
+  ],
+  "boundaries": {
+    "application_projection_integrated": false,
+    "historical_human_fields_unchanged": true,
+    "source_profile_dates_unchanged": true,
+    "new_primary_source_checks": false,
+    "independent_human_review": false,
+    "measurement_series_admitted": false,
+    "current_external_status_verified": false,
+    "operating_month_completed": false,
+    "publishing_authorized": false
+  },
+  "implementation_notes": [
+    "Prepared separately from the frozen first-four/search application candidate; integrate only after that checkpoint.",
+    "Validate exact local_evidence_inputs before projection, including policy, original report, workflow, original contracts and translation inventory; do not silently discard these bindings.",
+    "Apply four exact paragraph corrections, preserve their prior text and earlier source-check/history components, and retain the additional LBNL profile provenance.",
+    "The ten/24 translation statement is September 27 version-specific; re-review it when the integrated translation inventory changes.",
+    "Three appendices have an explicitly absent prior clarification object. Do not fabricate one."
+  ]
+}

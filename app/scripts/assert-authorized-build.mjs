@@ -7,6 +7,8 @@ import {assertMontanaDossiers} from './lib/assert-montana-dossiers.mjs';
 import {montanaContextFor,montanaConnections} from '../src/lib/montana-dossiers.mjs';
 import {readerCatalog,searchReaders} from '../src/lib/reader-catalog.mjs';
 import './assert-locality-dossiers.mjs';
+import './assert-annual-ai-reviews.mjs';
+import './assert-reader-search-races.mjs';
 const root=fileURLToPath(new URL('../../',import.meta.url));
 const read=async p=>JSON.parse(await readFile(join(root,p),'utf8'));
 const hash=v=>createHash('sha256').update(JSON.stringify(v)).digest('hex');

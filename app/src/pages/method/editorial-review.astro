@@ -7,6 +7,7 @@ import ledger from '../../data/phase-206-editorial-classification.json';
 import adjudications from '../../data/owner-authorized-adjudications.json';
 import reviews from '../../data/selected-article-ai-reviews.json';
 import {translatedReaders} from '../../lib/translated-readers.mjs';
+import {annualAiReviewData,annualAiDecisions} from '../../lib/annual-ai-reviews.mjs';
 const {classification}=await getShelfCatalog();
 ---
 <BaseLayout title="Editorial classification review | FTFN">
@@ -19,9 +20,15 @@ const {classification}=await getShelfCatalog();
   </section>
   <section class="page-section" data-selected-review-index>
     <h2>{reviews.reviewed_articles} of {reviews.selected_article_target} selected articles assessed by AI</h2>
-    <p>These exact-version decisions were made {reviews.decision_date}. All {reviews.selected_article_target} selected articles now carry their decisions and required corrections; the 58 annual assessments and reachable-content review remain separate work. A decision accepts a bounded editorial treatment, not every linked claim or a newly verified operating result. Complete original paragraphs and earlier human-review fields remain history.</p>
+    <p>These exact-version decisions were made {reviews.decision_date}. All {reviews.selected_article_target} selected articles now carry their decisions and required corrections. Of the 58 annual assessments, {annualAiReviewData.reviewed_annual_records} are integrated below; the remaining {annualAiReviewData.remaining_annual_records} and reachable-content review remain separate work. A decision accepts a bounded editorial treatment, not every linked claim or a newly verified operating result. Complete original paragraphs and earlier human-review fields remain history.</p>
     <ul>{reviews.records.map(r=><li><a href={`${r.route}#${r.record_id}-ai-review`}>{r.title}</a> — {r.decision}</li>)}</ul>
     <p><a href="/data/build-decisions.json">Exact decisions, located findings and input hashes</a></p>
+  </section>
+  <section class="page-section" data-annual-ai-index>
+    <h2>{annualAiReviewData.reviewed_annual_records} of {annualAiReviewData.annual_target} annual records assessed by AI</h2>
+    <p>These decisions cover four annual records and two paired essay presentations. The essays do not add two annual acceptances. Seven exact paragraph corrections preserve their earlier wording; new primary checks are limited to the specifically recorded AEMO, FAA and NOAA material.</p>
+    {annualAiDecisions.map(decision=><section id={`${decision.record_id}-annual-decision`}><h3>{decision.record_id}: {decision.disposition.replaceAll('_',' ')}</h3><p>{decision.rationale}</p><ul>{decision.readings.map((reading:{route:string;record_id:string})=><li><a href={`${reading.route}#${reading.record_id}-ai-review`}>{reading.record_id}: current reading and AI assessment</a></li>)}</ul></section>)}
+    <p><a href="/data/build-decisions.json">Exact annual decisions, source checks and input hashes</a>. Source-check dates remain separate from article review dates; no human study, new operating outcome or release is implied.</p>
   </section>
   <section class="page-section">
     <h2>Internal tests are not external operating results.</h2>

@@ -8,6 +8,7 @@ import {readerCatalog} from '../../lib/reader-catalog.mjs';
 import {currentEvidenceLedger} from '../../lib/current-evidence.mjs';
 import {readerPresentation,readerSourceReviewContexts} from '../../lib/reader-presentation.mjs';
 import AnnualCaseReview from './AnnualCaseReview.astro';
+import AnnualAiReview from './AnnualAiReview.astro';
 import {translationsForEnglish} from '../../lib/translated-readers.mjs';
 interface Article { record_id: string; title: string; overview: string; authored_date: string; inherited_as_of_date: string; review_status: string; mode?: string; sections: {heading: string; paragraphs: string[]}[]; source_ids: string[]; related_paths?: string[]; }
 interface Props { article: Article; record: any; registry: any; phase: number; }
@@ -22,8 +23,9 @@ const translations=translationsForEnglish(article.record_id);
   <ReviewHeader eyebrow="FTFN Reference · Reader edition" title={view.title} summary={view.overview} />
   <div class="page-section prose-page">
     <p class="card-note">Written {article.authored_date}. Evidence inherited through {article.inherited_as_of_date}; this writing pass is not a new source check.</p>
-    <p><strong>{article.review_status}</strong>. Factual acceptance, accessibility certification and public release remain separate.</p>
-    {view.annualReview && <AnnualCaseReview review={view.annualReview} />}
+    {!view.annualAiReview && <p><strong>{article.review_status}</strong>. Factual acceptance, accessibility certification and public release remain separate.</p>}
+    {view.annualAiReview && <AnnualAiReview decision={view.annualAiReview} reading={view.annualAiReading} changes={view.annualAiChanges} sourceChecks={view.annualAiSourceChecks} originalStatus={article.review_status} />}
+    {view.annualReview && (view.annualAiReview ? <details data-annual-ai-prior-clarification={article.record_id}><summary>Earlier editorial clarification and retained source checks</summary><AnnualCaseReview review={view.annualReview} /></details> : <AnnualCaseReview review={view.annualReview} />)}
     {view.alternatives.length>0&&<nav aria-label="Other English reading format"><ul>{view.alternatives.map(other=><li><a data-edition-alternative={other.id} href={other.route}>{other.label}</a></li>)}</ul></nav>}
     {translations.length>0&&<nav aria-label="AI-reviewed translations"><p>Translations of the dated plain-English edition; linguistic fidelity reviewed by Codex AI. No new source check or independent human review is claimed.</p><ul>{translations.map(other=><li><a data-translation-alternative={other.record_id} href={other.route} lang={other.locale} hreflang={other.locale}>{other.ui.language}</a></li>)}</ul></nav>}
     {sourceContexts.length>0&&<aside aria-label="Later checks on cited sources" data-reader-source-context>

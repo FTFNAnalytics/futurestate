@@ -1,0 +1,623 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-27",
+  "review_mode": "user_authorized_ai_editorial_judgment",
+  "scope": "Six complete annual cases, their original/current overviews and 18 sections; substantive identity, attribution, date and limitation fields of 14 retained source profiles; Northern Virginia dated clarification checks and the substantive September 15 SLF receipt. No new source retrieval, legal-status advice, PDF inspection, browser action or operating observation.",
+  "counts": {
+    "annual_records": 6,
+    "paired_essay_presentations": 0,
+    "sections": 18,
+    "paragraphs": 18,
+    "section_findings": 18,
+    "required_presentation_changes": 2,
+    "source_profiles": 14,
+    "retained_evidence_inputs": 1,
+    "new_primary_checks": 0,
+    "total_annual_assessments_including_prior_ten": 16,
+    "remaining_annual_assessments": 42
+  },
+  "input_files": [
+    {
+      "path": "app/src/data/phase-204-reader-completion.json",
+      "whole_file_sha256": "38ffd8b3e44dc671dd6590f80658240b6e533c645e5cf5fc3e84f345009d9125"
+    },
+    {
+      "path": "app/src/data/annual-case-reviews.json",
+      "whole_file_sha256": "e1e2c92f78471c615363c2684d6169c5f18f0d2e27c5ab248c4cbbad76a0ac7f"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "203-CASE-03",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete currently corrected Northern Virginia case. It already separates the located June route order, July suspension decision, dated appeal-status field and GS-5 announcement. The two earlier paragraph corrections and overview are adequate; no additional narrative change is needed for this bounded editorial acceptance.",
+      "readings": [
+        {
+          "record_id": "203-CASE-03",
+          "route": "/reference/state-of-future-systems/case-northern-virginia-large-load/",
+          "title": "Northern Virginia: a transmission decision and a large-load tariff",
+          "original_payload_sha256": "d3ae856ab09dd005eb50d0d8210ccd978cfc9ef9fab9b6689c3356e20fd3e8dc",
+          "current_reading_sha256": "3fa206afc0413bda190682105efd975bc6bba3ea94778bad9861046b59178c4c",
+          "existing_review_payload_sha256": "bd4d80b5c5011716e5eb0911eb8e9f6ba8ff5f8e21d50e87041b7667d28b2e2c",
+          "existing_review_absent": false,
+          "source_profiles": [
+            {
+              "source_id": "source-virginia-scc-large-load-gs5-2025",
+              "path": "app/src/content/sources/source-virginia-scc-large-load-gs5-2025.json",
+              "whole_file_sha256": "ca5bec3860d3c250280fd3c23e019f2ef18a599c3cf3ad73b7c9d85835c61702"
+            },
+            {
+              "source_id": "source-virginia-scc-golden-mars-2026",
+              "path": "app/src/content/sources/source-virginia-scc-golden-mars-2026.json",
+              "whole_file_sha256": "39d212e89e33fcdd0e712a6cee08b4af33432373b0bf39b65bc622fb4c78a592"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "What each instrument contributes",
+              "payload_sha256": "750de0a332c274f4a67974c89160614a91c9cff715ef7cd21c2f66210e82b9da"
+            },
+            {
+              "heading": "Customer service is the missing join",
+              "payload_sha256": "1f564ad07be5964dc51301ef79da05a8f5705e11600e15cc71c72c41848ea219"
+            },
+            {
+              "heading": "What to examine next",
+              "payload_sha256": "9798e1ee517f5a0c5363d51cb0681627f79d5eec2a26863519c3b8c075a2f054"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-CASE-03-SECTION-1",
+          "section_index": 0,
+          "section_heading": "What each instrument contributes",
+          "claim_payload_sha256": "750de0a332c274f4a67974c89160614a91c9cff715ef7cd21c2f66210e82b9da",
+          "disposition": "retain",
+          "rationale": "Retain the exact PUR-2025-00056 instrument and date distinctions. The September 22 docket field is not appellate adjudication; the November 2025 GS-5 announcement is neither the full rate order nor customer-specific billing evidence. The direct order links supplement a general-information profile URL without treating it as the order itself.",
+          "evidence_basis": "retained_dated_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-03-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Customer service is the missing join",
+          "claim_payload_sha256": "1f564ad07be5964dc51301ef79da05a8f5705e11600e15cc71c72c41848ea219",
+          "disposition": "retain",
+          "rationale": "Retain the connection-specific evidence chain. Regional demand, a route approval and proximity cannot establish a named customer connection, capacity or reliability. This is a research framework, not a newly observed service result.",
+          "evidence_basis": "retained_dated_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-03-SECTION-3",
+          "section_index": 2,
+          "section_heading": "What to examine next",
+          "claim_payload_sha256": "9798e1ee517f5a0c5363d51cb0681627f79d5eec2a26863519c3b8c075a2f054",
+          "disposition": "retain",
+          "rationale": "Retain the corrected next steps: the June route order has already been located; incorporated conditions, map/CPCN compliance, land rights, appeals, physical delivery and full tariff/customer instruments remain separate. The October 1 appointment is future work, not performed by this assessment.",
+          "evidence_basis": "retained_dated_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "96d162822a0210850e6ab43be600d1c1726d4dd2714f0126003184b87c017c7c"
+    },
+    {
+      "record_id": "203-CASE-04",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete currently corrected Space Coast case against the retained September 15 receipt. The original missing-renewal wording is preserved as history, while the current account resolves only that documentary question. No further paragraph change or fresh legal-status determination is needed.",
+      "readings": [
+        {
+          "record_id": "203-CASE-04",
+          "route": "/reference/state-of-future-systems/case-space-coast-authority-to-mission/",
+          "title": "Space Coast: follow the authority for the site, operator and mission",
+          "original_payload_sha256": "fcec56b0c93db3e36e5ae7a4c7a9b7d3ce3d42580e7a5668fa5fb30bcb7bd77f",
+          "current_reading_sha256": "092e9d27f7d61805a553f7d40bab1ecb99ab805abf428900e86327da564bc17c",
+          "existing_review_payload_sha256": "6683e8a437ac78a3c947bae69aa4a23337439b64a42c3b53d8721f29753db623",
+          "existing_review_absent": false,
+          "source_profiles": [
+            {
+              "source_id": "source-faa-shuttle-landing-facility-license",
+              "path": "app/src/content/sources/source-faa-shuttle-landing-facility-license.json",
+              "whole_file_sha256": "483bee30bd6acac6449b593e721e51e59571c7474d9cfbaf3c4293d387a8c86d"
+            },
+            {
+              "source_id": "source-faa-starship-lc39a-final-eis-rod",
+              "path": "app/src/content/sources/source-faa-starship-lc39a-final-eis-rod.json",
+              "whole_file_sha256": "c4b1d164c2113221105eb3c584373af60ed398ffae5816325a3fd7672dac2ecc"
+            },
+            {
+              "source_id": "source-faa-slc40-final-ea",
+              "path": "app/src/content/sources/source-faa-slc40-final-ea.json",
+              "whole_file_sha256": "c0d43c8a05997361d844b7900b24649e93881256b8b3417574a8cec26064eddd"
+            }
+          ],
+          "retained_contexts": [
+            {
+              "collection": "evidence_receipts",
+              "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+              "path": "app/src/data/phase-60-current-decisions.json",
+              "payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+              "checked_date": "2026-09-15",
+              "route": "/review/evidence-cycle/space-coast-slf-licence/",
+              "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+              "matched_source_ids": [
+                "source-faa-shuttle-landing-facility-license"
+              ],
+              "additional_artifact_urls": []
+            }
+          ],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Several records, several scopes",
+              "payload_sha256": "9d6c79f26c361c5b39055857f3d96a01091e531178245f2c185fd8aea9883935"
+            },
+            {
+              "heading": "Connect permission to actual use",
+              "payload_sha256": "497d8b90277532f1b7b889e59c4f6382985e260c237501b1b3448c3544cbb1ca"
+            },
+            {
+              "heading": "The next decisive documents",
+              "payload_sha256": "00a1e1b4c94f9d9af914818b914504278fe49910918c7158c040f2959c4ddbff"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-CASE-04-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Several records, several scopes",
+          "claim_payload_sha256": "9d6c79f26c361c5b39055857f3d96a01091e531178245f2c185fd8aea9883935",
+          "disposition": "retain",
+          "rationale": "Retain the explicit distinction between the unresolved August check and the September 15 discovery of LRSO 18-018 Revision 2 and Order A-1. Issue, effective, expiry and inspection dates remain distinct. LC-39A and SLC-40 environmental stages do not inherit this site instrument or establish vehicle and mission authorization.",
+          "evidence_basis": "retained_dated_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-04-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Connect permission to actual use",
+          "claim_payload_sha256": "497d8b90277532f1b7b889e59c4f6382985e260c237501b1b3448c3544cbb1ca",
+          "disposition": "retain",
+          "rationale": "Retain separate operator, vehicle, site, required agreements, accepted infrastructure and actual mission joins. A regional set of permissions is not one overall operating-readiness score; no utilization, reliability or community-outcome observation is admitted.",
+          "evidence_basis": "retained_dated_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-04-SECTION-3",
+          "section_index": 2,
+          "section_heading": "The next decisive documents",
+          "claim_payload_sha256": "00a1e1b4c94f9d9af914818b914504278fe49910918c7158c040f2959c4ddbff",
+          "disposition": "retain",
+          "rationale": "Retain the corrected follow-up: October 9 checks later amendments or disposition, not rediscovery of the existing renewal. The retained receipt discloses unverified digital signature and a broken source cross-reference; this AI review neither silently repairs those defects nor resolves current legal authority.",
+          "evidence_basis": "retained_dated_clarifications_and_inherited_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "c342a64a7a4debfda9462abc7b62085929a360f6ccb798cfa0927db3bf1fb87f"
+    },
+    {
+      "record_id": "203-CASE-05",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Nevada pair as a bounded financing-and-permit framework. All factual stage statements remain attributed to inherited profiles, and the body keeps separate projects, quantities and requirements. No new permit, financing or operating-status check is claimed and no additional paragraph correction is required.",
+      "readings": [
+        {
+          "record_id": "203-CASE-05",
+          "route": "/reference/state-of-future-systems/case-nevada-lithium-to-qualified-material/",
+          "title": "Nevada lithium: financing and permits before qualified supply",
+          "original_payload_sha256": "b63f55ad3b200f8b2a93a2224daeb3246ec0ae506fc0a427dbdb41a4131695a1",
+          "current_reading_sha256": "c40f27a290c2f5f752dce1a305a2ba55b97dad0841cff2ff1963a5e8b870e36d",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-doe-thacker-pass-loan-2024",
+              "path": "app/src/content/sources/source-doe-thacker-pass-loan-2024.json",
+              "whole_file_sha256": "955032305871d77c9f4b4001e0c57322edbeaa5dd2f51ebd6d70625505c68849"
+            },
+            {
+              "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+              "path": "app/src/content/sources/source-ndep-rhyolite-ridge-water-permit-2025.json",
+              "whole_file_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Keep the two projects separate",
+              "payload_sha256": "3c2145a304e74b0b9e7bafff0f0618785f14cbbf5097b567ac088c7a3717f24e"
+            },
+            {
+              "heading": "What qualified supply would require",
+              "payload_sha256": "fbcca279bce1240d23cc9d4f87f2f47ece172ba2a3c5ca1559da46b6678c3b85"
+            },
+            {
+              "heading": "The next research return",
+              "payload_sha256": "33c76f635a10d94ce0e815b84a4df2728a3405002da0a4cab86d1a82e517d335"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-CASE-05-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Keep the two projects separate",
+          "claim_payload_sha256": "3c2145a304e74b0b9e7bafff0f0618785f14cbbf5097b567ac088c7a3717f24e",
+          "disposition": "retain",
+          "rationale": "Retain separate Thacker Pass financial-close and Rhyolite Ridge NEV2020107 permit identities. Projected capacity is not output; regulated permission is not compliance with pre-operation and inspection conditions. Neither profile supports a shared Nevada production total.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-05-SECTION-2",
+          "section_index": 1,
+          "section_heading": "What qualified supply would require",
+          "claim_payload_sha256": "fbcca279bce1240d23cc9d4f87f2f47ece172ba2a3c5ca1559da46b6678c3b85",
+          "disposition": "retain",
+          "rationale": "Retain the conditional construction-to-qualified-material chain, material-form distinctions and separate water/residue measurement boundaries. Customer-qualified lots and repeated deliveries are proposed evidence, not observed facts introduced by this article.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-05-SECTION-3",
+          "section_index": 2,
+          "section_heading": "The next research return",
+          "claim_payload_sha256": "33c76f635a10d94ce0e815b84a4df2728a3405002da0a4cab86d1a82e517d335",
+          "disposition": "retain",
+          "rationale": "Retain the request for dated project-specific commissioning, acceptance and receiving-party records. Missing admitted evidence is explicitly not a finding of delay or failure. This acceptance concerns the inherited account, not current project status or independent source verification.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "aeb606e4071e8b60a3281e10dd3e4d540fe2b93268b6ce82e9454fd22a519093"
+    },
+    {
+      "record_id": "203-CASE-06",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one scope clarification. The procurement-to-migration framework is sound, but the OMB paragraph should state the non-national-security federal-system boundary present in the inherited source profile and avoid making a planning requirement sound like an accomplished institutional action.",
+      "readings": [
+        {
+          "record_id": "203-CASE-06",
+          "route": "/reference/state-of-future-systems/case-gsa-pqc-adoption/",
+          "title": "GSA post-quantum acquisition: a purchasing path needs a named buyer",
+          "original_payload_sha256": "b2b3a5e9afe64f3c80a7a987324ff2b55be4884f34c4585b7234b0728ccb7949",
+          "current_reading_sha256": "e2d1a4a1b7c4ea69abaded0b439a5a673f789be6f8a92956fb8b82cda1f16366",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-gsa-pqc-buyers-guide-2025",
+              "path": "app/src/content/sources/source-gsa-pqc-buyers-guide-2025.json",
+              "whole_file_sha256": "f3fce1311e1585d7e2c5b4ac1e16ea672459e4cea8561f268957a705bc8d2a50"
+            },
+            {
+              "source_id": "source-omb-m-26-15-pqc-migration",
+              "path": "app/src/content/sources/source-omb-m-26-15-pqc-migration.json",
+              "whole_file_sha256": "59019836e32bc8c3d0cd11ab85a6219df557d2c8847aa315f96648dda9efc08b"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "What the guide helps an agency do",
+              "payload_sha256": "4638b99b56403a9494c23300004adfe300305f9b6b27e863f6829b7704778117"
+            },
+            {
+              "heading": "A product purchase is only one transition",
+              "payload_sha256": "99cb3a5735c99c8d1233a8e946fac444c06c48dca635e7746bad6b83f9b689e1"
+            },
+            {
+              "heading": "The decisive next evidence",
+              "payload_sha256": "9548a70ff58c220154f184c471b4b5b75d42197cc8ffcf870e2b14335a65feb8"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                0,
+                "paragraphs",
+                0
+              ],
+              "prior": "The buyer's guide organizes inventory, assessment, planning, implementation, maintenance and training alongside acquisition support. It can help a reader understand what services an institution might need and how procurement fits the migration process. The OMB memorandum supplies a separate planning obligation and prioritization context. Neither document demonstrates that a named agency has completed its inventory, placed an order or received a validated implementation. Those are observable actions requiring agency- or system-specific records, not implications of the guidance itself.",
+              "replacement": "The inherited June 2025 GSA buyer's guide organizes inventory, assessment, planning, implementation, maintenance and training alongside acquisition support. It describes services an institution might need and how procurement can support migration. The retained profile of OMB M-26-15 describes a separate planning obligation for non-national-security federal systems; that scope should not be generalized to every federal system. Neither source demonstrates that a named agency has completed its inventory, placed an order or received a validated implementation. Those actions require agency- or system-specific records. This editorial assessment reuses the dated profiles and does not newly verify the documents, later amendments or agency compliance."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-CASE-06-SECTION-1",
+          "section_index": 0,
+          "section_heading": "What the guide helps an agency do",
+          "claim_payload_sha256": "4638b99b56403a9494c23300004adfe300305f9b6b27e863f6829b7704778117",
+          "disposition": "qualify",
+          "rationale": "Qualify the opening paragraph with the June 2025 guide identity and the inherited M-26-15 non-national-security federal-system scope. Planning, acquisition support and required plans remain distinct from completed inventory, purchases, validated implementation or present compliance; the original profile dates are not advanced.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-06-SECTION-2",
+          "section_index": 1,
+          "section_heading": "A product purchase is only one transition",
+          "claim_payload_sha256": "99cb3a5735c99c8d1233a8e946fac444c06c48dca635e7746bad6b83f9b689e1",
+          "disposition": "retain",
+          "rationale": "Retain system/version-specific dependencies, interoperability, performance, acceptance and fallback/legacy exceptions. A vendor capability, pilot or contract vehicle is not an institution-wide migration or quantified security improvement.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-06-SECTION-3",
+          "section_index": 2,
+          "section_heading": "The decisive next evidence",
+          "claim_payload_sha256": "9548a70ff58c220154f184c471b4b5b75d42197cc8ffcf870e2b14335a65feb8",
+          "disposition": "retain",
+          "rationale": "Retain the ordered request for inventory, solicitation/award, testing, cutover, acceptance and retirement artifacts. The reader does not assert that an agency has completed those acts or that a documented transition certifies the surrounding system.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "790a8c32932f06216c09b263812adac7e22eedaf08c577533dbb45364e1d5d78"
+    },
+    {
+      "record_id": "203-CASE-07",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one attribution correction. The pilot/methodology and NASA institutional context are properly kept separate, but an overview labeling a use case active supports an attributed report of use, not independent proof of deployment or operation. The revised middle paragraph makes that boundary explicit.",
+      "readings": [
+        {
+          "record_id": "203-CASE-07",
+          "route": "/reference/state-of-future-systems/case-nist-aria-assurance/",
+          "title": "NIST ARIA: an evaluation method before continuous assurance",
+          "original_payload_sha256": "4fcac83ce8f21b622ad314e61d9b64fe81470ff5da3e1ed01eaea76c4227f724",
+          "current_reading_sha256": "a390656e9702f675ef4a2fc0eb38d35634fd8c6a93a55e3e72d7ea6fa5c45c88",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-nist-aria-pilot-evaluation-2025",
+              "path": "app/src/content/sources/source-nist-aria-pilot-evaluation-2025.json",
+              "whole_file_sha256": "91c13eaeaa68df7842163caa6e3926c17bd5f0417d5f543f5fa956c03778bd33"
+            },
+            {
+              "source_id": "source-nist-aria-evaluation-program",
+              "path": "app/src/content/sources/source-nist-aria-evaluation-program.json",
+              "whole_file_sha256": "c1ed612a940bdd1e765a4bb9d1ef88ea8201d313542dcfab942a9599a811a634"
+            },
+            {
+              "source_id": "source-55z-nasa-ai-use-cases-2024",
+              "path": "app/src/content/sources/source-55z-nasa-ai-use-cases-2024.json",
+              "whole_file_sha256": "6f0ca62cda115975848cf7f8ecd23f95e21645f8969b98bda96ce184efffcb97"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Read the pilot within its tested scope",
+              "payload_sha256": "d1cc2a282f25c11a800ca2902321cd35fcac49aa718e6c749ee7717d1a8657e4"
+            },
+            {
+              "heading": "Operation changes the assurance question",
+              "payload_sha256": "ecb1a7637aeb2b5026840891878631711f45b2efee486b46773ba6c096699b85"
+            },
+            {
+              "heading": "What a stronger case would include",
+              "payload_sha256": "09ed5b0ad37a442c8c162358914c50e11eb60c979cbfac3c8ce6b173b556e50d"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                1,
+                "paragraphs",
+                0
+              ],
+              "prior": "An active institutional use case demonstrates use at its stated level, but does not supply a common measure of accuracy, availability, cost or mission benefit. A named deployment needs authorization, monitoring, incident handling and corrective action appropriate to its role. Changes to the model, data or workflow can require renewed evaluation. The useful join is therefore between a particular assessment and the institution responsible for ongoing operation. Without that join, a reader has a methodological resource and a deployment description, but not a continuous assurance history.",
+              "replacement": "An institutional overview labeling a use case active is an attributed report of use at its stated scope, not independent verification of deployment or continuous operation. The inherited NASA overview does not supply common measures of accuracy, availability, cost or mission benefit. A named deployment needs its own authorization, monitoring, incident handling and corrective actions appropriate to its role. Changes to model, data or workflow can require renewed evaluation. The useful connection is between a particular assessment and the institution responsible for that system's operation. Without connecting records, the reader has a methodological resource and an institutional description, not a continuous assurance history."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-CASE-07-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Read the pilot within its tested scope",
+          "claim_payload_sha256": "d1cc2a282f25c11a800ca2902321cd35fcac49aa718e6c749ee7717d1a8657e4",
+          "disposition": "retain",
+          "rationale": "Retain the bounded pilot and program-methodology account. Tested applications, versions, participants and conditions constrain transfer; the article does not treat an evaluation program or a small pilot as general safety certification or endorsement.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-07-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Operation changes the assurance question",
+          "claim_payload_sha256": "ecb1a7637aeb2b5026840891878631711f45b2efee486b46773ba6c096699b85",
+          "disposition": "qualify",
+          "rationale": "Qualify the opening assertion that an active use case demonstrates use. NASA overview status is institutional reporting, not independent proof of production deployment, accuracy, availability, cost or benefit. Keep authorization, monitoring, incidents and change-triggered evaluation tied to the actual system.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-07-SECTION-3",
+          "section_index": 2,
+          "section_heading": "What a stronger case would include",
+          "claim_payload_sha256": "09ed5b0ad37a442c8c162358914c50e11eb60c979cbfac3c8ce6b173b556e50d",
+          "disposition": "retain",
+          "rationale": "Retain the named-system evaluation/authorization/monitoring sequence and explicit separation between ARIA and NASA. The two source roles cannot be joined into a shared approval or sustained-performance finding without connecting records and compatible outcome measures.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "73c708e9f98d2a884cd8aeb8cf5811fdaeb12792a409dd18384f285912acfc68"
+    },
+    {
+      "record_id": "203-CASE-08",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Waymo California account without additional narrative changes. It confines authority to the retained disposition, treats reporting requirements as a route to evidence rather than observations, and explicitly declines unsafe cross-program or superiority inferences. No fresh operating dataset or current authorization check is claimed.",
+      "readings": [
+        {
+          "record_id": "203-CASE-08",
+          "route": "/reference/state-of-future-systems/case-waymo-california-service/",
+          "title": "Waymo California: service authority before a comparable outcome series",
+          "original_payload_sha256": "3e17d328d4807f11ab9979bd218b6a1160dd8f8c09498fcc7f8a29010f07670f",
+          "current_reading_sha256": "4fff20a21db1bdbe60c0446445e6b06c6fb10f0602117d883841d655d638a7b7",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-cpuc-waymo-al2-disposition-2024",
+              "path": "app/src/content/sources/source-cpuc-waymo-al2-disposition-2024.json",
+              "whole_file_sha256": "d929ce9c1043567d5a4f58a4171cbf80592cfd2ad69fa9700762028cd82238c4"
+            },
+            {
+              "source_id": "source-55z-cpuc-av-quarterly-reporting-2026",
+              "path": "app/src/content/sources/source-55z-cpuc-av-quarterly-reporting-2026.json",
+              "whole_file_sha256": "4f970815a1d0c3bd468f258b37b3c7c3c439072bc536bb24ff39708b78ce3796"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 3,
+          "paragraphs_reviewed": 3,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Authority is a meaningful but limited event",
+              "payload_sha256": "bd2ce045486eb95d933476a7e3d5b27db7378130f5ebe8a12957add64abf6185"
+            },
+            {
+              "heading": "Define the service denominator",
+              "payload_sha256": "f2440cce27941a8c7651fa8f8e43655b4b8f4c1064e4b478d19117858c22aa80"
+            },
+            {
+              "heading": "What to publish next",
+              "payload_sha256": "f0790e8f69510c9b653c8b0e0f18be03869f8a8199b390ca195aaddef030893f"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-CASE-08-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Authority is a meaningful but limited event",
+          "claim_payload_sha256": "bd2ce045486eb95d933476a7e3d5b27db7378130f5ebe8a12957add64abf6185",
+          "disposition": "retain",
+          "rationale": "Retain passenger-service permission within the inherited disposition scope, separate from fleet availability, completed trips, universal access and testing. A quarterly reporting obligation is not a retrieved result or a new finding about current service geography.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-08-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Define the service denominator",
+          "claim_payload_sha256": "f2440cce27941a8c7651fa8f8e43655b4b8f4c1064e4b478d19117858c22aa80",
+          "disposition": "retain",
+          "rationale": "Retain geography, period, exposure, unfulfilled requests, accessibility, waiting, price, complaints and compatible safety definitions. Cross-program or cross-period substitution and duplicate events must be addressed before any comparison; the article contains no manufactured values.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-CASE-08-SECTION-3",
+          "section_index": 2,
+          "section_heading": "What to publish next",
+          "claim_payload_sha256": "f0790e8f69510c9b653c8b0e0f18be03869f8a8199b390ca195aaddef030893f",
+          "disposition": "retain",
+          "rationale": "Retain the need for a stable public-return sequence and disclosed definition changes. The reader explicitly makes no human-driving or operator ranking, safety-superiority claim or persistent-outcome conclusion. Editorial acceptance is not permission to publish an unexamined comparative series.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "90cbb9cc5315b39a306072b2aa18465ab3838f3bd896d8f13e0cf47b25e4c205"
+    }
+  ],
+  "boundaries": {
+    "application_projection_integrated": false,
+    "historical_human_fields_unchanged": true,
+    "source_profile_dates_unchanged": true,
+    "new_primary_source_checks": false,
+    "independent_human_review": false,
+    "measurement_series_admitted": false,
+    "current_external_status_verified": false,
+    "operating_month_completed": false,
+    "publishing_authorized": false
+  },
+  "implementation_notes": [
+    "Prepared after the prior ten assessments; do not apply while the first-four/search candidate is validating.",
+    "Four records have explicitly absent prior clarification objects; preserve hash(null), not fabricated prior reviews.",
+    "Retain the Northern Virginia dated checks, source-profile URL distinction and Space Coast exact receipt and instrument history.",
+    "Apply two exact replacements to only the designated GSA and ARIA routes; preserve earlier wording and original exports.",
+    "Acceptance of inherited source-limited treatment is not fresh primary verification, external legal advice, a safety classification or an operating-series admission."
+  ]
+}

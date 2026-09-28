@@ -6,6 +6,7 @@ import {join} from 'node:path';
 import {readerPresentation,readerSourceReviewContexts} from '../src/lib/reader-presentation.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import {annualCaseReviewForId} from '../src/lib/annual-case-reviews.mjs';
+import {annualAiReviewFor} from '../src/lib/annual-ai-reviews.mjs';
 import {currentEvidenceLedger,projectEvidenceRecord} from '../src/lib/current-evidence.mjs';
 import {assertReceiptControlExport} from './lib/assert-receipt-control-export.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url)),read=p=>readFile(join(root,p),'utf8'),json=async p=>JSON.parse(await read('src/data/'+p));
@@ -16,9 +17,9 @@ assert.equal(hash(await read('src/data/phase-202-accessible-multilingual-low-ban
 const sources=await Promise.all((await readdir(join(root,'src/content/sources'))).filter(f=>f.endsWith('.json')).map(async f=>JSON.parse(await read('src/content/sources/'+f))));
 const before=JSON.stringify({pack,editions,ops,sources,evidence:currentEvidenceLedger});let pairCount=0,contexts=0,contextArticles=0,englishContextArticles=0;
 for(const a of pack.records){
- const view=readerPresentation(a,sources,editions.edition_contracts,readerCatalog),route=readerCatalog.find(r=>r.id===a.record_id).route;
+ const route=readerCatalog.find(r=>r.id===a.record_id).route,view=readerPresentation(a,sources,editions.edition_contracts,readerCatalog,{route}),ai=annualAiReviewFor(a,{route});
  assert.equal(view.sections.length,a.sections.length);assert.equal(new Set(view.sections.map(s=>s.anchor)).size,a.sections.length);
- view.sections.forEach((s,i)=>{const review=annualCaseReviewForId(a.record_id),original=a.sections[i];assert.equal(s.heading,review?.heading_replacements?.find(c=>c.original_text===original.heading)?.replacement_text??original.heading);const expected=[...original.paragraphs];for(const change of review?.replacements??[])if(change.section_heading===original.heading){assert.equal(expected[change.paragraph_index],change.original_text);expected[change.paragraph_index]=change.replacement_text;}assert.deepEqual(s.paragraphs,expected);assert.equal(s.anchor,`${a.record_id.toLowerCase()}-section-${i+1}`);});
+ view.sections.forEach((s,i)=>{const review=annualCaseReviewForId(a.record_id),original=a.sections[i];assert.equal(s.heading,review?.heading_replacements?.find(c=>c.original_text===original.heading)?.replacement_text??original.heading);const expected=[...original.paragraphs];for(const change of review?.replacements??[])if(change.section_heading===original.heading){assert.equal(expected[change.paragraph_index],change.original_text);expected[change.paragraph_index]=change.replacement_text;}for(const change of ai?.reading.required_presentation_changes??[])if(change.path[1]===i){assert.equal(expected[change.path[3]],change.prior);expected[change.path[3]]=change.replacement;}assert.deepEqual(s.paragraphs,expected);assert.equal(s.anchor,`${a.record_id.toLowerCase()}-section-${i+1}`);});
  assert.deepEqual(view.sources.map(s=>s.id),a.source_ids);for(const s of view.sources){assert.equal(s.url,sources.find(r=>r.id===s.id).url);assert.equal(s.profile_route,`/atlas/sources/${s.id}/`);}
  assert(view.related.every(l=>l.title&&!l.title.startsWith('/')));
  const contract=editions.edition_contracts.find(r=>r.edition_contract_id===a.record_id);

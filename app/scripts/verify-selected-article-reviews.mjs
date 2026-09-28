@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {parse} from 'parse5';
 import data from '../src/data/selected-article-ai-reviews.json' with {type:'json'};
+import annualReviews from '../src/data/annual-ai-reviews.json' with {type:'json'};
 import corpus from '../src/data/phase-205-216-current-editorial.json' with {type:'json'};
 import atlas from '../src/data/phase-119-deep-project-place-atlas.json' with {type:'json'};
 import topics from '../src/data/phase-184-canonical-topic-edition-2.json' with {type:'json'};
@@ -15,7 +16,8 @@ const visibleWithoutHistory=n=>attr(n,'data-prior-editorial-review')!==undefined
 assert.deepEqual(JSON.parse(await read('/data/build-decisions.json')).selected_article_reviews,data);
 assert.deepEqual(JSON.parse(await read('/data/current-editorial.json')),corpus);
 const method=await read('/method/editorial-review/index.html'),sitemap=await read('/sitemap.xml');
-assert(method.includes('33 of 33 selected articles assessed by AI'));assert(method.includes('58 annual assessments and reachable-content review remain separate work'));
+assert(method.includes('33 of 33 selected articles assessed by AI'));
+assert(method.includes(`Of the ${annualReviews.annual_target} annual assessments, ${annualReviews.reviewed_annual_records} are integrated below; the remaining ${annualReviews.remaining_annual_records} and reachable-content review remain separate work`));
 let changedFields=0,verifiedSections=0,verifiedNested=0;
 for(const r of data.records){
  const a=corpus.records.find(a=>a.record_id===r.record_id),html=await read(`${r.route}index.html`),dom=parse(html);

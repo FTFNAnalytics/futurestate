@@ -48,6 +48,15 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/annual-ai-reviews.json',
+  'src/lib/annual-ai-reviews.mjs',
+  'src/components/review/AnnualAiReview.astro',
+  'scripts/assert-annual-ai-reviews.mjs',
+  'scripts/verify-annual-ai-reviews.mjs',
+  'scripts/assert-reader-search-races.mjs',
+  '../docs/annual-first-four-ai-review-2026-09-27.json',
+  '../docs/release-reviews/2026-09-22/annual-battery-review-packet/manifest.json',
+  'src/content/updates/2026-09-27-annual-ai-first-four.json',
   'src/data/selected-article-ai-reviews.json',
   'src/lib/selected-article-reviews.mjs',
   'scripts/assert-selected-article-reviews.mjs',

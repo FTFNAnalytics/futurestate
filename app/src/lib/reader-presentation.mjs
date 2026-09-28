@@ -1,6 +1,7 @@
-import {applyAnnualCaseReview,annualCaseReviews,annualReviewDate} from './annual-case-reviews.mjs';
+import {annualCaseReviews,annualReviewDate} from './annual-case-reviews.mjs';
 import {backlogDecisionFor} from './backlog-research.mjs';
 import {goldenMarsSignalContext} from './golden-mars-signal-review.mjs';
+import {annualAiPresentation,annualAiReviewFor,annualAiReadings,annualAiReviewData} from './annual-ai-reviews.mjs';
 const relatedLabels=new Map([
   ['/method/','Method and publication policy'],['/review/method/','Evidence review method'],['/review/fieldbook/method/','Fieldbook research method'],
   ['/atlas/sources/','Source profiles'],['/atlas/source-monitor/','Source review queue'],['/data/sources.json','Source registry (JSON)'],
@@ -21,9 +22,13 @@ export function readerPresentation(article,sources,editionContracts,catalog,opti
   const contract=editionContracts.find(r=>r.edition_contract_id===article.record_id);
   const alternatives=contract?editionContracts.filter(r=>r.topic_id===contract.topic_id&&r.edition_contract_id!==article.record_id&&!r.is_translation&&r.target_language==='English')
     .flatMap(r=>{const match=catalog.find(c=>c.id===r.edition_contract_id);return match?[match]:[];}):[];
-  const projected=applyAnnualCaseReview(article,options);
+  const projected=annualAiPresentation(article,options);
   return {
     annualReview:projected.review,
+    annualAiReview:projected.aiReview,
+    annualAiReading:projected.aiReading,
+    annualAiChanges:projected.aiChanges,
+    annualAiSourceChecks:projected.aiSourceChecks,
     title:projected.title,
     overview:projected.overview,
     sections:projected.sections.map((s,i)=>({...s,anchor:`${article.record_id.toLowerCase()}-section-${i+1}`})),
@@ -36,7 +41,7 @@ export function readerPresentation(article,sources,editionContracts,catalog,opti
 // Exact source-ID joins expose already recorded checks alongside a historical
 // article. They do not re-review that article or change its evidence cutoff.
 export function readerSourceReviewContexts(article,evidence,operations,{asOfDate,route}={}){
-  const date=asOfDate??[evidence.as_of_date,operations.as_of_date].filter(Boolean).sort().at(-1);
+  const date=asOfDate??[evidence.as_of_date,operations.as_of_date,annualAiReviewData.review_date].filter(Boolean).sort().at(-1);
   if(!/^\d{4}-\d{2}-\d{2}$/.test(date??''))throw Error('Reader context requires an ISO calendar date');
   const ids=new Set(article.source_ids),contexts=[];
   for(const r of evidence.receipts??[]){
@@ -73,6 +78,13 @@ export function readerSourceReviewContexts(article,evidence,operations,{asOfDate
     if(!ids.has(check.source_id)||seenChecks.has(key))continue;
     seenChecks.add(key);
     contexts.push({id:`${golden.annual_review_id}-source-check-${index+1}`,kind:'Retained source clarification — not a new retrieval',title:'Dated Golden-Mars source clarification',checked_date:golden.review_date,summary:`${check.finding} Locator: ${check.locator}. ${check.access}`,route:golden.retained_review_route,source_check:check,source_review_record_id:golden.annual_review_id,next_check_date:null,matched_source_ids:[check.source_id],independent_article_review:false});
+  }
+  const ownAi=annualAiReviewFor(article,{route,asOfDate:date});
+  for(const check of annualAiReviewData.source_checks){
+    if(!ids.has(check.source_id)||check.checked_date>date||ownAi)continue;
+    const assessed=annualAiReadings.find(r=>r.reading.source_profiles.some(s=>s.source_id===check.source_id));
+    if(!assessed)throw Error('Annual AI source context has no assessed reading');
+    contexts.push({id:check.id,kind:'Dated primary-source check — not acceptance of this article',title:'Source clarification from an AI-assessed annual reading',checked_date:check.checked_date,summary:`${check.finding} Locator: ${check.locator}. ${check.access}`,route:assessed.reading.route,source_check:check,source_review_record_id:assessed.reading.record_id,next_check_date:null,matched_source_ids:[check.source_id],independent_article_review:false});
   }
   return contexts.sort((a,b)=>b.checked_date.localeCompare(a.checked_date)||a.id.localeCompare(b.id));
 }

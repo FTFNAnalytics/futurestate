@@ -27,7 +27,7 @@ for(const name of ['phase-200-cross-system-constraint-monographs.json','phase-20
 for(const article of pack.records){
  const route=bindings.get(article.record_id); assert(route);
  const html=await readFile(join(root,'dist',route,'index.html'),'utf8');
- const text=decodeHtmlText(html),view=readerPresentation(article,sources,editions.edition_contracts,readerCatalog);
+ const text=decodeHtmlText(html),view=readerPresentation(article,sources,editions.edition_contracts,readerCatalog,{route});
  assert(html.includes(`data-reader-article="${article.record_id}"`),`Reader body missing: ${route}`);
  assert.equal((html.match(/<h1\b/g)??[]).length,1,`Duplicate H1 ${route}`);
  assert(html.includes('September 1 research contract'));
@@ -43,7 +43,8 @@ for(const article of pack.records){
   for(const value of [context.summary,context.checked_date,context.next_check_date].filter(Boolean))assert(text.includes(value));
   assert(html.includes(`href="${context.route}"`));const receiptPage=decodeHtmlText(await readFile(join(root,'dist',context.route,'index.html'),'utf8'));
   if(context.source_check){
-   assert(receiptPage.includes(`data-annual-case-review="${context.source_review_record_id}"`));assert(receiptPage.includes(`data-annual-source-check="${context.source_check.source_id}"`));
+   if(context.source_check.id){assert(receiptPage.includes(`data-annual-ai-review="${context.source_review_record_id}"`));assert(receiptPage.includes(`data-annual-ai-source-check="${context.source_check.id}"`));}
+   else {assert(receiptPage.includes(`data-annual-case-review="${context.source_review_record_id}"`));assert(receiptPage.includes(`data-annual-source-check="${context.source_check.source_id}"`));}
    for(const value of [context.source_check.finding,context.source_check.locator,context.source_check.access,context.checked_date])assert(receiptPage.includes(value),`Missing retained exact-source check: ${context.id}`);
   }else assert(receiptPage.includes(context.id)&&receiptPage.includes(context.summary),`Missing full source review target: ${context.id}`);
  }

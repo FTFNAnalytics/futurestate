@@ -10,6 +10,7 @@ import montanaDossiers from '../data/montana-project-dossiers.json' with {type:'
 import localityDossiers from '../data/locality-dossiers.json' with {type:'json'};
 import {selectedArticleReviewFor,selectedReviewDate,selectedReviewStatus} from './selected-article-reviews.mjs';
 import {annualCaseReviewForId, annualReviewDate, annualCaseOverview, annualCaseTitle} from './annual-case-reviews.mjs';
+import {annualAiReviewFor,annualAiReviewStatus} from './annual-ai-reviews.mjs';
 const paths=new Map();
 const editionModes=new Map(editions.edition_contracts.map(r=>[r.edition_contract_id,r.edition_mode]));
 const visit=value=>{
@@ -25,7 +26,7 @@ export const readerCatalog=[
   ...translatedReaders.map(r=>({id:r.record_id,title:r.title,summary:r.overview,kind:'Translation',route:r.route,date:r.ai_review_date,status:r.review_state,language:r.locale,language_names:[r.ui.language,r.locale==='fr-CA'?'Canadian French':'Latin American Spanish']})),
   ...localityDossiers.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:'Place',route:r.route,date:r.ai_review_date,status:r.review_state,identity_names:[r.record_id,r.scope,...r.aliases]})),
   ...current.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:r.kind,route:r.route,date:selectedArticleReviewFor(r,{route:r.route})?selectedReviewDate:r.updated_date??r.authored_date,status:selectedArticleReviewFor(r,{route:r.route})?selectedReviewStatus:r.review_status,...(r.identity_evidence?{identity_names:[r.identity_evidence.candidate_name,...r.identity_evidence.aliases,...(r.identity_evidence.identifier?[r.identity_evidence.identifier]:[])]}:{})})),
-  ...readers.records.map(r=>({id:r.record_id,title:annualCaseTitle(r,{route:paths.get(r.record_id)}),summary:annualCaseOverview(r,{route:paths.get(r.record_id)}),kind:editionModes.get(r.record_id)==='Low-bandwidth HTML edition'?'Compact':r.record_id.startsWith('202-')?'Plain English':r.record_id.startsWith('200-')?'Essay':'Report',route:paths.get(r.record_id),date:annualCaseReviewForId(r.record_id)?annualReviewDate(annualCaseReviewForId(r.record_id)):r.authored_date,status:r.review_status})),
+  ...readers.records.map(r=>{const route=paths.get(r.record_id),ai=annualAiReviewFor(r,{route});return {id:r.record_id,title:annualCaseTitle(r,{route}),summary:annualCaseOverview(r,{route}),kind:editionModes.get(r.record_id)==='Low-bandwidth HTML edition'?'Compact':r.record_id.startsWith('202-')?'Plain English':r.record_id.startsWith('200-')?'Essay':'Report',route,date:ai?ai.decision.review_date:annualCaseReviewForId(r.record_id)?annualReviewDate(annualCaseReviewForId(r.record_id)):r.authored_date,status:ai?annualAiReviewStatus:r.review_status};}),
 ];
 if(readerCatalog.some(r=>!r.route||!r.route.startsWith('/')))throw new Error('Reader catalog has an unresolved route');
 export {searchReaders} from './reader-search.mjs';

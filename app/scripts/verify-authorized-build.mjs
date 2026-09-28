@@ -5,6 +5,7 @@ import {join} from 'node:path';
 import {decodeHtmlText} from './lib/verify-update-archive.mjs';
 import {montanaContextFor,montanaConnections} from '../src/lib/montana-dossiers.mjs';
 import './verify-locality-dossiers.mjs';
+import './verify-annual-ai-reviews.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const read=path=>readFile(join(root,path),'utf8');
 const json=async path=>JSON.parse(await read(path));

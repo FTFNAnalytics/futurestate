@@ -5,6 +5,7 @@ import {join} from 'node:path';
 import {parse} from 'parse5';
 import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate, annualReviewVersions} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import {annualAiReviewFor} from '../src/lib/annual-ai-reviews.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
 import originalReport from '../src/data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
 import operations from '../src/data/phase-207-current-operations.json' with {type:'json'};
@@ -19,6 +20,7 @@ let revisedTitles=0, previousReviews=0;
 let totalNotices = 0, revisedParagraphs = 0, revisedOverviews = 0, revisedHeadings = 0;
 for (const article of history.records) {
   const route = readerCatalog.find(r => r.id === article.record_id).route;
+  const ai=annualAiReviewFor(article,{route});
   const dom = parse(await read(`${route}index.html`));
   const notices = all(dom, n => attr(n, 'data-annual-case-review') !== undefined);
   const review = annualCaseReviews.records.find(r => r.record_id === article.record_id);
@@ -86,6 +88,7 @@ for (const article of history.records) {
     for (const change of review?.replacements ?? []) if (change.section_heading === original.heading) {
       expected[change.paragraph_index] = change.replacement_text; revisedParagraphs++;
     }
+    for(const change of ai?.reading.required_presentation_changes??[])if(change.path[1]===i){assert.equal(expected[change.path[3]],change.prior);expected[change.path[3]]=change.replacement;}
     assert.deepEqual(paragraphs, expected, `Wrong current reading body at ${route}`);
   }
   const retainedPilotIds=(review?.retained_contexts??[]).filter(c=>c.collection==='pilot_research_followups').map(c=>c.id);
@@ -108,7 +111,7 @@ for (const article of history.records) {
   const catalogIndex = readerCatalog.findIndex(r => r.id === article.record_id);
   const catalogPage = parse(await read(`/reference/explore/${Math.floor(catalogIndex / 40) + 1}/index.html`));
   const [catalogCard] = all(catalogPage, n => n.tagName === 'article' && links(n).includes(route));
-  assert(catalogCard && text(catalogCard).includes(annualReviewDate(review)), 'Catalog must show this record’s review date');
+  assert(catalogCard && text(catalogCard).includes(ai?ai.decision.review_date:annualReviewDate(review)), 'Catalog must show this record’s current review date');
   assert.equal(text(all(catalogCard,n=>n.tagName==='h2'||n.tagName==='h3')[0]),title,'Catalog card current title mismatch');
   assert(hrefs.includes(annualCaseReviews.export_route));
   assert(hrefs.includes(`/updates/${review.update_id ?? annualCaseReviews.update_id}/`));

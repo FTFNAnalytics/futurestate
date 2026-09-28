@@ -24,9 +24,30 @@ const kinds=[...new Set(readerCatalog.map(r=>r.kind))].sort();
   const results=document.querySelector<HTMLElement>('#reader-results')!;
   const status=document.querySelector<HTMLElement>('#reader-status')!;
   const more=document.querySelector<HTMLButtonElement>('#more-results')!;
-  let matches:any[]=[];let shown=0;let catalog:any[]|null=null;
+  let matches:any[]=[];let shown=0;let catalog:any[]|null=null;let request=0;
   function append(){const slice=matches.slice(shown,shown+40);for(const r of slice){const card=document.createElement('article');card.className='record-card';const h=document.createElement('h2');const a=document.createElement('a');a.href=r.route;a.textContent=r.title;a.lang=r.language??'en';h.append(a);const p=document.createElement('p');p.textContent=r.summary;p.lang=r.language??'en';const note=document.createElement('p');note.textContent=`${r.kind} · ${r.date} · ${r.status}`;card.append(h,p,note);results.append(card);}shown+=slice.length;more.hidden=shown>=matches.length;status.textContent=matches.length?`${shown} of ${matches.length} matches shown.`:'No matching reader editions. Try fewer words or a different content type.';}
-  async function search(push=false){const params=new URLSearchParams(new FormData(form) as any);if(push)history.pushState(null,'',`${location.pathname}?${params}`);status.textContent='Searching…';try{if(!catalog){const response=await fetch('/data/reader-catalog.json');if(!response.ok)throw new Error();catalog=(await response.json()).records;}matches=searchReaders(catalog,params.get('q')??'',params.get('kind')??'');shown=0;results.replaceChildren();append();}catch{status.textContent='Search could not load. Use the numbered pages to browse; your query is preserved.';}}
+  async function search(push=false){
+    const token=++request;
+    const params=new URLSearchParams(new FormData(form) as any);
+    if(push)history.pushState(null,'',`${location.pathname}?${params}`);
+    status.textContent='Searching…';more.disabled=true;
+    try{
+      if(!catalog){
+        const response=await fetch('/data/reader-catalog.json');
+        if(!response.ok)throw new Error();
+        const records=(await response.json()).records;
+        if(token!==request)return;
+        catalog=records;
+      }
+      if(token!==request)return;
+      matches=searchReaders(catalog,params.get('q')??'',params.get('kind')??'');
+      shown=0;results.replaceChildren();append();
+    }catch{
+      if(token===request)status.textContent='Search could not load. Use the numbered pages to browse; your query is preserved.';
+    }finally{
+      if(token===request)more.disabled=false;
+    }
+  }
   function restore(){const params=new URLSearchParams(location.search);(form.elements.namedItem('q') as HTMLInputElement).value=params.get('q')??'';(form.elements.namedItem('kind') as HTMLSelectElement).value=params.get('kind')??'';if(location.search)void search();}
   form.addEventListener('submit',event=>{event.preventDefault();void search(true);});more.addEventListener('click',()=>append());window.addEventListener('popstate',()=>{if(location.search)restore();else location.reload();});restore();
 </script>
