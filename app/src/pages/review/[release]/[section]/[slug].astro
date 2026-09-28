@@ -2,6 +2,8 @@
 import BaseLayout from "../../../../components/layout/BaseLayout.astro";
 import RegistryDetail from "../../../../components/review/RegistryDetail.astro";
 import {placeIdentityTitle} from '../../../../lib/place-identity-reviews.mjs';
+import {localityDossierFor} from '../../../../lib/locality-dossiers.mjs';
+import LocalityArticle from '../../../../components/review/LocalityArticle.astro';
 import p134 from "../../../../data/phase-134-mission-decision-register.json";
 import p136 from "../../../../data/phase-136-named-project-chronicles.json";
 import p137 from "../../../../data/phase-137-place-delivery-ledgers.json";
@@ -60,5 +62,8 @@ export function getStaticPaths() {
 }
 const { registry, record, phase, canonicalRoute } = Astro.props;
 const { release } = Astro.params;
+const locality=localityDossierFor(record);
 ---
-<BaseLayout title={`${placeIdentityTitle(record) ?? record.title ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? record.slug} | FTFN`} description={registry.summary} canonical={canonicalRoute}><RegistryDetail registry={registry} record={record} phase={phase} release={release} /></BaseLayout>
+<BaseLayout title={`${locality?.title ?? placeIdentityTitle(record) ?? record.title ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? record.slug} | FTFN`} description={locality?.answer ?? registry.summary} canonical={canonicalRoute}>
+  {locality?<><LocalityArticle article={locality}/><details id="locality-history" class="page-section" data-locality-history={locality.record_id}><summary>Original record and earlier source checks — retained history</summary><h2>{record.title}</h2><p>The material below keeps its original dates, wording and review states. The current AI-reviewed account above does not rewrite these records or claim that older source checks establish present outcomes.</p><RegistryDetail registry={registry} record={record} phase={phase} release={release} embedded/></details></>:<RegistryDetail registry={registry} record={record} phase={phase} release={release}/>}
+</BaseLayout>

@@ -48,6 +48,14 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/locality-dossiers.json',
+  'src/lib/locality-dossiers.mjs',
+  'src/components/review/LocalityArticle.astro',
+  'src/pages/atlas/places/index.astro',
+  'scripts/assert-locality-dossiers.mjs',
+  'scripts/verify-locality-dossiers.mjs',
+  'src/content/updates/2026-09-27-locality-dossiers.json',
+  '../docs/place-next-five-2026-09-27.md',
   'src/data/ai-reviewed-translations.json',
   'src/lib/translated-readers.mjs',
   'src/components/review/TranslatedArticle.astro',

@@ -3,6 +3,7 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import decisions from '../../data/portfolio-eligibility-decisions.json';
 import authorized from '../../data/owner-authorized-adjudications.json';
 import dossiers from '../../data/montana-project-dossiers.json';
+import localities from '../../data/locality-dossiers.json';
 const groups=[{title:'Existing Atlas identities',records:decisions.canonical},{title:'Ten localized place dossiers',records:decisions.named_places},{title:'Four added editorial identities',records:decisions.new_editorial_candidates}];
 ---
 <BaseLayout title="Portfolio counting decisions | FTFN">
@@ -13,9 +14,10 @@ const groups=[{title:'Existing Atlas identities',records:decisions.canonical},{t
     <p>Named programs may count once when their child facilities or projects are not also counted. National and supranational orientations do not count as localized place dossiers. A clearly labelled subnational region, corridor, locality, campus or basin can qualify without pretending to be a municipality.</p>
     <table><caption>Eligible candidates, not completed-dossier totals</caption><thead><tr><th scope="col">Scope</th><th scope="col">Eligible identities</th><th scope="col">Target</th><th scope="col">More distinct identities needed</th></tr></thead><tbody><tr><th scope="row">Projects</th><td>{decisions.summary.eligible_project_candidates}</td><td>100</td><td>{decisions.summary.additional_distinct_project_candidates_needed}</td></tr><tr><th scope="row">Places</th><td>{decisions.summary.eligible_place_candidates}</td><td>70</td><td>{decisions.summary.additional_distinct_place_candidates_needed}</td></tr></tbody></table>
     <p>{dossiers.records.length} Montana proposal-stage dossiers have now been authored and AI-reviewed, completing this 32-project cohort. Other eligible identities still need content completion or exact-version AI review; none is waiting for a human signature. This is not completion of the full portfolio target. Operating outcomes require their own evidence.</p>
+    <p>{localities.records.length} localized place accounts are also complete as dated, bounded readings. Their identities were already included in the 25 eligible-place inventory, so no new places are added to that count. <a href="/atlas/places/">Read the locality accounts</a>.</p>
     <p><a href="/atlas/projects/montana-bead/">Read the complete Montana cohort</a> · <a href="/data/build-decisions.json">Download all decisions and dossier inputs</a></p>
   </section>
-  {groups.map(group=><section class="page-section"><h2>{group.title}</h2>{group.records.map(r=><details data-portfolio-record={r.record_id}><summary>{r.record_id} — {r.decision}</summary><p><a href={r.route}>{r.scope}</a></p><p>{r.rationale}</p><p>Eligible count: {r.eligible_count}. {r.dossier_content_review}.</p></details>)}</section>)}
+  {groups.map(group=><section class="page-section"><h2>{group.title}</h2>{group.records.map(r=><details data-portfolio-record={r.record_id}><summary>{r.record_id} — {r.decision}</summary><p><a href={r.route}>{r.scope}</a></p><p>{r.rationale}</p><p>Eligible count: {r.eligible_count}. {localities.records.some(d=>d.record_id===r.record_id)?`Dated locality account authored and AI-reviewed ${localities.authored_date}; no operating outcome admitted`:r.dossier_content_review}.</p></details>)}</section>)}
   <section class="page-section">
     <h2>Montana: 32 projects, not 768 projects</h2><p>{authorized.portfolio.montana.decision} The program parent contributes zero additional projects.</p>
     <ul>{authorized.portfolio.montana.records.map(r=>{const dossier=dossiers.records.find(d=>d.record_id===r.source_project_id);return <li data-portfolio-record={r.source_project_id}>{dossier?<a href={dossier.route}>{r.name}</a>:r.name} — {r.source_project_id}. {r.decision}; {r.reporting_rail}. {dossier?'Bounded proposal-stage dossier completed.':'Dossier content remains to build.'}</li>;})}</ul>

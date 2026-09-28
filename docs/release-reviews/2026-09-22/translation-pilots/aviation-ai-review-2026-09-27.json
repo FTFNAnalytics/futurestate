@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Aviation translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-013",
+  "source_record_sha256": "bba1273daf68d9075bc9b3ab14021d7207d2a4e72c3d7040b8e7eba59c63477b",
+  "source_to_contract_mapping": "Translate the later September 10 plain-language reader; preserve the original canonical-contract digest and source list as historical provenance.",
+  "checks": [
+    "Compared the complete English overview and all six sections with both complete translations.",
+    "Preserved certification, operator authority, aircraft delivery and actual passenger service as separate states.",
+    "Translated eight selected pilots as eight pilot projects, not eight individual aircraft pilots.",
+    "Retained powered-lift as the exact category label rather than inventing a regulatory category equivalence.",
+    "Preserved a measured competition result without promoting it to aircraft certification, operator approval or recurring passenger flights.",
+    "Retained reporting year, carrier population, method, weather/network explanations and no automatic transfer to an airport or new aircraft category.",
+    "Preserved exposure denominators and separate safety, reliability, emissions, noise, access and affordability questions.",
+    "Translated dispatch with its explicit definition: whether planned service proceeded; no operational result was added.",
+    "Preserved the September 1 evidence cutoff and September 10 English authorship date; September 27 is the actual AI translation-review date.",
+    "Preserved all nine original source IDs and exact URLs. These links do not claim current retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Aéronef preserves the broader aircraft category. Huit projets pilotes avoids confusing integration pilots with people. Exécution des services prévus is accompanied by dispatch and its source definition; no single public-service score is introduced."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Aeronave, ocho proyectos piloto and seguridad operacional preserve category and safety scope. Registros de despacho retains the stated explanation. Certification, operator approval and availability remain different claims."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/aviation-fr-CA-ai-reviewed.md",
+      "file_sha256": "ef3dfc8589bac4771966c32b8681390a3904b6a5e7b5e603e84819f9876f9ff0",
+      "proposed_contract_id": "202-EDITION-015",
+      "historical_contract_sha256": "751a988eef83c2b2cb286ca591e7f7710cefb9bf15e8301b1c99cb8805fa1984"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/aviation-es-419-ai-reviewed.md",
+      "file_sha256": "1c4f523f07673b80c02a0cf30deea1b1eb40379ed6c4b760afc0dc02bf448c47",
+      "proposed_contract_id": "202-EDITION-016",
+      "historical_contract_sha256": "54232989a68637a703d748ebd8d044c4593639e0ea4f27073309dff978172c0c"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-56a-dot-atcr-2022",
+      "name": "Air Travel Consumer Report: 2022 report shelf",
+      "url": "https://www.transportation.gov/individuals/aviation-consumer-protection/air-travel-consumer-reports-2022",
+      "path": "app/src/content/sources/source-56a-dot-atcr-2022.json",
+      "sha256": "0e7367fc9fc1d01e6bcacba5184f97d4b036a055139102b476f4ff9ba0fc18a7"
+    },
+    {
+      "id": "source-56a-dot-atcr-2023",
+      "name": "Air Travel Consumer Report: 2023 report shelf",
+      "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2023",
+      "path": "app/src/content/sources/source-56a-dot-atcr-2023.json",
+      "sha256": "ebfe85755c28687047b3fb33a73c25b01b3753f7905d4267c124b793a6d06e9e"
+    },
+    {
+      "id": "source-56a-dot-atcr-2024",
+      "name": "Air Travel Consumer Report: 2024 report shelf",
+      "url": "https://www.transportation.gov/resources/individuals/aviation-consumer-protection/air-travel-consumer-reports-2024",
+      "path": "app/src/content/sources/source-56a-dot-atcr-2024.json",
+      "sha256": "ff1963d1823529c2f25d16d7a934b464b053080b7eaf9232744c609c31c7c3d3"
+    },
+    {
+      "id": "source-darpa-lift-challenge-2026",
+      "name": "DARPA Lift Challenge Official Results",
+      "url": "https://www.darpa.mil/news/2026/lift-challenge-awards",
+      "path": "app/src/content/sources/source-darpa-lift-challenge-2026.json",
+      "sha256": "7677efd7e07823df04aaf0ebbf6c802839e1833388f0fe66986d5c6f0f89250c"
+    },
+    {
+      "id": "source-faa-eipp-selections-2026",
+      "name": "FAA eVTOL Integration Pilot Program Selections, March 2026",
+      "url": "https://www.faa.gov/newsroom/future-aviation-here-trumps-transportation-secretary-sean-p-duffy-and-faa-unveil-eight",
+      "path": "app/src/content/sources/source-faa-eipp-selections-2026.json",
+      "sha256": "a259b52440ebb22d5c84ded88c7ae1f7d56bd157c47af05f3606fe865680316b"
+    },
+    {
+      "id": "source-faa-aam",
+      "name": "FAA Advanced Air Mobility",
+      "url": "https://www.faa.gov/air-taxis",
+      "path": "app/src/content/sources/source-faa-aam.json",
+      "sha256": "774f47c8760734c6a9c748e689df6d5e79a07e8f12f6a78dde9185c03023ad2e"
+    },
+    {
+      "id": "source-faa-powered-lift-final-rule-2024",
+      "name": "FAA Powered-Lift Pilot Certification and Operations Final Rule",
+      "url": "https://www.faa.gov/newsroom/integration-powered-lift-pilot-certification-and-operations-miscellaneous-amendments",
+      "path": "app/src/content/sources/source-faa-powered-lift-final-rule-2024.json",
+      "sha256": "b74dd7432e4a96d4322e305ec78723f94b3020591e0c3e33b78c23b7c6b0f8c8"
+    },
+    {
+      "id": "source-55z-bts-air-travel-consumer-report-2024",
+      "name": "BTS Air Travel Consumer Report: Full Year 2024",
+      "url": "https://www.bts.gov/newsroom/air-travel-consumer-report-december-2024-full-year-2024-numbers",
+      "path": "app/src/content/sources/source-55z-bts-air-travel-consumer-report-2024.json",
+      "sha256": "54fc6b77034436e84f8380347eba818c0595d432f14d11aac1f8247b52b26751"
+    },
+    {
+      "id": "source-55z-bts-airline-on-time-tables-2025",
+      "name": "BTS Annual Airline On-Time Tables Through 2025",
+      "url": "https://www.bts.gov/topics/airline-time-tables",
+      "path": "app/src/content/sources/source-55z-bts-airline-on-time-tables-2025.json",
+      "sha256": "172724bff3e83fe994a2cad91ae8af019b0de770eebe3250321a52631aaeb3e3"
+    }
+  ],
+  "integration_state": "Complete local reader texts accepted for the next application batch; not yet integrated and not counted among the four current translated reading pages.",
+  "boundary": "AI linguistic-fidelity review of dated English content only. No independent human review, fresh fact-check, accessibility certification, measurement admission or publication authorization. Carry applicable later exact-source context separately during integration."
+}

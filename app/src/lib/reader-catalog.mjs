@@ -7,6 +7,7 @@ import editions from '../data/phase-202-accessible-multilingual-low-bandwidth-ed
 import report from '../data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
 import {translatedReaders} from './translated-readers.mjs';
 import montanaDossiers from '../data/montana-project-dossiers.json' with {type:'json'};
+import localityDossiers from '../data/locality-dossiers.json' with {type:'json'};
 import {annualCaseReviewForId, annualReviewDate, annualCaseOverview, annualCaseTitle} from './annual-case-reviews.mjs';
 const paths=new Map();
 const editionModes=new Map(editions.edition_contracts.map(r=>[r.edition_contract_id,r.edition_mode]));
@@ -21,6 +22,7 @@ const visit=value=>{
 export const readerCatalog=[
   ...montanaDossiers.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:'Project',route:r.route,date:r.authored_date,status:r.review_state,identity_names:['Montana',r.record_id,r.source_name,r.source_identity.legal_name,r.source_identity.uei]})),
   ...translatedReaders.map(r=>({id:r.record_id,title:r.title,summary:r.overview,kind:'Translation',route:r.route,date:r.ai_review_date,status:r.review_state,language:r.locale,language_names:[r.ui.language,r.locale==='fr-CA'?'Canadian French':'Latin American Spanish']})),
+  ...localityDossiers.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:'Place',route:r.route,date:r.ai_review_date,status:r.review_state,identity_names:[r.record_id,r.scope,...r.aliases]})),
   ...current.records.map(r=>({id:r.record_id,title:r.title,summary:r.answer,kind:r.kind,route:r.route,date:r.updated_date??r.authored_date,status:r.review_status,...(r.identity_evidence?{identity_names:[r.identity_evidence.candidate_name,...r.identity_evidence.aliases,...(r.identity_evidence.identifier?[r.identity_evidence.identifier]:[])]}:{})})),
   ...readers.records.map(r=>({id:r.record_id,title:annualCaseTitle(r,{route:paths.get(r.record_id)}),summary:annualCaseOverview(r,{route:paths.get(r.record_id)}),kind:editionModes.get(r.record_id)==='Low-bandwidth HTML edition'?'Compact':r.record_id.startsWith('202-')?'Plain English':r.record_id.startsWith('200-')?'Essay':'Report',route:paths.get(r.record_id),date:annualCaseReviewForId(r.record_id)?annualReviewDate(annualCaseReviewForId(r.record_id)):r.authored_date,status:r.review_status})),
 ];

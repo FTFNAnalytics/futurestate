@@ -5,6 +5,7 @@ import readerEdition from '../../data/phase-204-reader-completion.json';
 import {translatedReaders} from '../../lib/translated-readers.mjs';
 import {annualCaseTitle, annualCaseOverview} from '../../lib/annual-case-reviews.mjs';
 import {placeIdentityTitle, placeIdentityNotes, placeIdentityFollowups} from '../../lib/place-identity-reviews.mjs';
+import {localityDossierFor,localityDossiers} from '../../lib/locality-dossiers.mjs';
 
 interface Props {
   registry: any;
@@ -21,7 +22,7 @@ const readerFor = (item: any) => {
   return article ? {...article, title:annualCaseTitle(article, {route:item.route}), overview:annualCaseOverview(article, {route:item.route})} : null;
 };
 const readerCount = items.filter(item => readerFor(item)).length;
-const itemTitle = (item: any) => placeIdentityTitle(item) ?? item.title ?? item.requirement ?? item.label ?? item.question ?? item.institution_name ?? item.project_name ?? item.place_name ?? itemId(item);
+const itemTitle = (item: any) => localityDossierFor(item)?.title ?? placeIdentityTitle(item) ?? item.title ?? item.requirement ?? item.label ?? item.question ?? item.institution_name ?? item.project_name ?? item.place_name ?? itemId(item);
 const itemState = (item: any) => item.state ?? item.verdict ?? item.decision_state ?? item.decision_status ?? item.release_state ?? item.audit_state ?? item.candidate_state ?? item.disposition_state ?? item.review_result ?? item.compatibility_decision ?? item.preservation_state ?? item.operation_state ?? item.board_state ?? item.matrix_state ?? item.packet_state ?? item.dossier_state ?? item.brief_state ?? item.runbook_state ?? item.baseline_packet_state ?? item.guide_state ?? item.report_state ?? item.map_state ?? item.triage_state ?? item.content_readiness ?? item.rereview_verdict ?? item.mission_decision_state ?? item.desk_state ?? item.resource_state ?? item.mission_state ?? item.edition_state ?? (Object.hasOwn(item, "current_stage") ? item.current_stage ?? "Stage not established" : null) ?? item.review_state ?? item.profile_state ?? item.identity_state ?? item.outcome_state ?? item.answer_state ?? item.case_kind ?? item.record_kind ?? item.build_status ?? "Published record";
 const itemSummary = (item: any) => item.summary ?? item.current_read ?? item.question ?? item.thesis ?? item.purpose ?? item.focus ?? item.orientation ?? item.reader_bridge ?? item.reader_brief ?? item.conversion_question ?? item.rationale ?? item.evidence_identity ?? item.comparable_claim ?? item.prohibited_comparison ?? item.evidence_note ?? item.reason ?? item.readiness_basis ?? item.open_boundary ?? item.unresolved_boundary ?? item.unresolved_bridge ?? item.decisive_next_action ?? item.exact_next_artifact ?? item.next_artifact ?? item.next_action ?? item.next_record ?? item.check_result ?? item.interpretation_boundary ?? item.boundary ?? "Inspect the complete record below for its evidence and publication boundary.";
 const itemRoute = (item: any) => item.route && !item.route.includes("#") ? item.route : null;
@@ -30,6 +31,7 @@ const readable = (key: string) => key.replaceAll("_", " ").replace(/\b\w/g, (let
 const summaryKeys = new Set(["slug", "title", "route", "summary", "current_read", "question", "thesis", "purpose", "focus", "orientation", "reader_brief", "conversion_question", "rationale", "evidence_identity", "comparable_claim", "prohibited_comparison", "evidence_note", "reason", "readiness_basis", "open_boundary", "unresolved_boundary", "unresolved_bridge", "decisive_next_action", "exact_next_artifact", "next_artifact", "next_action", "next_record", "check_result", "interpretation_boundary", "boundary"]);
 const detailEntries = (item: any) => Object.entries(item).filter(([key]) => !summaryKeys.has(key));
 const summaryPreview = (item: any) => {
+  const locality=localityDossierFor(item);if(locality)return locality.answer;
   const value = String(itemSummary(item));
   if (value.length <= 720) return value;
   return `${value.slice(0, 716).replace(/\s+\S*$/, "").trimEnd()}…`;
@@ -45,6 +47,8 @@ const external = (href: string) => /^https?:\/\//.test(href);
 ---
 
 <ReviewHeader eyebrow={`${release} public intelligence program`} title={registry.title} summary={registry.summary} phase={phase} />
+
+{items.some(item=>localityDossierFor(item))&&<section class="page-section prose-page" data-locality-hub><h2>Ten complete locality readings</h2><p>The {localityDossiers.authored_date} AI-reviewed articles lead on the ten existing place routes. Their original records and source checks remain inspectable history. This completes the ten locality accounts, not the wider 70-place target or an operating-outcome review. No additional identities are counted.</p><p><a href="/atlas/places/">Browse the Place Atlas</a></p></section>}
 
 {phase===202&&Astro.url.pathname.startsWith('/reference/')&&<section class="page-section prose-page" data-translation-hub><h2>AI-reviewed translations</h2><p>{translatedReaders.length} of 34 translation contracts now have complete local reading editions. The remaining contracts still need translated text and AI fidelity review, not human approval. The September 1 contracts below remain historical provenance.</p><ul>{translatedReaders.map(r=><li><a href={r.route} lang={r.locale} hreflang={r.locale}>{r.ui.language}: {r.title}</a></li>)}</ul></section>}
 
@@ -74,8 +78,8 @@ const external = (href: string) => /^https?:\/\//.test(href);
   <div class="section-heading"><div><div class="eyebrow">Phase {phase} record set</div><h2>{items.length.toLocaleString()} inspectable records.</h2><p>IDs, upstream joins, evidence states, open boundaries, and next actions stay attached to each record.</p></div></div>
   <div class="signal-grid">
     {items.map((item) => (
-      <article class="record-card" id={item.slug ?? String(itemId(item)).toLowerCase()}>
-        <div class="meta-row"><MetaPill label={String(itemId(item))} /><MetaPill label={readerFor(item) ? 'Reader draft · review pending' : String(itemState(item))} tone="review" /></div>
+      <article class="record-card" id={item.slug ?? String(itemId(item)).toLowerCase()} data-locality-card={localityDossierFor(item)?.record_id}>
+        <div class="meta-row"><MetaPill label={String(itemId(item))} /><MetaPill label={localityDossierFor(item)?.review_state ?? (readerFor(item) ? 'Reader draft · review pending' : String(itemState(item)))} tone="review" /></div>
         <h3>{itemRoute(item) ? <a href={itemRoute(item)}>{readerFor(item)?.title ?? itemTitle(item)}</a> : itemTitle(item)}</h3>
         <p>{readerFor(item)?.overview ?? summaryPreview(item)}</p>
         {placeIdentityNotes(item).length > 0 && <p data-place-identity-card={String(itemId(item))}>September 22 location check: {placeIdentityNotes(item).find(n => n.record_id === itemId(item))?.finding ?? 'Related place notes distinguish project locations from geographic boundaries. Read the dated notes before using this comparison.'}</p>}

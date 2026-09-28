@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Chips and compute translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-017",
+  "source_record_sha256": "164c0c0674fc6ea10884f2b518021bbd92dde7ee7c697dc02bbd03f4639d5dc8",
+  "source_to_contract_mapping": "Translate the later September 10 plain-language reader; preserve the original canonical-contract digest and source list as historical provenance.",
+  "checks": [
+    "Compared the complete English overview and all six sections with both complete translations.",
+    "Preserved semiconductor-fab output versus data-center service and installed equipment versus qualified and customer-accepted output.",
+    "Kept Phoenix planning, construction, apprenticeship and wastewater-agreement milestones distinct from complete dependencies and commissioned production.",
+    "Preserved Northern Virginia tariff categories, cost responsibilities and regional demand without assigning them to a connected campus customer.",
+    "Retained actual provider, acceptance criteria, date and shared operating boundaries for power, water and workforce evidence.",
+    "Preserved uptime as availability under a stated definition and yield as the share of production meeting specification.",
+    "Retained attribution of company claims and the distinction from independent verification, alongside outages, rejections, revisions and scope changes.",
+    "Preserved the September 1 evidence cutoff and September 10 English authorship date; September 27 is the actual AI translation-review date.",
+    "Preserved all nine original source IDs and exact URLs. These links do not claim current retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Rendement de fabrication is explicitly defined as the share meeting specifications, not investment return. Disponibilité retains its time definition. Production qualifiée, acceptation des clients and measured resource records stay distinct."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Rendimiento de fabricación is explicitly defined by specification compliance; calificación and aceptación are not interchangeable. Tiempo de disponibilidad, costos and alcance remain separate. Regional context is not translated into a campus-level operating result."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/chips-and-compute-fr-CA-ai-reviewed.md",
+      "file_sha256": "2fcbc629b9745c04e6fe7520abb6df9ed671a6ce078cfef01e9df27d0cb903ca",
+      "proposed_contract_id": "202-EDITION-019",
+      "historical_contract_sha256": "d3cb68fc3fda1681b82ef509b942ee9429940989eb770b65dba417a1084d64e7"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/chips-and-compute-es-419-ai-reviewed.md",
+      "file_sha256": "85232fd2c5aacde31a48408060fc2d92897f02411bd2fbb1745031cb1addf32f",
+      "proposed_contract_id": "202-EDITION-020",
+      "historical_contract_sha256": "9e124a8047900d06a122fd4c77d26228e9183c3a112f4b2c5f75c0bbe78bb9ad"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-phoenix-tsmc-fab3-topping-out-2026",
+      "name": "Phoenix TSMC Fab 3 Topping-Out Milestone",
+      "url": "https://www.phoenix.gov/newsroom/mayors-office-news/mayor-gallego-celebrates-tsmc-s-fab-3-at-topping-out-ceremony.html",
+      "path": "app/src/content/sources/source-phoenix-tsmc-fab3-topping-out-2026.json",
+      "sha256": "fa644e76bbbbf798d3fed155917fb10f4a64d8c6722747fc7da9397c086dca57"
+    },
+    {
+      "id": "source-phoenix-north-3500-pud-2026",
+      "name": "City of Phoenix North Phoenix 3,500 PUD Narrative, Case Z-37-20-1",
+      "url": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/planning-zoning-pud/z-37-20n.pdf",
+      "path": "app/src/content/sources/source-phoenix-north-3500-pud-2026.json",
+      "sha256": "6b2764dd7bb0e801fe927a3f7d4b6c46a313812baafc13f740052a887530b17d"
+    },
+    {
+      "id": "source-aca-tsmc-registered-technician-apprenticeship-2024",
+      "name": "Arizona Commerce Authority TSMC Registered Technician Apprenticeship Expansion",
+      "url": "https://www.azcommerce.com/news-events/news/2024/11/tsmc-arizona-joined-by-governor-hobbs-to-announce-expansion-of-registered-technician-apprenticeship-program/",
+      "path": "app/src/content/sources/source-aca-tsmc-registered-technician-apprenticeship-2024.json",
+      "sha256": "64caa5e919c9b8141288e58703ff1a9a15f6406aad5caf7af0aa5d4b21bf253b"
+    },
+    {
+      "id": "source-phoenix-tsmc-2026-wastewater-development-agreement",
+      "name": "Phoenix City Council May 2026 TSMC Wastewater Facilities Development Agreement",
+      "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Agenda-FINAL.pdf",
+      "path": "app/src/content/sources/source-phoenix-tsmc-2026-wastewater-development-agreement.json",
+      "sha256": "1e9efdd4751e4be9721b6c808c03b7300f5c8121b2bc88c32ee32c53c00fc7b7"
+    },
+    {
+      "id": "source-virginia-jlarc-data-centers-2024",
+      "name": "Virginia JLARC Data Centers in Virginia Report",
+      "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+      "path": "app/src/content/sources/source-virginia-jlarc-data-centers-2024.json",
+      "sha256": "4e15e4fbe8739fb3d9863f29352a098bcca6d2216380848ad9bef19d9971631e"
+    },
+    {
+      "id": "source-virginia-scc-large-load-gs5-2025",
+      "name": "Virginia SCC Dominion GS-5 Large General Service Rate Decision",
+      "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+      "path": "app/src/content/sources/source-virginia-scc-large-load-gs5-2025.json",
+      "sha256": "ca5bec3860d3c250280fd3c23e019f2ef18a599c3cf3ad73b7c9d85835c61702"
+    },
+    {
+      "id": "source-virginia-scc-golden-mars-2026",
+      "name": "Virginia SCC Golden-Mars Transmission Project Decision",
+      "url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+      "path": "app/src/content/sources/source-virginia-scc-golden-mars-2026.json",
+      "sha256": "39d212e89e33fcdd0e712a6cee08b4af33432373b0bf39b65bc622fb4c78a592"
+    },
+    {
+      "id": "source-virginia-deq-data-center-air-permits",
+      "name": "Virginia DEQ Issued Air Permits For Data Centers",
+      "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+      "path": "app/src/content/sources/source-virginia-deq-data-center-air-permits.json",
+      "sha256": "5a488e29a8ca2b64ca333f3b9848fdc402d30d60f299e24d660d6a1193d89d8d"
+    },
+    {
+      "id": "source-phoenix-tsmc-july-2026-fab-update",
+      "name": "City of Phoenix July 2026 TSMC Arizona Fab Update",
+      "url": "https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html",
+      "path": "app/src/content/sources/source-phoenix-tsmc-july-2026-fab-update.json",
+      "sha256": "39801ad3cc86919e24aca36a9e01a7b7d5eacb5380cf12602f577c10acf5fd82"
+    }
+  ],
+  "integration_state": "Complete local reader texts accepted for the next application batch; not yet integrated and not counted among the four current translated reading pages.",
+  "boundary": "AI linguistic-fidelity review of dated English content only. No independent human review, fresh fact-check, accessibility certification, measurement admission or publication authorization. Carry applicable later exact-source context separately during integration."
+}
