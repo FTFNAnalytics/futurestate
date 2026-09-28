@@ -35,7 +35,7 @@ const anchor=(index:number)=>`${article.record_id.toLowerCase()}-section-${index
     <nav aria-label={ui.contents}><ul>{article.sections.map((section,index)=><li><a href={`#${anchor(index)}`}>{section.heading}</a></li>)}<li><a href="#translation-sources">{ui.sources}</a></li></ul></nav>
     {article.sections.map((section,index)=><section><h2 id={anchor(index)} tabindex="-1">{section.heading}</h2>{section.paragraphs.map(paragraph=><p>{paragraph}</p>)}</section>)}
     <section><h2 id="translation-sources" tabindex="-1">{ui.sources}</h2><p>{ui.sourceBoundary}</p>
-      <ul>{article.sources.map(source=><li data-reader-source={source.id}><a href={source.url}>{source.label}</a> · <a href={`/atlas/sources/${source.id}/`}>{ui.sourceNotes}</a></li>)}</ul>
+      <ul>{article.sources.map(source=><li data-reader-source={source.id}><a href={source.url} lang={'language' in source?String(source.language):article.locale}>{source.label}</a> · <a href={`/atlas/sources/${source.id}/`}>{ui.sourceNotes}</a></li>)}</ul>
     </section>
     <details><summary>{ui.contract}</summary><p>{ui.contractBoundary}</p><p><a href={article.historical_contract.route} hreflang="en">{article.record_id} · {ui.contract}</a></p><p lang="en">Translated English record: <code>{article.source_record_id}</code>. SHA-256: <code>{article.source_record_sha256}</code>. Preserved canonical-contract digest: <code>{article.historical_contract.canonical_content_digest}</code>.</p></details>
     <p><a href="/reference/accessible-editions/" hreflang="en">{ui.back}</a> · <a href="/data/build-decisions.json">{ui.export}</a></p>

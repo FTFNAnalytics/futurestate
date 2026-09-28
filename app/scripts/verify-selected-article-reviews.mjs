@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {parse} from 'parse5';
+import data from '../src/data/selected-article-ai-reviews.json' with {type:'json'};
+import corpus from '../src/data/phase-205-216-current-editorial.json' with {type:'json'};
+import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import {selectedReviewDate,selectedReviewStatus} from '../src/lib/selected-article-reviews.mjs';
+const read=route=>readFile(new URL(`../dist${route}`,import.meta.url),'utf8');
+const attr=(n,k)=>n.attrs?.find(a=>a.name===k)?.value;
+const all=(n,test)=>[...(test(n)?[n]:[]),...(n.childNodes??[]).flatMap(c=>all(c,test))];
+const text=n=>n.nodeName==='#text'?n.value:(n.childNodes??[]).map(text).join('');
+const visibleWithoutHistory=n=>attr(n,'data-prior-editorial-review')!==undefined?'':n.nodeName==='#text'?n.value:(n.childNodes??[]).map(visibleWithoutHistory).join('');
+assert.deepEqual(JSON.parse(await read('/data/build-decisions.json')).selected_article_reviews,data);
+assert.deepEqual(JSON.parse(await read('/data/current-editorial.json')),corpus);
+const method=await read('/method/editorial-review/index.html'),sitemap=await read('/sitemap.xml');
+for(const r of data.records){
+ const a=corpus.records.find(a=>a.record_id===r.record_id),html=await read(`${r.route}index.html`),dom=parse(html);
+ const notices=all(dom,n=>attr(n,'data-selected-ai-review')===r.record_id);assert.equal(notices.length,1);
+ const article=all(dom,n=>attr(n,'data-current-research')===r.record_id)[0],body=text(article),current=visibleWithoutHistory(article);
+ assert.equal(attr(notices[0],'data-review-sha256'),r.sha256);
+ for(const value of [r.decision,r.rationale,r.source_record_sha256,...r.findings.flatMap(f=>[f.location,f.disposition,f.finding])])assert(body.includes(value),`${r.record_id}: missing decision text`);
+ const histories=all(article,n=>attr(n,'data-prior-editorial-review')!==undefined);assert.equal(histories.length,1);assert.equal(histories[0].tagName,'details');assert(text(histories[0]).includes(a.review_status));assert(!current.includes(a.review_status));
+ assert(current.includes(selectedReviewStatus));assert(current.includes(`AI reviewed ${selectedReviewDate}`));
+ assert(!current.includes('Independent editorial/subject acceptance is pending.'));
+ for(const value of [a.answer,a.source_check_boundary,...a.sections.flatMap(s=>[s.heading,s.text,...(s.paragraphs??[]).map(p=>p.text)]),...(a.source_notes??[]).flatMap(n=>[n.locator,n.scope,n.access,n.checked_date])])assert(body.includes(value),`${r.record_id}: original article truncated`);
+ const links=all(article,n=>n.tagName==='a').map(n=>attr(n,'href'));for(const s of a.sources)assert(links.includes(s.url));assert(links.includes('/data/build-decisions.json'));
+ assert.equal(all(dom,n=>n.tagName==='h1').length,1);const ids=all(dom,n=>attr(n,'id')!==undefined).map(n=>attr(n,'id'));assert.equal(ids.length,new Set(ids).size);
+ assert(method.includes(`href="${r.route}#${r.record_id}-ai-review"`));
+ assert(sitemap.includes(`<loc>https://ftfn.io${r.route}</loc>\n    <lastmod>${selectedReviewDate}</lastmod>`));
+ const page=Math.floor(readerCatalog.findIndex(c=>c.id===r.record_id)/40)+1,cards=parse(await read(`/reference/explore/${page}/index.html`));
+ const card=all(cards,n=>n.tagName==='article'&&all(n,x=>x.tagName==='a'&&attr(x,'href')===r.route).length===1)[0];assert(card);assert(text(card).includes(selectedReviewStatus));assert(!text(card).includes(a.review_status));
+ assert(Buffer.byteLength(html)<160000,`${r.record_id}: reader too large`);
+}
+for(const a of corpus.records.filter(a=>!data.records.some(r=>r.record_id===a.record_id)))assert(!(await read(`${a.route}index.html`)).includes('data-selected-ai-review='));
+console.log('Selected-article production passed: four exact current AI decisions, all original narratives/source notes and dated review history, 29 unreviewed readers unchanged, catalog dates/statuses, anchored method links, sitemap dates and exact exports. No browser/human assessment claimed.');

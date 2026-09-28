@@ -48,6 +48,21 @@ export const normalizeV1refAggregate = (aggregate) => ({
 });
 
 const integrationFiles = [
+  'src/data/selected-article-ai-reviews.json',
+  'src/lib/selected-article-reviews.mjs',
+  'scripts/assert-selected-article-reviews.mjs',
+  'scripts/verify-selected-article-reviews.mjs',
+  'src/content/updates/2026-09-27-translations-selected-review.json',
+  '../docs/selected-article-ai-review-2026-09-27.json',
+  '../docs/release-reviews/2026-09-22/translation-pilots/ai-for-science-ai-review-2026-09-27.json',
+  '../docs/release-reviews/2026-09-22/translation-pilots/ai-for-science-fr-CA-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/ai-for-science-es-419-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/aviation-ai-review-2026-09-27.json',
+  '../docs/release-reviews/2026-09-22/translation-pilots/aviation-fr-CA-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/aviation-es-419-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/chips-and-compute-ai-review-2026-09-27.json',
+  '../docs/release-reviews/2026-09-22/translation-pilots/chips-and-compute-fr-CA-ai-reviewed.md',
+  '../docs/release-reviews/2026-09-22/translation-pilots/chips-and-compute-es-419-ai-reviewed.md',
   'src/data/locality-dossiers.json',
   'src/lib/locality-dossiers.mjs',
   'src/components/review/LocalityArticle.astro',

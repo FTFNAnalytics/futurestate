@@ -5,17 +5,26 @@ import {getShelfCatalog} from '../../lib/shelf-catalog';
 import operations from '../../data/phase-207-current-operations.json';
 import ledger from '../../data/phase-206-editorial-classification.json';
 import adjudications from '../../data/owner-authorized-adjudications.json';
+import reviews from '../../data/selected-article-ai-reviews.json';
+import {translatedReaders} from '../../lib/translated-readers.mjs';
 const {classification}=await getShelfCatalog();
 ---
 <BaseLayout title="Editorial classification review | FTFN">
   <section class="page-section" data-review-policy={adjudications.policy_id}>
+    <h1 class="page-title">Editorial review and decisions</h1>
     <h2>Owner-authorized AI review · {adjudications.decision_date}</h2>
     <p>The owner has authorized Codex to make editorial, eligibility, backlog and language determinations. Human sign-off is not a build prerequisite. Each determination identifies its evidence and limits; historical human-review fields are not rewritten as approvals.</p>
     <p>This does not authorize publication, claim a human reader study, or create missing operating measurements. <a href="/data/current-operations.json">Review policy, research receipts and backlog decisions</a>.</p>
-    <p><a href="/method/portfolio-decisions/">103 portfolio identity and counting determinations</a> · <a href="/atlas/projects/">Five new Montana project dossiers</a>. French uses fr-CA; Spanish uses es-419. Later plain-language reader text is the translation source; exact translated texts still need completion and AI review.</p>
+    <p><a href="/method/portfolio-decisions/">103 portfolio identity and counting determinations</a> · <a href="/atlas/projects/montana-bead/">32 Montana project dossiers</a>. French uses fr-CA; Spanish uses es-419. <a href="/reference/accessible-editions/">{translatedReaders.length} of 34 complete translated readings</a> use the later plain-language English text; the remaining texts still need completion and AI review.</p>
+  </section>
+  <section class="page-section" data-selected-review-index>
+    <h2>{reviews.reviewed_articles} of {reviews.selected_article_target} selected articles assessed by AI</h2>
+    <p>These exact-version decisions were made {reviews.decision_date}. {reviews.remaining_selected_articles} selected articles and the 58 annual assessments remain. A decision accepts a bounded editorial treatment, not every linked claim or a newly verified operating result. Earlier human-review fields remain history.</p>
+    <ul>{reviews.records.map(r=><li><a href={`${r.route}#${r.record_id}-ai-review`}>{r.title}</a> — {r.decision}</li>)}</ul>
+    <p><a href="/data/build-decisions.json">Exact decisions, located findings and input hashes</a></p>
   </section>
   <section class="page-section">
-    <h1 class="page-title">Internal tests are not external operating results.</h1>
+    <h2>Internal tests are not external operating results.</h2>
     <p class="lede">{ledger.individually_reviewed} individual classifications are recorded, including {ledger.corrected_presentations} corrected presentations. {ledger.remaining_individual_reviews > 0 ? `Another ${ledger.remaining_original_cohort_reviews} original candidates and ${ledger.remaining_additional_cohort_reviews} additional workflow-origin records require individual review.` : 'All screened signal records now have individual classifications. Briefing/research-document review and production acceptance remain open.'} All {ledger.records.length} current-feed exclusions remain.</p>
     <p>Classification is not a fresh external-source check or independent approval. Historical publication states and indexed URLs remain preserved. A source edit invalidates its pinned classification input and requires re-review before regeneration.</p>
     <p><a href="/data/editorial-classification.json">Download every disposition, original title, source hash and review state</a></p>

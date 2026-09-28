@@ -1,0 +1,599 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI editorial reviewer; not independent and not claiming professional credentials)",
+  "human_review_required": false,
+  "human_review_claimed": false,
+  "fresh_external_source_check": false,
+  "review_scope": "Actual review of all ten complete question records: answers, details, all 30 sections, sources, source notes when present and the identified retained findings. No new external retrieval, PDF rendering, scientific/data reproduction, legal certification or approval of the wider reachable corpus.",
+  "reviewed_articles": 10,
+  "previous_selected_assessments": 4,
+  "total_distinct_selected_assessments": 14,
+  "selected_article_target": 33,
+  "remaining_selected_articles": 19,
+  "application_projection_integrated": false,
+  "records": [
+    {
+      "record_id": "195-BRIEF-021",
+      "route": "/reference/questions/climate--116-q-021/",
+      "title": "What climate conditions constrain a named infrastructure decision?",
+      "decision": "Accept dated exposure explanation; reject facility-loss and entitlement inference",
+      "rationale": "The complete answer and three sections distinguish regional climate assessments from a named infrastructure outcome. The source notes preserve calendar 2025, August 2026, summer 2026 and the rolling September 15 reservoir update as different periods. The quantities are explicitly not a reconciled balance. This is an acceptable dated guide to what the source set can establish, not a new local exposure, rights or causal-loss assessment.",
+      "findings": [
+        {
+          "location": "Answer and source indices 0–1",
+          "disposition": "Accept period-specific regional context",
+          "finding": "Retain the annual, monthly, seasonal and drought-snapshot distinctions. A regional assessment alone does not demonstrate failure at a particular asset."
+        },
+        {
+          "location": "Evidence section and source index 2",
+          "disposition": "Qualify stocks, flows and source versions",
+          "finding": "Keep 1 thousand acre-feet of monthly unregulated inflow, 481 thousand acre-feet of monthly releases and 5.14 million acre-feet of closing storage in their attributed August account. Do not add or divide them as a complete balance, customer delivery or entitlement. The prior July snapshot remains history."
+        },
+        {
+          "location": "Next artifact and scope",
+          "disposition": "Accept asset-specific evidence requirement",
+          "finding": "A named asset, its operating limits, matched local exposure and a dated service record are needed before moving from climate context to a project conclusion. No new external check or quantitative reproduction occurred in this editorial assessment."
+        }
+      ],
+      "source_record_sha256": "7665a9df5ab426cef147074c91012df3ae28103ac81d0b57a5fe7d830912a216",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "d30f16bc57aa764c80c18880f1442ae078e97b37e86d835900bfc40f193fe5aa"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "1d09e8b7b8de2cf77fcfde4b12a193c7958d168a0945e10a6edc809d0e657575"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "cb774554076c9147a4635125f65015d3edae15479c974dd9242643c060e39af5",
+      "source_notes_absent": false,
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "bcb16ce6c3e78dce629cf49a2996cabb55e0177a1fafd882978ab0b6bacec7e5"
+    },
+    {
+      "record_id": "195-BRIEF-006",
+      "route": "/reference/questions/agriculture-and-bioeconomy--116-q-006/",
+      "title": "Has genome-edited livestock moved beyond a controlled trial?",
+      "decision": "Accept distinction between regulatory decisions and commercial field outcomes",
+      "rationale": "The complete answer and three sections correctly distinguish the specified pig alteration approval from the lineage-limited PRLR-SLICK enforcement-discretion decision. Genotype, day-21 endpoint, KS06 exception and excluded uninfected-control challenge remain material. The text does not convert regulatory action into commercial uptake or measured farm benefit. Its retained selected-page visual inspection is not a new inspection or full study replication by this review.",
+      "findings": [
+        {
+          "location": "Evidence section; NADA 141-609",
+          "disposition": "Accept genotype and trial limitations",
+          "finding": "Keep deletion of CD163 exon 7, two-copy indication, day-21 endpoint, KS06 exception and the Table VIII.4 exclusion. The published aggregate cannot be treated as an unrestricted trial pool."
+        },
+        {
+          "location": "Evidence section; V-006378 and announcement",
+          "disposition": "Accept different decision and lineage scope",
+          "finding": "Enforcement discretion is not approval; the two reviewed cattle and their progeny are not an unlimited commercial population. The announcement is not another independent field experiment."
+        },
+        {
+          "location": "Answer, next artifact and review boundary",
+          "disposition": "Qualify commercial inference",
+          "finding": "Require an actual commercial cohort, management/exposure context, comparator and adverse-outcome record before discussing repeated benefit or adoption. This is not food, treatment, purchasing or legal guidance."
+        }
+      ],
+      "source_record_sha256": "30ee05b144f1efb238ab7c808a4099361eb732e799f12dc67a80455094f9983a",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "bad3eee7bd665cbd63e9b86811f921ef91313f3d5818001560c40c76df8148ca"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "7d546985dfdf2e6e97398e9055e9570e5614c50175852b11f859f61ca94284d8"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "75f70f68c809c63ff978a0749bdecde72314bc49e26c94c48cb09a8483328de6",
+      "source_notes_absent": false,
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "1364e15b112f55a6c937d491407a072279d7a1f194cd652ec61dbbf291018265"
+    },
+    {
+      "record_id": "195-BRIEF-033",
+      "route": "/reference/questions/discovery-technologies--116-q-033/",
+      "title": "What does a discovery instrument’s milestone establish?",
+      "decision": "Accept three separated, versioned capability milestones",
+      "rationale": "The complete answer and three sections keep Rubin imagery, GWTC-3 candidate selection and DSS-23 communications in distinct evidentiary roles. Source dates and observation windows are explicit, and the language does not upgrade a historical milestone into current survey coverage, threshold-free discovery or independently measured network availability. This assessment accepts that bounded explanation without reproducing images, strain data or operating records.",
+      "findings": [
+        {
+          "location": "Rubin source and evidence paragraph",
+          "disposition": "Accept historical milestone only",
+          "finding": "The June 23, 2025 First Look and just-over-ten-hour test interval do not establish the complete September 2026 survey state. Keep commissioning language attached to that release."
+        },
+        {
+          "location": "LIGO-P2000318-v11",
+          "disposition": "Accept selection-dependent catalog account",
+          "finding": "Retain O3b November 1, 2019–March 27, 2020 and astrophysical probability above 0.5. A versioned candidate set is not the latest total or a selection-free rate; linked paper/data were not reproduced."
+        },
+        {
+          "location": "NASA DSS-23 and next artifacts",
+          "disposition": "Accept chronology, reject scientific transfer",
+          "finding": "May–July testing, August 3 reported operations and August 25 publication are distinct. A communications milestone does not validate telescope calibration or catalog conclusions."
+        }
+      ],
+      "source_record_sha256": "b54666ae3e473d5121efb86321e96237eb5412289ebe95eff1099845c47259c2",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "ac047e062a435529e5bd62472d7f3a7576fd886c2d47b28cbea82265661b1913"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "f36500260894bdf6d0102ee46b863f8c4d870ba0942a4c89cabde627fc471d41"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "24efdcd0b6e64bf79d64881a09e1b0dce831cf6a4030d58b33780094aebee3c8",
+      "source_notes_absent": false,
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "9374f1115a72a183d3139e18d58da3c44f07c4a3c2f599f0fb8eb382f79ff1fc"
+    },
+    {
+      "record_id": "195-BRIEF-017",
+      "route": "/reference/questions/chips-and-compute--116-q-017/",
+      "title": "Which TSMC Arizona stages are supported?",
+      "decision": "Accept bounded Arizona stage answer; no downstream operating admission",
+      "rationale": "The complete short answer preserves the city/company attribution, exact adopted Item 73 and the distinction between authorization and accepted utility works. It also avoids treating the July source as a fresh certification of Fab 3. This separate question has now received its own assessment; approval is not transferred from the longer project article. The retained September 22 receipt remains the evidence input.",
+      "findings": [
+        {
+          "location": "Answer and July source",
+          "disposition": "Accept attributed fab-stage account",
+          "finding": "Keep Fab 1 production and Fab 2 construction attributed to Phoenix relaying the company account. Do not imply an independent production audit or a refreshed Fab 3 finding."
+        },
+        {
+          "location": "Item 73 and evidence section",
+          "disposition": "Accept adoption; qualify downstream result",
+          "finding": "May 20 Council results page 8 supports adoption. Conditional capacity is not actual flow or asset acceptance. No Material Change concerns the bounded downstream search, not missing authorization or universal nonexistence."
+        },
+        {
+          "location": "Next artifact and dates",
+          "disposition": "Keep separate appointments",
+          "finding": "October 9 cycle review and November 21 appointment remain different. Neither is a forecast that a utility-acceptance record will exist."
+        }
+      ],
+      "source_record_sha256": "0d7ae7b3f913d72d9c67a79e1021139e6ba63bd197e9bf751d591a5ec799f4eb",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "a949b282fa36803f86bd0d46e5af41e3603f8a32b1fc60ffcac5dec11dc3dd2a"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "fe638c766a3181bf4aa277e0847a7061516ff3bba2241d5b0875797a814a3f7a"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": null,
+      "source_notes_absent": true,
+      "receipt_inputs": [
+        {
+          "path": "app/src/data/phase-60-current-decisions.json",
+          "receipt_id": "receipt-60-arizona-2026-09-22-no-material-change",
+          "sha256": "c2a5d96b203d5de5f0f3bfbecf1aea02fb40c33f391ecfe0572f7afc8013dd05",
+          "reviewed_scope": "Retained bounded findings, evidence limits and identified source-check findings; not the entire propagation inventory or a new external inspection."
+        }
+      ],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "fbe1d95617777667e4c2fdcb799c779e388a1ac19248b602df7de16e77228dc6"
+    },
+    {
+      "record_id": "195-BRIEF-053",
+      "route": "/reference/questions/policy-and-standards--116-q-053/",
+      "title": "What does Toronto file 24 254930 permit us to conclude?",
+      "decision": "Accept source-status answer with unresolved portal conflicts and search limits",
+      "rationale": "The complete answer and three sections distinguish Council adoption, withheld instruments, compliance and permits, while preserving the unreconciled portal date/design descriptions. A bounded unsuccessful search does not become a no-permit conclusion. This is an separately assessed question record, not an independent human review, legal opinion or transferred approval from the project article.",
+      "findings": [
+        {
+          "location": "Answer",
+          "disposition": "Accept bounded receipt result",
+          "finding": "The September 21 receipt supports the described application-portal and eight exact-address checks; those checks did not provide the qualifying artifact within their scope."
+        },
+        {
+          "location": "Evidence section",
+          "disposition": "Retain conflicts, reject nearby-permit substitution",
+          "finding": "Drafts, a Council Approved label and nearby permits do not supply an exact application-matched enacted instrument or construction permission. Conflicting portal dates and design particulars are not silently resolved."
+        },
+        {
+          "location": "Next action and scope",
+          "disposition": "Accept narrow next-artifact requirement",
+          "finding": "September 28 remains a separate Toronto check. This article does not advise what an owner may legally build, and its broader historical research question remains wider than this named file."
+        }
+      ],
+      "source_record_sha256": "35cc131a88cb0f0d32cf3dd3d38f7fd7b34c3f0774e56a405446e5055a97bb50",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "0250904233aab1f3ffe4a670898ad5f1892f1db4c6182f169eed577df2d9b43a"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "83b6c457b2e2cb1a0e1552a493f88dd40f3107134b79cfeb09c311359e547a46"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": null,
+      "source_notes_absent": true,
+      "receipt_inputs": [
+        {
+          "path": "app/src/data/phase-207-project-checks/207-TORONTO-2026-09-21-BOUNDED-RECHECK.json",
+          "receipt_id": "207-TORONTO-2026-09-21-BOUNDED-RECHECK",
+          "sha256": "b894a24a020d5ad552f9749b9e2ecd42bff0c9746e06747fac8ee0ff33486e5e",
+          "reviewed_scope": "Retained bounded findings, evidence limits and identified source-check findings; not the entire propagation inventory or a new external inspection."
+        }
+      ],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "8ce00a2d96462f978c86c13aaac3ad281c8100ca7a8985a4ec123e90f952de26"
+    },
+    {
+      "record_id": "195-BRIEF-054",
+      "route": "/reference/questions/policy-and-standards--116-q-054/",
+      "title": "Has NNSA resolved the pit-production cost-and-schedule requirements?",
+      "decision": "Accept exact-recommendation status account; reject transfer from adjacent closures or capacity milestones",
+      "rationale": "The complete answer and three sections identify cost Recommendation 1 and schedule Recommendation 3 separately. September 22 is the dated editorial recheck, April 2026 the latest progress narrative, and fiscal-year-end/December different expected artifacts. The September 10 baseline receipt is preserved. The separate September 24 accepted-capacity review does not supersede these baseline requirements, and this review assesses no technical production methods.",
+      "findings": [
+        {
+          "location": "Answer and source locators",
+          "disposition": "Accept exact recommendation identity",
+          "finding": "GAO-23-104661 Recommendation 1 and GAO-20-703 Recommendation 3 are the named Open entries in the retained inspection. Closures of recommendations 1, 2 or 4 on the schedule report do not close Recommendation 3."
+        },
+        {
+          "location": "Evidence section",
+          "disposition": "Qualify forecasts and organizational scale",
+          "finding": "December 2026 cost expectations and a fiscal-2026-end schedule expectation are not delivered baselines. Project estimates and a portfolio summary cannot substitute for a program-wide artifact and its exact oversight disposition."
+        },
+        {
+          "location": "Source boundary and separate receipt",
+          "disposition": "Keep distinct administrative gates",
+          "finding": "The September 24 first-unit/environmental-review context is a separate accepted-capacity question, not a cost/schedule closure. No current agency-wide search, source appointment, output measurement or baseline reproduction was performed here."
+        }
+      ],
+      "source_record_sha256": "574ec5916840aaaa3f7416e47a85ac317eea7491681e42717f0be628afc42161",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "a0f0370bdf9474c58aec961aa1a7fd4d6d73fa54f4fe3ca1ef808964e37c0bbb"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "bb1618d7fe0bf17d0ae942abb88fc2c1da759e8715915b6b7f072a0ff738fea8"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "3a91e49cac437d206e8e1ce86b28d66ef220c531c421a146f7214ac307b0e348",
+      "source_notes_absent": false,
+      "receipt_inputs": [
+        {
+          "path": "app/src/data/phase-60-current-decisions.json",
+          "receipt_id": "receipt-60-nnsa-2026-09-10-no-material-change",
+          "sha256": "886f7ce9bc9a0ec05d1e374353ff62a7e57051608d7af9fafce0f74a97b58f73",
+          "reviewed_scope": "Retained bounded findings, evidence limits and identified source-check findings; not the entire propagation inventory or a new external inspection."
+        },
+        {
+          "path": "app/src/data/phase-60-current-decisions.json",
+          "receipt_id": "receipt-60-nnsa-capacity-2026-09-24-no-material-change",
+          "sha256": "19a0b05aa52acffa525af1644f8d604746d0cd0b3f0fd92f03977f181fb4e2b2",
+          "reviewed_scope": "Retained bounded findings, evidence limits and identified source-check findings; not the entire propagation inventory or a new external inspection."
+        }
+      ],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "2c42760d509f3410e8ce495f2d84262deb41a80f6b5fea9fb6016c7bd721d12e"
+    },
+    {
+      "record_id": "195-BRIEF-067",
+      "route": "/reference/questions/water--116-q-067/",
+      "title": "Does Hanford’s operating record close the material balance?",
+      "decision": "Accept evidence of operating activity without a closed material balance",
+      "rationale": "The complete answer and three sections preserve the July report periods, monthly and cumulative quantities, and different process scopes. They affirm operating activity without claiming complete reconciliation or a zero-treatment finding. Source notes accurately distinguish earlier text-access failures from later selected-page inspection. This assessment does not itself repeat that visual inspection or calculate efficiency.",
+      "findings": [
+        {
+          "location": "AR-41694 quantities",
+          "disposition": "Accept different units and accumulations",
+          "finding": "38,412.1 gallons monthly feed, 163,718.5 gallons cumulative feed, 119 cumulative containers and 7,274 gallons monthly EMF shipments have different meanings. They cannot form a closed balance by simple combination."
+        },
+        {
+          "location": "AR-41695 and dates",
+          "disposition": "Accept process and observation boundaries",
+          "finding": "Tank-side pretreatment is not the identical WTP process account. July observations, September meeting labels and June earned-value dates remain separate; available tank space is not treated-waste output."
+        },
+        {
+          "location": "Next artifact and retained receipt",
+          "disposition": "Qualify incompleteness without denying activity",
+          "finding": "Require compatible stream/composition definitions and opening/closing inventories for a balance. The bounded September 10 receipt does not claim no inventory information exists, and this article does not show no treatment occurred."
+        }
+      ],
+      "source_record_sha256": "18784e552633dc1633d42d9de71b124edfed5ad7de11f1b9546515b35ed00fe6",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "e719b78976e3030c9de4c6ee98454316d7e810b7082af234a5bfd3b87784de26"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "44168aadc0bacaf0bb6bce4458ef2a6699f38e7129573ce3181473c9912e546a"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "87a2af881b5d668e6127991f89c50214ff5994360bd4c7fdb855cce36cc87293",
+      "source_notes_absent": false,
+      "receipt_inputs": [
+        {
+          "path": "app/src/data/phase-60-current-decisions.json",
+          "receipt_id": "receipt-60-hanford-2026-09-10-no-material-change",
+          "sha256": "51479211d7c7d105217a4143a374f03630e7c3679a9d27319f1219745e86aefe",
+          "reviewed_scope": "Retained bounded findings, evidence limits and identified source-check findings; not the entire propagation inventory or a new external inspection."
+        }
+      ],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "7649553253d705f83dd855797865d85579e5c4d3690170b93e0b9a395198c8fa"
+    },
+    {
+      "record_id": "195-BRIEF-051",
+      "route": "/reference/questions/mobility--116-q-051/",
+      "title": "What did Amtrak PIDS deployment complete?",
+      "decision": "Accept dated deployment account with unreconciled populations and visual-access limits",
+      "rationale": "The complete answer and three sections maintain the different ADA and Accessible Canada reporting windows and retain 93 deployments versus 117 installations as unreconciled populations. Completed work, reporting review, financial closeout, federal acceptance and sustained service are separate. The explicit unsuccessful page-image retrieval limits remain visible; editorial acceptance is not new visual verification or an acceptance event.",
+      "findings": [
+        {
+          "location": "Two reports and evidence section",
+          "disposition": "Accept different cohorts and periods",
+          "finding": "The reports end April 30, 2026 but start in different years/months. Preserve deployments versus installations; no denominator, crosswalk or accepted total is inferred from 93 and 117."
+        },
+        {
+          "location": "Performance/closeout chronology",
+          "disposition": "Reject elapsed-target promotion",
+          "finding": "March 31 performance-period end and May 31 targets do not become final FRA acceptance when time passes. Reporting and financial closeout are distinct from uptime and passenger benefits."
+        },
+        {
+          "location": "Source notes and next artifacts",
+          "disposition": "Retain incomplete access",
+          "finding": "September 22 text extraction, failed direct downloads/HTTP 403 and unavailable screenshots do not establish fresh visual table verification. October 9 remains a later bounded appointment, not an observed closeout."
+        }
+      ],
+      "source_record_sha256": "ffa9139a4168e9b373af1e82d96144b9052fbd5bdce13716ba1001df99c61670",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "c4a9457c71796feba34478ff0760ef8a80366e3836d984134696649e49caf092"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "d137aa5cb463c7919b669bed508957a36d99df050f0bdc01086bf261d68d5162"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "c94a61e07a719cabec0fe1e62b31278b9a81e8c60ec0fab76ad465322608d48d",
+      "source_notes_absent": false,
+      "receipt_inputs": [
+        {
+          "path": "app/src/data/phase-60-current-decisions.json",
+          "receipt_id": "receipt-60-pids-2026-09-10-no-material-change",
+          "sha256": "4cb558647af2a5198037930f16943432411d837bb8f87758a1d9540f43ec4021",
+          "reviewed_scope": "Retained bounded findings, evidence limits and identified source-check findings; not the entire propagation inventory or a new external inspection."
+        }
+      ],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "7d2c5fdccd358338658e5a824768247770b5f2190f8332dafd396d89897648f1"
+    },
+    {
+      "record_id": "195-BRIEF-027",
+      "route": "/reference/questions/critical-minerals--116-q-027/",
+      "title": "When does a critical-minerals project become dependable supply?",
+      "decision": "Accept dated permitting-financing-offtake explanation; dependable shipment claim not established",
+      "rationale": "The complete answer and three sections separate BLM historical permitting, DOE construction-finance context and company-reported offtake obligations from accepted product shipments. Institutional roles, archive state and source dates remain explicit. The answer is properly limited to the selected source set and makes neither an investment recommendation nor a universal no-shipment claim.",
+      "findings": [
+        {
+          "location": "BLM and DOE source notes",
+          "disposition": "Accept historical source scope",
+          "finding": "The January 2021 archived announcement is not the full current operative permit. The October 2024 DOE summary reports expected capacity/effects and historical financing, not newly verified financing terms or measured production."
+        },
+        {
+          "location": "Company filing and evidence section",
+          "disposition": "Distinguish commitments from delivery",
+          "finding": "The June 2026 filing section retains separate Phase 1/Phase 2 offtake and October 2025 amendment context. A purchase/forecast obligation is not evidence of recurring specification-conforming product receipt."
+        },
+        {
+          "location": "Answer and next artifact",
+          "disposition": "Accept receiver-specific test",
+          "finding": "Accepted product, named receiver, period, specifications and exceptions are needed before claiming dependable supply. This review does not provide current permit/legal or investment advice."
+        }
+      ],
+      "source_record_sha256": "c4666d56494d54453b5c6dd8e584a8452dd4d7d32a26898059290163f4a850bb",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "260c40fbbc7036b591222ca4d1d58c101613e99e8ea08d3fe01191973ff14409"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "e5da1c0b5d552639f55ff49b88e148be40d2f525ccbdf15c17c6ba1fc3a7b950"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "1a526c6e53f8e14b502ef1ad0a7292fa5984c5576b35432f65f42047f406e497",
+      "source_notes_absent": false,
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "97f97e3e68f17f3c16b41359b0280867199a1a4c0e73eb4164b8dce3c5421b09"
+    },
+    {
+      "record_id": "195-BRIEF-039",
+      "route": "/reference/questions/energy--116-q-039/",
+      "title": "What has a named battery demonstrated beyond installed capacity?",
+      "decision": "Accept historical Dalrymple operating account; no comparable reliability series admitted",
+      "rationale": "The complete answer and three sections distinguish energisation, commercial handover, historical service responses and reproducible availability. The retained fourth-period amendment and Table 3-1 remain important; mentioning an operating agreement does not provide its eligible-time calculation or interval ledger. The reviewed pilot follow-ups preserve source-version, access and missing-method limits. This is not a current 2026 performance finding or transfer of another battery’s results.",
+      "findings": [
+        {
+          "location": "Chronology and source notes",
+          "disposition": "Accept historical service evidence",
+          "finding": "April 2018 energisation, December 2018 commercial operation and December 14 handover describe different milestones. February 2021 report publication is not the June 14–December 14, 2020 operating interval."
+        },
+        {
+          "location": "Report 4 and method discussion",
+          "disposition": "Keep definition and period amendment",
+          "finding": "Four reporting intervals and changeable Operating Protocol/Agreement rules require the applicable Schedule 7 method and monthly eligible/available records. Narrative outage lists and telemetry flags do not supply a reproduced denominator. Preserve the corrected interpretation without inventing an issuer erratum."
+        },
+        {
+          "location": "Next artifact and comparison scope",
+          "disposition": "Reject automatic comparator and measurement admission",
+          "finding": "Hornsdale and Victoria remain separate cases. The requested method, compatible periods and actual reproducible measurements—not a new human signature—remain the substantive condition for a measurement feature. Original independent-review wording is historical under the owner policy."
+        }
+      ],
+      "source_record_sha256": "a5a5ac0aa30fab7ad0709c9b7f555ed6c9ecacb758883a06370f8b24a1190e9c",
+      "reviewed_section_hashes": [
+        {
+          "heading": "What the evidence establishes",
+          "sha256": "5c14b489248c791e0dc126337d6408ceb0388cfe54a6ce4889c3656c85f4998c"
+        },
+        {
+          "heading": "What would change this answer",
+          "sha256": "c90b153cb899c5d67dd97b5cbcaa0615fad4b2fb7576388563ac20b2e4056342"
+        },
+        {
+          "heading": "Scope of this answer",
+          "sha256": "53bad1bbe16d32bce98dd45326cd918e9b05ad5b2a701379971c9c307ef564fc"
+        }
+      ],
+      "reviewed_source_notes_sha256": "499a7879f476ee7552bd3d3c5363fb38734d60a6a8e734ca348043c3317d7e39",
+      "source_notes_absent": false,
+      "receipt_inputs": [],
+      "pilot_inputs": [
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-DEFINITION-2026-09-15",
+          "sha256": "b9107cf89ffc88eba01afbb4929fd2b004b16837bb36304ee68b57db666635e9",
+          "reviewed_scope": "Retained bounded finding, access limits and required artifacts; not fresh PDF inspection or quantitative reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-VISUAL-2026-09-15",
+          "sha256": "ca0fd85c2be6cde790c05303ab8f335d62c29da71ee1eaf9e5a9b43b02902e48",
+          "reviewed_scope": "Retained bounded finding, access limits and required artifacts; not fresh PDF inspection or quantitative reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "sha256": "8f5f810edacd39d74e9935ac52ca48a90d70cecd7700b61f01822425ec329f6f",
+          "reviewed_scope": "Retained bounded finding, access limits and required artifacts; not fresh PDF inspection or quantitative reproduction."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "recheck_triggers": [
+        "Any change to the exact article, source notes or identified receipt/pilot inputs",
+        "A new same-identity artifact materially changes a qualified conclusion"
+      ],
+      "projection_change": "Present this actual dated AI assessment on the exact article only. Retain original pending-human fields and complete legacy scope text as dated history. Do not promote linked or copied records by association.",
+      "sha256": "13379268b20a286675268d2bc5423411be1bb7d1613ea2695ae3f94b2339d37e"
+    }
+  ],
+  "boundary": "Ten additional actual decisions prepared while the six-translation/four-decision candidate is under full validation. The application still projects four selected decisions; these ten are not yet integrated. All 12 Question records now have actual AI assessments across the two ledgers, but the remaining 19 non-question selected records, reachable content and 58 annual assessments remain work."
+}

@@ -3,6 +3,7 @@ import {readShelfInputs,expectedShelfMembership} from './lib/read-shelf-inputs.m
 import {declaredPublicJsonExports, applyExportInventory} from './lib/public-json-inventory.mjs';
 import {translatedReaders} from '../src/lib/translated-readers.mjs';
 import {localityDossiers} from '../src/lib/locality-dossiers.mjs';
+import {selectedArticleReviews} from '../src/lib/selected-article-reviews.mjs';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const path=join(root,'../deployment/ftfn-v0.2-build.json');const manifest=JSON.parse(await readFile(path,'utf8'));
 // Independent pre-extension inventory: September 14 initial production build.
 // Counts come from source inputs, not from dist. Existing detail URLs are retained.
@@ -30,5 +31,7 @@ manifest.current_editorial_extension.ai_backlog_determinations=25;
 manifest.current_editorial_extension.ai_portfolio_identity_determinations=103;
 manifest.current_editorial_extension.new_ai_reviewed_project_dossiers=montanaDossiers.records.length;
 manifest.current_editorial_extension.ai_reviewed_locality_accounts=localityDossiers.records.length;
+manifest.current_editorial_extension.ai_reviewed_translations=translatedReaders.length;
+manifest.current_editorial_extension.ai_selected_article_assessments=selectedArticleReviews.length;
 await writeFile(path,JSON.stringify(manifest,null,2)+'\n');
 console.log(`Prepared candidate expectations: ${manifest.expected_build.static_pages} HTML / ${manifest.expected_build.public_json_exports} JSON / ${manifest.expected_build.updates} updates. Historical last_verified receipt is not changed.`);

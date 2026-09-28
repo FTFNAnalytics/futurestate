@@ -1,14 +1,24 @@
 ---
+import {selectedArticleReviewFor,selectedReviewDate,selectedReviewStatus} from '../../lib/selected-article-reviews.mjs';
 interface Article {record_id:string;title:string;answer:string;kind:string;authored_date:string;updated_date?:string;review_status:string;source_check_boundary:string;historical_record_title?:string|null;sections:{heading:string;text:string;citations?:number[];case_id?:string;paragraphs?:{text:string;citations:number[]}[]}[];sources:{title:string;url:string;artifact_date:string}[];source_notes?:{source_index:number;checked_date:string;locator:string;scope:string;access:string}[];identity_evidence?:{candidate_name:string;identifier:string|null;scope:string;aliases:string[];not_equivalent:string[];matched_source_indices:number[];checked_date:string;disposition:string};language_notes?:{lang:string;term:string;reading:string;source_index:number;review_status:string}[];}
 interface Props { article:Article; embedded?:boolean; }
 const {article,embedded=false}=Astro.props;
 const SectionHeading=embedded?'h3':'h2';
+const review=selectedArticleReviewFor(article,{route:Astro.url.pathname});
+const earlierAcceptanceSentence='Independent editorial/subject acceptance is pending.';
+const reviewedScopeSections=review?article.sections.filter(s=>s.heading==='Scope of this answer'&&s.text.endsWith(earlierAcceptanceSentence)):[];
 ---
 <article class="page-section current-research" data-current-research={article.record_id}>
-  <div class="eyebrow">{article.kind} · Dated editorial draft</div>
+  <div class="eyebrow">{article.kind} · {review?'AI-reviewed dated article':'Dated editorial draft'}</div>
   {embedded ? <h2>{article.title}</h2> : <h1 class="page-title">{article.title}</h1>}
   <p class="lede">{article.answer}</p>
-  <p><strong>{article.review_status}</strong> · Written {article.authored_date}</p>
+  <p><strong>{review?selectedReviewStatus:article.review_status}</strong> · Written {article.authored_date}{review&&` · AI reviewed ${selectedReviewDate}`}</p>
+  {review&&<section id={`${article.record_id}-ai-review`} data-selected-ai-review={article.record_id} data-review-sha256={review.sha256}>
+    <SectionHeading>{review.decision}</SectionHeading><p>{review.rationale}</p>
+    <p>Reviewed by Codex under the owner's authorization. No human review is required or claimed. This is an exact-version editorial assessment, not a fresh external source check, operating result or approval of linked content.</p>
+    <details><summary>Located findings and exact reviewed inputs</summary><dl>{review.findings.map((f:{location:string;disposition:string;finding:string})=><><dt>{f.location} — {f.disposition}</dt><dd>{f.finding}</dd></>)}</dl><p>Article SHA-256: <code>{review.source_record_sha256}</code>.</p><p><a href="/data/build-decisions.json">Download this decision and its section, source-note and receipt hashes</a></p></details>
+    <details data-prior-editorial-review><summary>Earlier editorial review wording — retained history</summary><p>{article.review_status}</p>{reviewedScopeSections.map(s=><p>{s.text}</p>)}<p>These historical fields are preserved in the original export. They are not current human-review prerequisites.</p></details>
+  </section>}
   {article.updated_date&&<p data-editorial-updated>Updated {article.updated_date}; original authorship date retained.</p>}
   <p>{article.source_check_boundary}</p>
   {article.historical_record_title && <p class="muted">Existing research identity: {article.historical_record_title}</p>}
@@ -19,7 +29,7 @@ const SectionHeading=embedded?'h3':'h2';
     <p class="citations">Identity evidence: {article.identity_evidence.matched_source_indices.map(i=><a href={article.sources[i].url}>{article.sources[i].title}</a>)}</p>
   </section>}
   {article.sections.map(section=><section data-topic-case={section.case_id}>
-    <SectionHeading>{section.heading}</SectionHeading><p>{section.text}</p>
+    <SectionHeading>{section.heading}</SectionHeading><p>{reviewedScopeSections.includes(section)?section.text.replace(earlierAcceptanceSentence,'This exact article has a dated, owner-authorized AI assessment; linked material is not approved by association.'):section.text}</p>
     {section.citations && section.citations.length>0 && <p class="citations">Evidence: {section.citations.map(i=><a href={article.sources[i].url}>{article.sources[i].title}</a>)}</p>}
     {section.paragraphs?.map(paragraph=><><p>{paragraph.text}</p>{paragraph.citations.length>0&&<p class="citations">Evidence: {paragraph.citations.map(i=><a href={article.sources[i].url}>{article.sources[i].title}</a>)}</p>}</>)}
   </section>)}

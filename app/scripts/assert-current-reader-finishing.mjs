@@ -1,13 +1,14 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
+import {selectedArticleReviewFor,selectedReviewDate} from '../src/lib/selected-article-reviews.mjs';
 const read=path=>readFile(new URL(`../${path}`,import.meta.url),'utf8');
 const corpus=JSON.parse(await read('src/data/phase-205-216-current-editorial.json'));
 const update=JSON.parse(await read('src/content/updates/2026-09-22-reader-reconciliation.json'));
 for(const id of ['119-PROJECT-001','191-PROJECT-001','195-BRIEF-017','195-BRIEF-053','195-BRIEF-047','195-BRIEF-057']){
   const article=corpus.records.find(r=>r.record_id===id);
   assert.equal(article.updated_date,'2026-09-22');assert.equal(article.approved,false);
-  assert.equal(readerCatalog.find(r=>r.id===id).date,'2026-09-22');
+  assert.equal(readerCatalog.find(r=>r.id===id).date,selectedArticleReviewFor(article,{route:article.route})?selectedReviewDate:'2026-09-22');
   assert(update.affected_record_ids.includes(id));assert(update.related_paths.includes(article.route));
   assert.match(article.source_check_boundary,/September 22/);
 }

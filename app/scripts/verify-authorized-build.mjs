@@ -46,3 +46,4 @@ const portfolio=await read('dist/method/portfolio-decisions/index.html');
 assert.equal((portfolio.match(/data-portfolio-record=/g)??[]).length,103);
 assert(!portfolio.includes('Dossier content remains to build.'));
 console.log('Authorized production verification passed: exact decision export, 103 portfolio entries, 53 current determination notices, all 32 complete Montana dossier routes, dedicated index, catalog/sitemap links, 30 terrestrial/two LEO designations, anchor-only handling and distinct-entity/operator relationships.');
+import './verify-selected-article-reviews.mjs';

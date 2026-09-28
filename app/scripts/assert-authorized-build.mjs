@@ -49,3 +49,4 @@ for(const mutate of [
 ]){const changed=structuredClone(dossiers);mutate(changed);for(const r of changed.records){const {sha256,...payload}=r;r.sha256=hash(payload);}assert.throws(()=>assertMontanaDossiers(changed,baseline,reconciliation,decisions.portfolio.next_project_batch));}
 assert.deepEqual(decisions.language.locales.map(r=>r.locale),['fr-CA','es-419']);assert.equal(decisions.language.human_approval_required,false);
 console.log('Authorized build assertions passed: 103 identity/counting decisions; 54 project and 25 place candidates; all 32 source-pinned Montana proposal dossiers, with five original records unchanged; exact reporting/anchor/UEI distinctions, searchable identities and no invented operating observations.');
+import './assert-selected-article-reviews.mjs';

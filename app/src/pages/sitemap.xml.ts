@@ -6,6 +6,7 @@ import {readerCatalog} from '../lib/reader-catalog.mjs';
 import {translatedReaders} from '../lib/translated-readers.mjs';
 import montanaDossiers from '../data/montana-project-dossiers.json';
 import localityDossiers from '../data/locality-dossiers.json';
+import {selectedArticleReviews,selectedReviewDate} from '../lib/selected-article-reviews.mjs';
 import qualificationRegistry from "../data/phase-67-qualification-packet-registry.json";
 import returnLedger from "../data/phase-67-evidence-return-envelope-ledger.json";
 import measurementRegistry from "../data/phase-69-measurement-observation-break-registry.json";
@@ -67,6 +68,7 @@ function formatDate(date: Date): string {
 }
 
 function urlEntry(path: string, lastModified?: Date): string {
+  if(selectedArticleReviews.some(r=>r.route===path))lastModified=new Date(selectedReviewDate);
   const locality=localityDossiers.records.find(r=>r.route===path);
   if(locality)lastModified=new Date(locality.ai_review_date);
   if(path==='/atlas/places/')lastModified=new Date(localityDossiers.authored_date);

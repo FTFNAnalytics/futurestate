@@ -1,5 +1,6 @@
 import {applyAnnualCaseReview,annualCaseReviews,annualReviewDate} from './annual-case-reviews.mjs';
 import {backlogDecisionFor} from './backlog-research.mjs';
+import {goldenMarsSignalContext} from './golden-mars-signal-review.mjs';
 const relatedLabels=new Map([
   ['/method/','Method and publication policy'],['/review/method/','Evidence review method'],['/review/fieldbook/method/','Fieldbook research method'],
   ['/atlas/sources/','Source profiles'],['/atlas/source-monitor/','Source review queue'],['/data/sources.json','Source registry (JSON)'],
@@ -62,6 +63,16 @@ export function readerSourceReviewContexts(article,evidence,operations,{asOfDate
       seenChecks.add(key);
       contexts.push({id:`${review.record_id}-source-check-${index+1}`,kind:'Retained source clarification — not a new retrieval',title:'Dated source clarification from a related reading',checked_date:checked,summary:`${check.finding} Locator: ${check.locator}. ${check.access}`,route:review.route,source_check:check,source_review_record_id:review.record_id,next_check_date:null,matched_source_ids:[check.source_id],independent_article_review:false});
     }
+  }
+  // These three older checks carry their date on the exact retained review,
+  // not on each child check. Do not silently drop them or infer a date for
+  // other undated checks. Exact source matching and payload deduplication apply.
+  const golden=goldenMarsSignalContext('signal-golden-mars-transmission-conditional-approval');
+  if(golden&&golden.review_date<=date)for(const [index,check]of golden.source_checks.entries()){
+    const key=JSON.stringify(check);
+    if(!ids.has(check.source_id)||seenChecks.has(key))continue;
+    seenChecks.add(key);
+    contexts.push({id:`${golden.annual_review_id}-source-check-${index+1}`,kind:'Retained source clarification — not a new retrieval',title:'Dated Golden-Mars source clarification',checked_date:golden.review_date,summary:`${check.finding} Locator: ${check.locator}. ${check.access}`,route:golden.retained_review_route,source_check:check,source_review_record_id:golden.annual_review_id,next_check_date:null,matched_source_ids:[check.source_id],independent_article_review:false});
   }
   return contexts.sort((a,b)=>b.checked_date.localeCompare(a.checked_date)||a.id.localeCompare(b.id));
 }

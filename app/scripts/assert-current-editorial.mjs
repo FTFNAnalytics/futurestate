@@ -6,12 +6,13 @@ import {verifyClassifiedInput} from './lib/classification-review.mjs';
 import {translatedReaders} from '../src/lib/translated-readers.mjs';
 import montanaDossiers from '../src/data/montana-project-dossiers.json' with {type:'json'};
 import localityDossiers from '../src/data/locality-dossiers.json' with {type:'json'};
+import {selectedArticleReviewFor,selectedReviewDate} from '../src/lib/selected-article-reviews.mjs';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');const read=async path=>JSON.parse(await readFile(join(root,path),'utf8'));
 const corpus=await read('src/data/phase-205-216-current-editorial.json');const classification=await read('src/data/phase-206-editorial-classification.json');const operations=await read('src/data/phase-207-current-operations.json');
 assert.equal(corpus.records.length,33);assert.equal(new Set(corpus.records.map(r=>r.record_id)).size,33);assert.equal(readerCatalog.length,137+translatedReaders.length+montanaDossiers.records.length+localityDossiers.records.length);assert.equal(readerCatalog.filter(r=>r.kind==='Translation').length,translatedReaders.length);
 assert.equal(readerCatalog.filter(r=>r.kind==='Compact').length,17);assert.equal(readerCatalog.filter(r=>r.kind==='Plain English').length,17);
 assert(readerCatalog.every(r=>r.date&&r.status&&r.summary));
-for(const article of corpus.records)assert.equal(readerCatalog.find(r=>r.id===article.record_id).date,article.updated_date??article.authored_date,'Catalog must show the current editorial version date');
+for(const article of corpus.records)assert.equal(readerCatalog.find(r=>r.id===article.record_id).date,selectedArticleReviewFor(article,{route:article.route})?selectedReviewDate:article.updated_date??article.authored_date,'Catalog must show the current article or exact AI-review date');
 for(const [kind,count]of Object.entries({Topic:4,Project:8,Place:4,Question:12,Casebook:4,Report:1}))assert.equal(corpus.records.filter(r=>r.kind===kind).length,count);
 for(const r of corpus.records){assert.equal(r.approved,false);assert.match(r.review_status,/pending/);assert(r.sections.length>=3);assert(r.sources.length>=1);assert(r.answer.length>80);assert(r.authored_date==='2026-09-14');for(const s of r.sections)for(const index of s.citations??[])assert(r.sources[index]);}
 const projects=corpus.records.filter(r=>r.kind==='Project');assert(new Set(projects.map(r=>r.jurisdiction)).size>=4);assert(new Set(projects.map(r=>r.region)).size>=3);assert(projects.filter(r=>r.jurisdiction!=='United States').length>=4);
