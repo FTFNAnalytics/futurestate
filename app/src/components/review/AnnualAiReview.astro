@@ -1,7 +1,7 @@
 ---
 import {annualAiReviewStatus} from '../../lib/annual-ai-reviews.mjs';
-interface Props { decision:any; reading:any; changes:any[]; sourceChecks:any[]; originalStatus:string; }
-const {decision,reading,changes,sourceChecks,originalStatus}=Astro.props;
+interface Props { decision:any; reading:any; changes:any[]; sourceChecks:any[]; additionalInputs:any[]; localInputs:any[]; updateRoute:string; originalStatus:string; }
+const {decision,reading,changes,sourceChecks,additionalInputs,localInputs,updateRoute,originalStatus}=Astro.props;
 ---
 <aside data-annual-ai-review={reading.record_id} aria-label="Current AI editorial assessment" id={`${reading.record_id}-ai-review`}>
   <h2>AI editorial assessment · {decision.review_date}</h2>
@@ -14,5 +14,7 @@ const {decision,reading,changes,sourceChecks,originalStatus}=Astro.props;
     <p>These are retained earlier fields, not the current editorial decision. Original records and earlier source-check dates remain unchanged.</p>
   </details>
   {sourceChecks.map((check:any)=><section data-annual-ai-source-check={check.id}><h3><a href={check.url}>Source check: {check.locator}</a></h3><p>Inspected {check.checked_date}. This check does not reset the original source profile's date.</p><p>{check.finding}</p><p>{check.access}</p></section>)}
-  <p><a href={`/method/editorial-review/#${decision.record_id}-annual-decision`}>Annual review scope and decision</a> · <a href="/data/build-decisions.json">Exact AI decision and input hashes</a> · <a href="/updates/update-2026-09-27-annual-ai-first-four/">Dated change record</a></p>
+  {additionalInputs.map((input:any)=><section data-annual-ai-additional-input={input.id}><h3><a href={input.route}>Dated evidence used: {input.title}</a></h3><p>Checked {input.checked_date}; reused for this assessment, not newly retrieved.</p><p>{input.relation}</p><p>{input.summary}</p>{input.boundary&&<p>{input.boundary}</p>}<p>{input.next_action}{input.next_check_date&&` Next recorded check: ${input.next_check_date}.`}</p></section>)}
+  {localInputs.length>0&&<details data-annual-ai-local-inputs><summary>Local records supporting this assessment</summary><ul>{localInputs.map((input:any)=><li data-annual-ai-local-input={input.path}><a href={input.route}>{input.title}</a> — {input.relation}</li>)}</ul><p>These are exact local versions, not fresh external source checks or approval of every linked record.</p></details>}
+  <p><a href={`/method/editorial-review/#${decision.record_id}-annual-decision`}>Annual review scope and decision</a> · <a href="/data/build-decisions.json">Exact AI decision and input hashes</a> · <a href={updateRoute}>Dated change record</a></p>
 </aside>

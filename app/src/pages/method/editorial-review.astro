@@ -26,7 +26,7 @@ const {classification}=await getShelfCatalog();
   </section>
   <section class="page-section" data-annual-ai-index>
     <h2>{annualAiReviewData.reviewed_annual_records} of {annualAiReviewData.annual_target} annual records assessed by AI</h2>
-    <p>These decisions cover four annual records and two paired essay presentations. The essays do not add two annual acceptances. Seven exact paragraph corrections preserve their earlier wording; new primary checks are limited to the specifically recorded AEMO, FAA and NOAA material.</p>
+    <p>These decisions cover 21 annual records and two paired essay presentations. The essays do not add two annual acceptances. Twenty-two exact paragraph corrections preserve their earlier wording. The latest 17 decisions reuse dated source and local-policy records; they add no fresh primary inspection. The earlier AEMO, FAA and NOAA checks retain their recorded scope and dates.</p>
     {annualAiDecisions.map(decision=><section id={`${decision.record_id}-annual-decision`}><h3>{decision.record_id}: {decision.disposition.replaceAll('_',' ')}</h3><p>{decision.rationale}</p><ul>{decision.readings.map((reading:{route:string;record_id:string})=><li><a href={`${reading.route}#${reading.record_id}-ai-review`}>{reading.record_id}: current reading and AI assessment</a></li>)}</ul></section>)}
     <p><a href="/data/build-decisions.json">Exact annual decisions, source checks and input hashes</a>. Source-check dates remain separate from article review dates; no human study, new operating outcome or release is implied.</p>
   </section>

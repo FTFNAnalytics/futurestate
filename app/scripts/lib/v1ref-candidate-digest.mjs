@@ -49,6 +49,10 @@ export const normalizeV1refAggregate = (aggregate) => ({
 
 const integrationFiles = [
   'src/data/annual-ai-reviews.json',
+  '../docs/annual-case-next-six-ai-review-2026-09-27.json',
+  '../docs/annual-cases-three-eight-ai-review-2026-09-27.json',
+  '../docs/annual-appendices-ai-review-2026-09-27.json',
+  'src/content/updates/2026-09-27-annual-ai-seventeen.json',
   'src/lib/annual-ai-reviews.mjs',
   'src/components/review/AnnualAiReview.astro',
   'scripts/assert-annual-ai-reviews.mjs',
