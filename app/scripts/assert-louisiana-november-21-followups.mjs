@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import ledger from '../src/data/phase-60-current-decisions.json' with {type:'json'};
+import cycle from '../src/data/phase-60-operating-cycle.json' with {type:'json'};
+import desk from '../src/data/phase-60c-editorial-desk.json' with {type:'json'};
+import returns from '../src/data/phase-67-evidence-return-envelope-ledger.json' with {type:'json'};
+import named from '../src/data/phase-61-project-conversion-registry.json' with {type:'json'};
+import {receiptPayloadHash as hash} from './lib/bounded-cycle-followup.mjs';
+import {prepareLouisianaFollowups} from './lib/louisiana-followups.mjs';
+import {evidenceReviewDate,priorLedgerSnapshot,priorLedgerSha256,louisianaReviews} from './content-205-216/louisiana-november-21-reviews.mjs';
+import {projectEvidenceRecord,evidenceReceiptsForRecord,evidenceReceiptsForRoute,evidenceReceiptsForControl,projectNamedFile} from '../src/lib/current-evidence.mjs';
+import {assertReceiptControlExport} from './lib/assert-receipt-control-export.mjs';
+const before=JSON.stringify({ledger,cycle,desk,returns,named});
+assert.equal(hash(priorLedgerSnapshot(ledger)),priorLedgerSha256);
+const prepared=await prepareLouisianaFollowups({asOfDate:evidenceReviewDate});
+const [starlink,nextlink]=prepared;
+const legacyLinkPage=await readFile(new URL('../src/pages/briefings/evidence-return-control-room-001.astro',import.meta.url),'utf8');
+assert(legacyLinkPage.includes('<BaseLayout')&&legacyLinkPage.includes('canonical={canonical}')&&legacyLinkPage.includes('href={canonical}')&&legacyLinkPage.includes('robots="noindex, follow"'));
+assert(legacyLinkPage.includes('/briefings/evidence-return-control-room-001-forty-five-governed-returns/'));
+assert(starlink.affected_routes.includes('/briefings/evidence-return-control-room-001/'),'Retained link receives current context, not a silent missing route');
+for(const [i,r]of prepared.entries()){
+ assert.deepEqual(ledger.receipts.find(p=>p.receipt_id===r.receipt_id),r);
+ assert.equal(r.propagation_targets.length,428);assert.equal(r.affected_routes.length,i===0?436:435);assert.equal(r.affected_record_ids.length,i===0?429:427);
+ assert.equal(r.follow_up_scheduled_date,'2026-10-09');assert.equal(r.source_checked_date,evidenceReviewDate);assert.equal(r.next_check_date,'2026-12-21');
+ assert.deepEqual(r.named_file_ids,[]);assert.deepEqual(r.qualification_packet_ids,[]);assert.equal(r.publication_authorized,false);assert.equal(r.independent_stage_admission,false);assert.equal(r.underlying_signal_status,'In Review');
+ assert(r.affected_record_ids.includes('162-BRIEF-004'));assert(r.affected_routes.includes('/review/v1month/local-systems/louisiana-broadband-build-service-adoption/'));
+ for(const id of r.affected_record_ids)assert(evidenceReceiptsForRecord(id).some(p=>p.receipt_id===r.receipt_id));
+ for(const route of r.affected_routes)assert(evidenceReceiptsForRoute(route).some(p=>p.receipt_id===r.receipt_id));
+ const update=JSON.parse(await readFile(new URL('../src/content/updates/'+r.update_id.replace(/^update-/,'')+'.json',import.meta.url),'utf8'));
+ assert.equal(update.receipt_id,r.receipt_id);assert.deepEqual(update.affected_record_ids,r.affected_record_ids);assert.deepEqual(update.related_paths,r.affected_routes);
+ for(const file of named.records)assert(!JSON.stringify(projectNamedFile(file)).includes(r.receipt_id),'No provider transfer to a Phase 61 file');
+}
+assert.equal(starlink.counts_as_cycle_decision,false);assert.equal(nextlink.counts_as_cycle_decision,true);assert.notEqual(starlink.envelope_id,nextlink.envelope_id);
+assert.equal(starlink.scheduled_check_date,'2026-09-01');assert.equal(nextlink.scheduled_check_date,'2026-09-09');
+assert.equal(starlink.prior_receipt_id,'receipt-60-louisiana-starlink-2026-09-01-no-material-change');assert.equal(starlink.prior_companion_receipt_id,'receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change');
+assert.equal(nextlink.prior_receipt_id,'receipt-60-nextlink-2026-09-10-no-material-change');
+assert.deepEqual(starlink.official_surface_checks.slice(0,4),nextlink.official_surface_checks.slice(0,4));assert.equal(starlink.shared_inspection_id,nextlink.shared_inspection_id);
+assert.equal(starlink.official_surface_checks.length,10);assert.equal(nextlink.official_surface_checks.length,9);
+assert(starlink.context_only_source_ids.includes('source-60-connectla-starlink-final-proposal-location-cohort-2026'));
+assert(!starlink.checked_source_ids.includes('source-60-connectla-starlink-final-proposal-location-cohort-2026'),'No unperformed CSV inspection');
+assert(starlink.official_surface_checks.some(c=>c.url.endsWith('.pdf')&&c.limitation.includes('No PDF text')));
+const base=cycle.records.find(r=>r.cycle_item_id===starlink.cycle_item_id),current=projectEvidenceRecord(base);
+assert.equal(current.receipt_id,base.receipt_id);assert.equal(current.decision_date,'2026-09-01');assert.equal(current.companion_rechecks.length,2);
+assert.equal(current.companion_rechecks[0].receipt_id,starlink.prior_companion_receipt_id);assert.equal(current.companion_rechecks[1].receipt_id,starlink.receipt_id);
+assert.equal(current.current_account_checked_date,evidenceReviewDate);assert.equal(current.next_check_date,'2026-12-21');assert.deepEqual(projectEvidenceRecord(current),current);
+assert.equal(projectEvidenceRecord(base,'2026-11-20'),base);
+const nextBase=cycle.records.find(r=>r.cycle_item_id===nextlink.cycle_item_id);
+assert.equal(projectEvidenceRecord(nextBase,'2026-11-20').receipt_id,nextlink.prior_receipt_id);assert.equal(projectEvidenceRecord(nextBase).receipt_id,nextlink.receipt_id);
+const deskRow=desk.records.find(r=>r.desk_item_id===starlink.desk_item_id),exported={records:[{...deskRow,current_state:projectEvidenceRecord(deskRow),dated_review_receipts:evidenceReceiptsForControl(deskRow)}]};
+assert.doesNotThrow(()=>assertReceiptControlExport(starlink,exported,'desk'));
+for(const mutation of ['replace_primary','drop_companion','alter_date','drop_history']){const invalid=structuredClone(exported);if(mutation==='replace_primary')invalid.records[0].current_state.receipt_id=starlink.receipt_id;if(mutation==='drop_companion')invalid.records[0].current_state.companion_rechecks=[];if(mutation==='alter_date')invalid.records[0].current_state.companion_rechecks.at(-1).source_checked_date='2026-09-08';if(mutation==='drop_history')invalid.records[0].dated_review_receipts=[];assert.throws(()=>assertReceiptControlExport(starlink,invalid,'desk'));}
+assert.equal(cycle.records.length,13);assert.equal(cycle.records.map(r=>projectEvidenceRecord(r)).filter(r=>r.receipt_id&&r.decision_date).length,13);
+await assert.rejects(()=>prepareLouisianaFollowups({asOfDate:'2026-11-20'}));
+await assert.rejects(()=>prepareLouisianaFollowups({asOfDate:evidenceReviewDate,ledger:{...ledger,receipts:ledger.receipts.map((r,i)=>i===0?{...r,next_check_date:'2026-12-31'}:r)}}));
+for(const mutation of [{named_file_ids:['invented']},{decision_date:'2026-11-22'},{follow_up_scheduled_date:'2026-11-21'}]){const reviews=structuredClone(louisianaReviews);Object.assign(reviews[0],mutation);await assert.rejects(()=>prepareLouisianaFollowups({asOfDate:evidenceReviewDate,reviews}));}
+assert.equal(JSON.stringify({ledger,cycle,desk,returns,named}),before);
+console.log('Louisiana November 21 checks passed: fourteen prior ledger receipts exact; Starlink primary plus two separate companions; independent Nextlink follow-up; 436/435 routes, thirteen identities, no unperformed report/CSV inspection or stage transfer.');

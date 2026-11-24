@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import EuropeDossierArticle from '../../../components/review/EuropeDossierArticle.astro';
+import {europePlaces} from '../../../lib/europe-named-dossiers.mjs';
+const record=europePlaces.find(r=>r.record_id==='place-somerset-council-area')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><EuropeDossierArticle record={record}/></BaseLayout>

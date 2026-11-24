@@ -40,7 +40,7 @@ assert.throws(()=>createShelfData({...input,dependencyMaps:[...input.dependencyM
 for(const [file,kind,variable]of [['sources/[id].astro','source','source'],['organizations/[slug].astro','organization','organization'],['technologies/[slug].astro','technology','technology'],['evidence-gaps/[slug].astro','gap','gap'],['dependency-maps/[slug].astro','map','dependencyMap']]){
  const raw=await read('src/pages/atlas/'+file);assert(raw.includes(`<AtlasRelationshipShelf kind="${kind}" id={${variable}.data.id}/>`));assert(!/\{(?:relatedSources|relatedSignals|relatedBriefings|researchDocuments)\.map\(/.test(raw));
 }
-const graphTemplate=await read('src/pages/atlas/dependency-maps/[slug].astro');assert(graphTemplate.includes('kind={graphKind} limit={20}'));assert(!/dependencyMap\.data\.(nodes|links)\.map\(/.test(graphTemplate.split('---')[2]));
+const graphTemplate=await read('src/pages/atlas/dependency-maps/[slug].astro');assert(graphTemplate.includes('kind={graphKind} limit={10}'));assert(!/dependencyMap\.data\.(nodes|links)\.map\(/.test(graphTemplate.split('---')[2]));
 const shelf=await read('src/components/atlas/AtlasRelationshipShelf.astro');assert(shelf.includes('limit={20}'));assert(shelf.includes('Historical methods and research dockets'));
 const sourceIndex=await read('src/pages/atlas/sources/index.astro');assert(sourceIndex.includes('<PagedShelf records={shelves.sources}'));assert(!sourceIndex.includes('sourceRows.map('));
 const mapIndex=await read('src/pages/atlas/dependency-maps/index.astro');assert(mapIndex.includes('kind="atlas-maps-all"'));assert(mapIndex.includes('id={`type-${anchor(g.label)}`}'));assert(mapIndex.includes('id={`topic-${anchor(g.label)}`}'));

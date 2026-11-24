@@ -77,6 +77,7 @@ const sameSet = (left, right) => Array.isArray(left)
 const sameJson = (left, right) => JSON.stringify(left) === JSON.stringify(right);
 const digest = (value) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 const arizonaRefresh=JSON.parse(await readFile(join(updateRoot,'2026-09-22-phase-55q-arizona-wastewater-recheck.json'),'utf8'));
+const loudounNote=await readFile(join(workspaceRoot,'docs/operational-checks/2026-10-01-loudoun-phase2-standards-recheck.md'),'utf8');
 const sourceSemantics = (source) => august31SourceSemantics({
   id: source.id,
   name: source.name,
@@ -90,7 +91,7 @@ const sourceSemantics = (source) => august31SourceSemantics({
   last_checked_date: source.last_checked_date,
   monitoring_status: source.monitoring_status,
   coverage_role: source.coverage_role,
-},arizonaRefresh);
+},arizonaRefresh,loudounNote);
 const semanticDigest = (sourceIds, sourceById) => {
   const sources = [...sourceIds].sort().map((id) => sourceById.get(id)).filter(Boolean);
   return sources.length === sourceIds.length ? digest(sources.map(sourceSemantics)) : null;

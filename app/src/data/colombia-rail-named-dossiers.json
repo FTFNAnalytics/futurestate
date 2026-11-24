@@ -1,0 +1,611 @@
+{
+  "edition_id": "COLOMBIA-RAIL-NAMED-ARTICLES-2026-11-22",
+  "inspected_date": "2026-11-22",
+  "timezone": "America/Edmonton",
+  "review_policy": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "review_state": "Dated article authored and AI self-reviewed; production verification pending",
+  "independent_review": false,
+  "phase_60_identity_added": false,
+  "sources": [
+    {
+      "id": "bogota-design",
+      "title": "Línea 1: beneficios y datos clave",
+      "publisher": "Bogotá municipal portal / Empresa Metro de Bogotá",
+      "role": "Owner design description relayed by the city",
+      "url": "https://bogota.gov.co/mi-ciudad/movilidad/beneficios-y-datos-clave-de-la-linea-1-del-metro-de-bogota",
+      "publication_date": "2026-02-19",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Route, stations, access buildings and extension paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "Design and projected benefits are not measured service. The Calle 100 extension and Line 2 are outside this counted alignment."
+    },
+    {
+      "id": "bogota-progress",
+      "title": "Línea 1: veinte kilómetros de viaducto",
+      "publisher": "Bogotá municipal portal / Mayor's office",
+      "role": "Dated construction account",
+      "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/linea-1-metro-de-bogota-ya-tiene-20-kilometros-de-viaducto-construidos",
+      "publication_date": "2026-11-15",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Viaduct, rail installation, October progress and NQS bridge paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "October overall execution and November component lengths have different dates and denominators; neither is operating acceptance.",
+      "reporting_period": "2026-10",
+      "event_date": "2026-11-08"
+    },
+    {
+      "id": "bogota-rolling-test",
+      "title": "Primeras pruebas de rodaje sobre el viaducto",
+      "publisher": "Bogotá municipal portal / Mayor's office",
+      "role": "Dated technical-test account",
+      "url": "https://bogota.gov.co/mi-ciudad/movilidad/inician-pruebas-de-trenes-del-metro-de-bogota-sobre-el-viaducto",
+      "publication_date": "2026-05-22",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Opening paragraphs describing train two and auxiliary vehicles",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "This was a towed rolling test. Energized and automatic operation were prospective; quoted equipment capabilities are not passenger-service acceptance.",
+      "event_date": "2026-05-22"
+    },
+    {
+      "id": "bogota-connections",
+      "title": "Noveno tren y conexiones de la Línea 1",
+      "publisher": "Bogotá municipal portal / Empresa Metro de Bogotá",
+      "role": "Delivery and design account",
+      "url": "https://bogota.gov.co/mi-ciudad/movilidad/ya-se-encuentra-en-colombia-noveno-tren-linea-1-del-metro-bogota-2026",
+      "publication_date": "2026-04-08",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Arrival paragraph and sixteen-station interchange description",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "Eight direct and two proximity connections are distinguished here. Other summaries say ten direct; this discrepancy is not resolved by asserting ten equivalent interchanges. The October fleet-delivery expectation is not completion."
+    },
+    {
+      "id": "bogota-parks",
+      "title": "Once parques en el área de influencia de la Línea 1",
+      "publisher": "Bogotá municipal portal / Empresa Metro de Bogotá",
+      "role": "Public-realm intervention description",
+      "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/linea-1-metro-bogota-11-parques-renovados-en-las-areas-de-influencia",
+      "publication_date": "2026-11-08",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Planned improvements and concession intervention-area paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "The body describes future renewal despite the URL wording. No park handover or underlying concession instrument was inspected."
+    },
+    {
+      "id": "medellin-history",
+      "title": "Historia del Metro",
+      "publisher": "Metro de Medellín",
+      "role": "Operator retrospective",
+      "url": "https://www.metrodemedellin.gov.co/quienes-somos/historia/",
+      "publication_date": null,
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Creation, first commercial service and southern extension chronology",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "An undated retrospective supplies event dates; its inspection date is not a publication date. Later modes are not folded into the original railway identity."
+    },
+    {
+      "id": "medellin-a",
+      "title": "Línea A",
+      "publisher": "Metro de Medellín",
+      "role": "Operator line and station inventory",
+      "url": "https://www.metrodemedellin.gov.co/usuarios/sistema-integrado/linea-a",
+      "publication_date": null,
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "La Estrella–Niquía introduction and station-access descriptions",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "Station facilities describe provision, not current lift availability. The dynamic line-status widget was not resolved or treated as service evidence."
+    },
+    {
+      "id": "medellin-b",
+      "title": "Línea B",
+      "publisher": "Metro de Medellín",
+      "role": "Operator line and station inventory",
+      "url": "https://www.metrodemedellin.gov.co/usuarios/sistema-integrado/linea-b",
+      "publication_date": null,
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "San Javier–San Antonio introduction and general-information table",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "The introduction lists seven stations while the table says six; no reconciled combined total is asserted. The railway body, not the erroneous tram/cable SEO title, defines the subject.",
+      "event_date": "1996-02-29"
+    },
+    {
+      "id": "medellin-fleet",
+      "title": "Ensamblaje de trece trenes nuevos",
+      "publisher": "Metro de Medellín",
+      "role": "Operator manufacturing progress bulletin",
+      "url": "https://www.metrodemedellin.gov.co/al-dia/noticias/asi-avanza-el-ensamblaje-de-los-13-trenes-nuevos-que-tendra-el-metro-de-medellin",
+      "publication_date": "2026-07-08",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Bulletin 2260: carbody shipment, prototype and local assembly",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "Thirty percent is project progress, not accepted train availability. The 2027 operation and capacity improvements are forecasts.",
+      "expected_operation_period": "2027"
+    },
+    {
+      "id": "medellin-river",
+      "title": "Obras de protección de la infraestructura férrea",
+      "publisher": "Metro de Medellín",
+      "role": "Operator maintenance bulletin",
+      "url": "https://www.metrodemedellin.gov.co/al-dia/noticias/el-metro-avanza-en-obras-civiles-en-el-rio-medellin-para-proteger-la-infraestructura-ferrea-y-mitigar-riesgos",
+      "publication_date": "2026-06-26",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Bulletin 2257: Sabaneta–Itagüí retaining structures and erosion",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "Work was underway in this account; its first-half completion expectation is not a completion receipt. The text does not quantify avoided failures or independently attribute climate effects."
+    },
+    {
+      "id": "medellin-payments",
+      "title": "Pagos abiertos en las líneas A y B",
+      "publisher": "Metro de Medellín",
+      "role": "Dated fare-system rollout notice",
+      "url": "https://www.metrodemedellin.gov.co/al-dia/noticias/llegan-los-pagos-abiertos-al-metro-de-medellin-ahora-es-posible-viajar-pagando-con-tarjetas-bancarias",
+      "publication_date": "2026-11-11",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Bulletin 2284: start date, initial validator scope and Cívica relationship",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "Initial A/B rollout is not network-wide deployment or proof of transaction success. Personalized Cívica benefits are not automatically promised for bank cards.",
+      "effective_date": "2026-11-11"
+    },
+    {
+      "id": "bogota-survey",
+      "title": "Qué es la Encuesta Multipropósito",
+      "publisher": "Bogotá municipal portal / Secretaría Distrital de Planeación",
+      "role": "Survey geography and purpose account",
+      "url": "https://bogota.gov.co/mi-ciudad/planeacion/que-es-la-encuesta-multiproposito-que-se-realiza-en-bogota",
+      "publication_date": "2026-03-10",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Completed fieldwork period, localities and Cundinamarca coverage",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "The explanatory page is not a released result table or microdata analysis. Bogotá, the twenty-one external municipalities and their sampling domains remain distinct.",
+      "fieldwork_start_period": "2025-11",
+      "fieldwork_end_period": "2026-02"
+    },
+    {
+      "id": "bogota-care",
+      "title": "Manzana del Cuidado El Dorado en SuperCADE Engativá",
+      "publisher": "Bogotá municipal portal / Secretaría General",
+      "role": "Service relocation and planned expansion account",
+      "url": "https://bogota.gov.co/mi-ciudad/gestion-publica/2026-11/bogota-fortalece-servicios-supercade-con-manzana-del-cuidado-el-dorado",
+      "publication_date": "2026-11-15",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Relocation, October inventory and projected additional services",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "The relocation is reported, without an exact relocation day. Twenty additional services and equipment remain planned; service encounters are not unique beneficiaries.",
+      "reporting_period": "2026-10"
+    },
+    {
+      "id": "bogota-housing-learning",
+      "title": "Coordinadoras del Cuidado y educación financiera",
+      "publisher": "Bogotá municipal portal / Secretaría Distrital del Hábitat",
+      "role": "Programme participation account",
+      "url": "https://bogota.gov.co/mi-ciudad/habitat/2026-11/coordinadoras-de-las-manzanas-del-cuidado-se-certifican-en-bogota",
+      "publication_date": "2026-11-13",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Course scope, November 9 participation and subsidy-stage figures",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "People, certified participants and households have different denominators. Assigned subsidy is not completed housing occupancy; programme totals do not establish causal effect.",
+      "reporting_cutoff_date": "2026-11-09"
+    },
+    {
+      "id": "bogota-water-work",
+      "title": "Trabajos de Tibitoc y restricciones temporales",
+      "publisher": "Bogotá municipal portal / Empresa de Acueducto y Alcantarillado de Bogotá",
+      "role": "Advance utility work notice",
+      "url": "https://bogota.gov.co/mi-ciudad/habitat/2026-11/cortes-de-agua-en-municipios-de-cundinamarca-el-4-de-noviembre-de-2026",
+      "publication_date": "2026-11-03",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Valve work and differentiated service-area restrictions",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "The scheduled interruption is historical, not current advice or a completion/quality receipt. Utility service areas extend beyond Bogotá.",
+      "scheduled_start_date": "2026-11-04"
+    },
+    {
+      "id": "bogota-street-work",
+      "title": "Autopista Sur: plan de manejo de tránsito",
+      "publisher": "Bogotá municipal portal / Secretaría Distrital de Movilidad",
+      "role": "Advance traffic-management notice",
+      "url": "https://bogota.gov.co/mi-ciudad/movilidad/2026-11/movilidad-bogota-cierre-autopista-sur-calle-8-sur-av-primero-de-mayo",
+      "publication_date": "2026-11-14",
+      "language": "Spanish",
+      "interpretation_note": "Spanish source interpreted into English by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Closure window, bus diversions, moved stops and pedestrian provision",
+      "access_mode": "HTML body",
+      "inspection": "Relevant official HTML text inspected on 2026-11-22; linked files, images, live services and dynamic feeds were not inspected",
+      "boundary": "The authorised plan is not observed compliance or present routing advice. Linked maps were not visually inspected.",
+      "scheduled_start_date": "2026-11-14",
+      "scheduled_end_date": "2026-11-17"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "project-bogota-metro-line-1",
+      "kind": "Project",
+      "title": "Bogotá Metro Line 1: from a built viaduct to usable service",
+      "route": "/atlas/projects/bogota-metro-line-1/",
+      "aliases": [
+        "Bogotá Metro Line 1",
+        "Bogota Metro Line 1",
+        "Primera Línea del Metro de Bogotá",
+        "PLMB",
+        "Línea 1 Metro Bogotá"
+      ],
+      "answer": "Bogotá’s first metro line is a railway under construction, with dated structural and rolling-test milestones. Its public value also depends on station access, bus connections and the streets beneath the viaduct.",
+      "scope": "The initial elevated Line 1 alignment from Bosa to Caracas at Calle 72, counted once. Stations, trains, construction sections and parks are components, not additional project identities. Excludes Line 2 and the proposed Calle 100 extension.",
+      "stage": "Construction and a towed rolling test documented in 2026. No commercial-service acceptance or recurring operating outcome is admitted.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The municipal and owner accounts identify one continuous initial Line 1 alignment with shared infrastructure, rolling stock and station interfaces. PLMB and Primera Línea are aliases, not new projects. Subsequent lines and the Calle 100 proposal are excluded; no historical country acquisition docket is reused."
+      },
+      "timeline": [
+        {
+          "date": "2026-02-19",
+          "event": "City design account describes the initial alignment and a separate extension proposal.",
+          "source_ids": [
+            "bogota-design"
+          ]
+        },
+        {
+          "date": "2026-04-08",
+          "event": "City reports the ninth train’s arrival; its full-fleet timetable remains a forecast.",
+          "source_ids": [
+            "bogota-connections"
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "event": "Train two undergoes a towed rolling test on the viaduct.",
+          "source_ids": [
+            "bogota-rolling-test"
+          ]
+        },
+        {
+          "date": "2026-11-08",
+          "event": "NQS/Calle Octava Sur bridge structural continuity completed, according to the later city account.",
+          "source_ids": [
+            "bogota-progress"
+          ]
+        },
+        {
+          "date": "2026-11-15",
+          "event": "City reports twenty kilometres of viaduct and twelve of installed track, distinct from October’s overall execution measure.",
+          "source_ids": [
+            "bogota-progress"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "The initial alignment and the future network",
+          "text": "The February design account places the initial line between Bosa and Caracas at Calle 72, passing through nine localities. It describes sixteen stations and twenty-eight access buildings. Those access buildings matter because an elevated platform is reached from streets, crossings and vertical circulation, not simply from a point on a map. The same account discusses a possible extension to Calle 100, but that proposal is outside this article’s counted alignment. Capacity, travel-time and environmental benefits in the design material are projections; they should not be presented as journeys already made or savings already measured.",
+          "source_ids": [
+            "bogota-design"
+          ]
+        },
+        {
+          "heading": "Different components progress at different rates",
+          "text": "On November 15, the city reported twenty kilometres of constructed viaduct and twelve kilometres of installed track. It separately cited 84.68 percent overall execution for October. These are different measures, not interchangeable estimates of readiness: structural length, track installation and an overall progress calculation describe distinct work. The account also dates structural continuity of the NQS/Calle Octava Sur railway bridge to November 8. That is a useful location-specific milestone, but it does not establish acceptance of signalling, station systems or the complete railway. It remains an official construction account, not an independent commissioning certificate.",
+          "source_ids": [
+            "bogota-progress"
+          ]
+        },
+        {
+          "heading": "A rolling test is a bounded engineering milestone",
+          "text": "The May 22 account describes train two moving from the Bosa depot toward Station 2 with auxiliary vehicles providing the movement. Its purpose included checking the rails, cant and clearances. This was a towed rolling test, not an energized automatic passenger journey. The article described energized testing and automatic operation as subsequent steps. That sequence helps readers understand why seeing a train on a viaduct is important without making it equivalent to opening day. Testing one train on one section also leaves the rest of the alignment and the wider operating system to be demonstrated.",
+          "source_ids": [
+            "bogota-rolling-test"
+          ]
+        },
+        {
+          "heading": "Transfers must work as physical journeys",
+          "text": "The April account distinguishes eight direct TransMilenio connections and two proximity connections among the sixteen planned stations. That is more specific than summaries describing ten connections as direct; the inconsistency should not be hidden by treating all ten as equivalent. A nearby stop and a direct interchange can require different walking distances, crossings and access arrangements. The same notice reports the ninth train arriving, while expecting the whole fleet later in the year. Arrival, interchange design and service readiness answer different questions. Neither the delivery forecast nor the connection count proves a convenient, accessible transfer in operation.",
+          "source_ids": [
+            "bogota-connections"
+          ]
+        },
+        {
+          "heading": "The railway includes a street-level obligation",
+          "text": "The November public-realm account identifies eleven parks for renewal within the concession’s intervention area. It describes planned work on paving, furniture, pedestrian links, junctions and trees, alongside new and renewed public space. These works connect the railway to daily neighbourhood movement: reaching a station includes the route underneath and beside its structure. The text is prospective, despite wording in the URL that can sound completed. It does not record eleven finished parks. A meaningful delivery account would identify individual locations, what was handed over and whether the paths and crossings form a continuous usable route.",
+          "source_ids": [
+            "bogota-parks"
+          ]
+        },
+        {
+          "heading": "Editorial test for opening and everyday usefulness",
+          "text": "The next account should follow a small set of stations from construction through commissioning to public use. For each, pair the opening decision with accessible entrances, working vertical circulation, clear transfer arrangements and a defined observation period. Record faults and temporary access changes alongside successful service, so the evidence can describe a real journey rather than a ceremony. Keep project-level acceptance separate from neighbourhood public-realm handovers. Once operating data are available, compare like periods and explicit passenger exposure before claiming reliable travel-time savings, increased access or reduced emissions attributable to the line.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "The exact initial-line commissioning and commercial-service acceptance records, with scope and effective dates.",
+        "Station-specific interchange and accessible-route handovers, including direct versus proximity connections.",
+        "Named park/public-realm handovers and comparable post-opening service observations."
+      ],
+      "related": [
+        {
+          "title": "Bogotá Distrito Capital",
+          "route": "/atlas/places/bogota/"
+        },
+        {
+          "title": "Medellín original metro railway",
+          "route": "/atlas/projects/medellin-metro-railway/"
+        }
+      ]
+    },
+    {
+      "record_id": "project-medellin-metro-railway",
+      "kind": "Project",
+      "title": "Medellín’s original metro railway: maintaining an operating network",
+      "route": "/atlas/projects/medellin-metro-railway/",
+      "aliases": [
+        "Metro de Medellín Lines A and B",
+        "Medellin Metro railway",
+        "Línea A Medellín",
+        "Línea B Medellín",
+        "Valle de Aburrá metro railway"
+      ],
+      "answer": "Medellín’s original rail network joins a long operating history to continuing maintenance, fleet renewal and changes in payment access. Its established opening does not remove the need to test current reliability and usable connections.",
+      "scope": "The connected original heavy-rail network of Lines A and B, including the southern Line A extension, counted as one project. Cableways, buses, the Ayacucho tram and Metro de la 80 are separate systems or projects, not additional delivery within this identity.",
+      "stage": "Commercial opening documented in 1995 and 1996; current operator inventories and dated maintenance/payment accounts inspected. The planned 2027 fleet expansion is not accepted operating capacity.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The operator’s history treats the first railway, its western branch and southern extension as a connected network, with shared train and operating systems. This account counts that original railway once rather than multiplying its lines, stations or renewal contracts. Later modes remain separate and no country acquisition docket is reused."
+      },
+      "timeline": [
+        {
+          "date": "1979-05-31",
+          "event": "Metro enterprise created, according to the operator’s retrospective.",
+          "source_ids": [
+            "medellin-history"
+          ]
+        },
+        {
+          "date": "1995-11-30",
+          "event": "First commercial section opened between Niquía and Poblado.",
+          "source_ids": [
+            "medellin-history"
+          ]
+        },
+        {
+          "date": "1996-02-29",
+          "event": "Line B commercial start dated in the operator’s line table.",
+          "source_ids": [
+            "medellin-b"
+          ]
+        },
+        {
+          "date": "2012-09-17",
+          "event": "Southern extension opened to Sabaneta and La Estrella, according to the retrospective.",
+          "source_ids": [
+            "medellin-history"
+          ]
+        },
+        {
+          "date": "2026-06-26",
+          "event": "Operator reports retaining-structure work underway between Sabaneta and Itagüí, not completed acceptance.",
+          "source_ids": [
+            "medellin-river"
+          ]
+        },
+        {
+          "date": "2026-07-08",
+          "event": "Fleet bulletin describes manufacturing progress and future operating introduction.",
+          "source_ids": [
+            "medellin-fleet"
+          ]
+        },
+        {
+          "date": "2026-11-11",
+          "event": "Operator announces the initial bank-card payment rollout on Lines A and B.",
+          "source_ids": [
+            "medellin-payments"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "One railway with a staged operating history",
+          "text": "The operator’s retrospective dates the company’s creation to May 31, 1979 and the first commercial section, between Niquía and Poblado, to November 30, 1995. Line B’s own inventory dates its commercial start to February 29, 1996. The southern extension to Sabaneta and La Estrella followed on September 17, 2012. This article treats those connected railway stages as one identity. Later cableways, tram and bus services are important connections, but are not absorbed into its delivery count. The history establishes actual openings; it does not provide a contemporary reliability series for every part of the network.",
+          "source_ids": [
+            "medellin-history",
+            "medellin-b"
+          ]
+        },
+        {
+          "heading": "The network is more than its route endpoints",
+          "text": "The operator presents Line A between La Estrella and Niquía, and Line B between San Javier and San Antonio. The station pages describe facilities such as lifts, stairs and connections, giving readers a starting point for understanding the route from street to train. Listed facilities are not live availability reports. Line B’s introductory station count also differs from its general-information table; no reconciled network total is inferred here. Instead, the useful comparison is between named stations and their access arrangements. A functioning train service can still leave an incomplete journey when a required access facility is unavailable.",
+          "source_ids": [
+            "medellin-a",
+            "medellin-b"
+          ]
+        },
+        {
+          "heading": "New trains have to pass through manufacturing and acceptance",
+          "text": "The July 8 fleet bulletin describes thirteen new trains, comprising thirty-nine cars, with a prototype being assembled in Mexico and local assembly preparation in Bello. A first carbody had departed Mexico, while the prototype was intended to validate systems and the assembly process before series work. The reported thirty percent progress is a project measure, not the proportion of new trains available for passengers. Entry into operation was projected for 2027, with increased capacity and shorter waits as expected benefits. Those forecasts require later delivery, testing and service evidence before they can describe achieved performance.",
+          "source_ids": [
+            "medellin-fleet"
+          ]
+        },
+        {
+          "heading": "Keeping the railway stable beside the river",
+          "text": "A June 26 maintenance bulletin describes concrete-plate replacement and retaining-structure work between Sabaneta and Itagüí after erosion-related deterioration. It connects that intervention to the stability of the railway beside the river and the prevention of service disruption. This is a concrete operating dependency: renewal of the supporting infrastructure matters alongside renewal of trains. The bulletin reports work underway, not a completed handover, and its expected first-half finish does not prove completion. It also supplies no measured reduction in failures. Future reporting should connect the treated location, inspected condition and subsequent service exposure without claiming every avoided incident.",
+          "source_ids": [
+            "medellin-river"
+          ]
+        },
+        {
+          "heading": "Payment access changes in defined stages",
+          "text": "The November 11 notice announces contactless bank-card entry starting on Lines A and B, initially through one enabled validator at each access. Expansion to the other transport modes is described as progressive, not already complete. Cívica remains available; the notice associates personalized profiles, differential fares and integration with that existing system. It does not promise that every bank-card journey receives identical benefits. This distinction matters when comparing ease of entry with the cost and conditions of a connected trip. No payment transaction was tested for this account, and the announcement does not establish validator uptime or transaction success.",
+          "source_ids": [
+            "medellin-payments"
+          ]
+        },
+        {
+          "heading": "Editorial test for a mature railway",
+          "text": "A mature network needs evidence that joins renewal activity to the service passengers actually receive. Follow specific trains, river-adjacent sections and station entrances over comparable periods, recording both successful availability and interruptions. Separate a new payment option from fare integration, and an assembled vehicle from one accepted into reliable service. Publish observation windows and exposure so a quiet month is not mistaken for a durable improvement. Comparisons with Bogotá should respect their different stages: construction tests explain readiness to open, whereas Medellín’s operating record should explain how established service is maintained and improved.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Accepted new-train inventory and subsequent comparable service results, separately dated from the 2027 forecast.",
+        "Completion and condition records for named river-adjacent protection works, with service exposure.",
+        "Station-access and payment-availability observations, plus explicit rules for integrated and personalized fares."
+      ],
+      "related": [
+        {
+          "title": "Bogotá Metro Line 1",
+          "route": "/atlas/projects/bogota-metro-line-1/"
+        },
+        {
+          "title": "Bogotá Distrito Capital",
+          "route": "/atlas/places/bogota/"
+        }
+      ]
+    },
+    {
+      "record_id": "place-bogota",
+      "kind": "Place",
+      "title": "Bogotá: transport construction, care and regional services",
+      "route": "/atlas/places/bogota/",
+      "aliases": [
+        "Bogotá Distrito Capital",
+        "Bogota DC",
+        "Bogotá D.C.",
+        "Bogota capital district"
+      ],
+      "answer": "Bogotá’s place account connects the city’s transport transition with care services, housing access and a water network that crosses municipal boundaries. Those systems need distinct measures before they can support a common account of everyday access.",
+      "scope": "Bogotá Distrito Capital, counted as one place across its twenty localities. Excludes the surrounding Cundinamarca municipalities, including Soacha; regional survey and water-service coverage do not enlarge the counted city. Localities and care centres are not separately counted places.",
+      "stage": "Dated municipal service and construction-management accounts inspected. Survey geography, participation counts and planned interruptions are not city-wide outcome acceptance.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The municipal survey account distinguishes Bogotá’s twenty localities from twenty-one Cundinamarca municipalities and their separate sampling domains. This profile follows that city-level identity while describing cross-boundary service dependencies. Localities, care centres and external utility customers do not become extra cities, and no acquisition docket is reused."
+      },
+      "timeline": [
+        {
+          "date": "2026-03-10",
+          "event": "City explains the survey geography and November 2025–February 2026 fieldwork; this is not a result-table release.",
+          "source_ids": [
+            "bogota-survey"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "event": "Utility notice publishes planned Tibitoc-related restrictions beginning the next day.",
+          "source_ids": [
+            "bogota-water-work"
+          ]
+        },
+        {
+          "date": "2026-11-13",
+          "event": "City publishes financial-education and subsidy-stage figures with a November 9 cutoff.",
+          "source_ids": [
+            "bogota-housing-learning"
+          ]
+        },
+        {
+          "date": "2026-11-14",
+          "event": "Traffic notice publishes a November 14–17 overnight closure plan, not observed compliance.",
+          "source_ids": [
+            "bogota-street-work"
+          ]
+        },
+        {
+          "date": "2026-11-15",
+          "event": "City reports El Dorado care-centre relocation and a projected service expansion; no exact relocation day is stated.",
+          "source_ids": [
+            "bogota-care"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "A city boundary within a regional evidence system",
+          "text": "The March survey explanation distinguishes Bogotá’s twenty localities from twenty-one Cundinamarca municipalities. Within the city it describes thirty-three local planning units and seventy-three survey territorial units. Outside it, urban and rural representation varies by municipality, with separate detail for Soacha. Those are reporting geographies, not additional cities inside Bogotá. The reported fieldwork ran from November 2025 to February 2026. Its coverage can guide questions about housing, services and mobility, but the explanatory article is not a results release. Comparisons need the actual tables, sampling definitions and uncertainty before assigning a neighbourhood or regional outcome.",
+          "source_ids": [
+            "bogota-survey"
+          ]
+        },
+        {
+          "heading": "Transport improvement has a construction-period cost",
+          "text": "The November 14 traffic notice scheduled overnight closures on the Autopista Sur between Calle Octava Sur and Avenida Primero de Mayo through November 17. It described bus diversions, moved stops and pedestrian provision during metro works. This illustrates a distinct city responsibility: maintaining access while the railway is being built. A future transport benefit does not describe the present disruption faced by people reaching work or services. The notice is an authorised management plan, not an observed record of compliance. Its historical window should not be offered as current routing advice or proof that every temporary path worked.",
+          "source_ids": [
+            "bogota-street-work"
+          ]
+        },
+        {
+          "heading": "Care provision meets a municipal service centre",
+          "text": "The November 15 account reports relocation of El Dorado’s Care Block to SuperCADE Engativá, joining care-related provision with a municipal service location. It records an October inventory of 274 services from fifteen entities, while projecting twenty additional services through the integration. Planned equipment and rooms should not be counted as fully delivered facilities merely because the relocation is reported. The practical question is whether carers and their families can reach coordinated support without repeating unnecessary journeys. Service encounters, available services and unique people served are different measures; the article does not provide a causal estimate of time saved.",
+          "source_ids": [
+            "bogota-care"
+          ]
+        },
+        {
+          "heading": "Learning and housing have different completion stages",
+          "text": "The financial-education programme connects care services with information about household finances and housing subsidies. The November 13 report gives a November 9 cutoff for 13,409 enrolled people and 6,909 certified participants. It separately reports 2,852 households beginning a subsidy process and 1,609 with a benefit assigned. These are not interchangeable denominators or a single progression rate. An assigned subsidy is not occupied housing, and participation alone does not establish that the course caused a housing outcome. A useful follow-up would preserve the household-level stage definitions while avoiding disclosure of personal financial or application data.",
+          "source_ids": [
+            "bogota-housing-learning"
+          ]
+        },
+        {
+          "heading": "Water service crosses the city boundary",
+          "text": "The November 3 Tibitoc notice described valve work and planned restrictions in parts of neighbouring municipalities. It distinguished areas without supply from intermittent service, rather than treating all of Zipaquirá, Tocancipá, Gachancipá and Sopó as one affected population. That geography matters to a Bogotá profile because the utility network is regional even when the counted place is not. The notice is an advance maintenance schedule, not a post-work restoration record or a current water-quality assurance. Evaluating the improvement requires the actual completion, duration and service-area evidence, with municipal and utility boundaries kept visible.",
+          "source_ids": [
+            "bogota-water-work"
+          ]
+        },
+        {
+          "heading": "Editorial test for everyday access",
+          "text": "Bring the systems together through specific places and journeys rather than a single city score. A care destination, its transport access and the reliability of nearby basic services can form a practical observation unit. Compare the same locations over defined periods, with separate measures for available services, people reached, travel burden and completed housing stages. Construction notices explain constraints but do not measure experienced delay. Participation totals describe programme reach but not necessarily improved wellbeing. The next account should make those distinctions usable to readers while showing where a regional provider’s responsibility extends beyond Bogotá’s municipal identity.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Released survey tables and methods for comparable city and locality measures, not just the explanatory page.",
+        "Dated care-centre service inventories and anonymized access measures, keeping encounters separate from people.",
+        "Post-work transport and utility records, plus housing-stage outcomes with stable definitions and privacy protections."
+      ],
+      "related": [
+        {
+          "title": "Bogotá Metro Line 1",
+          "route": "/atlas/projects/bogota-metro-line-1/"
+        },
+        {
+          "title": "Medellín original metro railway",
+          "route": "/atlas/projects/medellin-metro-railway/"
+        }
+      ]
+    }
+  ]
+}

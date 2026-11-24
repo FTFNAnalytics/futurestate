@@ -1,7 +1,7 @@
 import {annualCaseReviews,annualReviewDate} from './annual-case-reviews.mjs';
 import {backlogDecisionFor} from './backlog-research.mjs';
 import {goldenMarsSignalContext} from './golden-mars-signal-review.mjs';
-import {annualAiPresentation,annualAiReviewFor,annualAiReadings,annualAiReviewData} from './annual-ai-reviews.mjs';
+import {annualAiPresentation,annualAiReviewFor,annualAiReadings,annualAiReviewData,annualAiProjectionDate} from './annual-ai-reviews.mjs';
 const relatedLabels=new Map([
   ['/method/','Method and publication policy'],['/review/method/','Evidence review method'],['/review/fieldbook/method/','Fieldbook research method'],
   ['/atlas/sources/','Source profiles'],['/atlas/source-monitor/','Source review queue'],['/data/sources.json','Source registry (JSON)'],
@@ -44,9 +44,19 @@ export function readerPresentation(article,sources,editionContracts,catalog,opti
 // Exact source-ID joins expose already recorded checks alongside a historical
 // article. They do not re-review that article or change its evidence cutoff.
 export function readerSourceReviewContexts(article,evidence,operations,{asOfDate,route}={}){
-  const date=asOfDate??[evidence.as_of_date,operations.as_of_date,annualAiReviewData.review_date].filter(Boolean).sort().at(-1);
+  const date=asOfDate??[evidence.as_of_date,operations.as_of_date,annualAiProjectionDate].filter(Boolean).sort().at(-1);
   if(!/^\d{4}-\d{2}-\d{2}$/.test(date??''))throw Error('Reader context requires an ISO calendar date');
   const ids=new Set(article.source_ids),contexts=[];
+  // A broad source match alone is not a named-project relationship. Only an
+  // explicitly mapped reading can inherit these separately dated file checks.
+  for(const r of operations.receipts??[]){
+    if(!article.named_project_context_ids?.includes(r.file_id)||r.checked_date>date||r.affected_routes.includes(route))continue;
+    const matched=[...new Set(r.source_ids.filter(id=>ids.has(id)))];
+    if(!matched.length)continue;
+    const projectRoute=r.affected_routes.find(p=>p.startsWith('/atlas/projects/'));
+    if(!projectRoute)throw Error(`Named-project context has no project route: ${r.receipt_id}`);
+    contexts.push({id:r.receipt_id,kind:`Named-project follow-up — ${r.decision_status??'no_material_change'}; not a cycle decision`,title:r.decision,checked_date:r.checked_date,summary:r.bounded_finding,route:projectRoute,next_check_date:r.next_check_date,matched_source_ids:matched,independent_article_review:false});
+  }
   for(const r of evidence.receipts??[]){
     const matched=[...new Set(r.checked_source_ids.filter(id=>ids.has(id)))];
     if(!matched.length||r.decision_date>date||r.source_checked_date>date||r.affected_routes.includes(route))continue;

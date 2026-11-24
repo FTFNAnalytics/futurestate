@@ -1,10 +1,16 @@
 ---
+import {canonicalReaderPresentation,canonicalReaderIntegrationDate,canonicalReaderLinksFor} from '../../lib/canonical-reader-bindings.mjs';
+import {canonicalProjectRefreshes} from '../../lib/canonical-project-refreshes.mjs';
 import {selectedArticlePresentation,selectedReviewDate,selectedReviewStatus} from '../../lib/selected-article-reviews.mjs';
-interface Article {record_id:string;title:string;answer:string;kind:string;authored_date:string;updated_date?:string;review_status:string;source_check_boundary:string;historical_record_title?:string|null;sections:{heading:string;text:string;citations?:number[];case_id?:string;paragraphs?:{text:string;citations:number[]}[]}[];sources:{title:string;url:string;artifact_date:string}[];source_notes?:{source_index:number;checked_date:string;locator:string;scope:string;access:string}[];identity_evidence?:{candidate_name:string;identifier:string|null;scope:string;aliases:string[];not_equivalent:string[];matched_source_indices:number[];checked_date:string;disposition:string};language_notes?:{lang:string;term:string;reading:string;source_index:number;review_status:string}[];}
+interface Article {record_id:string;route?:string;title:string;answer:string;kind:string;authored_date:string;updated_date?:string;review_status:string;source_check_boundary:string;historical_record_title?:string|null;sections:{heading:string;text:string;citations?:number[];case_id?:string;paragraphs?:{text:string;citations:number[]}[]}[];sources:{title:string;url:string;artifact_date:string}[];source_notes?:{source_index:number;checked_date:string;locator:string;scope:string;access:string}[];identity_evidence?:{candidate_name:string;identifier:string|null;scope:string;aliases:string[];not_equivalent:string[];matched_source_indices:number[];checked_date:string;disposition:string};language_notes?:{lang:string;term:string;reading:string;source_index:number;review_status:string}[];}
 interface Props { article:Article; embedded?:boolean; }
 const {article:original,embedded=false}=Astro.props;
+const refreshedProject=Astro.url.pathname===original.route?canonicalProjectRefreshes.records.find(r=>r.related[0]?.route===original.route):undefined;
 const SectionHeading=embedded?'h3':'h2';
-const presentation=selectedArticlePresentation(original,{route:Astro.url.pathname});
+const canonicalPresentation=canonicalReaderPresentation(original,{route:Astro.url.pathname});
+const binding=canonicalPresentation?.binding;
+const relatedReaders=binding?canonicalReaderLinksFor(binding.binding_id):[];
+const presentation=canonicalPresentation?.presentation ?? selectedArticlePresentation(original,{route:Astro.url.pathname});
 const article:Article=presentation.article;
 const {review,changes,chapters}=presentation;
 ---
@@ -12,6 +18,13 @@ const {review,changes,chapters}=presentation;
   <div class="eyebrow">{article.kind} · {review?'AI-reviewed dated article':'Dated editorial draft'}</div>
   {embedded ? <h2>{article.title}</h2> : <h1 class="page-title">{article.title}</h1>}
   <p class="lede">{article.answer}</p>
+  {refreshedProject&&<aside data-later-project-account={refreshedProject.record_id}><p><a href={refreshedProject.route}>Read the later project account, checked {canonicalProjectRefreshes.review_date}</a>. This earlier reading retains its own dates and review.</p></aside>}
+  {binding&&<aside data-canonical-reader-binding={binding.binding_id}>
+    <p>This dated reading was integrated into this Atlas page on {canonicalReaderIntegrationDate}. Its source observations and original AI assessment retain the dates below.</p>
+    <p>{binding.current_status_boundary}</p>
+    {relatedReaders.length>0&&<nav aria-label="Related accounts with separate scopes" data-canonical-related-readers><ul>{relatedReaders.map(link=><li><a href={link.route}>{link.label}</a></li>)}</ul></nav>}
+    <p><a href={binding.article_route}>Open the original reviewed reading</a> · <a href="/data/build-decisions.json">Inspect the exact article-to-page decision</a></p>
+  </aside>}
   <p><strong>{review?selectedReviewStatus:article.review_status}</strong> · Written {article.authored_date}{review&&` · AI reviewed ${selectedReviewDate}`}</p>
   {review&&<section id={`${article.record_id}-ai-review`} data-selected-ai-review={article.record_id} data-review-sha256={review.sha256}>
     <SectionHeading>{review.decision}</SectionHeading><p>{review.rationale}</p>

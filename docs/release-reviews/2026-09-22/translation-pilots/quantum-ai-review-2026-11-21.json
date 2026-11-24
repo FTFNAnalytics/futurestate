@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-11-21",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete quantum translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-057",
+  "source_record_sha256": "fcb6f23870c132d31235bfce713914aae7aa9d6c70d9efc622b461dc4d465c9d",
+  "source_to_contract_mapping": "Translate the retained September 10 plain-language English reader with its 6 actual source IDs. Preserve the distinct original canonical-contract digest and its 3 source IDs; the legacy texts.historical_contract_sha256 field below binds canonical_content_digest, not the full contract JSON hash. No original specification or human-review field is rewritten.",
+  "historical_contract_source_ids": [
+    "source-nist-pqc",
+    "source-white-house-eo-14412-pqc-migration",
+    "source-omb-m-26-15-pqc-migration"
+  ],
+  "checks": [
+    "Compared both complete overviews and all six sections with retained English record 202-EDITION-057.",
+    "Kept quantum computing, sensing and communications separate from institutional post-quantum cryptographic migration.",
+    "Preserved final 2024 standards, 2025 HQC backup selection, preliminary credential specifications and dated migration plans as distinct stages; selection is not a final standard.",
+    "Preserved scope inventories, surrounding-system compatibility, configuration testing, acceptance, cutover, failure/reversal handling, exceptions and legacy retirement.",
+    "Retained workload, device, protocol, accuracy/error, runtime, cost, uncertainty, repeated observations and conventional baseline requirements without asserting a new benchmark or quantum advantage.",
+    "Preserved September 1, 2026 evidence cutoff and September 10 English authorship; November 21 is translation and AI-fidelity-review date only.",
+    "Read back and compared all saved sections with the authored text; verified both manuscript hashes and all 6 exact source IDs, labels and URLs in each text. Local source-profile pins do not represent live retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Cryptographie postquantique, algorithme de secours and justificatifs d’identité retain the source concepts. Basculement and return to the prior state are explained rather than treated as completed events. No migration record is used as quantum-device performance evidence."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Criptografía poscuántica, algoritmo de respaldo and credenciales preserve the source concepts. Transición operativa and reversión retain cutover and rollback without asserting completion. Conventional comparisons and repeated observations remain necessary."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/quantum-fr-CA-ai-reviewed.md",
+      "file_sha256": "ba49746b8a16a1281fabb822602d7cafbad2d38b6deded4455293bbf6d3c67ef",
+      "proposed_contract_id": "202-EDITION-059",
+      "historical_contract_sha256": "18e473820901283bcff4003024123329fd58c59d2aad65b776f93b185c83015d"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/quantum-es-419-ai-reviewed.md",
+      "file_sha256": "5c51cd2e4956ffcff62dc37d3a69073b5f047a18236c576c078fcfa5997eab20",
+      "proposed_contract_id": "202-EDITION-060",
+      "historical_contract_sha256": "18e473820901283bcff4003024123329fd58c59d2aad65b776f93b185c83015d"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-white-house-eo-14412-pqc-migration",
+      "name": "Executive Order 14412: Securing the Nation Against Advanced Cryptographic Attacks",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/",
+      "path": "app/src/content/sources/source-white-house-eo-14412-pqc-migration.json",
+      "sha256": "c95999f29f040716666dc60fa4adf70d55b4135a07fc5cdbafe137f29a576633"
+    },
+    {
+      "id": "source-omb-m-26-15-pqc-migration",
+      "name": "OMB M-26-15: Execution of the Migration to Post-Quantum Cryptography",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+      "path": "app/src/content/sources/source-omb-m-26-15-pqc-migration.json",
+      "sha256": "59019836e32bc8c3d0cd11ab85a6219df557d2c8847aa315f96648dda9efc08b"
+    },
+    {
+      "id": "source-nist-pqc",
+      "name": "NIST Post-Quantum Cryptography Project",
+      "url": "https://csrc.nist.gov/Projects/post-quantum-cryptography",
+      "path": "app/src/content/sources/source-nist-pqc.json",
+      "sha256": "fbb067a36696801dd0203ca831526ff0ca017ca6eb9a92ace0e6931b0a3a1b21"
+    },
+    {
+      "id": "source-nist-piv-pqc-working-drafts-2026",
+      "name": "NIST Working Drafts for PQC Updates to PIV Standards",
+      "url": "https://www.nist.gov/news-events/news/2026/06/working-drafts-post-quantum-cryptography-updates-piv-standards",
+      "path": "app/src/content/sources/source-nist-piv-pqc-working-drafts-2026.json",
+      "sha256": "40bac88a687d376b1da962e38da197e966016c9fd919c16ee72cc8cbf5e153af"
+    },
+    {
+      "id": "source-nist-hqc-selection-2025",
+      "name": "NIST HQC Post-Quantum Algorithm Selection",
+      "url": "https://www.nist.gov/news-events/news/2025/03/nist-selects-hqc-fifth-algorithm-post-quantum-encryption",
+      "path": "app/src/content/sources/source-nist-hqc-selection-2025.json",
+      "sha256": "baf173d7b16394a4a8a54ca2e6d7fe9b05de8996b4ad977a0ff86ab72c9872cb"
+    },
+    {
+      "id": "source-gsa-pqc-buyers-guide-2025",
+      "name": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "url": "https://buy.gsa.gov/api/system/files/documents/final-508c-pqc_buyer-s_guide_2025.pdf",
+      "path": "app/src/content/sources/source-gsa-pqc-buyers-guide-2025.json",
+      "sha256": "f3fce1311e1585d7e2c5b4ac1e16ea672459e4cea8561f268957a705bc8d2a50"
+    }
+  ],
+  "integration_state": "Complete local manuscripts assessed for the November 21 application batch. The application registry and its candidate-bound validation record integration separately; this review is not production acceptance.",
+  "boundary": "AI author/self-review under the owner-authorized policy, not independent human review, fresh fact-checking, accessibility certification, measured-outcome admission or launch authority. Preserve original contracts, the retained September 27 translation input and all earlier integrated records. Display saved later source context with its actual inspection date."
+}

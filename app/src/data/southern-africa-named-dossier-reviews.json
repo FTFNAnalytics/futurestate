@@ -1,0 +1,32 @@
+{
+  "review_id":"SOUTHERN-AFRICA-NAMED-ARTICLES-AI-REVIEW-2026-11-21",
+  "review_date":"2026-11-21",
+  "reviewer":"Codex (author and AI self-reviewer)",
+  "policy_id":"OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision":"Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review":false,
+  "edition_sha256":"01e9215b3b1d03f17b2418c7f4f0f8852921f7d3580707eb7c23e94b7e09eddf",
+  "sources_sha256":"e8157670532888283d4fa08e5a965aec46fe3ba27d02d621c83406dd437a2c01",
+  "records":[
+    {"record_id":"project-lesotho-highlands-phase-two","sha256":"eef2a0625683a41c002ff75b00c3bf5a74f42e86d930a65e113b8247daffbd11","determination":"One integrated project, with no extra dam, tunnel or bridge identities. June rockfill and whole-dam percentages retain distinct denominators; September tunnel-package progress is not accepted excavation or transfer service. Impoundment and resettlement targets remain future, and compensation policy is not individual remedy completion."},
+    {"record_id":"place-mokhotlong-district","sha256":"6ee98c0bde195322668b4b57d3c5b50fd9f634555273d92dc62c86f8f5dd229f","determination":"One administrative district, not just the town or project footprint. The population reference remains 2016. Houses, households and moves are different measures. Implementer oversight and liaison training are not independent review, grievance resolution or restored household income."},
+    {"record_id":"place-cape-town-municipality","sha256":"db1e4e700d3cc61ae0517cd6c632eba86989d0ee847cd7c600d843d48d4bd8c0","determination":"One metropolitan municipality, not the province or wider supply system. November 16 announcement and December 1 effective date remain separate; restrictions are not described as already in force. The 2036 programme total is future peak capacity, not current or annual production. Household survey period and release date are distinct."}
+  ],
+  "review_checks":[
+    "Twelve official source texts inspected November 21 in America/Edmonton, with the LHDA news index additionally read to establish publication-month provenance. Search snippets were discovery only.",
+    "Six PDFs were text-inspected. Resettlement and social-visit screenshots returned Cache miss; census and Water Outlook screenshot calls returned no inspectable image. No visual verification is claimed.",
+    "The LHDA 2025 report was too large for the reader, the Statistics South Africa code-list PDF returned 403, and Municipal Money profile values remained Loading. None supplies an inspected finding in these articles.",
+    "English official texts were used; no new translated reading or native-language review is counted. Underlying Cape Town household microdata and the DWS assessment referenced by the City were not separately inspected.",
+    "Each article has six substantive sections, a sourced chronology, exact scope, adverse or implementation constraints and three next artifacts. Year and month precision are retained rather than inventing days.",
+    "The retained eligible inventory and Phase 191/192 docket search contain no duplicate counted identity. LHWP component contracts, Mokhotlong villages and Cape Town supply components are not counted separately.",
+    "Historical portfolio decisions, the prior Nevada and Europe cohorts, all 34 readings and the Phase 60 ledger remain unchanged. No Phase 60 identity, Phase 61 promotion, production acceptance or launch is created."
+  ],
+  "historical_inputs_retained":[
+    {"path":"src/data/portfolio-eligibility-decisions.json","sha256":"b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"},
+    {"path":"src/data/phase-119-deep-project-place-atlas.json","sha256":"cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"},
+    {"path":"src/data/phase-61-project-conversion-registry.json","sha256":"9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"}
+  ],
+  "publication_authorized":false,
+  "launch_authorized":false,
+  "phase_216_complete":false
+}

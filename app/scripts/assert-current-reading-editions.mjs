@@ -7,7 +7,7 @@ import {readerPresentation,readerSourceReviewContexts} from '../src/lib/reader-p
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 import {annualCaseReviewForId} from '../src/lib/annual-case-reviews.mjs';
 import {annualAiReviewFor} from '../src/lib/annual-ai-reviews.mjs';
-import {currentEvidenceLedger,projectEvidenceRecord} from '../src/lib/current-evidence.mjs';
+import {currentEvidenceLedger,projectEvidenceRecord,evidenceReceiptsForControl} from '../src/lib/current-evidence.mjs';
 import {assertReceiptControlExport} from './lib/assert-receipt-control-export.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url)),read=p=>readFile(join(root,p),'utf8'),json=async p=>JSON.parse(await read('src/data/'+p));
 const pack=await json('phase-204-reader-completion.json'),editions=await json('phase-202-accessible-multilingual-low-bandwidth-editions.json'),ops=await json('phase-207-current-operations.json');
@@ -44,12 +44,48 @@ const repeated=readerPresentation({...sample,sections:[sample.sections[0],sample
 assert.throws(()=>readerSourceReviewContexts(sample,currentEvidenceLedger,ops,{asOfDate:'September 15'}),/ISO calendar date/);
 assert.equal(readerSourceReviewContexts({...sample,source_ids:['source-similar-but-unmatched']},currentEvidenceLedger,ops).length,0);
 const fixtureControls={queue:{records:(await json('phase-58-dated-evidence-queue.json')).records},envelope:{records:(await json('phase-67-evidence-return-envelope-ledger.json')).envelope_records},desk:{records:(await json('phase-60c-editorial-desk.json')).records}};
-for(const v of Object.values(fixtureControls))v.records=v.records.map(r=>({...r,current_state:projectEvidenceRecord(r)}));
+for(const v of Object.values(fixtureControls))v.records=v.records.map(r=>({...r,current_state:projectEvidenceRecord(r),dated_review_receipts:evidenceReceiptsForControl(r)}));
+fixtureControls.desk.related_cycle_reviews=currentEvidenceLedger.receipts.filter(r=>!r.desk_item_id&&r.affected_routes.includes('/data/phase-60c-editorial-desk.json'));
+fixtureControls.queue.related_cycle_reviews=currentEvidenceLedger.receipts.filter(r=>!String(r.origin_record_id).startsWith('58-QUEUE-')&&r.affected_routes.includes('/data/evidence-queue.json'));
+for(const receipt of fixtureControls.queue.related_cycle_reviews){
+ for(const mutation of ['missing','changed_date','wrong_queue']){
+  const bad=structuredClone(fixtureControls.queue);
+  if(mutation==='missing')bad.related_cycle_reviews=[];
+  if(mutation==='changed_date')bad.related_cycle_reviews.find(r=>r.receipt_id===receipt.receipt_id).source_checked_date='1999-01-01';
+  if(mutation==='wrong_queue')bad.records[0].dated_review_receipts.push(receipt);
+  assert.throws(()=>assertReceiptControlExport(receipt,bad,'queue'));
+ }
+}
+for(const receipt of fixtureControls.desk.related_cycle_reviews){
+ for(const mutation of ['missing','changed_date','wrong_desk']){
+  const bad=structuredClone(fixtureControls.desk);
+  if(mutation==='missing')bad.related_cycle_reviews=[];
+  if(mutation==='changed_date')bad.related_cycle_reviews.find(r=>r.receipt_id===receipt.receipt_id).source_checked_date='1999-01-01';
+  if(mutation==='wrong_desk')bad.records[0].dated_review_receipts.push(receipt);
+  assert.throws(()=>assertReceiptControlExport(receipt,bad,'desk'));
+ }
+}
 for(const receipt of currentEvidenceLedger.receipts)for(const kind of ['queue','envelope','desk'])assert.doesNotThrow(()=>assertReceiptControlExport(receipt,fixtureControls[kind],kind));
 const primary=currentEvidenceLedger.receipts.find(r=>r.counts_as_cycle_decision!==false),companion=currentEvidenceLedger.receipts.find(r=>r.counts_as_cycle_decision===false);
 const missing=structuredClone(fixtureControls.envelope);missing.records.find(r=>r.envelope_id===companion.envelope_id).current_state.companion_rechecks=[];assert.throws(()=>assertReceiptControlExport(companion,missing,'envelope'),/One separate/);
 const overwritten=structuredClone(fixtureControls.envelope);overwritten.records.find(r=>r.envelope_id===companion.envelope_id).current_state.receipt_id=companion.receipt_id;assert.throws(()=>assertReceiptControlExport(companion,overwritten,'envelope'),/cannot replace/);
 const wrong=structuredClone(fixtureControls.envelope);wrong.records.find(r=>r.envelope_id===primary.envelope_id).current_state.source_checked_date='2026-09-09';assert.throws(()=>assertReceiptControlExport(primary,wrong,'envelope'),/source_checked_date/);
+const latestLoudoun=currentEvidenceLedger.receipts.find(r=>r.receipt_id==='receipt-60-loudoun-2026-11-21-watch-note');
+const priorLoudoun=currentEvidenceLedger.receipts.find(r=>r.receipt_id===latestLoudoun.prior_receipt_id);
+const loudounRow=fixtureControls.envelope.records.find(r=>r.envelope_id===latestLoudoun.envelope_id);
+assert.deepEqual(loudounRow.dated_review_receipts,[priorLoudoun,latestLoudoun]);
+assert.deepEqual(evidenceReceiptsForControl(loudounRow,'2026-11-20'),[priorLoudoun]);
+assert.deepEqual(evidenceReceiptsForControl({envelope_id:'unrelated'}),[]);
+assert.throws(()=>evidenceReceiptsForControl(loudounRow,'November 21'),/ISO calendar date/);
+for(const change of ['missing','mutated','duplicate','rolled_back']){
+ const invalid=structuredClone(fixtureControls.envelope),row=invalid.records.find(r=>r.envelope_id===latestLoudoun.envelope_id);
+ if(change==='missing')row.dated_review_receipts=row.dated_review_receipts.filter(r=>r.receipt_id!==priorLoudoun.receipt_id);
+ if(change==='mutated')row.dated_review_receipts[0].bounded_finding='Changed history';
+ if(change==='duplicate')row.dated_review_receipts.push(structuredClone(priorLoudoun));
+ if(change==='rolled_back')row.current_state=projectEvidenceRecord(loudounRow,'2026-10-28');
+ assert.throws(()=>assertReceiptControlExport(priorLoudoun,invalid,'envelope'),/retained|Retained|Latest/);
+}
+for(const path of ['operating-cycle','evidence-queue','evidence-return-envelopes','phase-60c-editorial-desk'])assert((await read(`src/pages/data/${path}.json.ts`)).includes('dated_review_receipts:')&&(await read(`src/pages/data/${path}.json.ts`)).includes('evidenceReceiptsForControl(record)'),'Control exports must preserve exact receipt history beside current state');
 const source=await read('src/components/review/ReferenceArticle.astro'),page=await read('src/pages/reference/[...path].astro'),verifier=await read('scripts/verify-phase204-reader-completion.mjs');
 assert(source.includes('data-reader-source-context'));assert(source.includes('data-edition-alternative'));assert(source.includes('data-reader-contents'));assert(source.includes('href={source.url}'));assert(source.includes("article.mode === 'low-bandwidth'"));assert(source.includes('data-reader-contract={article.record_id}'));assert(!source.includes('details,.card-note{display:none;}'));
 assert(page.includes('`${readerTitle} | FTFN`'));assert(page.includes('annualCaseTitle(article, {route:Astro.url.pathname})'));assert(source.includes('title={view.title}'));assert(page.includes('readerOverview ?? description'));assert(page.includes('annualCaseOverview(article, {route:Astro.url.pathname})'));

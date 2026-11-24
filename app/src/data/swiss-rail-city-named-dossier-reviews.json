@@ -1,0 +1,148 @@
+{
+  "review_id": "SWISS-RAIL-CITY-NAMED-ARTICLES-AI-REVIEW-2026-11-22",
+  "review_date": "2026-11-22",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision": "Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review": false,
+  "edition_sha256": "78cd2f913fc1af56f5c31389c15931f49029da7df3928438c11ebafa34f34868",
+  "sources_sha256": "2848803dbc60267d68b07f465f8c95b3cd845f70c5e1b01495e49e00a3a07ea7",
+  "records": [
+    {
+      "record_id": "project-gotthard-base-tunnel",
+      "sha256": "c9d9f70901960673713b422b72f2abb2ad67df5cf03a38211102e1ad3f141f9f",
+      "determination": "One Gotthard tunnel, two tubes; no NRLA aggregate identity. Restoration, continuing approach restriction, operator-described regulatory response and detector commissioning remain separate."
+    },
+    {
+      "record_id": "project-ceneri-base-tunnel",
+      "sha256": "da629b6eb413bf0c9a8e279262035cc5d0a84727f7e8e8202f56504e12060d0e",
+      "determination": "One Ceneri tunnel, distinct from Gotthard. Ceremony, operating permission, service entry and separate approach completion keep their own dates; signalling and clearance are dependencies, not measured traffic."
+    },
+    {
+      "record_id": "place-zurich-municipality",
+      "sha256": "46890c0a1acfbd888ac361e2e76e5503de6989782d210f8b9b305a1bcd181154",
+      "determination": "One Zürich municipality, not canton or utility territory. Fare proposal, planning study, completed energy centre and water documentation do not become current discounts, occupied homes or unperformed measurement findings."
+    }
+  ],
+  "review_checks": [
+    "Fifteen selected official HTML records inspected November 22 in America/Edmonton: eight German, two Italian and five English. Codex interpreted and self-reviewed the non-English text; this is not independent language review or a new translated-reading admission.",
+    "The SUST media-summary PDF could not be retrieved after redirecting to an inaccessible address. It is not listed as inspected. SBB's accessible account is explicitly attributed as the operator's interpretation, not direct review of the investigation or rules.",
+    "The separate SBB Contone project page returned 403. The accessible March 24, 2021 SBB news account was used instead; the denied page was not retried or treated as inspected. Linked PDFs, CSVs, geodata, videos and live timetables were not analysed.",
+    "Three articles contain eighteen substantive sections and thirteen chronology events, with five sourced sections and one editorial evidence-test section each. Ceneri also cites the shared federal programme overview; fifteen source records remain distinct.",
+    "Gotthard's 2016 inauguration and December service entry are distinct. August 2023 derailment, September 2024 restoration and May 2026 commissioning use real event dates separate from publication and update dates.",
+    "The 2024 passenger reopening account is not read as removal of every technical restriction: the later SBB source explicitly records a continuing approach-speed restriction until detector commissioning. Detectors mitigate consequences, not derailment causes.",
+    "Freight modal share is a Swiss transalpine measure, not Gotthard-only throughput or a causal estimate. Operator recommendations are not represented as independently verified risk reduction.",
+    "Ceneri is separately named and geographically defined within the NRLA programme; no aggregate NRLA project is added. Two tubes are not two projects. The December 1 permission announcement authorizes a later timetable date; the later federal overview supports service by end-2020.",
+    "March 22, 2021 approach operation is distinct from the March 24 report and its still-future April 5 timetable. Contone–Locarno is a dependency, not an additional project admitted here. ETCS and clearance capability do not establish repeated Ceneri performance.",
+    "Zürich geographic metadata is not polygon inspection. The water provider's additional 67 municipalities are not part of the place identity. No occupied EU acquisition docket or country alias is reused.",
+    "The fare proposal has no visible exact publication date; its official URL supports September 2026 only. The 2025 initiative vote, future implementation steps and conditional earliest spring 2028 introduction stay separate.",
+    "Josef-Areal's completed energy centre is not a completed housing or public-space package. Planning history and earliest construction objective do not establish occupancy.",
+    "Water-quality documentation distinguishes catalogue publication/update from sample dates. NA is below detection or quantification, not necessarily zero; no analysis of the annual CSV files or compliance assessment was performed.",
+    "Current eligibility becomes 77 projects and 44 places. Original 103 decisions, 54/25 baseline, previous cohorts, all 34 readings and evidence-cycle identities remain unchanged. No production acceptance, publication, launch or stewardship completion is inferred."
+  ],
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/phase-61-project-conversion-registry.json",
+      "sha256": "9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"
+    },
+    {
+      "path": "src/data/phase-191-international-named-project-conversion-cohort.json",
+      "sha256": "0f57d402c94cf3ae867fedcbe0faaacf119264a559aee4ffe229dd84cf12ac71"
+    },
+    {
+      "path": "src/data/phase-192-global-place-systems-atlas.json",
+      "sha256": "2d0d9c46823e0716fb9f1ccda364b929f8172e5be1a0706fb1db17d1ef2d3ecc"
+    },
+    {
+      "path": "src/data/chile-named-dossiers.json",
+      "sha256": "2917226c524e13706985b9823e46f09ab4e273250c27179d0824bcf5cb53092e"
+    },
+    {
+      "path": "src/data/chile-named-dossier-reviews.json",
+      "sha256": "5884961882b9db3f88f9867e04b3a690067a5ee03312d4d669e4cca203a496b8"
+    },
+    {
+      "path": "src/data/phase-60-current-decisions.json",
+      "sha256": "3d39efa26c08b1964c13f212849569e00504ac2b191ccc256b5ad9fcab634b63"
+    },
+    {
+      "path": "src/data/ai-reviewed-translations.json",
+      "sha256": "73f2ee14df297b244f37ff38b6dd2df03b5681f41d85bf3cb3cf63078d4fa191"
+    },
+    {
+      "path": "src/data/brazil-named-dossiers.json",
+      "sha256": "7911e702eee06d075f35de4e4cf129bd93e7c2cae9f8560abc2a3519e67d8bcb"
+    },
+    {
+      "path": "src/data/brazil-named-dossier-reviews.json",
+      "sha256": "6fa3aabb7c255291d46a83395d60c5aff6972522377d06ac41bf862b1b03817c"
+    },
+    {
+      "path": "src/data/north-sea-named-dossiers.json",
+      "sha256": "4e6d20affdafd2cbb883f7fffadb85aa1f33b662df6339ae7ed9ac5f57e42ebf"
+    },
+    {
+      "path": "src/data/north-sea-named-dossier-reviews.json",
+      "sha256": "0de26a1e1355fafce36b742ccd6e4427bf065999082f8235a093c14818db3a3b"
+    },
+    {
+      "path": "src/data/stockholm-named-dossiers.json",
+      "sha256": "60c42bd8ff99214e47c75ee8641fb8fef7c7f9ef5bc7c010c35c83d11526b8b1"
+    },
+    {
+      "path": "src/data/stockholm-named-dossier-reviews.json",
+      "sha256": "9b87396e549828ad783c1a49abf14181795fe5f07303d9a4f5a821a5ac827111"
+    },
+    {
+      "path": "src/data/auckland-named-dossiers.json",
+      "sha256": "6f8a590b45adcc5f397d150be7d26d42d7de37c56a7c5ae524e2923f19578827"
+    },
+    {
+      "path": "src/data/auckland-named-dossier-reviews.json",
+      "sha256": "41d81c1fede5522e1933b66f662de5db427f204a661ecf3d22b2a03c97bf2e58"
+    },
+    {
+      "path": "src/data/tuas-named-dossiers.json",
+      "sha256": "d2511b08facd37d93126fa531ca851e24abfd8dc1f5f78c3706bf111a59499dc"
+    },
+    {
+      "path": "src/data/tuas-named-dossier-reviews.json",
+      "sha256": "8dfbb064064a41d46a8adba92498a5b34156db3a0a01e89a1cd58253b5e96c78"
+    },
+    {
+      "path": "src/data/port-cities-named-dossiers.json",
+      "sha256": "224442d22dbb3b870399fe38a31322e9275863314402a29eaeb8328c366ef761"
+    },
+    {
+      "path": "src/data/port-cities-named-dossier-reviews.json",
+      "sha256": "3835c7755399006026f9519d0504edfde3545b03c826eddc7db3de7b8ec5cb09"
+    },
+    {
+      "path": "src/data/urban-services-named-dossiers.json",
+      "sha256": "1408073e693ddfbd1c7eb2d9cfd4331c7fe98c79a2fbc503ddf173c453af6541"
+    },
+    {
+      "path": "src/data/urban-services-named-dossier-reviews.json",
+      "sha256": "013b96429dde3686d8be7a15acbd618328687b3e0cfcb2a42290d0132f440f3b"
+    },
+    {
+      "path": "src/data/nordic-cities-named-dossiers.json",
+      "sha256": "57c289bb9767a793aa9e87f2f0c2d2404b221a05319da58605b3fea7e9728a6f"
+    },
+    {
+      "path": "src/data/nordic-cities-named-dossier-reviews.json",
+      "sha256": "21105183dfdbc7e8c607c919f73d5c7937d68904e5c7575ae27030b339ea0fe6"
+    }
+  ],
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false
+}

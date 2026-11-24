@@ -1,0 +1,634 @@
+{
+  "edition_id": "KOREA-ENERGY-CITIES-NAMED-DOSSIERS-2026-11-22",
+  "inspected_date": "2026-11-22",
+  "timezone": "America/Edmonton",
+  "review_policy": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "review_state": "Dated article authored and AI self-reviewed; production verification pending",
+  "independent_review": false,
+  "phase_60_identity_added": false,
+  "sources": [
+    {
+      "id": "sihwa-design",
+      "title": "Legacy Sihwa tidal project overview",
+      "publisher": "K-water",
+      "role": "Historical engineering and project rationale",
+      "url": "https://www.kwater.or.kr/eng/busi/project03Page.do?s_mid=1192",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "Official English text assessed by Codex under the owner-authorized AI policy; no independent subject or language review claimed.",
+      "locator": "Project outline and development chronology",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "552.7 GWh is a legacy overview estimate, not measured 2025 output; the old completion table is not current commissioning evidence.",
+      "embankment_completion_period": "1994-01",
+      "seawater_policy_change_period": "2000-12",
+      "project_decision_period": "2002-12"
+    },
+    {
+      "id": "sihwa-operation",
+      "title": "K-water tidal generation history",
+      "publisher": "K-water",
+      "role": "Historical construction and commercial-operation dates",
+      "url": "https://www.kwater.or.kr/eng/busi/rene07Page.do?s_mid=1186",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "Official English text assessed by Codex under the owner-authorized AI policy; no independent subject or language review claimed.",
+      "locator": "Sihwa subsection only; wider 2017 statistics excluded",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Commercial operation and construction completion are different milestones. The inconsistent 26 MW unit entry and freshwater wording are not used.",
+      "commercial_operation_date": "2011-08-03",
+      "construction_start_date": "2004-12-31",
+      "construction_completion_date": "2011-11-14"
+    },
+    {
+      "id": "sihwa-water",
+      "title": "Clean energy and Sihwa tidal generation",
+      "publisher": "K-water",
+      "role": "Korean facility and water-circulation overview",
+      "url": "https://www.kwater.or.kr/busi/water03/cleanInfoPage.do?s_mid=28",
+      "publication_date": null,
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Tidal generation paragraph and dated facility inventory",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Operator attributes water-quality improvement to circulation; this is not an independently analysed ecological series. Inventory basis is not publication date.",
+      "facility_inventory_period": "2025-12"
+    },
+    {
+      "id": "sihwa-output",
+      "title": "Generation by energy type",
+      "publisher": "K-water",
+      "role": "Annual operator generation table",
+      "url": "https://m.kwater.or.kr/water/sub09/carb01Page.do?s_mid=2131",
+      "publication_date": null,
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "2020–2025 generation table, tidal category and GWh unit",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "The table is the operator's tidal category, not an explicitly named plant row or an availability series; shares refer to K-water's mix.",
+      "reporting_period": "2020–2025"
+    },
+    {
+      "id": "sihwa-visitor",
+      "title": "Sihwa tidal culture centre visitor information",
+      "publisher": "K-water",
+      "role": "Published visitor facilities and access arrangements",
+      "url": "https://www.kwater.or.kr/cust/sub02/sub02/sub04/promotion2Page.do?s_mid=1055",
+      "publication_date": null,
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Centre, observatory, access, loans and floor-by-floor exhibition descriptions",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Hours differ by facility; third-floor history hall is described as future provision, not an already open exhibit."
+    },
+    {
+      "id": "seoul-water-service",
+      "title": "Extended Arisu household water inspections",
+      "publisher": "Seoul Metropolitan Government",
+      "role": "Dated service announcement",
+      "url": "https://english.seoul.go.kr/arisu-water-quality-inspections-now-available-at-night-and-on-public-holidays-with-just-a-call-or-click/",
+      "publication_date": "2026-03-11",
+      "language": "English",
+      "interpretation_note": "Official English text assessed by Codex under the owner-authorized AI policy; no independent subject or language review claimed.",
+      "locator": "Extended hours, five parameters and reservation/service workflow",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "The five-parameter check is not comprehensive contaminant certification; May contactless collection was a plan in this March release.",
+      "announced_service_start_date": "2026-03-10"
+    },
+    {
+      "id": "seoul-water-survey",
+      "title": "Seoul reports 2026 Arisu consumption survey",
+      "publisher": "Seoul Metropolitan Government",
+      "role": "Published survey summary",
+      "url": "https://english.seoul.go.kr/three-in-four-seoul-residents-drink-arisu-tap-water-with-the-share-rising-for-the-second-consecutive-year/",
+      "publication_date": "2026-11-20",
+      "language": "English",
+      "interpretation_note": "Official English text assessed by Codex under the owner-authorized AI policy; no independent subject or language review claimed.",
+      "locator": "Survey findings, expanded consumption definition and fountain preferences",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Reported consumption is not direct water-quality testing or a demonstrated causal effect of inspections; November 6 dateline differs from page publication.",
+      "press_dateline_date": "2026-11-06",
+      "reporting_period": "2026"
+    },
+    {
+      "id": "seoul-housing",
+      "title": "Housing policy review and renewal milestones",
+      "publisher": "Seoul Metropolitan Government",
+      "role": "Dated municipal account of housing stages",
+      "url": "https://english.seoul.go.kr/mayor-oh-answers-with-facts-and-numbers-about-housing-policy-214-sintong-projects-completed-area-designation-168-moa-town-projects-established-associations/",
+      "publication_date": "2026-10-02",
+      "language": "English",
+      "interpretation_note": "Official English text assessed by Codex under the owner-authorized AI policy; no independent subject or language review claimed.",
+      "locator": "Headline, event date and renewal-stage paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Area designation and associations are not completed homes. Conflicting start/completion wording for 310,000 units is excluded.",
+      "event_date": "2026-09-21",
+      "press_dateline_date": "2026-09-23"
+    },
+    {
+      "id": "seoul-heat",
+      "title": "Hydrothermal agreement for Seongsu K-PROJECT",
+      "publisher": "Seoul Metropolitan Government",
+      "role": "Public-private heat-source agreement announcement",
+      "url": "https://english.seoul.go.kr/smg-to-introduce-hydrothermal-energy-at-seongsu-dong-k-project-reducing-heating-and-cooling-energy-use-by-31/",
+      "publication_date": "2026-03-10",
+      "language": "English",
+      "interpretation_note": "Official English text assessed by Codex under the owner-authorized AI policy; no independent subject or language review claimed.",
+      "locator": "Agreement, raw-water infrastructure, projected savings and delivery schedule",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "31% is expected energy saving, not a measured operating result; the later supply target is not current service.",
+      "announcement_date": "2026-03-04",
+      "supply_target_period": "after 2028-02"
+    },
+    {
+      "id": "seoul-climate-card",
+      "title": "Climate Card short-term service coverage",
+      "publisher": "Seoul Metropolitan Government",
+      "role": "Published transport product and coverage description",
+      "url": "https://english.seoul.go.kr/policy/transportation/climate-card/",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "Official English text assessed by Codex under the owner-authorized AI policy; no independent subject or language review claimed.",
+      "locator": "Discontinuation notice and short-term coverage paragraphs, not the full station table",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Short-term coverage differs from the resident Climate Pass. Airport alighting exception is not permission to board there; scheduled launch is not observed launch.",
+      "recharge_end_date": "2026-08-31",
+      "effective_date": "2026-10-01"
+    },
+    {
+      "id": "incheon-districts",
+      "title": "Incheon launches revised district structure",
+      "publisher": "Incheon Metropolitan City",
+      "role": "Dated administrative reorganization account",
+      "url": "https://www.incheon.go.kr/mayor_9/MA05010000/view?curPage=42&repSeq=DOM_0000000015062218",
+      "publication_date": "2026-07-02",
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Two counties and nine districts and July 1 launch paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "The reorganization is not a measured improvement in services; subdivisions do not add metropolitan place identities.",
+      "effective_date": "2026-07-01"
+    },
+    {
+      "id": "incheon-water",
+      "title": "Yeongjong Ongjin water office opening ceremony",
+      "publisher": "Incheon Metropolitan City Waterworks Headquarters",
+      "role": "Dated island-service organization account",
+      "url": "https://www.incheon.go.kr/IC010205/view?repDt=2026-01-16&repSeq=DOM_0000000013958819",
+      "publication_date": "2026-01-16",
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Business start, ceremony and consolidation of four bodies",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "January 9 work start differs from January 16 ceremony; faster emergency response is expected, not a measured result.",
+      "work_start_date": "2026-01-09",
+      "ceremony_date": "2026-01-16"
+    },
+    {
+      "id": "incheon-housing-rules",
+      "title": "Purchased rental housing programme for 2026",
+      "publisher": "Incheon Metropolitan City housing portal",
+      "role": "Programme scope and conditions",
+      "url": "https://www.incheon.go.kr/housing/hou060102",
+      "publication_date": null,
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Purchased-rental definition, 2026 scope, charges and staged process",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Separate from the jeonse-rental scheme. Deposit and management charges are additional; Ganghwa and Ongjin are outside this supply area.",
+      "page_updated_date": "2026-04-20",
+      "programme_period": "2026"
+    },
+    {
+      "id": "incheon-housing-applications",
+      "title": "Purchased rental housing applications close",
+      "publisher": "Incheon Metropolitan City",
+      "role": "Dated application-stage result",
+      "url": "https://www.incheon.go.kr/IC010205/view?repDt=2026-05-17&repSeq=DOM_0000000014711405",
+      "publication_date": "2026-05-17",
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Application count, 300-home scope and future screening/contract steps",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "1,275 applications are not occupied homes; August results and contracts are future steps in this May account.",
+      "application_start_date": "2026-05-11",
+      "application_end_date": "2026-05-15"
+    },
+    {
+      "id": "incheon-ferry-visitors",
+      "title": "Visitor ferry fare support withdrawal announcement",
+      "publisher": "Incheon Metropolitan City",
+      "role": "Dated passenger-category funding decision",
+      "url": "https://www.incheon.go.kr/mayor_9/MA05010000/view?curPage=59&repSeq=DOM_0000000015178277",
+      "publication_date": "2026-07-21",
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "July 25 announcement, budget rationale and retained categories",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Ends the out-of-city visitor subsidy, not ferries or every supported category; the article is an announcement, not independently observed implementation.",
+      "announced_effective_date": "2026-07-25"
+    },
+    {
+      "id": "incheon-ferry-workers",
+      "title": "Island worker ferry support extension announcement",
+      "publisher": "Incheon Metropolitan City",
+      "role": "Dated targeted eligibility expansion",
+      "url": "https://www.incheon.go.kr/mayor_8/MA040101/view?curPage=2&repSeq=DOM_0000000015549761",
+      "publication_date": "2026-09-17",
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Named worker categories and September 21 intended promulgation/effect",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "The older route's navigation/footer is not article date or current officeholder evidence. Underlying rule was not inspected; no blanket visitor restoration inferred.",
+      "announced_effective_date": "2026-09-21"
+    },
+    {
+      "id": "incheon-hospital-ship",
+      "title": "Island care readiness visit aboard Healthy Ongjin",
+      "publisher": "Incheon Metropolitan City",
+      "role": "Dated operating-service and preparation account",
+      "url": "https://www.incheon.go.kr/IC010205/view?curPage=152&repSeq=DOM_0000000014032662",
+      "publication_date": "2026-01-26",
+      "language": "Korean",
+      "interpretation_note": "Korean text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Operating ship, April 2025 placement, Jawol visit and staffing/weather issues",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body or segment inspected on 2026-11-22; linked files, forms, maps, videos and live services were not tested",
+      "boundary": "Operating vessel is not all-weather availability or a health-outcome series; preparation for integrated care is not completed city-wide implementation.",
+      "visit_date": "2026-01-26",
+      "vessel_placement_period": "2025-04"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "project-sihwa-tidal-power",
+      "kind": "Project",
+      "title": "Sihwa Lake Tidal Power Plant",
+      "route": "/atlas/projects/sihwa-tidal-power/",
+      "aliases": [
+        "Sihwa tidal power",
+        "Siwha tidal plant",
+        "시화호 조력발전소",
+        "Sihwa Lake power station"
+      ],
+      "answer": "Sihwa combines tidal generation with seawater circulation through an existing embankment. Its engineering capacity, commercial-operation history and later generation reporting answer different questions.",
+      "scope": "One named tidal generating plant at Sihwa Lake, including its turbines and sluice structures. The wider reclamation programme, lake catchment, visitor centre and other K-water generation assets are not additional counted projects.",
+      "stage": "K-water dates commercial operation to August 3, 2011 and construction completion to November 14 that year. Later Korean reporting supplies generation context, but legacy estimates, company-category totals and environmental claims are not a single independently accepted asset-performance series.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Count the named Sihwa tidal generating installation once, with the equipment needed for its hydraulic operation. Do not count each turbine, the surrounding reclamation programme or the visitor building as separate projects, and do not assign it to Seoul or Incheon municipality."
+      },
+      "timeline": [
+        {
+          "date": "1994-01",
+          "event": "The legacy operator chronology records completion of the embankment.",
+          "source_ids": [
+            "sihwa-design"
+          ]
+        },
+        {
+          "date": "2000-12",
+          "event": "The lake plan changed from freshwater to seawater use, according to the operator's chronology.",
+          "source_ids": [
+            "sihwa-design"
+          ]
+        },
+        {
+          "date": "2004-12-31",
+          "event": "The later operator history dates the start of plant construction.",
+          "source_ids": [
+            "sihwa-operation"
+          ]
+        },
+        {
+          "date": "2011-08-03",
+          "event": "K-water dates commercial operation to this day, separately from construction completion.",
+          "source_ids": [
+            "sihwa-operation"
+          ]
+        },
+        {
+          "date": "2011-11-14",
+          "event": "K-water records construction completion after the commercial-operation milestone.",
+          "source_ids": [
+            "sihwa-operation"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Power from the tidal cycle",
+          "text": "Sihwa uses a difference in water level across an existing embankment to generate electricity as incoming seawater passes through turbines. K-water's legacy design account lists ten 25.4 MW units, giving 254 MW of capacity, alongside eight sluice gates. That capacity describes equipment, not energy delivered in a particular year. The same account places the scheme after completion of the embankment in January 1994 and a December 2000 change from a freshwater-lake plan to seawater use. The plant therefore belongs to a longer history of changing water management, rather than a stand-alone power development on an untouched coast.",
+          "source_ids": [
+            "sihwa-design"
+          ]
+        },
+        {
+          "heading": "Commercial operation and construction completion",
+          "text": "The operator's later English history dates construction from December 31, 2004 to November 14, 2011, while placing commercial operation on August 3, 2011. Those dates need not describe the same handover: generating commercially and finishing construction are different milestones. They also prevent the earlier overview's old completion table from becoming the current project chronology. The later page contains an inconsistent per-unit capacity entry, so the technical capacity is drawn from the separately identified design account. Its wider historical energy statistics do not establish the plant's present contribution to the Korean electricity system or its recent operating availability.",
+          "source_ids": [
+            "sihwa-operation"
+          ]
+        },
+        {
+          "heading": "Water circulation and environmental purpose",
+          "text": "K-water's Korean energy overview connects the tidal plant to seawater circulation and water-quality improvement at Sihwa. This makes the installation relevant to both electricity and lake management: the water movement that drives generation also changes exchange with the sea. The operator's attribution is not an independently analysed ecological outcome series. Environmental assessment needs its own sampling periods and measures rather than a substitution of megawatts for water condition. The overview's facility inventory uses a December 2025 basis; that inventory date is not the publication date of every sentence on the page or proof of conditions on the inspection day.",
+          "source_ids": [
+            "sihwa-water"
+          ]
+        },
+        {
+          "heading": "Generation estimates and reported output",
+          "text": "The legacy overview gives 552.7 GWh as annual generation, while K-water's Korean reporting table lists 418.5 GWh for 2024 and 426.9 GWh for 2025 in its tidal generation category. The older figure is not a measured 2025 result. Equally, the table is a company energy-type category, not an explicitly named plant row with a full operating-method statement. Its percentages describe K-water's generation mix, not national electricity share. These records offer useful reporting context without supporting a calculated availability score, a claim of technical failure or a causal explanation for year-to-year variation in output.",
+          "source_ids": [
+            "sihwa-design",
+            "sihwa-output"
+          ]
+        },
+        {
+          "heading": "Learning facilities and practical access",
+          "text": "The adjoining tidal culture centre explains the generating principle and the operator's water functions through exhibitions. K-water lists separate visiting schedules for the centre and observatory, alongside facilities such as wheelchair and stroller loans and a nursing room. The distinction matters because access to one space does not guarantee access to every exhibit or service. The third-floor history hall is described as future provision. Published access arrangements also allow temporary closures and crowd management, while parking arrangements differ by visitor need. These are useful service descriptions, not a live accessibility inspection or a promise that a visit can proceed unchanged.",
+          "source_ids": [
+            "sihwa-visitor"
+          ]
+        },
+        {
+          "heading": "What a stronger operating account needs",
+          "text": "A stronger account would connect plant-specific annual electricity figures to a consistent reporting definition and explain maintenance, water-level conditions and outages for the same periods. Environmental analysis should separately track sampling locations, water exchange and relevant indicators, retaining changes in the wider catchment. The two streams could then be compared without assuming every environmental change was caused by the power plant. Public-access reporting would add dated notices and evidence of usable routes rather than relying only on a facilities list. This is an editorial test for future evidence, not a claim that those measurements or independent assessments have already been obtained.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Plant-specific annual output with net/gross definition and matching reporting periods",
+        "Dated maintenance and outage record with hydraulic operating conditions",
+        "Located lake-monitoring series with method and catchment context"
+      ],
+      "related": [
+        {
+          "title": "Seoul municipal systems",
+          "route": "/atlas/places/seoul/"
+        },
+        {
+          "title": "Incheon mainland and island services",
+          "route": "/atlas/places/incheon/"
+        }
+      ]
+    },
+    {
+      "record_id": "place-seoul",
+      "kind": "Place",
+      "title": "Seoul municipal systems",
+      "route": "/atlas/places/seoul/",
+      "aliases": [
+        "Seoul",
+        "서울특별시",
+        "Seoul Metropolitan Government",
+        "Seoul municipality"
+      ],
+      "answer": "Seoul's water, housing, heat and transport accounts show how municipal services reach households through different eligibility, delivery and reporting boundaries.",
+      "scope": "One Seoul metropolitan municipality. The wider capital region, neighbouring Incheon, individual districts, housing-renewal areas and the Seongsu demonstration are not additional counted places or projects in this account.",
+      "stage": "Current official descriptions include household water services and transport coverage, a reported consumption survey, housing-process milestones and a future hydrothermal supply agreement. These are not interchangeable evidence of completed housing, measured heat savings or universal service access.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Count Seoul's defined municipal territory once, not the whole capital-region travel market or every district within it. The service examples explain the municipality and do not mint additional housing, transport or thermal project identities from programme reporting."
+      },
+      "timeline": [
+        {
+          "date": "2026-03-04",
+          "event": "The city announced its hydrothermal supply agreement for Seongsu K-PROJECT; the English page followed March 10.",
+          "source_ids": [
+            "seoul-heat"
+          ]
+        },
+        {
+          "date": "2026-03-10",
+          "event": "Extended household water-inspection hours were announced to start; publication followed March 11.",
+          "source_ids": [
+            "seoul-water-service"
+          ]
+        },
+        {
+          "date": "2026-09-21",
+          "event": "The city held the housing-policy review event later published in its October 2 English account.",
+          "source_ids": [
+            "seoul-housing"
+          ]
+        },
+        {
+          "date": "2026-10-01",
+          "event": "The Climate Card page identifies this as the effective date for its described short-term coverage.",
+          "source_ids": [
+            "seoul-climate-card"
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "event": "The English page published the 2026 Arisu survey account carrying a separate November 6 dateline.",
+          "source_ids": [
+            "seoul-water-survey"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Water service at the household tap",
+          "text": "Seoul's March 2026 announcement extended its free Arisu household-inspection service into nights and public holidays, with the expanded hours beginning March 10. Residents book a visit rather than relying solely on treatment-plant information. The described check covers residual chlorine, turbidity, pH, iron and copper, with further attention to issues such as aging internal pipes when needed. A five-parameter visit is not comprehensive contaminant certification. The release also proposed later contactless collection through a delivery platform; that future step is distinct from the inspection service it described as available. Delivery at the household therefore has its own workflow and limits.",
+          "source_ids": [
+            "seoul-water-service"
+          ]
+        },
+        {
+          "heading": "Consumption surveys and confidence",
+          "text": "The English city page published on November 20 reports that 75.5% of residents consumed Arisu under the city's 2026 survey definition. Its press dateline is November 6, a different date. The definition has included consumption both inside and outside the home since 2024, making scope important when reading the reported trend. The account also discusses satisfaction and priorities for drinking fountains, including hygiene and convenience. Survey responses are not water-quality measurements, and this summary does not establish that expanded inspections caused the reported change. Confidence, actual use and technical water condition are related questions that need distinct measures.",
+          "source_ids": [
+            "seoul-water-survey"
+          ]
+        },
+        {
+          "heading": "Housing milestones before occupancy",
+          "text": "Seoul's housing-policy account reports 214 Sintong projects reaching area designation and 168 Moa Town projects establishing associations. These are process milestones, not completed homes. Designating an area can advance renewal, while an association provides an organizational basis for the next steps; neither tells a reader how many households have moved into affordable accommodation. The review event took place September 21, with a September 23 press dateline and October 2 English publication. Keeping those dates separate avoids treating the publication as a new construction event. Household outcomes require later evidence on delivery, tenure, charges and access, rather than the size of a planned pipeline alone.",
+          "source_ids": [
+            "seoul-housing"
+          ]
+        },
+        {
+          "heading": "Using raw water as a heat source",
+          "text": "The city announced a March agreement to supply thermal energy from Hangang raw water carried through conveyance pipelines to the Seongsu K-PROJECT development. Seasonal water temperatures provide a potential source for building heating and cooling, while the agreement assigns participating organizations roles in supply and management. The cited 31% energy reduction is an expected saving, not a measured operating result. The published sequence places construction and trial operation before a supply target after February 2028. This is a municipal infrastructure and building-energy relationship under development, not evidence that the proposed system already supplies all of the development's heating and cooling.",
+          "source_ids": [
+            "seoul-heat"
+          ]
+        },
+        {
+          "heading": "Transport products have different boundaries",
+          "text": "Seoul's Climate Card page distinguishes short-term passes from the resident Climate Pass and says recharging the older thirty-day prepaid product ended after August 31. Its short-term coverage description is effective October 1 and includes eligible Seoul subway travel and Seoul-licensed city and town buses. The airport exception permits alighting at Incheon airport terminals, not boarding there. That exception does not make the product a pass for every capital-region journey, and buses licensed elsewhere remain outside the stated coverage. The page's scheduled introduction of the separate resident product is not itself an observed launch record. Eligibility and route coverage must be read together.",
+          "source_ids": [
+            "seoul-climate-card"
+          ]
+        },
+        {
+          "heading": "Following municipal delivery to the household",
+          "text": "The next useful comparison would follow a household-facing service through its full sequence: eligibility, application or booking, actual delivery and a repeatable result. Water reporting could connect inspection requests to completed visits and remedial action without treating survey confidence as chemistry. Housing reporting could link renewal stages to occupied homes and household costs. Thermal performance would need metered results against a stated baseline, and transport assessment would need comparable trips and eligibility groups. These are editorial criteria for stronger coverage. They preserve Seoul as a defined municipality while allowing its infrastructure to serve or interact with people beyond the administrative boundary.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Water-inspection completion and follow-up series with survey methodology kept separate",
+        "Named housing delivery and occupancy records with tenure and household costs",
+        "Commissioned thermal system and comparable metered baseline",
+        "Dated transport implementation and usage by eligible product/category"
+      ],
+      "related": [
+        {
+          "title": "Incheon municipal and island services",
+          "route": "/atlas/places/incheon/"
+        },
+        {
+          "title": "Sihwa tidal generation",
+          "route": "/atlas/projects/sihwa-tidal-power/"
+        }
+      ]
+    },
+    {
+      "record_id": "place-incheon",
+      "kind": "Place",
+      "title": "Incheon mainland and island services",
+      "route": "/atlas/places/incheon/",
+      "aliases": [
+        "Incheon",
+        "인천광역시",
+        "Incheon Metropolitan City",
+        "Incheon municipal systems"
+      ],
+      "answer": "Incheon combines mainland urban services with dispersed island responsibilities. Its 2026 accounts distinguish administrative change, targeted housing, water organization, ferry eligibility and an operating hospital ship.",
+      "scope": "One Incheon Metropolitan City territory including its counties and islands. Districts, island service areas, individual ships, housing allocations and the wider Seoul capital region are not additional counted identities in this account.",
+      "stage": "Official 2026 accounts record a revised district structure, a working island-water office, housing applications and an operating hospital ship, alongside separate ferry-policy announcements. Announced eligibility changes and planned care integration are not verified universal service or measured household outcomes.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Count the metropolitan city once across its mainland and island territory, retaining the counties and revised districts as internal administrative context. Do not split each service area or vessel into another place, treat the entire capital region as Incheon, or count programme allocations as new projects."
+      },
+      "timeline": [
+        {
+          "date": "2026-01-09",
+          "event": "The Yeongjong Ongjin water office began work, before its January 16 opening ceremony.",
+          "source_ids": [
+            "incheon-water"
+          ]
+        },
+        {
+          "date": "2026-01-26",
+          "event": "The city and ministry visited the operating hospital ship and island care services.",
+          "source_ids": [
+            "incheon-hospital-ship"
+          ]
+        },
+        {
+          "date": "2026-05-17",
+          "event": "The city reported 1,275 applications for a 300-home purchased-rental programme.",
+          "source_ids": [
+            "incheon-housing-applications"
+          ]
+        },
+        {
+          "date": "2026-07-01",
+          "event": "The revised two-county, nine-district structure began, reported the following day.",
+          "source_ids": [
+            "incheon-districts"
+          ]
+        },
+        {
+          "date": "2026-07-21",
+          "event": "The city announced withdrawal of out-of-city visitor ferry support from July 25, retaining other categories.",
+          "source_ids": [
+            "incheon-ferry-visitors"
+          ]
+        },
+        {
+          "date": "2026-09-17",
+          "event": "The city announced an island-worker support extension with intended September 21 effect.",
+          "source_ids": [
+            "incheon-ferry-workers"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "One city with a revised district structure",
+          "text": "Incheon reported the July 1 launch of an administrative structure with two counties and nine districts. The reconfigured structure includes Jemulpo, Yeongjong, Seohae and Geomdan, so an older district list can misdescribe the institutional setting of a later service. The metropolitan city nevertheless remains the counted place here; administrative subdivisions do not each create another Atlas identity. The reorganization's stated purpose of more responsive administration is not a measured service improvement. Mainland neighbourhoods and island communities still present different delivery conditions, which makes the identity boundary important when interpreting a programme reported under the single Incheon name.",
+          "source_ids": [
+            "incheon-districts"
+          ]
+        },
+        {
+          "heading": "A dedicated island water office",
+          "text": "The Yeongjong Ongjin water office began work on January 9, followed by an opening ceremony on January 16. The city's account describes consolidation of responsibilities previously spread across four bodies, covering municipal supply, village water systems and desalination facilities. Locating the office nearer the service area is intended to make emergency response and visits more convenient. That expected improvement is not an observed response-time series. The organizational change is still substantive: a clearer service responsibility can be recorded without claiming that every supply interruption or water-quality problem has been resolved. The work-start date should not be replaced by the later ceremonial milestone.",
+          "source_ids": [
+            "incheon-water"
+          ]
+        },
+        {
+          "heading": "Targeted rental housing and applications",
+          "text": "The 2026 purchased-rental programme covers 300 iH-owned homes and is separate from the city's jeonse-rental scheme. Its advertised daily rent excludes deposit and management charges, while the stated supply area excludes Ganghwa and Ongjin. Access depends on eligibility checks and the programme's staged selection process. On May 17, the city reported 1,275 applications received during May 11–15. Applications are not occupied homes: the release still placed screening, results, contracts and move-ins ahead. This account therefore describes the size and demand of one targeted offering, not universal low-cost housing across all mainland and island households.",
+          "source_ids": [
+            "incheon-housing-rules",
+            "incheon-housing-applications"
+          ]
+        },
+        {
+          "heading": "Ferry support changes by passenger category",
+          "text": "In July, the city announced that support for out-of-city visitors would end from July 25 because of budget pressure, while retaining several other eligible categories. This was not an announcement that ferry services would stop. A separate September release announced an extension to specified island-based public-service workers, with intended effect on September 21. That targeted extension is not restoration of the general visitor subsidy. Together the accounts show why a fare-policy description needs a date and a passenger category. They describe decisions and announced timing; they do not independently establish every subsequent ticket transaction, crossing or budget outcome.",
+          "source_ids": [
+            "incheon-ferry-visitors",
+            "incheon-ferry-workers"
+          ]
+        },
+        {
+          "heading": "Taking health services to islands",
+          "text": "The city's January 26 visit account describes the Healthy Ongjin hospital ship as operating after placement in April 2025. Its onboard facilities bring several clinical services to island residents, with the reported visit including Jawol. The same account records concerns about staffing, working conditions and safe operation in bad weather. An operating vessel is not an all-weather service guarantee. Preparation for a later integrated-care framework also remains distinct from completed implementation across the city. For an island service, the connection between a staffed vessel, a safe crossing and access to follow-up care matters as much as the existence of the equipment.",
+          "source_ids": [
+            "incheon-hospital-ship"
+          ]
+        },
+        {
+          "heading": "Comparing access across mainland and islands",
+          "text": "A useful next account would compare defined service areas and eligible populations rather than average every programme across the metropolitan city. Water reporting should record interruptions and response periods; housing reporting should follow selected households into contracts and occupancy; ferry reporting should distinguish subsidized categories, completed trips and cancellations. Hospital-ship reporting would benefit from scheduled and completed visits alongside staffing and referral arrangements, without substituting clinical activity for improved health outcomes. These are editorial evidence tests. They would allow changes in governance and funding to be assessed through actual access while preserving the separate roles of the city, counties, districts and operators.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Water-office service-area interruption and emergency-response records",
+        "Purchased-rental selection, contracts and occupied-home counts",
+        "Ferry rule text and category-specific implementation/budget records",
+        "Hospital-ship completed visit and referral records with weather cancellations"
+      ],
+      "related": [
+        {
+          "title": "Seoul municipal systems",
+          "route": "/atlas/places/seoul/"
+        },
+        {
+          "title": "Sihwa tidal generation",
+          "route": "/atlas/projects/sihwa-tidal-power/"
+        }
+      ]
+    }
+  ]
+}

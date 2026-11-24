@@ -3,7 +3,7 @@
   "version": "0.9.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.12.0", "npm": ">=9.6.5" },
+  "engines": { "node": "^22.23.5 || >=24.22.3", "npm": ">=9.6.5" },
   "scripts": {
     "validation:logged": "node ./scripts/run-logged-validation.mjs",
     "current:generate": "node ./scripts/assert-source-artifact-labels.mjs && node ./scripts/build-current-editorial.mjs && node ./scripts/build-editorial-classification.mjs && node ./scripts/build-reference-attribution.mjs && node ./scripts/build-current-operations.mjs && node ./scripts/build-v1-public-reference-edition.mjs && node ./scripts/prepare-current-candidate.mjs",
@@ -358,9 +358,9 @@
     "update:v1ref-manifest": "node ./scripts/update-phase204-manifest.mjs"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.3.1",
-    "@astrojs/mdx": "^8.0.1",
-    "astro": "^7.3.2"
+    "@astrojs/markdown-remark": "^7.3.10",
+    "@astrojs/mdx": "^8.1.6",
+    "astro": "^7.4.7"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",

@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import MoroccoCorridorDossierArticle from '../../../components/review/MoroccoCorridorDossierArticle.astro';
+import {moroccoCorridorDossiers} from '../../../lib/morocco-corridor-named-dossiers.mjs';
+const record=moroccoCorridorDossiers.records.find(r=>r.record_id==='project-al-boraq-tangier-kenitra')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><MoroccoCorridorDossierArticle record={record}/></BaseLayout>

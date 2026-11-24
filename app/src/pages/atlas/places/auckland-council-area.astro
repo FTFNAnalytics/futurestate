@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import AucklandDossierArticle from '../../../components/review/AucklandDossierArticle.astro';
+import {aucklandDossiers} from '../../../lib/auckland-named-dossiers.mjs';
+const record=aucklandDossiers.records.find(r=>r.record_id==='place-auckland-council-area')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><AucklandDossierArticle record={record}/></BaseLayout>

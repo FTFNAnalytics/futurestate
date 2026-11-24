@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-11-21",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Finance and Risk translations after denominator correction",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-041",
+  "source_record_sha256": "25838a531aa9e74f0ac4ba3f778bb31cbe7190a11fb7b018432415e32e122c44",
+  "source_to_contract_mapping": "Translate the retained September 10 plain-language reader under the existing owner-authorized mapping. Preserve the distinct original canonical-contract digest and three source IDs; the actual English reader uses nine. Do not silently replace the original specification, source set or human-review status.",
+  "historical_contract_source_ids": [
+    "source-cmhc-housing-market-information-portal",
+    "source-statcan-building-permits-survey",
+    "source-usgs-mineral-commodity-summaries"
+  ],
+  "checks": [
+    "Compared the complete English title, overview and all six sections with both saved manuscripts.",
+    "Preserved announcement, authorized ceiling, financial close, disbursement, actual spending, accepted scope and recurring service as distinct stages.",
+    "Retained the separate evidentiary roles of construction intentions, Toronto pipelines, Thacker Pass loan close and Virginia cost-allocation terms.",
+    "Retained contingent liabilities, guarantees, insurance, credit, tariff categories, actual bills and later obligations without treating financing as completed delivery.",
+    "Preserved procurement, physical milestones, scope changes, missed conditions, restructuring and exceptions; spending alone does not establish availability or causal attribution.",
+    "Preserved common currency and price year, nominal versus price-adjusted values, comparable terms/counterparties/exposure dates, and a quantity denominator for accepted service or delivered assets.",
+    "Retained separate public affordability, fiscal exposure, resilience and private-return questions, including downside allocation.",
+    "Preserved covenant compliance, losses, restructuring, September 1 evidence cutoff, September 10 English authorship and the explicit absence of a current investment recommendation.",
+    "Verified nine exact source IDs and URLs per manuscript; November 21 is translation and AI-review date, not a source inspection or project/financial outcome date."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept after denominator correction",
+      "rationale": "Clôture financière is defined without implying expenditure or completion; décaissement remains actual release of money. Passif éventuel retains dependence on a future event; engagements contractuels preserves covenants. Revised the comparison question to retain the quantity of accepted service or delivered assets, not merely which installation was delivered. Portefeuille de projets does not imply completed investment or available housing."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept after denominator correction",
+      "rationale": "Cierre financiero, desembolso, pasivo contingente and cláusulas contractuales retain the financial-stage distinctions. Cartera de proyectos remains a pipeline rather than an operating portfolio. Revised the comparison question to preserve the quantity denominator for service or delivered assets. Exposición fiscal remains separate from private returns and no investment recommendation is added."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/finance-and-risk-fr-CA-ai-reviewed.md",
+      "file_sha256": "788b3d988e61f02ad7b24751b76e7110dbe93f24ab6e3cbe3c6df232700cb722",
+      "proposed_contract_id": "202-EDITION-043",
+      "historical_contract_sha256": "08e4806d758cb49701a04589a350859aaba7211083a55aebbeca216bb87b54ce"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/finance-and-risk-es-419-ai-reviewed.md",
+      "file_sha256": "a42ac2ed5b33f06d8b1c2e23811e14fe77762962a31bf64ea6e016b93c556c1c",
+      "proposed_contract_id": "202-EDITION-044",
+      "historical_contract_sha256": "08e4806d758cb49701a04589a350859aaba7211083a55aebbeca216bb87b54ce"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-cmhc-june-2026-housing-starts-construction",
+      "name": "CMHC June 2026 Housing Starts And Construction Data",
+      "url": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2026/housing-starts-june-2026",
+      "path": "app/src/content/sources/source-cmhc-june-2026-housing-starts-construction.json",
+      "sha256": "77e4b808d438561bd52a9eb2851b51b675fd656fe775083d48e772a8292f29b2"
+    },
+    {
+      "id": "source-statcan-building-permits-survey",
+      "name": "Statistics Canada Building Permits Survey",
+      "url": "https://www.statcan.gc.ca/en/survey/business/2802",
+      "path": "app/src/content/sources/source-statcan-building-permits-survey.json",
+      "sha256": "c77ed6253dcdb8620238f7d8be3ff82136369d03802d7aa4e39c0227cc4bcbb4"
+    },
+    {
+      "id": "source-statcan-building-permits-may-2026",
+      "name": "Statistics Canada Building Permits, May 2026",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260710/dq260710b-eng.htm",
+      "path": "app/src/content/sources/source-statcan-building-permits-may-2026.json",
+      "sha256": "77a67408a21ebbfc566fa0384724b960a24d3a51f175d033c56b3c460bdedb03"
+    },
+    {
+      "id": "source-cmhc-housing-market-information-portal",
+      "name": "CMHC Housing Market Information Portal",
+      "url": "https://www03.cmhc-schl.gc.ca/hmip-pimh/portal",
+      "path": "app/src/content/sources/source-cmhc-housing-market-information-portal.json",
+      "sha256": "4afa11c05714c7ade391e874d756587766dfd88f182e9e46f09c89bf90da0371"
+    },
+    {
+      "id": "source-cmhc-starts-completions-under-construction",
+      "name": "CMHC Housing Starts, Completions and Units Under Construction Tables",
+      "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data/data-tables/housing-market-data",
+      "path": "app/src/content/sources/source-cmhc-starts-completions-under-construction.json",
+      "sha256": "ff8ef4dad9b1be6ada9ce79dfb0d603265867a217e9c038a72569d751dd6562f"
+    },
+    {
+      "id": "source-doe-thacker-pass-loan-2024",
+      "name": "DOE Loan Programs Office Thacker Pass Financial Close",
+      "url": "https://www.energy.gov/edf/thacker-pass",
+      "path": "app/src/content/sources/source-doe-thacker-pass-loan-2024.json",
+      "sha256": "955032305871d77c9f4b4001e0c57322edbeaa5dd2f51ebd6d70625505c68849"
+    },
+    {
+      "id": "source-toronto-development-pipeline-2025",
+      "name": "City of Toronto Development Pipeline 2025",
+      "url": "https://www.toronto.ca/city-government/data-research-maps/research-reports/planning-development/development-pipeline/",
+      "path": "app/src/content/sources/source-toronto-development-pipeline-2025.json",
+      "sha256": "501a042b89f904efec3c961a369649a23a953d81a822fc16bd6942d2b66ed3ff"
+    },
+    {
+      "id": "source-toronto-capital-projects-pipeline",
+      "name": "Toronto Capital Projects Pipeline",
+      "url": "https://open.toronto.ca/dataset/capital-project-pipeline/",
+      "path": "app/src/content/sources/source-toronto-capital-projects-pipeline.json",
+      "sha256": "391f07fe4034dbbbb19297a1fcfddd6645223650991c7935bcb3c229bdf82eb1"
+    },
+    {
+      "id": "source-virginia-scc-large-load-gs5-2025",
+      "name": "Virginia SCC Dominion GS-5 Large General Service Rate Decision",
+      "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+      "path": "app/src/content/sources/source-virginia-scc-large-load-gs5-2025.json",
+      "sha256": "ca5bec3860d3c250280fd3c23e019f2ef18a599c3cf3ad73b7c9d85835c61702"
+    }
+  ],
+  "integration_state": "Two complete local manuscripts assessed for the next application batch. Not integrated and not counted among the eighteen current translated pages. Together with the separately prepared Energy pair, four of the sixteen outstanding application translations have prepared texts and assessments; twelve remain outside these two pairs.",
+  "boundary": "AI linguistic-fidelity review of retained English content only; no independent human review, fresh fact-check, legal or financial advice, source outcome, accessibility certification, public route, candidate acceptance or publication authority. Retain the earlier review inputs and show later evidence context separately on integration."
+}

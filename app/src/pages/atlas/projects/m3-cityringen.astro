@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import NordicCitiesDossierArticle from '../../../components/review/NordicCitiesDossierArticle.astro';
+import {nordicCitiesDossiers} from '../../../lib/nordic-cities-named-dossiers.mjs';
+const record=nordicCitiesDossiers.records.find(r=>r.record_id==='project-m3-cityringen')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><NordicCitiesDossierArticle record={record}/></BaseLayout>

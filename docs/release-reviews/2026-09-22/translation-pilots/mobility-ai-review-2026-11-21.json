@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-11-21",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Mobility translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-049",
+  "source_record_sha256": "91e9e3bf777ba13f27edc58d0d38cbbbaf4aea433edacc39547d8807902b88c8",
+  "source_to_contract_mapping": "Translate the retained September 10 plain-language reader under the existing owner-authorized mapping. Preserve the distinct original canonical digest and three contract source IDs separately from the nine-source English reader. Historical human-review fields remain unchanged.",
+  "historical_contract_source_ids": [
+    "source-nhtsa-automated-vehicles",
+    "source-faa-aam",
+    "source-darpa-lift-challenge-2026"
+  ],
+  "checks": [
+    "Compared title, complete overview and all six sections in each saved locale with the retained English text.",
+    "Preserved operator, route, fleet, station, geography, user group and period; an assertion about one component is not generalized to an entire journey.",
+    "Preserved paid driverless authority, actual passenger trips and test-mile exposure as separate evidence; retained the bounded recall and intervention without a general verdict on automation.",
+    "Preserved Amtrak passenger use, final completion, accessibility work and reporting-population/method changes without treating a changed inventory total as a trend.",
+    "Retained deployment, acceptance, final closeout, display uptime, information accuracy and end-to-end accessibility as separate tests.",
+    "Preserved repeated availability, maintenance, incidents and recovery; explained denominator in trips, miles or service hours and retained reporting coverage for complaints.",
+    "Retained fares, time, cancellations, barriers, geographic and eligible-population boundaries, and separate environmental measures without a composite score.",
+    "Preserved method revisions and September 1/September 10 evidence/authorship dates. November 21 does not constitute a new recall, PIDS closeout or named-asset reliability inspection.",
+    "Verified all nine exact source IDs and URLs per manuscript; no external retrieval was performed."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept after plain-language refinement",
+      "rationale": "Autorisation en vigueur is explicitly scoped to the retained dossier, not a new legal inspection. Rappel, clôture finale and disponibilité des affichages preserve distinct objects. Replaced a literal and unclear 'taux mesuré de sécurité' with incident-frequency wording; the following exposure and denominator requirements remain explicit. Milles is retained rather than silently converting test-distance units."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept after plain-language refinement",
+      "rationale": "Llamado a revisión preserves a bounded recall rather than general service withdrawal. Despliegue, aceptación and cierre final retain the Amtrak sequence. Incident-frequency and accident-rate wording replaces a literal 'tasa de seguridad' while preserving comparable exposure and denominators. Millas, service hours, reporting coverage and user/geographic groups remain unchanged."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/mobility-fr-CA-ai-reviewed.md",
+      "file_sha256": "ba1da8241d2bcc6a4d0a3cd92023dc6fee2876ae4cdbca8014320533ddce7ee0",
+      "proposed_contract_id": "202-EDITION-051",
+      "historical_contract_sha256": "0ce581be111166491598ea210fa5a40880c05ea2adb6069d87fb0d7b53b1bdeb"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/mobility-es-419-ai-reviewed.md",
+      "file_sha256": "065d988972b155624b710982bd4cbad1e843c9f328819ab7977bece6ce5cbdb2",
+      "proposed_contract_id": "202-EDITION-052",
+      "historical_contract_sha256": "0ce581be111166491598ea210fa5a40880c05ea2adb6069d87fb0d7b53b1bdeb"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-57b-amtrak-ada-progress-june-2026",
+      "name": "Amtrak ADA Progress Report, June 2026",
+      "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf",
+      "path": "app/src/content/sources/source-57b-amtrak-ada-progress-june-2026.json",
+      "sha256": "945f97bc11233bbb09478dbfabae9972b33bc0e6b8ff030229b1177a43569789"
+    },
+    {
+      "id": "source-57e-amtrak-accessibility-progress-june-2026",
+      "name": "Amtrak Accessibility Progress Report under the Accessible Canada Act, June 2026",
+      "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf",
+      "path": "app/src/content/sources/source-57e-amtrak-accessibility-progress-june-2026.json",
+      "sha256": "0abf493340fbb01a0a63fd3599adc78ccebc61e6fc1e4ada40bcada8e2c08885"
+    },
+    {
+      "id": "source-cpuc-waymo-al2-disposition-2024",
+      "name": "CPUC Waymo Advice Letter 2 Disposition",
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/consumer-protection-and-enforcement-division/documents/tlab/av-programs/waymo-al-2-disposition-letter-20240301_signed.pdf",
+      "path": "app/src/content/sources/source-cpuc-waymo-al2-disposition-2024.json",
+      "sha256": "d929ce9c1043567d5a4f58a4171cbf80592cfd2ad69fa9700762028cd82238c4"
+    },
+    {
+      "id": "source-cpuc-av-advice-letter-status-2026",
+      "name": "CPUC Driverless AV Deployment Advice Letter Status",
+      "url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/phase-i-driverless-autonomous-vehicle-deployment-program-advice-letter-status",
+      "path": "app/src/content/sources/source-cpuc-av-advice-letter-status-2026.json",
+      "sha256": "4ae50f361dabed24247f5450daa0e812ae6d3a7ec9e71218d44af3c43348b192"
+    },
+    {
+      "id": "source-nhtsa-waymo-26e026-recall-2026",
+      "name": "NHTSA Recall 26E026: Waymo ADS Flooded-Roadway Risk",
+      "url": "https://static.nhtsa.gov/odi/rcl/2026/RCAK-26E026-9973.pdf",
+      "path": "app/src/content/sources/source-nhtsa-waymo-26e026-recall-2026.json",
+      "sha256": "6cb55b0feb19f312ce17b120e51620fabab3b96d5e41ed4c5880658b9d3f8327"
+    },
+    {
+      "id": "source-nhtsa-safety-recalls",
+      "name": "NHTSA Safety Recalls",
+      "url": "https://www.nhtsa.gov/recalls",
+      "path": "app/src/content/sources/source-nhtsa-safety-recalls.json",
+      "sha256": "b68f41478a9cfb8d1ae187a5947c8e5b62448d216ae249c4aad0538faf7a285b"
+    },
+    {
+      "id": "source-55z-cpuc-av-quarterly-reporting-2026",
+      "name": "CPUC Autonomous Vehicle Quarterly Reporting Requirements",
+      "url": "https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/quarterly-reporting",
+      "path": "app/src/content/sources/source-55z-cpuc-av-quarterly-reporting-2026.json",
+      "sha256": "4f970815a1d0c3bd468f258b37b3c7c3c439072bc536bb24ff39708b78ce3796"
+    },
+    {
+      "id": "source-55z-california-dmv-av-test-miles-2025",
+      "name": "California DMV Autonomous Vehicle Test Miles for 2025",
+      "url": "https://www.dmv.ca.gov/portal/news-and-media/autonomous-vehicle-permit-holders-in-california-logged-more-than-9-million-test-miles-between-december-1-2024-and-november-30-2025/",
+      "path": "app/src/content/sources/source-55z-california-dmv-av-test-miles-2025.json",
+      "sha256": "ca53383d88dc205c600f4a4d5416799399de50cec84cae1ba21b66a466c35241"
+    },
+    {
+      "id": "source-nhtsa-sgo-crash-reporting",
+      "name": "NHTSA Standing General Order Crash Reporting",
+      "url": "https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting",
+      "path": "app/src/content/sources/source-nhtsa-sgo-crash-reporting.json",
+      "sha256": "98e4260f1ce04811a1f5ff1f946acdcb522d54056c1cd6d2ff35a760f1c0ff58"
+    }
+  ],
+  "integration_state": "Two complete local manuscripts assessed for the next application batch. Not integrated and not counted among eighteen current translated readings. Together with Energy, Finance/Risk and Human Futures, eight manuscripts are prepared; all sixteen outstanding application integrations still remain.",
+  "boundary": "AI linguistic-fidelity review only. No independent human review, fresh source or regulatory inspection, safety certification, new PIDS closeout, named-asset reliability series, accessibility certification, public route, candidate acceptance or publication authority. Preserve earlier snapshots and show later source context separately at integration."
+}

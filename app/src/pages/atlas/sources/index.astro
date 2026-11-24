@@ -14,7 +14,7 @@ const probeReady=sourceRows.filter(r=>r.health.status==='Probe ready').length;
     <h1 class="page-title">The evidence layer behind FTFN records.</h1>
     <p class="lede">Find source profiles, their scope and limitations, recorded review dates and the next check needed. A source listing is not evidence that every claim using it has been independently verified.</p>
     <div class="meta-row"><MetaPill label={`${sourceRows.length} source records`}/><MetaPill label={`${reviewDue} review due`}/><MetaPill label={`${watchSoon} watch soon`}/><MetaPill label={`${probeReady} probe ready`}/><MetaPill label={`Metadata as of ${asOfDate}`}/></div>
-    <p>These are recorded metadata states; rendering this page does not run probes or refresh sources. Fallback review windows are labeled separately from declared cadence.</p>
+    <p data-source-review-as-of={asOfDate}>These are recorded metadata states; rendering this page does not run probes or refresh sources. Fallback review windows are labeled separately from declared cadence. Reconcile later scoped receipts and appointments before choosing a new check.</p>
     <p><a class="inline-link" href="/atlas/source-monitor/">Open source review monitor</a><a class="inline-link" href="/atlas/source-coverage/">Open coverage matrix</a></p>
   </section>
   <section class="page-section"><h2>Search every source profile</h2><PagedShelf records={shelves.sources} kind="sources" headingLevel={3}/></section>

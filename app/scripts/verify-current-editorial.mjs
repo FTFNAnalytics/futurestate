@@ -61,9 +61,11 @@ for(const [file,out]of [['phase-205-216-current-editorial.json','current-editori
 console.log('Current editorial production verified: 33 readers; 40-card catalog pages; correction excluded from default feed; Toronto assigned surfaces; exact JSON exports. Browser/independent review remains separate.');
 assert.deepEqual(JSON.parse(await read('dist/data/reader-catalog.json')).records,readerCatalog);
 const toronto=JSON.parse(await read('dist/data/project-conversion.json')).records.find(r=>r.file_id==='61-PROJECT-TORONTO-24-254930');
-assert.equal(toronto.historical_next_check_date,'2026-09-09');assert.equal(toronto.next_check_date,'2026-09-28');
+assert.equal(toronto.historical_next_check_date,'2026-09-09');assert.equal(toronto.next_check_date,'2026-11-29');
 assert.equal(toronto.dated_project_checks[0].checked_date,'2026-09-14');assert.equal(toronto.dated_project_checks[0].next_check_date,'2026-09-21');
 assert.equal(toronto.dated_project_checks[1].checked_date,'2026-09-21');assert.equal(toronto.dated_project_checks[1].next_check_date,'2026-09-28');
+assert.equal(toronto.dated_project_checks[2].checked_date,'2026-09-28');assert.equal(toronto.dated_project_checks[2].next_check_date,'2026-10-05');assert.equal(toronto.dated_project_checks[2].decision_status,'blocked');
+assert.equal(toronto.dated_project_checks.length,4);assert.equal(toronto.dated_project_checks[3].checked_date,'2026-11-21');assert.equal(toronto.dated_project_checks[3].next_check_date,'2026-11-29');assert.equal(toronto.dated_project_checks[3].decision_status,'blocked');
 const ledger=JSON.parse(await read('src/data/phase-206-editorial-classification.json'));
 const excluded=new Set(ledger.records.map(r=>r.id));
 const sitemap=await read('dist/sitemap.xml');

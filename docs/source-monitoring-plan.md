@@ -193,6 +193,18 @@ Completed in Phase 54:
 - preserved the unresolved Phase 51 trails as dated monitors rather than release blockers,
 - moved the default external step to an explicit private-preview decision while keeping Supabase as a separate private authority-loop track.
 
+## November 22 current command metadata policy
+
+The local `npm run current:currency` command now applies [twenty-four explicit metadata resolutions](../app/src/data/source-monitoring-policy.json) to older profiles that lacked both a publisher label and an editorial review interval. The source JSON files and their inspection dates are unchanged. Each resolution binds the complete retained input; an altered input requires a new policy review instead of silently inheriting the old decision.
+
+The policy starts on November 22, 2026. It uses seven days for the Toronto portal queue, thirty days for high-priority non-annual sources, ninety days for medium-priority discovery/program sources and 365 days for annual reference sources. These are editorial intervals chosen from the retained frequency and priority descriptions, not agency publication forecasts. The publisher label identifies the source organization; it does not appoint that organization to FTFN's editorial work. Codex can maintain the queue during an authorized task; no unattended job is created.
+
+The report retains raw and effective counts, exact prior dates, the policy origin and invalid-metadata reasons. Impossible or future inspection dates, nonpositive/noninteger cadences and missing publisher labels cannot appear as current. A date exactly at the cadence boundary is within the interval; the following day is overdue. The calculated metadata due date is not a project appointment.
+
+On the November 22 metadata snapshot, the raw 833-profile inventory has 664 cadence-overdue entries and 24 missing-metadata entries. The explicit policy removes those 24 metadata omissions but leaves 686 profiles beyond their editorial interval and 147 within it. This is not 686 failed endpoint checks. Later exact-artifact receipts and their bounded appointments must be reconciled separately before deciding whether a new source check is due. The command does not overwrite those receipts or promote a profile inspection into approval of every related claim.
+
+This command-level policy does not change the public Source Monitor's older heuristic, the evidence calendar or any source evidence. `current:test` now covers the policy and invalid-input cases. `source:health` remains a separate endpoint-metadata check; neither command retrieves live URLs.
+
 ## Not Yet
 
 Do not add these until the manual monitor proves useful:

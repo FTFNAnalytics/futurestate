@@ -1,5 +1,12 @@
 import registry from '../data/montana-project-dossiers.json' with {type:'json'};
+import {evidenceReceiptsForRecord} from './current-evidence.mjs';
 export const montanaDossiers=registry;
+/** Additive program context; never rewrite a source-pinned proposal or its dates. */
+export function montanaDossierEvidenceContext(asOfDate){
+  return registry.records.map(record=>({record_id:record.record_id,route:record.route,
+    context_scope:'Related program reporting review only; not a project inspection or operating-outcome admission',
+    dated_review_receipts:evidenceReceiptsForRecord(record.record_id,asOfDate)}));
+}
 /** Reporting labels come from the retained project designation, never by decoding raw L/C. */
 export function montanaContextFor(record, data=registry){
   const rows=data.reporting_contexts.filter(r=>r.record_id===record.record_id);

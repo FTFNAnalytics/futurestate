@@ -427,7 +427,38 @@ for (const [id, record] of atlasProjectIds) {
 // Current drafts have real reader routes, including the selected field report.
 // Identity resolution does not confer publication or independent approval.
 const currentReaderIds = readRegistryIdIndex("phase-205-216-current-editorial.json", "records", "record_id", "current reader draft");
-for (const [id, record] of currentReaderIds) {
+const nevadaReaderIds = readRegistryIdIndex("nevada-named-dossiers.json", "records", "record_id", "dated Nevada dossier");
+const europeReaderIds = readRegistryIdIndex("europe-named-dossiers.json", "records", "record_id", "dated Europe dossier");
+const southernAfricaReaderIds = readRegistryIdIndex("southern-africa-named-dossiers.json", "records", "record_id", "dated Southern Africa dossier");
+const southAsiaReaderIds = readRegistryIdIndex("south-asia-named-dossiers.json", "records", "record_id", "dated South Asia dossier");
+const chileReaderIds = readRegistryIdIndex("chile-named-dossiers.json", "records", "record_id", "dated Chile dossier");
+const brazilReaderIds = readRegistryIdIndex("brazil-named-dossiers.json", "records", "record_id", "dated Brazil dossier");
+const northSeaReaderIds = readRegistryIdIndex("north-sea-named-dossiers.json", "records", "record_id", "dated North Sea dossier");
+const stockholmReaderIds = readRegistryIdIndex("stockholm-named-dossiers.json", "records", "record_id", "dated Stockholm dossier");
+const aucklandReaderIds = readRegistryIdIndex("auckland-named-dossiers.json", "records", "record_id", "dated Auckland dossier");
+const tuasReaderIds = readRegistryIdIndex("tuas-named-dossiers.json", "records", "record_id", "dated Tuas dossier");
+const portCitiesReaderIds = readRegistryIdIndex("port-cities-named-dossiers.json", "records", "record_id", "dated PortCities dossier");
+const urbanServicesReaderIds = readRegistryIdIndex("urban-services-named-dossiers.json", "records", "record_id", "dated UrbanServices dossier");
+const nordicCitiesReaderIds = readRegistryIdIndex("nordic-cities-named-dossiers.json", "records", "record_id", "dated NordicCities dossier");
+const swissRailCityReaderIds = readRegistryIdIndex("swiss-rail-city-named-dossiers.json", "records", "record_id", "dated SwissRailCity dossier");
+const kenyaCorridorReaderIds = readRegistryIdIndex("kenya-corridor-named-dossiers.json", "records", "record_id", "dated KenyaCorridor dossier");
+const gautengMetroReaderIds = readRegistryIdIndex("gauteng-metro-named-dossiers.json", "records", "record_id", "dated GautengMetro dossier");
+const malaysiaMetroReaderIds = readRegistryIdIndex("malaysia-metro-named-dossiers.json", "records", "record_id", "dated MalaysiaMetro dossier");
+const colombiaRailReaderIds = readRegistryIdIndex("colombia-rail-named-dossiers.json", "records", "record_id", "dated ColombiaRail dossier");
+const moroccoCorridorReaderIds = readRegistryIdIndex("morocco-corridor-named-dossiers.json", "records", "record_id", "dated MoroccoCorridor dossier");
+const portugalWaterCitiesReaderIds = readRegistryIdIndex("portugal-water-cities-named-dossiers.json", "records", "record_id", "dated PortugalWaterCities dossier");
+const italyRailLagoonReaderIds = readRegistryIdIndex("italy-rail-lagoon-named-dossiers.json", "records", "record_id", "dated ItalyRailLagoon dossier");
+const austriaHousingCitiesReaderIds = readRegistryIdIndex("austria-housing-cities-named-dossiers.json", "records", "record_id", "dated AustriaHousingCities dossier");
+const ruhrWaterCityReaderIds = readRegistryIdIndex("ruhr-water-city-named-dossiers.json", "records", "record_id", "dated RuhrWaterCity dossier");
+const koreaEnergyCitiesReaderIds = readRegistryIdIndex("korea-energy-cities-named-dossiers.json", "records", "record_id", "dated KoreaEnergyCities dossier");
+const istanbulCrossingsReaderIds = readRegistryIdIndex("istanbul-crossings-named-dossiers.json", "records", "record_id", "dated IstanbulCrossings dossier");
+const finlandMetroCitiesReaderIds = readRegistryIdIndex("finland-metro-cities-named-dossiers.json", "records", "record_id", "dated FinlandMetroCities dossier");
+const andesMetroCityReaderIds = readRegistryIdIndex("andes-metro-city-named-dossiers.json", "records", "record_id", "dated AndesMetroCity dossier");
+const czechMetroCitiesReaderIds = readRegistryIdIndex("czech-metro-cities-named-dossiers.json", "records", "record_id", "dated CzechMetroCities dossier");
+const indonesiaRailCityReaderIds = readRegistryIdIndex("indonesia-rail-city-named-dossiers.json", "records", "record_id", "dated IndonesiaRailCity dossier");
+const senegalMobilityEnergyReaderIds = readRegistryIdIndex("senegal-mobility-energy-named-dossiers.json", "records", "record_id", "dated SenegalMobilityEnergy dossier");
+const kigaliCityReaderIds = readRegistryIdIndex("kigali-city-named-dossiers.json", "records", "record_id", "dated KigaliCity dossier");
+for (const [id, record] of [...currentReaderIds, ...nevadaReaderIds, ...europeReaderIds, ...southernAfricaReaderIds, ...southAsiaReaderIds, ...chileReaderIds, ...brazilReaderIds, ...northSeaReaderIds, ...stockholmReaderIds, ...aucklandReaderIds, ...tuasReaderIds, ...portCitiesReaderIds, ...urbanServicesReaderIds, ...nordicCitiesReaderIds, ...swissRailCityReaderIds, ...kenyaCorridorReaderIds, ...gautengMetroReaderIds, ...malaysiaMetroReaderIds, ...colombiaRailReaderIds, ...moroccoCorridorReaderIds, ...portugalWaterCitiesReaderIds, ...italyRailLagoonReaderIds, ...austriaHousingCitiesReaderIds, ...ruhrWaterCityReaderIds, ...koreaEnergyCitiesReaderIds, ...istanbulCrossingsReaderIds, ...finlandMetroCitiesReaderIds, ...andesMetroCityReaderIds, ...czechMetroCitiesReaderIds, ...indonesiaRailCityReaderIds, ...senegalMobilityEnergyReaderIds, ...kigaliCityReaderIds]) {
   const catalogEntries = readerCatalog.filter((entry) => entry.id === id);
   if (catalogEntries.length !== 1 || !record.data.route?.startsWith("/") || catalogEntries[0]?.route !== record.data.route) {
     errors.push(`${toPosixPath(record.filePath)} contains an unresolved current reader route for "${id}".`);
@@ -436,6 +467,37 @@ for (const [id, record] of currentReaderIds) {
 
 const allPublicRecordIds = new Map([
   ...currentReaderIds,
+  ...nevadaReaderIds,
+  ...europeReaderIds,
+  ...southernAfricaReaderIds,
+  ...southAsiaReaderIds,
+  ...chileReaderIds,
+  ...brazilReaderIds,
+  ...northSeaReaderIds,
+  ...stockholmReaderIds,
+  ...aucklandReaderIds,
+  ...tuasReaderIds,
+  ...portCitiesReaderIds,
+  ...urbanServicesReaderIds,
+  ...nordicCitiesReaderIds,
+  ...swissRailCityReaderIds,
+  ...kenyaCorridorReaderIds,
+  ...gautengMetroReaderIds,
+  ...malaysiaMetroReaderIds,
+  ...colombiaRailReaderIds,
+  ...moroccoCorridorReaderIds,
+  ...portugalWaterCitiesReaderIds,
+  ...italyRailLagoonReaderIds,
+  ...austriaHousingCitiesReaderIds,
+  ...ruhrWaterCityReaderIds,
+  ...koreaEnergyCitiesReaderIds,
+  ...istanbulCrossingsReaderIds,
+  ...finlandMetroCitiesReaderIds,
+  ...andesMetroCityReaderIds,
+  ...czechMetroCitiesReaderIds,
+  ...indonesiaRailCityReaderIds,
+  ...senegalMobilityEnergyReaderIds,
+  ...kigaliCityReaderIds,
   ...sourceIds,
   ...topicIds,
   ...organizationIds,

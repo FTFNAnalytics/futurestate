@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-29",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Critical minerals translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-025",
+  "source_record_sha256": "58c769a270dcbd411c34648407e6ad9aac5beed4991c4776e4d4f70dc33e1d05",
+  "source_to_contract_mapping": "Translate the September 10 plain-language reader; retain the different original canonical-contract digest and source list as historical provenance.",
+  "checks": [
+    "Compared the English title, complete overview and all six sections with both complete translations.",
+    "Preserved occurrence, resource, reserve, extracted material, refined product and customer specifications as different stages with units and locations.",
+    "Kept USGS national context separate from named Nevada land, water, air, finance, compliance and reclamation records; loan closing is not construction completion or saleable output.",
+    "Preserved commissioning, product qualification and customer receipt as sequential but distinct evidence, with water, energy, transport and community dependencies.",
+    "Preserved reclamation assurance as provision for obligations rather than completed restoration; permits do not prove operating compliance.",
+    "Retained ore versus contained mineral versus refined/customer-qualified output, nameplate versus observed production, rejected lots, interruptions and changed definitions.",
+    "Retained the need for a named operating packet and repeated qualified delivery, without adding later permits, shipments or results.",
+    "Preserved the September 1 evidence cutoff and September 10 English authorship date; September 29 is the actual AI translation-review date.",
+    "Preserved all 9 original source IDs and exact URLs; no fresh retrieval is claimed."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Indice minéral, ressource and réserve remain separate. Mise en service, qualification and réception par le client are not collapsed into exploitation. Garanties de remise en état means provision for closure/restoration obligations, not work already performed. Capacité nominale is distinct from production observée."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Manifestación mineral, recurso and reserva remain distinct. Puesta en servicio, calificación and recepción distinguish commissioning from acceptance. Garantías de rehabilitación preserves provision for future obligations; cierre de un préstamo does not imply loan repayment or completed construction."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/critical-minerals-fr-CA-ai-reviewed.md",
+      "file_sha256": "cf2a2d1617dad27c8970210458e4552ed1dbe82ffc1f99fefc70eba91ff2b9c7",
+      "proposed_contract_id": "202-EDITION-027",
+      "historical_contract_sha256": "a6fdfbf5cc94ca2c744b5ac0f77c83a0a0cc7561e09518e9c530d4cf4245544b"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/critical-minerals-es-419-ai-reviewed.md",
+      "file_sha256": "55060964f7742e1e5f0f511a8116ade0c692171f84b352219e7090a750a7748b",
+      "proposed_contract_id": "202-EDITION-028",
+      "historical_contract_sha256": "9db2c145babbb359104349af0da88923e1103c888e4ad936ba98e618ce3d7027"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-doe-critical-minerals-materials-program",
+      "name": "DOE Critical Minerals and Materials Program",
+      "url": "https://www.energy.gov/cmm/critical-minerals-and-materials-program",
+      "path": "app/src/content/sources/source-doe-critical-minerals-materials-program.json",
+      "sha256": "9cacd8e6f4fc12eb6283dc9d14339eb0d21c9c6eb2a9189bf48c385a8e006287"
+    },
+    {
+      "id": "source-blm-rhyolite-ridge-rod-2024",
+      "name": "BLM Rhyolite Ridge Lithium-Boron Project Record Of Decision",
+      "url": "https://www.blm.gov/press-release/major-lithium-mine-approved-nevada-latest-effort-support-domestic-supply-critical",
+      "path": "app/src/content/sources/source-blm-rhyolite-ridge-rod-2024.json",
+      "sha256": "541823f7a9a08eaa6a71292ebc49de3edfa20436ec2b2b77bbdec1c0187b8efb"
+    },
+    {
+      "id": "source-ndep-rhyolite-ridge-water-permit-2025",
+      "name": "NDEP Rhyolite Ridge Water Pollution Control Permit NEV2020107",
+      "url": "https://ndep.nv.gov/uploads/documents/202505amt_2020107_WPCP_Rnwl2024_Rev00_-_signed.pdf",
+      "path": "app/src/content/sources/source-ndep-rhyolite-ridge-water-permit-2025.json",
+      "sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c"
+    },
+    {
+      "id": "source-ndep-thacker-pass-project",
+      "name": "Nevada DEP Thacker Pass Project Permit Hub",
+      "url": "https://ndep.nv.gov/land/thacker-pass-project",
+      "path": "app/src/content/sources/source-ndep-thacker-pass-project.json",
+      "sha256": "29b5de1ca9a29a9d198a29db25ef5f78d37e86ecd4317482de56926a29668644"
+    },
+    {
+      "id": "source-doe-thacker-pass-loan-2024",
+      "name": "DOE Loan Programs Office Thacker Pass Financial Close",
+      "url": "https://www.energy.gov/edf/thacker-pass",
+      "path": "app/src/content/sources/source-doe-thacker-pass-loan-2024.json",
+      "sha256": "955032305871d77c9f4b4001e0c57322edbeaa5dd2f51ebd6d70625505c68849"
+    },
+    {
+      "id": "source-usgs-mineral-commodity-summaries",
+      "name": "USGS Mineral Commodity Summaries",
+      "url": "https://pubs.usgs.gov/publication/mcs2026",
+      "path": "app/src/content/sources/source-usgs-mineral-commodity-summaries.json",
+      "sha256": "fd4d8bc3a78422cee12b975f22f930af6f4f7c1f2ebf7e9816a0719e2e33b7d1"
+    },
+    {
+      "id": "source-55z-usgs-mcs-2026-data-release",
+      "name": "USGS Mineral Commodity Summaries 2026 Data Release",
+      "url": "https://data.usgs.gov/datacatalog/data/USGS%3A69837ec8b66b01367d7ec7d9",
+      "path": "app/src/content/sources/source-55z-usgs-mcs-2026-data-release.json",
+      "sha256": "6dcb1dbaa913ca495497b176816d910e21536ffeaab32e0ef13bbf2c525e0438"
+    },
+    {
+      "id": "source-blm-thacker-pass-rod-2021",
+      "name": "BLM Thacker Pass Lithium Mine Record Of Decision",
+      "url": "https://www.blm.gov/press-release/humboldt-river-field-office-issues-record-decision-thacker-pass-lithium-mine",
+      "path": "app/src/content/sources/source-blm-thacker-pass-rod-2021.json",
+      "sha256": "60066443adbe85fe46bb44aa69904be3c6c1cace39ce42a7cc41426a173b3595"
+    },
+    {
+      "id": "source-ndep-rhyolite-ridge-air-permit",
+      "name": "NDEP Rhyolite Ridge Class II Air Quality Operating Permit File",
+      "url": "https://ndep.nv.gov/uploads/documents/ap1099-4256-class-ii-aqop.pdf",
+      "path": "app/src/content/sources/source-ndep-rhyolite-ridge-air-permit.json",
+      "sha256": "f43527e2d7a4df8ec667ec9148713b69721379d52e141d005d0c4edc395bfe7b"
+    }
+  ],
+  "integration_state": "Complete local texts assessed for the next application batch; not integrated and not counted among the ten current translated reading pages.",
+  "boundary": "AI linguistic-fidelity review of retained English content only. No independent human review, fresh fact-check, accessibility certification, measurement admission or publication authorization. Later exact-source context must remain separate during integration. The annual appendix inventory review binds the earlier ten-translation version; preserve that exact version before adding translations."
+}

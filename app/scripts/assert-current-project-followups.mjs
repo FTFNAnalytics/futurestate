@@ -15,7 +15,7 @@ const receipt=ops.receipts.find(r=>r.checked_date==='2026-09-21');
 assert(receipt);
 assert.equal(receipt.sha256,'5ba881ceb03e744a896558e2eb1a51f149845e56c51327ed85c587f95cc2a6ef');
 assert.deepEqual(receipt,await json(`src/data/phase-207-project-checks/${receipt.receipt_id}.json`));
-assert.equal(ops.receipts.length,2);
+assert.equal(ops.receipts.filter(r=>r.checked_date<='2026-09-21').length,2);
 assert.equal(ops.receipts[0].sha256,'c1dd2323581bf7d38d0e336a16a3fc04a0bfcf5a99320b154f633d6aad9566f7');
 for(const r of ops.receipts){const {sha256,...unsigned}=r;assert.equal(hash(JSON.stringify(unsigned)),sha256);}
 const today=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Edmonton',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -39,15 +39,15 @@ for(const mutation of [{checked_date:'2099-01-01'},{counts_as_cycle_decision:tru
 assert.deepEqual(projectChecksFor(id,'2026-09-13'),[]);
 assert.equal(latestProjectCheckFor(id,'2026-09-14').receipt_id,ops.receipts[0].receipt_id);
 assert.equal(latestProjectCheckFor(id,'2026-09-20').next_check_date,'2026-09-21');
-assert.equal(latestProjectCheckFor(id).receipt_id,receipt.receipt_id);
+assert.equal(latestProjectCheckFor(id,'2026-09-21').receipt_id,receipt.receipt_id);
 assert.equal(latestProjectCheckFor(undefined),null);assert.equal(latestProjectCheckFor('unrelated'),null);
 assert.throws(()=>projectChecksFor(id,'tomorrow'),/ISO calendar date/);
 assert.equal(projectNamedFile(file,'2026-09-13'),file);
-assert.equal(projectNamedFile(file).next_check_date,receipt.next_check_date);
+assert.equal(projectNamedFile(file,'2026-09-21').next_check_date,receipt.next_check_date);
 assert.equal(projectNamedFile(file).historical_account,file);
 assert.deepEqual(projectNamedFile(projectNamedFile(file)),projectNamedFile(file));
 assert.equal(projectEvidenceRecord(desk,'2026-09-13'),desk);
-assert.equal(projectEvidenceRecord(desk).receipt_id,receipt.receipt_id);
+assert.equal(projectEvidenceRecord(desk,'2026-09-21').receipt_id,receipt.receipt_id);
 assert.deepEqual(projectEvidenceRecord(projectEvidenceRecord(desk)),projectEvidenceRecord(desk));
 assert.equal(projectNamedFileDesk({cycle_item_id:'unrelated'}).receipt_id,undefined);
 const packets=(await json('src/data/phase-67-qualification-packet-registry.json')).packet_records.filter(p=>p.file_id===id);

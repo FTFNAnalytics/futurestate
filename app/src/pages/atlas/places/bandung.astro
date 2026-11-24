@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import IndonesiaRailCityDossierArticle from '../../../components/review/IndonesiaRailCityDossierArticle.astro';
+import {indonesiaRailCityDossiers} from '../../../lib/indonesia-rail-city-named-dossiers.mjs';
+const record=indonesiaRailCityDossiers.records.find(r=>r.record_id==='place-bandung')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><IndonesiaRailCityDossierArticle record={record}/></BaseLayout>

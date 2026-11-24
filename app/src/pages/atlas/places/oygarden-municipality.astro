@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import NorthSeaDossierArticle from '../../../components/review/NorthSeaDossierArticle.astro';
+import {northSeaDossiers} from '../../../lib/north-sea-named-dossiers.mjs';
+const record=northSeaDossiers.records.find(r=>r.record_id==='place-oygarden-municipality')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><NorthSeaDossierArticle record={record}/></BaseLayout>

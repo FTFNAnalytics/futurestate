@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-11-21",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Energy translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-037",
+  "source_record_sha256": "cca092ac8d865dc1a5c6e56a9ce22f37c562881609b970ce9d2b7a0ad769fcbe",
+  "source_to_contract_mapping": "Translate the retained September 10 plain-language reader under the existing owner-authorized mapping. Preserve the distinct original canonical-contract digest and its three source IDs; the actual English reader uses nine source IDs. Neither the original specification nor its human-review state is silently rewritten.",
+  "historical_contract_source_ids": [
+    "source-eia-electricity-data",
+    "source-eia-arizona-electricity-profile",
+    "source-iea-ai"
+  ],
+  "checks": [
+    "Compared the English title, complete overview and all six sections with both saved translations.",
+    "Preserved rated capacity, available capacity, delivered energy, storage duration and state of charge as separate quantities.",
+    "Retained Manatee, Hornsdale, Dalrymple, Gateway and Moss Landing as different cases with their own market settings, dates and evidence stages.",
+    "Preserved planning, financing, interconnection, construction, commissioning and receiving-system acceptance as separate steps; queue membership is not energization or dispatch availability.",
+    "Defined dispatch without converting a single event response into season-long reliability; retained repeated-period records, safety, faults and corrections.",
+    "Retained weather, demand and market-rule context, modeled versus observed savings, asset versus customer reliability, emissions boundaries and separate local burdens.",
+    "Preserved accepted interconnection and commissioning, repeated operations, curtailment, revision history and the disclosed alternative case.",
+    "Preserved September 1 evidence cutoff and September 10 English authorship; November 21 is translation and AI-review date only.",
+    "Verified all nine exact source IDs and URLs in each saved manuscript, six content sections per locale and no fresh source retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept after wording correction",
+      "rationale": "Changed the overview's initial 'énergie sûre' wording to 'approvisionnement énergétique fiable' so dependable supply is not silently recast as a safety finding. Capacité nominale, état de charge and répartition retain the technical distinctions with the latter defined in the text. Application de la réglementation preserves enforcement rather than treating it as an operating-success claim. Asset availability, customer interruptions and modeled savings remain separate."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Capacidad nominal, estado de carga, interconexión and despacho retain the engineering distinctions; despacho is explicitly defined. Aplicación de la normativa preserves enforcement, puesta en servicio remains distinct from receiving-system acceptance, and reducción de la producción preserves curtailment. No named-asset observation is generalized to grid or customer performance."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/energy-fr-CA-ai-reviewed.md",
+      "file_sha256": "c0f16bb2fbbc9023b6f4cf0168a50a9ab0bdf26dfbc14b3a75cc2b11ab0dd063",
+      "proposed_contract_id": "202-EDITION-039",
+      "historical_contract_sha256": "80b7472f1c59bb5613062cbbaa2f7e5741acb96bf61d1882777a2021fa0d48b9"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/energy-es-419-ai-reviewed.md",
+      "file_sha256": "a2d6c2e9700563f135e4da4a9f4d4a64befdc62273f64261134fbd43f825f7bb",
+      "proposed_contract_id": "202-EDITION-040",
+      "historical_contract_sha256": "80b7472f1c59bb5613062cbbaa2f7e5741acb96bf61d1882777a2021fa0d48b9"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-56b-eia860-2021",
+      "name": "Form EIA-860 Final Data: 2021",
+      "url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602021.zip",
+      "path": "app/src/content/sources/source-56b-eia860-2021.json",
+      "sha256": "d033ce49f6dc18a8607e4aee3bbef39e1e24c039e095f08d08579cf8d07592fc"
+    },
+    {
+      "id": "source-56b-eia860-2022",
+      "name": "Form EIA-860 Final Data: 2022",
+      "url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602022.zip",
+      "path": "app/src/content/sources/source-56b-eia860-2022.json",
+      "sha256": "592f5271e44b5b842e36dfd90c09d84be2afd1188f95fbf01bfb31736df57e69"
+    },
+    {
+      "id": "source-56b-eia860-2023",
+      "name": "Form EIA-860 Final Data: 2023",
+      "url": "https://www.eia.gov/electricity/data/eia860/archive/xls/eia8602023.zip",
+      "path": "app/src/content/sources/source-56b-eia860-2023.json",
+      "sha256": "195b790dd62af52c5022f2683c24409f9814f57641be92b932caacde914af651"
+    },
+    {
+      "id": "source-56d-gateway-cpuc-resolution-e5428-2025",
+      "name": "CPUC Resolution E-5428: Gateway Thermal Event and Partial Return",
+      "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M588/K329/588329444.PDF",
+      "path": "app/src/content/sources/source-56d-gateway-cpuc-resolution-e5428-2025.json",
+      "sha256": "ed28a8e479c954305d2728c2c88eb1622824d73497d9622aa589970fbe68900c"
+    },
+    {
+      "id": "source-56d-gateway-epa-bess-safety-2025",
+      "name": "EPA Battery Energy Storage Safety and Incident-Response Considerations",
+      "url": "https://www.epa.gov/electronics-batteries-management/battery-energy-storage-systems-main-considerations-safe",
+      "path": "app/src/content/sources/source-56d-gateway-epa-bess-safety-2025.json",
+      "sha256": "dacbd4d1b14e86bb9fcab61b44b410030fdf750395271ac72938b2ae879d79b0"
+    },
+    {
+      "id": "source-56h-dalrymple-aemo-constraint-report-2026",
+      "name": "AEMO February 2026 Monthly Constraint Report",
+      "url": "https://www.aemo.com.au/-/media/files/electricity/nem/security_and_reliability/congestion-information/statistics/2026/february-2026.pdf?rev=64beb99418f441daaa631b2995a562d2&sc_lang=en",
+      "path": "app/src/content/sources/source-56h-dalrymple-aemo-constraint-report-2026.json",
+      "sha256": "efe17279fb2116aa3fd003d57e298186314f6797166fcfd59482419ae25f8eac"
+    },
+    {
+      "id": "source-56j-hornsdale-h1-2024-operations",
+      "name": "Hornsdale Power Reserve Expansion Operations Report — H1 2024",
+      "url": "https://arena.gov.au/assets/2025/03/Neoen-%E2%80%93-Hornsdale-Power-Reserve-Upgrade-%E2%80%93-Operations-Report-H1-2024.pdf",
+      "path": "app/src/content/sources/source-56j-hornsdale-h1-2024-operations.json",
+      "sha256": "b6566e924158d1a6158faadf76f65fdac7254d3f968f79505753e6175f264adc"
+    },
+    {
+      "id": "source-56j-manatee-eia923-plant-60014",
+      "name": "EIA-923 May 2026 Energy Storage Rows — Plant 60014",
+      "url": "https://www.eia.gov/electricity/data/eia923/xls/f923_2026.zip",
+      "path": "app/src/content/sources/source-56j-manatee-eia923-plant-60014.json",
+      "sha256": "df6a91c6f00be496dcbee603d8412ad3c728aa0e61bdbdd27662fc9f92d6f1ba"
+    },
+    {
+      "id": "source-56k-moss-landing-go167-corrective-action-2025",
+      "name": "Moss Landing Power Plant GO 167 Corrective Action Plan and Response",
+      "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/safety-and-enforcement-division/esrb/generation/audits/gao-167-audits/2025-gao-audits/20250818-ga202506-cpuc-mlpp-audit--vistra-responses-confidential--finalredacted.pdf",
+      "path": "app/src/content/sources/source-56k-moss-landing-go167-corrective-action-2025.json",
+      "sha256": "e1f20c48503a2f9c3ed4fb5929c622c27d41172c48fa7e4692049497af299d2c"
+    }
+  ],
+  "integration_state": "Two complete local texts assessed for a subsequent application batch. Not integrated and not counted among the eighteen current translated reading pages. Sixteen application translations remain, including this prepared pair; fourteen other translations remain outside this preparation.",
+  "boundary": "AI linguistic-fidelity review of retained English content only; no independent human review, fresh fact-check, accessibility certification, measurement admission, public route, candidate acceptance or publication authority. Keep later source context separate on integration. Preserve the September 27 historical translation snapshot and all earlier inputs."
+}

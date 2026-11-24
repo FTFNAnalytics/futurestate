@@ -1,0 +1,95 @@
+// Explicit, one-off operation after actual source inspection; never part of current:generate.
+import {createHash} from 'node:crypto';
+import {readFile,readdir} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {join} from 'node:path';
+import {evidenceReviewDate,priorLedgerSha256,priorLedgerSnapshot,october28Reviews} from './content-205-216/october-28-primary-reviews.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const read=async path=>JSON.parse(await readFile(join(root,path),'utf8'));
+const hash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+const now=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Edmonton',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+if(now<evidenceReviewDate)throw new Error('Cannot record a future source inspection');
+const ledgerPath='src/data/phase-60-current-decisions.json';
+const ledgerRaw=await readFile(join(root,ledgerPath),'utf8');
+const ledger=JSON.parse(ledgerRaw);
+const patchFiles=[];
+if(createHash('sha256').update(priorLedgerSnapshot(ledger)).digest('hex')!==priorLedgerSha256)throw new Error('Historical September 24 ledger changed');
+const cycle=await read('src/data/phase-60-operating-cycle.json');
+const desk=await read('src/data/phase-60c-editorial-desk.json');
+const program=await read('src/data/v031-content-expansion.json');
+const returns=await read('src/data/phase-67-evidence-return-envelope-ledger.json');
+const packets=await read('src/data/phase-67-qualification-packet-registry.json');
+const atlas=await read('src/data/phase-119-deep-project-place-atlas.json');
+const backlog=await read('src/data/phase-182-evidence-source-backlog.json');
+const editorial=await read('src/data/phase-205-216-current-editorial.json');
+const folders=[['sources','/atlas/sources/'],['signals','/signals/'],['briefings','/briefings/'],['dependency-maps','/atlas/dependency-maps/'],['local-systems','/atlas/local-systems/'],['evidence-gaps','/atlas/evidence-gaps/'],['reader-pathways','/pathways/'],['research-documents','/research/documents/']];
+const content=[];
+for(const [folder,prefix]of folders)for(const name of (await readdir(join(root,'src/content',folder))).filter(n=>/\.(json|mdx)$/.test(n)).sort()){
+  const raw=await readFile(join(root,'src/content',folder,name),'utf8');
+  const row=name.endsWith('.json')?JSON.parse(raw):{id:raw.match(/^id: "([^"]+)"/m)?.[1],slug:raw.match(/^slug: "([^"]+)"/m)?.[1]};
+  content.push({id:row.id,route:`${prefix}${folder==='sources'?row.id:row.slug}/`,raw});
+}
+const receipts=[];
+for(const inspected of october28Reviews){
+  const base=cycle.records.find(r=>r.cycle_item_id===inspected.cycle_item_id);
+  if(!base)throw new Error('Unknown gate');
+  const review={...inspected,origin_record_id:base.origin_record_id,desk_item_id:null,scheduled_check_date:base.scheduled_check_date,source_checked_date:evidenceReviewDate,decision_date:evidenceReviewDate,counts_as_cycle_decision:true,underlying_signal_id:base.underlying_signal_id,underlying_signal_status:'In Review',checked_source_ids:base.source_ids,exact_next_artifact:base.exact_next_artifact,
+    canonical_dossier_ids:[...new Set([...base.canonical_dossier_ids,'briefing-outcomes-watch-001-what-actually-changed','briefing-evidence-cycle-001-operating-baseline','briefing-evidence-return-control-room-001'])],reader_pathway_ids:base.reader_pathway_ids,dependency_map_ids:[...new Set([...base.dependency_map_ids,'dependency-map-artifact-return-to-reader-state'])],local_system_ids:base.local_system_ids,
+    gate_route:'/review/evidence-cycle/'+program.evidence_cycle.records.find(r=>r.cycle_item_id===base.cycle_item_id).slug+'/',
+    watch_note:{receipt_type:'Watch Note',dated:evidenceReviewDate,prior_scheduled_date:base.scheduled_check_date,next_check_date:inspected.next_check_date,reason:inspected.next_action}};
+  const prior=cycle.records.find(r=>r.cycle_item_id===review.cycle_item_id);
+  const appointment=desk.records.find(r=>r.desk_item_id===review.desk_item_id);
+  const route=program.evidence_cycle.records.find(r=>r.cycle_item_id===review.cycle_item_id);
+  if(!prior||!route||prior.scheduled_check_date!==review.scheduled_check_date||prior.exact_next_artifact!==review.exact_next_artifact||appointment)throw new Error(`Gate identity mismatch: ${review.receipt_id}`);
+  if(review.gate_route!==`/review/evidence-cycle/${route.slug}/`)throw new Error('Unknown gate route');
+  if(!review.counts_as_cycle_decision&&prior.receipt_id!==review.prior_receipt_id)throw new Error('Companion must retain the original cycle decision');
+  const ids=[...review.checked_source_ids,review.underlying_signal_id,...review.canonical_dossier_ids,...review.reader_pathway_ids,...review.dependency_map_ids,...review.local_system_ids,...review.evidence_gap_ids];
+  for(const id of ids)if(!content.some(r=>r.id===id))throw new Error(`Unknown content assignment: ${id}`);
+  const matchIds=[...review.checked_source_ids,review.underlying_signal_id];
+  const targets=content.filter(r=>ids.includes(r.id)||matchIds.some(id=>r.raw.includes(JSON.stringify(id)))).map(r=>({record_id:r.id,route:r.route,relation:ids.includes(r.id)?'Assigned evidence surface':'Exact source/signal reference; contextual notice, not downstream admission'}));
+  targets.push({record_id:review.cycle_item_id,route:review.gate_route,relation:review.counts_as_cycle_decision?'Independent cycle gate':'Companion correction; original cycle receipt retained'});
+  const envelope=returns.envelope_records.find(r=>r.envelope_id===review.envelope_id);
+  if(envelope?.cycle_item_id!==review.cycle_item_id)throw new Error('Return-envelope mismatch');
+  targets.push({record_id:envelope.envelope_id,route:`/evidence/qualification/${envelope.slug}/`,relation:'Same-identity return context'});
+  for(const id of review.qualification_packet_ids){
+    const packet=packets.packet_records.find(r=>r.packet_id===id);
+    if(!packet||!review.named_file_ids.includes(packet.file_id))throw new Error('Qualification identity mismatch');
+    targets.push({record_id:id,route:`/evidence/qualification/${packet.slug}/`,relation:'Same-identity context; qualification decision unchanged'});
+  }
+  for(const row of [...atlas.projects,...atlas.places,...backlog.backlog_items,...editorial.records])if(matchIds.some(id=>JSON.stringify(row).includes(JSON.stringify(id)))){
+    const id=row.atlas_project_id??row.atlas_place_id??row.backlog_item_id??row.record_id;
+    for(const path of row.routes?Object.values(row.routes):[row.route])if(typeof path==='string'&&path.startsWith('/'))targets.push({record_id:id,route:path,relation:'Exact source/signal reference; historical record and independent admission retained'});
+  }
+  const affectedIds=[...new Set([...targets.map(t=>t.record_id),...review.named_file_ids,...(review.conversion_gate_id?[review.conversion_gate_id]:[])])];
+  const affectedRoutes=[...new Set([...targets.map(t=>t.route),'/review/evidence-cycle/','/data/operating-cycle.json','/data/evidence-return-envelopes.json','/data/current-evidence-decisions.json',...(review.named_file_ids.length?['/data/project-conversion.json','/data/conversion-gates.json','/data/conversion-stage-matrix.json','/data/qualification-packets.json','/data/conversion-events.json']:['/data/evidence-queue.json'])])];
+  if(affectedIds.some(id=>!id)||affectedRoutes.some(path=>path.includes('undefined')))throw new Error('Unresolved propagation target');
+  const payload={schema_version:'1.1',...review,propagation_targets:targets,affected_record_ids:affectedIds,affected_routes:affectedRoutes,propagation_status:'complete_locally_git_held',content_propagation_status:'complete',git_backed_release_status:'held',publication_authorized:false,human_reviewer:null,independent_stage_admission:false,history_boundary:'Actual October 28 inspection appended with the original scheduled date retained. The eight prior ledger receipts, original source-profile dates and all baseline registries remain historical inputs. This receipt does not complete the cycle audit or the overdue companion/project reviews; no independent qualification, operating or launch admission is made.'};
+  receipts.push({...payload,artifact_digest:hash(payload)});
+}
+// Validate every new payload before touching either the ledger or derived updates.
+for(const receipt of receipts){
+  const existing=ledger.receipts.find(r=>r.receipt_id===receipt.receipt_id);
+  if(existing&&hash(existing)!==hash(receipt))throw new Error(`Refusing to overwrite a dated receipt: ${receipt.receipt_id}`);
+}
+for(const receipt of receipts)if(!ledger.receipts.some(r=>r.receipt_id===receipt.receipt_id))ledger.receipts.push(receipt);
+ledger.as_of_date=[ledger.as_of_date,evidenceReviewDate].sort().at(-1);
+patchFiles.push({path:ledgerPath,before:ledgerRaw,after:JSON.stringify(ledger,null,2)+'\n'});
+for(const receipt of receipts){
+  const update={id:receipt.update_id,effective_date:evidenceReviewDate,entry_type:'Source Refresh',title:receipt.update_title,summary:receipt.bounded_finding,affected_record_ids:receipt.affected_record_ids,related_paths:receipt.affected_routes,evidence_note:receipt.evidence_boundary,receipt_id:receipt.receipt_id,source_checked_date:receipt.source_checked_date,decision_date:receipt.decision_date,scheduled_check_date:receipt.scheduled_check_date,receipt_type:receipt.receipt_type,materiality:receipt.receipt_type==='Watch Note'?'Watch posture change':'No record-state change',publication_effect:'Candidate dated evidence update; underlying signal remains In Review. Independent stage admission and Git-backed release held. Earlier receipts, source dates and other evidence identities are not rewritten.',next_check_date:receipt.next_check_date,work_package:'docs/work-packages/phase-207-dated-evidence-operations-and-source-currency.md'};
+  patchFiles.push({path:`src/content/updates/${receipt.update_id.replace(/^update-/,'')}.json`,after:JSON.stringify(update,null,2)+'\n'});
+}
+if(process.argv.includes('--patch')){
+  const patch=['*** Begin Patch'];
+  for(const {path,before,after}of patchFiles){
+    if(before===after)continue;
+    if(before){
+      const old=before.trimEnd().split(/\r?\n/),fresh=after.trimEnd().split(/\r?\n/);
+      const oldDate=old.findIndex(x=>x.startsWith('  "as_of_date":'));
+      patch.push('*** Update File: app/'+path);
+      if(old[oldDate]!==fresh[oldDate]){patch.push('@@','-'+old[oldDate],'+'+fresh[oldDate]);old[oldDate]=fresh[oldDate];}
+      let i=0;while(i<old.length&&old[i]===fresh[i])i++;
+      if(i<old.length)patch.push('@@',...old.slice(Math.max(0,i-2),i).map(x=>' '+x),...old.slice(i).map(x=>'-'+x),...fresh.slice(i).map(x=>'+'+x));
+    }else patch.push('*** Add File: app/'+path,...after.trimEnd().split(/\r?\n/).map(x=>'+'+x));
+  }
+  patch.push('*** End Patch');console.log(patch.join('\n'));
+}else console.log(JSON.stringify({ready:receipts.map(r=>({id:r.receipt_id,targets:r.propagation_targets.length,routes:r.affected_routes.length})),files:patchFiles.map(f=>f.path)},null,2));

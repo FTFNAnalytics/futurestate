@@ -1,7 +1,7 @@
 ---
 import {getCollection} from 'astro:content';
 import ReviewHeader from './ReviewHeader.astro';
-import {translatedReaders} from '../../lib/translated-readers.mjs';
+import {translatedReaders,translationHistoricalContractRoute} from '../../lib/translated-readers.mjs';
 import {readerSourceReviewContexts} from '../../lib/reader-presentation.mjs';
 import {currentEvidenceLedger} from '../../lib/current-evidence.mjs';
 import operations from '../../data/phase-207-current-operations.json';
@@ -14,12 +14,14 @@ const byId=new Map(sources.map(source=>[source.data.id,source.data]));
 const contexts=readerSourceReviewContexts(article,currentEvidenceLedger,operations,{route:Astro.url.pathname});
 const alternatives=translatedReaders.filter(r=>r.topic_id===article.topic_id&&r.record_id!==article.record_id);
 const anchor=(index:number)=>`${article.record_id.toLowerCase()}-section-${index+1}`;
+const historicalPreparation='preparation_notice_is_historical' in article&&article.preparation_notice_is_historical===true;
 ---
 <article class="translated-reader" lang={article.locale} data-translated-reader={article.record_id} data-translation-sha256={article.sha256}>
   <ReviewHeader eyebrow={ui.eyebrow} title={article.title} summary={article.overview} />
   <div class="page-section prose-page">
     <p><strong>{ui.status}</strong></p>
-    <p data-translation-review>{article.review_notice}</p>
+    {historicalPreparation?<details data-translation-preparation-notice><summary>{article.locale==='fr-CA'?'Note historique de préparation — avant l’intégration':'Nota histórica de preparación — anterior a la integración'}</summary><p data-translation-review>{article.review_notice}</p></details>:<p data-translation-review>{article.review_notice}</p>}
+    {(historicalPreparation||article.integration_date!==article.ai_review_date)&&<p data-translation-integration-date>{article.locale==='fr-CA'?`Intégré à cette édition locale le ${article.integration_date}. Révision linguistique par IA : ${article.ai_review_date}. La date limite des données probantes demeure le ${article.evidence_cutoff}.`:`Integrado en esta edición local el ${article.integration_date}. Revisión lingüística por IA: ${article.ai_review_date}. La fecha de corte de la evidencia sigue siendo el ${article.evidence_cutoff}.`}</p>}
     <nav aria-label={ui.alternatives}><ul>
       <li><a href={article.english_route} hreflang="en">{ui.english}</a></li>
       {alternatives.map(other=><li><a href={other.route} lang={other.locale} hreflang={other.locale}>{other.ui.language}</a></li>)}
@@ -37,7 +39,7 @@ const anchor=(index:number)=>`${article.record_id.toLowerCase()}-section-${index
     <section><h2 id="translation-sources" tabindex="-1">{ui.sources}</h2><p>{ui.sourceBoundary}</p>
       <ul>{article.sources.map(source=><li data-reader-source={source.id}><a href={source.url} lang={'language' in source?String(source.language):article.locale}>{source.label}</a> · <a href={`/atlas/sources/${source.id}/`}>{ui.sourceNotes}</a></li>)}</ul>
     </section>
-    <details><summary>{ui.contract}</summary><p>{ui.contractBoundary}</p><p><a href={article.historical_contract.route} hreflang="en">{article.record_id} · {ui.contract}</a></p><p lang="en">Translated English record: <code>{article.source_record_id}</code>. SHA-256: <code>{article.source_record_sha256}</code>. Preserved canonical-contract digest: <code>{article.historical_contract.canonical_content_digest}</code>.</p></details>
+    <details><summary>{ui.contract}</summary><p>{ui.contractBoundary}</p><p><a href={translationHistoricalContractRoute(article)} hreflang="en">{article.record_id} · {ui.contract}</a></p><p lang="en">Translated English record: <code>{article.source_record_id}</code>. SHA-256: <code>{article.source_record_sha256}</code>. Preserved canonical-contract digest: <code>{article.historical_contract.canonical_content_digest}</code>.</p></details>
     <p><a href="/reference/accessible-editions/" hreflang="en">{ui.back}</a> · <a href="/data/build-decisions.json">{ui.export}</a></p>
   </div>
 </article>

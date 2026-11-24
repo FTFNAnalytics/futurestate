@@ -4,6 +4,8 @@ import { fileURLToPath } from "node:url";
 import { computeV1refCandidateDigest, isValidV1refValidationReceipt } from "./lib/v1ref-candidate-digest.mjs";
 import { v1refPhaseDefinitions } from "./lib/v1ref-config.mjs";
 import {verifyPublicJsonInventory, applyExportInventory} from './lib/public-json-inventory.mjs';
+import {annualAiProjectionDate} from '../src/lib/annual-ai-reviews.mjs';
+import {translationIntegrationDate} from '../src/lib/translated-readers.mjs';
 
 const appRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const workspaceRoot = resolve(appRoot, "..");
@@ -33,6 +35,8 @@ const phases = await Promise.all(v1refPhaseDefinitions.map(({ file }) => readJso
 const phase204 = phases.at(-1);
 const receipt = aggregate.local_validation_receipt;
 const currentEditorial = await readJson(join(dataRoot, "phase-205-216-current-editorial.json"));
+const currentOperations = await readJson(join(dataRoot, "phase-207-current-operations.json"));
+const currentEvidence = await readJson(join(dataRoot, "phase-60-current-decisions.json"));
 const operatingCycle = await readJson(join(dataRoot, "phase-60-operating-cycle.json"));
 const candidateDigest = await computeV1refCandidateDigest({ appRoot, aggregate });
 
@@ -229,7 +233,7 @@ manifest.last_verified = {
 };
 manifest.current_editorial_extension = {
   ...manifest.current_editorial_extension,
-  as_of_date: currentEditorial.as_of_date,
+  as_of_date: [currentEditorial.as_of_date, currentOperations.as_of_date, currentEvidence.as_of_date, annualAiProjectionDate, translationIntegrationDate].sort().at(-1),
   state: "Local build validated; editorial and release acceptance held",
   validated_date: receipt.validated_date,
   validation_receipt_id: receipt.receipt_id,

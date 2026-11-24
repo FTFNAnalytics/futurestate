@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import SouthAsiaDossierArticle from '../../../components/review/SouthAsiaDossierArticle.astro';
+import {southAsiaDossiers} from '../../../lib/south-asia-named-dossiers.mjs';
+const record=southAsiaDossiers.records.find(r=>r.record_id==='project-dhaka-mrt-line-six')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><SouthAsiaDossierArticle record={record}/></BaseLayout>

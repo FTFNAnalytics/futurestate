@@ -1,6 +1,8 @@
 ---
 import {getCollection,render} from 'astro:content';
 import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import {placeReadingForPriorRoute} from '../../../lib/canonical-place-readings.mjs';
+import {regionalReadingForPriorRoute} from '../../../lib/canonical-regional-readings.mjs';
 import ReaderPathwaySummary from '../../../components/atlas/ReaderPathwaySummary.astro';
 import CurrentEvidenceNotice from '../../../components/review/CurrentEvidenceNotice.astro';
 import CurrentOperationsNotice from '../../../components/review/CurrentOperationsNotice.astro';
@@ -13,6 +15,7 @@ import {projectGoldenMarsSystemBody} from '../../../lib/golden-mars-wider-review
 import retainedGoldenMarsSystem from '../../../content/local-systems/local-northern-virginia-data-center-corridor.mdx?raw';
 export async function getStaticPaths(){return (await getCollection('localSystems')).map(system=>({params:{slug:system.data.slug},props:{system}}));}
 const {system}=Astro.props;const {Content}=await render(system);
+const currentPlaceReading=placeReadingForPriorRoute(Astro.url.pathname)??regionalReadingForPriorRoute(Astro.url.pathname);
 const kind=`local-${system.data.slug}`,records=(await getShelfCatalog())[kind];
 const pathways=(await getCollection('readerPathways')).filter(p=>p.data.local_system_ids.includes(system.data.id));
 const gaps=(await getCollection('evidenceGaps')).filter(g=>system.data.evidence_gap_ids.includes(g.data.id));
@@ -36,6 +39,7 @@ if(revisedBody){
     {system.data.id==='local-ontario-real-estate'&&<p><a href="/reference/global-places-ii/ontario-real-estate/">Read the expanded Ontario place draft</a> — independent review pending.</p>}
   </section>
   <GoldenMarsReviewNotice recordId={system.data.id}/>
+  {currentPlaceReading&&<aside class="page-section" data-current-place-reading-link={currentPlaceReading.record_id}><h2>Later dated place synthesis</h2><p><a href={currentPlaceReading.route}>{currentPlaceReading.title}</a> — November 22, 2026. This reading reuses retained inspections; the profile below and its project links keep their own scope and review history.</p></aside>}
   <section class="page-section"><h2>Current equilibrium and constraints</h2><p>{system.data.current_equilibrium}</p><p><strong>Core constraints:</strong> {system.data.core_constraints.join(' · ')}</p><p>{getLocalEvidenceNote(system.data.local_evidence_level)}</p></section>
   {pathways.map(pathway=><ReaderPathwaySummary pathway={pathway}/>)}
   <section class="page-section" id="local-records"><h2>Explore this local system</h2>

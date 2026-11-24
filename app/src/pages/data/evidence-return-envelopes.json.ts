@@ -1,11 +1,12 @@
 import type { APIRoute } from "astro";
 import ledger from "../../data/phase-67-evidence-return-envelope-ledger.json";
-import { projectEvidenceRecord, currentEvidenceLedger } from '../../lib/current-evidence.mjs';
+import { projectEvidenceRecord, currentEvidenceLedger, evidenceReceiptsForControl } from '../../lib/current-evidence.mjs';
 import { publicDatasetResponse } from "../../lib/public-data";
 
 export const GET: APIRoute = async () => {
   const records = ledger.envelope_records.map((record) => ({
     snapshot_as_of: '2026-09-01', current_state_as_of: currentEvidenceLedger.as_of_date, current_state: projectEvidenceRecord(record),
+    dated_review_receipts: evidenceReceiptsForControl(record),
     envelope_id: record.envelope_id,
     path: `/evidence/qualification/${record.slug}/`,
     record_kind: record.record_kind,

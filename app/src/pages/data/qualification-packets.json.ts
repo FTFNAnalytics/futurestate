@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import {projectChecksFor,latestProjectCheckFor} from '../../lib/current-project-checks.mjs';
 import registry from "../../data/phase-67-qualification-packet-registry.json";
-import {evidenceReceiptsForRecord, currentNamedFileAccount} from '../../lib/current-evidence.mjs';
+import {evidenceReceiptsForRecord, namedFileEvidenceDecisions, currentNamedFileAccount} from '../../lib/current-evidence.mjs';
 import { publicDatasetResponse } from "../../lib/public-data";
 
 export const GET: APIRoute = async () => {
@@ -37,7 +37,7 @@ export const GET: APIRoute = async () => {
     gate_id: record.gate_id,
     gate_mode: record.gate_mode,
     historical_next_check_date: record.next_check_date,
-    next_check_date: latestProjectCheckFor(record.file_id)?.next_check_date ?? evidenceReceiptsForRecord(record.packet_id).at(-1)?.next_check_date ?? record.next_check_date,
+    next_check_date: latestProjectCheckFor(record.file_id)?.next_check_date ?? namedFileEvidenceDecisions(record.file_id).filter(r=>r.qualification_packet_ids.some(id=>id===record.packet_id)).at(-1)?.next_check_date ?? record.next_check_date,
     dated_project_checks: projectChecksFor(record.file_id),
     reopening_trigger: record.reopening_trigger,
     gate_receipt_state: record.gate_receipt_state,

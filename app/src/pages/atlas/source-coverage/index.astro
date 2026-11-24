@@ -3,9 +3,9 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import { formatDate } from "../../../lib/editorial";
-import { getSourceFreshness, getSourceHealth } from "../../../lib/sourceFreshness";
+import { getSourceFreshness, getSourceHealth, sourceReviewAsOfDate } from "../../../lib/sourceFreshness";
 
-const generatedAt = new Date();
+const generatedAt = new Date(`${sourceReviewAsOfDate}T00:00:00Z`);
 const sources = await getCollection("sources");
 const topicRecords = await getCollection("topics");
 const topicNames = new Set(topicRecords.map((topic) => topic.data.name));
@@ -114,11 +114,10 @@ const unassignedSources = sourceRows.filter((row) => row.source.data.watch_lanes
 >
   <section class="page-section">
     <div class="eyebrow">Atlas / Source Coverage</div>
-    <h1 class="page-title">The authority map behind the evidence layer.</h1>
+    <h1 class="page-title" data-source-review-as-of={sourceReviewAsOfDate}>The authority map behind the evidence layer.</h1>
     <p class="lede">
       This page is generated from source records at build time. It shows which
-      watch lanes are supported, which topics have authoritative source depth,
-      and which records can move toward automated checks first.
+      watch lanes are represented and which records need review. The calculation uses the Edmonton date {sourceReviewAsOfDate}; it does not inspect sources or replace later scoped receipts and appointments.
     </p>
     <div class="meta-row">
       <MetaPill label={`Generated ${formatDate(generatedAt)}`} tone="review" />

@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import { getStatusTone } from "../../lib/editorial";
-import { getSourceFreshness, getSourceHealth } from "../../lib/sourceFreshness";
+import { getSourceFreshness, getSourceHealth, sourceReviewAsOfDate } from "../../lib/sourceFreshness";
 
 const topics = await getCollection("topics");
 const sources = await getCollection("sources");
@@ -24,7 +24,7 @@ const dependencyMapTopics = Array.from(new Set(dependencyMaps.map((dependencyMap
 const dependencyMapEvidenceGapCount = new Set(
   dependencyMaps.flatMap((dependencyMap) => dependencyMap.data.evidence_gap_ids)
 ).size;
-const generatedAt = new Date();
+const generatedAt = new Date(`${sourceReviewAsOfDate}T00:00:00Z`);
 const sourceFreshnessRows = sources.map((source) =>
   getSourceFreshness(
     source.data.last_checked_date,
@@ -127,7 +127,7 @@ const atlasSections = [
   <section class="page-section hero">
     <div class="hero__copy">
       <div class="eyebrow">ftfn.io / Atlas</div>
-      <h1 class="page-title">The map behind the signal stream.</h1>
+      <h1 class="page-title" data-source-review-as-of={sourceReviewAsOfDate}>The map behind the signal stream.</h1>
       <p class="lede">
         The Atlas is FTFN's structured reference layer: topics, sources,
         research collections, organizations, technologies, local systems,

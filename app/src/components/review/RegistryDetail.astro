@@ -2,6 +2,15 @@
 import ReviewHeader from "./ReviewHeader.astro";
 import MetaPill from "../ui/MetaPill.astro";
 import PlaceIdentityNotice from './PlaceIdentityNotice.astro';
+import ChileDossierLinks from './ChileDossierLinks.astro';
+import BrazilDossierLinks from './BrazilDossierLinks.astro';
+import NorthSeaDossierLinks from './NorthSeaDossierLinks.astro';
+import StockholmDossierLinks from './StockholmDossierLinks.astro';
+import AucklandDossierLinks from './AucklandDossierLinks.astro';
+import TuasDossierLinks from './TuasDossierLinks.astro';
+import PortCitiesDossierLinks from './PortCitiesDossierLinks.astro';
+import UrbanServicesDossierLinks from './UrbanServicesDossierLinks.astro';
+import NordicCitiesDossierLinks from './NordicCitiesDossierLinks.astro';
 import {placeIdentityTitle} from '../../lib/place-identity-reviews.mjs';
 
 interface Props {
@@ -33,6 +42,15 @@ const external = (href: string) => /^https?:\/\//.test(href);
 
 {!embedded && <ReviewHeader eyebrow={`${release} · Phase ${phase}`} title={title} summary={registry.summary} />}
 <PlaceIdentityNotice record={record} />
+<ChileDossierLinks recordId={String(id)} />
+<BrazilDossierLinks recordId={String(id)} />
+<NorthSeaDossierLinks recordId={String(id)} />
+<StockholmDossierLinks recordId={String(id)} />
+<AucklandDossierLinks recordId={String(id)} />
+<TuasDossierLinks recordId={String(id)} />
+<PortCitiesDossierLinks recordId={String(id)} />
+<UrbanServicesDossierLinks recordId={String(id)} />
+<NordicCitiesDossierLinks recordId={String(id)} />
 
 <section class="page-section">
   <div class="meta-row"><MetaPill label={String(id)} /><MetaPill label={String(state)} tone="review" /></div>

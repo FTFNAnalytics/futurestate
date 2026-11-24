@@ -1,11 +1,12 @@
 import type { APIRoute } from "astro";
 import cycle from "../../data/phase-60-operating-cycle.json";
-import { projectEvidenceRecord, currentEvidenceLedger } from '../../lib/current-evidence.mjs';
+import { projectEvidenceRecord, currentEvidenceLedger, evidenceReceiptsForControl } from '../../lib/current-evidence.mjs';
 import { publicDatasetResponse } from "../../lib/public-data";
 
 export const GET: APIRoute = async () => {
   const records = cycle.records.map((record) => ({
     snapshot_as_of: '2026-09-01', current_state_as_of: currentEvidenceLedger.as_of_date, current_state: projectEvidenceRecord(record),
+    dated_review_receipts: evidenceReceiptsForControl(record),
     cycle_item_id: record.cycle_item_id,
     wave: record.wave,
     target: record.target,

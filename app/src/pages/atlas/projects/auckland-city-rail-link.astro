@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import AucklandDossierArticle from '../../../components/review/AucklandDossierArticle.astro';
+import {aucklandDossiers} from '../../../lib/auckland-named-dossiers.mjs';
+const record=aucklandDossiers.records.find(r=>r.record_id==='project-auckland-city-rail-link')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><AucklandDossierArticle record={record}/></BaseLayout>

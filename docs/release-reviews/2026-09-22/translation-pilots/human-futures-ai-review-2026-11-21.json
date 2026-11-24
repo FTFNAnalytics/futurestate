@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-11-21",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Human Futures translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-045",
+  "source_record_sha256": "cc9c16e5ff7eb9379f0b8e94b23a1dc6004269410111a4b9cfd704f9957787ab",
+  "source_to_contract_mapping": "Translate the retained September 10 plain-language reader under the existing owner-authorized mapping. Preserve the original canonical-contract digest and its three source IDs separately from the ten-source English reader. Historical human-review fields are not rewritten.",
+  "historical_contract_source_ids": [
+    "source-cmhc-housing-market-information-portal",
+    "source-ontario-housing-supply-progress",
+    "source-statcan-building-permits-survey"
+  ],
+  "checks": [
+    "Compared the saved title, full overview and all six sections in each locale with the retained English reader.",
+    "Preserved defined populations, geography, baseline periods, collection methods and distributional differences; no community progress score is introduced.",
+    "Retained Toronto 24 254930 council-stage evidence with remaining enactment conditions, separately from construction, occupancy and affordability. Introductory scope explicitly says this is not a fresh Toronto review.",
+    "Preserved Phoenix/Maricopa wages and covered employment as distinct from semiconductor-workforce readiness; assigned institutional work is not a delivered outcome.",
+    "Preserved provider identity, opening/acceptance records, availability, use, complaints, exclusions, interruptions and continuing quality.",
+    "Kept cohort membership or inclusion rules clear, without implying unchanged membership is always required; retained administrative-category, missing-data, attrition and small-sample cautions.",
+    "Retained qualitative experience as scoped context rather than substitute operating measurements; favorable post-announcement trends do not establish causation.",
+    "Preserved September 1 evidence cutoff, September 10 English authorship, and the absence of later housing, workforce or newly measured social outcomes.",
+    "Verified the ten exact source IDs and URLs in each manuscript; no endpoint or permit query was performed."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept after terminology refinement",
+      "rationale": "Conditions d’édiction du règlement preserves the remaining enactment step without presenting a new permit finding or erasing the council decision. Cohorte stable and mesures ventilées retain inclusion-rule and distribution distinctions. Main-d’œuvre prête à exercer ses fonctions does not turn labor statistics into qualification acceptance."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept after terminology refinement",
+      "rationale": "Conditions for promulgación remain separate from the retained concejo municipal stage, occupied housing and current project inspection. Cohorte estable and medidas desagregadas preserve population definitions and small-sample caution. Fuerza laboral preparada is explicitly not established by the retained labor data, and qualitative accounts are not mislabeled as measured operating outcomes."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/human-futures-fr-CA-ai-reviewed.md",
+      "file_sha256": "6765a26a01beb54349b874d8aeca8dcbd8d335aeb25a44339c33bc2750206bd3",
+      "proposed_contract_id": "202-EDITION-047",
+      "historical_contract_sha256": "0ca968a51c1e79f2f94da0351c1f35932cbd87227d2352b1c8c491d0affdf2b8"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/human-futures-es-419-ai-reviewed.md",
+      "file_sha256": "8b6b8f4c30383da8c3b7ab961214a7dbbfec6e441409e05ab1360a40cca19ee2",
+      "proposed_contract_id": "202-EDITION-048",
+      "historical_contract_sha256": "0ca968a51c1e79f2f94da0351c1f35932cbd87227d2352b1c8c491d0affdf2b8"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-56p-va-priority-letter-full-report-2026",
+      "name": "GAO-26-108978 VA Priority Recommendations: Full Report",
+      "url": "https://www.gao.gov/assets/gao-26-108978.pdf",
+      "path": "app/src/content/sources/source-56p-va-priority-letter-full-report-2026.json",
+      "sha256": "189acf92b5e9820f04bf0e68ac496aa7090b619df13bfa4d582015385a903a8a"
+    },
+    {
+      "id": "source-bls-qcew-data-files",
+      "name": "BLS Quarterly Census of Employment and Wages Data Files",
+      "url": "https://www.bls.gov/cew/downloadable-data-files.htm",
+      "path": "app/src/content/sources/source-bls-qcew-data-files.json",
+      "sha256": "30018ab525f98d687cb01a616833df6e0b85378372c8a4fa99a764743707bd18"
+    },
+    {
+      "id": "source-bls-oews-tables",
+      "name": "BLS Occupational Employment and Wage Statistics Tables",
+      "url": "https://www.bls.gov/oes/tables.htm",
+      "path": "app/src/content/sources/source-bls-oews-tables.json",
+      "sha256": "37ed19cf233622fc871c18785be127959b04f5d3a3bdbbc57ec6ed9bdb7b56a9"
+    },
+    {
+      "id": "source-bls-phoenix-oews-may-2025",
+      "name": "BLS Phoenix-Mesa-Chandler Occupational Employment and Wages, May 2025",
+      "url": "https://www.bls.gov/regions/west/news-release/occupationalemploymentandwages_phoenix.htm",
+      "path": "app/src/content/sources/source-bls-phoenix-oews-may-2025.json",
+      "sha256": "73825e75e17f59f9edbfd36ae9f107ddb98e2da43302f9025c479120711228d1"
+    },
+    {
+      "id": "source-maricopa-association-governments-open-data",
+      "name": "Maricopa Association of Governments Open Data",
+      "url": "https://geodata-azmag.opendata.arcgis.com/",
+      "path": "app/src/content/sources/source-maricopa-association-governments-open-data.json",
+      "sha256": "9bbbe3c5637de6a78bbb16f66fdca745229bf8b822918a91aa607e4f39ba4474"
+    },
+    {
+      "id": "source-toronto-2026-sc33-9-item-history",
+      "name": "Toronto Agenda Item 2026.SC33.9 for Application 24 254930",
+      "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+      "path": "app/src/content/sources/source-toronto-2026-sc33-9-item-history.json",
+      "sha256": "85e947638bb7fb77c005c71cce360697139f53be7c96ad90934b97e2f9927f8a"
+    },
+    {
+      "id": "source-toronto-24-254930-june-2026-decision-report",
+      "name": "Toronto Decision Report For Planning Application 24 254930 ESC 20 OZ",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288578.pdf",
+      "path": "app/src/content/sources/source-toronto-24-254930-june-2026-decision-report.json",
+      "sha256": "3e31e0f7e4358bd65907d1c7fa83fc9e27b76fafc95a23ae3b6ddc6193265d83"
+    },
+    {
+      "id": "source-toronto-building-permits",
+      "name": "City of Toronto Building Permit Application and Inspection Status",
+      "url": "https://www.toronto.ca/services-payments/building-construction/building-permit/after-you-apply-for-a-building-permit/search-the-status-of-a-building-permit-application/",
+      "path": "app/src/content/sources/source-toronto-building-permits.json",
+      "sha256": "6b278f6106fc604df27243f9ace1356d6b30d85d3e61558aadc254e6db393e76"
+    },
+    {
+      "id": "source-57b-amtrak-ada-progress-june-2026",
+      "name": "Amtrak ADA Progress Report, June 2026",
+      "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf",
+      "path": "app/src/content/sources/source-57b-amtrak-ada-progress-june-2026.json",
+      "sha256": "945f97bc11233bbb09478dbfabae9972b33bc0e6b8ff030229b1177a43569789"
+    },
+    {
+      "id": "source-57e-amtrak-accessibility-progress-june-2026",
+      "name": "Amtrak Accessibility Progress Report under the Accessible Canada Act, June 2026",
+      "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf",
+      "path": "app/src/content/sources/source-57e-amtrak-accessibility-progress-june-2026.json",
+      "sha256": "0abf493340fbb01a0a63fd3599adc78ccebc61e6fc1e4ada40bcada8e2c08885"
+    }
+  ],
+  "integration_state": "Two complete local texts assessed for a subsequent application batch. Not integrated; the application still contains eighteen translated readings. These join the separately prepared Energy and Finance/Risk pairs: six prepared manuscripts, with sixteen application integrations still outstanding.",
+  "boundary": "AI linguistic-fidelity review of retained English content only; no independent human review, fresh legal or medical assessment, new source inspection, exact-project permit result, housing occupancy, workforce acceptance, social outcome, accessibility certification or publication authority. Retain historical reviews and show later evidence context separately on integration."
+}

@@ -1,0 +1,54 @@
+{
+  "review_id": "SOUTH-ASIA-NAMED-ARTICLES-AI-REVIEW-2026-11-21",
+  "review_date": "2026-11-21",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision": "Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review": false,
+  "edition_sha256": "0d1677812d2eea0f0a5da353225170573ac3ad24b185e78a200702251ddd4eda",
+  "sources_sha256": "b8559729c2e171d5a38577729061965d716ee06dff01c3ef065cacbb8e85b2c0",
+  "records": [
+    {
+      "record_id": "project-mumbai-metro-line-three",
+      "sha256": "74d449d87d66e3a7f5536bbca7f3de5e6dec838ef0b8380e741fbe93d712d260",
+      "determination": "One corridor across staged openings. The station inventory avoids an inaccurate all-underground-stations inference. Parliamentary cost and status rows remain line-specific. App launch and accessible design do not establish transaction success, fare integration or sustained reliability."
+    },
+    {
+      "record_id": "project-dhaka-mrt-line-six",
+      "sha256": "494c315a9b12cd264331a3530a79f29241f47867e4703a191f0af00591163d6a",
+      "determination": "One line, not separate financing tranches. The historical loan schedule is not completion. The non-peer-reviewed road paper retains its June 2024 endpoint and local corridor scope; the separate household findings are attributed only to a conference account. Failed DMTCL retrieval does not establish extension non-completion."
+    },
+    {
+      "record_id": "place-greater-mumbai",
+      "sha256": "d618f64a686c11624c41277c9b910776f1ed55e66cd667115826c1e6614dd5d7",
+      "determination": "One municipal area, not the whole metropolitan region. The 2019 inventory stays historical. Climate budget instructions and electrification targets are not observed expenditure, accepted vehicles or delivered service. Regional app participation does not extend the municipality's boundary."
+    }
+  ],
+  "review_checks": [
+    "Nine primary-source texts inspected November 21 in America/Edmonton. Parliament, the lender, the municipal plan and budget instructions have different evidentiary roles.",
+    "Four PDFs were read as text at the cited locations. Parliament and JICA paper screenshots supplied no inspectable image; the budget screenshot returned Cache miss. No visual verification is claimed.",
+    "DMTCL status and FAQ pages returned 502; MMRCL and its gazette returned 403; MMRDA app and connection PDFs timed out. The BMC climate-budget report timed out, while the latest environmental report and a JICA survey exceeded reader size limits. No findings were taken from their discovery snippets.",
+    "The budget's English annex and numerical cover date were read. The garbled Marathi body was not translated. No added translation or native-language review is counted.",
+    "The Dhaka household paper, raw household data and underlying Google Maps sample were not inspected or reanalysed. No measured operating-series admission or new Phase 211 result is created.",
+    "Each article contains six substantive sections, a sourced chronology, a defined identity and three concrete next artifacts. Limitations accompany the affected findings rather than appearing only in a general disclaimer.",
+    "Retained eligibility decisions, Phase 119, Phase 191/192 and the earlier named cohorts were checked for duplicate names and scopes. No loan tranche, station contract, neighbouring municipality or research-control line is counted.",
+    "Historical portfolio and project registries, prior reviewed cohorts, all 34 readings and the Phase 60 ledger remain unchanged. This is AI author self-review, not independent review or external release acceptance."
+  ],
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/phase-61-project-conversion-registry.json",
+      "sha256": "9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"
+    }
+  ],
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false
+}

@@ -17,7 +17,11 @@ assert.deepEqual(JSON.parse(await read('/data/build-decisions.json')).selected_a
 assert.deepEqual(JSON.parse(await read('/data/current-editorial.json')),corpus);
 const method=await read('/method/editorial-review/index.html'),sitemap=await read('/sitemap.xml');
 assert(method.includes('33 of 33 selected articles assessed by AI'));
-assert(method.includes(`Of the ${annualReviews.annual_target} annual assessments, ${annualReviews.reviewed_annual_records} are integrated below; the remaining ${annualReviews.remaining_annual_records} and reachable-content review remain separate work`));
+assert.equal(annualReviews.reviewed_annual_records,annualReviews.annual_target,'Method page claims complete annual integration; the review cohort must be complete');
+assert.equal(annualReviews.remaining_annual_records,0,'Complete annual integration cannot have outstanding annual records');
+assert.equal(annualReviews.records.length,annualReviews.annual_target,'The complete claim must resolve to every annual assessment');
+assert(method.includes(`All ${annualReviews.reviewed_annual_records} annual assessments are integrated below; wider reachable-content review remains separate work.`));
+assert(!method.includes(`Of the ${annualReviews.annual_target} annual assessments,`),'The obsolete partial-cohort summary must not survive');
 let changedFields=0,verifiedSections=0,verifiedNested=0;
 for(const r of data.records){
  const a=corpus.records.find(a=>a.record_id===r.record_id),html=await read(`${r.route}index.html`),dom=parse(html);
@@ -54,12 +58,23 @@ for(const r of data.records){
  assert.equal(all(dom,n=>n.tagName==='h1').length,1);const ids=all(dom,n=>attr(n,'id')!==undefined).map(n=>attr(n,'id'));assert.equal(ids.length,new Set(ids).size);
  assert(ids.includes(`${r.record_id}-ai-review`));for(const link of all(dom,n=>n.tagName==='a'&&attr(n,'href')?.startsWith('#')))assert(ids.includes(attr(link,'href').slice(1)),`${r.record_id}: missing local anchor`);
  const atlasProject=r.route.startsWith('/atlas/projects/')?atlas.projects.find(p=>p.atlas_project_id===r.record_id):null;
+ if(atlasProject){
+  const earlier=all(dom,n=>attr(n,'data-prior-atlas-account')===r.record_id);assert.equal(earlier.length,1);
+  assert.equal(earlier[0].tagName,'details');assert.equal(attr(earlier[0],'open'),undefined);
+  assert(text(earlier[0]).includes('Earlier Atlas account and evidence links'));
+  assert.equal(all(earlier[0],n=>attr(n,'data-current-research')!==undefined).length,0);
+  assert.equal(all(earlier[0],n=>attr(n,'data-recorded-conversion-stage')!==undefined).length,0);
+  assert.equal(all(dom,n=>attr(n,'data-recorded-conversion-stage')===r.record_id).length,1);
+  assert(html.indexOf('data-current-research="'+r.record_id+'"')<html.indexOf('data-recorded-conversion-stage="'+r.record_id+'"'));
+  assert(html.indexOf('data-recorded-conversion-stage="'+r.record_id+'"')<html.indexOf('data-prior-atlas-account="'+r.record_id+'"'));
+  assert(text(dom).includes('Historical Atlas review '+atlasProject.last_reviewed_date));
+ }
  const title=atlasProject?`${atlasProject.title} | FTFN Project Atlas`:`${a.title} | FTFN`,description=atlasProject?.editorial_question??a.answer;
  assert.equal(text(all(dom,n=>n.tagName==='title')[0]),title);
  for(const name of ['description','og:description','twitter:description'])assert.equal(attr(all(dom,n=>n.tagName==='meta'&&(attr(n,'name')===name||attr(n,'property')===name))[0],'content'),description);
  for(const name of ['og:title','twitter:title'])assert.equal(attr(all(dom,n=>n.tagName==='meta'&&(attr(n,'name')===name||attr(n,'property')===name))[0],'content'),title);
  assert(method.includes(`href="${r.route}#${r.record_id}-ai-review"`));
- assert(sitemap.includes(`<loc>https://ftfn.io${r.route}</loc>\n    <lastmod>${selectedReviewDate}</lastmod>`));
+ assert(sitemap.includes(`<loc>https://ftfn.io${r.route}</loc>\n    <lastmod>${atlasProject?'2026-11-22':selectedReviewDate}</lastmod>`));
  const page=Math.floor(readerCatalog.findIndex(c=>c.id===r.record_id)/40)+1,cards=parse(await read(`/reference/explore/${page}/index.html`));
  const card=all(cards,n=>n.tagName==='article'&&all(n,x=>x.tagName==='a'&&attr(x,'href')===r.route).length===1)[0];assert(card);assert(text(card).includes(selectedReviewStatus));assert(!text(card).includes(a.review_status));
  assert(Buffer.byteLength(html)<160000,`${r.record_id}: reader too large`);

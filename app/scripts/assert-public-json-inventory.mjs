@@ -3,7 +3,9 @@ import {fileURLToPath} from 'node:url';
 import {declaredPublicJsonExports, checkedExportRoutes, assertExportInventory, applyExportInventory} from './lib/public-json-inventory.mjs';
 
 const routes = await declaredPublicJsonExports(fileURLToPath(new URL('../', import.meta.url)));
-assert.equal(routes.length, 160, 'Review the explicit export contract when adding/removing routes');
+assert.equal(routes.length, 161, 'Review the explicit export contract when adding/removing routes');
+assert(routes.includes('/data/current-gap-reviews.json'),'The separate acceptance receipt must have its own export');
+assert.equal(routes.filter(route=>route!=='/data/current-gap-reviews.json').length,160,'Retain the preceding export inventory');
 assert(routes.includes('/data/annual-case-reviews.json'));
 assert(routes.includes('/data/place-identity-reviews.json'));
 assert(routes.includes('/data/build-decisions.json'));
@@ -27,4 +29,4 @@ assert.deepEqual(manifest.last_verified, {receipt: 'prior-only'});
 const once = JSON.stringify(manifest);
 applyExportInventory(manifest, sample);
 assert.equal(JSON.stringify(manifest), once, 'Inventory preparation must be idempotent');
-console.log('Public JSON source inventory: 160 exact routes, including owner-authorized build decisions; missing, stale, same-count substitution, duplicate and invalid-route fixtures rejected; historical receipt untouched.');
+console.log('Public JSON source inventory: 161 exact routes, including the separate gap acceptance receipt; missing, stale, same-count substitution, duplicate and invalid-route fixtures rejected; historical receipt untouched.');

@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import { formatDate } from "../../../lib/editorial";
-import { getSourceFreshness, getSourceHealth } from "../../../lib/sourceFreshness";
+import { getSourceFreshness, getSourceHealth, sourceReviewAsOfDate } from "../../../lib/sourceFreshness";
 import GoldenMarsReviewNotice from '../../../components/review/GoldenMarsReviewNotice.astro';
 import {goldenMarsRecordReview} from '../../../lib/golden-mars-wider-review.mjs';
 
@@ -23,7 +23,7 @@ const sourceFreshness = getSourceFreshness(
   source.data.last_checked_date,
   source.data.update_frequency,
   source.data.capture_priority,
-  new Date(),
+  sourceReviewAsOfDate,
   source.data.review_cadence_days
 );
 const sourceHealth = getSourceHealth(source.data);
@@ -60,6 +60,7 @@ const endpointLinks = [
         <p><strong>Capture priority:</strong> {source.data.capture_priority}</p>
         <p><strong>{datedReview?'Retained profile check:':'Last checked:'}</strong> {formatDate(source.data.last_checked_date)}</p>
         <p><strong>Review cadence:</strong> {sourceFreshness.reviewAfterDays} days</p>
+        <p data-source-review-as-of={sourceReviewAsOfDate}><strong>Queue calculation date:</strong> {sourceReviewAsOfDate}. This does not refresh the recorded source check.</p>
         <p><strong>Freshness:</strong> {sourceFreshness.note}</p>
         <p><strong>Health:</strong> {sourceHealth.note}</p>
         <p><a href={source.data.url}>{datedReview?'Open retained general SCC information page':'Open original source'}</a></p>

@@ -6,8 +6,46 @@ import {readerCatalog} from '../lib/reader-catalog.mjs';
 import {translatedReaders} from '../lib/translated-readers.mjs';
 import montanaDossiers from '../data/montana-project-dossiers.json';
 import localityDossiers from '../data/locality-dossiers.json';
+import {nevadaDossiers} from '../lib/nevada-named-dossiers.mjs';
+import {europeDossiers} from '../lib/europe-named-dossiers.mjs';
+import {southernAfricaDossiers} from '../lib/southern-africa-named-dossiers.mjs';
+import {southAsiaDossiers} from '../lib/south-asia-named-dossiers.mjs';
+import {chileDossiers,chileAcquisitionPathsFor} from '../lib/chile-named-dossiers.mjs';
+import {brazilDossiers,brazilAcquisitionPathsFor} from '../lib/brazil-named-dossiers.mjs';
+import {northSeaDossiers,northSeaAcquisitionPathsFor} from '../lib/north-sea-named-dossiers.mjs';
+import {stockholmDossiers,stockholmAcquisitionPathsFor} from '../lib/stockholm-named-dossiers.mjs';
+import {aucklandDossiers,aucklandAcquisitionPathsFor} from '../lib/auckland-named-dossiers.mjs';
+import {tuasDossiers,tuasAcquisitionPathsFor} from '../lib/tuas-named-dossiers.mjs';
+import {portCitiesDossiers,portCitiesAcquisitionPathsFor} from '../lib/port-cities-named-dossiers.mjs';
+import {urbanServicesDossiers,urbanServicesAcquisitionPathsFor} from '../lib/urban-services-named-dossiers.mjs';
+import {nordicCitiesDossiers,nordicCitiesAcquisitionPathsFor} from '../lib/nordic-cities-named-dossiers.mjs';
+import {swissRailCityDossiers} from '../lib/swiss-rail-city-named-dossiers.mjs';
+import {kenyaCorridorDossiers} from '../lib/kenya-corridor-named-dossiers.mjs';
+import {gautengMetroDossiers} from '../lib/gauteng-metro-named-dossiers.mjs';
+import {malaysiaMetroDossiers} from '../lib/malaysia-metro-named-dossiers.mjs';
+import {colombiaRailDossiers} from '../lib/colombia-rail-named-dossiers.mjs';
+import {moroccoCorridorDossiers} from '../lib/morocco-corridor-named-dossiers.mjs';
+import {portugalWaterCitiesDossiers} from '../lib/portugal-water-cities-named-dossiers.mjs';
+import {italyRailLagoonDossiers} from '../lib/italy-rail-lagoon-named-dossiers.mjs';
+import {austriaHousingCitiesDossiers} from '../lib/austria-housing-cities-named-dossiers.mjs';
+import {ruhrWaterCityDossiers} from '../lib/ruhr-water-city-named-dossiers.mjs';
+import {koreaEnergyCitiesDossiers} from '../lib/korea-energy-cities-named-dossiers.mjs';
+import {istanbulCrossingsDossiers} from '../lib/istanbul-crossings-named-dossiers.mjs';
+import {finlandMetroCitiesDossiers} from '../lib/finland-metro-cities-named-dossiers.mjs';
+import {andesMetroCityDossiers} from '../lib/andes-metro-city-named-dossiers.mjs';
+import {czechMetroCitiesDossiers} from '../lib/czech-metro-cities-named-dossiers.mjs';
+import {indonesiaRailCityDossiers} from '../lib/indonesia-rail-city-named-dossiers.mjs';
+import {senegalMobilityEnergyDossiers} from '../lib/senegal-mobility-energy-named-dossiers.mjs';
+import {kigaliCityDossiers} from '../lib/kigali-city-named-dossiers.mjs';
+import {currentPortfolioSummary} from '../lib/current-named-dossiers.mjs';
+import {canonicalReaderBindings,canonicalReaderIntegrationDate} from '../lib/canonical-reader-bindings.mjs';
+import {canonicalProjectRefreshes} from '../lib/canonical-project-refreshes.mjs';
+import {canonicalAnnualBindings} from '../lib/canonical-annual-reader-bindings.mjs';
+import {canonicalPlaceReadings} from '../lib/canonical-place-readings.mjs';
+import {canonicalRegionalReadings} from '../lib/canonical-regional-readings.mjs';
+import {nevadaComparison} from '../lib/nevada-project-comparison.mjs';
 import {selectedArticleReviews,selectedReviewDate} from '../lib/selected-article-reviews.mjs';
-import {annualAiReadings} from '../lib/annual-ai-reviews.mjs';
+import {annualAiReadings,annualAiAvailableDate} from '../lib/annual-ai-reviews.mjs';
 import qualificationRegistry from "../data/phase-67-qualification-packet-registry.json";
 import returnLedger from "../data/phase-67-evidence-return-envelope-ledger.json";
 import measurementRegistry from "../data/phase-69-measurement-observation-break-registry.json";
@@ -70,11 +108,36 @@ function formatDate(date: Date): string {
 
 function urlEntry(path: string, lastModified?: Date): string {
   const annual=annualAiReadings.find(r=>r.reading.route===path);
-  if(annual)lastModified=new Date(annual.decision.review_date);
+  if(annual)lastModified=new Date(annualAiAvailableDate(annual.decision.record_id));
   if(selectedArticleReviews.some(r=>r.route===path))lastModified=new Date(selectedReviewDate);
+  // Presentation changed; the underlying article assessments retain their original dates.
+  if(['/atlas/projects/tsmc-arizona/','/atlas/projects/hanford-dflaw-operation/'].includes(path))lastModified=new Date('2026-11-22');
+  if(canonicalReaderBindings.records.some(r=>r.target_route===path))lastModified=new Date(canonicalReaderIntegrationDate);
+  if(canonicalProjectRefreshes.records.some(r=>r.route===path))lastModified=new Date(canonicalProjectRefreshes.review_date);
+  if(canonicalAnnualBindings.records.some(r=>[r.target_route,r.article_route,r.prior_casebook_route].includes(path)))lastModified=new Date(canonicalAnnualBindings.integration_date);
+  if(path==='/atlas/projects/montana-bead/')lastModified=new Date(canonicalAnnualBindings.integration_date);
+  if(canonicalPlaceReadings.records.some(r=>[r.route,r.prior_route].includes(path)))lastModified=new Date(canonicalPlaceReadings.review_date);
+  if(canonicalRegionalReadings.records.some(r=>[r.route,r.prior_route].includes(path)))lastModified=new Date(canonicalRegionalReadings.review_date);
+  if(nevadaComparison.records.some(r=>[r.route,r.prior_route].includes(path)))lastModified=new Date(nevadaComparison.review_date);
+  // These pages gained dated links; their historical review dates are unchanged.
+  if(['/review/casebooks/expanded/moss-landing-battery-safety/','/atlas/places/california-battery-safety/','/review/casebooks/expanded/manatee-battery-storage/','/atlas/places/florida-utility-storage/','/review/casebooks/expanded/gateway-battery-storage/','/review/casebooks/expanded/f35-production-readiness/','/review/casebooks/expanded/kc46-readiness/','/review/casebooks/expanded/current-applications-capacity/','/review/casebooks/expanded/island-components-capacity/','/review/casebooks/expanded/monaghan-medical-capacity/','/review/casebooks/waymo-california-service/','/atlas/places/california-autonomous-mobility/'].includes(path))lastModified=new Date(canonicalProjectRefreshes.review_date);
   const locality=localityDossiers.records.find(r=>r.route===path);
   if(locality)lastModified=new Date(locality.ai_review_date);
-  if(path==='/atlas/places/')lastModified=new Date(localityDossiers.authored_date);
+  if(['/atlas/projects/nevada-lithium-to-qualified-material/','/atlas/places/nevada-lithium-battery-materials-corridor/'].includes(path)){
+    // A retained source inspection cannot roll back a later content revision.
+    const inspected=new Date(nevadaDossiers.inspected_date);
+    if(!lastModified||inspected>lastModified)lastModified=inspected;
+  }
+  if(['/atlas/places/','/atlas/projects/','/method/portfolio-decisions/'].includes(path))lastModified=new Date(currentPortfolioSummary.current_review_date);
+  if(chileDossiers.records.some(record=>chileAcquisitionPathsFor(record).includes(path)))lastModified=new Date(chileDossiers.inspected_date);
+  if(brazilDossiers.records.some(record=>brazilAcquisitionPathsFor(record).includes(path)))lastModified=new Date(brazilDossiers.inspected_date);
+  if(northSeaDossiers.records.some(record=>northSeaAcquisitionPathsFor(record).includes(path)))lastModified=new Date(northSeaDossiers.inspected_date);
+  if(stockholmDossiers.records.some(record=>stockholmAcquisitionPathsFor(record).includes(path)))lastModified=new Date(stockholmDossiers.inspected_date);
+  if(aucklandDossiers.records.some(record=>aucklandAcquisitionPathsFor(record).includes(path)))lastModified=new Date(aucklandDossiers.inspected_date);
+  if(tuasDossiers.records.some(record=>tuasAcquisitionPathsFor(record).includes(path)))lastModified=new Date(tuasDossiers.inspected_date);
+  if(portCitiesDossiers.records.some(record=>portCitiesAcquisitionPathsFor(record).includes(path)))lastModified=new Date(portCitiesDossiers.inspected_date);
+  if(urbanServicesDossiers.records.some(record=>urbanServicesAcquisitionPathsFor(record).includes(path)))lastModified=new Date(urbanServicesDossiers.inspected_date);
+  if(nordicCitiesDossiers.records.some(record=>nordicCitiesAcquisitionPathsFor(record).includes(path)))lastModified=new Date(nordicCitiesDossiers.inspected_date);
   const lastmod = lastModified ? `\n    <lastmod>${formatDate(lastModified)}</lastmod>` : "";
 
   return `  <url>\n    <loc>${buildUrl(path)}</loc>${lastmod}\n  </url>`;
@@ -161,6 +224,37 @@ export const GET: APIRoute = async () => {
   const routes = [...new Set([
     urlEntry('/method/portfolio-decisions/', new Date(montanaDossiers.authored_date)),
     ...montanaDossiers.records.map(record=>urlEntry(record.route,new Date(record.authored_date))),
+    ...nevadaDossiers.records.map(record=>urlEntry(record.route,new Date(nevadaDossiers.inspected_date))),
+    ...europeDossiers.records.map(record=>urlEntry(record.route,new Date(europeDossiers.inspected_date))),
+    ...southernAfricaDossiers.records.map(record=>urlEntry(record.route,new Date(southernAfricaDossiers.inspected_date))),
+    ...southAsiaDossiers.records.map(record=>urlEntry(record.route,new Date(southAsiaDossiers.inspected_date))),
+    ...chileDossiers.records.map(record=>urlEntry(record.route,new Date(chileDossiers.inspected_date))),
+    ...brazilDossiers.records.map(record=>urlEntry(record.route,new Date(brazilDossiers.inspected_date))),
+    ...northSeaDossiers.records.map(record=>urlEntry(record.route,new Date(northSeaDossiers.inspected_date))),
+    ...stockholmDossiers.records.map(record=>urlEntry(record.route,new Date(stockholmDossiers.inspected_date))),
+    ...aucklandDossiers.records.map(record=>urlEntry(record.route,new Date(aucklandDossiers.inspected_date))),
+    ...tuasDossiers.records.map(record=>urlEntry(record.route,new Date(tuasDossiers.inspected_date))),
+    ...portCitiesDossiers.records.map(record=>urlEntry(record.route,new Date(portCitiesDossiers.inspected_date))),
+    ...urbanServicesDossiers.records.map(record=>urlEntry(record.route,new Date(urbanServicesDossiers.inspected_date))),
+    ...nordicCitiesDossiers.records.map(record=>urlEntry(record.route,new Date(nordicCitiesDossiers.inspected_date))),
+    ...swissRailCityDossiers.records.map(record=>urlEntry(record.route,new Date(swissRailCityDossiers.inspected_date))),
+    ...kenyaCorridorDossiers.records.map(record=>urlEntry(record.route,new Date(kenyaCorridorDossiers.inspected_date))),
+    ...gautengMetroDossiers.records.map(record=>urlEntry(record.route,new Date(gautengMetroDossiers.inspected_date))),
+    ...malaysiaMetroDossiers.records.map(record=>urlEntry(record.route,new Date(malaysiaMetroDossiers.inspected_date))),
+    ...colombiaRailDossiers.records.map(record=>urlEntry(record.route,new Date(colombiaRailDossiers.inspected_date))),
+    ...moroccoCorridorDossiers.records.map(record=>urlEntry(record.route,new Date(moroccoCorridorDossiers.inspected_date))),
+    ...portugalWaterCitiesDossiers.records.map(record=>urlEntry(record.route,new Date(portugalWaterCitiesDossiers.inspected_date))),
+    ...italyRailLagoonDossiers.records.map(record=>urlEntry(record.route,new Date(italyRailLagoonDossiers.inspected_date))),
+    ...austriaHousingCitiesDossiers.records.map(record=>urlEntry(record.route,new Date(austriaHousingCitiesDossiers.inspected_date))),
+    ...ruhrWaterCityDossiers.records.map(record=>urlEntry(record.route,new Date(ruhrWaterCityDossiers.inspected_date))),
+    ...koreaEnergyCitiesDossiers.records.map(record=>urlEntry(record.route,new Date(koreaEnergyCitiesDossiers.inspected_date))),
+    ...istanbulCrossingsDossiers.records.map(record=>urlEntry(record.route,new Date(istanbulCrossingsDossiers.inspected_date))),
+    ...finlandMetroCitiesDossiers.records.map(record=>urlEntry(record.route,new Date(finlandMetroCitiesDossiers.inspected_date))),
+    ...andesMetroCityDossiers.records.map(record=>urlEntry(record.route,new Date(andesMetroCityDossiers.inspected_date))),
+    ...czechMetroCitiesDossiers.records.map(record=>urlEntry(record.route,new Date(czechMetroCitiesDossiers.inspected_date))),
+    ...indonesiaRailCityDossiers.records.map(record=>urlEntry(record.route,new Date(indonesiaRailCityDossiers.inspected_date))),
+    ...senegalMobilityEnergyDossiers.records.map(record=>urlEntry(record.route,new Date(senegalMobilityEnergyDossiers.inspected_date))),
+    ...kigaliCityDossiers.records.map(record=>urlEntry(record.route,new Date(kigaliCityDossiers.inspected_date))),
     urlEntry('/atlas/projects/montana-bead/',new Date(montanaDossiers.updated_date)),
     ...translatedReaders.map(record=>urlEntry(record.route,new Date(record.integration_date))),
     ...staticRoutes.map((path) => urlEntry(path)),

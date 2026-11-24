@@ -28,4 +28,5 @@ assert.throws(()=>createShelfData({...input,readerPathways:[{id:'test-only',slug
 assert.throws(()=>shelfFrontmatter('---\nid: "x"\nsummary: |\n  unsupported\n---\n'),/Unsupported/);
 await import('./assert-current-atlas-navigation.mjs');
 await import('./assert-current-reading-navigation.mjs');
+await import('./assert-source-review-clock.mjs');
 console.log(`Navigation assertions passed: ${Object.keys(result.shelves).length} complete shelves, 17 topics, 5 local systems, 15 exact-ID pathway archives, ${input.updates.length} update receipts; distinct candidate/cited relationships, all holds retained, searchable receipt IDs, no source-date mutation.`);

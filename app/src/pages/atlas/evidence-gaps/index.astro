@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import { getEvidenceGapTone } from "../../../lib/editorial";
+import {latestGapReviewFor} from '../../../lib/current-gap-reviews.mjs';
 
 const priorityOrder = { High: 0, Medium: 1, Low: 2 };
 const evidenceGaps = (await getCollection("evidenceGaps")).sort((a, b) => {
@@ -35,6 +36,7 @@ const openCount = evidenceGaps.filter((gap) => gap.data.status !== "Resolved" &&
             <MetaPill label={gap.data.priority} tone={gap.data.priority === "High" ? "urgency" : "default"} />
             <MetaPill label={gap.data.status} tone={getEvidenceGapTone(gap.data.status)} />
             <MetaPill label={gap.data.primary_topic} />
+            {latestGapReviewFor(gap.data.id) && <MetaPill label={`Acceptance checked ${latestGapReviewFor(gap.data.id)?.decision_date}`} tone="review" />}
             {gap.data.latest_review && (
               <MetaPill label={`${gap.data.latest_review.phase}: ${gap.data.latest_review.decision}`} tone="review" />
             )}

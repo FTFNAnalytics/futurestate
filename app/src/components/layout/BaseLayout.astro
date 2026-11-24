@@ -3,6 +3,7 @@ import "../../styles/tokens.css";
 import "../../styles/global.css";
 import CurrentEvidenceNotice from "../review/CurrentEvidenceNotice.astro";
 import CurrentOperationsNotice from '../review/CurrentOperationsNotice.astro';
+import CurrentGapReviewNotice from '../review/CurrentGapReviewNotice.astro';
 import BacklogResearchNotice from '../review/BacklogResearchNotice.astro';
 import PortfolioDecisionNotice from '../review/PortfolioDecisionNotice.astro';
 
@@ -71,6 +72,7 @@ const socialImageUrl = new URL("/og.png", Astro.url).href;
       <main class="site-main" id="main-content" tabindex="-1">
         <CurrentEvidenceNotice />
         <CurrentOperationsNotice />
+        <CurrentGapReviewNotice />
         <BacklogResearchNotice />
         <PortfolioDecisionNotice />
         <slot />

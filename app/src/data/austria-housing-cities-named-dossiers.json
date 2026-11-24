@@ -1,0 +1,559 @@
+{
+  "edition_id": "AUSTRIA-HOUSING-CITIES-NAMED-DOSSIERS-2026-11-22",
+  "inspected_date": "2026-11-22",
+  "timezone": "America/Edmonton",
+  "review_policy": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "review_state": "Dated article authored and AI self-reviewed; production verification pending",
+  "independent_review": false,
+  "phase_60_identity_added": false,
+  "sources": [
+    {
+      "id": "aspern-vision",
+      "title": "Vision for aspern Seestadt",
+      "publisher": "Wien 3420 aspern Development AG",
+      "role": "Developer's development scope",
+      "url": "https://www.aspern-seestadt.at/de/seestadt/vision",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Vision, multifunctional district and staged-development sections",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "2030s population and employment/training figures are development aims, not current occupancy."
+    },
+    {
+      "id": "aspern-groups",
+      "title": "Collective housing in Seestadt",
+      "publisher": "Wien 3420 aspern Development AG",
+      "role": "Developer's housing-form and occupancy account",
+      "url": "https://www.aspern-seestadt.at/de/leben/wohnen/baugruppen",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Definition, pioneer occupancy and implemented groups through Am Seebogen; detailed linked project pages excluded",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "First occupancy and completed groups do not establish universal affordability or measured participation.",
+      "first_occupancy_period": "2014-autumn"
+    },
+    {
+      "id": "aspern-education",
+      "title": "Education in Seestadt",
+      "publisher": "Wien 3420 aspern Development AG",
+      "role": "Local education provision and staged expansion",
+      "url": "https://www.aspern-seestadt.at/de/leben/bildung",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Introductory schools, library and youth-service sections through the headline figures; linked provider directory excluded",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Existing schools and library are distinct from future school capacity. The 7,500 figure belongs to the planned vocational school.",
+      "vocational_school_target_period": "2028"
+    },
+    {
+      "id": "aspern-climate",
+      "title": "Sustainability and climate in Seestadt",
+      "publisher": "Wien 3420 aspern Development AG",
+      "role": "Developer's landscape, building and material-management account",
+      "url": "https://www.aspern-seestadt.at/de/seestadt/qualitaeten/nachhaltigkeit-und-klima",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Green space, buildings, land use and circular-construction sections",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Planted trees need time to shade; standards and research are not measured district-wide outcomes. Future thermal networks remain prospective."
+    },
+    {
+      "id": "aspern-responsibility",
+      "title": "Seestadt contact responsibilities",
+      "publisher": "Wien 3420 aspern Development AG",
+      "role": "Published division of development and neighbourhood roles",
+      "url": "https://www.aspern-seestadt.at/de/serviceseiten/kontakt",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Developer, neighbourhood-management and construction-ombuds sections",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Contact roles do not transfer planning authority or establish response performance. No message or form was submitted."
+    },
+    {
+      "id": "vienna-stock",
+      "title": "The municipal housing estate",
+      "publisher": "Stadt Wien – Wiener Wohnen",
+      "role": "Municipal landlord's stock and service inventory",
+      "url": "https://www.wienerwohnen.at/info/der-gemeindebau.html",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Stock figures and estate-service inventory; video and linked topics excluded",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Undated rounded stock figures are not a same-date city census, vacancy count or accessibility audit."
+    },
+    {
+      "id": "vienna-access",
+      "title": "Renting a municipal apartment",
+      "publisher": "Stadt Wien – Wiener Wohnen",
+      "role": "Landlord's explanation of the allocation pathway",
+      "url": "https://www.wienerwohnen.at/etwas-mieten/wohnung-mieten.html",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Housing advice, ticket, search, viewing and contract steps",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "This is a service overview, not individual eligibility advice or a guarantee of allocation. Linked criteria and application services were not tested."
+    },
+    {
+      "id": "vienna-renewal",
+      "title": "Municipal housing renovation update",
+      "publisher": "Stadt Wien – Wiener Wohnen",
+      "role": "Dated housing-renewal programme account",
+      "url": "https://www.wienerwohnen.at/aktuelles/neuigkeiten/neues-aus-dem-gemeindebau/2026-sanierungsupdate.html",
+      "publication_date": "2026-08-12",
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Programme totals, selection criteria and completed-renovation paragraph; detailed building examples not used",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Active programme investment and completed renovation counts are separate. Promotional comfort claims are not measured household savings."
+    },
+    {
+      "id": "vienna-maintenance",
+      "title": "Spring maintenance of the high-spring aqueducts",
+      "publisher": "Stadt Wien – Wiener Wasser",
+      "role": "Dated water-service maintenance explanation",
+      "url": "https://presse.wien.gv.at/kategoriennavigation/-/asset_publisher/zraFORwNk9Zp/content/2026-03-05-fruehjahrsputz-in-den-hochquellenleitungen-sichert-unsere-versorgung-mit-hochquellwasser-aus-den-alpen?inheritRedirect=false&redirect=https%3A%2F%2Fpresse.wien.gv.at%3A443%2Fkategoriennavigation%3Fp_p_id%3D101_INSTANCE_zraFORwNk9Zp%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-2%26p_p_col_count%3D1",
+      "publication_date": "2026-03-05",
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Maintenance, alternating shutdown, reservoir preparation and backup supply paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Reported continuity arrangements are not a universal outage guarantee or a completed renovation of all pressure crossings."
+    },
+    {
+      "id": "vienna-main",
+      "title": "Fourth water main nearing commissioning",
+      "publisher": "Stadt Wien – Wiener Wasser",
+      "role": "Dated construction and commissioning-stage notice",
+      "url": "https://presse.wien.gv.at/kategoriennavigation/-/asset_publisher/zraFORwNk9Zp/content/2026-11-15-czernohorszky-schlagader-fuers-wiener-wasser-im-sueden-wiens-fertiggestellt?inheritRedirect=false&redirect=https%3A%2F%2Fpresse.wien.gv.at%3A443%2Fkategoriennavigation%3Fp_p_id%3D101_INSTANCE_zraFORwNk9Zp%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_p_col_id%3Dcolumn-2%26p_p_col_count%3D1",
+      "publication_date": "2026-11-15",
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Connection endpoints, installed length, flushing, release condition and remaining surface works",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "The completion headline does not establish operational acceptance. December commissioning and June 2027 surface completion were prospective.",
+      "construction_start_period": "2022-03",
+      "commissioning_target_period": "2026-12",
+      "surface_completion_target_period": "2027-06"
+    },
+    {
+      "id": "graz-allocation",
+      "title": "Applying for a municipal apartment",
+      "publisher": "Stadt Graz – Wohnen Graz",
+      "role": "Municipal allocation-service explanation",
+      "url": "https://www.graz.at/cms/beitrag/10273051/7763343/",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Application, documentation, review and emergency-assessment sections",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Application review and registration are not an immediate offer; individual eligibility depends on current rules and circumstances."
+    },
+    {
+      "id": "graz-puntigam",
+      "title": "New municipal homes occupied in Puntigam",
+      "publisher": "Stadt Graz",
+      "role": "Dated municipal housing delivery announcement",
+      "url": "https://www.graz.at/cms/beitrag/10463427/8114224/Neue_Gemeindewohnungen_in_Puntigam_uebergeben.html",
+      "publication_date": "2026-04-24",
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Official article body only; reader comments excluded",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Twenty occupied homes and installed amenities do not establish city-wide housing sufficiency or measured energy performance.",
+      "occupancy_event_period": "2026-04-early"
+    },
+    {
+      "id": "graz-retention",
+      "title": "Municipal apartment sales suspended",
+      "publisher": "Stadt Graz – Immobilien Graz",
+      "role": "Published municipal asset-retention account",
+      "url": "https://www.immobilien.graz.at/cms/beitrag/10177505/4134856/Gemeindewohnungen_Verkauf.html",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Sales-suspension paragraph and dated council reference",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "The referenced 2015 decision is distinct from the page header's 2026 date; linked underlying instrument not inspected.",
+      "council_decision_date": "2015-06-18",
+      "displayed_header_date": "2026-04-21"
+    },
+    {
+      "id": "graz-wastewater",
+      "title": "Graz wastewater plant and expansion",
+      "publisher": "Holding Graz",
+      "role": "Operator's regional treatment and expansion account",
+      "url": "https://www.holding-graz.at/de/wasser/klaeranlage-der-stadt-graz/",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Plant, extension and FAQ sections through future modular provision; linked 2024 folder excluded",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Population equivalents include industrial load, not municipal residents. Expansion and future treatment stages are not accepted current capacity.",
+      "reported_approval_period": "2024-03",
+      "reported_construction_start_period": "2025",
+      "commissioning_target_period": "2029",
+      "self_supply_measurement_period": "2024-04"
+    },
+    {
+      "id": "graz-solar",
+      "title": "Photovoltaic masterplan interim account",
+      "publisher": "Holding Graz",
+      "role": "Dated municipal-group solar programme report",
+      "url": "https://www.holding-graz.at/de/pv-masterplan-erfolgreiche-zwischenbilanz/",
+      "publication_date": "2025-12-23",
+      "language": "German",
+      "interpretation_note": "German text interpreted and self-reviewed by Codex under the owner-authorized AI policy; no independent language review claimed.",
+      "locator": "Programme scope, completed and pending arrays, suitable roofs and future airport project",
+      "access_mode": "HTML body",
+      "inspection": "Specified official HTML body inspected on 2026-11-22; linked files, forms, maps and live services were not tested",
+      "boundary": "Completed and near-complete capacity must not be combined as fully operating. House Graz demand is not all electricity consumed in the city.",
+      "target_period": "2030"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "project-seestadt-aspern",
+      "kind": "Project",
+      "title": "Seestadt Aspern",
+      "route": "/atlas/projects/seestadt-aspern/",
+      "aliases": [
+        "aspern Seestadt",
+        "Seestadt Wien",
+        "Aspern urban development",
+        "aspern Die Seestadt Wiens"
+      ],
+      "answer": "A growing mixed-use district combines occupied housing, schools and public space with a continuing development programme. Its delivery test is whether services and affordable access keep pace with each new quarter.",
+      "scope": "One phased urban-development programme on the former Aspern airfield within Vienna. Housing plots, schools, parks and collective-housing groups are components, not additional counted projects. The wider Donaustadt district and Vienna municipality are separate territorial scopes.",
+      "stage": "Occupied housing and established education services coexist with continuing development and future school and energy proposals. Developer descriptions establish bounded provision and objectives, not final district completion or independently measured social and climate outcomes.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The exact developer programme and named neighbourhood have a coherent identity across housing, education and public-space sources. Count the phased programme once; do not multiply individual plots or borrow the separately counted Vienna municipal place identity."
+      },
+      "timeline": [
+        {
+          "date": "2014",
+          "event": "The developer dates the first pioneer residents, including collective-housing groups, to autumn 2014.",
+          "source_ids": [
+            "aspern-groups"
+          ]
+        },
+        {
+          "date": "2015",
+          "event": "The education account dates the first campus's provision to 2015.",
+          "source_ids": [
+            "aspern-education"
+          ]
+        },
+        {
+          "date": "2017",
+          "event": "The education account records the addition of the Bundesgymnasium in 2017.",
+          "source_ids": [
+            "aspern-education"
+          ]
+        },
+        {
+          "date": "2021",
+          "event": "The second named education campus and two additional collective-housing projects are recorded for 2021.",
+          "source_ids": [
+            "aspern-education",
+            "aspern-groups"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "A district delivered in stages",
+          "text": "Seestadt is a neighbourhood development on a former airfield, rather than a single housing estate. Wien 3420 describes a combination of homes, workplaces, education and recreation, built quarter by quarter. Its ambition is space for more than 25,000 residents and over 20,000 jobs and training places into the 2030s. These are future development aims, not current occupancy. The distinction matters for evaluating the project: an occupied southern quarter can provide useful services while other land remains under development. Public space and the mix of daily activities are part of the development concept, not amenities to assess only after all building plots are finished.",
+          "source_ids": [
+            "aspern-vision"
+          ]
+        },
+        {
+          "heading": "Collective housing within a mixed tenure district",
+          "text": "Baugruppen are groups whose future residents help organize, design and realize their housing. Seestadt places these alongside subsidized rental homes and privately financed ownership, rather than presenting one uniform tenure model. The developer dates first pioneer occupancy to autumn 2014 and describes collective projects with shared kitchens, workplaces and community facilities. Further groups followed in later quarters, including two in Am Seebogen in 2021. Resident participation can shape the building before move-in, but participation is not proof of affordability for every household. Costs, entry requirements and responsibilities belong to the particular group; a district-level description cannot settle them for an applicant.",
+          "source_ids": [
+            "aspern-groups"
+          ]
+        },
+        {
+          "heading": "Schools and shared learning space",
+          "text": "Education provision grew alongside housing. The developer identifies a first campus operating since 2015, a secondary school added in 2017 and the Liselotte Hansen-Schmidt campus in 2021. It also describes a library with learning and making facilities, plus youth spaces. These are different kinds of access: a library visit does not require the same allocation process as a school place. A further secondary school and a large vocational school belong to future expansion. The vocational school's stated 2028 start is a target, not observed opening. Its planned 7,500 students must not be added to current provision when assessing whether today's families have sufficient local places.",
+          "source_ids": [
+            "aspern-education"
+          ]
+        },
+        {
+          "heading": "Landscape and buildings have different performance clocks",
+          "text": "The developer describes early tree planting, rain gardens and sponge-city measures that retain water around trees. It explicitly recognizes that planted trees need time to provide substantial shade. Its building account combines assessment standards, flexible internal layouts and research using operating buildings. Those features address different problems: adapting a room to a new use is not the same as reducing summer heat outside it. Future networks exchanging heat and cooling between buildings remain prospective. Design provisions are not measured district-wide cooling or energy savings. Evaluating them requires matching actual building use, weather and maintenance to the particular intervention rather than treating a sustainability label as one result.",
+          "source_ids": [
+            "aspern-climate"
+          ]
+        },
+        {
+          "heading": "Who handles development and neighbourhood issues",
+          "text": "The published contact structure separates the development company from neighbourhood management and the construction ombuds function. Wien 3420 handles development and potential investment; neighbourhood management connects people who live, work or learn locally and explains changes. The ombuds channel addresses concerns about construction. This separation helps a resident distinguish a community initiative from a building-site complaint and helps a business identify the development contact. A published contact route is not a response-time guarantee or a transfer of statutory planning authority. The useful service question is whether an issue reaches the responsible organization and can be followed through to an answer.",
+          "source_ids": [
+            "aspern-responsibility"
+          ]
+        },
+        {
+          "heading": "Evidence test for the next development stage",
+          "text": "The next account should connect occupied homes to services available in the same quarter and reporting period. Housing should be separated by tenure and entry cost; education by usable places, allocation and travel distance; public space by shade and maintenance through summer conditions. Planned buildings should retain their own construction and opening dates. A small set of consistent measures would be more informative than adding unrelated awards or total investment figures. Follow-up should also record how resident concerns changed a design or operating practice. That would distinguish participation as an available channel from participation that demonstrably altered the neighbourhood.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Quarter-level occupied homes and tenure/access costs with a reporting date",
+        "School opening and usable-place records separated from planned capacity",
+        "Matched seasonal public-space and building performance observations"
+      ],
+      "related": [
+        {
+          "title": "Vienna",
+          "route": "/atlas/places/vienna/"
+        },
+        {
+          "title": "Graz",
+          "route": "/atlas/places/graz/"
+        }
+      ]
+    },
+    {
+      "record_id": "place-vienna",
+      "kind": "Place",
+      "title": "Vienna",
+      "route": "/atlas/places/vienna/",
+      "aliases": [
+        "Wien",
+        "City of Vienna",
+        "Vienna municipality",
+        "Stadt Wien"
+      ],
+      "answer": "Vienna's municipal housing and water systems show why urban expansion depends on maintaining existing assets as well as building new ones. Access processes, renewal programmes and commissioning conditions deserve separate scrutiny.",
+      "scope": "One Vienna municipal place. Municipal housing estates and individual water works illustrate its service systems, not additional counted places or projects in this group. Alpine water catchments and the wider metropolitan region are dependencies outside this territorial identity.",
+      "stage": "Municipal housing stock and allocation procedures, an August renovation programme and March/November water-service notices are documented. Programme totals, completed works, future commissioning and individual access remain distinct; no composite city score or universal service guarantee.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Vienna is the exact municipal service territory named by its landlord and water authority, distinct from Seestadt's development programme. The place account combines these receiving systems without counting municipal estates, external catchments or metropolitan neighbours as extra places."
+      },
+      "timeline": [
+        {
+          "date": "2022-03",
+          "event": "The November 2026 fourth-main notice identifies March 2022 as the start of its construction period.",
+          "source_ids": [
+            "vienna-main"
+          ]
+        },
+        {
+          "date": "2026-03-05",
+          "event": "The city reports seasonal aqueduct maintenance and the use of alternative supplies during shutdown.",
+          "source_ids": [
+            "vienna-maintenance"
+          ]
+        },
+        {
+          "date": "2026-08-12",
+          "event": "Wiener Wohnen publishes active and completed renovation programme figures.",
+          "source_ids": [
+            "vienna-renewal"
+          ]
+        },
+        {
+          "date": "2026-11-15",
+          "event": "The fourth-main notice reports flushing and analysis before release, with December commissioning still prospective.",
+          "source_ids": [
+            "vienna-main"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Housing stock is also a service network",
+          "text": "Wiener Wohnen describes approximately 220,000 municipal apartments in around 1,800 estates, housing roughly half a million people. Its inventory also includes shops, green areas, playgrounds, lifts and shared facilities. The landlord therefore manages more than individual tenancies: common spaces and equipment affect everyday access and neighbourhood life. These rounded, undated inventory figures are not a current vacancy count or a city-wide housing census. They establish the scale and range of the municipal landlord's responsibilities. They do not include every form of subsidized or private housing, and installed lifts alone do not demonstrate that every resident can make an accessible journey.",
+          "source_ids": [
+            "vienna-stock"
+          ]
+        },
+        {
+          "heading": "Allocation is a sequence rather than an instant entitlement",
+          "text": "The landlord directs applicants to Wohnberatung Wien for the housing-ticket process. After an application is approved, the published route includes finding an available apartment, arranging a viewing and signing the contract before keys are handed over. It also describes different arrangements for people experiencing homelessness or receiving supported accommodation. A ticket is not an immediate housing offer. The overview distinguishes the city landlord from the advice and allocation service, which matters when an applicant needs to know who handles the next step. Personal eligibility, required documents and suitable dwelling size must be assessed through the current official process, not inferred from the size of the municipal stock.",
+          "source_ids": [
+            "vienna-access"
+          ]
+        },
+        {
+          "heading": "Renovating existing homes",
+          "text": "The August 12, 2026 update reports about one hundred estates under comprehensive renewal, covering nearly 16,000 apartments and an investment volume of €1.37 billion. It separately reports 91 renovations completed since 2020, covering 10,453 homes. Active investment is not completed expenditure or a measured saving for each tenant. Wiener Wohnen describes building-condition, safety, technical and energy criteria, with economic considerations and tenant disruption influencing the work selected. This is a useful account of prioritization: the appropriate package depends on the estate. Insulation, services and access improvements should ultimately be assessed against the building's own condition and residents' actual experience.",
+          "source_ids": [
+            "vienna-renewal"
+          ]
+        },
+        {
+          "heading": "Water maintenance relies on alternative supplies",
+          "text": "The March 5, 2026 city notice explains how planned aqueduct shutdowns create access for cleaning, inspection and repairs. Reservoirs are filled beforehand, while the other high-spring aqueduct and groundwater sources help maintain supply. Gravity transport does not remove the need to maintain pressure crossings and old structural joints. The notice describes a sequence organized around limited periods when a conduit can be out of service. This is a maintenance arrangement, not a guarantee against every outage. For a growing city, stored water, alternative resources and scheduling are as important to service continuity as the headline length of the supply network.",
+          "source_ids": [
+            "vienna-maintenance"
+          ]
+        },
+        {
+          "heading": "Construction completion is not water commissioning",
+          "text": "The November 15 notice describes a newly laid 5.2-kilometre fourth main between Rosenhügel and Wienerberg, intended to strengthen supply in the south. Despite its completion headline, the body says flushing and water analysis are underway and release is required before household supply begins. December commissioning remains prospective, and surface works at the railway crossing are expected to continue until June 2027. Those stages answer different questions: pipes can be connected before drinking-water release, and service can begin before every surface reinstatement is finished. A city profile should retain those distinctions rather than convert a construction announcement into accepted operating capacity.",
+          "source_ids": [
+            "vienna-main"
+          ]
+        },
+        {
+          "heading": "Evidence test for housing and utility renewal",
+          "text": "Vienna's next assessment should compare access and renewal within defined service areas. Housing indicators need to separate applications, accepted tickets, offers and occupied homes, with suitable denominators for waiting times. Renovation outcomes need matched building and household periods rather than mixing planned investment with a completed-project count. Water records should distinguish construction, hygienic release, operating availability and remaining works. Combining these views would show whether expanding neighbourhoods receive usable services while older districts retain adequate maintenance. The city should not be reduced to one sustainability score: a strong water system cannot compensate analytically for an inaccessible dwelling or an unresolved allocation delay.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Dated housing allocation and waiting-time series with clearly defined cohorts",
+        "Matched renovation cost, energy and tenant-disruption outcomes",
+        "Fourth-main release and commissioning record with remaining works separated"
+      ],
+      "related": [
+        {
+          "title": "Seestadt Aspern",
+          "route": "/atlas/projects/seestadt-aspern/"
+        },
+        {
+          "title": "Graz",
+          "route": "/atlas/places/graz/"
+        }
+      ]
+    },
+    {
+      "record_id": "place-graz",
+      "kind": "Place",
+      "title": "Graz",
+      "route": "/atlas/places/graz/",
+      "aliases": [
+        "Stadt Graz",
+        "Graz municipality",
+        "City of Graz",
+        "Landeshauptstadt Graz"
+      ],
+      "answer": "Graz combines municipal housing provision with regional wastewater and public-estate energy systems. New homes, retained housing stock and utility expansions have distinct delivery and access tests.",
+      "scope": "One municipality of Graz. Its housing services and municipal-group energy programme are local-system evidence; the treatment plant in Gössendorf also serves surrounding municipalities. Neither the regional wastewater catchment nor all House Graz organizational assets define extra counted places.",
+      "stage": "Municipal housing procedures, occupied Puntigam homes and a dated sales-suspension reference are documented. Wastewater expansion and solar programme targets remain distinct from operating capacity and measured outcomes; no composite place score or regional capacity assigned solely to municipal residents.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The exact Graz municipality is the named place in the housing records and the municipal service account. Regional utility provision is treated as a dependency, not a territorial expansion. One place is counted without minting the Puntigam building, solar arrays or wastewater works as extra projects here."
+      },
+      "timeline": [
+        {
+          "date": "2015-06-18",
+          "event": "The municipal property page cites the council decision suspending apartment-sales guidelines.",
+          "source_ids": [
+            "graz-retention"
+          ]
+        },
+        {
+          "date": "2024-03",
+          "event": "Holding Graz reports environmental-assessment approval of the wastewater expansion in March 2024.",
+          "source_ids": [
+            "graz-wastewater"
+          ]
+        },
+        {
+          "date": "2025-12-23",
+          "event": "The solar interim report separates 21 completed arrays from fourteen approaching completion.",
+          "source_ids": [
+            "graz-solar"
+          ]
+        },
+        {
+          "date": "2026-04-24",
+          "event": "The city reports twenty Puntigam apartments occupied earlier in April and describes their shared amenities.",
+          "source_ids": [
+            "graz-puntigam"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Applying for a municipal home",
+          "text": "Graz's housing service offers online and in-person application routes, followed by document review and written confirmation of whether an applicant can be registered for allocation. Its published account distinguishes ordinary applications from case-by-case assessment of housing emergencies. Registration is not an immediate offer of a suitable apartment. Documents about household composition, income and present accommodation help determine the relevant circumstances; changes also need to be reported. The useful system question is how people move between application, assessment, offer and tenancy. A service description explains that pathway but does not establish how long a particular household will wait or whether it meets current eligibility criteria.",
+          "source_ids": [
+            "graz-allocation"
+          ]
+        },
+        {
+          "heading": "Twenty homes in Puntigam",
+          "text": "The April 24, 2026 city report says residents moved into twenty new municipal apartments earlier that month. The building occupies city-owned land and was delivered by Wohnen Graz. Its amenities include open space, a playground, shared room, district heating, fibre connectivity and photovoltaics. These details make the delivery concrete: homes are occupied and have identifiable supporting facilities, rather than being only an announced housing target. Twenty occupied apartments are not evidence that city-wide need has been met. Nor does installed photovoltaic equipment establish measured household savings. The next useful account would connect occupancy, ongoing costs and the upkeep of shared spaces.",
+          "source_ids": [
+            "graz-puntigam"
+          ]
+        },
+        {
+          "heading": "Retaining the municipal housing estate",
+          "text": "The municipal property service states that apartment sales were stopped as housing demand increased, citing a June 18, 2015 council decision suspending the sales guidelines. That is an asset-retention decision, separate from the construction of new apartments. Keeping an existing home in municipal control and adding a new home affect the stock in different ways. The page's displayed 2026 header is not the date of that council decision. Its short explanation supports the published retention position, not a complete audit of every subsequent property transaction. A credible housing account should report additions, losses, rehabilitation and allocation together rather than treating only new construction as delivery.",
+          "source_ids": [
+            "graz-retention"
+          ]
+        },
+        {
+          "heading": "Regional wastewater capacity",
+          "text": "Holding Graz describes an operating treatment plant in Gössendorf serving Graz and surrounding municipalities, with expansion from about 500,000 to 815,000 population equivalents. Population equivalents include industrial and commercial wastewater load; they are not a resident count. The operator reports March 2024 approval and construction beginning in 2025, with commissioning planned for 2029. Current operation and future capacity remain separate. Stored mixed stormwater also requires compatible intake and treatment equipment, linking the expansion to the storage sewer. The FAQ treats further treatment technologies as modular future provisions, so accommodating them in planning is not proof that a fourth treatment stage is already operating.",
+          "source_ids": [
+            "graz-wastewater"
+          ]
+        },
+        {
+          "heading": "Solar power for the municipal group",
+          "text": "The December 23, 2025 solar report distinguishes 21 completed arrays, about 1.4 megawatts peak, from fourteen nearing completion or connection. Its goal concerns electricity required by House Graz, not all electricity used across the city. The report also explains practical limits: roof structure, shading and configuration leave many inspected municipal buildings unsuitable. A large airport installation remains a planned component with its own safety and environmental considerations. The combined completed-and-pending capacity is not fully operating generation. For readers comparing programmes, nominal power, grid connection, annual output and the share of a defined organization's demand should remain separate quantities.",
+          "source_ids": [
+            "graz-solar"
+          ]
+        },
+        {
+          "heading": "Evidence test for local delivery",
+          "text": "The next Graz profile should connect housing stock changes with allocation outcomes and actual tenant costs. Occupancy records should be paired with maintenance responsibilities for shared amenities. Wastewater reporting needs the regional service boundary, industrial loading and commissioning stage, so municipal population growth is not mistaken for the entire treatment requirement. Solar progress should replace old connection forecasts with dated operating records and generation measured over comparable periods. Together these records would show whether capital works create useful, maintained services. They would also reveal trade-offs that a single municipal investment total obscures, including capacity held for future growth and the continuing needs of existing residents.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Municipal housing additions, retention and allocation outcomes for the same period",
+        "Wastewater expansion commissioning and load records retaining the regional boundary",
+        "Dated solar connection and generation series separated from planned peak capacity"
+      ],
+      "related": [
+        {
+          "title": "Vienna",
+          "route": "/atlas/places/vienna/"
+        },
+        {
+          "title": "Seestadt Aspern",
+          "route": "/atlas/projects/seestadt-aspern/"
+        }
+      ]
+    }
+  ]
+}

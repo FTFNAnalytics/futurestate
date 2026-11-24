@@ -1,4 +1,5 @@
-import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {readFile,mkdir} from 'node:fs/promises';
+import {writeGeneratedText} from './lib/write-generated-text.mjs';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {join,resolve} from 'node:path';
@@ -33,7 +34,7 @@ for(const review of reviews.records){
   records.push({...review,prior});
 }
 if(new Set(records.map(r=>r.id)).size!==records.length)throw Error('Duplicate review identity');
-await writeFile(join(root,'src/data/phase-206-reference-attribution.json'),JSON.stringify({...reviews,records},null,2)+'\n');
+await writeGeneratedText(join(root,'src/data/phase-206-reference-attribution.json'),JSON.stringify({...reviews,records},null,2)+'\n');
 const {createReferenceAttribution,attributionLinkText}=await import('../src/lib/reference-attribution.mjs');
 const projection=createReferenceAttribution(records);
 for(const[id,data]of documents){
@@ -43,11 +44,11 @@ for(const[id,data]of documents){
   const expected=`/downloads/editorial-attribution-${date}/${id}.txt`;
   if(current.local_capture_path!==expected)throw Error(`Unexpected current link destination: ${id}`);
   await mkdir(directory,{recursive:true});
-  await writeFile(join(directory,`${id}.txt`),attributionLinkText(current));
+  await writeGeneratedText(join(directory,`${id}.txt`),attributionLinkText(current));
 }
 // The earlier correction is an immutable dated input. Only derive the new tranche.
 for(const tranche of attributionTranches.filter(t=>t.key==='57x')){
  const update={id:tranche.update_id,effective_date:tranche.reviews.as_of_date,entry_type:'Correction',title:'63 more research records and Research Watch 054 now distinguish FTFN authorship',summary:'The Phase 57X collection contains 54 FTFN method/test records and nine historical dockets, not agency-authored technical reports. Corrected headlines, claims, metadata and link downloads preserve the original identities, August 10 dates, source links, publication states and archive.',affected_record_ids:tranche.reviews.records.map(r=>r.id),related_paths:[`/research/${tranche.collection_slug}/`,`/briefings/${tranche.briefing_slug}/`,...tranche.reviews.records.filter(r=>r.record_kind==='research_document').map(r=>`/research/documents/${r.id.replace(/^research-doc-/,'')}/`),'/data/research.json','/data/shelves/documents.json'],evidence_note:'Attribution review only. The historical account reports 1,593 synthetic cases; those tests were not rerun. Real audits, production vulnerabilities, appeals, reader migrations, operating outcomes and evidence absence are not established. Later official-source decisions remain separate.',receipt_id:'206-ATTRIBUTION-57X-2026-09-15',receipt_type:'Correction',materiality:'Correction',publication_effect:'Current authorship and claim wording corrected; historical publication states and source dates unchanged. Independent review, production validation and release remain held.',work_package:'docs/work-packages/phase-206-editorial-classification-and-claim-integrity.md'};
- await writeFile(join(root,`src/content/updates/${tranche.update_id.replace(/^update-/,'')}.json`),JSON.stringify(update,null,2)+'\n');
+ await writeGeneratedText(join(root,`src/content/updates/${tranche.update_id.replace(/^update-/,'')}.json`),JSON.stringify(update,null,2)+'\n');
 }
 console.log(`${documents.size} research documents and ${records.length-documents.size} briefing attribution reviews projected; original records/downloads preserved. No external refresh or release approval.`);

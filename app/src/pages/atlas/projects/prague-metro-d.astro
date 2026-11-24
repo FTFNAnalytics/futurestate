@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import CzechMetroCitiesDossierArticle from '../../../components/review/CzechMetroCitiesDossierArticle.astro';
+import {czechMetroCitiesDossiers} from '../../../lib/czech-metro-cities-named-dossiers.mjs';
+const record=czechMetroCitiesDossiers.records.find(r=>r.record_id==='project-prague-metro-d')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><CzechMetroCitiesDossierArticle record={record}/></BaseLayout>

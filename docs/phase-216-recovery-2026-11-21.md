@@ -1,0 +1,49 @@
+# Phase 216 editing access and validation recovery
+
+Subsequent November 21 continuation: [the complete translation collection](phase-216-translations-2026-11-21.md) now contains all 34 readings. The eight manuscripts prepared below were integrated, and the final eight were authored, AI-reviewed and integrated. Its generation and source/type checks passed, but full production validation failed during output cleanup with `EPERM` at `app/dist/review`; read-only inspection found a child-deletion deny rule. No new full receipt was issued. The successful 18-reading candidate below remains historical. The preparation counts and next actions below describe that earlier checkpoint.
+
+November 21, 2026. Phase 216 work has resumed locally. File editing was verified with a temporary file that was read back and removed. Two outdated current-state checks are repaired, and the complete local generation/validation pipeline passed at `2026-11-21T22:37:49.126Z`. Eight additional translated manuscripts are prepared for the next integration batch. Phase 216 remains open; no publication or launch is authorized by this checkpoint.
+
+## Access and repair
+
+Direct file edits succeeded in the NextGen Transportation repository. The normal command environment still denied creation of a validation-log directory with `EPERM` at `2026-11-21T21:11:56.851Z`. That attempt stopped before generation or validation and created no completed run record. File-editor access therefore does not establish unrestricted build-command access.
+
+The same local validation command was subsequently permitted through the approval mechanism and started at `2026-11-21T21:12:24.748Z`. No permission configuration, dependency installation, browser automation or security setting was changed.
+
+In [the reader-completion verifier](../app/scripts/verify-phase204-reader-completion.mjs), the current-state count now requires all thirteen primary cycle decisions instead of the obsolete ten. The separate thirteen-identity assertion, historical fixtures, receipt propagation checks and publication holds are preserved. The first full run subsequently exposed a second obsolete current-index check in [the release verifier](../app/scripts/verify-release.mjs): it still expected ten dated decisions and three scheduled gates. That check now requires thirteen and zero, without closing outstanding follow-ups or changing the immutable baseline export assertions.
+
+The repaired verifier passed against the existing generated site. It checked 104 complete articles, 34 paired English editions, 17 compact HTML/CSS budgets and all eleven current-ledger receipts. This focused result does not certify a fresh production build.
+
+## Validation result
+
+The [first November 21 full attempt](../outputs/validation/2026-11-21T21-12-24.748Z-3gsFuR/results.json) finished at `2026-11-21T21:45:57.469Z`: `current:generate` exited 0 and `current:validate` exited 1. The repaired reader-completion check passed. Production built 16,716 pages and the output scan resolved 721,284 local references with zero missing targets, but final release verification failed at the second obsolete ten/three current-index assertion described above. No full acceptance receipt was written by this attempt. A passing production build is not full candidate acceptance.
+
+The complete standalone release verifier passed after the second repair. A fresh approved full pipeline run started at `2026-11-21T21:51:01.505Z` under [the second November 21 log directory](../outputs/validation/2026-11-21T21-51-01.505Z-Um0o2K/). Its first production build passed with 16,716 pages; the 721,284-reference scan found zero missing targets. All first-pass release checks passed, and receipt `204-FULL-LOCAL-VALIDATION-2026-11-21-095b54a1a041` was issued at `2026-11-21T22:21:46.723Z` for candidate `1141e1fbe2140bcb56eb97a45fdcaafddf64f7356c0e25b2e5d78c884a13d289`.
+
+The [completed run results](../outputs/validation/2026-11-21T21-51-01.505Z-Um0o2K/results.json) record **exit 0 for both `current:generate` and `current:validate`**, with final completion at `2026-11-21T22:37:49.126Z`. The required post-receipt build also produced 16,716 pages; its second 721,284-reference scan again found zero missing targets. Post-build reference/current checks, the deployment-manifest update and final release verification passed. The source and output retain the exact [full validation receipt](../app/src/data/phase-204-receipts/204-FULL-LOCAL-VALIDATION-2026-11-21-095b54a1a041.json), bound to 3,539 candidate artifacts. The eight prepared translations are not in that candidate's artifact manifest.
+
+Candidate/content validation, source-health metadata, current regressions, Phase 58–61/67 checks and immutable Phase 145–172 checks passed within the full run. Historical Phase 62–66 assertions were also run separately and all five passed. Type checks reported zero errors, zero warnings and two existing hints. Git diff checks passed. These are local contract and rendering checks, not live endpoint verification, new evidence inspections, independent accessibility trials, Git-backed release or cycle closure.
+
+The prior [October 28 full attempt](../outputs/validation/2026-10-28T07-07-43.764Z-MkZzbW/results.json) ended with `current:validate` exit 1 at the outdated count. Its earlier recovery note saying "in progress" was stale; no full acceptance receipt was produced by that attempt.
+
+## Next content batch prepared
+
+Eight complete readings are prepared and AI-reviewed for a subsequent application batch:
+
+- Energy: [Canadian French](release-reviews/2026-09-22/translation-pilots/energy-fr-CA-ai-reviewed.md), [Latin American Spanish](release-reviews/2026-09-22/translation-pilots/energy-es-419-ai-reviewed.md), and [dated fidelity assessment](release-reviews/2026-09-22/translation-pilots/energy-ai-review-2026-11-21.json). A French wording correction preserves dependable supply rather than implying a safety finding.
+- Finance and Risk: [Canadian French](release-reviews/2026-09-22/translation-pilots/finance-and-risk-fr-CA-ai-reviewed.md), [Latin American Spanish](release-reviews/2026-09-22/translation-pilots/finance-and-risk-es-419-ai-reviewed.md), and [dated fidelity assessment](release-reviews/2026-09-22/translation-pilots/finance-and-risk-ai-review-2026-11-21.json). Both comparison questions were corrected to retain the quantity denominator for accepted service or delivered assets.
+- Human Futures: [Canadian French](release-reviews/2026-09-22/translation-pilots/human-futures-fr-CA-ai-reviewed.md), [Latin American Spanish](release-reviews/2026-09-22/translation-pilots/human-futures-es-419-ai-reviewed.md), and [dated fidelity assessment](release-reviews/2026-09-22/translation-pilots/human-futures-ai-review-2026-11-21.json). Enactment terminology remains distinct from the retained council stage and occupied housing; neither text constitutes a new Toronto inspection.
+- Mobility: [Canadian French](release-reviews/2026-09-22/translation-pilots/mobility-fr-CA-ai-reviewed.md), [Latin American Spanish](release-reviews/2026-09-22/translation-pilots/mobility-es-419-ai-reviewed.md), and [dated fidelity assessment](release-reviews/2026-09-22/translation-pilots/mobility-ai-review-2026-11-21.json). Plain-language incident-rate wording preserves the exposure/denominator requirement; retained authority and deployment records are not new recall, closeout or reliability inspections.
+
+Read-only preparation checks passed for four English-record hashes, all eight manuscript hashes, thirty-seven retained source-artifact pins covering thirty-five distinct source IDs, eight contract-to-digest bindings and their separate historical source sets. The eight complete overviews and forty-eight content sections retain seventy-four exact source-link instances. These checks bind local inputs, not live endpoints.
+
+These are AI-authored and AI-reviewed texts, not independent human reviews or fresh source fact-checks. They retain September 1 evidence and September 10 English authorship. They were deliberately kept outside the application candidate during validation: eighteen translations remain integrated, sixteen still require application integration, and eight of those are outside these prepared pairs. The preparation itself does not fulfill the eight public edition contracts or alter historical review inputs.
+
+## Remaining Phase 216 work
+
+- Preserve this exact validated candidate and bind future changes to a new full validation result. Local validation is separate from repository publication, hosted verification, exact source-recovery proof and launch.
+- Reconcile the overdue Toronto project check and nine October 9 follow-ups independently. Loudoun's November 18 policy appointment is now overdue; its October 28 receipt remains historical evidence, not a November inspection. Preserve the separate Arizona Phase 55Q November 21 appointment and the Amtrak/NNSA November 25 appointments.
+- Integrate the prepared Energy, Finance/Risk, Human Futures and Mobility pairs with exact-input checks and a new candidate-bound validation; complete the other eight translations for policy and standards, quantum, space, and water. The wider content, portfolio, technical/usability and measurement work remains as described in the [October 28 recovery report](phase-216-recovery-2026-10-28.md). Eighteen translations and all 58 annual AI assessments remain integrated; the eight new manuscripts are preparation, not new public content or source decisions.
+- Establish an accepted scoped release candidate, obtain the owner's exact launch decision, and perform thirty real operating days. No phase completion, deployment, publication or operating-month result is inferred from a local repair.
+
+No new external evidence review or dated evidence receipt has been performed during this recovery checkpoint. Evidence Cycle 001 remains open.

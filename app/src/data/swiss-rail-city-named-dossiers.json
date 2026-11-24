@@ -1,0 +1,552 @@
+{
+  "edition_id": "SWISS-RAIL-CITY-NAMED-ARTICLES-2026-11-22",
+  "inspected_date": "2026-11-22",
+  "timezone": "America/Edmonton",
+  "review_policy": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "review_state": "Dated article authored and AI self-reviewed; production verification pending",
+  "independent_review": false,
+  "phase_60_identity_added": false,
+  "sources": [
+    {
+      "id": "gotthard-nrla",
+      "title": "Alptransit and its constituent base tunnels",
+      "publisher": "Federal Office of Transport (FOT/BAV/UFT)",
+      "role": "Federal infrastructure overview",
+      "url": "https://www.bav.admin.ch/it/alptransit-nuova-ferrovia-transalpina",
+      "publication_date": "2025-06-11",
+      "language": "Italian",
+      "interpretation_note": "Italian text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Gotthard, Ceneri and access-route sections",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Separate tunnels within one wider programme. Capacity descriptions are not observed throughput; historical opening dates are not the webpage publication date."
+    },
+    {
+      "id": "gotthard-return",
+      "title": "Gotthard Base Tunnel passenger information",
+      "publisher": "SBB",
+      "role": "Dated reopening account",
+      "url": "https://news.sbb.ch/en/019d7b76-dea8-7bc7-a9d2-8b70f60dc7b9/gotthard-base-tunnel-passenger-information",
+      "publication_date": "2023-08-16",
+      "language": "English",
+      "interpretation_note": "Official English text used; no independent language review claimed.",
+      "locator": "Overview and national connections",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Updated account supports the 2024 restoration, not a fresh timetable or an assertion that all later technical restrictions had ended.",
+      "updated_date": "2024-09-02",
+      "event_date": "2024-09-02"
+    },
+    {
+      "id": "gotthard-response",
+      "title": "SBB welcomes FOT measures to improve freight safety",
+      "publisher": "SBB",
+      "role": "Operator account of regulatory response",
+      "url": "https://news.sbb.ch/en/019d7b77-68cd-7ed3-a94f-3420c5b1ec41/sbb-welcomes-fot-measures-to-improve-safety-in-freight-services",
+      "publication_date": "2025-09-11",
+      "language": "English",
+      "interpretation_note": "Official English text used; no independent language review claimed.",
+      "locator": "Accident and regulatory-response paragraphs",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "SBB's interpretation, not direct inspection of the investigation or underlying rules. The attempted SUST media-summary PDF redirected to an inaccessible address."
+    },
+    {
+      "id": "gotthard-detectors",
+      "title": "Derailment detectors on Gotthard approaches enter operation",
+      "publisher": "SBB",
+      "role": "Commissioning announcement",
+      "url": "https://news.sbb.ch/en/019e17e0-fe04-7eab-8a5b-822f68272a2d/derailment-detectors-on-the-approaches-to-the-gotthard-base-tunnel-are-now-in-operation",
+      "publication_date": "2026-05-12",
+      "language": "English",
+      "interpretation_note": "Official English text used; no independent language review claimed.",
+      "locator": "Commissioning and temporary speed-restriction sections",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Consequence mitigation is not derailment prevention. Reported installation is not a measured reduction in incident risk.",
+      "event_date": "2026-05-11",
+      "event_period": "Night of May 10–11, 2026"
+    },
+    {
+      "id": "gotthard-freight",
+      "title": "Federal Council seeks better NRLA access routes",
+      "publisher": "Federal Office of Transport",
+      "role": "Federal modal-shift report announcement",
+      "url": "https://www.bav.admin.ch/de/newnsb/BeYR4WQfaWWdnbkUH7i9t",
+      "publication_date": "2025-11-19",
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "2024 modal share and access-route constraints",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Swiss transalpine freight results are not a Gotthard-only measure or an isolated causal estimate of tunnel effects.",
+      "reference_period": "Calendar year 2024"
+    },
+    {
+      "id": "ceneri-opening",
+      "title": "Ceneri Base Tunnel ceremonial opening",
+      "publisher": "Federal Department of Environment, Transport, Energy and Communications (DETEC/UVEK)",
+      "role": "Contemporaneous inauguration account",
+      "url": "https://www.uvek.admin.ch/de/der-ceneri-basistunnel-ist-eroeffnet",
+      "publication_date": "2020-09-04",
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Opening account and regional connections",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Ceremony and intended network benefits are distinct from scheduled operation and measured recurring reliability.",
+      "event_date": "2020-09-04"
+    },
+    {
+      "id": "ceneri-permit",
+      "title": "Permission for scheduled Ceneri operation",
+      "publisher": "DETEC/UVEK; Federal Office of Transport",
+      "role": "Operating-permission announcement",
+      "url": "https://www.uvek.admin.ch/de/nsb?id=81417",
+      "publication_date": "2020-12-01",
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Permission and planned timetable-change paragraph",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Announcement of permission for service from December 13 is not itself an observed first-service or continuing-performance record.",
+      "scheduled_date": "2020-12-13"
+    },
+    {
+      "id": "ceneri-approach",
+      "title": "Locarno is closer after partial track doubling",
+      "publisher": "SBB",
+      "role": "Completed approach-work account",
+      "url": "https://news.sbb.ch/it/019d7b7b-1198-7b38-97d9-1f01051f1609/locarno-e-piu-vicina",
+      "publication_date": "2021-03-24",
+      "language": "Italian",
+      "interpretation_note": "Italian text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "March 22 operation, stop upgrades and schedule delay",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Separate Contone–Locarno works are a Ceneri dependency, not a second completion date for the base tunnel. April 5 timetable was still future in this account.",
+      "event_date": "2021-03-22"
+    },
+    {
+      "id": "ceneri-etcs",
+      "title": "European Train Control System in Switzerland",
+      "publisher": "Federal Office of Transport",
+      "role": "Technical system overview",
+      "url": "https://www.bav.admin.ch/en/european-train-control-system-etcs",
+      "publication_date": "2025-07-29",
+      "language": "English",
+      "interpretation_note": "Official English text used; no independent language review claimed.",
+      "locator": "ETCS Level 2 and vehicle compatibility paragraphs",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Describes installed system classes and strategy, not a Ceneri-specific measured reliability result or safety certification reviewed here."
+    },
+    {
+      "id": "ceneri-clearance",
+      "title": "Four-metre freight corridor",
+      "publisher": "Federal Office of Transport",
+      "role": "Route-clearance programme overview",
+      "url": "https://www.bav.admin.ch/en/4-metre-corridor",
+      "publication_date": "2025-05-20",
+      "language": "English",
+      "interpretation_note": "Official English text used; no independent language review claimed.",
+      "locator": "Gotthard route and cross-border access paragraphs",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Route clearance depends on several assets and approaches; programme capability is not observed Ceneri freight volume."
+    },
+    {
+      "id": "zurich-boundary",
+      "title": "Zürich city districts dataset",
+      "publisher": "City of Zürich GIS Centre",
+      "role": "Municipal geography metadata",
+      "url": "https://data.stadt-zuerich.ch/dataset/geo_stadtkreise",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Purpose, spatial relationship and official survey basis",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Metadata establishes the municipal administrative frame; polygon files, coordinates and boundary changes were not inspected.",
+      "updated_date": "2026-11-19"
+    },
+    {
+      "id": "zurich-fares",
+      "title": "Implementation proposal for the 365-franc public-transport initiative",
+      "publisher": "City of Zürich",
+      "role": "Municipal proposal announcement",
+      "url": "https://www.stadt-zuerich.ch/de/aktuell/medienmitteilungen/2026/09/stadtrat-verabschiedet-umsetzungsvorlage-fuer-volksinitiative-vbz-abo-fuer-365-franken.html",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Initiative, ZVV tariff responsibility and next steps",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Proposed subsidy, not a current fare or approved implementation. Earliest spring 2028 introduction is conditional.",
+      "publication_period": "2026-09",
+      "period_basis": "Publication month is taken from the official URL; no exact publication day is displayed in the retrieved body.",
+      "event_date": "2025-09-28"
+    },
+    {
+      "id": "zurich-josef",
+      "title": "Josef-Areal development",
+      "publisher": "City of Zürich",
+      "role": "Municipal planning and completed-energy-centre context",
+      "url": "https://www.stadt-zuerich.ch/de/planen-und-bauen/projekte-und-ausschreibungen/gebiete-areale/josefareal.html",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Current study, outlook and planning history",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Completed energy centre is distinct from proposed housing, pool and park; earliest 2035 construction is a plan, not occupied housing.",
+      "event_date": "2025-01-22"
+    },
+    {
+      "id": "zurich-water",
+      "title": "Zürich water treatment and distribution",
+      "publisher": "City of Zürich Water Supply",
+      "role": "Utility service-area and maintenance description",
+      "url": "https://www.stadt-zuerich.ch/de/umwelt-und-energie/wasser/verteilung-aufbereitung.html",
+      "publication_date": null,
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Waterworks, supply area and pipe-network sections",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "A city utility also supplies parts of 67 other municipalities. Described maintenance practice is not a verified current annual work total."
+    },
+    {
+      "id": "zurich-water-data",
+      "title": "Zürich drinking-water quality dataset metadata",
+      "publisher": "City of Zürich Water Supply",
+      "role": "Measurement documentation",
+      "url": "https://data.stadt-zuerich.ch/dataset/dib_wvz_trinkwasserqualitaet",
+      "publication_date": "2025-01-28",
+      "language": "German",
+      "interpretation_note": "German text interpreted and AI self-reviewed by Codex; not independent language review.",
+      "locator": "Three waterworks, annual resources and variable definitions",
+      "inspection": "Relevant official HTML text read on 2026-11-22; linked instruments, datasets and dynamic feeds were not inspected",
+      "boundary": "Metadata only, not an analysis of the CSV files. NA means below detection or quantification limits, not necessarily zero concentration.",
+      "updated_date": "2026-06-09",
+      "reference_period": "Annual resources for 2023–2025"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "project-gotthard-base-tunnel",
+      "kind": "Project",
+      "title": "Gotthard Base Tunnel: operation, recovery and freight dependencies",
+      "route": "/atlas/projects/gotthard-base-tunnel/",
+      "aliases": [
+        "Gotthard Base Tunnel",
+        "Gotthard-Basistunnel",
+        "Galleria di base del San Gottardo"
+      ],
+      "answer": "The Gotthard Base Tunnel provides a low-gradient route between Uri and Ticino. Its record now includes an extended disruption, restoration and new mitigation equipment, alongside the wider constraints on transalpine freight.",
+      "scope": "One 57-kilometre Gotthard Base Tunnel project from Erstfeld to Bodio, counted once across its two tubes. The Ceneri tunnel, mountain railway and wider NRLA programme are separate identities or context.",
+      "stage": "In service since December 2016; restored in September 2024 after the 2023 derailment, with approach detectors reported commissioned in May 2026. No blanket risk or freight-outcome admission.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Gotthard has its own defined alignment, opening history and operating record, distinct from Ceneri and the wider NRLA programme. The two tunnel tubes and later recovery works do not create further project identities. No aggregate NRLA identity is added."
+      },
+      "timeline": [
+        {
+          "date": "2016-06-01",
+          "event": "The federal overview records the ceremonial opening.",
+          "source_ids": [
+            "gotthard-nrla"
+          ]
+        },
+        {
+          "date": "2016-12",
+          "event": "The federal overview records entry into service.",
+          "source_ids": [
+            "gotthard-nrla"
+          ]
+        },
+        {
+          "date": "2023-08-10",
+          "event": "A freight derailment disrupts the tunnel, as described in SBB's later update.",
+          "source_ids": [
+            "gotthard-return"
+          ]
+        },
+        {
+          "date": "2024-09-02",
+          "event": "SBB reports restoration of full passenger and freight operations.",
+          "source_ids": [
+            "gotthard-return"
+          ]
+        },
+        {
+          "date": "2026-05-11",
+          "event": "SBB reports commissioning approach detectors during the night of May 10–11.",
+          "source_ids": [
+            "gotthard-detectors"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "A base route rather than a mountain crossing",
+          "text": "The federal transport office describes the Gotthard Base Tunnel as a 57-kilometre railway between Erstfeld in Uri and Bodio in Ticino. Its two equipped tubes shorten the route relative to the mountain railway. The June 2016 inauguration and December 2016 entry into service are separate milestones. Gotthard belongs to the New Rail Link through the Alps, or NRLA, together with other tunnels and access routes. It is counted here as one defined construction and operating asset, not as the whole programme or as separate projects for each tube.",
+          "source_ids": [
+            "gotthard-nrla"
+          ]
+        },
+        {
+          "heading": "Restoration after a prolonged disruption",
+          "text": "A freight train derailed on August 10, 2023, extensively damaging infrastructure and forcing most passenger services onto diversionary routes. SBB's passenger account, updated September 2, 2024, records the restoration of full passenger and freight operations. The episode shows why a project's operating history must include recovery as well as opening. The mountain route retained value as an alternative, but diversion changed journey times. The restoration statement concerns service availability; it does not mean every technical restriction had disappeared. SBB's later detector announcement identifies a temporary approach-speed restriction that remained after trains returned.",
+          "source_ids": [
+            "gotthard-return",
+            "gotthard-detectors"
+          ]
+        },
+        {
+          "heading": "Maintenance and regulation after the accident",
+          "text": "SBB's September 11, 2025 response to federal measures describes the investigation's finding of an undetected crack leading to a wheel fracture. It welcomes tighter controls and says it will apply the new requirements while pursuing more stringent inspections. This is the operator's account of the regulatory response, not direct review of the investigation report or underlying rules. It nevertheless identifies an important dependency: a tunnel's operation also relies on rolling stock maintained by other organisations. Track infrastructure, wagon maintenance and transport operators cannot be treated as one interchangeable safety responsibility.",
+          "source_ids": [
+            "gotthard-response"
+          ]
+        },
+        {
+          "heading": "Detection limits the consequences, not the cause",
+          "text": "SBB reports commissioning trackside derailment detectors at around ten approach locations during the night of May 10–11, 2026. The installations precede sensitive crossover points and are intended to limit the consequences if a derailment recurs. SBB explicitly says detectors cannot prevent derailments. Its announcement also records removal of a temporary approach-speed restriction, which had reduced the time reserves available for absorbing delays. Installed mitigation, removal of a restriction and demonstrated risk reduction are different results. The first two are reported milestones; the announcement does not supply a repeated before-and-after incident study.",
+          "source_ids": [
+            "gotthard-detectors"
+          ]
+        },
+        {
+          "heading": "Freight performance extends beyond the tunnel",
+          "text": "The federal government's November 2025 modal-shift announcement reports that rail carried 70.3 percent of Swiss transalpine freight in 2024, down 2.6 percentage points from 2022. These are corridor-wide results, not Gotthard-only performance. The announcement identifies constrained northern access routes, construction disruption and inadequate diversion capacity as obstacles. This helps explain why a completed base tunnel cannot by itself guarantee the wider transport outcome. Freight needs usable approaches, coordinated works and terminal access across borders. Attributing the whole change in rail share to one tunnel would erase those dependencies and exceed the evidence.",
+          "source_ids": [
+            "gotthard-freight"
+          ]
+        },
+        {
+          "heading": "Next operating evidence",
+          "text": "The next update should follow comparable disruption and recovery measures, including time spent under restrictions and the availability of diversion routes. Detector commissioning should be followed by clearly defined operating observations, not assumed prevention of wheel failures. Freight evaluation needs the same reporting boundary over time and a separation of tunnel availability from approach and terminal constraints. These evidence requests would make the project useful as a resilience case, connecting infrastructure, maintenance and service continuity. They do not require a synthetic success score or turn a national modal-share statistic into a project-level causal finding.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Repeated tunnel availability, restrictions and recovery data with consistent definitions.",
+        "Direct investigation and regulatory documents, followed by evidence of implemented maintenance measures.",
+        "Corridor freight performance separating tunnel, approach and terminal constraints."
+      ],
+      "related": [
+        {
+          "title": "Ceneri Base Tunnel",
+          "route": "/atlas/projects/ceneri-base-tunnel/"
+        },
+        {
+          "title": "Zürich municipality",
+          "route": "/atlas/places/zurich-municipality/"
+        }
+      ]
+    },
+    {
+      "record_id": "project-ceneri-base-tunnel",
+      "kind": "Project",
+      "title": "Ceneri Base Tunnel: regional connections and corridor compatibility",
+      "route": "/atlas/projects/ceneri-base-tunnel/",
+      "aliases": [
+        "Ceneri Base Tunnel",
+        "Ceneri-Basistunnel",
+        "Galleria di base del Ceneri"
+      ],
+      "answer": "Ceneri completes a lower-gradient rail route through Ticino and supports regional connections. Its benefits depend on approach tracks, compatible train control and freight clearances beyond the tunnel.",
+      "scope": "One 15.4-kilometre Ceneri Base Tunnel project in Ticino, counted once across its two tubes. Gotthard, Contone–Locarno works and the four-metre corridor are separate projects or dependencies, not additional Ceneri identities.",
+      "stage": "Ceremonially opened September 2020, with scheduled-operation permission announced in December and service by the end of 2020. Regional approach works and recurring performance remain separate.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Ceneri is a separately named base tunnel with its own length, ceremonial opening and operating-permission record. It shares the Gotthard axis but is not an alias of Gotthard. Its tubes, approach works and associated regional services do not multiply its eligible identity."
+      },
+      "timeline": [
+        {
+          "date": "2020-09-04",
+          "event": "The federal department records the ceremonial opening.",
+          "source_ids": [
+            "ceneri-opening"
+          ]
+        },
+        {
+          "date": "2020-12-01",
+          "event": "The transport authority announces permission for scheduled operation from December 13.",
+          "source_ids": [
+            "ceneri-permit"
+          ]
+        },
+        {
+          "date": "2020-12-13",
+          "event": "Scheduled timetable-start date in the December 1 permission announcement, not a same-day observation.",
+          "source_ids": [
+            "ceneri-permit"
+          ]
+        },
+        {
+          "date": "2021-03-22",
+          "event": "SBB records operation of the separate doubled approach section toward Locarno.",
+          "source_ids": [
+            "ceneri-approach"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "A distinct tunnel with a regional role",
+          "text": "The federal overview identifies Ceneri as a 15.4-kilometre, two-tube base tunnel in Ticino. Its September 4, 2020 ceremony marked completion of the NRLA construction programme, while the regional promise was more direct travel among Lugano, Bellinzona and Locarno. This is a distinct project from the longer Gotthard tunnel, although both sit on the same north–south axis. Ceneri's value is therefore not only international passage: it changes how regional connections can be arranged. The opening ceremony establishes an inauguration, while service entry and realised passenger outcomes require their own records.",
+          "source_ids": [
+            "ceneri-opening",
+            "gotthard-nrla"
+          ]
+        },
+        {
+          "heading": "Permission and service have different dates",
+          "text": "On December 1, 2020, the transport authority announced that SBB had permission for scheduled passenger and freight operation from the December 13 timetable change. The later federal overview records the tunnel in service by the end of 2020. Read together, these establish a sequence from authorization to operation without treating the September ceremony as the start of the final timetable. They also keep an operating permission separate from a performance assessment. A permitted route can still depend on unfinished connecting works, available trains and a workable timetable before its full regional offer can be delivered.",
+          "source_ids": [
+            "ceneri-permit",
+            "gotthard-nrla"
+          ]
+        },
+        {
+          "heading": "The approach to Locarno mattered",
+          "text": "SBB's March 24, 2021 account reports that trains had started using the separate doubled section toward Locarno on March 22. It explains how track, station-platform and signalling changes supported the regional offer alongside Ceneri and the Camorino connection. Pandemic delays had moved this work beyond the tunnel's December opening, contributing to an intermediate regional timetable. The final April 5 timetable was still future when the article was published. This is a concrete dependency, not a second Ceneri completion: a new tunnel and its connecting network can reach useful operating stages at different times.",
+          "source_ids": [
+            "ceneri-approach"
+          ]
+        },
+        {
+          "heading": "Train control is part of compatibility",
+          "text": "The federal ETCS overview identifies Level 2 cab signalling on the base routes through Ceneri, Gotthard and Lötschberg. ETCS is the European Train Control System, intended to reduce the need for different national train-control equipment. A route equipped for cab signalling still requires compatible rolling stock and coordinated operation. That makes technical compatibility part of the transport connection, alongside the physical tunnel. The overview establishes the system class and broader strategy; it is not a Ceneri-specific reliability series. Equipment descriptions should therefore remain separate from measurements of delays, faults or recovered service.",
+          "source_ids": [
+            "ceneri-etcs"
+          ]
+        },
+        {
+          "heading": "Freight clearance is a whole-route condition",
+          "text": "The federal four-metre-corridor account explains that carrying tall semi-trailers by rail required changes beyond the base tunnels, including older tunnels, platform roofs and other infrastructure. It records that the Gotthard route could accommodate these loads from 2020 and stresses onward access to Italian terminals. For Ceneri, the lesson is that clearance cannot be judged at one portal alone: the load must fit the usable route and its destination. This is programme-level capability, not a count of freight trains actually carried through Ceneri, and it does not establish that every future approach improvement is already finished.",
+          "source_ids": [
+            "ceneri-clearance"
+          ]
+        },
+        {
+          "heading": "Follow the service the tunnel enables",
+          "text": "The next account should connect a stable regional timetable with observed journey reliability and interchange performance, using periods that distinguish the tunnel opening from later approach completion. Freight reporting should identify the route and load class rather than borrow all NRLA traffic as Ceneri output. A useful comparison would also explain planned works and diversions, because they change the service residents and shippers receive. These are editorial requests for deeper operating evidence. They preserve the project's separate identity while testing its contribution through the network it was built to support.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Repeated regional service and interchange measurements with comparable timetable periods.",
+        "Ceneri-specific freight throughput and disruption data with load-class definitions.",
+        "Dated completion and compatibility records for the exact approach routes used."
+      ],
+      "related": [
+        {
+          "title": "Gotthard Base Tunnel",
+          "route": "/atlas/projects/gotthard-base-tunnel/"
+        },
+        {
+          "title": "Zürich municipality",
+          "route": "/atlas/places/zurich-municipality/"
+        }
+      ]
+    },
+    {
+      "record_id": "place-zurich-municipality",
+      "kind": "Place",
+      "title": "Zürich: municipal services within larger networks",
+      "route": "/atlas/places/zurich-municipality/",
+      "aliases": [
+        "Zürich municipality",
+        "Zurich city",
+        "Stadt Zürich"
+      ],
+      "answer": "Zürich’s city account connects transport affordability, planned neighbourhood development and water provision. Municipal decisions and service boundaries matter as much as the infrastructure itself.",
+      "scope": "Zürich municipality only, not Canton Zürich, Winterthur or the full ZVV and water-utility service areas. City districts are subdivisions of one place, not additional eligible identities.",
+      "stage": "Municipal service context, a proposed transport subsidy and mixed completed/planned development; no current discounted-fare, occupied-housing or citywide outcome admission.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Zürich is one new municipal place account, not an alias for its canton or a reused European Union acquisition docket. Its districts and wider utility customers are not extra place identities. Rail projects elsewhere in Switzerland remain separately scoped related accounts."
+      },
+      "timeline": [
+        {
+          "date": "2025-01-22",
+          "event": "The city records commissioning the deeper Josef-Areal planning study.",
+          "source_ids": [
+            "zurich-josef"
+          ]
+        },
+        {
+          "date": "2025-09-28",
+          "event": "The city reports voter acceptance of the transport-discount initiative.",
+          "source_ids": [
+            "zurich-fares"
+          ]
+        },
+        {
+          "date": "2026-06-09",
+          "event": "The water-quality catalogue records its metadata update, not a sampling date.",
+          "source_ids": [
+            "zurich-water-data"
+          ]
+        },
+        {
+          "date": "2026-09",
+          "event": "The official URL dates the implementation-proposal publication to this month; no exact day is supplied.",
+          "source_ids": [
+            "zurich-fares"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Start with the municipal boundary",
+          "text": "Zürich's city-district dataset describes an administrative geography maintained for municipal departments and based on official survey data. Its stated spatial relationship is the City of Zürich. That gives this account a municipal frame, rather than the canton or every territory served by an organisation bearing the Zürich name. Districts provide a way to examine differences within the city, not additional cities to count. The catalogue metadata was inspected, not the polygon files; no boundary change or area measurement is inferred from its November 2026 update. Service catchments below remain separately identified.",
+          "source_ids": [
+            "zurich-boundary"
+          ]
+        },
+        {
+          "heading": "A fare initiative still needs implementation",
+          "text": "The city reports that voters accepted the 365-franc public-transport initiative on September 28, 2025. Its September 2026 implementation proposal would use discounts on existing annual products because tariff authority rests with ZVV. The proposal still requires parliamentary consideration and another public vote, with introduction no earlier than spring 2028 if accepted. It is not a current discounted fare. This case separates a popular policy mandate from the funding and delivery mechanism needed to fulfil it. The city also proposes studying effects on public-transport use and service quality rather than treating the price proposal itself as measured behaviour change.",
+          "source_ids": [
+            "zurich-fares"
+          ]
+        },
+        {
+          "heading": "Josef-Areal combines completed and future uses",
+          "text": "The city's Josef-Areal page describes an already completed energy centre within a larger redevelopment area in Zürich-West. Housing, a pool, neighbourhood rooms and a park remain part of planning. A deeper study completed in summer 2026 examines additional non-profit housing alongside previously planned older-person housing. The city anticipates further development decisions and gives construction from 2035 at the earliest. These are not occupied homes or an open pool. The site illustrates the need to distinguish one completed utility element from a broader public-service and housing package that still depends on planning, design and delivery.",
+          "source_ids": [
+            "zurich-josef"
+          ]
+        },
+        {
+          "heading": "Water supply crosses the city boundary",
+          "text": "Zürich's water system combines lake-water treatment at Lengg and Moos, groundwater at Hardhof and spring sources. The municipal account says the utility supplies all city buildings and part of the demand of 67 additional municipalities through connected networks. Those customers must not be relabelled as Zürich residents. The city also describes coordination of pipe renewal with drainage, street and energy works to reduce repeated construction. This connects water reliability to the management of streets and other services. The described renewal practice is useful system context, not a verified total of work completed in the current year.",
+          "source_ids": [
+            "zurich-water"
+          ]
+        },
+        {
+          "heading": "Open measurements need careful interpretation",
+          "text": "The water-quality catalogue provides annual resources for the three treatment works and explains that their water can mix in the distribution network. Its variable definitions distinguish sample date, location, parameter, units and measurement limits. In particular, NA denotes a result below a detection or quantification limit, not necessarily zero concentration. The catalogue's first publication and later update are also different from the sampling dates in the files. Only the documentation was inspected here; no CSV analysis or compliance conclusion is claimed. This establishes how a future measurement account can be checked without inventing results.",
+          "source_ids": [
+            "zurich-water-data"
+          ]
+        },
+        {
+          "heading": "Follow residents through connected services",
+          "text": "The next edition should compare neighbourhood experience within the municipal boundary while keeping regional responsibilities visible. Transport affordability needs actual uptake and service results after an implemented policy, not just a voted ambition. Josef-Areal needs separate planning, construction and occupancy milestones for each public use. Water analysis should preserve units, detection limits and sample locations before relating measurements to households. These requests would turn the profile into a more useful account of everyday provision. They do not assume that every city resident receives the same outcome or substitute provider-wide totals for a city-level assessment.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Actual transport-subsidy decisions and implementation, followed by uptake and service-quality results.",
+        "Separate Josef-Areal planning, construction and service-opening records.",
+        "Water measurements analysed with their sample dates, locations, units and detection limits."
+      ],
+      "related": [
+        {
+          "title": "Gotthard Base Tunnel",
+          "route": "/atlas/projects/gotthard-base-tunnel/"
+        },
+        {
+          "title": "Ceneri Base Tunnel",
+          "route": "/atlas/projects/ceneri-base-tunnel/"
+        }
+      ]
+    }
+  ]
+}

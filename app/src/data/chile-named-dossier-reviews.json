@@ -1,0 +1,62 @@
+{
+  "review_id": "CHILE-NAMED-ARTICLES-AI-REVIEW-2026-11-22",
+  "review_date": "2026-11-22",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision": "Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review": false,
+  "edition_sha256": "b7288624365107b833d77baf6339035313246b105e2e2cfcdfc28f61d1df8181",
+  "sources_sha256": "0dea9e9149243a899dc7f4d46b8d079afb355464c180f143fe3ce8c3a6f82b19",
+  "records": [
+    {
+      "record_id": "project-cerro-pabellon",
+      "sha256": "f04ef059cd41c569a0f7e8a8c3e8fc228536ff9b0c52dec524678d223ecd3db7",
+      "determination": "One geothermal plant across generating units. Gross original capacity, forecast expansion and the current operator rating remain separate. The malformed annual-energy label is quarantined. Grid-protection unit scope is not generation scope; the local hybrid supply is not counted as geothermal household delivery."
+    },
+    {
+      "record_id": "project-atacama-drinking-water-desalination",
+      "sha256": "531c735c7d22f0b4e26908b8f6d1e018a1d671b7e64459862a28a46938d9f58f",
+      "determination": "One ECONSSA drinking-water project, not similarly named industrial plants. First-stage supply, future capacity, test energy and long-term delivery remain distinct. Coastal inspection and a research visit are not final compliance findings or consent."
+    },
+    {
+      "record_id": "place-copiapo-municipality",
+      "sha256": "67224c583108d0e1ea46cf8788ec3953db476c68025ffdbbfcf5c8304670fb8f",
+      "determination": "One municipality, not province, basin or utility footprint. Census population and registry-based basic-service deprivation retain their dates and denominators. Water shares are not flow units; registration submissions are not completed transfer or restored river flow."
+    }
+  ],
+  "review_checks": [
+    "Thirteen primary-source texts inspected November 22 in America/Edmonton. Operator, regulator, grid-operator, ministry, university, statistical and municipal accounts retain their different roles.",
+    "Spanish interpretation was performed by the author; source-level language and terminology notes are displayed. No independent native-language review or new translated-reading count is claimed.",
+    "The three relevant PDFs were read as text at the stored locations. Screenshots returned Cache miss or no inspectable image; no visual verification is claimed.",
+    "The government inauguration page returned 403. Large grid-operator annual and company annual filings exceeded reader size limits. No findings were taken from unavailable documents or secondary search extracts.",
+    "The MOP visit header supplies an April 3 day and month without a year. A separate March 26 calendar entry is not its publication date. Upload paths do not establish publication dates.",
+    "All three articles have six substantive sections, a sourced chronology, explicit identity scope and three next-artifact requests. Unknown dates and unresolved output measures remain visible.",
+    "The three historical Chile acquisition packets gain additive links to the named accounts. Historical Phase 191/192 files and their outcome holds remain unchanged; no packet is silently rewritten.",
+    "Historical eligibility, Phase 119/61, prior reviewed cohorts, 34 readings and the Phase 60 ledger are retained. Author self-review is not independent review, operating-series admission or release acceptance."
+  ],
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/phase-61-project-conversion-registry.json",
+      "sha256": "9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"
+    },
+    {
+      "path": "src/data/phase-191-international-named-project-conversion-cohort.json",
+      "sha256": "0f57d402c94cf3ae867fedcbe0faaacf119264a559aee4ffe229dd84cf12ac71"
+    },
+    {
+      "path": "src/data/phase-192-global-place-systems-atlas.json",
+      "sha256": "2d0d9c46823e0716fb9f1ccda364b929f8172e5be1a0706fb1db17d1ef2d3ecc"
+    }
+  ],
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false
+}

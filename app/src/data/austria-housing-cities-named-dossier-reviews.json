@@ -1,0 +1,211 @@
+{
+  "review_id": "AUSTRIA-HOUSING-CITIES-NAMED-ARTICLES-AI-REVIEW-2026-11-22",
+  "review_date": "2026-11-22",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision": "Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review": false,
+  "edition_sha256": "a22548d9e0cd28133e9b8376167882d95375c297781e59eabde5c8fbfa3d26ae",
+  "sources_sha256": "981173f348818071082bbcd7eef69176259a7da9207335b2e3f42d519dcf4e62",
+  "records": [
+    {
+      "record_id": "project-seestadt-aspern",
+      "sha256": "a70b24ca10089446ca57ed7abfddfc2ae492b21d68939ef50273680efe21f9db",
+      "determination": "One phased development programme. Occupied housing and existing schools remain separate from 2030s district aims, the future vocational school and proposed thermal networks."
+    },
+    {
+      "record_id": "place-vienna",
+      "sha256": "b83d3cd5791ffee0b10bbe69dd981bc3d320d7aa713eda339280548c7a34b450",
+      "determination": "One municipal place. Housing stock, allocation, active renovation and completed renovation have different denominators. Water-main installation precedes release and commissioning."
+    },
+    {
+      "record_id": "place-graz",
+      "sha256": "d14a7442e279670f5bae320d07734d52cc17c0feace64703cc53bed816a02e86",
+      "determination": "One municipal place. Housing retention and twenty occupied homes are distinct; wastewater population equivalents and municipal-group electricity are not city resident/demand totals."
+    }
+  ],
+  "review_checks": [
+    "Identity screening found no Vienna/Wien, Graz or Seestadt/Aspern record in historical eligibility, Phase 119, Phase 191/192 or prior additive accounts. Count one development programme and two municipalities, with no reused acquisition docket.",
+    "Fifteen official German HTML records or explicitly scoped body segments were inspected November 22. Codex interpreted and self-reviewed the exact English articles; neither independent language review nor new translated-reading identities are claimed.",
+    "Three articles contain 615, 608 and 616 body words, eighteen sections and twelve chronology events. Five sections per article bind source IDs; the sixth is a labelled editorial evidence test.",
+    "Seestadt's 2030s residential and job/training aims are not current occupancy. Collective housing is one tenure form, not proof of affordability for every applicant. The 2014, 2015, 2017 and 2021 chronology retains year precision.",
+    "Existing education facilities are distinct from the future vocational school and its 7,500 planned students. Tree planting does not immediately create mature shade; standards, research and future thermal networks do not prove district-wide performance.",
+    "Vienna stock figures are rounded and undated. Allocation steps do not guarantee an immediate home; no individual eligibility assessment or application was performed.",
+    "Vienna's August active programme and completed-since-2020 totals are separate. The main programme paragraphs were used, not the detailed building examples or their calculated heating-demand values.",
+    "The March water notice describes maintenance and alternative supply. The November completion headline retains the body's flushing/release condition, December commissioning target and June 2027 surface-work target.",
+    "Graz's twenty Puntigam homes were occupied early April; April 24 is the report date. Reader comments are excluded. June 18, 2015 is the sales-suspension decision, not the page header's 2026 date.",
+    "The wastewater operator's spring/mid-2025 construction wording is conservatively represented as 2025. Population equivalents include industrial loading, and the plant serves surrounding municipalities. The 2029 capacity and modular fourth-stage provision are not current operating admission.",
+    "The December 2025 solar report separates completed from pending arrays and defines its target around House Graz demand. Forecast connection dates are not treated as observed commissioning.",
+    "Four wien.gv.at overview URLs returned 500. The shortened press URLs were unavailable, while the full indexed official URLs yielded the inspected bodies. These access limits were not bypassed. Search-discovered PDFs, linked legal instruments, maps, provider pages, application forms and live services were not inspected or tested.",
+    "All prior cohorts, 34 readings, dated evidence receipts and thirteen cycle identities are retained. Production acceptance, publication, launch and thirty-day stewardship remain separate."
+  ],
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/phase-61-project-conversion-registry.json",
+      "sha256": "9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"
+    },
+    {
+      "path": "src/data/phase-191-international-named-project-conversion-cohort.json",
+      "sha256": "0f57d402c94cf3ae867fedcbe0faaacf119264a559aee4ffe229dd84cf12ac71"
+    },
+    {
+      "path": "src/data/phase-192-global-place-systems-atlas.json",
+      "sha256": "2d0d9c46823e0716fb9f1ccda364b929f8172e5be1a0706fb1db17d1ef2d3ecc"
+    },
+    {
+      "path": "src/data/chile-named-dossiers.json",
+      "sha256": "2917226c524e13706985b9823e46f09ab4e273250c27179d0824bcf5cb53092e"
+    },
+    {
+      "path": "src/data/chile-named-dossier-reviews.json",
+      "sha256": "5884961882b9db3f88f9867e04b3a690067a5ee03312d4d669e4cca203a496b8"
+    },
+    {
+      "path": "src/data/phase-60-current-decisions.json",
+      "sha256": "3d39efa26c08b1964c13f212849569e00504ac2b191ccc256b5ad9fcab634b63"
+    },
+    {
+      "path": "src/data/ai-reviewed-translations.json",
+      "sha256": "73f2ee14df297b244f37ff38b6dd2df03b5681f41d85bf3cb3cf63078d4fa191"
+    },
+    {
+      "path": "src/data/brazil-named-dossiers.json",
+      "sha256": "7911e702eee06d075f35de4e4cf129bd93e7c2cae9f8560abc2a3519e67d8bcb"
+    },
+    {
+      "path": "src/data/brazil-named-dossier-reviews.json",
+      "sha256": "6fa3aabb7c255291d46a83395d60c5aff6972522377d06ac41bf862b1b03817c"
+    },
+    {
+      "path": "src/data/north-sea-named-dossiers.json",
+      "sha256": "4e6d20affdafd2cbb883f7fffadb85aa1f33b662df6339ae7ed9ac5f57e42ebf"
+    },
+    {
+      "path": "src/data/north-sea-named-dossier-reviews.json",
+      "sha256": "0de26a1e1355fafce36b742ccd6e4427bf065999082f8235a093c14818db3a3b"
+    },
+    {
+      "path": "src/data/stockholm-named-dossiers.json",
+      "sha256": "60c42bd8ff99214e47c75ee8641fb8fef7c7f9ef5bc7c010c35c83d11526b8b1"
+    },
+    {
+      "path": "src/data/stockholm-named-dossier-reviews.json",
+      "sha256": "9b87396e549828ad783c1a49abf14181795fe5f07303d9a4f5a821a5ac827111"
+    },
+    {
+      "path": "src/data/auckland-named-dossiers.json",
+      "sha256": "6f8a590b45adcc5f397d150be7d26d42d7de37c56a7c5ae524e2923f19578827"
+    },
+    {
+      "path": "src/data/auckland-named-dossier-reviews.json",
+      "sha256": "41d81c1fede5522e1933b66f662de5db427f204a661ecf3d22b2a03c97bf2e58"
+    },
+    {
+      "path": "src/data/tuas-named-dossiers.json",
+      "sha256": "d2511b08facd37d93126fa531ca851e24abfd8dc1f5f78c3706bf111a59499dc"
+    },
+    {
+      "path": "src/data/tuas-named-dossier-reviews.json",
+      "sha256": "8dfbb064064a41d46a8adba92498a5b34156db3a0a01e89a1cd58253b5e96c78"
+    },
+    {
+      "path": "src/data/port-cities-named-dossiers.json",
+      "sha256": "224442d22dbb3b870399fe38a31322e9275863314402a29eaeb8328c366ef761"
+    },
+    {
+      "path": "src/data/port-cities-named-dossier-reviews.json",
+      "sha256": "3835c7755399006026f9519d0504edfde3545b03c826eddc7db3de7b8ec5cb09"
+    },
+    {
+      "path": "src/data/urban-services-named-dossiers.json",
+      "sha256": "1408073e693ddfbd1c7eb2d9cfd4331c7fe98c79a2fbc503ddf173c453af6541"
+    },
+    {
+      "path": "src/data/urban-services-named-dossier-reviews.json",
+      "sha256": "013b96429dde3686d8be7a15acbd618328687b3e0cfcb2a42290d0132f440f3b"
+    },
+    {
+      "path": "src/data/nordic-cities-named-dossiers.json",
+      "sha256": "57c289bb9767a793aa9e87f2f0c2d2404b221a05319da58605b3fea7e9728a6f"
+    },
+    {
+      "path": "src/data/nordic-cities-named-dossier-reviews.json",
+      "sha256": "21105183dfdbc7e8c607c919f73d5c7937d68904e5c7575ae27030b339ea0fe6"
+    },
+    {
+      "path": "src/data/swiss-rail-city-named-dossiers.json",
+      "sha256": "afa2a53a55f137741f5254f97e989574e0de8c55fece0f5a8462181759ca63ac"
+    },
+    {
+      "path": "src/data/swiss-rail-city-named-dossier-reviews.json",
+      "sha256": "b3938fc972af8313f40bcbf0a190bd9345354f86b9b2d36172080a0bfb6f3b5f"
+    },
+    {
+      "path": "src/data/kenya-corridor-named-dossiers.json",
+      "sha256": "4ff32f30111d9a02fe1bc2cfcfdee3a2ed16a7ab046d473cca3c6c7a399c3529"
+    },
+    {
+      "path": "src/data/kenya-corridor-named-dossier-reviews.json",
+      "sha256": "3e6abc557ebb30481fe220fa3f0b8ad17e8eaec64e01b9d61133e2e2a0f0ebcd"
+    },
+    {
+      "path": "src/data/gauteng-metro-named-dossiers.json",
+      "sha256": "65bbae3b7d053398bd6ce2be79ea6c3aac6d786109091119caa5496211814743"
+    },
+    {
+      "path": "src/data/gauteng-metro-named-dossier-reviews.json",
+      "sha256": "3cead76be5d44087395a427f434556a6aa8c60053fe26e8515e67e01f137ff95"
+    },
+    {
+      "path": "src/data/malaysia-metro-named-dossiers.json",
+      "sha256": "3c5edee2bea417ec80748bce2f23254342695ba80d3f9994195bb53d05acff30"
+    },
+    {
+      "path": "src/data/malaysia-metro-named-dossier-reviews.json",
+      "sha256": "a5759554f99fbbb8dafd0e03a215103a4da3a82580cb29379a05e4798b0bdade"
+    },
+    {
+      "path": "src/data/colombia-rail-named-dossiers.json",
+      "sha256": "e154bab1a609ed0916d604bc4339f21852833489ec2d7641bf24dbffa4f7bd17"
+    },
+    {
+      "path": "src/data/colombia-rail-named-dossier-reviews.json",
+      "sha256": "72e672094e698ce51060b695e4ea8bc91c2c1b37d2fe86f8d0bd3d0d394a5616"
+    },
+    {
+      "path": "src/data/morocco-corridor-named-dossiers.json",
+      "sha256": "d2990a0e6dd79685f34e630a01884b4fa41fd57860c6ba8b9f27a1d46f3bd99c"
+    },
+    {
+      "path": "src/data/morocco-corridor-named-dossier-reviews.json",
+      "sha256": "1ae64dce4f1648fed78e9c5966f36faef728cde60571e4d03f62ff5716a11713"
+    },
+    {
+      "path": "src/data/portugal-water-cities-named-dossiers.json",
+      "sha256": "eb32268e2e94f1783d6c6f4f086a08625533ea6d56563aae579d728ca04599b1"
+    },
+    {
+      "path": "src/data/portugal-water-cities-named-dossier-reviews.json",
+      "sha256": "05941cd41836baaf1f526a5d0e66577b4ef2c14b4ce81092b46867ea24c30d34"
+    },
+    {
+      "path": "src/data/italy-rail-lagoon-named-dossiers.json",
+      "sha256": "1ff6f3834a647fc31fb707d34e761fedc26798f77a41b13adb236976cb2b974f"
+    },
+    {
+      "path": "src/data/italy-rail-lagoon-named-dossier-reviews.json",
+      "sha256": "d7bcac70775979156305bbc0cc9ff4ee8f7a3b83e1bd4045c8722f3e1f68d22b"
+    }
+  ],
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false
+}

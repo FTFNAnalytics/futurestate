@@ -13,7 +13,8 @@ export function projectNamedFileDesk(record,asOfDate=projectChecksAsOfDate){
   const receipt=latestProjectCheckFor(record.named_file_id,asOfDate);
   if(!receipt)return record;
   return {...record,receipt_id:receipt.receipt_id,decision_date:receipt.checked_date,
-    source_checked_date:receipt.checked_date,decision_status:'no_material_change',
+    source_checked_date:receipt.checked_date,decision_status:receipt.decision_status??'no_material_change',
+    ...(receipt.receipt_type?{receipt_type:receipt.receipt_type}:{}),
     next_check_date:receipt.next_check_date,exact_next_artifact:receipt.next_action,
     bounded_finding:receipt.bounded_finding,dated_project_checks:projectChecksFor(record.named_file_id,asOfDate),
     counts_as_cycle_decision:false,git_backed_release_status:'held'};

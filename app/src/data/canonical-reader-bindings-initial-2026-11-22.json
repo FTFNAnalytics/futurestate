@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "review_id": "CANONICAL-READER-BINDINGS-2026-11-22",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "review_date": "2026-11-22",
+  "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+  "decision": "Accept exact reviewed narratives on three explicitly bound canonical Atlas pages",
+  "human_review_claimed": false,
+  "fresh_external_source_check": false,
+  "new_identity_count": 0,
+  "operating_outcomes_admitted": false,
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false,
+  "boundary": "Acceptance covers the exact dated narrative and its authorised presentation, not all historical Atlas material, current external status or production rendering. Historical data and primary review routes remain intact.",
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/phase-205-216-current-editorial.json",
+      "sha256": "e2fd76e4b53e638523696fb47ed4ae04bc5d073d3b22e6731e02603078d1f230"
+    },
+    {
+      "path": "src/data/selected-article-ai-reviews.json",
+      "sha256": "455782a8b693612fe806f8f921292570762a751445748529c17e305bac7cc3a0"
+    },
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/build-review-policy.json",
+      "sha256": "7d929a7cd0a4904338f74ada8645c038703fc7bdffc383d9dd4d9d48a35d5d30"
+    }
+  ],
+  "records": [
+    {
+      "binding_id": "CANONICAL-READER-119-PROJECT-002",
+      "canonical_id": "casebook-toronto-24-254930",
+      "atlas_record_id": "119-PROJECT-002",
+      "target_route": "/atlas/projects/toronto-24-254930/",
+      "article_record_id": "191-PROJECT-001",
+      "article_route": "/reference/international-projects/toronto-24-254930/",
+      "article_title": "Toronto 24 254930: adoption and enactment remain separate questions",
+      "article_sha256": "b3ad31442d6feed5e5f6c0138b3378204bff94dac390ad575a27ea80bd45cefa",
+      "article_review_sha256": "70e82625437dfc313a95bb09c123718d0c4bcae16788e9b91ef7870c2742979a",
+      "original_review_date": "2026-09-27",
+      "atlas_record_sha256": "797db4a14b4bb8db3cd37c148711b643527c8cc22aae4d2906e7cb8d3da75af4",
+      "portfolio_decision_sha256": "49a2df90c8b7a294be85b92c2a9be3089f7da3c4ce517e0c1d809d9c21f80827",
+      "presentation_sha256": "ce78ed7a8327f08dfe81c6195544d7e4527dbc81827eed6c7c1f431d491dc9fc",
+      "section_count": 6,
+      "nested_paragraph_count": 6,
+      "decision": "Accept this exact dated narrative at the stated canonical route",
+      "findings": [
+        "The exact application number and eight-property scope agree with the canonical Toronto identity. Council adoption, withheld bills, enactment, permit and occupancy remain distinct.",
+        "The September 21 search and portal discrepancies remain dated history. The later saved project-check notices retain their own inspection dates and appointments; this integration performs no new project check."
+      ],
+      "current_status_boundary": "The September narrative does not supersede subsequent Toronto receipts or their appointments. See the separate dated project checks above.",
+      "historical_atlas_handling": "Keep the earlier Atlas account and evidence links in a labelled native details element; do not delete or approve that content by association."
+    },
+    {
+      "binding_id": "CANONICAL-READER-119-PROJECT-012",
+      "canonical_id": "casebook-hornsdale-power-reserve",
+      "atlas_record_id": "119-PROJECT-012",
+      "target_route": "/atlas/projects/hornsdale-power-reserve/",
+      "article_record_id": "191-PROJECT-003",
+      "article_route": "/reference/international-projects/hornsdale-power-reserve/",
+      "article_title": "Hornsdale Power Reserve: operating evidence without an inherited outcome score",
+      "article_sha256": "c7e09d03c942772b640585b4f50d6834f86c2224819c9a60616a505adf70c359",
+      "article_review_sha256": "5e8f4ab17628e70e4082485c0e09ccff8b8927f8410b2e061a8d3404941b775d",
+      "original_review_date": "2026-09-27",
+      "atlas_record_sha256": "f83af3edcccd19d9b32795bef16ea449f0edeb9b7bd4a18ff8ba01d95fda5fc6",
+      "portfolio_decision_sha256": "2e49e72e40f0f94f2bb9562dad9bec9197612ed7e735f5755c4c9fb28f5896ad",
+      "presentation_sha256": "68d703104427edc269a18a5516dd19e5e2572bca601658bef199c93b33e10248",
+      "section_count": 6,
+      "nested_paragraph_count": 6,
+      "decision": "Accept this exact dated narrative at the stated canonical route",
+      "findings": [
+        "Hornsdale and its expansion remain one named asset; service configurations and observed periods stay separate.",
+        "The invalid 31/11/2023 source date, selected-page access limits and missing half-year denominator remain visible. No current configuration, savings or availability claim is introduced."
+      ],
+      "current_status_boundary": "The dated narrative is not a current operating audit. Source publication, event and inspection dates remain distinct.",
+      "historical_atlas_handling": "Keep the earlier Atlas account and evidence links in a labelled native details element; do not delete or approve that content by association."
+    },
+    {
+      "binding_id": "CANONICAL-READER-119-PROJECT-013",
+      "canonical_id": "casebook-victoria-big-battery",
+      "atlas_record_id": "119-PROJECT-013",
+      "target_route": "/atlas/projects/victoria-big-battery/",
+      "article_record_id": "191-PROJECT-004",
+      "article_route": "/reference/international-projects/victoria-big-battery/",
+      "article_title": "Victorian Big Battery: operational service and a commissioning fire both belong in the record",
+      "article_sha256": "435fe44071fb1777a4d5041511a303e7deee31e21b894957ec91085307d41181",
+      "article_review_sha256": "1e682dc28cf70afd9f9278c1c3d3b93a573c35806c964a8e367cdd6614738829",
+      "original_review_date": "2026-09-27",
+      "atlas_record_sha256": "cfe5dd3780b9d690790c46baa45716b66cf6d0102d63b7bed9ae5ec0ddb08158",
+      "portfolio_decision_sha256": "c949acf28dcf8c3c8516c7a2cd5e1cd335416457fd8801110707eef8e44f3e52",
+      "presentation_sha256": "d931798c03286838f725447edd199dbb6ebc8f0d41333d6d76ecbb4367d3921d",
+      "section_count": 6,
+      "nested_paragraph_count": 6,
+      "decision": "Accept this exact dated narrative at the stated canonical route",
+      "findings": [
+        "Victoria and Victorian Big Battery refer to one Moorabool/Geelong asset. Power, energy and reserved-service quantities remain non-additive.",
+        "The commissioning fire, conditional regulator position and later service milestone remain separate. Text-only regulator access is not upgraded, and no 2026 safety or reliability verdict is introduced."
+      ],
+      "current_status_boundary": "The dated narrative is not a current operating audit. Source publication, event and inspection dates remain distinct.",
+      "historical_atlas_handling": "Keep the earlier Atlas account and evidence links in a labelled native details element; do not delete or approve that content by association."
+    }
+  ]
+}

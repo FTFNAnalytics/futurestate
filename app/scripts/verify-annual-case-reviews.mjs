@@ -5,7 +5,7 @@ import {join} from 'node:path';
 import {parse} from 'parse5';
 import {annualCaseReviews, annualReviewContexts, annualCaseOverview, annualCaseTitle, annualReviewDate, annualReviewVersions} from '../src/lib/annual-case-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
-import {annualAiReviewFor} from '../src/lib/annual-ai-reviews.mjs';
+import {annualAiReviewFor,annualAiAvailableDate} from '../src/lib/annual-ai-reviews.mjs';
 import history from '../src/data/phase-204-reader-completion.json' with {type:'json'};
 import originalReport from '../src/data/phase-203-state-of-future-systems-2026.json' with {type:'json'};
 import operations from '../src/data/phase-207-current-operations.json' with {type:'json'};
@@ -111,7 +111,7 @@ for (const article of history.records) {
   const catalogIndex = readerCatalog.findIndex(r => r.id === article.record_id);
   const catalogPage = parse(await read(`/reference/explore/${Math.floor(catalogIndex / 40) + 1}/index.html`));
   const [catalogCard] = all(catalogPage, n => n.tagName === 'article' && links(n).includes(route));
-  assert(catalogCard && text(catalogCard).includes(ai?ai.decision.review_date:annualReviewDate(review)), 'Catalog must show this record’s current review date');
+  assert(catalogCard && text(catalogCard).includes(ai?annualAiAvailableDate(ai.decision.record_id):annualReviewDate(review)), 'Catalog must show this record’s current presentation date');
   assert.equal(text(all(catalogCard,n=>n.tagName==='h2'||n.tagName==='h3')[0]),title,'Catalog card current title mismatch');
   assert(hrefs.includes(annualCaseReviews.export_route));
   assert(hrefs.includes(`/updates/${review.update_id ?? annualCaseReviews.update_id}/`));

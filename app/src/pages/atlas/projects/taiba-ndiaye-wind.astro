@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import SenegalMobilityEnergyDossierArticle from '../../../components/review/SenegalMobilityEnergyDossierArticle.astro';
+import {senegalMobilityEnergyDossiers} from '../../../lib/senegal-mobility-energy-named-dossiers.mjs';
+const record=senegalMobilityEnergyDossiers.records.find(r=>r.record_id==='project-taiba-ndiaye-wind')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><SenegalMobilityEnergyDossierArticle record={record}/></BaseLayout>

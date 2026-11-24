@@ -1,6 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 import {projectResearchDocument} from './reference-attribution.mjs';
 import { currentEvidenceLedger } from './current-evidence.mjs';
+import {gapReviewsForRecord} from './current-gap-reviews.mjs';
 import {projectSignal,signalClassification} from './signal-classification.mjs';
 import currentOperations from '../data/phase-207-current-operations.json' with {type:'json'};
 import {backlogReviewsFor} from './backlog-research.mjs';
@@ -47,6 +48,7 @@ export function serializePublicSource(source: CollectionEntry<"sources">) {
     ,dated_project_checks: projectChecks(data.id)
     ,bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id})
     ,dated_review_receipts: currentEvidenceLedger.receipts.filter(receipt => receipt.checked_source_ids.includes(data.id))
+    ,dated_acceptance_reviews: gapReviewsForRecord(data.id)
   };
 }
 
@@ -76,6 +78,7 @@ export function serializePublicSignal(signal: CollectionEntry<"signals">) {
     path: `/signals/${data.slug}/`,
     editorial_classification: signalClassification(data.id),
     dated_signal_review: goldenMarsSignalContext(data.id),
+    dated_acceptance_reviews: gapReviewsForRecord(data.id),
     dated_project_checks: projectChecks(data.id),
     bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id}),
     record_status: data.record_status,
@@ -193,11 +196,13 @@ export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPat
 export function publicDatasetResponse(
   dataset: "sources" | "topics" | "signals" | "research" | "pathways" | "evidence_queue" | "operating_cycle" | "project_conversion" | "conversion_events" | "conversion_gates" | "conversion_stage_matrix" | "qualification_packets" | "evidence_return_envelopes" | "phase_60c_editorial_desk" | "compatible_series_outcome_cohorts" | "measurement_specifications" | "observation_review_series_admission" | "longitudinal_panels_outcome_claims" | "outcome_evidence_counterfactual_designs" | "analysis_execution_result_adjudication",
   recordScope: string,
-  records: unknown[]
+  records: unknown[],
+  context: { related_cycle_reviews?: unknown[] } = {}
 ): Response {
   return new Response(
     JSON.stringify(
       {
+        ...context,
         schema_version: PUBLIC_DATA_SCHEMA_VERSION,
         dataset,
         record_scope: recordScope,

@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-10-28",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Discovery Technologies translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-033",
+  "source_record_sha256": "13b1814bcc6cbd40ce4de77569b72ccc5c7611bd724403c73c892275976855a8",
+  "source_to_contract_mapping": "Translate the September 10 plain-language reader; preserve the different original canonical-contract digest and source list as historical provenance. Do not substitute the older specification for the actual English reading.",
+  "checks": [
+    "Compared the complete English title, overview and all six sections with both complete translations.",
+    "Preserved the instrument, dataset, scientific task and receiving institution as distinct objects; a functioning platform does not validate every derived result.",
+    "Preserved NISAR public access, METIS bounded beta, NSF infrastructure awards and the AI-Materials effort as different evidence types, without adding an institution, deployment or outcome claim.",
+    "Retained the explanations of metrology and calibration, coverage, processing level, ground comparison, uncertainty and model validation.",
+    "Preserved workflow acceptance, repeated use, earlier method, acquisition/preparation/interpretation effort, unsuccessful use and maintenance interruptions.",
+    "Retained the comparison questions covering accuracy, reproducibility, speed, access and cost, predefined measures, independent replication, processing-version changes and inconclusive work.",
+    "Retained the next-artifact requirement: specific platform/dataset, prior method, validated product, user group, repeated measure, costs, maintenance, uncertainty and version history.",
+    "Preserved September 1 evidence cutoff and September 10 English authorship; October 28 is the actual translation/AI-review date, not a source-check date.",
+    "Verified that both files retain all eight original source IDs and exact URLs, with source titles in English. No external link was freshly retrieved."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Métrologie and étalonnage retain the measurement definitions without converting data access into certification. Subventions denotes funded awards rather than scientific prizes. Version bêta de portée limitée preserves METIS's bounded stage; établissement utilisateur and processus de travail preserve actual institutional use. Exactitude, reproducibility and unsuccessful or inconclusive work remain separate tests."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Metrología, calibración and nivel de procesamiento retain the measurement distinctions. Subvenciones means funding rather than awards for proven success. Institución usuaria, flujo de trabajo and uso repetido preserve the institutional sequence. Exactitud, incertidumbre and trabajos fallidos o no concluyentes avoid upgrading accessible data or funded research into validated discovery."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/discovery-technologies-fr-CA-ai-reviewed.md",
+      "file_sha256": "4c3e29608b29401d16c60cd02865b2d294f800f9b7c6ca8fdee9a986afb712a1",
+      "proposed_contract_id": "202-EDITION-035",
+      "historical_contract_sha256": "823c21131c66f6612f2d2efbfae6d7a8c013eb5633c4cc2c4176281ccfd02501"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/discovery-technologies-es-419-ai-reviewed.md",
+      "file_sha256": "a15a873e692d90ae220675978e6cbdd41e1832d8a69cadc13a976ba0e45baf4f",
+      "proposed_contract_id": "202-EDITION-036",
+      "historical_contract_sha256": "29f838a556cf63d678cc07207c3b43c4ec3926619ccbfd9ddb4e3a560e4cf9b9"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-nasa-nisar-public-data-july-2026",
+      "name": "NASA NISAR Public Science Data Release, July 2026",
+      "url": "https://www.jpl.nasa.gov/news/us-india-satellite-delivers-data-reveals-hummingbird-in-antarctica/",
+      "path": "app/src/content/sources/source-nasa-nisar-public-data-july-2026.json",
+      "sha256": "aaeffd31491668d38ef34eacbdb4fd5be7e675c242d55aebff1c6bb5095c4334"
+    },
+    {
+      "id": "source-nasa-earthdata-cmr-api",
+      "name": "NASA Earthdata Common Metadata Repository API",
+      "url": "https://cmr.earthdata.nasa.gov/search/site/docs/search/api.html",
+      "path": "app/src/content/sources/source-nasa-earthdata-cmr-api.json",
+      "sha256": "144291d2073fe7307889c41fb87fbd3e727bcc0f7d40ff2d2cf90b7f8a040c0a"
+    },
+    {
+      "id": "source-nist-semiconductor-metrology-program",
+      "name": "NIST Semiconductor Metrology Program",
+      "url": "https://www.nist.gov/topics/semiconductors",
+      "path": "app/src/content/sources/source-nist-semiconductor-metrology-program.json",
+      "sha256": "0fd88d33ebcc73282311f976964dc649c9ae344441b5716d44f4a02c82520c50"
+    },
+    {
+      "id": "source-nist-metis-semiconductor-data-exchange",
+      "name": "NIST METIS Semiconductor Metrology Data Exchange",
+      "url": "https://www.nist.gov/programs-projects/metis",
+      "path": "app/src/content/sources/source-nist-metis-semiconductor-data-exchange.json",
+      "sha256": "d698c1d5078731d999047110e21142a78110cd766654cd7bba31d062c234bff7"
+    },
+    {
+      "id": "source-nsf-2026-idss-awards",
+      "name": "NSF 2026 Integrated Data Systems and Services Awards",
+      "url": "https://www.nsf.gov/news/nsf-announces-83m-investment-integrated-data-systems",
+      "path": "app/src/content/sources/source-nsf-2026-idss-awards.json",
+      "sha256": "cfa7567d8987175e4ed488fb178f6097e146c01f81193938b811d5644b7c1df3"
+    },
+    {
+      "id": "source-nsf-2026-nairr-progress",
+      "name": "NSF NAIRR Two-Year Progress Update",
+      "url": "https://www.nsf.gov/focus-areas/ai/nairr",
+      "path": "app/src/content/sources/source-nsf-2026-nairr-progress.json",
+      "sha256": "db481880109214e892e04ffb1ac94d40e6abb7229443bab6d05b1d95c32ac30f"
+    },
+    {
+      "id": "source-nsf-award-search-api",
+      "name": "NSF Award Search API",
+      "url": "https://resources.research.gov/common/webapi/awardapisearch-v1.htm",
+      "path": "app/src/content/sources/source-nsf-award-search-api.json",
+      "sha256": "66e1af5af665ff2d072796a19a627ee70449b9fdabadc0951d1081650c7458cb"
+    },
+    {
+      "id": "source-nist-aria-pilot-evaluation-2025",
+      "name": "NIST ARIA 0.1 Pilot Evaluation Report",
+      "url": "https://www.nist.gov/publications/assessing-risks-and-impacts-ai-aria-pilot-evaluation-report",
+      "path": "app/src/content/sources/source-nist-aria-pilot-evaluation-2025.json",
+      "sha256": "91c13eaeaa68df7842163caa6e3926c17bd5f0417d5f543f5fa956c03778bd33"
+    }
+  ],
+  "integration_state": "Complete local texts assessed for a subsequent application batch. Not integrated and not counted among the sixteen current translated reading pages.",
+  "boundary": "AI linguistic-fidelity review of retained English content only; no independent human review, fresh source fact-check, accessibility certification, measurement admission or publication authority. Keep later source context separate when integrating. Retain the September 27 ten-translation annual-review snapshot and all prior translated records."
+}

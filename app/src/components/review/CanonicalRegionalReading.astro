@@ -1,0 +1,20 @@
+---
+import {canonicalRegionalReadings as edition,canonicalRegionalReview,regionalReadingSources} from '../../lib/canonical-regional-readings.mjs';
+interface Props {record:(typeof edition.records)[number]}
+const {record}=Astro.props;
+const sources=regionalReadingSources(record);
+const decision=canonicalRegionalReview.records.find(r=>r.record_id===record.record_id)!;
+---
+<article class="page-section regional-reading" data-canonical-regional-reading={record.record_id}>
+ <div class="eyebrow">Dated regional synthesis · {edition.review_date}</div>
+ <h2>{record.title}</h2><p class="lede">{record.answer}</p>
+ <p data-regional-reading-review>Written and AI self-reviewed by Codex on {edition.review_date} under the <a href="/method/editorial-review/">owner-authorized review policy</a>. This reuses the saved inspections below; no new external source check or independent review is claimed.</p>
+ <section data-regional-reading-scope><h3>Regional boundary</h3><p>{record.scope}</p><p>This is the same existing eligible place, not an additional identity. No place-level stage, project-stage change, safety classification or operating outcome is admitted.</p></section>
+ {record.sections.map((section,index)=><section data-regional-reading-section={index}><div class="eyebrow">{section.type}</div><h3>{section.heading}</h3><p>{section.text}</p>{section.source_ids.length>0&&<p class="citations">Retained source notes: {section.source_ids.map((id,i)=><>{i>0?' · ':''}<a href={`#regional-source-${id}`}>{sources.find(s=>s.id===id)!.title}</a></>)}</p>}</section>)}
+ <aside data-regional-no-cycle><h3>Evidence questions, not a new cycle gate</h3><p>This region has no assigned Phase 60 gate. The reading creates no evidence receipt, scheduled inspection or agency publication forecast. Linked projects retain their own obligations and dates.</p></aside>
+ <section><h3>Next decisive evidence</h3><ul>{record.next_artifacts.map(item=><li>{item}</li>)}</ul></section>
+ <section><h3>Retained source notes</h3><p>The November 22 synthesis date is not a new retrieval date. Publication, reporting, effective and inspection dates remain distinct. An unavailable document or uninspected attachment does not establish nonexistence.</p><ol>{sources.map(source=><li id={`regional-source-${source.id}`} data-regional-reading-source={source.id}><p><a href={source.url}>{source.title}</a> · {source.publisher}</p><p>{source.role} · inspected {source.inspected_date}</p><p>{source.boundary}</p><details><summary>Location, dates and inspection limits</summary><p>{source.locator}</p><p>{source.access}</p>{source.dates.length>0&&<ul>{source.dates.map(date=><li>{date.label}: {date.value}</li>)}</ul>}<p>{source.provenance}. This is a retained-source binding, not a new Phase 60 receipt.</p></details></li>)}</ol></section>
+ <details data-regional-reading-assessment={record.record_id}><summary>Exact-version AI assessment</summary><p>{decision.decision}</p><ul>{decision.findings.map(f=><li>{f}</li>)}</ul><p>Assessed text SHA-256: <code>{decision.sha256}</code></p><a href="/data/build-decisions.json">Download the reading, exact retained inputs and assessment</a></details>
+ <nav aria-label="Related and historical regional accounts"><h3>Related readings</h3><ul>{record.related.map(link=><li><a href={link.route}>{link.title}</a></li>)}<li><a href={record.prior_route}>Earlier regional profile and its retained evidence</a></li></ul><p>These linked records keep their own scopes and review dates.</p></nav>
+</article>
+<style>.regional-reading{max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere}section,aside,nav{margin-block:1.75rem}.citations{font-size:.9rem}li{margin-block:.6rem}summary{cursor:pointer}summary:focus-visible{outline:3px solid currentColor;outline-offset:4px}code{overflow-wrap:anywhere}</style>

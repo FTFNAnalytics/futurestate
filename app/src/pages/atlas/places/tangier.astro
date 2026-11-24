@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import MoroccoCorridorDossierArticle from '../../../components/review/MoroccoCorridorDossierArticle.astro';
+import {moroccoCorridorDossiers} from '../../../lib/morocco-corridor-named-dossiers.mjs';
+const record=moroccoCorridorDossiers.records.find(r=>r.record_id==='place-tangier')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><MoroccoCorridorDossierArticle record={record}/></BaseLayout>

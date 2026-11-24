@@ -10,11 +10,17 @@ import chronology from "../../../data/phase-62-conversion-event-ledgers.json";
 import gates from "../../../data/phase-63-conversion-gate-calendar.json";
 import matrix from "../../../data/phase-64-conversion-stage-matrix.json";
 import {projectNamedFile} from '../../../lib/current-evidence.mjs';
+import {canonicalProjectRefreshes} from '../../../lib/canonical-project-refreshes.mjs';
+import {canonicalAnnualBindings} from '../../../lib/canonical-annual-reader-bindings.mjs';
+import {nevadaComparison,nevadaComparisonForPriorRoute} from '../../../lib/nevada-project-comparison.mjs';
 
 export function getStaticPaths() {
   return program.casebooks.map((record) => ({ params: { slug: record.slug }, props: { fileId: record.file_id } }));
 }
 const { fileId } = Astro.props;
+const refreshedAccount=canonicalProjectRefreshes.records.find(r=>r.related[0]?.route===Astro.url.pathname);
+const annualAccount=canonicalAnnualBindings.records.find(r=>r.prior_casebook_route===Astro.url.pathname);
+const comparisonAccount=nevadaComparisonForPriorRoute(Astro.url.pathname);
 const editorial = program.casebooks.find((item) => item.file_id === fileId)!;
 const project = projectNamedFile(projects.records.find((item) => item.file_id === fileId)!);
 const events = chronology.events.filter((item) => item.file_id === fileId).sort((a, b) => a.sequence - b.sequence);
@@ -30,7 +36,10 @@ const briefing = briefings.find((item) => item.data.id === project.canonical_bri
 
 <BaseLayout title={`${project.title} | FTFN casebook`} description={editorial.editorial_question}>
   <ReviewHeader eyebrow={project.kind === "local_project" ? "Project casebook" : "Adoption casebook"} title={project.title} summary={editorial.editorial_question} phase={104} />
+  {comparisonAccount&&<aside class="page-section" data-nevada-comparison-link={comparisonAccount.record_id}><h2>Later project comparison</h2><p><a href={comparisonAccount.route}>{comparisonAccount.title}</a> — authored and AI self-reviewed {nevadaComparison.review_date} from retained {nevadaComparison.source_inspection_date} inspections. This excluded parent adds no eligible project; the two named dossiers and this earlier governed file retain their separate scopes.</p></aside>}
+  {refreshedAccount&&<aside class="page-section" data-later-project-account={refreshedAccount.record_id}><h2>Later dated reading</h2><p><a href={refreshedAccount.route}>{refreshedAccount.title}</a> — authored and AI self-reviewed {canonicalProjectRefreshes.review_date}. This earlier casebook retains its governed chronology and stage; the later account does not advance either.</p></aside>}
   <section class="page-section briefing-band">
+    {annualAccount&&<aside data-canonical-annual-casebook={annualAccount.binding_id}><h2>Dated annual reading on the Atlas</h2><p><a href={annualAccount.target_route}>{annualAccount.article_title}</a> — assessed {annualAccount.original_review_date}, connected to the Atlas {canonicalAnnualBindings.integration_date}. {annualAccount.identity_boundary} The original annual reading, this casebook and later evidence checks retain their own dates and scopes.</p></aside>}
     <div class="briefing-band__copy"><div class="eyebrow">Current stage</div><h2>{project.current_stage}</h2><p>{project.established}</p>{briefing && <a class="inline-link" href={`/briefings/${briefing.data.slug}/`}>Read the canonical briefing</a>}</div>
     <article class="record-card record-card--featured"><div class="eyebrow">Still unresolved</div><p>{project.unresolved}</p><div class="meta-row"><MetaPill label={gate.gate_mode} tone="review" />{project.next_check_date && <MetaPill label={`Check ${project.next_check_date}`} />}</div></article>
   </section>

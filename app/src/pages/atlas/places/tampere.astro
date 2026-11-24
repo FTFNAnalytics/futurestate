@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import FinlandMetroCitiesDossierArticle from '../../../components/review/FinlandMetroCitiesDossierArticle.astro';
+import {finlandMetroCitiesDossiers} from '../../../lib/finland-metro-cities-named-dossiers.mjs';
+const record=finlandMetroCitiesDossiers.records.find(r=>r.record_id==='place-tampere')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><FinlandMetroCitiesDossierArticle record={record}/></BaseLayout>

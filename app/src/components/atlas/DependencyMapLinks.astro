@@ -15,5 +15,5 @@ if(kind==='briefing'&&!records)throw new Error(`Missing briefing relationship ar
 {records&&records.length>0&&<section class="page-section" data-reading-relationships={shelf}>
   <h2>{title}</h2>
   <p>{description}</p>
-  <PagedShelf records={records} kind={shelf} limit={20} headingLevel={3}/>
+  <PagedShelf records={records} kind={shelf} limit={10} headingLevel={3}/>
 </section>}

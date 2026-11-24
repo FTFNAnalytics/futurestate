@@ -8,10 +8,15 @@ import {verifyUpdateArchive,decodeHtmlText} from './lib/verify-update-archive.mj
 import {atlasShelfRelations,atlasShelfKey} from '../src/lib/atlas-shelf-relations.mjs';
 import {readingShelfRelations} from '../src/lib/reading-shelf-relations.mjs';
 import {countInitialResultCards} from './lib/count-initial-result-cards.mjs';
+import {calendarDay} from '../src/lib/source-currency.mjs';
+import {sourceReviewAsOfDate} from '../src/lib/sourceFreshness.ts';
 const root=fileURLToPath(new URL('../',import.meta.url)),read=path=>readFile(join(root,path),'utf8');
 const input=await readShelfInputs(root),ledger=JSON.parse(await read('src/data/phase-206-editorial-classification.json'));
 const operations=JSON.parse(await read('src/data/phase-207-current-operations.json'));
-const expected=expectedShelfMembership(input,ledger),data=createShelfData(input,ledger,operations),sitemap=await read('dist/sitemap.xml');
+const sourceExport=JSON.parse(await read('dist/data/shelves/sources.json'));
+const outputDate=sourceExport.metadata_as_of_date;
+assert(calendarDay(outputDate)!==null && outputDate<=sourceReviewAsOfDate,'Source queue needs a real nonfuture calculation date');
+const expected=expectedShelfMembership(input,ledger),data=createShelfData(input,ledger,operations,outputDate),sitemap=await read('dist/sitemap.xml');
 const budget=(html,route)=>{assert(countInitialResultCards(html)<=50,`${route}: initial results exceed 50`);assert(Buffer.byteLength(html)<200000,`${route}: HTML exceeds 200 kB`);};
 const stagedRoutes=new Map([
  ...input.signals.map(r=>[`/signals/${r.slug}/`,r]),...input.briefings.map(r=>[`/briefings/${r.slug}/`,r]),...input.dependencyMaps.map(r=>[`/atlas/dependency-maps/${r.slug}/`,r]),...input.readerPathways.map(r=>[`/pathways/${r.slug}/`,r])
@@ -22,7 +27,9 @@ const indexing=(html,route)=>{
  if(record)assert(html.includes(`<meta name="robots" content="${indexed?'index':'noindex'}, follow"`),`${route}: retained indexing boundary`);
 };
 for(const[kind,ids]of Object.entries(expected)){
-  const exported=JSON.parse(await read(`dist/data/shelves/${kind}.json`)).records;
+  const envelope=JSON.parse(await read(`dist/data/shelves/${kind}.json`));
+  assert.equal(envelope.metadata_as_of_date,outputDate,`${kind}: one calculation date across the exported shelves`);
+  const exported=envelope.records;
   const expectedRows=data.shelves[kind];
   assert.equal(exported.length,expectedRows.length,`${kind}: rendered membership count`);
   for(const [index,row] of expectedRows.entries())assert.deepEqual(exported[index],row,`${kind}/${row.id}: rendered search metadata and ordering`);
@@ -35,7 +42,17 @@ for(const[kind,ids]of Object.entries(expected)){
   assert.deepEqual(seen.sort(),[...ids].sort(),`${kind}: every member exactly once across static pages`);
 }
 for(const route of ['/briefings/','/updates/','/atlas/source-monitor/',...input.topics.map(t=>`/atlas/topics/${t.slug}/`),...input.localSystems.map(s=>`/atlas/local-systems/${s.slug}/`),...input.readerPathways.map(p=>`/pathways/${p.slug}/`)]){const html=await read(`dist${route}index.html`);budget(html,route);if(route.startsWith('/pathways/'))indexing(html,route);}
-for(const route of ['/atlas/','/atlas/sources/','/atlas/source-coverage/'])budget(await read(`dist${route}index.html`),route);
+for(const route of ['/atlas/','/atlas/sources/','/atlas/source-coverage/','/atlas/source-monitor/']){
+ const html=await read(`dist${route}index.html`);budget(html,route);
+ assert(html.includes(`data-source-review-as-of="${outputDate}"`),`${route}: calculation date differs from queue export`);
+}
+for(const source of input.sources){
+ const route=`/atlas/sources/${source.id}/`,html=await read(`dist${route}index.html`);
+ assert(html.includes(`data-source-review-as-of="${outputDate}"`),`${route}: source profile uses a different clock`);
+ const row=data.sourceRows.find(row=>row.source.id===source.id);
+ assert(decodeHtmlText(html).includes(row.freshness.note),`${route}: source freshness differs from its queue card`);
+ assert(decodeHtmlText(html).includes(source.last_checked_date),`${route}: retained inspection date missing`);
+}
 for(const archive of atlasShelfRelations(input)){
  const html=await read(`dist${archive.route}index.html`);budget(html,archive.route);assert(html.includes(`data-paged-shelf="${archive.key}"`));indexing(html,archive.route);
  if(!archive.key.startsWith('atlas-maps-'))assert(html.includes(`data-atlas-relationships="${archive.key}"`));

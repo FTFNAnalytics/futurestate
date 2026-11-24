@@ -151,7 +151,7 @@ function getConfidenceTone(confidence: DependencyMapLink["confidence"]) {
     <h2>Graph nodes and qualitative relationships</h2>
     <p>{distinctNodeIds} distinct node IDs and {distinctLinkRows} distinct complete link rows. Repeated identical rows remain visible for audit and are not additional entities or evidence. Conflicting reused IDs are marked without choosing an endpoint.</p>
     <p>Every original node, directed link, note and confidence label remains available in this paginated archive. Filter by content kind to read nodes or relationships. Historical map framing is not new evidence or inferred causality.</p>
-    <PagedShelf records={graphRecords} kind={graphKind} limit={20} headingLevel={3}/>
+    <PagedShelf records={graphRecords} kind={graphKind} limit={10} headingLevel={3}/>
   </section>
 
   <section class="page-section">

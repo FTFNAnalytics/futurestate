@@ -6,6 +6,7 @@ import MetaPill from "../../../components/ui/MetaPill.astro";
 import { formatDate, getEvidenceGapTone } from "../../../lib/editorial";
 import GoldenMarsReviewNotice from '../../../components/review/GoldenMarsReviewNotice.astro';
 import {goldenMarsRecordReview} from '../../../lib/golden-mars-wider-review.mjs';
+import {latestGapReviewFor,projectGapReviewData} from '../../../lib/current-gap-reviews.mjs';
 
 export async function getStaticPaths() {
   const evidenceGaps = await getCollection("evidenceGaps");
@@ -17,7 +18,8 @@ export async function getStaticPaths() {
 }
 
 const { gap } = Astro.props;
-const datedReview=goldenMarsRecordReview(gap.data.id);
+const datedReview=goldenMarsRecordReview(gap.data.id)||latestGapReviewFor(gap.data.id);
+const currentGap=projectGapReviewData(gap.data);
 ---
 
 <BaseLayout title={`${gap.data.id} | FTFN`} description={gap.data.question}>
@@ -81,7 +83,7 @@ const datedReview=goldenMarsRecordReview(gap.data.id);
       </article>
       <article class="record-card">
         <h2>Next Action</h2>
-        <p>{gap.data.next_action}</p>
+        <p>{currentGap.next_action}</p>
       </article>
     </div>
   </section>

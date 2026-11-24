@@ -42,7 +42,7 @@ assert.equal(ops.review_batch.filter(r => !r.research_review_id).length, 0);
 assert.deepEqual(ops.backlog_artifact_checks, backlogArtifactChecks);
 assert.equal(new Set(backlogArtifactChecks.map(c => c.check_id)).size, backlogArtifactChecks.length);
 assert.equal(ops.receipts[0].sha256, 'c1dd2323581bf7d38d0e336a16a3fc04a0bfcf5a99320b154f633d6aad9566f7', 'Toronto receipt was rewritten');
-assert.deepEqual(ops.receipts.map(r=>r.receipt_id),['207-TORONTO-2026-09-14-BOUNDED-RECHECK','207-TORONTO-2026-09-21-BOUNDED-RECHECK'], 'Only the two separately dated Toronto checks are project-file decisions; backlog research adds none');
+assert.deepEqual(ops.receipts.filter(r=>r.checked_date<='2026-09-28').map(r=>r.receipt_id),['207-TORONTO-2026-09-14-BOUNDED-RECHECK','207-TORONTO-2026-09-21-BOUNDED-RECHECK','207-TORONTO-2026-09-28-BOUNDED-BLOCKER'], 'Preserve all three September project checks; backlog research adds none');
 const sourceIds = new Set((await readShelfInputs(root)).sources.map(s => s.id));
 for (const check of backlogArtifactChecks) {
   assert(new URL(check.url).protocol === 'https:');

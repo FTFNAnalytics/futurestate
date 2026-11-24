@@ -1,0 +1,10 @@
+---
+import {tuasDossiers,tuasAcquisitionFor} from '../../lib/tuas-named-dossiers.mjs';
+interface Props {recordId:string}
+const record=tuasAcquisitionFor(Astro.props.recordId);
+---
+{record&&<section class="page-section prose-page" data-current-tuas-acquisition={record.historical_acquisition.record_id}>
+  <h2>Current named account</h2>
+  <p><a href={record.route}>{record.title}</a> was authored and AI self-reviewed {tuasDossiers.inspected_date}. {record.scope}</p>
+  <p>{record.historical_acquisition.decision}. The original acquisition record below is retained history; its empty identity fields do not erase this later named account. No comparable outcome series, independent review, production acceptance or launch is admitted.</p>
+</section>}

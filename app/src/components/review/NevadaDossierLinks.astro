@@ -1,0 +1,8 @@
+---
+import {nevadaDossiers} from '../../lib/nevada-named-dossiers.mjs';
+---
+<section class="page-section" data-nevada-current-links>
+  <h2>Separate current project and county accounts</h2>
+  <p>Read the {nevadaDossiers.inspected_date} accounts of two distinct projects and Humboldt County. The retained comparison below remains historical context; its approvals, forecasts and qualification requirements are not replaced by a sibling project's evidence.</p>
+  <ul>{nevadaDossiers.records.map(record=><li><a href={record.route}>{record.title}</a> — {record.stage}</li>)}</ul>
+</section>

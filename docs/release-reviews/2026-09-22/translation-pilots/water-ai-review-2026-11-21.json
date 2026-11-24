@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-11-21",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete water translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-065",
+  "source_record_sha256": "52b3c5774e5a09466c3136310faf70e7929bcce3079ff74460668971db220948",
+  "source_to_contract_mapping": "Translate the retained September 10 plain-language English reader with its 10 actual source IDs. Preserve the distinct original canonical-contract digest and its 3 source IDs; the legacy texts.historical_contract_sha256 field below binds canonical_content_digest, not the full contract JSON hash. No original specification or human-review field is rewritten.",
+  "historical_contract_source_ids": [
+    "source-noaa-cpc-enso",
+    "source-arizona-department-water-resources",
+    "source-arizona-corporation-commission-utilities"
+  ],
+  "checks": [
+    "Compared both complete overviews and all six sections with retained English record 202-EDITION-065.",
+    "Preserved source, legal right, provider, treatment, conveyance, customer and receiving-basin identities; withdrawal, delivery, consumption, discharge and reuse remain distinct.",
+    "Kept Chandler municipal operation separate from TSMC project reuse, Phoenix governance and preliminary programs, and Toronto capital planning.",
+    "Preserved agreement, completed treatment/conveyance, receiving-utility acceptance, metered quantity, quality and compliance as separate stages.",
+    "Retained units, periods, customer/facility boundaries, drought and interruption context, sampling definitions, demand/weather changes, groundwater accounting and revisions.",
+    "Kept affordability, ecosystem condition, reliability and industrial output as different outcome questions; a planned volume is not a current service finding.",
+    "Preserved September 1, 2026 evidence cutoff and September 10 English authorship; November 21 is translation and AI-fidelity-review date only.",
+    "Read back and compared all saved sections with the authored text; verified both manuscript hashes and all 10 exact source IDs, labels and URLs in each text. Local source-profile pins do not represent live retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Eaux récupérées is explicitly defined as treated wastewater reused for a suitable purpose. Prélèvement, consommation, rejet and réutilisation remain different quantities. Entente, acceptation and service mesuré au compteur preserve the agreement-to-operation boundary."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Agua regenerada is explicitly defined. Extracción, suministro entregado, consumo, descarga and reutilización remain distinct. Service measured with a meter, quality and acceptance are not inferred from a construction milestone or agreement."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/water-fr-CA-ai-reviewed.md",
+      "file_sha256": "3bfcb2a43895eb3f0ac41ee9db3ad59d0efa87b7c0ff28825d975eba727e19d6",
+      "proposed_contract_id": "202-EDITION-067",
+      "historical_contract_sha256": "9448caeeb3856138c719d0718c91ae1f775197e8204cb4aa8da7e3ae921f6c2f"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/water-es-419-ai-reviewed.md",
+      "file_sha256": "c72924c93f47ab060ec3d6df5193591a12147b76229e364beb3e7d14dff5f8e4",
+      "proposed_contract_id": "202-EDITION-068",
+      "historical_contract_sha256": "9448caeeb3856138c719d0718c91ae1f775197e8204cb4aa8da7e3ae921f6c2f"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-chandler-reclaimed-water-system",
+      "name": "City of Chandler Reclaimed Water System",
+      "url": "https://www.chandleraz.gov/residents/water/water-conservation/reclaimed-water",
+      "path": "app/src/content/sources/source-chandler-reclaimed-water-system.json",
+      "sha256": "b21de1128514758b92beb9f446b31234794e249cd2d7c5657c280ce57912cf8a"
+    },
+    {
+      "id": "source-chandler-water-conservation-in-action",
+      "name": "City of Chandler Water Conservation in Action",
+      "url": "https://www.chandleraz.gov/residents/water/water-conservation-in-action",
+      "path": "app/src/content/sources/source-chandler-water-conservation-in-action.json",
+      "sha256": "25da1f5989a7822fcb41d3bcbf1e223c22cf7c10eda4580fa83ba88808d80bb0"
+    },
+    {
+      "id": "source-phoenix-capital-improvement-program",
+      "name": "Phoenix Capital Improvement Program",
+      "url": "https://www.phoenix.gov/administration/departments/budget/capital-improvement-program.html",
+      "path": "app/src/content/sources/source-phoenix-capital-improvement-program.json",
+      "sha256": "4d251f903a47b9f8855bd451d0846b993aae0074656714797b20b2b7b8df27a0"
+    },
+    {
+      "id": "source-adwr-ama-management-plans",
+      "name": "Arizona Active Management Area Management Plans",
+      "url": "https://www.azwater.gov/ama/ama-management-plans",
+      "path": "app/src/content/sources/source-adwr-ama-management-plans.json",
+      "sha256": "32ff844e5cdee4644f2a51d012f85af7272cb5f4bc19c23566f7262e86d5715e"
+    },
+    {
+      "id": "source-adwr-groundwater-site-inventory",
+      "name": "Arizona Groundwater Site Inventory",
+      "url": "https://azwatermaps.azwater.gov/gwsi",
+      "path": "app/src/content/sources/source-adwr-groundwater-site-inventory.json",
+      "sha256": "c3c3cb63814c0b0aa91172e06e8f7a19dd5a5d80a8a0b9d23710ebdbd30c6b77"
+    },
+    {
+      "id": "source-toronto-water-budget-capital-plan",
+      "name": "Toronto Water Budget and Capital Plan",
+      "url": "https://www.toronto.ca/city-government/budget-finances/city-budget/program-agency-budgets/toronto-water/",
+      "path": "app/src/content/sources/source-toronto-water-budget-capital-plan.json",
+      "sha256": "88b620be6c5d4ac33a17c333661b4333013e668b59f0f09d3af2e1318630d9ee"
+    },
+    {
+      "id": "source-toronto-water-2026-capital-plan",
+      "name": "Toronto Water 2026-2035 Capital Budget and Plan",
+      "url": "https://www.toronto.ca/wp-content/uploads/2026/03/9568-2026-Public-Book-TW-V1.pdf",
+      "path": "app/src/content/sources/source-toronto-water-2026-capital-plan.json",
+      "sha256": "06ffe38feb7e194b39a56df1885f39daff549103ce5bb6f64fea1063a7707c4e"
+    },
+    {
+      "id": "source-phoenix-tsmc-2026-wastewater-development-agreement",
+      "name": "Phoenix City Council May 2026 TSMC Wastewater Facilities Development Agreement",
+      "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Agenda-FINAL.pdf",
+      "path": "app/src/content/sources/source-phoenix-tsmc-2026-wastewater-development-agreement.json",
+      "sha256": "1e9efdd4751e4be9721b6c808c03b7300f5c8121b2bc88c32ee32c53c00fc7b7"
+    },
+    {
+      "id": "source-phoenix-2026-water-security-council-update",
+      "name": "Phoenix City Council 2026 Water Resources And Long-Term Water Security Update",
+      "url": "https://www.phoenix.gov/newsroom/water-services-news/phoenix-city-council-receives-update-on-water-resources--drought.html",
+      "path": "app/src/content/sources/source-phoenix-2026-water-security-council-update.json",
+      "sha256": "ddf6b976e8e4b5d02e9a4002d542d5984d547baeeee786582801ca8c5fc505e9"
+    },
+    {
+      "id": "source-phoenix-civil-water-sewer-acceptance",
+      "name": "City of Phoenix Civil Water And Sewer Completion And Acceptance Requirements",
+      "url": "https://www.phoenix.gov/administration/departments/pdd/site-development/civil-plan-reviews.html",
+      "path": "app/src/content/sources/source-phoenix-civil-water-sewer-acceptance.json",
+      "sha256": "f4d7d92e7c55a7df867dc726740d19e0e7641342391f7d04af194a6babc0ed25"
+    }
+  ],
+  "integration_state": "Complete local manuscripts assessed for the November 21 application batch. The application registry and its candidate-bound validation record integration separately; this review is not production acceptance.",
+  "boundary": "AI author/self-review under the owner-authorized policy, not independent human review, fresh fact-checking, accessibility certification, measured-outcome admission or launch authority. Preserve original contracts, the retained September 27 translation input and all earlier integrated records. Display saved later source context with its actual inspection date."
+}

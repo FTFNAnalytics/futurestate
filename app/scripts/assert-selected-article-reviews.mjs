@@ -3,6 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import data from '../src/data/selected-article-ai-reviews.json' with {type:'json'};
 import corpus from '../src/data/phase-205-216-current-editorial.json' with {type:'json'};
+import atlas from '../src/data/phase-119-deep-project-place-atlas.json' with {type:'json'};
 import {selectedArticleReviews,selectedArticleReviewFor,selectedArticlePresentation,selectedReviewInputs,selectedReviewDate,selectedReviewStatus,validateSelectedArticleReview,earlierAcceptanceSentence} from '../src/lib/selected-article-reviews.mjs';
 import {readerCatalog} from '../src/lib/reader-catalog.mjs';
 const hash=v=>createHash('sha256').update(v).digest('hex');
@@ -75,4 +76,25 @@ for(const r of selectedArticleReviews){
 }
 assert.deepEqual({changes,sections,nested,inputs},{changes:60,sections:152,nested:84,inputs:33});
 assert.equal(selectedArticlePresentation({record_id:'unrelated'},{route:'/unrelated/'}).review,null);
+const directAtlas=corpus.records.filter(r=>r.route.startsWith('/atlas/projects/'));
+assert.deepEqual(directAtlas.map(r=>r.record_id),['119-PROJECT-001','119-PROJECT-022']);
+for(const article of directAtlas){
+ const project=atlas.projects.find(p=>p.atlas_project_id===article.record_id);assert(project);
+ assert.equal(article.route,`/atlas/projects/${project.slug}/`);assert.equal(article.sections.length,6);
+ assert(selectedArticleReviewFor(article,{route:article.route}));
+ assert.equal(selectedArticleReviewFor(article,{route:directAtlas.find(a=>a!==article).route}),null,'Another assessed project cannot inherit this exact-route review');
+ assert.equal(selectedArticleReviewFor({...article,sections:[]},{route:article.route}),null,'An altered direct reading cannot hide its earlier account as assessed');
+}
+const atlasTemplate=await readFile(new URL('../src/pages/atlas/projects/[slug].astro',import.meta.url),'utf8');
+for(const token of [
+ 'const directArticleReview=currentArticle?selectedArticleReviewFor(currentArticle,{route:Astro.url.pathname}):null;',
+ 'const hasCurrentAccount=Boolean(canonicalReader||refreshedArticle||annualReader||directArticleReview||comparisonAccount);',
+ "const LegacyContainer=hasCurrentAccount?'details':'div';",
+ "hasCurrentAccount?'Historical Atlas review':'Reviewed'",'data-prior-atlas-account','data-recorded-conversion-stage'
+])assert(atlasTemplate.includes(token),token);
+assert(atlasTemplate.indexOf('<CurrentResearchArticle')<atlasTemplate.indexOf('data-recorded-conversion-stage'));
+assert(atlasTemplate.indexOf('data-recorded-conversion-stage')<atlasTemplate.indexOf('<LegacyContainer'));
+const sitemapTemplate=await readFile(new URL('../src/pages/sitemap.xml.ts',import.meta.url),'utf8');
+assert(sitemapTemplate.includes("if(['/atlas/projects/tsmc-arizona/','/atlas/projects/hanford-dflaw-operation/'].includes(path))lastModified=new Date('2026-11-22');"));
 console.log('Selected-article AI assertions passed: all 33 exact decisions from five unchanged preparation ledgers; 60 current/history field changes; 152 sections, 84 nested paragraphs and 33 retained input instances; all original records/citations preserved. Missing, altered, duplicated and unsafe inputs or paths fail closed; copied routes and embedded historical chapters inherit no decision. Annual and reachable-content review remain separate.');
+console.log('Direct Atlas source checks passed: TSMC and Hanford exact-route assessments control historical presentation; their twelve complete sections, original review dates and identities remain unchanged. Production rendering is a separate check.');

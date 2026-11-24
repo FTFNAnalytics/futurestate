@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import SwissRailCityDossierArticle from '../../../components/review/SwissRailCityDossierArticle.astro';
+import {swissRailCityDossiers} from '../../../lib/swiss-rail-city-named-dossiers.mjs';
+const record=swissRailCityDossiers.records.find(r=>r.record_id==='project-ceneri-base-tunnel')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><SwissRailCityDossierArticle record={record}/></BaseLayout>

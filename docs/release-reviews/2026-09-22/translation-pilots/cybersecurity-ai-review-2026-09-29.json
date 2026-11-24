@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-29",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Cybersecurity translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-029",
+  "source_record_sha256": "3b36e12d8c46916dccf4ca8fc8cde09fa474bbe2e2b65d3030ade2bebdc36d6e",
+  "source_to_contract_mapping": "Translate the September 10 plain-language reader; retain the different original canonical-contract digest and source list as historical provenance.",
+  "checks": [
+    "Compared the English title, complete overview and all six sections with both complete translations.",
+    "Preserved named systems, asset inventory, ownership, assessed population, period and threat context.",
+    "Preserved recurring CISA obligations, bounded hospital tests, unresolved NASA work and post-quantum/interoperability guidance as different evidence types.",
+    "Kept recommendation closure scoped to its exact action, reviewer, date and decision; open neighboring weaknesses remain visible.",
+    "Preserved detection and disclosure as alternative explanations of incident counts, with stable coverage, reporting rules, impact and recovery.",
+    "Preserved control testing, exceptions, continuing monitoring, corrective changes, recurrence, cryptographic cutover and retirement of vulnerable legacy components.",
+    "Preserved repeated-period evidence as the next step and explicitly withheld any claim of a new audit, certification or later incident check.",
+    "Preserved the September 1 evidence cutoff and September 10 English authorship date; September 29 is the actual AI translation-review date.",
+    "Preserved all 9 original source IDs and exact URLs; no fresh retrieval is claimed."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Contrôle, inventaire des actifs and responsabilités preserve system scope. Bascule is the actual migration cutover, not just a completed plan. Clôture de recommandation is kept separate from effectiveness across systems. Évaluation de maturité does not become a loss-avoidance measurement."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Inventario de activos, responsabilidades and alcance retain the assessed population. Transición efectiva preserves cutover; resolution of one recommendation does not resolve adjacent weaknesses. Monitoreo, reporte and divulgación remain distinct contributors to incident counts."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/cybersecurity-fr-CA-ai-reviewed.md",
+      "file_sha256": "0c6ac3b3bfdaa3372eb04ea076982d6f3630a67aa8c108520b98373ddc23e751",
+      "proposed_contract_id": "202-EDITION-031",
+      "historical_contract_sha256": "ba856ce199cba34ddce395132784fcb0ce2f78b2c7b9051112bba6d5655f3219"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/cybersecurity-es-419-ai-reviewed.md",
+      "file_sha256": "c9ee9dea4f94635e05c08b45af4180f0d84c9dac662c64912b71376dedf78b8c",
+      "proposed_contract_id": "202-EDITION-032",
+      "historical_contract_sha256": "3c11b8e7eb65c3be96e4ad5b798b672dc1beae1fc1b9ec1313d595184816a7a4"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-56m-hhs-small-hospital-cyber-controls-2026",
+      "name": "A Small Southeastern Hospital Had Effective Cybersecurity Controls To Prevent, Detect, and Respond To Cyberattacks",
+      "url": "https://oig.hhs.gov/reports/all/2026/a-small-southeastern-hospital-had-effective-cybersecurity-controls-to-prevent-detect-and-respond-to-cyberattacks/",
+      "path": "app/src/content/sources/source-56m-hhs-small-hospital-cyber-controls-2026.json",
+      "sha256": "b918655522c348e9f942141f5e85ab9486b08236c0b4ce0be7d81e99992000fa"
+    },
+    {
+      "id": "source-56d-nasa-gao-risk-management-2025",
+      "name": "Cybersecurity: NASA Needs to Fully Implement Risk Management",
+      "url": "https://www.gao.gov/products/gao-25-108138",
+      "path": "app/src/content/sources/source-56d-nasa-gao-risk-management-2025.json",
+      "sha256": "5d9fa99f4643ee667fc37ace7d58bd8848759006b035bc8060f7c4426dac2512"
+    },
+    {
+      "id": "source-cisa-bod-23-01-asset-visibility",
+      "name": "CISA BOD 23-01 Asset Visibility and Vulnerability Detection",
+      "url": "https://www.cisa.gov/news-events/directives/bod-23-01-improving-asset-visibility-and-vulnerability-detection-federal-networks",
+      "path": "app/src/content/sources/source-cisa-bod-23-01-asset-visibility.json",
+      "sha256": "e7c97baff2f2b9cbe34be7d792d2d756cabbb4e19299e80e836145ff93deb522"
+    },
+    {
+      "id": "source-cisa-cybersecurity-directives",
+      "name": "CISA Cybersecurity Directives",
+      "url": "https://www.cisa.gov/news-events/directives",
+      "path": "app/src/content/sources/source-cisa-cybersecurity-directives.json",
+      "sha256": "46e53f3516219add8eb27a5e2b609ee97015c41048e60e3118ecd8fd05dbe01d"
+    },
+    {
+      "id": "source-55z-gao-cdm-network-monitoring-2025",
+      "name": "GAO: Continuous Diagnostics and Mitigation Network Monitoring",
+      "url": "https://files.gao.gov/reports/GAO-25-107470/index.html",
+      "path": "app/src/content/sources/source-55z-gao-cdm-network-monitoring-2025.json",
+      "sha256": "530c6d12f12852717251ae7b1967ab7234d7d9a0ee3b8af13a1ed18b7ac094f7"
+    },
+    {
+      "id": "source-nccoe-pqc-migration",
+      "name": "NCCoE Migration to Post-Quantum Cryptography",
+      "url": "https://www.nccoe.nist.gov/applied-cryptography/migration-to-pqc",
+      "path": "app/src/content/sources/source-nccoe-pqc-migration.json",
+      "sha256": "7b509c1ec09e16ef6c3cf2942f943957a6c73832527170efd6482bea5b2dda3f"
+    },
+    {
+      "id": "source-nist-csrc-publications",
+      "name": "NIST Computer Security Resource Center Publications",
+      "url": "https://csrc.nist.gov/publications",
+      "path": "app/src/content/sources/source-nist-csrc-publications.json",
+      "sha256": "aa79090c67034a31ffcff4ee70b52f5e4acf0ec313692736daf34f542dbea35e"
+    },
+    {
+      "id": "source-gsa-pqc-buyers-guide-2025",
+      "name": "GSA Post-Quantum Cryptography Buyer's Guide",
+      "url": "https://buy.gsa.gov/api/system/files/documents/final-508c-pqc_buyer-s_guide_2025.pdf",
+      "path": "app/src/content/sources/source-gsa-pqc-buyers-guide-2025.json",
+      "sha256": "f3fce1311e1585d7e2c5b4ac1e16ea672459e4cea8561f268957a705bc8d2a50"
+    },
+    {
+      "id": "source-omb-m-26-15-pqc-migration",
+      "name": "OMB M-26-15: Execution of the Migration to Post-Quantum Cryptography",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf",
+      "path": "app/src/content/sources/source-omb-m-26-15-pqc-migration.json",
+      "sha256": "59019836e32bc8c3d0cd11ab85a6219df557d2c8847aa315f96648dda9efc08b"
+    }
+  ],
+  "integration_state": "Complete local texts assessed for the next application batch; not integrated and not counted among the ten current translated reading pages.",
+  "boundary": "AI linguistic-fidelity review of retained English content only. No independent human review, fresh fact-check, accessibility certification, measurement admission or publication authorization. Later exact-source context must remain separate during integration. The annual appendix inventory review binds the earlier ten-translation version; preserve that exact version before adding translations."
+}

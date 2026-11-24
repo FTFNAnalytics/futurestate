@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import MalaysiaMetroDossierArticle from '../../../components/review/MalaysiaMetroDossierArticle.astro';
+import {malaysiaMetroDossiers} from '../../../lib/malaysia-metro-named-dossiers.mjs';
+const record=malaysiaMetroDossiers.records.find(r=>r.record_id==='place-putrajaya')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><MalaysiaMetroDossierArticle record={record}/></BaseLayout>

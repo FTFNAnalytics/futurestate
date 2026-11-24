@@ -14,13 +14,13 @@ assert.equal(hash(JSON.stringify(ops.pilot_reviews)),'9b3a4f2bbc9607277cec906b22
 // Pin the original evidence, not mutable workflow metadata. The owner-authorized
 // decisions have their own complete source-binding checks in assert-current-backlog.
 const baseline={receipts:[ops.receipts[0]],...Object.fromEntries(['backlog_artifact_checks','backlog_reviews','backlog_research_checked','backlog_research_unchecked','pilot_reviews','governed_series_admitted'].map(key=>[key,ops[key]]))};
-assert.deepEqual(ops.receipts.map(r=>r.receipt_id),['207-TORONTO-2026-09-14-BOUNDED-RECHECK','207-TORONTO-2026-09-21-BOUNDED-RECHECK']);
+assert.deepEqual(ops.receipts.filter(r=>r.checked_date<='2026-09-28').map(r=>r.receipt_id),['207-TORONTO-2026-09-14-BOUNDED-RECHECK','207-TORONTO-2026-09-21-BOUNDED-RECHECK','207-TORONTO-2026-09-28-BOUNDED-BLOCKER']);
 // Preserve the complete original baseline; the additive Toronto receipt has its own hash/semantic tests.
 baseline.receipts=[ops.receipts[0]];
 assert.equal(hash(JSON.stringify(baseline)),'20316fcbdbc916648c97e7728471ee867f71033afa1469fd2263a4f37a97daaa','Original evidence, receipts, research and pilot observations must remain unchanged');
 assert.equal(hash(priorLedgerSnapshot(await json('src/data/phase-60-current-decisions.json'))),'a499d9fd1d00e9516adf247683e2540ba13f53aa7cd91f7606be5599601d0685');
 assert.deepEqual(ops.pilot_research_followups,pilotResearchFollowups);
-assert.equal(ops.pilot_research_followups.length,6);assert.equal(ops.as_of_date,'2026-09-25');assert.equal(ops.governed_series_admitted,0);
+assert.equal(ops.pilot_research_followups.length,6);assert.equal(ops.as_of_date,[ops.review_policy.effective_date,...ops.receipts.map(r=>r.checked_date),...ops.pilot_research_followups.map(r=>r.checked_date)].sort().at(-1));assert.equal(ops.governed_series_admitted,0);
 assert.equal(hash(JSON.stringify(ops.pilot_research_followups.slice(0,5))),'2b422a782b7db8fbde68423b66ec189568459d58ba56fa73457ebbcf3511ff15','All five earlier follow-ups remain exact historical records');
 const now=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Edmonton',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 function checkResearchBoundary(r){
@@ -119,8 +119,12 @@ assert(verifier.includes('ops.pilot_research_followups'));assert(verifier.includ
 // Exercise the actual validator with altered in-memory reads, never edited files.
 function rejectedReferenceFixture(target,mutation,expected){
  const code=`import fs from 'node:fs';import {syncBuiltinESMExports} from 'node:module';
+ // Keep the independently reviewed catalog intact. Newer Node JSON loaders also
+ // use readFileSync; installing the hook before static dependencies load would
+ // corrupt their inputs and fail a different integrity gate before this test.
+ await import('./src/lib/reader-catalog.mjs');
  const original=fs.readFileSync;
- fs.readFileSync=(...args)=>{const raw=original(...args);if(String(args[0]).replaceAll('\\\\','/').endsWith(${JSON.stringify(target)})){const value=JSON.parse(raw);${mutation};return JSON.stringify(value);}return raw;};
+ fs.readFileSync=(...args)=>{const raw=original(...args);if(String(args[0]).replaceAll('\\\\','/').endsWith(${JSON.stringify(target)})){const value=JSON.parse(raw);${mutation};const changed=JSON.stringify(value);return Buffer.isBuffer(raw)?Buffer.from(changed):changed;}return raw;};
  syncBuiltinESMExports();await import('./scripts/validate-content-references.mjs');`;
  const result=spawnSync(process.execPath,['--input-type=module','-e',code],{cwd:root,encoding:'utf8',windowsHide:true});
  assert.equal(result.status,1);assert(result.stderr.includes(expected),result.stderr);

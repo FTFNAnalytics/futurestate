@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import IstanbulCrossingsDossierArticle from '../../../components/review/IstanbulCrossingsDossierArticle.astro';
+import {istanbulCrossingsDossiers} from '../../../lib/istanbul-crossings-named-dossiers.mjs';
+const record=istanbulCrossingsDossiers.records.find(r=>r.record_id==='project-eurasia-tunnel')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><IstanbulCrossingsDossierArticle record={record}/></BaseLayout>

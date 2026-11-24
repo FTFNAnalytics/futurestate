@@ -1,10 +1,11 @@
 import {createSignalProjection} from './signal-classification.mjs';
 import {projectResearchDocument,projectBriefing} from './reference-attribution.mjs';
-import {getSourceFreshness,getSourceHealth,getFreshnessRank} from './sourceFreshness.ts';
+import {getSourceFreshness,getSourceHealth,getFreshnessRank,sourceReviewAsOfDate} from './sourceFreshness.ts';
 import {backlogReviewFacts} from './backlog-research.mjs';
 import {atlasShelfRelations,atlasGraphShelf,atlasShelfKey} from './atlas-shelf-relations.mjs';
 import {readingShelfRelations} from './reading-shelf-relations.mjs';
 import {projectGoldenMarsRecordData} from './golden-mars-wider-review.mjs';
+import {projectGapReviewData} from './current-gap-reviews.mjs';
 
 export const shelfPageSize=40;
 export const shelfDate=value=>value instanceof Date?value.toISOString().slice(0,10):String(value??'');
@@ -15,8 +16,8 @@ const facets=(record,extra)=>({...record,filters:{...record.filters,...extra}});
 // A pure projection: both Astro and the local tests supply real, separately loaded
 // records. No network requests, source-date mutations or evidence admissions occur.
 /** @param {import('./backlog-research.mjs').BacklogOperations} operations */
-export function createShelfData(input,ledger,operations={as_of_date:ledger.as_of_date,backlog_reviews:[]}) {
-  input={...input,...Object.fromEntries(['sources','evidenceGaps','readerPathways'].map(key=>[key,(input[key]??[]).map(data=>projectGoldenMarsRecordData(data))]))};
+export function createShelfData(input,ledger,operations={as_of_date:ledger.as_of_date,backlog_reviews:[]},asOfDate=sourceReviewAsOfDate) {
+  input={...input,...Object.fromEntries(['sources','evidenceGaps','readerPathways'].map(key=>[key,(input[key]??[]).map(data=>key==='evidenceGaps'?projectGapReviewData(projectGoldenMarsRecordData(data)):projectGoldenMarsRecordData(data))]))};
   const {signals=[],documents:rawDocuments=[],collections=[],sources=[],topics=[],organizations=[],technologies=[],localSystems=[],dependencyMaps=[],updates=[],readerPathways=[],briefings:rawBriefings=[],evidenceGaps=[]}=input;
   const documents=rawDocuments.map(data=>projectResearchDocument({data}).data);
   const briefings=rawBriefings.map(data=>projectBriefing({data}).data);
@@ -29,11 +30,12 @@ export function createShelfData(input,ledger,operations={as_of_date:ledger.as_of
     if(projection.eligible({data:s}))eligibleSignalCounts.set(id,(eligibleSignalCounts.get(id)??0)+1);
   }
   const sourceRows=sources.map(s=>{
-    const freshness=getSourceFreshness(new Date(s.last_checked_date),s.update_frequency,s.capture_priority,new Date(`${ledger.as_of_date}T00:00:00Z`),s.review_cadence_days);
+    const freshness=getSourceFreshness(s.last_checked_date,s.update_frequency,s.capture_priority,asOfDate,s.review_cadence_days);
     const health=getSourceHealth(s);
-    const declared=Number.isInteger(s.review_cadence_days)&&s.review_cadence_days>0;
+    const declared=Number.isSafeInteger(s.review_cadence_days)&&s.review_cadence_days>0&&s.review_cadence_days<=3650;
     const nextAction=['Blocked','Paused'].includes(s.monitoring_status)?`Resolve the ${s.monitoring_status.toLowerCase()} monitoring state before reuse.`:
-      freshness.status==='Review due'?'Recheck the exact source and record a dated result before supporting a new claim.':
+      freshness.ageDays===null?freshness.note:
+      freshness.status==='Review due'?'Reconcile later scoped receipts and independent appointments, then check only the genuinely due exact artifact.':
       !declared||!s.source_owner?'Confirm the review cadence and responsible source owner; the displayed fallback window is not editorial approval.':
       freshness.status==='Watch soon'?'Include this source in the next manual review pass.':
       health.status==='Needs endpoint'?'Record a stable endpoint or confirm manual-only review.':
@@ -44,7 +46,7 @@ export function createShelfData(input,ledger,operations={as_of_date:ledger.as_of
   const sourceCards=sourceRows.map(({source:s,freshness,health,declared,nextAction,historicalSignalCount,currentSignalCount})=>({
     id:s.id,title:s.name,summary:s.known_limitations,route:`/atlas/sources/${s.id}/`,date:shelfDate(s.last_checked_date),
     filters:{status:[s.monitoring_status??'Active'],kind:['Source'],topic:s.primary_topics,type:[s.source_type],freshness:[freshness.status],health:[health.status],priority:[s.capture_priority],watchLane:s.watch_lanes??[],access:[s.live_access_type??'Manual Page Check'],cadence:[declared?'Declared cadence':'Fallback cadence — review required']},
-    facts:[{label:'Next action',value:nextAction},{label:'Checked-date age',value:`${freshness.ageDays} days as of ${ledger.as_of_date}`},{label:'Review window',value:`${freshness.reviewAfterDays} days (${declared?'declared':'inferred fallback'})`},{label:'Source owner',value:s.source_owner||'Not recorded'},{label:'Linked records',value:`${historicalSignalCount} historical signals; ${currentSignalCount} currently feed-eligible Published signals`}]
+    facts:[{label:'Next action',value:nextAction},{label:'Checked-date age',value:freshness.ageDays===null?`Unresolved metadata as of ${asOfDate}`:`${freshness.ageDays} days as of ${asOfDate}`},{label:'Review window',value:`${freshness.reviewAfterDays} days (${declared?'declared':'inferred fallback'})`},{label:'Source owner',value:s.source_owner||'Not recorded'},{label:'Linked records',value:`${historicalSignalCount} historical signals; ${currentSignalCount} currently feed-eligible Published signals`}]
   }));
   const shelves={
     briefings:sort(briefings.map(b=>({id:b.id,title:b.title,summary:b.summary,route:`/briefings/${b.slug}/`,date:shelfDate(b.captured_date),filters:{status:[b.record_status],kind:['Briefing'],type:[b.editorial_attribution?.content_type??'FTFN synthesis']}}))),
@@ -136,5 +138,5 @@ export function createShelfData(input,ledger,operations={as_of_date:ledger.as_of
       r.filters[key]=unique(values.filter(v=>typeof v==='string'&&v.length));
     }
   }
-  return {shelves,labels,sourceRows,asOfDate:ledger.as_of_date};
+  return {shelves,labels,sourceRows,asOfDate};
 }

@@ -1,6 +1,8 @@
 ---
 import {projectResearchDocument} from "../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
+import {currentEvidenceLedger} from '../../lib/current-evidence.mjs';
+import {currentGapReviewLedger} from '../../lib/current-gap-reviews.mjs';
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import evidenceQueue from "../../data/phase-58-dated-evidence-queue.json";
@@ -137,7 +139,8 @@ const readerPathways = (await getCollection("readerPathways"))
 
 const v1refDatasets = [
   { title: 'September 10 reader editions', href: '/data/phase-204-reader-completion.json', count: 104, summary: 'Dated prose for 104 existing records, including 92 distinct texts. Independent review and public release held.' },
-  { title: 'Current evidence decisions', href: '/data/current-evidence-decisions.json', count: 4, summary: 'Four independent September 10 no-change receipts; source checks, exact artifacts, dates and assigned propagation surfaces.' },
+  { title: 'Current evidence decisions', href: '/data/current-evidence-decisions.json', count: currentEvidenceLedger.receipts.length, summary: 'Additive dated decisions and follow-ups with source checks, exact artifacts, dates and assigned propagation surfaces. Receipt count is not the count of primary cycle identities.' },
+  { title: 'Separate acceptance reviews', href: '/data/current-gap-reviews.json', count: currentGapReviewLedger.records.length, summary: 'Dated Phase 55Q acceptance holds, distinct from the Phase 60 operating-evidence cycle. Historical gap and source records remain intact.' },
   {
     title: v1PublicReferenceEdition.title,
     href: "/data/v1-public-reference-edition.json",
