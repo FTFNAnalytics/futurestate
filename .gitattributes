@@ -12,6 +12,21 @@
 /.gitattributes text eol=lf
 /.gitignore text eol=lf
 
+# Raw CRLF is intentional in this exact-byte Windows evidence repository.
+# Markdown hard breaks and trailing blank lines are valid document syntax.
+# These rules do not relax code-content, evidence-hash or release assertions.
+* whitespace=cr-at-eol
+*.md whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Preserved generated Markdown templates and frozen official-link transcripts.
+/app/scripts/build-phase179-assets.mjs whitespace=cr-at-eol,-blank-at-eol
+/app/scripts/build-phase180-state-report.mjs whitespace=cr-at-eol,-blank-at-eol
+/app/public/downloads/dated-evidence-return-council-adoption-results-gates-hold-resolution-decisions-2026/official-links/*-phase57z-record.txt whitespace=cr-at-eol,-blank-at-eol
+# Original candidate-bound EOF bytes; later phases retain these exact hashes.
+/app/scripts/build-phase181-204-content.mjs whitespace=cr-at-eol,-blank-at-eof
+/app/scripts/content-205-216/reference-attribution-57h-inputs.json whitespace=cr-at-eol,-blank-at-eof
+/app/scripts/lib/v1ref-config.mjs whitespace=cr-at-eol,-blank-at-eof
+
 # These eight AI-reviewed evidence files include a trailing blank line in their
 # recorded SHA-256. Preserve those exact review artifacts; continue checking
 # trailing spaces and all other whitespace errors, and all source-code files.
