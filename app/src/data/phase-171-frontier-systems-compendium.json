@@ -1,0 +1,1589 @@
+{
+  "schema_version": "1.0",
+  "phase": 171,
+  "program_id": "FTFN-PHASE-171",
+  "dataset": "phase_171_frontier_systems_compendium",
+  "title": "Frontier Systems Compendium",
+  "effective_date": "2026-09-01",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Publish eight source-bound lane chapters and four cross-system essays while preserving all twenty-four official artifacts and seventy-two claim blocks exactly once in the chapter layer.",
+  "record_scope": "Append-only Phase 165–172 evidence-to-publication overlay over immutable Phase 156 and Phase 164 validation receipts.",
+  "publication_boundaries": [
+    "This is an append-only operating and content layer over the immutable Phase 156 and Phase 164 receipts; it does not rewrite either validated baseline.",
+    "Only evidence checks lawful on or before 2026-09-01 may carry a decision. Later September and October outcomes remain null until their recorded dates.",
+    "Candidate sources, planned capacity, service availability, offers, forecasts, and adjacent facts do not substitute for the exact observation, authority, period, method, and denominator required by a gate.",
+    "No owner decision, project or place stage, admitted longitudinal series, causal result, score, rank, repository publication, hosted deployment, or v1 promotion is inferred."
+  ],
+  "routes": {
+    "hub": "/review/v1cycle/systems-compendium/",
+    "public_export": "/data/phase-171-frontier-systems-compendium.json"
+  },
+  "counts": {
+    "compendium_records": 12,
+    "lane_chapters": 8,
+    "cross_system_essays": 4,
+    "inherited_packets": 24,
+    "inherited_claim_blocks_once": 72,
+    "source_bindings": 24,
+    "new_admission_decisions": 0,
+    "scores_or_ranks": 0
+  },
+  "compendium_records": [
+    {
+      "compendium_record_id": "171-CHAPTER-01",
+      "record_kind": "Lane chapter",
+      "slug": "power-and-grid-chapter",
+      "title": "Power and grid: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "Power and grid",
+      "packet_ids": [
+        "161-PACKET-001",
+        "161-PACKET-002",
+        "161-PACKET-003"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-161-nerc-ltra-2025",
+        "source-161-lbnl-queued-up-2026",
+        "source-161-eia-battery-capacity-aug-2026"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-001",
+          "digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1"
+        },
+        {
+          "packet_id": "161-PACKET-002",
+          "digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4"
+        },
+        {
+          "packet_id": "161-PACKET-003",
+          "digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1"
+        }
+      ],
+      "orientation": "Power and grid is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about power and grid without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-001-CLAIM-01",
+          "packet_id": "161-PACKET-001",
+          "claim_type": "Supported observation",
+          "text": "NERC reports that assessment-area summer peak demand is forecast to rise by more than 224 GW from 2025 through 2035 and winter peak demand by about 245 GW. The assessment attributes most projected growth to data centers and distinguishes 71 GW of approved summer-capacity growth from 266 GW of prospective additions.",
+          "source_ids": [
+            "source-161-nerc-ltra-2025"
+          ],
+          "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-001-CLAIM-02",
+          "packet_id": "161-PACKET-001",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded planner forecast and adequacy assessment for the Power and grid evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nerc-ltra-2025"
+          ],
+          "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-001-CLAIM-03",
+          "packet_id": "161-PACKET-001",
+          "claim_type": "Excluded inference",
+          "text": "The figures are forecasts assembled from mid-2025 planner submissions. They are not observed load, proof that each data-center proposal will connect, or proof of a future capacity shortfall.",
+          "source_ids": [
+            "source-161-nerc-ltra-2025"
+          ],
+          "source_semantic_digest": "0904ca616daa5d3da1ef06e31ced7bb7b4866ddcd0c9f7ecbc520612e19438b1",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-002-CLAIM-01",
+          "packet_id": "161-PACKET-002",
+          "claim_type": "Supported observation",
+          "text": "Berkeley Lab identifies about 8,200 active projects representing 1,312 GW of generation and 749 GW of storage at the end of 2025. About 549 GW had a draft or executed interconnection agreement without commercial operation, and the median request-to-operation time exceeded five years for projects completed in 2025.",
+          "source_ids": [
+            "source-161-lbnl-queued-up-2026"
+          ],
+          "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-002-CLAIM-02",
+          "packet_id": "161-PACKET-002",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official laboratory queue dataset and report for the Power and grid evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-lbnl-queued-up-2026"
+          ],
+          "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-002-CLAIM-03",
+          "packet_id": "161-PACKET-002",
+          "claim_type": "Excluded inference",
+          "text": "Queue records cover transmission-level requests and exclude distribution and behind-the-meter projects. A queue entry or interconnection agreement is not a completed plant, an operating observation, or a forecast.",
+          "source_ids": [
+            "source-161-lbnl-queued-up-2026"
+          ],
+          "source_semantic_digest": "f8867183ae61efda909df962caabed9e061ed19309e280372a264c5f56a12ba4",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-003-CLAIM-01",
+          "packet_id": "161-PACKET-003",
+          "claim_type": "Supported observation",
+          "text": "EIA reports 43.6 GW of operational utility-scale battery nameplate capacity at year-end 2025 and another 8.3 GW added in the first half of 2026, bringing the total near 52 GW. The release identifies Manatee as 409 MW of battery capacity paired with 75 MW of solar capacity.",
+          "source_ids": [
+            "source-161-eia-battery-capacity-aug-2026"
+          ],
+          "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-003-CLAIM-02",
+          "packet_id": "161-PACKET-003",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded observed nameplate-capacity summary plus planned additions for the Power and grid evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-eia-battery-capacity-aug-2026"
+          ],
+          "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-003-CLAIM-03",
+          "packet_id": "161-PACKET-003",
+          "claim_type": "Excluded inference",
+          "text": "Nameplate power does not establish energy duration, availability, dispatch, safety, or project outcome. The additional capacity reported for 2026–2028 is operator planning, not delivered operation.",
+          "source_ids": [
+            "source-161-eia-battery-capacity-aug-2026"
+          ],
+          "source_semantic_digest": "4ae8d0d286f84812dc68dbc3698376158d6527c006db0040f4dcc8849d189aa1",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-001",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this planner forecast and adequacy assessment."
+        },
+        {
+          "packet_id": "161-PACKET-002",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official laboratory queue dataset and report."
+        },
+        {
+          "packet_id": "161-PACKET-003",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed nameplate-capacity summary plus planned additions."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/power-and-grid-chapter/"
+    },
+    {
+      "compendium_record_id": "171-CHAPTER-02",
+      "record_kind": "Lane chapter",
+      "slug": "chips-and-compute-chapter",
+      "title": "Chips and compute: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "Chips and compute",
+      "packet_ids": [
+        "161-PACKET-004",
+        "161-PACKET-005",
+        "161-PACKET-006"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-161-nist-tsmc-investment-july-2026",
+        "source-161-nist-compute-supply-chain-lois-july-2026",
+        "source-161-lbnl-data-center-energy-usage-2024"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-004",
+          "digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d"
+        },
+        {
+          "packet_id": "161-PACKET-005",
+          "digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e"
+        },
+        {
+          "packet_id": "161-PACKET-006",
+          "digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3"
+        }
+      ],
+      "orientation": "Chips and compute is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about chips and compute without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-004-CLAIM-01",
+          "packet_id": "161-PACKET-004",
+          "claim_type": "Supported observation",
+          "text": "Commerce announced an incremental $100 billion TSMC U.S. commitment, bringing announced U.S. investment to $265 billion and twelve proposed leading-edge manufacturing and packaging facilities.",
+          "source_ids": [
+            "source-161-nist-tsmc-investment-july-2026"
+          ],
+          "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-004-CLAIM-02",
+          "packet_id": "161-PACKET-004",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded government announcement of company commitment for the Chips and compute evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-tsmc-investment-july-2026"
+          ],
+          "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-004-CLAIM-03",
+          "packet_id": "161-PACKET-004",
+          "claim_type": "Excluded inference",
+          "text": "This is an investment announcement, not a facility-level award, construction, qualification, production, or customer-acceptance record. It must not be merged with the existing CHIPS award or Phoenix fab-stage evidence.",
+          "source_ids": [
+            "source-161-nist-tsmc-investment-july-2026"
+          ],
+          "source_semantic_digest": "a4ae71fcb14179d328eb3e45f0cff1ad70fb808779d063912cd074d7f329d17d",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-005-CLAIM-01",
+          "packet_id": "161-PACKET-005",
+          "claim_type": "Supported observation",
+          "text": "Commerce announced seven letters of intent totaling up to $874 million across photonics, memory, packaging, substrates, materials, provenance, and alternative compute, including proposed amounts of $300 million for GlobalFoundries, $245 million for Kepler, and $140 million for Multibeam.",
+          "source_ids": [
+            "source-161-nist-compute-supply-chain-lois-july-2026"
+          ],
+          "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-005-CLAIM-02",
+          "packet_id": "161-PACKET-005",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded non-final funding letters of intent for the Chips and compute evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-compute-supply-chain-lois-july-2026"
+          ],
+          "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-005-CLAIM-03",
+          "packet_id": "161-PACKET-005",
+          "claim_type": "Excluded inference",
+          "text": "The amounts are non-final, stated as up to, and subject to diligence and approval. The letters establish neither disbursement nor technical performance.",
+          "source_ids": [
+            "source-161-nist-compute-supply-chain-lois-july-2026"
+          ],
+          "source_semantic_digest": "0584c9d4dd335219a98a4addd3f908e3441def69c6902caadf1a40d6ba1afa4e",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-006-CLAIM-01",
+          "packet_id": "161-PACKET-006",
+          "claim_type": "Supported observation",
+          "text": "The DOE-requested Berkeley Lab study estimates U.S. data-center electricity use at 176 TWh, or 4.4% of national consumption, in 2023. Its scenario range reaches 325–580 TWh, or 6.7%–12.0%, in 2028.",
+          "source_ids": [
+            "source-161-lbnl-data-center-energy-usage-2024"
+          ],
+          "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-006-CLAIM-02",
+          "packet_id": "161-PACKET-006",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded national estimate and scenario study for the Chips and compute evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-lbnl-data-center-energy-usage-2024"
+          ],
+          "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-006-CLAIM-03",
+          "packet_id": "161-PACKET-006",
+          "claim_type": "Excluded inference",
+          "text": "The 2028 range is scenario-based and sensitive to shipments, operating power, utilization, and cooling assumptions. It is not a forecast, a Northern Virginia allocation, or a local water conclusion.",
+          "source_ids": [
+            "source-161-lbnl-data-center-energy-usage-2024"
+          ],
+          "source_semantic_digest": "042abedcac26b70e35dd7cdcdc3eb54c63a24bbce56075b48b136983894a12a3",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-004",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this government announcement of company commitment."
+        },
+        {
+          "packet_id": "161-PACKET-005",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this non-final funding letters of intent."
+        },
+        {
+          "packet_id": "161-PACKET-006",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this national estimate and scenario study."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/chips-and-compute-chapter/"
+    },
+    {
+      "compendium_record_id": "171-CHAPTER-03",
+      "record_kind": "Lane chapter",
+      "slug": "water-chapter",
+      "title": "Water: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "Water",
+      "packet_ids": [
+        "161-PACKET-007",
+        "161-PACKET-008",
+        "161-PACKET-009"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-161-usbr-colorado-river-2027-decision",
+        "source-161-adwr-phoenix-ama-v3-june-2026",
+        "source-161-epa-wifia-2025-annual-report"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-007",
+          "digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6"
+        },
+        {
+          "packet_id": "161-PACKET-008",
+          "digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34"
+        },
+        {
+          "packet_id": "161-PACKET-009",
+          "digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d"
+        }
+      ],
+      "orientation": "Water is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about water without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-007-CLAIM-01",
+          "packet_id": "161-PACKET-007",
+          "claim_type": "Supported observation",
+          "text": "Reclamation's final framework places the expected start of water year 2027 for Lake Powell between elevations 3,510 and 3,540 feet with an expected release of 6.0–7.0 million acre-feet, while reporting record-low Powell and Mead elevations in August 2026.",
+          "source_ids": [
+            "source-161-usbr-colorado-river-2027-decision"
+          ],
+          "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-007-CLAIM-02",
+          "packet_id": "161-PACKET-007",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal reservoir operating decision and modeled condition for the Water evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-usbr-colorado-river-2027-decision"
+          ],
+          "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-007-CLAIM-03",
+          "packet_id": "161-PACKET-007",
+          "claim_type": "Excluded inference",
+          "text": "Reservoir operating rules and modeled conditions are not a municipal allocation, industrial delivery, shortage impact, or project outcome. The Mexico treaty process remains separate.",
+          "source_ids": [
+            "source-161-usbr-colorado-river-2027-decision"
+          ],
+          "source_semantic_digest": "a4655ea8414a4066c3feacc1e274678149884dc4f286ed25bbfcd8da21929ca6",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-008-CLAIM-01",
+          "packet_id": "161-PACKET-008",
+          "claim_type": "Supported observation",
+          "text": "The Phoenix AMA Version 3 model produces 2,514,500 acre-feet of unmet demand over its 100-year horizon, including 836,500 acre-feet in AWS, municipal, and long-term-storage-credit sectors, and models average annual storage loss of 503,800 acre-feet.",
+          "source_ids": [
+            "source-161-adwr-phoenix-ama-v3-june-2026"
+          ],
+          "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-008-CLAIM-02",
+          "packet_id": "161-PACKET-008",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded regional groundwater model for the Water evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-adwr-phoenix-ama-v3-june-2026"
+          ],
+          "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-008-CLAIM-03",
+          "packet_id": "161-PACKET-008",
+          "claim_type": "Excluded inference",
+          "text": "This is a regional model updated with observations only through 2023. It is not a prediction for a particular well, an observed future depletion series, or a facility water balance.",
+          "source_ids": [
+            "source-161-adwr-phoenix-ama-v3-june-2026"
+          ],
+          "source_semantic_digest": "cf3f529d6ae93f248f56410251df8826a5fd35ce48ab97e14ab2092b4ce1de34",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-009-CLAIM-01",
+          "packet_id": "161-PACKET-009",
+          "claim_type": "Supported observation",
+          "text": "EPA reports that WIFIA closed $900 million in loans supporting $1.8 billion of projects during 2025 and made 333 disbursements totaling nearly $3.7 billion. Through December 2025 it reports 147 closed loans and $22 billion of financing associated with $49 billion of infrastructure investment.",
+          "source_ids": [
+            "source-161-epa-wifia-2025-annual-report"
+          ],
+          "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-009-CLAIM-02",
+          "packet_id": "161-PACKET-009",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal financing-program annual report for the Water evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-epa-wifia-2025-annual-report"
+          ],
+          "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-009-CLAIM-03",
+          "packet_id": "161-PACKET-009",
+          "claim_type": "Excluded inference",
+          "text": "Portfolio financing, disbursements, reported jobs, and estimated borrower savings do not establish construction completion, acceptance, operation, or local water outcomes.",
+          "source_ids": [
+            "source-161-epa-wifia-2025-annual-report"
+          ],
+          "source_semantic_digest": "ff7460a741c484a88ee1743a7c2107b7e62b159ee2085e6c1b7c57666870d96d",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-007",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal reservoir operating decision and modeled condition."
+        },
+        {
+          "packet_id": "161-PACKET-008",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this regional groundwater model."
+        },
+        {
+          "packet_id": "161-PACKET-009",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal financing-program annual report."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/water-chapter/"
+    },
+    {
+      "compendium_record_id": "171-CHAPTER-04",
+      "record_kind": "Lane chapter",
+      "slug": "mobility-and-aviation-chapter",
+      "title": "Mobility and aviation: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "Mobility and aviation",
+      "packet_ids": [
+        "161-PACKET-010",
+        "161-PACKET-011",
+        "161-PACKET-012"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-161-nhtsa-road-fatalities-2025-estimate",
+        "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028",
+        "source-161-amtrak-fy2025-ridership"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-010",
+          "digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b"
+        },
+        {
+          "packet_id": "161-PACKET-011",
+          "digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504"
+        },
+        {
+          "packet_id": "161-PACKET-012",
+          "digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3"
+        }
+      ],
+      "orientation": "Mobility and aviation is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about mobility and aviation without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-010-CLAIM-01",
+          "packet_id": "161-PACKET-010",
+          "claim_type": "Supported observation",
+          "text": "NHTSA estimated 36,640 traffic fatalities in 2025, 6.7% below 2024, with a rate of 1.10 fatalities per 100 million vehicle-miles traveled.",
+          "source_ids": [
+            "source-161-nhtsa-road-fatalities-2025-estimate"
+          ],
+          "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-010-CLAIM-02",
+          "packet_id": "161-PACKET-010",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded national early estimate for the Mobility and aviation evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nhtsa-road-fatalities-2025-estimate"
+          ],
+          "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-010-CLAIM-03",
+          "packet_id": "161-PACKET-010",
+          "claim_type": "Excluded inference",
+          "text": "Early estimates remain subject to final FARS records. National movement cannot be attributed to enforcement, vehicle technology, autonomy, or an individual operator.",
+          "source_ids": [
+            "source-161-nhtsa-road-fatalities-2025-estimate"
+          ],
+          "source_semantic_digest": "a587333ce607a56beafca9e59a7c44d4eba5c0811497d6fa4653c849daf5d96b",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-011-CLAIM-01",
+          "packet_id": "161-PACKET-011",
+          "claim_type": "Supported observation",
+          "text": "FAA reports 2,028 controller trainees hired in FY2025 against 1,460 total losses, a net gain of 568, and plans 2,200, 2,300, and 2,400 hires for FY2026–2028. It separately reports about 11,000 certified controllers and 4,000 in training against a 12,563-controller target.",
+          "source_ids": [
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-011-CLAIM-02",
+          "packet_id": "161-PACKET-011",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal workforce plan and observed hiring account for the Mobility and aviation evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-011-CLAIM-03",
+          "packet_id": "161-PACKET-011",
+          "claim_type": "Excluded inference",
+          "text": "Hiring is not certification or facility deployment. Planned hiring and modernization remain appropriations-dependent, and workforce categories cannot be added interchangeably.",
+          "source_ids": [
+            "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028"
+          ],
+          "source_semantic_digest": "01644b4062b07d156f8b6154a5bd2390b28ed7dceb2e843cfb395062cf031504",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-012-CLAIM-01",
+          "packet_id": "161-PACKET-012",
+          "claim_type": "Supported observation",
+          "text": "Amtrak reports 34,467,598 trips in FY2025, 5.1% above FY2024, with Northeast Corridor trips up 8.1%, state-supported trips up 2.4%, and long-distance trips up 4.2%.",
+          "source_ids": [
+            "source-161-amtrak-fy2025-ridership"
+          ],
+          "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-012-CLAIM-02",
+          "packet_id": "161-PACKET-012",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official operator ridership summary for the Mobility and aviation evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-amtrak-fy2025-ridership"
+          ],
+          "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-012-CLAIM-03",
+          "packet_id": "161-PACKET-012",
+          "claim_type": "Excluded inference",
+          "text": "Trips are not unique passengers, accessibility completion, station acceptance, punctuality, or named-asset reliability. Route totals cannot answer the station-level evidence gates.",
+          "source_ids": [
+            "source-161-amtrak-fy2025-ridership"
+          ],
+          "source_semantic_digest": "32bae3c60a47346d1e5b01c796807ab2b4e7722b22c4fb766975e1e329647da3",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-010",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this national early estimate."
+        },
+        {
+          "packet_id": "161-PACKET-011",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal workforce plan and observed hiring account."
+        },
+        {
+          "packet_id": "161-PACKET-012",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official operator ridership summary."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/mobility-and-aviation-chapter/"
+    },
+    {
+      "compendium_record_id": "171-CHAPTER-05",
+      "record_kind": "Lane chapter",
+      "slug": "climate-and-energy-chapter",
+      "title": "Climate and energy: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "Climate and energy",
+      "packet_ids": [
+        "161-PACKET-013",
+        "161-PACKET-014",
+        "161-PACKET-015"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-161-noaa-us-climate-2025",
+        "source-161-eia-wind-solar-generation-2025",
+        "source-161-aemo-q1-2026-qed"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-013",
+          "digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b"
+        },
+        {
+          "packet_id": "161-PACKET-014",
+          "digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e"
+        },
+        {
+          "packet_id": "161-PACKET-015",
+          "digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36"
+        }
+      ],
+      "orientation": "Climate and energy is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about climate and energy without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-013-CLAIM-01",
+          "packet_id": "161-PACKET-013",
+          "claim_type": "Supported observation",
+          "text": "NOAA reports that the contiguous United States averaged 54.6°F in 2025, 2.6°F above the twentieth-century average and fourth warmest in the 131-year record. The Climate Extremes Index was 58% above average, and the Southwest recorded its warmest year.",
+          "source_ids": [
+            "source-161-noaa-us-climate-2025"
+          ],
+          "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-013-CLAIM-02",
+          "packet_id": "161-PACKET-013",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded observed national climate assessment for the Climate and energy evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-noaa-us-climate-2025"
+          ],
+          "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-013-CLAIM-03",
+          "packet_id": "161-PACKET-013",
+          "claim_type": "Excluded inference",
+          "text": "Each statistic retains its stated baseline and geography. The observations do not establish event attribution, project causality, or infrastructure performance.",
+          "source_ids": [
+            "source-161-noaa-us-climate-2025"
+          ],
+          "source_semantic_digest": "9a2b3f7bd4ef93bdbdba3f4bee0066adab9ad72bdd9c6ec72334c4c69847585b",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-014-CLAIM-01",
+          "packet_id": "161-PACKET-014",
+          "claim_type": "Supported observation",
+          "text": "EIA reports 760,000 GWh of wind and utility-scale solar generation in 2025, 88,000 GWh above 2024 and 17% of total generation. Wind supplied 464,000 GWh and utility-scale solar 296,000 GWh; including small-scale solar raises the joint share to 19%.",
+          "source_ids": [
+            "source-161-eia-wind-solar-generation-2025"
+          ],
+          "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-014-CLAIM-02",
+          "packet_id": "161-PACKET-014",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded observed national generation summary for the Climate and energy evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-eia-wind-solar-generation-2025"
+          ],
+          "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-014-CLAIM-03",
+          "packet_id": "161-PACKET-014",
+          "claim_type": "Excluded inference",
+          "text": "Generation is not capacity, availability, reliability, avoided emissions, or project attribution. Utility-scale and estimated small-scale solar use different reporting rails.",
+          "source_ids": [
+            "source-161-eia-wind-solar-generation-2025"
+          ],
+          "source_semantic_digest": "6870e2848e98952971a8fdc6870d8d4ad50c9463589fad4086185748fd920a8e",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-015-CLAIM-01",
+          "packet_id": "161-PACKET-015",
+          "claim_type": "Supported observation",
+          "text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in Q1 2026, a first-quarter record, with underlying demand at 25,496 MW. South Australia's renewable-and-storage contribution peaked at 98.8% during one half-hour on January 31.",
+          "source_ids": [
+            "source-161-aemo-q1-2026-qed"
+          ],
+          "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-015-CLAIM-02",
+          "packet_id": "161-PACKET-015",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official market-operator quarterly observation for the Climate and energy evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-aemo-q1-2026-qed"
+          ],
+          "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-015-CLAIM-03",
+          "packet_id": "161-PACKET-015",
+          "claim_type": "Excluded inference",
+          "text": "Regional and interval aggregates do not measure Hornsdale, Dalrymple, or Victoria Big Battery individually and do not establish a reliability or price effect caused by one asset.",
+          "source_ids": [
+            "source-161-aemo-q1-2026-qed"
+          ],
+          "source_semantic_digest": "e9ab05a9f10da3dbdb18f4424774d9bdebdafbd6f61dd6cb5e596f27bfd11d36",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-013",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed national climate assessment."
+        },
+        {
+          "packet_id": "161-PACKET-014",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this observed national generation summary."
+        },
+        {
+          "packet_id": "161-PACKET-015",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official market-operator quarterly observation."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/climate-and-energy-chapter/"
+    },
+    {
+      "compendium_record_id": "171-CHAPTER-06",
+      "record_kind": "Lane chapter",
+      "slug": "space-chapter",
+      "title": "Space: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "Space",
+      "packet_ids": [
+        "161-PACKET-016",
+        "161-PACKET-017",
+        "161-PACKET-018"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-161-faa-aerospace-forecast-2026-2046",
+        "source-161-space-force-eastern-range-2025",
+        "source-161-nasa-artemis-iii-hardware-aug-2026"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-016",
+          "digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643"
+        },
+        {
+          "packet_id": "161-PACKET-017",
+          "digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92"
+        },
+        {
+          "packet_id": "161-PACKET-018",
+          "digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55"
+        }
+      ],
+      "orientation": "Space is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about space without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-016-CLAIM-01",
+          "packet_id": "161-PACKET-016",
+          "claim_type": "Supported observation",
+          "text": "FAA records 195 licensed launches by six operators in FY2025, including 161 by SpaceX, with 76 at Cape Canaveral, 61 at Vandenberg, and 26 at Kennedy. It separately records nine licensed reentries and eight licensed operations resulting in mishaps.",
+          "source_ids": [
+            "source-161-faa-aerospace-forecast-2026-2046"
+          ],
+          "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-016-CLAIM-02",
+          "packet_id": "161-PACKET-016",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal historical activity account and forecast for the Space evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-faa-aerospace-forecast-2026-2046"
+          ],
+          "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-016-CLAIM-03",
+          "packet_id": "161-PACKET-016",
+          "claim_type": "Excluded inference",
+          "text": "Licensed launches, reentries, mishaps, site activity, and payload success are separate measures. The counts cannot be merged with Eastern Range orbital-launch totals.",
+          "source_ids": [
+            "source-161-faa-aerospace-forecast-2026-2046"
+          ],
+          "source_semantic_digest": "27bd9f90402fdc660e9e40b7d5750859046b26e4e2a822527d9a26f6220c3643",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-017-CLAIM-01",
+          "packet_id": "161-PACKET-017",
+          "claim_type": "Supported observation",
+          "text": "U.S. Space Force reports that Cape Canaveral Space Force Station and the Eastern Range hosted 109 orbital launches during 2025.",
+          "source_ids": [
+            "source-161-space-force-eastern-range-2025"
+          ],
+          "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-017-CLAIM-02",
+          "packet_id": "161-PACKET-017",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official range activity count for the Space evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-space-force-eastern-range-2025"
+          ],
+          "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-017-CLAIM-03",
+          "packet_id": "161-PACKET-017",
+          "claim_type": "Excluded inference",
+          "text": "A range-hosted orbital count is not a count of FAA licences, unique operators, successful payload deployments, or missions from Kennedy Space Center alone.",
+          "source_ids": [
+            "source-161-space-force-eastern-range-2025"
+          ],
+          "source_semantic_digest": "9ff73d9a49ff70b4ba764cd93b6d555f27f7862e129c4f7e2eda837af5851c92",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-018-CLAIM-01",
+          "packet_id": "161-PACKET-018",
+          "claim_type": "Supported observation",
+          "text": "NASA reports that all four RS-25 engines had reached Kennedy, booster stacking had begun, and more than 250 Artemis II Orion components were planned for reuse. It also reports almost four months of booster-preparation acceleration and roughly 50% shorter tower turnaround.",
+          "source_ids": [
+            "source-161-nasa-artemis-iii-hardware-aug-2026"
+          ],
+          "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-018-CLAIM-02",
+          "packet_id": "161-PACKET-018",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official program hardware update for the Space evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nasa-artemis-iii-hardware-aug-2026"
+          ],
+          "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-018-CLAIM-03",
+          "packet_id": "161-PACKET-018",
+          "claim_type": "Excluded inference",
+          "text": "Component delivery, reuse plans, and processing-time comparisons are not integrated-vehicle acceptance, flight readiness, launch authorization, or mission success.",
+          "source_ids": [
+            "source-161-nasa-artemis-iii-hardware-aug-2026"
+          ],
+          "source_semantic_digest": "26bceeea8ef679b401d9bc36d975274daa4ca4201b046ff7aae5c08c46780e55",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-016",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal historical activity account and forecast."
+        },
+        {
+          "packet_id": "161-PACKET-017",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official range activity count."
+        },
+        {
+          "packet_id": "161-PACKET-018",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official program hardware update."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/space-chapter/"
+    },
+    {
+      "compendium_record_id": "171-CHAPTER-07",
+      "record_kind": "Lane chapter",
+      "slug": "critical-minerals-and-manufacturing-chapter",
+      "title": "Critical minerals and manufacturing: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "Critical minerals and manufacturing",
+      "packet_ids": [
+        "161-PACKET-019",
+        "161-PACKET-020",
+        "161-PACKET-021"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-usgs-mineral-commodity-summaries",
+        "source-doe-thacker-pass-loan-2024",
+        "source-161-nist-usa-rare-earth-june-2026"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-019",
+          "digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4"
+        },
+        {
+          "packet_id": "161-PACKET-020",
+          "digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779"
+        },
+        {
+          "packet_id": "161-PACKET-021",
+          "digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9"
+        }
+      ],
+      "orientation": "Critical minerals and manufacturing is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about critical minerals and manufacturing without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-019-CLAIM-01",
+          "packet_id": "161-PACKET-019",
+          "claim_type": "Supported observation",
+          "text": "USGS values U.S. nonfuel mineral production at $112 billion in 2025 and mineral-reliant industries at $4.09 trillion. It reports thirteen critical minerals at 100% net-import reliance and another twenty at 50% or greater reliance.",
+          "source_ids": [
+            "source-usgs-mineral-commodity-summaries"
+          ],
+          "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-019-CLAIM-02",
+          "packet_id": "161-PACKET-019",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded official commodity statistics for the Critical minerals and manufacturing evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-usgs-mineral-commodity-summaries"
+          ],
+          "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-019-CLAIM-03",
+          "packet_id": "161-PACKET-019",
+          "claim_type": "Excluded inference",
+          "text": "The values include estimates and withheld proprietary figures. Import reliance is not proof of shortage or disruption, and broad economic contribution is not attributable to one mine.",
+          "source_ids": [
+            "source-usgs-mineral-commodity-summaries"
+          ],
+          "source_semantic_digest": "b7fe0c708058c5cf0126cff539cb3f102f4b0cf57e02fa01aba5637ada35cbe4",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-020-CLAIM-01",
+          "packet_id": "161-PACKET-020",
+          "claim_type": "Supported observation",
+          "text": "DOE records a $2.26 billion loan, comprising $1.97 billion principal and $289.7 million capitalized interest, for facilities designed to produce about 40,000 tonnes annually of battery-grade lithium carbonate.",
+          "source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-020-CLAIM-02",
+          "packet_id": "161-PACKET-020",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded federal loan and designed-capacity record for the Critical minerals and manufacturing evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-020-CLAIM-03",
+          "packet_id": "161-PACKET-020",
+          "claim_type": "Excluded inference",
+          "text": "Financing and designed capacity are not construction completion, accepted output, qualification, annual production, or environmental or community outcome. DOE's vehicle equivalents are modeled.",
+          "source_ids": [
+            "source-doe-thacker-pass-loan-2024"
+          ],
+          "source_semantic_digest": "39485cccab9938ece7b140e773ee621e55a7b83319cf9791a5317bbb86a57779",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-021-CLAIM-01",
+          "packet_id": "161-PACKET-021",
+          "claim_type": "Supported observation",
+          "text": "Commerce describes up to $277 million in incentives and up to $1.3 billion in lending for a proposed multi-site system targeting 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets.",
+          "source_ids": [
+            "source-161-nist-usa-rare-earth-june-2026"
+          ],
+          "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-021-CLAIM-02",
+          "packet_id": "161-PACKET-021",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded definitive public financing agreement for the Critical minerals and manufacturing evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-usa-rare-earth-june-2026"
+          ],
+          "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-021-CLAIM-03",
+          "packet_id": "161-PACKET-021",
+          "claim_type": "Excluded inference",
+          "text": "A definitive financing agreement and target capacity are not completed facilities, production, material qualification, or integrated mine-to-magnet operation.",
+          "source_ids": [
+            "source-161-nist-usa-rare-earth-june-2026"
+          ],
+          "source_semantic_digest": "d9182e017f639d8e5f3a0edb92586668a641830ef723dd0d281b26dde3c82fb9",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-019",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this official commodity statistics."
+        },
+        {
+          "packet_id": "161-PACKET-020",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this federal loan and designed-capacity record."
+        },
+        {
+          "packet_id": "161-PACKET-021",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this definitive public financing agreement."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/critical-minerals-and-manufacturing-chapter/"
+    },
+    {
+      "compendium_record_id": "171-CHAPTER-08",
+      "record_kind": "Lane chapter",
+      "slug": "ai-quantum-cyber-and-human-futures-chapter",
+      "title": "AI, quantum, cyber and human futures: evidence, conversion, and outcome boundaries",
+      "state": "Published — source-bound compendium chapter",
+      "lane": "AI, quantum, cyber and human futures",
+      "packet_ids": [
+        "161-PACKET-022",
+        "161-PACKET-023",
+        "161-PACKET-024"
+      ],
+      "packet_count": 3,
+      "claim_block_count": 9,
+      "source_ids": [
+        "source-161-nist-aite-july-2026",
+        "source-161-nist-quantum-lois-may-2026",
+        "source-161-fbi-ic3-2025-report"
+      ],
+      "source_semantic_digests": [
+        {
+          "packet_id": "161-PACKET-022",
+          "digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b"
+        },
+        {
+          "packet_id": "161-PACKET-023",
+          "digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf"
+        },
+        {
+          "packet_id": "161-PACKET-024",
+          "digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5"
+        }
+      ],
+      "orientation": "AI, quantum, cyber and human futures is presented as a chain from authoritative context to named conversion and eventual observed outcomes. The three inherited packets establish bounded observations or forecasts at their stated periods; they do not collapse into a readiness score or a claim about every linked project and place.",
+      "chapter_sections": [
+        {
+          "heading": "What the official record establishes",
+          "text": "The chapter preserves each issuer’s entity, artifact date, data-through period, evidence type, and limitation. Together the records show what can be said about ai, quantum, cyber and human futures without replacing project-level acceptance or outcome evidence."
+        },
+        {
+          "heading": "Where conversion remains open",
+          "text": "Authorization, funding, deployment, acceptance, recurring operation, and public outcome are separate states. A packet may strengthen context while leaving every downstream conversion decision unchanged."
+        },
+        {
+          "heading": "How to use the chapter",
+          "text": "Follow the packet and source IDs to the exact artifact, then test any proposed inference against identity, period, measure, method, denominator, revision lineage, and receiving authority."
+        }
+      ],
+      "claim_blocks": [
+        {
+          "claim_block_id": "161-PACKET-022-CLAIM-01",
+          "packet_id": "161-PACKET-022",
+          "claim_type": "Supported observation",
+          "text": "NIST launched a blind, sequestered evaluation environment with three initial vision-language-model tasks covering quantum science, genomics, and public safety, using common data, metrics, and scoring across provider tracks.",
+          "source_ids": [
+            "source-161-nist-aite-july-2026"
+          ],
+          "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-022-CLAIM-02",
+          "packet_id": "161-PACKET-022",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded evaluation infrastructure announcement for the AI, quantum, cyber and human futures evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-aite-july-2026"
+          ],
+          "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-022-CLAIM-03",
+          "packet_id": "161-PACKET-022",
+          "claim_type": "Excluded inference",
+          "text": "Evaluation infrastructure is not a model result, ranking, assurance finding, or evidence that a model is safe or useful. Participation is voluntary.",
+          "source_ids": [
+            "source-161-nist-aite-july-2026"
+          ],
+          "source_semantic_digest": "371ac666b01392bbffe5c073e3af62220ec915eebdc0934fde7e49b63b73449b",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-023-CLAIM-01",
+          "packet_id": "161-PACKET-023",
+          "claim_type": "Supported observation",
+          "text": "Commerce announced nine quantum letters of intent totaling $2.013 billion, including proposed foundry amounts of $375 million for GlobalFoundries and $1 billion for IBM alongside seven modality-specific companies.",
+          "source_ids": [
+            "source-161-nist-quantum-lois-may-2026"
+          ],
+          "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-023-CLAIM-02",
+          "packet_id": "161-PACKET-023",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded non-final funding letters of intent for the AI, quantum, cyber and human futures evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-nist-quantum-lois-may-2026"
+          ],
+          "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-023-CLAIM-03",
+          "packet_id": "161-PACKET-023",
+          "claim_type": "Excluded inference",
+          "text": "Letters of intent are non-final proposed funding, not disbursement, foundry operation, qubit performance, error correction, or utility-scale fault tolerance.",
+          "source_ids": [
+            "source-161-nist-quantum-lois-may-2026"
+          ],
+          "source_semantic_digest": "fc183f5c512eef3f581758f18f252099afd40740e00ab933b6d5623713702ccf",
+          "publication_state": "Binding exclusion"
+        },
+        {
+          "claim_block_id": "161-PACKET-024-CLAIM-01",
+          "packet_id": "161-PACKET-024",
+          "claim_type": "Supported observation",
+          "text": "The FBI reports 1,008,597 IC3 complaints with nearly $21 billion in reported losses during 2025. Cyber-enabled fraud accounted for 452,868 complaints and $17.697 billion, while people over 60 reported about $7.7 billion in losses.",
+          "source_ids": [
+            "source-161-fbi-ic3-2025-report"
+          ],
+          "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+          "publication_state": "Published context — not an evidence-admission decision"
+        },
+        {
+          "claim_block_id": "161-PACKET-024-CLAIM-02",
+          "packet_id": "161-PACKET-024",
+          "claim_type": "System implication",
+          "text": "The artifact supplies a bounded administrative complaint and reported-loss data for the AI, quantum, cyber and human futures evidence chain. It can orient the named topics and linked project or place files only at the entity, period, measure, and authority scope stated by the issuer.",
+          "source_ids": [
+            "source-161-fbi-ic3-2025-report"
+          ],
+          "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+          "publication_state": "Published interpretation with explicit scope"
+        },
+        {
+          "claim_block_id": "161-PACKET-024-CLAIM-03",
+          "packet_id": "161-PACKET-024",
+          "claim_type": "Excluded inference",
+          "text": "Complaint data are self-reported rather than a national-incidence estimate; categories can overlap, and reported losses are not necessarily recovered or adjudicated. The figures do not prove that AI caused the underlying fraud.",
+          "source_ids": [
+            "source-161-fbi-ic3-2025-report"
+          ],
+          "source_semantic_digest": "1adf7baf61138115260525226de41fe028155c268e1cbb084c90378c83251ea5",
+          "publication_state": "Binding exclusion"
+        }
+      ],
+      "decisive_next_artifacts": [
+        {
+          "packet_id": "161-PACKET-022",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this evaluation infrastructure announcement."
+        },
+        {
+          "packet_id": "161-PACKET-023",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this non-final funding letters of intent."
+        },
+        {
+          "packet_id": "161-PACKET-024",
+          "next_artifact": "A later accepted operating or outcome record matching the named entity, observation period, measure, method, denominator, and receiving authority; do not substitute this administrative complaint and reported-loss data."
+        }
+      ],
+      "boundary": "The chapter republishes the August 31 source-bound claims without representing them as a new September source refresh or evidence-admission receipt.",
+      "route": "/review/v1cycle/systems-compendium/ai-quantum-cyber-and-human-futures-chapter/"
+    },
+    {
+      "compendium_record_id": "171-ESSAY-01",
+      "record_kind": "Cross-system essay",
+      "slug": "compute-grid-water-constraints",
+      "title": "Compute demand, grid queues, and water constraints",
+      "state": "Published — bounded cross-system synthesis",
+      "lanes": [
+        "Power and grid",
+        "Chips and compute",
+        "Water"
+      ],
+      "referenced_packet_ids": [
+        "161-PACKET-001",
+        "161-PACKET-002",
+        "161-PACKET-003",
+        "161-PACKET-004",
+        "161-PACKET-005",
+        "161-PACKET-006",
+        "161-PACKET-007",
+        "161-PACKET-008",
+        "161-PACKET-009"
+      ],
+      "source_ids": [
+        "source-161-nerc-ltra-2025",
+        "source-161-lbnl-queued-up-2026",
+        "source-161-eia-battery-capacity-aug-2026",
+        "source-161-nist-tsmc-investment-july-2026",
+        "source-161-nist-compute-supply-chain-lois-july-2026",
+        "source-161-lbnl-data-center-energy-usage-2024",
+        "source-161-usbr-colorado-river-2027-decision",
+        "source-161-adwr-phoenix-ama-v3-june-2026",
+        "source-161-epa-wifia-2025-annual-report"
+      ],
+      "thesis": "Large-load demand can be announced faster than interconnection, generation, water, and local approvals become accepted service. The useful comparison is a dependency chain, not a single capacity total.",
+      "synthesis": "Large-load demand can be announced faster than interconnection, generation, water, and local approvals become accepted service. The useful comparison is a dependency chain, not a single capacity total. The editorial task is to show the sequence of claims a reader would need to verify: first the authoritative baseline, then the named intervention, then accepted delivery, then recurring operation, and finally an outcome measured for a stable population or asset denominator. Evidence can stop at any link. A missing link remains visible rather than being estimated from a neighboring system.",
+      "decision_questions": [
+        "Which entity and authority own the measure?",
+        "What date and data-through period apply?",
+        "Is the measure planned, installed, accepted, recurring, or observed?",
+        "What denominator and revision lineage make comparison lawful?",
+        "Which distributional or local-system effects remain outside the artifact?"
+      ],
+      "prohibited_shortcuts": [
+        "Do not convert a forecast into observed demand.",
+        "Do not convert an award into accepted capacity.",
+        "Do not transfer one jurisdiction’s denominator to another.",
+        "Do not infer causal benefit from temporal sequence or co-location.",
+        "Do not score systems whose evidence types are incompatible."
+      ],
+      "boundary": "The essay synthesizes already published packet claims and creates no new source check, admission decision, comparison verdict, score, or rank.",
+      "route": "/review/v1cycle/systems-compendium/compute-grid-water-constraints/"
+    },
+    {
+      "compendium_record_id": "171-ESSAY-02",
+      "record_kind": "Cross-system essay",
+      "slug": "announcement-to-accepted-capacity",
+      "title": "Announcement-to-accepted-capacity conversion",
+      "state": "Published — bounded cross-system synthesis",
+      "lanes": [
+        "Chips and compute",
+        "Critical minerals and manufacturing",
+        "Space"
+      ],
+      "referenced_packet_ids": [
+        "161-PACKET-004",
+        "161-PACKET-005",
+        "161-PACKET-006",
+        "161-PACKET-016",
+        "161-PACKET-017",
+        "161-PACKET-018",
+        "161-PACKET-019",
+        "161-PACKET-020",
+        "161-PACKET-021"
+      ],
+      "source_ids": [
+        "source-161-nist-tsmc-investment-july-2026",
+        "source-161-nist-compute-supply-chain-lois-july-2026",
+        "source-161-lbnl-data-center-energy-usage-2024",
+        "source-161-faa-aerospace-forecast-2026-2046",
+        "source-161-space-force-eastern-range-2025",
+        "source-161-nasa-artemis-iii-hardware-aug-2026",
+        "source-usgs-mineral-commodity-summaries",
+        "source-doe-thacker-pass-loan-2024",
+        "source-161-nist-usa-rare-earth-june-2026"
+      ],
+      "thesis": "Capital announcements, awards, construction milestones, qualification, and accepted recurring capacity answer different questions. This essay supplies a common conversion grammar without forcing unlike systems into one stage.",
+      "synthesis": "Capital announcements, awards, construction milestones, qualification, and accepted recurring capacity answer different questions. This essay supplies a common conversion grammar without forcing unlike systems into one stage. The editorial task is to show the sequence of claims a reader would need to verify: first the authoritative baseline, then the named intervention, then accepted delivery, then recurring operation, and finally an outcome measured for a stable population or asset denominator. Evidence can stop at any link. A missing link remains visible rather than being estimated from a neighboring system.",
+      "decision_questions": [
+        "Which entity and authority own the measure?",
+        "What date and data-through period apply?",
+        "Is the measure planned, installed, accepted, recurring, or observed?",
+        "What denominator and revision lineage make comparison lawful?",
+        "Which distributional or local-system effects remain outside the artifact?"
+      ],
+      "prohibited_shortcuts": [
+        "Do not convert a forecast into observed demand.",
+        "Do not convert an award into accepted capacity.",
+        "Do not transfer one jurisdiction’s denominator to another.",
+        "Do not infer causal benefit from temporal sequence or co-location.",
+        "Do not score systems whose evidence types are incompatible."
+      ],
+      "boundary": "The essay synthesizes already published packet claims and creates no new source check, admission decision, comparison verdict, score, or rank.",
+      "route": "/review/v1cycle/systems-compendium/announcement-to-accepted-capacity/"
+    },
+    {
+      "compendium_record_id": "171-ESSAY-03",
+      "record_kind": "Cross-system essay",
+      "slug": "delivery-versus-public-outcomes",
+      "title": "Infrastructure delivery versus observed public outcomes",
+      "state": "Published — bounded cross-system synthesis",
+      "lanes": [
+        "Mobility and aviation",
+        "Climate and energy",
+        "Water"
+      ],
+      "referenced_packet_ids": [
+        "161-PACKET-007",
+        "161-PACKET-008",
+        "161-PACKET-009",
+        "161-PACKET-010",
+        "161-PACKET-011",
+        "161-PACKET-012",
+        "161-PACKET-013",
+        "161-PACKET-014",
+        "161-PACKET-015"
+      ],
+      "source_ids": [
+        "source-161-usbr-colorado-river-2027-decision",
+        "source-161-adwr-phoenix-ama-v3-june-2026",
+        "source-161-epa-wifia-2025-annual-report",
+        "source-161-nhtsa-road-fatalities-2025-estimate",
+        "source-56r-faa-air-traffic-controller-workforce-plan-2026-2028",
+        "source-161-amtrak-fy2025-ridership",
+        "source-161-noaa-us-climate-2025",
+        "source-161-eia-wind-solar-generation-2025",
+        "source-161-aemo-q1-2026-qed"
+      ],
+      "thesis": "A delivered asset can be real and important while its service reliability, affordability, distribution, and public outcome remain unmeasured. The evidence architecture keeps those truths together.",
+      "synthesis": "A delivered asset can be real and important while its service reliability, affordability, distribution, and public outcome remain unmeasured. The evidence architecture keeps those truths together. The editorial task is to show the sequence of claims a reader would need to verify: first the authoritative baseline, then the named intervention, then accepted delivery, then recurring operation, and finally an outcome measured for a stable population or asset denominator. Evidence can stop at any link. A missing link remains visible rather than being estimated from a neighboring system.",
+      "decision_questions": [
+        "Which entity and authority own the measure?",
+        "What date and data-through period apply?",
+        "Is the measure planned, installed, accepted, recurring, or observed?",
+        "What denominator and revision lineage make comparison lawful?",
+        "Which distributional or local-system effects remain outside the artifact?"
+      ],
+      "prohibited_shortcuts": [
+        "Do not convert a forecast into observed demand.",
+        "Do not convert an award into accepted capacity.",
+        "Do not transfer one jurisdiction’s denominator to another.",
+        "Do not infer causal benefit from temporal sequence or co-location.",
+        "Do not score systems whose evidence types are incompatible."
+      ],
+      "boundary": "The essay synthesizes already published packet claims and creates no new source check, admission decision, comparison verdict, score, or rank.",
+      "route": "/review/v1cycle/systems-compendium/delivery-versus-public-outcomes/"
+    },
+    {
+      "compendium_record_id": "171-ESSAY-04",
+      "record_kind": "Cross-system essay",
+      "slug": "cross-jurisdiction-comparability",
+      "title": "Cross-jurisdiction denominator and comparability discipline",
+      "state": "Published — bounded cross-system synthesis",
+      "lanes": [
+        "Power and grid",
+        "Climate and energy",
+        "AI, quantum, cyber and human futures"
+      ],
+      "referenced_packet_ids": [
+        "161-PACKET-001",
+        "161-PACKET-002",
+        "161-PACKET-003",
+        "161-PACKET-013",
+        "161-PACKET-014",
+        "161-PACKET-015",
+        "161-PACKET-022",
+        "161-PACKET-023",
+        "161-PACKET-024"
+      ],
+      "source_ids": [
+        "source-161-nerc-ltra-2025",
+        "source-161-lbnl-queued-up-2026",
+        "source-161-eia-battery-capacity-aug-2026",
+        "source-161-noaa-us-climate-2025",
+        "source-161-eia-wind-solar-generation-2025",
+        "source-161-aemo-q1-2026-qed",
+        "source-161-nist-aite-july-2026",
+        "source-161-nist-quantum-lois-may-2026",
+        "source-161-fbi-ic3-2025-report"
+      ],
+      "thesis": "Official measures inherit their jurisdiction, reporting regime, revision history, and denominator. Cross-system learning begins with those differences rather than hiding them inside a score.",
+      "synthesis": "Official measures inherit their jurisdiction, reporting regime, revision history, and denominator. Cross-system learning begins with those differences rather than hiding them inside a score. The editorial task is to show the sequence of claims a reader would need to verify: first the authoritative baseline, then the named intervention, then accepted delivery, then recurring operation, and finally an outcome measured for a stable population or asset denominator. Evidence can stop at any link. A missing link remains visible rather than being estimated from a neighboring system.",
+      "decision_questions": [
+        "Which entity and authority own the measure?",
+        "What date and data-through period apply?",
+        "Is the measure planned, installed, accepted, recurring, or observed?",
+        "What denominator and revision lineage make comparison lawful?",
+        "Which distributional or local-system effects remain outside the artifact?"
+      ],
+      "prohibited_shortcuts": [
+        "Do not convert a forecast into observed demand.",
+        "Do not convert an award into accepted capacity.",
+        "Do not transfer one jurisdiction’s denominator to another.",
+        "Do not infer causal benefit from temporal sequence or co-location.",
+        "Do not score systems whose evidence types are incompatible."
+      ],
+      "boundary": "The essay synthesizes already published packet claims and creates no new source check, admission decision, comparison verdict, score, or rank.",
+      "route": "/review/v1cycle/systems-compendium/cross-jurisdiction-comparability/"
+    }
+  ],
+  "compendium_method": "Lane chapters preserve exact Phase 161 packet and claim semantics; essays reference packets without duplicating or upgrading their claim blocks.",
+  "public_html_routes": [
+    "/review/v1cycle/systems-compendium/",
+    "/review/v1cycle/systems-compendium/power-and-grid-chapter/",
+    "/review/v1cycle/systems-compendium/chips-and-compute-chapter/",
+    "/review/v1cycle/systems-compendium/water-chapter/",
+    "/review/v1cycle/systems-compendium/mobility-and-aviation-chapter/",
+    "/review/v1cycle/systems-compendium/climate-and-energy-chapter/",
+    "/review/v1cycle/systems-compendium/space-chapter/",
+    "/review/v1cycle/systems-compendium/critical-minerals-and-manufacturing-chapter/",
+    "/review/v1cycle/systems-compendium/ai-quantum-cyber-and-human-futures-chapter/",
+    "/review/v1cycle/systems-compendium/compute-grid-water-constraints/",
+    "/review/v1cycle/systems-compendium/announcement-to-accepted-capacity/",
+    "/review/v1cycle/systems-compendium/delivery-versus-public-outcomes/",
+    "/review/v1cycle/systems-compendium/cross-jurisdiction-comparability/"
+  ],
+  "public_json_exports": [
+    "/data/phase-171-frontier-systems-compendium.json"
+  ]
+}

@@ -27,7 +27,8 @@ export function getEvidenceGapTone(status: string): MetaTone {
   return "default";
 }
 
-export function getStatusNote(status: string): string {
+export function getStatusNote(status: string, hasCurrentClassification = false): string {
+  if (hasCurrentClassification) return "Historical publication state retained; current classification and feed eligibility are separate. This state does not establish a fresh source check.";
   if (status === "Published") return "Public editorial record.";
   if (status === "In Review") return "Source checked; awaiting final publication review.";
   if (status === "Draft Sample") return "Scaffold record visible during prelaunch review.";
@@ -38,6 +39,8 @@ export function getStatusNote(status: string): string {
 }
 
 export function getClaimScopeNote(scope: string): string {
+  if (scope === "FTFN research docket with dated source reviews") return "Combines historical FTFN method work with separately dated official-source reviews; not an outside operating result or a fresh source check.";
+  if (scope === "Internal FTFN record") return "Describes FTFN method work or a research docket, not an outside organization’s operating result.";
   if (scope === "General Context") return "Frames a topic or system without making a specific local claim.";
   if (scope === "Specific Source Update") return "Summarizes a bounded source update, release, filing, dataset, or standard.";
   if (scope === "System-Level Pattern") return "Interprets a recurring pattern across systems or signals.";
@@ -49,6 +52,8 @@ export function getClaimScopeNote(scope: string): string {
 }
 
 export function getLocalEvidenceNote(level: string): string {
+  if (level === "Planned Louisiana cohort; observed adoption not established") return "Retains dated planned-location evidence for Louisiana; this does not establish observed installations, subscriptions or service taken, or imply zero adoption.";
+  if (level === "Not local operating evidence") return "An internal workflow record does not establish a local project or service outcome.";
   if (level === "None") return "No local evidence layer is attached.";
   if (level === "General Source Layer") return "Uses broad official or institutional sources, but not specific local records.";
   if (level === "Local Source Layer") return "Uses local or jurisdiction-specific sources, but not enough to prove outcomes.";

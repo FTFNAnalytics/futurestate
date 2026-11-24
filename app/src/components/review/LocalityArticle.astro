@@ -1,0 +1,32 @@
+---
+import {getCollection} from 'astro:content';
+import {localityDossiers,localityConnections} from '../../lib/locality-dossiers.mjs';
+interface Props {article: typeof localityDossiers.records[number];}
+const {article}=Astro.props;
+const sources=await getCollection('sources');
+const originals=article.source_ids.map((id:string)=>sources.find(s=>s.data.id===id)!.data);
+const related=localityConnections(article);
+---
+<article class="page-section locality-article" data-locality-article={article.record_id}>
+  <div class="eyebrow">Place Atlas / Dated locality account</div>
+  <h1 class="page-title">{article.title}</h1>
+  <p class="lede">{article.answer}</p>
+  <p>{article.review_state}. Authored and reviewed <time datetime={article.ai_review_date}>{article.ai_review_date}</time> by {article.reviewer}.</p>
+  <dl><dt>Geographic scope</dt><dd>{article.scope}</dd><dt>Stable identity</dt><dd>{article.record_id}</dd></dl>
+  <p>One already eligible place, not an additional identity. No verified municipal polygon or operating outcome is claimed. <a href="/method/portfolio-decisions/">Counting decisions</a> · <a href="/method/editorial-review/">AI review policy</a></p>
+  {article.sections.map((section:{heading:string,text:string})=><section><h2>{section.heading}</h2><p>{section.text}</p></section>)}
+  <section><h2>Dates and evidence</h2><ol>{article.timeline.map((entry:{date:string,kind:string,text:string})=><li><p><time datetime={entry.date}>{entry.date}</time> — <strong>{entry.kind}</strong>. {entry.text}</p></li>)}</ol></section>
+  <section><h2>What would change this account</h2><p>{article.next_artifact}</p><p>A missing record does not establish that an event failed to happen. Further evidence can be reviewed without a human signature; unsupported outcomes remain unestablished.</p></section>
+  {related.length>0&&<section data-locality-related><h2>Same proposal, distinct places</h2><p>These localities share proposal context, not a duplicated award, interchangeable facility results or a merged place identity.</p><ul>{related.map(r=><li><a href={r.route}>{r.title}</a></li>)}</ul></section>}
+  <section><h2>Retained sources and earlier access checks</h2><p>No new source retrieval was performed for this article. The source locations and access descriptions below record the earlier checks on their stated dates, not a fresh inspection or a present-status finding.</p>
+    <ul>{originals.map(source=><li><a href={source.url}>{source.name}</a> — {source.known_limitations}</li>)}</ul>
+    <details><summary>Source locations and recorded access</summary><ol>{article.source_checks.map((source:any)=><li><p><a href={source.url}>{source.title}</a>. Retained check: <time datetime={source.recorded_check_date}>{source.recorded_check_date}</time>.</p>{source.source_date&&<p>Source period: {source.source_date}</p>}<p>{source.locator}</p><p>Earlier access record: {source.access}</p></li>)}</ol></details>
+    <details><summary>Exact reviewed inputs</summary><p>{article.review_decision}</p><p>Article SHA-256: <code>{article.sha256}</code></p><dl>{Object.entries(article.input_sha256).map(([key,value])=><><dt>{key.replaceAll('_',' ')}</dt><dd><code>{String(value)}</code></dd></>)}</dl><p><a href="/data/build-decisions.json">Download complete articles, exact inputs and decisions</a></p></details>
+    <p>{localityDossiers.boundary}</p>
+  </section>
+  <p><a href="#locality-history">Inspect the original record and earlier source checks</a> · <a href="/atlas/places/">Place Atlas</a> · <a href="/reference/explore/1/?kind=Place">Find other place accounts</a></p>
+</article>
+<style>
+ .locality-article{max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere;}
+ section{margin-block:2rem;}dt{font-weight:600;margin-top:1rem;}dd{margin-left:0;}code{overflow-wrap:anywhere;}details{margin-block:1rem;}summary{cursor:pointer;}
+</style>

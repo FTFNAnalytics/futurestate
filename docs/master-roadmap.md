@@ -1,10 +1,22 @@
 # FTFN Master Roadmap
 
+September 22 implementation: [source recovery, reader revisions and remaining acceptance gates](<C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/build-progress-2026-09-22.md>). The baseline is committed and byte-recovered; use this report for terminal reproduction and revised-candidate results rather than restarting source reconciliation from scratch.
+
+Current execution plan: [September 22 next build stages](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>). It incorporates the successful September 22 local validation and sequences source checkpointing, editorial review, reader acceptance, measurement decisions, owner-only release preparation and actual stewardship. Phases 205–216 remain individually open at their unmet gates.
+
 Civilization is a choice.
 
 FTFN is a future-state intelligence platform planned for `ftfn.io`: a news source, data source, roadmap, and narrative publication about the systems shaping what civilization could become.
 
-## Current content milestone — v0.9
+## Current execution direction — September 22, 2026
+
+The local content architecture extends through Phase 204 with current Phases 205–216 implementation. The September 22 full local run passed, producing 16,618 HTML pages, 157 top-level JSON exports and 319 updates, with zero missing local targets. Receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-536f9d7a0614` binds the recorded candidate. Nine of thirteen primary evidence-cycle decisions are dated; four future gates remain. The selected 33 editorial drafts and 104 earlier reader bindings are implemented but do not establish independent acceptance. See the [September 22 validation report](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/phase-207-arizona-recheck-2026-09-22.md>).
+
+The next execution program is the [September 22 staged plan](</C:/Users/justi/OneDrive/Documents/NextGen Transportation/docs/roadmap-next-stages-2026-09-22.md>). Begin with the source checkpoint and clean-install reproduction, finish claim and independent review of the existing content, validate reader journeys, resolve the conditional measurement feature, then prepare the exact owner-only candidate. Dated evidence work runs alongside these stages. Commit, hosted release, public access and full-v1 promotion retain their separate scope and authority.
+
+The long-term thesis and framework below remain applicable. Older milestone passages are historical context and must not override the September 22 checkpoint or staged plan.
+
+## Historical content milestone — v0.9
 
 Phases 130–144 are the current completed content architecture. v0.7 builds owner-gated evidence-admission dockets for twelve acquisition gaps, six priority missions, eighteen requirements, dated official-source checks, and explicit pending decisions. v0.8 converts all 24 projects and 15 places into named chronicles and ledgers, tests all 39 Atlas identities for longitudinal eligibility, and re-reviews all 12 comparisons without changing `Context only`. v0.9 adds 17 living topic desks, a 56-entity almanac, 17 four-horizon delivery roadmaps, one published inaugural edition, four visibly scheduled editions, and a fourteen-gate v1 launch audit. See the [v0.7 roadmap](roadmap-v0.7.md), [v0.8 roadmap](roadmap-v0.8.md), and [v0.9 roadmap](roadmap-v0.9.md) for the executed scope.
 

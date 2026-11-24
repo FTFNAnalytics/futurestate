@@ -1,5 +1,8 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
 import { glob } from "astro/loaders";
+import { projectGoldenMarsSignalData } from './lib/golden-mars-signal-review.mjs';
+import { projectGoldenMarsRecordData } from './lib/golden-mars-wider-review.mjs';
 
 const frameworkLayer = z.enum([
   "Planetary Conditions",
@@ -389,7 +392,7 @@ const signals = defineCollection({
     local_evidence_level: localEvidenceLevel.default("None"),
     last_reviewed_date: z.coerce.date().optional(),
     editorial_notes: z.string().optional()
-  })
+  }).transform(data => projectGoldenMarsSignalData(data))
 });
 
 const sources = defineCollection({
@@ -397,7 +400,7 @@ const sources = defineCollection({
   schema: z.object({
     id: z.string(),
     name: z.string(),
-    url: z.string().url(),
+    url: z.url(),
     source_type: sourceType,
     credibility_level: credibilityLevel,
     primary_topics: requiredTopics,
@@ -409,11 +412,11 @@ const sources = defineCollection({
     last_checked_date: z.coerce.date(),
     watch_lanes: z.array(sourceWatchLane).default([]),
     live_access_type: sourceLiveAccessType.default("Manual Page Check"),
-    api_url: z.string().url().optional(),
-    feed_url: z.string().url().optional(),
-    data_download_url: z.string().url().optional(),
-    docket_search_url: z.string().url().optional(),
-    release_calendar_url: z.string().url().optional(),
+    api_url: z.url().optional(),
+    feed_url: z.url().optional(),
+    data_download_url: z.url().optional(),
+    docket_search_url: z.url().optional(),
+    release_calendar_url: z.url().optional(),
     review_cadence_days: z.number().int().positive().optional(),
     monitoring_status: sourceMonitoringStatus.default("Active"),
     coverage_role: z.array(sourceCoverageRole).default([]),
@@ -421,7 +424,7 @@ const sources = defineCollection({
     source_owner: z.string().optional(),
     automation_notes: z.string().optional(),
     notes: z.string().optional()
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 const topics = defineCollection({
@@ -545,7 +548,7 @@ const evidenceGaps = defineCollection({
       next_check_date: z.coerce.date().optional()
     }).optional(),
     notes: z.string().optional()
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 const dependencyMaps = defineCollection({
@@ -648,12 +651,13 @@ const researchDocuments = defineCollection({
     framework_layers: requiredFrameworkLayers,
     constraint_tags: requiredConstraints,
     source_id: z.string(),
-    official_url: z.string().url(),
+    supporting_source_ids: z.array(z.string()).default([]),
+    official_url: z.url(),
     local_capture_path: z.string(),
     archive_member: z.string(),
     capture_status: researchCaptureStatus,
     captured_date: z.coerce.date()
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 const readerPathways = defineCollection({
@@ -680,7 +684,7 @@ const readerPathways = defineCollection({
     dependency_stack: z.array(readerPathwayDependency).min(1),
     evidence_limits: requiredStrings,
     next_records: requiredStrings
-  })
+  }).transform(data => projectGoldenMarsRecordData(data))
 });
 
 export const collections = {

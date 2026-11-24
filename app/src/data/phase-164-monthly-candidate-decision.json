@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "phase": 164,
+  "program_id": "FTFN-PHASE-164",
+  "dataset": "phase_164_monthly_candidate_decision",
+  "title": "Monthly candidate decision",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Derive a fourteen-gate audit for the September operating overlay and preserve the owner-controlled v1 promotion boundary.",
+  "record_scope": "Append-only Phase 164 record over the immutable Phase 145–156 v1-RC baseline.",
+  "publication_boundaries": [
+    "The Phase 157–164 overlay adds operating plans and bounded content without rewriting the immutable Phase 145–156 release candidate.",
+    "Future September checks, desk decisions, edition inputs, publication receipts, and month-end findings remain null until their lawful dates.",
+    "Alternative official artifacts remain candidate pointers unless a dated authorized adjudication admits them; discovery is not evidence admission.",
+    "No project stage, longitudinal observation, outcome, causal finding, score, rank, owner decision, repository publication, hosted deployment, or v1 promotion is inferred."
+  ],
+  "routes": {
+    "hub": "/review/v1month/monthly-decision/",
+    "public_export": "/data/phase-164-monthly-candidate-decision.json"
+  },
+  "counts": {
+    "readiness_gates": 14,
+    "passed": 10,
+    "held": 4,
+    "pending_build": 0,
+    "false_passes": 0
+  },
+  "readiness_gates": [
+    {
+      "gate_id": "164-GATE-01-BASELINE-PRESERVATION",
+      "title": "Immutable v1-RC baseline",
+      "state": "Pass",
+      "evidence": "Phase 157 binds receipt 156-LOCAL-VALIDATION-2026-08-31-a750bba9528e and digest 5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a.",
+      "next_action": "Never rewrite the Phase 156 receipt; validate later layers independently.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-02-SEPTEMBER-OPERATIONS-READINESS",
+      "title": "September evidence operations readiness",
+      "state": "Pass",
+      "evidence": "10 independent packets; 0 predated decisions.",
+      "next_action": "Operate only on or after each lawful date and preserve shared-date identities.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-03-EVIDENCE-ADJUDICATION",
+      "title": "Evidence adjudication",
+      "state": "Held",
+      "evidence": "24 requirement or mission owner action(s) remain without terminal receipts.",
+      "next_action": "Complete requirement decisions before their mission conclusion.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-04-AUTHORITY-COVERAGE",
+      "title": "Authority coverage",
+      "state": "Held",
+      "evidence": "12 authority disposition(s) remain without a terminal close, carry, or exclusion receipt.",
+      "next_action": "Use the alternative shelves as candidates only; obtain dated owner dispositions.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-05-LONGITUDINAL-BOUNDARY",
+      "title": "Longitudinal evidence or accepted zero-series boundary",
+      "state": "Held",
+      "evidence": "0 series admitted; zero-series owner disposition pending: 1.",
+      "next_action": "Complete a governed pilot or accept the disclosed zero-series boundary.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-06-STACK-WATCH",
+      "title": "Stack Watch content depth",
+      "state": "Pass",
+      "evidence": "24 packets and 72 source-bound claim blocks.",
+      "next_action": "Maintain exact artifact dates, data-through periods, evidence types, and exclusions.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-07-LOCAL-SYSTEMS",
+      "title": "Local-system coverage",
+      "state": "Pass",
+      "evidence": "4 source-bound local-system briefs.",
+      "next_action": "Update only through source-bound dated revisions.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-08-DEPENDENCY-MAPS",
+      "title": "Dependency-map coverage",
+      "state": "Pass",
+      "evidence": "4 maps, 20 bounded edges, and zero causal findings.",
+      "next_action": "Keep evidence-acquisition dependencies separate from causal results.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-09-GUIDE-CURRENCY",
+      "title": "Field-guide currency",
+      "state": "Pass",
+      "evidence": "17 source-digest-bound guide currency passes.",
+      "next_action": "Revise a guide only through a later dated review receipt.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-10-COMPARATIVE-INTEGRITY",
+      "title": "Comparison integrity",
+      "state": "Pass",
+      "evidence": "12 Context only rechecks with zero scores or ranks.",
+      "next_action": "Change a verdict only after every compatibility dimension passes.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-11-EDITORIAL-INTEGRITY",
+      "title": "September editorial integrity",
+      "state": "Pass",
+      "evidence": "68 window bindings, four runbooks, and zero predated decisions or publications.",
+      "next_action": "Close same-day desk windows before computing an edition scope.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-12-MACHINE-READABLE-CONTRACT",
+      "title": "Machine-readable overlay contract",
+      "state": "Pass",
+      "evidence": "Eight phase exports and one aggregate are declared as schema 1.0.",
+      "next_action": "Keep all route, export, and update inventories exact.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "164-GATE-13-LOCAL-VALIDATION",
+      "title": "Local build and release validation",
+      "state": "Pass",
+      "evidence": "Receipt 164-LOCAL-VALIDATION-2026-09-01-d2846dc22604 matches the normalized overlay digest.",
+      "next_action": "Validate the exact overlay, archive the receipt, rebuild, and verify determinism.",
+      "receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604"
+    },
+    {
+      "gate_id": "164-GATE-14-OWNER-ACCEPTANCE",
+      "title": "Owner acceptance and v1 promotion",
+      "state": "Held",
+      "evidence": "No owner receipt binds the candidate digest, verified commit, limitations, and fourteen-gate snapshot; 36 Phase 159 actions also remain pending.",
+      "next_action": "Obtain an explicit owner receipt; GitHub publication, hosting, DNS, and public launch remain separate authorizations.",
+      "receipt_id": null
+    }
+  ],
+  "local_validation_state": "Passed",
+  "local_validation_receipt": {
+    "schema_version": "1.0",
+    "receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+    "phase": 164,
+    "candidate_effective_date": "2026-08-31",
+    "validated_date": "2026-09-01",
+    "validated_at": "2026-09-01T06:18:11.197Z",
+    "status": "Passed",
+    "validation_result": "Passed local Phase 157–164 operating-overlay checks",
+    "validator_contract_version": "phase-164-local-validator-v1",
+    "scope": "Local validation of the append-only Phase 157–164 September operating overlay. The receipt does not admit evidence, supply an owner decision, authorize repository publication, authorize hosting, or promote v1.",
+    "artifact_digest_algorithm": "sha256",
+    "artifact_digest_contract": "SHA-256 over the normalized nine schema-1.0 Phase 157–164 source exports, exact 67-route overlay inventory, eight inventoried publication updates, source-semantic bindings, and immutable Phase 156 receipt/digest baseline. Receipt-derived Phase 164 fields are normalized to their pre-receipt state.",
+    "artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19",
+    "validation_bundle_digest": "d2846dc22604567826710929eb26893e31ab8bad423a05a8f3856c867904bc3e",
+    "metrics": {
+      "overlay_public_html_routes": 67,
+      "overlay_public_json_exports": 9,
+      "schema_1_0_overlay_exports": 9,
+      "structurally_audited_overlay_routes": 67,
+      "overlay_update_records": 8,
+      "baseline_phase156_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+      "whole_site_snapshot": {
+        "html_pages_excluding_downloads": 6650,
+        "top_level_data_json_exports": 108,
+        "update_entries_rendered": 189
+      }
+    },
+    "historical_whole_site_inventory_snapshot": true,
+    "checks": [
+      {
+        "check_id": "overlay-route-inventory",
+        "status": "Passed",
+        "detail": "67 unique overlay routes"
+      },
+      {
+        "check_id": "overlay-route-structure",
+        "status": "Passed",
+        "detail": "67 overlay routes structurally audited"
+      },
+      {
+        "check_id": "overlay-export-inventory",
+        "status": "Passed",
+        "detail": "9 unique overlay exports"
+      },
+      {
+        "check_id": "overlay-schema-contract",
+        "status": "Passed",
+        "detail": "9 overlay exports use schema_version 1.0"
+      },
+      {
+        "check_id": "overlay-update-inventory",
+        "status": "Passed",
+        "detail": "8 immutable Phase 157–164 updates"
+      },
+      {
+        "check_id": "phase156-baseline-binding",
+        "status": "Passed",
+        "detail": "immutable Phase 156 digest 5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a"
+      },
+      {
+        "check_id": "time-and-owner-boundary",
+        "status": "Passed",
+        "detail": "future evidence/editorial results remain unpredated and all owner/publication/hosting/launch authority remains false"
+      },
+      {
+        "check_id": "npm-run-validate-candidates",
+        "status": "Passed",
+        "command": "npm run validate:candidates"
+      },
+      {
+        "check_id": "npm-run-validate-content",
+        "status": "Passed",
+        "command": "npm run validate:content"
+      },
+      {
+        "check_id": "npm-run-source-health",
+        "status": "Passed",
+        "command": "npm run source:health"
+      },
+      {
+        "check_id": "npm-run-test-v1rc",
+        "status": "Passed",
+        "command": "npm run test:v1rc"
+      },
+      {
+        "check_id": "npm-run-test-v1month",
+        "status": "Passed",
+        "command": "npm run test:v1month"
+      },
+      {
+        "check_id": "npm-run-check",
+        "status": "Passed",
+        "command": "npm run check"
+      },
+      {
+        "check_id": "npm-run-build",
+        "status": "Passed",
+        "command": "npm run build"
+      },
+      {
+        "check_id": "npm-run-verify-v1rc",
+        "status": "Passed",
+        "command": "npm run verify:v1rc"
+      },
+      {
+        "check_id": "npm-run-verify-v1month",
+        "status": "Passed",
+        "command": "npm run verify:v1month"
+      }
+    ],
+    "evidence_admission_authorized": false,
+    "owner_acceptance": false,
+    "github_publication_authorized": false,
+    "hosted_deployment_authorized": false,
+    "public_launch_authorized": false,
+    "v1_promotion_state": "Held",
+    "next_action": "Regenerate Phases 157–164 so this receipt is embedded, rebuild, verify the stable overlay digest, update the deployment manifest, and operate each future evidence or editorial window only on its lawful date."
+  },
+  "v1_promotion_state": "Held",
+  "audit_result": "v1 remains Held: evidence adjudication, authority coverage, longitudinal evidence or accepted zero-series boundary, owner acceptance and v1 promotion.",
+  "owner_authority": {
+    "evidence_admission_authorized": false,
+    "owner_acceptance": false,
+    "github_publication_authorized": false,
+    "hosted_deployment_authorized": false,
+    "public_launch_authorized": false
+  },
+  "public_html_routes": [
+    "/review/v1month/monthly-decision/"
+  ],
+  "public_json_exports": [
+    "/data/phase-164-monthly-candidate-decision.json"
+  ]
+}

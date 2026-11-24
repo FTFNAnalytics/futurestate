@@ -1,0 +1,774 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-25",
+  "reviewer": "Codex (AI reviewer)",
+  "review_type": "Owner-authorized AI adjudication of retained evidence",
+  "human_reviewer": null,
+  "independent_review_claimed": false,
+  "external_sources_retrieved_this_adjudication": false,
+  "backlog": [
+    {
+      "backlog_item_id": "182-BACKLOG-001",
+      "decision_id": "AI-20260925-182-BACKLOG-001",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the attributed July draft-study discussion and September 8 comment deadline. Do not describe final policy, approved infrastructure or delivered capacity.",
+      "research_receipt_id": "207-BACKLOG-001-2026-09-14",
+      "research_receipt_sha256": "8fffa6102c84f9396a78332ae03cfdd523a8d6091da4709194009f8be0a97a72",
+      "artifact_checks_sha256": "2918b2da6d85c0393b9361e254e7c9d6f20e93b0c98f5ec741da967f9bd06ab4",
+      "reopening_condition": "Reassess when a final study, adopted policy or specific delivered-capacity record replaces the draft discussion.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-002",
+      "decision_id": "AI-20260925-182-BACKLOG-002",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject a combined AI/cyber trend: recommendation populations, repeated fiscal-year observations and unrecovered inventory versions are incompatible. Retain individually dated agency findings.",
+      "research_receipt_id": "207-BACKLOG-002-2026-09-14",
+      "research_receipt_sha256": "6995937a5bfd66ea831fa733ab7a224131dc68e3c9ace02c518ff6e7f599c853",
+      "artifact_checks_sha256": "4a6e092b968996e44fe6e509a701eda18025a61aec6b6b127fb1d18e1f3d3fe0",
+      "reopening_condition": "Reassess only with matched agency populations, nonduplicated periods and recovered inventory versions.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-003",
+      "decision_id": "AI-20260925-182-BACKLOG-003",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject the cross-domain asset-performance composite. Capacity, customer interruptions, reuse activities and mineral catalog entries have different units and populations.",
+      "research_receipt_id": "207-BACKLOG-003-2026-09-14",
+      "research_receipt_sha256": "956b5ae198f157757f186e912aadb2d92d66694c6f3d815e588d8c224b06f4d4",
+      "artifact_checks_sha256": "d0f016fe2524b3a95e9c0250cf04deb4e32548c7394cc4bc2fb3b4b92eaddffe",
+      "reopening_condition": "Reassess with a single defined asset population, compatible units and a reproducible observation series.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-004",
+      "decision_id": "AI-20260925-182-BACKLOG-004",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the corrected survey-response description and separately attributed program statistics. Reject one manufacturing outcome trend across MEP, institute activity and establishment statistics.",
+      "research_receipt_id": "207-BACKLOG-004-2026-09-14",
+      "research_receipt_sha256": "41b6264e1b442275a471963a2f2563ce27dd6a61cb174814699591d67cd6b72a",
+      "artifact_checks_sha256": "2c3b18c0b4a7f05b7c816591701934d4c865652855f7720f7e24bae3e6ebcf38",
+      "reopening_condition": "Reassess a manufacturing comparison after recovering consistent survey definitions, program populations and denominators.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-005",
+      "decision_id": "AI-20260925-182-BACKLOG-005",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject a common transport/space service-outcome measure. Carrier populations, testing exclusions, launch units and reporting calendars do not match.",
+      "research_receipt_id": "207-BACKLOG-005-2026-09-14",
+      "research_receipt_sha256": "acc94f2cb5d03a97ded2e1004354d339392b217ef82d5605887d31c2e4761e6e",
+      "artifact_checks_sha256": "3d8b7a42c23188fd1d735df490ceda8eadce6c2fbdb36b6d7c12061b2ab45784",
+      "reopening_condition": "Reassess only with explicit carrier or launch units, matching reporting periods and test exclusions.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-006",
+      "decision_id": "AI-20260925-182-BACKLOG-006",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject cross-agency cybersecurity ranking from unlike samples, score methods and audit cutoffs. Retain bounded historical audit attribution only.",
+      "research_receipt_id": "207-BACKLOG-006-2026-09-14",
+      "research_receipt_sha256": "22ecdb69013d606410d4fd36f3ba9c924726c5435e2c5b94a70f19c06dbd8a65",
+      "artifact_checks_sha256": "4446c50eab92bed9975142493151d86d96d51febd57a41c6866d5fd8697873c0",
+      "reopening_condition": "Reassess after harmonizing agency samples, scoring methods and audit cutoffs; do not infer current performance from old audits.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-007",
+      "decision_id": "AI-20260925-182-BACKLOG-007",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject battery availability ranking from inventory power and inaccessible archive rows. Plant-row reproduction and a defined operating denominator are substantive evidence requirements.",
+      "research_receipt_id": "207-BACKLOG-007-2026-09-14",
+      "research_receipt_sha256": "7a55bdfe3aba4e91827657d6786c1f25a0e82e2ec435fb6ad3458d0b899008c4",
+      "artifact_checks_sha256": "5a8f3ee7894913e6cff955e85a9e70e45ce4eb328f2d89ba48627006da933588",
+      "reopening_condition": "Reassess when plant rows are reproducible and a source defines observed availability, operating period and denominator.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-008",
+      "decision_id": "AI-20260925-182-BACKLOG-008",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Permit a source-located descriptive carrier table only after exact operating-carrier rows and revisions are reproduced. Reject an overall carrier-performance ranking and marketing-network substitution.",
+      "research_receipt_id": "207-BACKLOG-008-2026-09-14",
+      "research_receipt_sha256": "0a7002d3d6e9de8ccda7ef878fa74b0c9611d621b48804230f86dc68ec26ea2c",
+      "artifact_checks_sha256": "424ed92434edc3c7d5af9381b9706b85de07da12259d0a7ae8d78b94e203882c",
+      "reopening_condition": "Publish a descriptive candidate table locally once exact operating-carrier rows and revisions are reproduced; rankings require a comparable denominator.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-009",
+      "decision_id": "AI-20260925-182-BACKLOG-009",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject a cross-manufacturer productivity ranking and causal effect. Client/program reports use unlike outputs and periods, and the Current Applications multiplier discrepancy must remain visible.",
+      "research_receipt_id": "207-BACKLOG-009-2026-09-14",
+      "research_receipt_sha256": "db7591cb54a422abfcf4a69b5831461cbca2051789c7a80a27756ce83ee7d3ff",
+      "artifact_checks_sha256": "796d711ed3d5546bb985d182ce0026cb0f1c44eafd8adfac01dd8e00642ee0a4",
+      "reopening_condition": "Reassess when the Current Applications multiplier discrepancy is resolved and same-line inputs, outputs and periods are available.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-010",
+      "decision_id": "AI-20260925-182-BACKLOG-010",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject a causal explanation of FISMA movement from control activity. Changed samples, metrics, intervention scopes and cutoffs prevent the proposed comparison.",
+      "research_receipt_id": "207-BACKLOG-010-2026-09-14",
+      "research_receipt_sha256": "b52f563a98245be504f7454732eab6ab11eb96135cc7752f58622213f9794d10",
+      "artifact_checks_sha256": "d0bb38cc84dc18308d80426ea1861244c0c12d12d3910daee86898e9a15d5396",
+      "reopening_condition": "Reassess only with stable samples, comparable metrics and a defensible intervention-to-outcome design.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-011",
+      "decision_id": "AI-20260925-182-BACKLOG-011",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject battery-outcome causation from capacity and corrective-action responses. Target dates and operator closure assertions do not establish regulatory acceptance or measured service.",
+      "research_receipt_id": "207-BACKLOG-011-2026-09-14",
+      "research_receipt_sha256": "ada7cdcc0c65cccbb35cd4d334549d18d6fb71ee147a1bda0cffccc343132c01",
+      "artifact_checks_sha256": "e4a63365b47cf90014da68d825a2ffafe911a6a1416611fcb8911911d587ad44",
+      "reopening_condition": "Reassess when regulatory acceptance and measured service records are available, separately from operator targets.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-012",
+      "decision_id": "AI-20260925-182-BACKLOG-012",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject the inference that carrier commitments were delivered or caused annual cancellation changes. Recovering displayed promises would still not prove passenger-level delivery.",
+      "research_receipt_id": "207-BACKLOG-012-2026-09-14",
+      "research_receipt_sha256": "48b439f12f4f5a6e5791ab685b04959b0aad5ebd51f1260dd01fefad4aa084a4",
+      "artifact_checks_sha256": "276f6a4cdf710fb814f4ca4f72f5968b6d62dc60f128d53975f9bb9b860ada5b",
+      "reopening_condition": "Reassess delivered remedies only with passenger-level or equivalent delivery evidence and an appropriate comparison design.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-013",
+      "decision_id": "AI-20260925-182-BACKLOG-013",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject causal or persistent production improvement from capabilities, grants, acquisition and certification narratives. Keep facility continuity and same-line inputs/outputs separate.",
+      "research_receipt_id": "207-BACKLOG-013-2026-09-14",
+      "research_receipt_sha256": "ef0c33b38c3a632e53619d75e0b86b1a26bdafd3d482b3e59dab2d4b65cd598b",
+      "artifact_checks_sha256": "f064b6c28f16e047f29436dc052c0d5a6b04cd6f07137f90d222556aa02df6ab",
+      "reopening_condition": "Reassess after establishing facility and production-line continuity with dated inputs and outputs.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-014",
+      "decision_id": "AI-20260925-182-BACKLOG-014",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the specifically located, dated recommendation closure as an attributed finding. Reject transfer to other recommendations, current agency effectiveness or causal risk reduction.",
+      "research_receipt_id": "207-BACKLOG-014-2026-09-14",
+      "research_receipt_sha256": "93163514fdad6c56125f9f3e5816b1ac123ac995a179f038c240b42870419d4c",
+      "artifact_checks_sha256": "d606cf18837705d4e0b4491cec24998b7eaf4553dd470f097447a182e9d031a6",
+      "reopening_condition": "Reassess if a dated source changes the identified recommendation state; effectiveness requires separate outcome evidence.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-015",
+      "decision_id": "AI-20260925-182-BACKLOG-015",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject a common availability, safety or value score from cleanup, planned removal, restart and contract records. Preserve their different dates and asset boundaries.",
+      "research_receipt_id": "207-BACKLOG-015-2026-09-14",
+      "research_receipt_sha256": "3fe01e99df6825609d7280049aea83b75798a5fd21c80cbbb1b0f01481f71f93",
+      "artifact_checks_sha256": "3210688aba071d43bf041196d0ed674f6f8f494dbf1b8fbce17063079427794e",
+      "reopening_condition": "Reassess each asset against a defined operating measure, period and denominator; do not combine cleanup and restart milestones.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-016",
+      "decision_id": "AI-20260925-182-BACKLOG-016",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the correction that the February artifact includes annual tables. Keep May operations, oversales quarters and complaint reporting separate; reject service-delivery or causal inference.",
+      "research_receipt_id": "207-BACKLOG-016-2026-09-14",
+      "research_receipt_sha256": "87506f1b44ba2bf3b69e639468bc13c40a20ec2bd73401733ff3ec4335df37ac",
+      "artifact_checks_sha256": "395737e5b3bb5ec01b6fa8df09e7cd083660185b1f86837a0a53af0888047480",
+      "reopening_condition": "Reassess only after matching annual, monthly and quarterly carrier tables and their distinct populations.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-017",
+      "decision_id": "AI-20260925-182-BACKLOG-017",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the bounded company-name/address match. Reject claims of unchanged ownership, persistent same-line output or current safety from a historical inspection.",
+      "research_receipt_id": "207-BACKLOG-017-2026-09-14",
+      "research_receipt_sha256": "af88849a5b318c6738d836548f95d70f2587c8d160c01e0c412a02601d31108e",
+      "artifact_checks_sha256": "eb102452e0c72f48d666dfd088bc75346f3af4fbf38dba086456873930df69ad",
+      "reopening_condition": "Reassess ownership, same-line output or safety only with records that establish those properties for the relevant period.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-018",
+      "decision_id": "AI-20260925-182-BACKLOG-018",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept supplier clauses as requirements only. Reject achieved capability, certificate validity or production outcomes inferred from a listing, filename or unread image.",
+      "research_receipt_id": "207-BACKLOG-018-2026-09-14",
+      "research_receipt_sha256": "223483346bb9bedcf7172405853569748548420544bf3089c5321b29f10f88e0",
+      "artifact_checks_sha256": "3d3f5a9640fa7fa4a2fd09fc563f74ba22001aa1f858063619af0bcf59e8488f",
+      "reopening_condition": "Reassess achieved supplier capability only with readable evidence of certificate validity and applicable production outcomes.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-019",
+      "decision_id": "AI-20260925-182-BACKLOG-019",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject manufacturer defect rates and causal line-performance claims from unmatched roles, enforcement, requirements and failed MDR queries. Do not substitute alternate queries or infer zero events.",
+      "research_receipt_id": "207-BACKLOG-019-2026-09-14",
+      "research_receipt_sha256": "b3771036c4e1bbacd5dd7509174108099ba1d4cce0890f433961292e15b92278",
+      "artifact_checks_sha256": "cd6e17e97773910c267cbaa1e91c8fb4136650abc1823cd01ae921dd0dc265f6",
+      "reopening_condition": "Reassess defect rates only after matching manufacturer roles, recovered MDR events, time at risk and production denominators.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-020",
+      "decision_id": "AI-20260925-182-BACKLOG-020",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the corrected VA-title and DOE-letter framing and distinct recommendation states. Reject an agency ranking; administrative closure, audit quality and implementation remain different.",
+      "research_receipt_id": "207-BACKLOG-020-2026-09-14",
+      "research_receipt_sha256": "43e61a793df4415ac47e68ba48933602b4d2261499d5b33296cec998b26b0958",
+      "artifact_checks_sha256": "8aefcf25756833c9b457e80c13967a1770c896110a6e2ebfa8329fdb547f0255",
+      "reopening_condition": "Reassess recommendation status using a source-located change for that recommendation; do not turn administrative closure into effectiveness.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-021",
+      "decision_id": "AI-20260925-182-BACKLOG-021",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject cross-battery availability, safety, value and causal ranking. Retain event-specific and project-attributed findings; unresolved service, period and formula boundaries prevent series admission.",
+      "research_receipt_id": "207-BACKLOG-021-2026-09-14",
+      "research_receipt_sha256": "3c3b27f919237e1e47509f257fa6e6271f18949f388a969dbf5e5604af4ea8fd",
+      "artifact_checks_sha256": "a530d38ebc7a4dad0f24e9e799e198f9a8dd109e825911066dcc69318cc190f0",
+      "reopening_condition": "Reassess a battery series only with matching asset, service, observation period, units and documented formulas.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-022",
+      "decision_id": "AI-20260925-182-BACKLOG-022",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept source-located descriptive operating-carrier observations and displayed commitments with their periods. Reject composite quality/readiness ranking and delivered-remedy claims.",
+      "research_receipt_id": "207-BACKLOG-022-2026-09-14",
+      "research_receipt_sha256": "b25ddaa7573a3f25399fc3e657f46d6d9079a6668eecc12711dbce0ec9d1c02c",
+      "artifact_checks_sha256": "d6c46cf9bfd37ca2a78402ad9abb3894db4724cc3b4e55f7f7a17410230551a4",
+      "reopening_condition": "Reassess delivered remedies with evidence of actual delivery; keep source-located carrier observations separate from commitments.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-023",
+      "decision_id": "AI-20260925-182-BACKLOG-023",
+      "decision_date": "2026-09-25",
+      "disposition": "Reject inference",
+      "rationale": "Reject cross-aircraft-line productivity ranking. Cumulative delivery, lateness, readiness and program governance are not a common accepted-output denominator.",
+      "research_receipt_id": "207-BACKLOG-023-2026-09-14",
+      "research_receipt_sha256": "16c11feb1c101b5085e1f4ea1d0870f9a8f169e34075c4a1e2fd80995b3a03f8",
+      "artifact_checks_sha256": "be25e5bc1119b181e470aa3417bb71f639e014664044e1060b57da07832c351f",
+      "reopening_condition": "Reassess aircraft productivity only with consistent accepted output, line inputs, periods and treatment of late deliveries.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-024",
+      "decision_id": "AI-20260925-182-BACKLOG-024",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the bounded contextual coverage notice. Reject converting source coverage into performance ranking, universal source currency or closure of missing records.",
+      "research_receipt_id": "207-BACKLOG-024-2026-09-14",
+      "research_receipt_sha256": "140ac38317df714649eb4f0ce3c151f9d7df121c4565d079a1ef0743a64851df",
+      "artifact_checks_sha256": "0c88f834ddd65092bcaec9731d8dd409e507a2dc88061540d4e976552c91a5af",
+      "reopening_condition": "Reassess coverage when a specific missing artifact is recovered or a source changes; no universal freshness claim follows.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    },
+    {
+      "backlog_item_id": "182-BACKLOG-025",
+      "decision_id": "AI-20260925-182-BACKLOG-025",
+      "decision_date": "2026-09-25",
+      "disposition": "Qualify",
+      "rationale": "Accept the corrected source-specific acquisition status. Reject six assumed closures, monthly production from cumulative totals, and availability from capacity or queue metadata.",
+      "research_receipt_id": "207-BACKLOG-025-2026-09-14",
+      "research_receipt_sha256": "496f67258e7494fb465ed7ddc65a567483dca089f4b7886b4867c1a3af6df178",
+      "artifact_checks_sha256": "9b2dbf2af8d54d701441e562668bdcf6262caaadf94e3bd6818cfda6bd5f02e1",
+      "reopening_condition": "Reassess acquisition, monthly production or availability only with records that directly establish the respective state or measure.",
+      "series_admitted": false,
+      "external_publication_authorized": false
+    }
+  ],
+  "portfolio": {
+    "policy": "Count a separately identified project once, not its repeated registry/control rows. An eligible identity is not yet a completed dossier. Multi-project comparisons and program parents are contextual unless separately split and reviewed. Place dossiers may use a clearly named municipality, county, region, corridor, campus or basin; do not pretend these scopes are interchangeable.",
+    "montana": {
+      "decision": "32 distinct source-project identities are eligible for individual dossiers; the 768 registry rows are not projects.",
+      "parent_id": "casebook-montana-bead-completed-quarter",
+      "parent_additional_count": 0,
+      "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+      "records": [
+        {
+          "source_project_id": "CM61-BEAD-MT-4644",
+          "name": "AKCS - Montana - All Counties",
+          "reporting_rail": "LEO",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4644 its own project identity. Shared subgrantee/UEI does not merge project IDs; LEO reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4655",
+          "name": "Blackfoot Telephone Cooperative Inc - Missoula - 1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4655 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4654",
+          "name": "Gallatin Wireless Internet-Park-1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4654 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4685",
+          "name": "InlandMT-Rosebud-1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4685 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4669",
+          "name": "Starlink Montana BEAD",
+          "reporting_rail": "LEO",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4669 its own project identity. Shared subgrantee/UEI does not merge project IDs; LEO reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4657",
+          "name": "Gallatin Wireless Internet-Stillwater-1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4657 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4658",
+          "name": "Grizzly Broadband-Ravalli-1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4658 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4648",
+          "name": "InlandMT-LewisClark-1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4648 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4673",
+          "name": "InterBel-FlatheadCounty-Application1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4673 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4672",
+          "name": "InterBel-FlatheadCounty-Application2",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4672 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4670",
+          "name": "InterBel-LincolnCounty-Application2",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4670 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4662",
+          "name": "InterBel-FlatheadCounty-Application3",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4662 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4677",
+          "name": "LincTel Communications - Lewis and Clark - 2",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4677 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4679",
+          "name": "Montana Internet Corporation-Broadwater County",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4679 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4651",
+          "name": "Project Telephone Absarokee Town",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4651 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4686",
+          "name": "Range - Rosebud",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4686 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4668",
+          "name": "Range - Treasure",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4668 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4675",
+          "name": "Safelink Internet dba Anthem Broadband- Gallatin County",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4675 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4661",
+          "name": "Siyeh Communications - Flathead County",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4661 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4693",
+          "name": "Spectrum Pacific West - Missoula",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4693 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4692",
+          "name": "Spectrum Pacific West - Flathead",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4692 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4691",
+          "name": "Spectrum Pacific West - Cascade",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4691 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4689",
+          "name": "Spectrum Pacific West - Carbon",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4689 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4645",
+          "name": "Triangle Communications - Hill - 1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4645 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4256",
+          "name": "Inland MT- Pondera- 1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4256 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4261",
+          "name": "Inland MT- Cascade and Fergus Counties",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4261 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4246",
+          "name": "VCN-BEAD-Whitehall",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4246 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4218",
+          "name": "Ziply Fiber Pacific, LLC",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4218 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4206",
+          "name": "Ziply Fiber of Montana LLC",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4206 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4149",
+          "name": "KDS_Cascade_County_Fber_Project-CBG_1",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4149 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4212",
+          "name": "KDS_Cascade_County_Fber_Project-CBG_2",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4212 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        },
+        {
+          "source_project_id": "CM61-BEAD-MT-4678",
+          "name": "Triangle Communications - Hill - 2",
+          "reporting_rail": "terrestrial",
+          "decision": "Eligible individual project",
+          "count_when_dossier_complete": 1,
+          "accepted_dossier": false,
+          "rationale": "The retained source gives CM61-BEAD-MT-4678 its own project identity. Shared subgrantee/UEI does not merge project IDs; terrestrial reporting remains separate."
+        }
+      ]
+    },
+    "jurisdictions": [
+      {
+        "record_id": "185-DOSSIER-001",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Australia: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-002",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "European Union: global receiving-system orientation is a supranational jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-003",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "United Kingdom: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-004",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Germany: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-005",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "France: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-006",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Netherlands: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-007",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Norway: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-008",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Sweden: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-009",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Japan: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-010",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "South Korea: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-011",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Singapore: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-012",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "India: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-013",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "New Zealand: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-014",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Brazil: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-015",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Chile: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-016",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "South Africa: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-017",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "Mexico: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      },
+      {
+        "record_id": "185-DOSSIER-018",
+        "decision": "Exclude from the 70-place dossier count",
+        "count": 0,
+        "rationale": "United Arab Emirates: global receiving-system orientation is a national jurisdiction orientation, not a qualifying localized delivery dossier. Retain it for navigation and policy context."
+      }
+    ],
+    "next_project_batch": [
+      "CM61-BEAD-MT-4655",
+      "CM61-BEAD-MT-4654",
+      "CM61-BEAD-MT-4685",
+      "CM61-BEAD-MT-4657",
+      "CM61-BEAD-MT-4658"
+    ],
+    "next_action": "Build the first five eligible terrestrial Montana project dossiers from their retained source identities and clearly dated evidence. No human counting approval is required. Do not claim construction, service, take-rate or accepted operating outcomes without their records."
+  },
+  "language": {
+    "locales": [
+      {
+        "language": "French",
+        "locale": "fr-CA",
+        "rationale": "Canadian French fits the Canadian-led publication; retain original institutional and place names."
+      },
+      {
+        "language": "Spanish",
+        "locale": "es-419",
+        "rationale": "Use broadly intelligible Latin American Spanish consistently across this international reference edition."
+      }
+    ],
+    "mapping_decision": "Use the later plain-language reader text as the translation source. Preserve the canonical contract digest and its different sources as history; bind translations to the exact reader text and current corrections.",
+    "reviewer": "Codex (AI language and subject reviewer)",
+    "human_approval_required": false,
+    "translation_texts_approved": false,
+    "next_action": "Revise and review the two retained samples against the exact current English source, then complete the remaining 32 contracts in coherent batches."
+  },
+  "boundary": "25 backlog determinations and portfolio/language rules are decided. Existing research receipts keep their original dates and limits. No series, operating result, human study, public launch or blanket corpus acceptance is created."
+}

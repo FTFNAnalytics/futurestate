@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../../../components/layout/BaseLayout.astro';
+import {montanaDossiers,montanaContextFor} from '../../../../lib/montana-dossiers.mjs';
+import {currentPortfolioSummary} from '../../../../lib/current-named-dossiers.mjs';
+const records=[...montanaDossiers.records].sort((a,b)=>a.title.localeCompare(b.title,'en'));
+---
+<BaseLayout title="Montana broadband project dossiers | FTFN" description="Read 32 distinct Montana BEAD proposal-stage dossiers with exact identities, separate recipient cohorts, financing, reporting designations and evidence limits.">
+  <section class="page-section prose-page">
+    <div class="eyebrow">Atlas / Montana BEAD</div><h1 class="page-title">32 projects. Separate identities and evidence.</h1>
+    <p class="lede">Each dossier explains one retained proposal: who holds it, what its recipient inventory contains, how financing is described and which records would establish delivery.</p>
+    <p>All {records.length} project accounts have owner-authorized AI review. This is complete coverage of the retained Montana cohort, not a finding that the projects are built, serving users or achieving outcomes. The preserved proposal articles claim no new source retrieval; separately dated program checks below do not redate their project records.</p>
+    <p>The cohort includes 30 terrestrial and two LEO reporting designations. One project has only anchor-institution rows. Raw codes, eligible locations, institutions, subscriptions and accepted service are not interchangeable.</p>
+    <p><a href="/reference/explore/1/?q=Montana&kind=Project">Search the reader catalog</a> · <a href="/method/portfolio-decisions/">Counting decisions</a> · <a href="/data/build-decisions.json">All dossier data and exact inputs</a></p>
+  </section>
+  <section class="page-section"><h2>Find a project</h2><div class="grid">{records.map(record=><article class="record-card" data-montana-index={record.record_id}><div class="eyebrow">{record.record_id}</div><h3><a href={record.route}>{record.title}</a></h3><p>{record.answer}</p><p class="card-note">{montanaContextFor(record).cohort_kind}. Proposal-stage account; no operating outcomes admitted.</p></article>)}</div></section>
+  <section class="page-section prose-page"><h2>How this cohort counts</h2><p>There are 32 distinct project IDs, not 768 projects inferred from repeated reporting rows. Shared operators do not merge projects. The program parent is context and contributes no additional project when these children are counted.</p><p data-montana-current-portfolio>Current eligible inventory: {currentPortfolioSummary.eligible_projects} projects and {currentPortfolioSummary.eligible_places} places. These are counting decisions, not delivered-service findings or release approval.</p><p><a href="/atlas/projects/">Project Atlas</a> · <a href="/atlas/projects/montana-bead-completed-quarter/">Dated program reading and current follow-ups</a> · <a href="/atlas/places/montana-bead-delivery/">Montana place system</a></p></section>
+</BaseLayout>

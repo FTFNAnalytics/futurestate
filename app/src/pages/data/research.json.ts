@@ -1,3 +1,4 @@
+import {projectResearchDocument} from "../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import type { APIRoute } from "astro";
 import {
@@ -11,7 +12,7 @@ export const GET: APIRoute = async () => {
     .filter((collection) => collection.data.record_status === "Published")
     .sort((left, right) => left.data.id.localeCompare(right.data.id))
     .map(serializePublicResearchCollection);
-  const documents = (await getCollection("researchDocuments"))
+  const documents = (await getCollection("researchDocuments").then(records => records.map(projectResearchDocument)))
     .filter((document) => document.data.record_status === "Published")
     .sort((left, right) => left.data.id.localeCompare(right.data.id))
     .map(serializePublicResearchDocument);

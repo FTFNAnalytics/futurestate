@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-11-21",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete space translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-061",
+  "source_record_sha256": "e50424569af6fb89be978ce4568742f5e3ab1a0fa9590a5f82506ed285e97b6f",
+  "source_to_contract_mapping": "Translate the retained September 10 plain-language English reader with its 11 actual source IDs. Preserve the distinct original canonical-contract digest and its 3 source IDs; the legacy texts.historical_contract_sha256 field below binds canonical_content_digest, not the full contract JSON hash. No original specification or human-review field is rewritten.",
+  "historical_contract_source_ids": [
+    "source-nasa-artemis",
+    "source-nasa-open-apis",
+    "source-nasa-technical-reports-server"
+  ],
+  "checks": [
+    "Compared both complete overviews and all six sections with retained English record 202-EDITION-061.",
+    "Preserved vehicle, spacecraft, operator, site, range and mission-service identities and the differences between individual missions, national totals and local recurring service.",
+    "Kept NASA architecture, scoped environmental decisions, Kennedy planning and the retained LC-46 site licence separate from hardware integration and operator/mission authorization.",
+    "Preserved the operating Kennedy bridge and national FAA annual counts without using either as a site-specific launch-rate or utilization finding.",
+    "Kept planned manifests separate from completed observations and retained acceptance, mission disposition, range availability, delays, anomalies, canceled operations and preparation between successive uses.",
+    "Retained comparison boundaries for cost, reliability, environmental mitigation, scientific return, communities and local economic effects.",
+    "Preserved September 1, 2026 evidence cutoff and September 10 English authorship; November 21 is translation and AI-fidelity-review date only.",
+    "Read back and compared all saved sections with the authored text; verified both manuscript hashes and all 11 exact source IDs, labels and URLs in each text. Local source-profile pins do not represent live retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept after wording correction",
+      "rationale": "Changed the first draft’s remise en état entre utilisations to préparation entre utilisations so turnaround does not imply repair or restoration. Champ de tir is explained by its management and safety responsibilities; mission disposition remains a result or formal decision, not an assumption of success. Site licence and operator/mission authority remain separate."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Polígono de operaciones is defined by management and safety responsibilities. Preparación entre usos preserves turnaround without claiming repairs, mission outcome remains separate from planned activity, and national counts are not assigned to an individual spaceport."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/space-fr-CA-ai-reviewed.md",
+      "file_sha256": "6adbd5688c119d6b412c5f46f34f4965c164229808f0e3c218155fc89b7078d3",
+      "proposed_contract_id": "202-EDITION-063",
+      "historical_contract_sha256": "a0a9b12c989bd6e7db29a05e142c010219eea5a50c7647e5bdf7f9e18b4a20ad"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/space-es-419-ai-reviewed.md",
+      "file_sha256": "d18284d8916fe381a5799bc2a0e03ae01008e64ff3b4ff5a17878b81c5cd3852",
+      "proposed_contract_id": "202-EDITION-064",
+      "historical_contract_sha256": "a0a9b12c989bd6e7db29a05e142c010219eea5a50c7647e5bdf7f9e18b4a20ad"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-56a-faa-commercial-space-operations-fy2022",
+      "name": "FAA licensed commercial space operations: Fiscal Year 2022",
+      "url": "https://www.faa.gov/about/office_org/headquarters_offices/afn/offices/finance/offices/financial_management/ar/fy25-faa-agency-financial-report.pdf",
+      "path": "app/src/content/sources/source-56a-faa-commercial-space-operations-fy2022.json",
+      "sha256": "8da0da8b95739b7f84e7a30217f2322625a7218f5f4e759878c238ff1670aa4c"
+    },
+    {
+      "id": "source-56a-faa-commercial-space-operations-fy2023",
+      "name": "FAA licensed commercial space operations: Fiscal Year 2023",
+      "url": "https://www.faa.gov/about/office_org/headquarters_offices/afn/offices/finance/offices/financial_management/ar/fy25-faa-agency-financial-report.pdf",
+      "path": "app/src/content/sources/source-56a-faa-commercial-space-operations-fy2023.json",
+      "sha256": "9e09e8c77f0083a867ec6955a6352d55bb777fd7835b4b9c0fd75b420948540a"
+    },
+    {
+      "id": "source-56a-faa-commercial-space-operations-fy2024",
+      "name": "FAA licensed commercial space operations: Fiscal Year 2024",
+      "url": "https://www.faa.gov/about/office_org/headquarters_offices/afn/offices/finance/offices/financial_management/ar/fy25-faa-agency-financial-report.pdf",
+      "path": "app/src/content/sources/source-56a-faa-commercial-space-operations-fy2024.json",
+      "sha256": "b5d0d9ecd2517f3b0e26eb042dcf8f520b3b265b7b5e466cc02d9643ec78ca51"
+    },
+    {
+      "id": "source-faa-starship-lc39a-final-eis-rod",
+      "name": "FAA Starship-Super Heavy at LC-39A Final EIS and Record of Decision",
+      "url": "https://www.faa.gov/space/stakeholder_engagement/spacex_starship_ksc",
+      "path": "app/src/content/sources/source-faa-starship-lc39a-final-eis-rod.json",
+      "sha256": "c4b1d164c2113221105eb3c584373af60ed398ffae5816325a3fd7672dac2ecc"
+    },
+    {
+      "id": "source-nasa-kennedy-master-plan-2026",
+      "name": "NASA Kennedy Space Center Master Plan",
+      "url": "https://www.nasa.gov/kennedy/masterplan/",
+      "path": "app/src/content/sources/source-nasa-kennedy-master-plan-2026.json",
+      "sha256": "d23df8e7daac97ffe5e521e0fde7cce5597e263851d9cfef3c6301ded6f503c6"
+    },
+    {
+      "id": "source-nasa-ksc-causeway-bridge-2025",
+      "name": "NASA Kennedy Causeway Bridge Operational Record",
+      "url": "https://www.nasa.gov/image-article/new-bridge-ready-to-serve-nasa-americas-space-interests/",
+      "path": "app/src/content/sources/source-nasa-ksc-causeway-bridge-2025.json",
+      "sha256": "970d0959ff3a7c1e6a1ecd2ce5a2fb97b7ca3bb76351998d2a65bf06838f1202"
+    },
+    {
+      "id": "source-nasa-moon-to-mars-architecture-rev-c-2025",
+      "name": "NASA Moon to Mars Architecture Definition Document Revision C",
+      "url": "https://ntrs.nasa.gov/citations/20250010956",
+      "path": "app/src/content/sources/source-nasa-moon-to-mars-architecture-rev-c-2025.json",
+      "sha256": "85954a20d8d8cbf0dd93b7998c756233fee9904683f1861d1c899e33a45759bd"
+    },
+    {
+      "id": "source-nasa-artemis",
+      "name": "NASA Artemis",
+      "url": "https://www.nasa.gov/humans-in-space/artemis/",
+      "path": "app/src/content/sources/source-nasa-artemis.json",
+      "sha256": "ea739d0e47101a9d6e7cc20d525e31d49bd8cad775dda1b6a37df4b77277b7a2"
+    },
+    {
+      "id": "source-faa-slc40-final-ea",
+      "name": "FAA SpaceX Falcon Operations At SLC-40 Final Environmental Assessment",
+      "url": "https://www.faa.gov/space/stakeholder_engagement/SpaceX_Falcon_SLC_40_EA",
+      "path": "app/src/content/sources/source-faa-slc40-final-ea.json",
+      "sha256": "c0d43c8a05997361d844b7900b24649e93881256b8b3417574a8cec26064eddd"
+    },
+    {
+      "id": "source-faa-spaceports-by-state-2026",
+      "name": "FAA Licensed Spaceports By State",
+      "url": "https://www.faa.gov/space/spaceports_by_state",
+      "path": "app/src/content/sources/source-faa-spaceports-by-state-2026.json",
+      "sha256": "544cf93ca57416c28688a1c109342bcb36b6f7cbb47999a832c5d7ad012cec91"
+    },
+    {
+      "id": "source-faa-commercial-space-licenses",
+      "name": "FAA Commercial Space Licenses, Permits, and Approvals",
+      "url": "https://www.faa.gov/space/licenses",
+      "path": "app/src/content/sources/source-faa-commercial-space-licenses.json",
+      "sha256": "d4ce53b5ef3bf585d351ea386785b14d7be665024f5130fa3ba47fe75ae41057"
+    }
+  ],
+  "integration_state": "Complete local manuscripts assessed for the November 21 application batch. The application registry and its candidate-bound validation record integration separately; this review is not production acceptance.",
+  "boundary": "AI author/self-review under the owner-authorized policy, not independent human review, fresh fact-checking, accessibility certification, measured-outcome admission or launch authority. Preserve original contracts, the retained September 27 translation input and all earlier integrated records. Display saved later source context with its actual inspection date."
+}

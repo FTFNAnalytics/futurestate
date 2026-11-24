@@ -1,0 +1,47 @@
+# F-15EX source-access and milestone follow-through — September 25, 2026
+
+This continues the three-pilot measurement work after the recovered Vermont build. It resolves one source-access gap and identifies a concrete timing reconciliation requirement; it does not supply a formal-acceptance series. The owner's acceptance and coordination direction remain recorded in the [handoff](../../coordinator-handoff-2026-09-25.md).
+
+## New evidence and limits
+
+The [official AFLCMC story on DVIDS](https://www.dvidshub.net/news/554320/f-15ex-production-rebounds-deliveries-continue), story 554320, was retrieved and its HTML article body inspected. The story is dated December 15, 2025, while DVIDS separately records posting on December 16. Its delivery paragraph gives EX15's November 16 date and a relative interval for EX16. The [142nd Wing description](https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/) instead gives a December 11, 2025 arrival and a February 17, 2026 page date.
+
+If both reports describe Portland arrival, those EX16 timings do not align. That is a conditional editorial inference, not proof of an erroneous source or a silently corrected date. Both accounts remain intact. The missing artifact is an authoritative identity-linked reconciliation of delivery, arrival and formal acceptance, followed by the complete acceptance-event ledger with coverage, exclusions, rework and revisions. Neither news account supplies it.
+
+The [capture record](../../../outputs/source-acquisition/2026-09-25-f15ex/capture.json) distinguishes the access channels:
+
+- DVIDS: HTTP 200 at 19:34:56.682 UTC; 65,040-byte HTML, SHA-256 `88873fc761970cd78e0fec09e5aaf5c2522fdca85c260fbaa46a230ba12eef90`. The retained body was inspected, not merely the search snippet.
+- Wing page: the web text reader supplied the description and displayed metadata. A separate direct request at 19:34:57.062 UTC returned HTTP 403; its retained 427-byte denial response has SHA-256 `d8978367b32dbbcfd15ffe568a281a16b7ba69b5b8f39e21cc43a910f867e91e`. That file is not represented as the article body. No video was watched, downloaded or transcribed.
+- The original AFLCMC URL again failed through the text reader. A successful official syndicated copy does not establish recovery of that endpoint. The September 22 access record stays unchanged.
+
+The first sandboxed direct request failed before downloading; the approved retry retained the actual responses with TLS verification intact. No account, contact, fee or access-control bypass was used. Bounded searches for the other two pilots did not supply a new calculation contract or interval population; their prior findings and requirements remain unchanged.
+
+## Integrated change
+
+Additive research record `211-F15EX-SYNDICATED-2026-09-25` identifies the earlier access receipt without superseding its endpoint failure. It appears on the measurement method page, F-15EX case and selected field report. The three annual/paired readings already linked to that exact earlier receipt receive the same later context; unrelated readings do not. The annual reading text and prior review objects are preserved. A dated change note and the existing operations export carry the update.
+
+The five original follow-ups retain whole-array SHA-256 `2b422a782b7db8fbde68423b66ec189568459d58ba56fa73457ebbcf3511ff15`. Original pilot extractions, operations baseline and evidence-cycle decisions retain their existing regression hashes. No observations, aircraft rates, independent approval, issuer correction or series admission were added.
+
+## Verification status
+
+Focused measurement, annual-history and content-reference checks pass. They cover separate source dates/access channels, the conditional inference, exact receipt relationships, all preserved historical records and unchanged admission fields. Production tests now require the complete later context on only the exact related annual readers. A preliminary type check exposed one optional-string narrowing error in the new context selector; the condition now explicitly checks that the receipt ID is a string. That failed preliminary check is not represented as passing.
+
+The first [logged generation/validation sequence](../../../outputs/validation/2026-09-25T19-39-51.750Z-1mAMmb/results.json) began at 19:39:51.753 UTC. Generation passed; validation ended with exit 1 at **19:50:04.305 UTC**. Type checking had zero errors/warnings, and all new annual/current-reader output checks passed. A later Toronto production check still expected a hard-coded September 24 projection-as-of date, whereas the dated measurement follow-up legitimately advances the combined input version to September 25. No full validation receipt was written by this failed run.
+
+The production assertion now independently derives the projection date from the evidence and operations input dates, while requiring Toronto's actual source/decision dates to remain tied to its unchanged September 21 receipt. Negative fixtures reject a future projection date, a stale projection date and an incorrectly transferred source-check date. Focused Toronto and current-evidence production checks pass with the September 28 appointment and ten-of-thirteen cycle outcomes unchanged. The complete changed-candidate sequence must pass after this verifier repair; earlier passes are not borrowed. Exact source recovery and review-binding refresh follow separately. The full six-stage objective remains open, including actual independent and reader outcomes, accepted coverage, measurement admission where required and release-specific decisions.
+
+The [replacement full sequence](../../../outputs/validation/2026-09-25T19-53-23.495Z-5GgzOL/results.json) completed successfully: generation ended at **19:54:08.451 UTC**, and full validation, including the final receipt-bearing rebuild, ended at **20:11:54.260 UTC**. Both exited 0. Handle `52147` is terminal and must not be restarted as unfinished work. Candidate `28a1095ea18ba86114cddb89b04a1c1d86f1bb163c177b075748c1feb317b20a` is bound by receipt `204-FULL-LOCAL-VALIDATION-2026-09-25-7e57a4547f75` and **3,432 candidate artifacts**.
+
+Final output contains **16,643 application HTML pages, 159 top-level JSON exports, 343 updates and 833 canonical sources**. All **714,121 local references** resolve, with zero missing targets. Type checking has zero errors and warnings across 924 files, with two pre-existing hints. The final rendered checks pass for the current F-15EX notices, their exact annual-reader relationships, all 104 original reader routes, the repaired Toronto projection-date assertion, historical preservation and admission boundaries. Application inputs were not changed during the run. The earlier failed sequence remains retained above.
+
+The separate [Vermont parcel preparation](vermont-parcel-source-preparation-2026-09-25.md) adds retained research and a bounded next-batch plan only. It is not included in this application's source findings or acceptance counts. Exact source recovery and review-version refresh follow this terminal result; an earlier clean-install pass is not borrowed for this changed candidate.
+
+## Recovery and coordination closure
+
+Application checkpoint `3911fe46667bf5fb01c68cca432efeb4ba872a96` preserves **9,598 exact source files / 221,082,146 bytes**. [Archive recovery](../../../outputs/release-checkpoints/2026-09-25T20-13-26.496Z-KQugcb/git-recovery-verification.json) passed at **20:14:33.043 UTC**. Every recovered source file, normalized candidate, validation receipt and dependency lock matches the capture. Source-manifest SHA-256 is `bf1c19f394f7be7a5037502800cd3c639b1ea7ecb614338f4c9f2f17748c2341`; archive SHA-256 is `f850a5c339931d52085365e905599ab343c74cbe05ff5c7a49b6a6ced998bd52`. This proves exact local source recovery, not a new dependency installation.
+
+The refreshed selection and census pass their preparation checks without new decisions or admitted entities. [Static reachability](reachability.md) binds the terminal candidate: all 33 selected routes reach all 16,643 application pages, with zero unresolved application anchors. Twenty-five linked HTML downloads remain separate from application pages.
+
+The existing annual, subject and reader-study packets now bind this application checkpoint and receipt. All three integrity checks pass: four subject worksheets / fourteen located claims / twelve negative fixtures; four annual assignments plus two paired essays / twenty-one prompts / thirty negative fixtures; five reader tasks / twenty-five unperformed attempts / five unperformed accessibility checks. The six annual reading snapshots, four subject assignments, prompts, historical source records and all human-return fields remain unchanged. Refreshed binding fields and this recovery report's documentary summary postdate the application checkpoint; they are not claimed to be part of that commit. The [coordination handoff](../../coordinator-handoff-2026-09-25.md) identifies the current assignment version and the next bounded Vermont batch.
+
+This local implementation batch is complete. The full six-stage objective is not: actual independent reviews, entity/backlog/language decisions, reader/accessibility observations, measurement outcomes and release-specific requirements remain distinct. No push, publication, deployment, resumed UI automation, reviewer contact or new scheduled task occurred. The owner's real acceptance of the preceding local deliverable remains recorded, not erased or treated as another missing generic response.

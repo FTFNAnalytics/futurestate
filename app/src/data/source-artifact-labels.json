@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-22",
+  "reviewer": "Codex — bounded source-artifact type review",
+  "update_id": "update-2026-09-22-source-artifact-labels",
+  "receipt_id": "206-SOURCE-ARTIFACT-LABELS-2026-09-22",
+  "boundary": "Current document-type labels only. Original records, downloads, publisher attribution, source and publication dates, narrative claims and evidence decisions remain unchanged. This is not independent acceptance or a blanket source refresh.",
+  "independent_review_complete": false,
+  "publication_authorized": false,
+  "evidence_decision_created": false,
+  "source_checks": [
+    {
+      "id": "206-TYPE-CURRENTAPPS-2026-09-22",
+      "url": "https://www.currentapps.com/",
+      "source_kind": "Company webpage",
+      "locator": "Home page: Custom Motor Design and Manufacturing; What We Offer; engineering and manufacturing sections",
+      "finding": "The exact URL presents the company's products and capabilities as a website, not an identified technical report. Company statements remain company claims.",
+      "access": "Official company-page text read through the web tool on September 22; no report file or independent performance evidence acquired.",
+      "date_boundary": "No publication date was established. The footer copyright year is not treated as a publication date."
+    },
+    {
+      "id": "206-TYPE-TORONTO-2026-09-22",
+      "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+      "source_kind": "Local Government Record",
+      "locator": "Item 2026.SC33.9: Tracking Status; City Council consideration; Background Information and report attachments",
+      "finding": "The stored URL is the council item-history page. The staff report is a separately linked PDF; the page itself is a local government record.",
+      "access": "Official item-page text read through the web tool on September 22; this is not a new permit, enactment or project-gate check.",
+      "date_boundary": "Existing July 29–30 Council consideration dates are retained. No new page publication date or September 28 gate result is inferred."
+    }
+  ],
+  "records": [
+    {
+      "id": "research-doc-56c-current-applications-drivers-1",
+      "source_file": "research-documents/234-56c-current-applications-drivers-1.json",
+      "source_sha256": "1ab9e78d9ec605f1d2af5bc04975abfdfbb5feb2e0471b03919dab6029267dfe",
+      "original_document_type": "Technical Report",
+      "current_document_type": "Company webpage",
+      "publisher": "Current Applications",
+      "official_url": "https://www.currentapps.com/",
+      "source_check_id": "206-TYPE-CURRENTAPPS-2026-09-22",
+      "historical_download": {
+        "path": "/downloads/entity-driver-constraint-dossiers-2021-2026/official-links/07-current-applications-drivers-1.txt",
+        "sha256": "d900e0ebbb5f669e53e4e310fac278262bb0a5fb1cd99ba8c5d84092c32b78b3"
+      }
+    },
+    {
+      "id": "research-doc-57z-toronto-council-adoption",
+      "source_file": "research-documents/1522-57z-toronto-council-adoption.json",
+      "source_sha256": "7529040d4aa9b7be369856644b8a77f1d576b3b071e8bb14cbcdff71e9767ef3",
+      "original_document_type": "Technical Report",
+      "current_document_type": "Local Government Record",
+      "publisher": "City of Toronto",
+      "official_url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+      "source_check_id": "206-TYPE-TORONTO-2026-09-22",
+      "historical_download": {
+        "path": "/downloads/dated-evidence-return-council-adoption-results-gates-hold-resolution-decisions-2026/official-links/01-phase57z-record.txt",
+        "sha256": "2b2f838b1aed6962cf94d7f7d7ce7f2fd46e2a2325ea909d7d6f8e51e511e5dd"
+      }
+    },
+    {
+      "id": "research-doc-phase65-009",
+      "source_file": "research-documents/research-doc-phase65-009.json",
+      "source_sha256": "cd37422fbed32e766dd52f19c0eec68b7d99e65163bbd55e869ff2cb4381338c",
+      "original_document_type": "Technical Report",
+      "current_document_type": "Local Government Record",
+      "publisher": "City of Toronto",
+      "official_url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+      "source_check_id": "206-TYPE-TORONTO-2026-09-22",
+      "historical_download": {
+        "path": "/downloads/phase65-named-project-delivery-evidence-2021-2026/records/09-57z-toronto-council-adoption.txt",
+        "sha256": "d53b7c02e1fc39d6cd7802dd5075189f709c82b29a78c70294fe37e2dc40973b"
+      }
+    }
+  ],
+  "unchanged_consumers": [
+    {
+      "id": "research-doc-55n-toronto-sc33-9-item-history",
+      "source_file": "research-documents/45-55n-toronto-sc33-9-item-history.json",
+      "source_sha256": "466e6daa245c98d8b88d5c6ff70f340f5a8f2dbb9a7be05b02ac030cc701f534",
+      "document_type": "Local Government Record",
+      "official_url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9"
+    },
+    {
+      "id": "research-doc-phase65-010",
+      "source_file": "research-documents/research-doc-phase65-010.json",
+      "source_sha256": "c32df3aa449dd416aa861845086b9a2f5953d2716b6e3ab56a3be36b749f784b",
+      "document_type": "Local Government Record",
+      "official_url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9"
+    }
+  ]
+}

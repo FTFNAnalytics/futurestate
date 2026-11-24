@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../../../components/layout/BaseLayout.astro";
+import RegistryDetail from "../../../components/review/RegistryDetail.astro";
+import RegistryHub from "../../../components/review/RegistryHub.astro";
+import { canonicalV1refSlug, v1refNativeDefinitions } from "../../../data/v1ref-registry";
+
+export function getStaticPaths() {
+  const prefix = "/review/global/";
+  const trimPath = (route: string) => route.replace(prefix, "").replace(/\/$/, "");
+  const routes = new Map<string, any>();
+  const register = (route: string, props: any) => {
+    if (!route.startsWith(prefix)) return;
+    const path = trimPath(route);
+    if (!path) return;
+    if (routes.has(path)) throw new Error(`Duplicate /review/global/ route: ${route}`);
+    routes.set(path, { params: { path }, props });
+  };
+
+  for (const { registry, items, phase } of v1refNativeDefinitions.filter(({ phase }) => phase >= 189 && phase <= 196)) {
+    const definition = v1refNativeDefinitions.find((candidate) => candidate.phase === phase)!;
+    const referenceHub = `/reference/${definition.section}/`;
+    register(registry.routes.hub, { kind: "hub", registry, items, phase, canonicalRoute: referenceHub });
+    for (const record of items) if (record.route !== registry.routes.hub) register(record.route, { kind: "detail", registry, record, phase, canonicalRoute: `${referenceHub}${canonicalV1refSlug(record, registry)}/` });
+  }
+  return [...routes.values()];
+}
+
+const { kind, registry, items, record, phase, canonicalRoute } = Astro.props;
+const title = kind === "hub" ? `${registry.title} | FTFN` : `${record.title ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? record.slug} | FTFN`;
+const description = record?.summary ?? record?.question ?? registry.summary;
+---
+
+<BaseLayout title={title} description={description} canonical={canonicalRoute}>
+  {kind === "hub"
+    ? <RegistryHub registry={registry} items={items} phase={phase} release="v1ref" />
+    : <RegistryDetail registry={registry} record={record} phase={phase} release="v1ref" />}
+</BaseLayout>

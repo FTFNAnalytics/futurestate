@@ -1,22 +1,38 @@
 ---
+import {projectSignal} from "../../../lib/signal-classification.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
+import {canonicalReaderForPlace} from '../../../lib/canonical-reader-bindings.mjs';
+import {placeReadingFor} from '../../../lib/canonical-place-readings.mjs';
+import {regionalReadingFor} from '../../../lib/canonical-regional-readings.mjs';
+import CanonicalRegionalReading from '../../../components/review/CanonicalRegionalReading.astro';
+import CanonicalPlaceReading from '../../../components/review/CanonicalPlaceReading.astro';
+import {canonicalProjectRefreshes} from '../../../lib/canonical-project-refreshes.mjs';
+import CurrentResearchArticle from '../../../components/review/CurrentResearchArticle.astro';
 import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
 import biographies from "../../../data/phase-127-project-place-conversion-biographies.json";
 import readiness from "../../../data/phase-135-atlas-conversion-readiness-audit.json";
 import ledgers from "../../../data/phase-137-place-delivery-ledgers.json";
 import eligibility from "../../../data/phase-138-longitudinal-evidence-eligibility.json";
+import NevadaDossierLinks from '../../../components/review/NevadaDossierLinks.astro';
 
 export function getStaticPaths() {
   return atlas.places.map((record) => ({ params: { slug: record.slug }, props: { placeId: record.atlas_place_id } }));
 }
 
 const place = atlas.places.find((record) => record.atlas_place_id === Astro.props.placeId)!;
+const canonicalReader=canonicalReaderForPlace(place);
+const placeReading=placeReadingFor(place);
+const regionalReading=regionalReadingFor(place);
+const hasCurrentPlaceAccount=Boolean(canonicalReader||placeReading||regionalReading);
+const currentArticle=canonicalReader?.article;
+const LegacyContainer=hasCurrentPlaceAccount?'details':'div';
 const biography = biographies.place_biographies.find((record) => record.atlas_place_id === place.atlas_place_id)!;
 const owner = atlas.update_owners.find((record) => record.owner_id === place.update_owner_id)!;
 const relatedProjects = place.relationships.related_project_ids.map((id) => atlas.projects.find((record) => record.atlas_project_id === id)).filter(Boolean);
-const signals = await getCollection("signals");
+const relatedCurrentAccounts=canonicalProjectRefreshes.records.filter(r=>place.relationships.related_project_ids.includes(r.record_id));
+const signals = await getCollection("signals").then(records => records.map(projectSignal));
 const signalById = new Map(signals.map((record) => [record.data.id, record]));
 const selectedSignals = place.evidence_rails.signal_ids.map((id) => signalById.get(id)).filter(Boolean);
 const sources = await getCollection("sources");
@@ -31,15 +47,24 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
   <section class="page-section">
     <div class="eyebrow">Atlas / Places / {place.canonical_id}</div>
     <h1 class="page-title">{place.title}</h1>
+    {placeReading?.kind==='Context'&&<p data-excluded-system-context={place.atlas_place_id}>Context only · excluded from the eligible-place target.</p>}
     <p class="lede">{place.editorial_question}</p>
-    <div class="meta-row"><MetaPill label={place.coverage.label} tone={place.coverage.tier_id === "Tier A" ? "review" : "default"} /><MetaPill label={`Record ${place.atlas_place_id}`} /><MetaPill label={`Phase 127 · ${biography.biography_id}`} tone="possibility" /><MetaPill label={place.geography} /><MetaPill label={`Reviewed ${place.last_reviewed_date}`} /></div>
+    <div class="meta-row"><MetaPill label={place.coverage.label} tone={place.coverage.tier_id === "Tier A" ? "review" : "default"} /><MetaPill label={`Record ${place.atlas_place_id}`} /><MetaPill label={`Phase 127 · ${biography.biography_id}`} tone="possibility" /><MetaPill label={place.geography} /><MetaPill label={`${hasCurrentPlaceAccount?'Historical Atlas review':'Reviewed'} ${place.last_reviewed_date}`} /></div>
   </section>
 
-  <section class="page-section briefing-band">
+  {currentArticle&&<CurrentResearchArticle article={currentArticle} embedded />}
+  {placeReading&&<CanonicalPlaceReading record={placeReading} />}
+  {regionalReading&&<CanonicalRegionalReading record={regionalReading} />}
+  {relatedCurrentAccounts.length>0&&<aside class="page-section" data-related-current-projects={place.atlas_place_id}><h2>Later readings on related projects</h2><p>These project accounts have their own scope and review dates. They do not establish a place-wide outcome or change this place's recorded boundary.</p><ul>{relatedCurrentAccounts.map(r=><li><a href={r.route}>{r.title}</a> — {canonicalProjectRefreshes.review_date}</li>)}</ul></aside>}
+  {place.slug==='nevada-lithium-battery-materials-corridor'&&<NevadaDossierLinks/>}
+  <section class="page-section briefing-band" data-recorded-system-boundary={hasCurrentPlaceAccount?place.atlas_place_id:undefined}>
     <div class="briefing-band__copy"><div class="eyebrow">Conversion boundary</div><h2>{place.conversion.current_stage}</h2><p>{place.conversion.stage_basis}</p></div>
     <article class="record-card record-card--featured"><div class="eyebrow">Coverage basis</div><h3>{place.coverage.tier_id}: {place.coverage.label}</h3><p>{place.coverage.basis}</p><MetaPill label={place.update_status} tone="review" /></article>
   </section>
 
+  <LegacyContainer data-prior-atlas-account={hasCurrentPlaceAccount?place.atlas_place_id:undefined}>
+  {hasCurrentPlaceAccount&&<summary>Earlier Atlas account and evidence links</summary>}
+  {hasCurrentPlaceAccount&&<p class="page-section">The earlier place account below remains available for comparison. The dated narrative above has its own exact-version assessment; that decision does not approve every historical or linked record. Project decisions and later dated evidence notices retain their separate scopes.</p>}
   <section class="page-section"><div class="section-heading"><div><div class="eyebrow">v0.8 place delivery ledger · {ledger.ledger_id}</div><h2>Receiving-system evidence stays separate from project stage.</h2><p>{ledger.interpretation_boundary}</p></div><MetaPill label={ledger.coverage_tier} tone="review" /></div><div class="button-row"><a class="inline-link" href={ledger.route}>Open the v0.8 place ledger</a><a class="inline-link" href="/review/v08/places/">Browse all place ledgers</a></div></section>
 
   <section class="page-section review-columns">
@@ -49,7 +74,7 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
 
   <section class="page-section review-columns">
     <article><div class="eyebrow">Unresolved system evidence</div><h2>Where the place claim stops.</h2><p>{place.conversion.unresolved}</p><p class="card-note">{place.conversion.unresolved_gate}</p></article>
-    <article><div class="eyebrow">Exact next artifact</div><h2>What can deepen this record.</h2><p>{place.conversion.exact_next_artifact}</p>{place.conversion.next_check_dates.length > 0 && <div class="meta-row">{place.conversion.next_check_dates.map((date) => <MetaPill label={`Check ${date}`} tone="urgency" />)}</div>}</article>
+    <article><div class="eyebrow">Exact next artifact</div><h2>What can deepen this record.</h2><p>{place.conversion.exact_next_artifact}</p>{place.conversion.next_check_dates.length > 0 && <div class="meta-row">{place.conversion.next_check_dates.map((date) => <MetaPill label={`${hasCurrentPlaceAccount?'Historical Atlas appointment':'Check'} ${date}`} tone="urgency" />)}</div>}</article>
   </section>
 
   <section class="page-section">
@@ -116,4 +141,5 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
   </section>
 
   <section class="page-section prose-page"><h2>Interpretation boundary</h2><p>{place.interpretation_boundary}</p><p class="card-note">Stop rule: {place.conversion.stop_rule}</p><p><a class="inline-link" href="/atlas/places/">Return to the Place Atlas</a></p></section>
+  </LegacyContainer>
 </BaseLayout>

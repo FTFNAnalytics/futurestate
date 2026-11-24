@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated AI for science translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-009",
+  "source_record_sha256": "868052df5621dcf2c8e7e872d02fe649e7142b65a0e0791732d5f63707cc1948",
+  "source_to_contract_mapping": "Translate the later September 10 plain-language reader; preserve the original canonical-contract digest and source list as historical provenance.",
+  "checks": [
+    "Compared the complete English overview and all six sections with both complete translations.",
+    "Preserved a scientific task, institution, dataset and decision as the unit of comparison, with time, cost, data quality, expert effort, accuracy or reproducibility in the baseline.",
+    "Preserved the distinction between resource access, a completed evaluation pilot and durable scientific benefits in named laboratories.",
+    "Kept permissions, computing access, evaluation protocol, institutional acceptance and expert override as distinct delivery requirements.",
+    "Retained human checking, failed runs, error-correction resources, controls, model versions, incidents and repeated research cycles.",
+    "Preserved independent checking/replication as a question about scientific results, not a claim that this AI translation received independent human review.",
+    "Preserved the September 1 evidence cutoff and September 10 English authorship date; September 27 is the actual AI translation-review date.",
+    "Preserved all nine original source IDs and exact URLs. These links do not claim current retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Méthode de référence and reproductibilité preserve the comparison and repeatability concepts. Laboratoires en activité avoids a literal but awkward rendering of working laboratories. Métrologie, interventions des spécialistes and rendement expérimental retain the research distinctions without promising benefit."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Método de referencia, exactitud and reproducibilidad preserve the technical comparison. Laboratorios en funcionamiento is clearer than a literal laboratorios de trabajo. Access counts are not translated into scientific benefit; human verification remains part of the research workflow, not an asserted translation review."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/ai-for-science-fr-CA-ai-reviewed.md",
+      "file_sha256": "2f1ddea57397340858d31f3c103628151630aece82b0f160efa824f7e913626c",
+      "proposed_contract_id": "202-EDITION-011",
+      "historical_contract_sha256": "6e18c1504022d8fcc989fa4447a44cee90f844ba7d902e91613027a7317e7d8c"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/ai-for-science-es-419-ai-reviewed.md",
+      "file_sha256": "3d542e93b2566e5bf031dacaa249b3283d0dc7d787cd2359b31ce412b5109f47",
+      "proposed_contract_id": "202-EDITION-012",
+      "historical_contract_sha256": "425e40918f9aa222b0a5637ccc72b8c9a3defac3ecb1adae89623a1ef25af909"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-fy2027-rd-priorities-m-25-34",
+      "name": "M-25-34 / NSTM-2 FY2027 Administration R&D Budget Priorities",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/09/M-25-34-NSTM-2-Fiscal-Year-FY-2027-Administration-Research-and-Development-Budget-Priorities-and-Cross-Cutting-Actions.pdf",
+      "path": "app/src/content/sources/source-fy2027-rd-priorities-m-25-34.json",
+      "sha256": "11f4867d96eee792f11bd04ad20b802c796d54e97cb20865f9de945ecadcdb05"
+    },
+    {
+      "id": "source-americas-ai-action-plan-2025",
+      "name": "America's AI Action Plan",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+      "path": "app/src/content/sources/source-americas-ai-action-plan-2025.json",
+      "sha256": "b1c68cd07e0c6cdfbce9db550fdf3414c6a6fadabc32e4da98e84c19d83d4f56"
+    },
+    {
+      "id": "source-nist-ai-metrology-center",
+      "name": "NIST AI Metrology Center",
+      "url": "https://airc.nist.gov/metrology/",
+      "path": "app/src/content/sources/source-nist-ai-metrology-center.json",
+      "sha256": "b592db6e57a440a86a01de7033d79ae813a0fbe965cc7573aa8843130ffc6399"
+    },
+    {
+      "id": "source-nist-ai-tevv-program",
+      "name": "NIST AI Test, Evaluation, Validation, and Verification Program",
+      "url": "https://www.nist.gov/ai-test-evaluation-validation-and-verification-tevv",
+      "path": "app/src/content/sources/source-nist-ai-tevv-program.json",
+      "sha256": "80df091781ab1e7a6109f5bfcdb842b482f547a3adeb5f56d088b6bce13c2206"
+    },
+    {
+      "id": "source-nist-aria-pilot-evaluation-2025",
+      "name": "NIST ARIA 0.1 Pilot Evaluation Report",
+      "url": "https://www.nist.gov/publications/assessing-risks-and-impacts-ai-aria-pilot-evaluation-report",
+      "path": "app/src/content/sources/source-nist-aria-pilot-evaluation-2025.json",
+      "sha256": "91c13eaeaa68df7842163caa6e3926c17bd5f0417d5f543f5fa956c03778bd33"
+    },
+    {
+      "id": "source-nist-aria-evaluation-program",
+      "name": "NIST Assessing Risks and Impacts of AI Evaluation Program",
+      "url": "https://ai-challenges.nist.gov/aria",
+      "path": "app/src/content/sources/source-nist-aria-evaluation-program.json",
+      "sha256": "c1ed612a940bdd1e765a4bb9d1ef88ea8201d313542dcfab942a9599a811a634"
+    },
+    {
+      "id": "source-nairr-pilot",
+      "name": "National AI Research Resource Pilot",
+      "url": "https://nairrpilot.org/",
+      "path": "app/src/content/sources/source-nairr-pilot.json",
+      "sha256": "8fba65d8760516d517272dc756dbf5518d73ded3bc41fd1587fca91cfa29943e"
+    },
+    {
+      "id": "source-nsf-2026-nairr-progress",
+      "name": "NSF NAIRR Two-Year Progress Update",
+      "url": "https://www.nsf.gov/focus-areas/ai/nairr",
+      "path": "app/src/content/sources/source-nsf-2026-nairr-progress.json",
+      "sha256": "db481880109214e892e04ffb1ac94d40e6abb7229443bab6d05b1d95c32ac30f"
+    },
+    {
+      "id": "source-55z-nasa-ai-use-cases-2024",
+      "name": "NASA 2024 AI Use Cases",
+      "url": "https://www.nasa.gov/organizations/ocio/dt/ai/2024-ai-use-cases/",
+      "path": "app/src/content/sources/source-55z-nasa-ai-use-cases-2024.json",
+      "sha256": "6f0ca62cda115975848cf7f8ecd23f95e21645f8969b98bda96ce184efffcb97"
+    }
+  ],
+  "integration_state": "Complete local reader texts accepted for the next application batch; not yet integrated and not counted among the four current translated reading pages.",
+  "boundary": "AI linguistic-fidelity review of dated English content only. No independent human review, fresh fact-check, accessibility certification, measurement admission or publication authorization. Carry applicable later exact-source context separately during integration."
+}

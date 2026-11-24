@@ -1,26 +1,56 @@
 ---
 import ReviewHeader from "./ReviewHeader.astro";
 import MetaPill from "../ui/MetaPill.astro";
+import PlaceIdentityNotice from './PlaceIdentityNotice.astro';
+import ChileDossierLinks from './ChileDossierLinks.astro';
+import BrazilDossierLinks from './BrazilDossierLinks.astro';
+import NorthSeaDossierLinks from './NorthSeaDossierLinks.astro';
+import StockholmDossierLinks from './StockholmDossierLinks.astro';
+import AucklandDossierLinks from './AucklandDossierLinks.astro';
+import TuasDossierLinks from './TuasDossierLinks.astro';
+import PortCitiesDossierLinks from './PortCitiesDossierLinks.astro';
+import UrbanServicesDossierLinks from './UrbanServicesDossierLinks.astro';
+import NordicCitiesDossierLinks from './NordicCitiesDossierLinks.astro';
+import {placeIdentityTitle} from '../../lib/place-identity-reviews.mjs';
 
 interface Props {
   record: any;
   registry: any;
   phase: number;
   release: string;
+  embedded?: boolean;
 }
 
-const { record, registry, phase, release } = Astro.props;
+const { record, registry, phase, release, embedded = false } = Astro.props;
 const id = Object.entries(record).find(([key]) => key.endsWith("_id"))?.[1] ?? record.slug;
-const title = record.title ?? record.requirement ?? record.label ?? id;
-const state = record.state ?? record.decision_state ?? record.mission_decision_state ?? record.desk_state ?? record.rereview_verdict ?? record.inherited_stage ?? "Published record";
+const title = placeIdentityTitle(record) ?? record.title ?? record.requirement ?? record.label ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? id;
+const state = record.state ?? record.verdict ?? record.decision_state ?? record.decision_status ?? record.release_state ?? record.audit_state ?? record.candidate_state ?? record.disposition_state ?? record.review_result ?? record.compatibility_decision ?? record.preservation_state ?? record.operation_state ?? record.board_state ?? record.matrix_state ?? record.packet_state ?? record.dossier_state ?? record.brief_state ?? record.runbook_state ?? record.baseline_packet_state ?? record.guide_state ?? record.report_state ?? record.mission_decision_state ?? record.desk_state ?? record.rereview_verdict ?? record.resource_state ?? record.mission_state ?? record.edition_state ?? (Object.hasOwn(record, "current_stage") ? record.current_stage ?? "Stage not established" : null) ?? record.review_state ?? record.profile_state ?? record.identity_state ?? record.outcome_state ?? record.answer_state ?? record.triage_state ?? record.source_binding_state ?? record.case_kind ?? record.record_kind ?? record.inherited_stage ?? "Published record";
 const skip = new Set(["slug", "title", "route"]);
 const readable = (key: string) => key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
 const scalarEntries = Object.entries(record).filter(([key, value]) => !skip.has(key) && (typeof value === "string" || typeof value === "number" || typeof value === "boolean" || value === null));
 const listEntries = Object.entries(record).filter(([key, value]) => !skip.has(key) && Array.isArray(value)) as [string, any[]][];
 const objectEntries = Object.entries(record).filter(([key, value]) => !skip.has(key) && value && typeof value === "object" && !Array.isArray(value)) as [string, Record<string, any>][];
+const linkFor = (key: string, value: unknown) => {
+  if (typeof value !== "string") return null;
+  if (/^https?:\/\//.test(value)) return value;
+  if (/route$/.test(key) && value.startsWith("/")) return value;
+  if (/source_ids?$/.test(key) && value.startsWith("source-")) return `/atlas/sources/${value}/`;
+  return null;
+};
+const external = (href: string) => /^https?:\/\//.test(href);
 ---
 
-<ReviewHeader eyebrow={`${release} · Phase ${phase}`} title={title} summary={registry.summary} />
+{!embedded && <ReviewHeader eyebrow={`${release} · Phase ${phase}`} title={title} summary={registry.summary} />}
+<PlaceIdentityNotice record={record} />
+<ChileDossierLinks recordId={String(id)} />
+<BrazilDossierLinks recordId={String(id)} />
+<NorthSeaDossierLinks recordId={String(id)} />
+<StockholmDossierLinks recordId={String(id)} />
+<AucklandDossierLinks recordId={String(id)} />
+<TuasDossierLinks recordId={String(id)} />
+<PortCitiesDossierLinks recordId={String(id)} />
+<UrbanServicesDossierLinks recordId={String(id)} />
+<NordicCitiesDossierLinks recordId={String(id)} />
 
 <section class="page-section">
   <div class="meta-row"><MetaPill label={String(id)} /><MetaPill label={String(state)} tone="review" /></div>
@@ -28,14 +58,14 @@ const objectEntries = Object.entries(record).filter(([key, value]) => !skip.has(
 
 <section class="page-section review-columns">
   {scalarEntries.map(([key, value]) => (
-    <article class="prose"><div class="eyebrow">{readable(key)}</div><p>{value === null ? "Not established" : String(value)}</p></article>
+    <article class="prose"><div class="eyebrow">{readable(key)}</div><p>{value === null ? "Not established" : linkFor(key, value) ? <a href={linkFor(key, value)!} target={external(linkFor(key, value)!) ? "_blank" : undefined} rel={external(linkFor(key, value)!) ? "noreferrer" : undefined}>{String(value)}</a> : String(value)}</p></article>
   ))}
 </section>
 
 {objectEntries.map(([key, value]) => (
   <section class="page-section prose-page">
     <h2>{readable(key)}</h2>
-    <dl>{Object.entries(value).map(([childKey, childValue]: [string, any]) => <><dt><strong>{readable(childKey)}</strong></dt><dd>{Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</dd></>)}</dl>
+    <dl>{Object.entries(value).map(([childKey, childValue]: [string, any]) => <><dt><strong>{readable(childKey)}</strong></dt><dd>{Array.isArray(childValue) ? childValue.map((entry, index) => <>{index > 0 && " · "}{linkFor(childKey, entry) ? <a href={linkFor(childKey, entry)!}>{String(entry)}</a> : String(entry)}</>) : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : linkFor(childKey, childValue) ? <a href={linkFor(childKey, childValue)!} target={external(linkFor(childKey, childValue)!) ? "_blank" : undefined} rel={external(linkFor(childKey, childValue)!) ? "noreferrer" : undefined}>{String(childValue)}</a> : String(childValue ?? "Not established")}</dd></>)}</dl>
   </section>
 ))}
 
@@ -45,9 +75,9 @@ const objectEntries = Object.entries(record).filter(([key, value]) => !skip.has(
     <div class="source-list">
       {value.map((item) => typeof item === "object" ? (
         <article class="source-row">
-          {Object.entries(item).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.join(" · ") : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : String(childValue ?? "Not established")}</p>)}
+          {Object.entries(item).map(([childKey, childValue]: [string, any]) => <p><strong>{readable(childKey)}:</strong> {Array.isArray(childValue) ? childValue.map((entry, index) => <>{index > 0 && " · "}{linkFor(childKey, entry) ? <a href={linkFor(childKey, entry)!}>{String(entry)}</a> : String(entry)}</>) : childValue && typeof childValue === "object" ? JSON.stringify(childValue) : linkFor(childKey, childValue) ? <a href={linkFor(childKey, childValue)!} target={external(linkFor(childKey, childValue)!) ? "_blank" : undefined} rel={external(linkFor(childKey, childValue)!) ? "noreferrer" : undefined}>{String(childValue)}</a> : String(childValue ?? "Not established")}</p>)}
         </article>
-      ) : <div class="source-row"><span>{String(item)}</span></div>)}
+      ) : <div class="source-row"><span>{linkFor(key, item) ? <a href={linkFor(key, item)!}>{String(item)}</a> : String(item)}</span></div>)}
     </div>
   </section>
 ))}

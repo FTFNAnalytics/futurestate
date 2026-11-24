@@ -1,0 +1,1911 @@
+{
+  "schema_version": "1.0",
+  "phase": 198,
+  "program_id": "FTFN-PHASE-198",
+  "dataset": "phase_198_failure_delay_reversal_correction_casebooks",
+  "title": "Failure, Delay, Reversal, and Correction Casebooks",
+  "effective_date": "2026-09-01",
+  "record_status": "Prepared content — public release not authorized",
+  "build_status": "Complete locally",
+  "summary": "Open twenty-four named, source-bound research packets that make adverse-event and corrective-action evidence inspectable while leaving every classification, cause, correction result, and realized outcome null.",
+  "record_scope": "Phase 197–204 definitive public-reference edition candidate layer.",
+  "publication_boundaries": [
+    "This is an append-only definitive-edition layer over the existing governed corpus; it does not rewrite an upstream evidence decision, project stage, place state, receipt, or validation baseline.",
+    "Research targets, casebook classifications, outcome panels, translations, expert review, repository publication, hosting, DNS, public launch, and v1 promotion remain distinct decisions.",
+    "A source-bound context statement is not a compatible longitudinal observation. Outcome values remain null unless entity, period, measure, method, denominator, revision lineage, and receiving authority all pass a dated admission decision.",
+    "No missing artifact is treated as nonexistent; no delay, failure, reversal, cause, correction, distributional effect, affordability result, service-quality result, score, rank, or causal finding is invented."
+  ],
+  "routes": {
+    "hub": "/review/v1reference/failure-delay-reversal-correction-casebooks/",
+    "public_export": "/data/phase-198-failure-delay-reversal-correction-casebooks.json"
+  },
+  "counts": {
+    "casebook_packets": 24,
+    "named_project_bindings": 24,
+    "source_bindings": 128,
+    "classification_decisions": 0,
+    "confirmed_disruptions": 0,
+    "causal_attributions": 0,
+    "correction_outcomes": 0
+  },
+  "casebook_packets": [
+    {
+      "casebook_packet_id": "198-CASE-001",
+      "upstream_chronicle_id": "136-CHRONICLE-001",
+      "atlas_project_id": "119-PROJECT-001",
+      "slug": "tsmc-arizona",
+      "title": "TSMC Arizona campus: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "TSMC Arizona campus",
+      "inherited_stage": "Facility build and bounded production claim",
+      "inherited_stage_basis": "Phoenix records a Fab 1 volume-production claim, Fab 2 construction completion, a Fab 3 structural milestone, and a project wastewater agreement.",
+      "inherited_unresolved_bridge": "Named accepted electric capacity, completed wastewater assets, metered service, facility qualification, customer acceptance, and repeat facility-level output remain incomplete.",
+      "source_ids": [
+        "source-phoenix-tsmc-july-2026-fab-update",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "signal_ids": [
+        "signal-phoenix-tsmc-fab1-production-fab2-construction-complete",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "upstream_record_digest": "a16b2434494752b1bd6f3718a8b1811f8732e14a2981b24676e5dbfd68474b62",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A facility-specific accepted utility, inspection, occupancy, qualification, customer-acceptance, or compatible recurring production record.",
+      "stop_rule": "Preserve the upstream rule: Do not infer accepted service or campus-wide output from utility territory, an agreement, construction status, or one facility claim. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/tsmc-arizona/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-002",
+      "upstream_chronicle_id": "136-CHRONICLE-002",
+      "atlas_project_id": "119-PROJECT-002",
+      "slug": "toronto-24-254930",
+      "title": "Toronto application 24 254930: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Toronto application 24 254930",
+      "inherited_stage": "City Council adoption with amendment bills withheld",
+      "inherited_stage_basis": "Toronto City Council adopted item 2026.SC33.9 without amendments while retaining wind, land-exchange, and laneway conditions before the amendment bills proceed.",
+      "inherited_unresolved_bridge": "Enacted instruments, satisfied conditions, servicing, a building permit, financing, start, completion, and occupancy remain open.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-toronto-2025-development-pipeline-delivery-gap"
+      ],
+      "upstream_record_digest": "91b49bc9e1c80de188ee3ba5b93e487f72a137d51920025f521a97ffc01ffec7",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "Introduced or enacted amendment numbers, accepted condition-compliance records, or the first confirmed permit, start, completion, or occupancy record for the application.",
+      "stop_rule": "Preserve the upstream rule: Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/toronto-24-254930/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-003",
+      "upstream_chronicle_id": "136-CHRONICLE-003",
+      "atlas_project_id": "119-PROJECT-003",
+      "slug": "northern-virginia-large-load",
+      "title": "Northern Virginia Golden-Mars and GS-5 large-load trail: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Northern Virginia Golden-Mars and GS-5 large-load trail",
+      "inherited_stage": "Conditional transmission authority and approved future rate class",
+      "inherited_stage_basis": "Virginia has an approved GS-5 large-load rate class and a conditional Golden-Mars transmission decision with a named local route dependency.",
+      "inherited_unresolved_bridge": "Final route, land rights, construction, inspection, energization, customer agreement, metered service, reliability, and local effects remain open.",
+      "source_ids": [
+        "source-virginia-scc-large-load-gs5-2025",
+        "source-virginia-scc-golden-mars-2026"
+      ],
+      "signal_ids": [
+        "signal-virginia-gs5-large-load-rate-class",
+        "signal-golden-mars-transmission-conditional-approval"
+      ],
+      "upstream_record_digest": "2f8a46063a7e4a989c786508b7c164c3da7e1c3c475377c5a45063ac2bcddb5f",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A final route or land decision followed by construction, inspection, energization, or a named GS-5 customer service record.",
+      "stop_rule": "Preserve the upstream rule: Do not convert a forecast, rate class, application, or conditional approval into available capacity or accepted customer service. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/northern-virginia-large-load/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-004",
+      "upstream_chronicle_id": "136-CHRONICLE-004",
+      "atlas_project_id": "119-PROJECT-004",
+      "slug": "space-coast-authority-to-mission",
+      "title": "Space Coast authorization-to-mission stack: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Space Coast authorization-to-mission stack",
+      "inherited_stage": "Mixed site and environmental authority with one unresolved licence rail",
+      "inherited_stage_basis": "LC-39A and SLC-40 have final environmental decisions; the August 15 FAA check leaves the Shuttle Landing Facility public licence disposition unresolved under a bounded No Material Change receipt.",
+      "inherited_unresolved_bridge": "Formal licence disposition, operator-specific authority, capital acceptance, mission use, utilization, reliability, and local outcomes remain separate gates.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "signal_ids": [
+        "signal-shuttle-landing-facility-license-status-watch",
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-slc40-final-environmental-decision"
+      ],
+      "upstream_record_digest": "60c9ee2d1188728d3bc2f35ef3ab493bc32ee5ad5490429ac9c9cab4fb20019f",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "The FAA's formal Shuttle Landing Facility licence disposition or a named operator authorization, accepted capital asset, mission, or repeated service record.",
+      "stop_rule": "Preserve the upstream rule: Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/space-coast-authority-to-mission/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-005",
+      "upstream_chronicle_id": "136-CHRONICLE-005",
+      "atlas_project_id": "119-PROJECT-005",
+      "slug": "nevada-lithium-to-qualified-material",
+      "title": "Nevada lithium project pair: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Nevada lithium project pair",
+      "inherited_stage": "Authorized and financed project rails before qualified material",
+      "inherited_stage_basis": "Thacker Pass has a federal loan close and Rhyolite Ridge has an explicit water-permit pre-operation stack.",
+      "inherited_unresolved_bridge": "Condition satisfaction, construction, commissioning, compliant operation, product qualification, accepted shipments, and recurring supply remain open.",
+      "source_ids": [
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025"
+      ],
+      "signal_ids": [
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates"
+      ],
+      "upstream_record_digest": "def7d714f024cf9d71495528d296e2ac091f5516414769179b4d97952e0ef1e9",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A named inspection, construction completion, commissioning test, compliant operating measurement, qualified lot, customer receipt, or recurring output series.",
+      "stop_rule": "Preserve the upstream rule: Do not convert authorization, a permit, financial close, projected capacity, or reserve context into qualified domestic supply. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/nevada-lithium-to-qualified-material/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-006",
+      "upstream_chronicle_id": "136-CHRONICLE-006",
+      "atlas_project_id": "119-PROJECT-006",
+      "slug": "gsa-pqc-adoption",
+      "title": "GSA post-quantum acquisition path: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "GSA post-quantum acquisition path",
+      "inherited_stage": "Named federal procurement mechanism before an agency migration",
+      "inherited_stage_basis": "GSA maps inventory, planning, implementation, maintenance, training, and use cases to acquisition support and contract vehicles.",
+      "inherited_unresolved_bridge": "A named agency order, validated implementation, tested cutover, operational acceptance, and vulnerable-system retirement remain open.",
+      "source_ids": [
+        "source-gsa-pqc-buyers-guide-2025",
+        "source-omb-m-26-15-pqc-migration"
+      ],
+      "signal_ids": [
+        "signal-gsa-pqc-procurement-paths",
+        "signal-federal-pqc-migration-plans-and-deadlines"
+      ],
+      "upstream_record_digest": "400a6689a00adcfacc8268a1415f5065456f3c56d54e9c01379a8c366deda355",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A named agency inventory, solicitation, award, interoperability test, cutover, acceptance, or legacy-retirement record.",
+      "stop_rule": "Preserve the upstream rule: Do not treat a buyer's guide, standard, draft credential specification, or deadline as an order or completed migration. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/gsa-pqc-adoption/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-007",
+      "upstream_chronicle_id": "136-CHRONICLE-007",
+      "atlas_project_id": "119-PROJECT-007",
+      "slug": "nist-aria-assurance",
+      "title": "NIST ARIA assurance path: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "NIST ARIA assurance path",
+      "inherited_stage": "Multi-level evaluation pilot before continuous system assurance",
+      "inherited_stage_basis": "NIST evaluated seven AI applications from five organizations through model testing, red teaming, and field testing.",
+      "inherited_unresolved_bridge": "Named operating authorization, continuous monitoring, incidents, corrective action, independent review, and comparable mission outcomes remain open.",
+      "source_ids": [
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-55z-nasa-ai-use-cases-2024"
+      ],
+      "signal_ids": [
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nasa-ai-use-cases-lack-comparable-outcome-measures"
+      ],
+      "upstream_record_digest": "0fc6a2bea479e773ccd7dd5ed89dffc4b1ecf4e891ac9fd644eeeefcd2764b9e",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A named system evaluation and authorization record linked to deployment monitoring, incident handling, corrective action, or a stable mission-outcome measure.",
+      "stop_rule": "Preserve the upstream rule: Do not treat an evaluation pilot, framework, inventory, or purchasing channel as assured operation or measured benefit. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/nist-aria-assurance/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-008",
+      "upstream_chronicle_id": "136-CHRONICLE-008",
+      "atlas_project_id": "119-PROJECT-008",
+      "slug": "waymo-california-service",
+      "title": "Waymo California fared driverless service: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Waymo California fared driverless service",
+      "inherited_stage": "Expanded service authority before a comparable persistent-outcome series",
+      "inherited_stage_basis": "CPUC authorized fared driverless service in specified Los Angeles and San Francisco Peninsula areas and requires detailed operator reporting.",
+      "inherited_unresolved_bridge": "A current public rollup of service miles, rides, availability, interventions, safety, accessibility, cost, complaints, and coverage remains incomplete.",
+      "source_ids": [
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-55z-cpuc-av-quarterly-reporting-2026"
+      ],
+      "signal_ids": [
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-cpuc-av-reporting-needs-public-comparable-rollup"
+      ],
+      "upstream_record_digest": "ecff736ead3eca6057ee842adb9df4560f5c52b45d04147840310bc622a49d14",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A stable Waymo operating series with geography, period, service exposure, rides, interventions, safety events, accessibility, complaints, and comparable definitions.",
+      "stop_rule": "Preserve the upstream rule: Do not convert legal authority, testing miles, or a reporting requirement into persistent service quality, safety, accessibility, or adoption. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/waymo-california-service/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-009",
+      "upstream_chronicle_id": "136-CHRONICLE-009",
+      "atlas_project_id": "119-PROJECT-009",
+      "slug": "manatee-battery-storage",
+      "title": "Manatee Battery Energy Storage Center: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Manatee Battery Energy Storage Center",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-manatee-psc-operating-data-2025",
+        "source-56c-manatee-psc-rate-testimony-2025",
+        "source-56d-manatee-fpl-data-request-2025",
+        "source-56d-manatee-fpl-site-plan-2025",
+        "source-56i-eia923-may2026-release",
+        "source-56j-manatee-eia923-plant-60014"
+      ],
+      "signal_ids": [
+        "signal-56b-manatee-capacity-panel",
+        "signal-56c-manatee-constraints",
+        "signal-56d-manatee-repeat-test",
+        "signal-56i-eia923-monthly-operating-rail",
+        "signal-56j-manatee-monthly-operation"
+      ],
+      "upstream_record_digest": "69362b52e1fcc66c2e0cd97aa59df8316d754174733d0d8813a762cb9e270a72",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/manatee-battery-storage/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-010",
+      "upstream_chronicle_id": "136-CHRONICLE-010",
+      "atlas_project_id": "119-PROJECT-010",
+      "slug": "moss-landing-battery-safety",
+      "title": "Moss Landing battery safety and operation: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Moss Landing battery safety and operation",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-moss-landing-audit-2025",
+        "source-56c-moss-landing-audit-response-2025",
+        "source-56d-moss-landing-epa-response-timeline-2026",
+        "source-56d-moss-landing-epa-agreement-2025",
+        "source-56k-moss-landing-go167-corrective-action-2025"
+      ],
+      "signal_ids": [
+        "signal-56b-moss-landing-capacity-panel",
+        "signal-56c-moss-landing-constraints",
+        "signal-56d-moss-landing-repeat-test",
+        "signal-56k-moss-landing-corrective-action-status"
+      ],
+      "upstream_record_digest": "bd91a24160d20e279e61e43719465b1a3275ca18e8c67f04c48bf43bb1096601",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/moss-landing-battery-safety/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-011",
+      "upstream_chronicle_id": "136-CHRONICLE-011",
+      "atlas_project_id": "119-PROJECT-011",
+      "slug": "gateway-battery-storage",
+      "title": "Gateway battery storage: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Gateway battery storage",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56c-gateway-cpuc-audit-2025",
+        "source-56c-gateway-cpuc-audit-response-2025",
+        "source-56d-gateway-cpuc-resolution-e5428-2025",
+        "source-56d-gateway-epa-bess-safety-2025"
+      ],
+      "signal_ids": [
+        "signal-56b-gateway-capacity-panel",
+        "signal-56c-gateway-constraints",
+        "signal-56d-gateway-repeat-test"
+      ],
+      "upstream_record_digest": "cbf212b3e7e25c9ed99cb93ad57d857066430b56c7d870dcae75975e73485923",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/gateway-battery-storage/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-012",
+      "upstream_chronicle_id": "136-CHRONICLE-012",
+      "atlas_project_id": "119-PROJECT-012",
+      "slug": "hornsdale-power-reserve",
+      "title": "Hornsdale Power Reserve: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Hornsdale Power Reserve",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56e-hornsdale-aer-2022",
+        "source-56e-hornsdale-sa-current",
+        "source-56e-hornsdale-aemo-2019-preliminary",
+        "source-56e-hornsdale-aemo-2020-final",
+        "source-56h-hornsdale-final-project-report-2026",
+        "source-56j-hornsdale-h1-2024-operations"
+      ],
+      "signal_ids": [
+        "signal-56e-hornsdale-power-reserve-alternative-test",
+        "signal-56e-hornsdale-power-reserve-dossier",
+        "signal-56e-hornsdale-power-reserve-panel",
+        "signal-56h-hornsdale-final-operating-record",
+        "signal-56j-hornsdale-event-operation"
+      ],
+      "upstream_record_digest": "b03a524f463e48f6e915d8624ff0e4b42bdb5c1fbcb3bc38020fd5a00c97e863",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/hornsdale-power-reserve/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-013",
+      "upstream_chronicle_id": "136-CHRONICLE-013",
+      "atlas_project_id": "119-PROJECT-013",
+      "slug": "victoria-big-battery",
+      "title": "Victoria Big Battery: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Victoria Big Battery",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56e-vbb-esv-fire-findings-2021",
+        "source-56e-vbb-aemo-registration-2021",
+        "source-56e-vbb-aemo-operational-2021",
+        "source-56e-vbb-esv-investigations"
+      ],
+      "signal_ids": [
+        "signal-56e-victorian-big-battery-panel",
+        "signal-56e-victorian-big-battery-dossier",
+        "signal-56e-victorian-big-battery-alternative-test"
+      ],
+      "upstream_record_digest": "9be0d07d9ab29350ac7fd181393e50982654b40564e0426e608e3588251c5ece",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/victoria-big-battery/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-014",
+      "upstream_chronicle_id": "136-CHRONICLE-014",
+      "atlas_project_id": "119-PROJECT-014",
+      "slug": "dalrymple-grid-battery",
+      "title": "Dalrymple grid battery: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Dalrymple grid battery",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56e-dalrymple-arena-final-2021",
+        "source-56e-dalrymple-arena-retrospective-2021",
+        "source-56e-dalrymple-arena-operational-2020",
+        "source-56e-dalrymple-aemo-minimum-demand-2020",
+        "source-56g-dalrymple-electranet-tapr-2026",
+        "source-56h-dalrymple-aemo-constraint-report-2026",
+        "source-56j-dalrymple-aemo-march-2026"
+      ],
+      "signal_ids": [
+        "signal-56e-dalrymple-escri-bess-alternative-test",
+        "signal-56e-dalrymple-escri-bess-dossier",
+        "signal-56e-dalrymple-escri-bess-panel",
+        "signal-56g-dalrymple-operating-record-advance",
+        "signal-56h-dalrymple-constraint-event",
+        "signal-56j-dalrymple-march-constraint"
+      ],
+      "upstream_record_digest": "ff3f2a8343e96104cdb2e117b489f1a6b14c247642e72bcec03ac1144add375f",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/dalrymple-grid-battery/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-015",
+      "upstream_chronicle_id": "136-CHRONICLE-015",
+      "atlas_project_id": "119-PROJECT-015",
+      "slug": "f35-production-readiness",
+      "title": "F-35 production readiness: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "F-35 production readiness",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56e-f35-lockheed-deliveries-2025",
+        "source-56e-f35-gao-sustainment-2026",
+        "source-56e-f35-gao-2024",
+        "source-56e-f35-gao-2025",
+        "source-56h-f35-gao-late-deliveries-2025"
+      ],
+      "signal_ids": [
+        "signal-56e-f35-fort-worth-line-alternative-test",
+        "signal-56e-f35-fort-worth-line-dossier",
+        "signal-56e-f35-fort-worth-line-panel",
+        "signal-56h-f35-delivery-capability-advance"
+      ],
+      "upstream_record_digest": "f3c8295f1d62c37b632094c5bf9690f4bd631a0926d0ed4e8dd7d2d123a9211c",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/f35-production-readiness/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-016",
+      "upstream_chronicle_id": "136-CHRONICLE-016",
+      "atlas_project_id": "119-PROJECT-016",
+      "slug": "f15ex-production-delivery",
+      "title": "F-15EX production and delivery: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "F-15EX production and delivery",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56e-f15ex-gao-2025",
+        "source-56e-f15ex-production-resumes-2025",
+        "source-56e-f15ex-first-deliveries-2021",
+        "source-56e-f15ex-four-deliveries-2023",
+        "source-56k-f15ex-ex16-portland-receipt-2026"
+      ],
+      "signal_ids": [
+        "signal-56e-f15ex-st-louis-line-alternative-test",
+        "signal-56e-f15ex-st-louis-line-dossier",
+        "signal-56e-f15ex-st-louis-line-panel",
+        "signal-56k-f15ex-ex16-portland-receipt"
+      ],
+      "upstream_record_digest": "4cacb462fca14076fc44f5b3b7b64fa97ed08158363482d9b5256516c51d76fa",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/f15ex-production-delivery/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-017",
+      "upstream_chronicle_id": "136-CHRONICLE-017",
+      "atlas_project_id": "119-PROJECT-017",
+      "slug": "kc46-readiness",
+      "title": "KC-46 readiness: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "KC-46 readiness",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56e-kc46-100th-delivery-2025",
+        "source-56e-kc46-105th-delivery-2026",
+        "source-56e-kc46-usaf-budget-fy2025",
+        "source-56e-kc46-gao-2026",
+        "source-56j-kc46-readiness-plan-2026"
+      ],
+      "signal_ids": [
+        "signal-56e-kc46-everett-line-alternative-test",
+        "signal-56e-kc46-everett-line-dossier",
+        "signal-56e-kc46-everett-line-panel",
+        "signal-56j-kc46-readiness-plan"
+      ],
+      "upstream_record_digest": "bebe7e86a45f5dd3bfe1cfe7b5cd0be9b3f8a8df6ad831ff675f69b164457f9b",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/kc46-readiness/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-018",
+      "upstream_chronicle_id": "136-CHRONICLE-018",
+      "atlas_project_id": "119-PROJECT-018",
+      "slug": "current-applications-capacity",
+      "title": "Current Applications industrial capacity: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Current Applications industrial capacity",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56b-nist-mep-current-applications-lean",
+        "source-56c-current-applications-capabilities",
+        "source-56c-current-applications-cancelled-expansion"
+      ],
+      "signal_ids": [
+        "signal-56b-current-applications-output-panel",
+        "signal-56c-current-applications-drivers"
+      ],
+      "upstream_record_digest": "d1c501a0add13548c162904d0ea268eab4b7bb9eabfdb198470237f891142a52",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/current-applications-capacity/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-019",
+      "upstream_chronicle_id": "136-CHRONICLE-019",
+      "atlas_project_id": "119-PROJECT-019",
+      "slug": "island-components-capacity",
+      "title": "Island Components industrial capacity: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Island Components industrial capacity",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56b-nist-mep-island-components-lean",
+        "source-56c-island-components-acquisition-2021",
+        "source-56c-island-components-capabilities",
+        "source-56l-island-components-paris-fye2023"
+      ],
+      "signal_ids": [
+        "signal-56b-island-components-output-panel",
+        "signal-56c-island-components-drivers",
+        "signal-56l-island-components-certified-employment"
+      ],
+      "upstream_record_digest": "0bacc38fd443ae5c349319a4427826308260be53bacedef79b857dd0eeed50c9",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/island-components-capacity/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-020",
+      "upstream_chronicle_id": "136-CHRONICLE-020",
+      "atlas_project_id": "119-PROJECT-020",
+      "slug": "monaghan-medical-capacity",
+      "title": "Monaghan Medical manufacturing capacity: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Monaghan Medical manufacturing capacity",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56b-nist-mep-monaghan-medical-lean",
+        "source-56c-monaghan-iso14001-2024",
+        "source-56c-monaghan-manufacturing-profile",
+        "source-56d-monaghan-fda-tplc-2025",
+        "source-56d-monaghan-iso14001-boundary-2024",
+        "source-56i-monaghan-excelsior-q1-2026",
+        "source-56l-monaghan-medical-ccida-fye2025"
+      ],
+      "signal_ids": [
+        "signal-56b-monaghan-medical-output-panel",
+        "signal-56c-monaghan-medical-drivers",
+        "signal-56d-monaghan-medical-repeat-test",
+        "signal-56i-monaghan-program-commitment",
+        "signal-56l-monaghan-medical-certified-project"
+      ],
+      "upstream_record_digest": "4b7d96e82414cc79be9f3e7308c1cca69a4000bf091261b9fd9b05c72fa7c8eb",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/monaghan-medical-capacity/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-021",
+      "upstream_chronicle_id": "136-CHRONICLE-021",
+      "atlas_project_id": "119-PROJECT-021",
+      "slug": "amtrak-accessible-stations",
+      "title": "Amtrak accessible-station delivery: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Amtrak accessible-station delivery",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-57a-dot-fy2027-performance-plan-fy2025-report",
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57d-amtrak-ada-progress-december-2024",
+        "source-57d-amtrak-ada-progress-june-2025",
+        "source-57d-amtrak-ada-progress-december-2025",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-57f-amtrak-stations-alp-fy24-29"
+      ],
+      "signal_ids": [
+        "signal-57a-dot-amtrak-station-accessibility-fy2025",
+        "signal-57b-amtrak-eight-station-final-completion-cohort",
+        "signal-57b-amtrak-eleven-station-passenger-use-cohort",
+        "signal-57b-amtrak-thirteen-accessible-boarding-ramp-deployments",
+        "signal-57c-amtrak-pids-deployment-inventory",
+        "signal-57c-amtrak-station-portfolio-coverage",
+        "signal-57d-amtrak-pids-revision-series",
+        "signal-57e-amtrak-digital-accessibility-defect-remediation",
+        "signal-57e-amtrak-pids-cross-report-reconciliation",
+        "signal-57f-amtrak-ada-responsibility-boundary",
+        "signal-57f-amtrak-historical-pids-cohort-reconciliation",
+        "signal-57g-amtrak-pids-120-station-status-registry"
+      ],
+      "upstream_record_digest": "501ad3a6c512e32f5990cf097945a35beddd5f16c973bea27f3fbb96355e1210",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/amtrak-accessible-stations/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-022",
+      "upstream_chronicle_id": "136-CHRONICLE-022",
+      "atlas_project_id": "119-PROJECT-022",
+      "slug": "hanford-dflaw-operation",
+      "title": "Hanford DFLAW operation: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Hanford DFLAW operation",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56x-hanford-first-ilaw-disposal-2026",
+        "source-56x-hanford-vitrification-100k-2026",
+        "source-57a-wa-ecology-hanford-overview",
+        "source-57b-ecology-wtp-byproduct-response-comments",
+        "source-57b-hanford-wtp-project-managers-may-2026",
+        "source-57d-hanford-wtp-consent-may-2026",
+        "source-57d-hanford-wtp-consent-june-2026",
+        "source-57d-hanford-wtp-consent-july-2026",
+        "source-57e-doe-hanford-acceptable-glass-startup",
+        "source-57e-hanford-dflaw-current-program-page",
+        "source-57f-hanford-wtp-pmm-february-2026",
+        "source-57g-hanford-dflaw-process-animation",
+        "source-57f-doe-hanford-100k-gallons-may-2026"
+      ],
+      "signal_ids": [
+        "signal-56z-hanford-dflaw-accepted-operation-sequence",
+        "signal-57a-hanford-idf-regulator-confirmed-acceptance",
+        "signal-57a-hanford-law-facility-regulator-confirmed-operation",
+        "signal-57b-hanford-ecology-50000-gallons-34-containers",
+        "signal-57b-hanford-joint-minutes-66-containers-shipped",
+        "signal-57c-hanford-first-ilaw-disposal-boundary",
+        "signal-57d-hanford-material-flow-stage-ledger",
+        "signal-57d-hanford-monthly-waste-feed-series",
+        "signal-57e-hanford-acceptable-glass-milestone",
+        "signal-57f-hanford-container-progression-reconciliation",
+        "signal-57g-hanford-fourteen-stage-dflaw-registry",
+        "signal-57g-hanford-nine-observation-stage-ledger"
+      ],
+      "upstream_record_digest": "c4a095b9efbdb474036dac0baa9c977484a3b614e8182c4f0e74222d7846253c",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/hanford-dflaw-operation/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-023",
+      "upstream_chronicle_id": "136-CHRONICLE-023",
+      "atlas_project_id": "119-PROJECT-023",
+      "slug": "montana-bead-completed-quarter",
+      "title": "Montana BEAD completed quarter: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "Montana BEAD completed quarter",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-57e-montana-bead-faq-july-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57g-montana-cai-csv",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-bead-final-proposal-january-2026"
+      ],
+      "signal_ids": [
+        "signal-57e-montana-bead-active-subscriber-test-control",
+        "signal-57e-montana-bead-availability-acceptance-control",
+        "signal-57e-montana-bead-latency-acceptance-control",
+        "signal-57e-montana-bead-speed-acceptance-control",
+        "signal-57f-montana-leo-active-subscriber-count-contract",
+        "signal-57f-montana-leo-cpe-shipment-contract",
+        "signal-57f-montana-leo-served-location-validation-contract",
+        "signal-57f-montana-leo-ten-year-reporting-window",
+        "signal-57g-montana-183-cai-project-denominator",
+        "signal-57g-montana-68315-bsl-project-denominator",
+        "signal-57g-montana-funding-and-reporting-contract-join",
+        "signal-57g-montana-nineteen-subgrantee-identity-registry",
+        "signal-57g-montana-thirty-two-deployment-project-registry"
+      ],
+      "upstream_record_digest": "7ea21f1ee4dfa1877f1cceca8bdced70370b3dcf55f42f744d97da8d1649ab20",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/montana-bead-completed-quarter/"
+    },
+    {
+      "casebook_packet_id": "198-CASE-024",
+      "upstream_chronicle_id": "136-CHRONICLE-024",
+      "atlas_project_id": "119-PROJECT-024",
+      "slug": "nnsa-qualified-production",
+      "title": "NNSA qualified production: failure, delay, reversal, and correction research packet",
+      "state": "Research packet — event classification not adjudicated",
+      "named_entity": "NNSA qualified production",
+      "inherited_stage": "Not established in the governed Phase 61–64 conversion layer",
+      "inherited_stage_basis": "Phase 113 created an editorial casebook, not a governed project-stage decision.",
+      "inherited_unresolved_bridge": "The next operating or outcome claim remains bounded by the exact artifacts and stable denominators named in the underlying records.",
+      "source_ids": [
+        "source-56w-nnsa-fy2027-weapons-activities",
+        "source-56q-gao-23-104661-recommendation-status",
+        "source-56x-gao-nnsa-major-projects-2026",
+        "source-56y-srppf-contract-qa-2026",
+        "source-56z-nnsa-brookings-remarks-mar2024",
+        "source-56z-nnsa-hudson-remarks-jan2025",
+        "source-57a-nnsa-w87-1-first-production-unit",
+        "source-57f-nnsa-pit-production-current",
+        "source-57g-nnsa-lap4-30-base-construction",
+        "source-57f-nnsa-stockpile-current"
+      ],
+      "signal_ids": [
+        "signal-56w-nnsa-pit-production-project-cost-trail",
+        "signal-56x-nnsa-lap4-baseline-change-series",
+        "signal-56x-nnsa-major-project-portfolio-performance",
+        "signal-56x-nnsa-srppf-subproject-baseline-series",
+        "signal-56y-nnsa-lap4-fy2027-delivery-plan",
+        "signal-56y-nnsa-srppf-transition-delivery-inputs",
+        "signal-56z-lap4-first-glovebox-delivery",
+        "signal-56z-srppf-demolition-training-delivery",
+        "signal-57a-nnsa-w87-1-qualified-first-production-unit",
+        "signal-57c-nnsa-project-program-baseline-boundary",
+        "signal-57f-nnsa-current-r-and-d-capability-state",
+        "signal-57f-nnsa-first-unit-current-capability-crosswalk",
+        "signal-57f-nnsa-gao-baseline-status-reconciliation",
+        "signal-57f-nnsa-two-site-capacity-target-boundary",
+        "signal-57g-nnsa-capacity-qualification-acceptance-crosswalk",
+        "signal-57g-nnsa-two-site-site-facility-registry"
+      ],
+      "upstream_record_digest": "41dae9a38c3efaabc88366a78ec3d1497636555436c60bb6aac78f259743c5b0",
+      "candidate_classifications": [
+        {
+          "label": "Delay",
+          "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+        },
+        {
+          "label": "Failure",
+          "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+        },
+        {
+          "label": "Reversal",
+          "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+        },
+        {
+          "label": "Correction",
+          "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+        }
+      ],
+      "classification_decision": null,
+      "classification_date": null,
+      "confirmed_disruption": null,
+      "causal_attribution": null,
+      "correction_status": null,
+      "realized_outcome": null,
+      "research_sections": [
+        {
+          "heading": "Baseline",
+          "question": "Which dated authoritative commitment, requirement, schedule, or operating baseline applies to the exact named entity?"
+        },
+        {
+          "heading": "Observed divergence",
+          "question": "Which later artifact records a missed milestone, failed test, withdrawal, revision, incident, or disputed result without relying on inference?"
+        },
+        {
+          "heading": "Attribution",
+          "question": "Who attributes the driver, which alternatives remain open, and what evidence would separate correlation, sequence, and cause?"
+        },
+        {
+          "heading": "Correction",
+          "question": "Which accountable authority records the remedy, acceptance test, restart, replacement, or superseding decision?"
+        },
+        {
+          "heading": "Outcome",
+          "question": "Which compatible later observation shows whether the corrected condition persisted for the same entity and denominator?"
+        }
+      ],
+      "exact_next_artifact": "A governed entity-specific review that establishes current stage, event chronology, exact next artifact, source trigger, and stop rule.",
+      "stop_rule": "Preserve the upstream rule: This casebook is an editorial chronology over existing evidence. It creates no new source fact, receipt, gate decision, observation, outcome, score or ranking. Additionally, do not label this project delayed, failed, reversed, corrected, recovered, or successful until the exact classification test is adjudicated.",
+      "route": "/review/v1reference/failure-delay-reversal-correction-casebooks/nnsa-qualified-production/"
+    }
+  ],
+  "classification_taxonomy": [
+    {
+      "label": "Delay",
+      "test": "A dated authoritative baseline and a later authoritative schedule state refer to the same milestone and entity."
+    },
+    {
+      "label": "Failure",
+      "test": "The responsible or receiving authority records a failed test, rejected delivery, unmet requirement, or terminated operating result."
+    },
+    {
+      "label": "Reversal",
+      "test": "A competent authority formally rescinds, cancels, withdraws, or replaces an earlier decision for the same entity."
+    },
+    {
+      "label": "Correction",
+      "test": "An issuer or accountable operator records a corrective action, revised result, restored condition, or superseding method."
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/tsmc-arizona/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/toronto-24-254930/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/northern-virginia-large-load/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/space-coast-authority-to-mission/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/nevada-lithium-to-qualified-material/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/gsa-pqc-adoption/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/nist-aria-assurance/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/waymo-california-service/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/manatee-battery-storage/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/moss-landing-battery-safety/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/gateway-battery-storage/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/hornsdale-power-reserve/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/victoria-big-battery/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/dalrymple-grid-battery/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/f35-production-readiness/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/f15ex-production-delivery/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/kc46-readiness/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/current-applications-capacity/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/island-components-capacity/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/monaghan-medical-capacity/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/amtrak-accessible-stations/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/hanford-dflaw-operation/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/montana-bead-completed-quarter/",
+    "/review/v1reference/failure-delay-reversal-correction-casebooks/nnsa-qualified-production/"
+  ],
+  "public_json_exports": [
+    "/data/phase-198-failure-delay-reversal-correction-casebooks.json"
+  ]
+}

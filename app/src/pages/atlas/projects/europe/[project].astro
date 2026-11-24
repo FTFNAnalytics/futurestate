@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../../../components/layout/BaseLayout.astro';
+import EuropeDossierArticle from '../../../../components/review/EuropeDossierArticle.astro';
+import {europeProjects} from '../../../../lib/europe-named-dossiers.mjs';
+export function getStaticPaths(){return europeProjects.map(record=>({params:{project:record.slug},props:{record}}));}
+const {record}=Astro.props;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><EuropeDossierArticle record={record}/></BaseLayout>

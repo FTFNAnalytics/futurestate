@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import KigaliCityDossierArticle from '../../../components/review/KigaliCityDossierArticle.astro';
+import {kigaliCityDossiers} from '../../../lib/kigali-city-named-dossiers.mjs';
+const record=kigaliCityDossiers.records.find(r=>r.record_id==='place-kigali')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><KigaliCityDossierArticle record={record}/></BaseLayout>

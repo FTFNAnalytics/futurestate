@@ -1,10 +1,15 @@
 import type { APIRoute } from "astro";
+import {projectChecksFor,latestProjectCheckFor} from '../../lib/current-project-checks.mjs';
 import registry from "../../data/phase-67-qualification-packet-registry.json";
+import {evidenceReceiptsForRecord, namedFileEvidenceDecisions, currentNamedFileAccount} from '../../lib/current-evidence.mjs';
 import { publicDatasetResponse } from "../../lib/public-data";
 
 export const GET: APIRoute = async () => {
   const records = registry.packet_records.map((record) => ({
     packet_id: record.packet_id,
+    dated_review_receipts: evidenceReceiptsForRecord(record.packet_id),
+    current_site_authority_account: currentNamedFileAccount(record.file_id),
+    qualification_history_boundary: 'Dated site-authority context does not change this retained qualification decision.',
     path: `/evidence/qualification/${record.slug}/`,
     record_kind: record.record_kind,
     record_status: record.record_status,
@@ -31,7 +36,9 @@ export const GET: APIRoute = async () => {
     disqualifiers: record.disqualifiers,
     gate_id: record.gate_id,
     gate_mode: record.gate_mode,
-    next_check_date: record.next_check_date,
+    historical_next_check_date: record.next_check_date,
+    next_check_date: latestProjectCheckFor(record.file_id)?.next_check_date ?? namedFileEvidenceDecisions(record.file_id).filter(r=>r.qualification_packet_ids.some(id=>id===record.packet_id)).at(-1)?.next_check_date ?? record.next_check_date,
+    dated_project_checks: projectChecksFor(record.file_id),
     reopening_trigger: record.reopening_trigger,
     gate_receipt_state: record.gate_receipt_state,
     source_ids: record.source_ids,

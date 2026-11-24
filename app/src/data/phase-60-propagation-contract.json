@@ -54,7 +54,7 @@
     "update_must_name_all_propagated_surfaces": true,
     "future_checks_must_not_have_precreated_receipts": true
   },
-  "last_operated_date": "2026-08-23",
+  "last_operated_date": "2026-09-01",
   "cycle_decision_proofs": [
     {
       "proof_id": "60-PROP-DARPA-2026-08-23",
@@ -110,6 +110,92 @@
       "next_check_date": "2026-09-15",
       "propagation_status": "complete",
       "bounded_result": "The formal site-licence disposition remains unresolved; no named-file stage, matrix cell, mission, operation, or utilization state changes."
+    },
+    {
+      "proof_id": "60-PROP-LOUISIANA-STARLINK-2026-09-01",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+      "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+      "source_id": "source-57b-louisiana-starlink-bead-agreement",
+      "supporting_source_ids": [
+        "source-165-led-spacex-louisiana-campus-starlink-offer",
+        "source-165-starlink-louisiana-community-discount",
+        "source-165-louisiana-broadband-reporting-law",
+        "source-165-connectla-resource-library"
+      ],
+      "signal_id": "signal-57y-preserved-la-starlink-adoption",
+      "signal_decision": "retain_in_review_no_material_change",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "briefing-evidence-cycle-001-wave-60c-field-guide",
+        "briefing-evidence-return-control-room-001"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "referenced_place_context_ids": [
+        "162-BRIEF-004"
+      ],
+      "referenced_operation_overlay_id": "165-OPERATION-001",
+      "update_id": "update-2026-09-01-phase-60c-louisiana-starlink-operating-decision",
+      "next_check_date": "2026-09-08",
+      "propagation_status": "complete_locally_git_held",
+      "content_propagation_status": "complete",
+      "git_backed_release_status": "held",
+      "bounded_result": "The September 1 official-source review preserves the Louisiana Starlink signal In Review. Planned locations, offer terms, reporting duties, and program-document availability do not establish observed adoption for a fixed eligible-location cohort; no Phase 61 named file shares this provider identity."
+    }
+  ],
+  "latest_companion_recheck_date": "2026-09-08",
+  "companion_recheck_proofs": [
+    {
+      "proof_id": "60-PROP-LOUISIANA-STARLINK-FOLLOW-UP-2026-09-08",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+      "receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change",
+      "prior_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+      "counts_as_cycle_decision": false,
+      "checked_source_ids": [
+        "source-57b-louisiana-starlink-bead-agreement",
+        "source-165-led-spacex-louisiana-campus-starlink-offer",
+        "source-165-starlink-louisiana-community-discount",
+        "source-165-connectla-resource-library",
+        "source-60-connectla-spacex-pecan-island-plan-2026",
+        "source-60-connectla-starlink-final-proposal-location-cohort-2026",
+        "source-60-starlink-2025-progress-report"
+      ],
+      "signal_id": "signal-57y-preserved-la-starlink-adoption",
+      "signal_decision": "retain_in_review_no_material_change",
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "briefing-evidence-cycle-001-wave-60c-field-guide",
+        "briefing-evidence-return-control-room-001"
+      ],
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators",
+        "dependency-map-artifact-return-to-reader-state"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "referenced_place_context_ids": [
+        "162-BRIEF-004"
+      ],
+      "referenced_operation_overlay_id": "165-OPERATION-001",
+      "update_id": "update-2026-09-08-phase-60-louisiana-starlink-companion-recheck",
+      "source_checked_date": "2026-09-08",
+      "next_check_date": "2026-10-09",
+      "propagation_status": "complete_locally_git_held",
+      "content_propagation_status": "complete",
+      "git_backed_release_status": "held",
+      "bounded_result": "The September 8 companion review fixes the planning denominator at 10,635 unique location IDs but supplies no compatible observed installation, subscription, or service-taken return with a period and method. It preserves the September 1 decision, does not create a fourteenth cycle gate, and makes no Phase 61 transfer."
     }
   ]
 }

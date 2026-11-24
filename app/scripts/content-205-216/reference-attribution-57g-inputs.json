@@ -1,0 +1,1250 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-15",
+  "historical_date": "2026-08-03",
+  "key": "57g",
+  "review_scope": "Complete local document, linked-signal and briefing attribution review with historical registries and generator logic; aggregate arithmetic is not a fresh source-row reconciliation, external refresh, independent review or release approval.",
+  "collection_slug": "named-asset-project-cohort-registry-expansion-2026",
+  "collection_sha256": "02b5bee2bbd08b8e5b5c93190c9e76f13cc7c72ea4669a73ea0cc8bf28cd2828",
+  "archive_path": "/downloads/named-asset-project-cohort-registry-expansion-2026.zip",
+  "archive_sha256": "7b407fbf11a9ff25a62217b28de0d089a4e08298d9baf7efe275b60822a73552",
+  "briefing_slug": "research-watch-037-named-asset-project-cohort-registry-expansion",
+  "docs": [
+    {
+      "id": "research-doc-57g-amtrak-appendix-b-membership-registry",
+      "slug": "57g-amtrak-appendix-b-membership-registry",
+      "source_file": "research-documents/728-57g-amtrak-appendix-b-membership-registry.json",
+      "reviewed_source_sha256": "2286bc2711bf2748d46e855d59586da0dee93b006a60d8632a7b63a277eab123",
+      "title": "Amtrak Appendix B now has 197 stable historical cohort-membership rows",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2023-04-30",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/01-amtrak-appendix-b-membership-registry.txt",
+      "download_sha256": "a1676bcdc80e2944c909b5a17f8b249ce81f76301adc44485dd38a869a9dff95",
+      "signal_file": "signal-57g-amtrak-appendix-b-membership-registry.mdx",
+      "signal_sha256": "d98e935152f3a747fcf0a1a625a9ad3c6a2b956d21f4f218cbcb6e2ea8556ed3",
+      "signal_excerpt": "FTFN normalized all 30 train-access, 120 PIDS, and 47 access-and-amenity Appendix B rows into 197 stable historical cohort memberships, while retaining source display names, state, row number, plan status, projected year, and the April 2023 snapshot boundary.",
+      "historical_decision": {
+        "action_key": "AMTRAK-APPB-197-MEMBERSHIP-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Named-asset registry",
+        "finding": "FTFN normalized all 30 train-access, 120 PIDS, and 47 access-and-amenity Appendix B rows into 197 stable historical cohort memberships, while retaining source display names, state, row number, plan status, projected year, and the April 2023 snapshot boundary.",
+        "denominator": "Exactly 197 Appendix B cohort memberships: 30 train-access, 120 PIDS, and 47 access-and-amenity rows; overlapping stations remain separate memberships joined through a stable station key.",
+        "evidence_limits": [
+          "A cohort membership is not a current asset inspection.",
+          "The same station may appear in more than one deficiency cohort.",
+          "The plan snapshot predates later June 2026 aggregate reporting."
+        ],
+        "next_action": "Join later station-device observations only when station identity, asset type, reporting period, method, and revision state are compatible.",
+        "structured_registry_file": "phase-57g-amtrak-named-station-registry.json",
+        "publication_date": "2023-04-30"
+      }
+    },
+    {
+      "id": "research-doc-57g-amtrak-pids-120-station-status-registry",
+      "slug": "57g-amtrak-pids-120-station-status-registry",
+      "source_file": "research-documents/729-57g-amtrak-pids-120-station-status-registry.json",
+      "reviewed_source_sha256": "63a6750e484c0686dd48630cf702873b8fea08d91cb873f156c70c5dc6b0f4ea",
+      "title": "The PIDS registry preserves all 120 stations and every historical deployment state",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2023-04-30",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/02-amtrak-pids-120-station-status-registry.txt",
+      "download_sha256": "21deb0534a65aef6deda686d33c6dbe437537e472fa079bc9843583bd8a3d2f3",
+      "signal_file": "signal-57g-amtrak-pids-120-station-status-registry.mdx",
+      "signal_sha256": "80acc0332897b226d0453a3037ef3c43ea03cce91a46c58d9d3aae374a8e8bed",
+      "signal_excerpt": "The PIDS membership registry contains 96 Complete, 18 In Progress, three Pending, two On Hold, and one Cancelled deployment states in the Appendix B snapshot, with Detroit, Atlanta, and Hanford retained as named exception rows.",
+      "historical_decision": {
+        "action_key": "AMTRAK-PIDS-120-STATUS-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Named-asset registry",
+        "finding": "The PIDS membership registry contains 96 Complete, 18 In Progress, three Pending, two On Hold, and one Cancelled deployment states in the Appendix B snapshot, with Detroit, Atlanta, and Hanford retained as named exception rows.",
+        "denominator": "The complete 120-station Appendix B PIDS cohort and its source-reported historical design, deployment, and projected-completion fields.",
+        "evidence_limits": [
+          "Historical completion does not establish present uptime or accepted closeout.",
+          "On Hold and Cancelled are source states, not FTFN judgments.",
+          "Later 93-deployment and 117-installation counts require a separate revision join."
+        ],
+        "next_action": "Reconcile the 120-row historical membership register to a current station-device inventory with explicit added, removed, renamed, replaced, and retired rows.",
+        "structured_registry_file": "phase-57g-amtrak-named-station-registry.json",
+        "publication_date": "2023-04-30"
+      }
+    },
+    {
+      "id": "research-doc-57g-amtrak-train-access-30-station-status-registry",
+      "slug": "57g-amtrak-train-access-30-station-status-registry",
+      "source_file": "research-documents/730-57g-amtrak-train-access-30-station-status-registry.json",
+      "reviewed_source_sha256": "df3d1efd6f764c57b86c0d546c4044f6dd6af3d5962559b932606cd6395f6b3b",
+      "title": "The train-access registry separates eighteen complete and twelve unfinished historical station rows",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2023-04-30",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/03-amtrak-train-access-30-station-status-registry.txt",
+      "download_sha256": "214087d22f167d33ec4bef92d98b34542228c7fe5548b3434d95cb619cc06a54",
+      "signal_file": "signal-57g-amtrak-train-access-30-station-status-registry.mdx",
+      "signal_sha256": "b9c18f3287984ef20ae50f2f951d96b06a410eb40e16f9ef74fb388e6d27c28c",
+      "signal_excerpt": "Appendix B identifies 30 train-access cohort rows: 18 historical construction completions, two In Progress construction rows, and ten Pending construction rows, each preserved with design and projected construction fields.",
+      "historical_decision": {
+        "action_key": "AMTRAK-TRAIN-ACCESS-30-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Named-asset registry",
+        "finding": "Appendix B identifies 30 train-access cohort rows: 18 historical construction completions, two In Progress construction rows, and ten Pending construction rows, each preserved with design and projected construction fields.",
+        "denominator": "All 30 named train-access cohort memberships in Appendix B, including the 12 rows not reported Complete in the historical snapshot.",
+        "evidence_limits": [
+          "Plan completion state is not device availability or passenger use.",
+          "Projected fiscal years are not accepted completion dates.",
+          "Third-party responsibility cannot be inferred where the extracted row does not identify it."
+        ],
+        "next_action": "Join current construction, substantial completion, final completion, passenger use, maintenance, complaint, and rider-outcome observations by stable station key.",
+        "structured_registry_file": "phase-57g-amtrak-named-station-registry.json",
+        "publication_date": "2023-04-30"
+      }
+    },
+    {
+      "id": "research-doc-57g-amtrak-access-amenity-47-station-registry",
+      "slug": "57g-amtrak-access-amenity-47-station-registry",
+      "source_file": "research-documents/731-57g-amtrak-access-amenity-47-station-registry.json",
+      "reviewed_source_sha256": "9db6d5e343741f8c55cd62dc82c7173cd41ca66d5558ce045f59396e27e88eb6",
+      "title": "The access-and-amenity registry preserves forty-seven historical completed station rows",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2019-09-30",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/04-amtrak-access-amenity-47-station-registry.txt",
+      "download_sha256": "990a15b6007e25733571fd1c2d7002661ca0f16ba611e4b6e128fbc6590accb5",
+      "signal_file": "signal-57g-amtrak-access-amenity-47-station-registry.mdx",
+      "signal_sha256": "57b8950293810e338b74d5f4868535210243d418023302dcd42aea422f40bc7e",
+      "signal_excerpt": "All 47 Appendix B access-and-amenity cohort memberships are source-reported Complete by FY2019 and now retain stable station, cohort, design, construction, and historical-snapshot identities.",
+      "historical_decision": {
+        "action_key": "AMTRAK-AMENITY-47-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Named-asset registry",
+        "finding": "All 47 Appendix B access-and-amenity cohort memberships are source-reported Complete by FY2019 and now retain stable station, cohort, design, construction, and historical-snapshot identities.",
+        "denominator": "All 47 named Appendix B station access-and-amenity cohort memberships.",
+        "evidence_limits": [
+          "Historical construction completion is not current amenity quality.",
+          "The table does not enumerate each underlying asset.",
+          "No compatible current uptime, use, complaint, remediation, or rider-experience table is published."
+        ],
+        "next_action": "Attach current asset and service-quality observations only at the exact station and asset level.",
+        "structured_registry_file": "phase-57g-amtrak-named-station-registry.json",
+        "publication_date": "2019-09-30"
+      }
+    },
+    {
+      "id": "research-doc-57g-amtrak-cross-cohort-identity-and-revision-contract",
+      "slug": "57g-amtrak-cross-cohort-identity-and-revision-contract",
+      "source_file": "research-documents/732-57g-amtrak-cross-cohort-identity-and-revision-contract.json",
+      "reviewed_source_sha256": "a6c6a8365110e75bf245c55a96891518863b93a17d01af654c14c42ca0fcc9b3",
+      "title": "Stable station keys now expose overlap without collapsing cohort or revision identity",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/05-amtrak-cross-cohort-identity-and-revision-contract.txt",
+      "download_sha256": "d70e71248e894ae3a565a06994449c8ca7e8f1c559afd5276bc74e1cd9d4631b",
+      "signal_file": "signal-57g-amtrak-cross-cohort-identity-and-revision-contract.mdx",
+      "signal_sha256": "538a0bfed22ebece85af04b4a57cf31fcb579d1e6959e9de41f00231b4d35bda",
+      "signal_excerpt": "The 197 memberships resolve to 178 unique normalized station keys; each key preserves its separate train-access, PIDS, and amenity memberships so later revisions can add or close rows without rewriting the historical baseline.",
+      "historical_decision": {
+        "action_key": "AMTRAK-CROSS-COHORT-REVISION-CONTRACT-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Named-asset registry",
+        "finding": "The 197 memberships resolve to 178 unique normalized station keys; each key preserves its separate train-access, PIDS, and amenity memberships so later revisions can add or close rows without rewriting the historical baseline.",
+        "denominator": "178 unique normalized station keys derived from 197 source memberships, with no assumed device-level identity.",
+        "evidence_limits": [
+          "Name normalization does not prove a current Amtrak station code.",
+          "Cross-cohort overlap does not establish a shared underlying asset.",
+          "Revision lineage requires explicit source evidence for every added, removed, renamed, replaced, or retired record."
+        ],
+        "next_action": "Acquire a current official station-device register and publish a row-level revision crosswalk.",
+        "structured_registry_file": "phase-57g-amtrak-named-station-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-montana-nineteen-subgrantee-identity-registry",
+      "slug": "57g-montana-nineteen-subgrantee-identity-registry",
+      "source_file": "research-documents/733-57g-montana-nineteen-subgrantee-identity-registry.json",
+      "reviewed_source_sha256": "85c1ff9e8cb6df56745c3a3d7709d70e4bacf6d14a02ee2eeeacd958005d739a",
+      "title": "Montana's approved Final Proposal identifies nineteen proposed subgrantees by UEI and FRN",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-01-05",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/fp_subgrantees-1.5.26.csv",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/06-montana-nineteen-subgrantee-identity-registry.txt",
+      "download_sha256": "5d1d486493850fd36f1f535a20e24a79f857be369919ffe7ca4198684a266b0a",
+      "signal_file": "signal-57g-montana-nineteen-subgrantee-identity-registry.mdx",
+      "signal_sha256": "f9f46e6adb54db17309999526203b296eb18c98afb59d9f7350ff8779f8b1c79",
+      "signal_excerpt": "FTFN normalized all 19 Final Proposal subgrantee rows with exact legal name, UEI, FRN, state, and stable registry identity.",
+      "historical_decision": {
+        "action_key": "MT-BEAD-19-SUBGRANTEE-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Project-cohort registry",
+        "finding": "FTFN normalized all 19 Final Proposal subgrantee rows with exact legal name, UEI, FRN, state, and stable registry identity.",
+        "denominator": "All 19 rows in Montana's January 5, 2026 Final Proposal subgrantee file.",
+        "evidence_limits": [
+          "A listed subgrantee is not proof of executed agreement.",
+          "UEI and FRN identify organizations, not operating performance.",
+          "The register contains no subscriber, retention, price, complaint, or acceptance outcomes."
+        ],
+        "next_action": "Join executed agreement and quarterly submissions by UEI and project ID when public.",
+        "structured_registry_file": "phase-57g-montana-project-cohort-registry.json",
+        "publication_date": "2026-01-05"
+      }
+    },
+    {
+      "id": "research-doc-57g-montana-thirty-two-deployment-project-registry",
+      "slug": "57g-montana-thirty-two-deployment-project-registry",
+      "source_file": "research-documents/734-57g-montana-thirty-two-deployment-project-registry.json",
+      "reviewed_source_sha256": "7f02f8188dfaaf50d9003dfcb571ab80a5ed43aa8afe707e250d0356445a9225",
+      "title": "Thirty-two Montana deployment-project IDs now join to named subgrantees",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-01-05",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/07-montana-thirty-two-deployment-project-registry.txt",
+      "download_sha256": "604ec89c7ba1394236048b43431c193f203884dcd79fa6dee039b789b510076a",
+      "signal_file": "signal-57g-montana-thirty-two-deployment-project-registry.mdx",
+      "signal_sha256": "bed162e9550d44842299ba817b4c3b97f1d270da74e599afa9e57793657ce012",
+      "signal_excerpt": "The project registry preserves all 32 deployment-project IDs and joins every row to a named subgrantee through the official UEI, including one CAI-only project with zero BSL location rows.",
+      "historical_decision": {
+        "action_key": "MT-BEAD-32-PROJECT-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Project-cohort registry",
+        "finding": "The project registry preserves all 32 deployment-project IDs and joins every row to a named subgrantee through the official UEI, including one CAI-only project with zero BSL location rows.",
+        "denominator": "All 32 Final Proposal deployment-project rows joined to the 19-row subgrantee register.",
+        "evidence_limits": [
+          "Project inclusion is an approved-proposal baseline, not construction start.",
+          "A zero-BSL project can still carry CAI rows and must not be dropped.",
+          "Project names are preserved as source labels rather than standardized operating brands."
+        ],
+        "next_action": "Use project ID plus UEI as the mandatory key for future agreement, construction, service, testing, adoption, and closeout observations.",
+        "structured_registry_file": "phase-57g-montana-project-cohort-registry.json",
+        "publication_date": "2026-01-05"
+      }
+    },
+    {
+      "id": "research-doc-57g-montana-68315-bsl-project-denominator",
+      "slug": "57g-montana-68315-bsl-project-denominator",
+      "source_file": "research-documents/735-57g-montana-68315-bsl-project-denominator.json",
+      "reviewed_source_sha256": "a6cb1b991dd6cfa99cd3dc24398e862c63384af0392e1a9533c717ccb03ac1c3",
+      "title": "Montana's 68,315 location rows now roll up to privacy-safe project denominators",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-01-05",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/fp_locations-1.5.26.csv",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/08-montana-68315-bsl-project-denominator.txt",
+      "download_sha256": "4b77c858bbb9e01d1aee7c8c7eb06dc42edcea4089571bc3aa4577b65a600ab9",
+      "signal_file": "signal-57g-montana-68315-bsl-project-denominator.mdx",
+      "signal_sha256": "cc8ddb673ba665d5aa63db77051bc2cb7daf7c4f6792f10a8f2db1e29e927393",
+      "signal_excerpt": "FTFN reconciled all 68,315 Final Proposal BSL location rows to the 32 project IDs and publishes project-level totals plus raw classification and technology-code distributions without exposing individual BSL identifiers.",
+      "historical_decision": {
+        "action_key": "MT-BEAD-68315-BSL-DENOMINATOR-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Project-cohort registry",
+        "finding": "FTFN reconciled all 68,315 Final Proposal BSL location rows to the 32 project IDs and publishes project-level totals plus raw classification and technology-code distributions without exposing individual BSL identifiers.",
+        "denominator": "Exactly 68,315 location-file rows; raw classification codes 0 and 1 total 45,401 and 22,914, and raw technology codes total the same 68,315 rows.",
+        "evidence_limits": [
+          "Raw codes remain untranslated until an official schema is joined.",
+          "Location assignment does not establish serviceability or subscription.",
+          "Individual BSL identifiers and sensitive location details are excluded from FTFN public output."
+        ],
+        "next_action": "Reconcile future served-location and quarterly files to project-level eligible, serviceable, installed, subscribed, tested, retained, and accepted counts.",
+        "structured_registry_file": "phase-57g-montana-project-cohort-registry.json",
+        "publication_date": "2026-01-05"
+      }
+    },
+    {
+      "id": "research-doc-57g-montana-183-cai-project-denominator",
+      "slug": "57g-montana-183-cai-project-denominator",
+      "source_file": "research-documents/736-57g-montana-183-cai-project-denominator.json",
+      "reviewed_source_sha256": "9fe2c7a0e4582378c6c9f216370a31e6577d37678a6b09c13ff6364217fc94e3",
+      "title": "Montana's 183 community-anchor rows remain a separate project-level denominator",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-01-05",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/fp_CAI-1.5.26.csv",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/09-montana-183-cai-project-denominator.txt",
+      "download_sha256": "54a7e4804b00830bcf6b0e92dc129673a77942e1bfcc3daa0ababcdce797f76e",
+      "signal_file": "signal-57g-montana-183-cai-project-denominator.mdx",
+      "signal_sha256": "97cb7bdbd2cd4ae90a3466023e657947733322246138040af4e87f31f75d6204",
+      "signal_excerpt": "The registry assigns all 183 community-anchor rows to their official project IDs while publishing only project-level CAI counts; the Triangle Hill 2 project remains visible with 21 CAIs and zero BSL rows.",
+      "historical_decision": {
+        "action_key": "MT-BEAD-183-CAI-DENOMINATOR-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Project-cohort registry",
+        "finding": "The registry assigns all 183 community-anchor rows to their official project IDs while publishing only project-level CAI counts; the Triangle Hill 2 project remains visible with 21 CAIs and zero BSL rows.",
+        "denominator": "Exactly 183 Final Proposal CAI rows reconciled to the 32-project registry.",
+        "evidence_limits": [
+          "CAIs are not interchangeable with BSL location rows.",
+          "Assignment does not establish activated service or measured benefit.",
+          "Individual CAI details remain outside the public registry."
+        ],
+        "next_action": "Publish project-level CAI service, test, remediation, and acceptance totals only when compatible official observations are public.",
+        "structured_registry_file": "phase-57g-montana-project-cohort-registry.json",
+        "publication_date": "2026-01-05"
+      }
+    },
+    {
+      "id": "research-doc-57g-montana-funding-and-reporting-contract-join",
+      "slug": "57g-montana-funding-and-reporting-contract-join",
+      "source_file": "research-documents/737-57g-montana-funding-and-reporting-contract-join.json",
+      "reviewed_source_sha256": "d7aafa575d53b67c46432c92c380d240a546be86772a0129da96f2b9646ae1ab",
+      "title": "Project IDs now connect $303.7 million in proposed BEAD support to the correct reporting contract",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/10-montana-funding-and-reporting-contract-join.txt",
+      "download_sha256": "5025d2fa6653fe228c3d03d47b94d4664c08ef68fc827dd87a6d7541b9647a09",
+      "signal_file": "signal-57g-montana-funding-and-reporting-contract-join.mdx",
+      "signal_sha256": "a1f8b4f314ff06e8a66adc0b21d4ec9636792d63c52250be1532e6e812c88f26",
+      "signal_excerpt": "The 32-project baseline totals $303,686,528 in proposed BEAD support and $145,190,798 in subgrantee match; Kuiper and Starlink project identities join to the LEO contract while the remaining projects join to terrestrial reporting, testing, monitoring, reimbursement, and closeout controls.",
+      "historical_decision": {
+        "action_key": "MT-BEAD-FUNDING-REPORTING-JOIN-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Project-cohort registry",
+        "finding": "The 32-project baseline totals $303,686,528 in proposed BEAD support and $145,190,798 in subgrantee match; Kuiper and Starlink project identities join to the LEO contract while the remaining projects join to terrestrial reporting, testing, monitoring, reimbursement, and closeout controls.",
+        "denominator": "All 32 project funding rows, 19 UEI identities, 68,315 BSL rows, and 183 CAI rows under the appropriate public reporting-control family.",
+        "evidence_limits": [
+          "Proposal funding is not disbursement or expenditure.",
+          "A reporting contract is not a completed report.",
+          "No project receives an FTFN performance score or rank."
+        ],
+        "next_action": "Reopen the Montana outcome hold only with completed privacy-safe project-quarter or closeout tables and state acceptance or corrective-action decisions.",
+        "structured_registry_file": "phase-57g-montana-project-cohort-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-hanford-fourteen-stage-dflaw-registry",
+      "slug": "57g-hanford-fourteen-stage-dflaw-registry",
+      "source_file": "research-documents/738-57g-hanford-fourteen-stage-dflaw-registry.json",
+      "reviewed_source_sha256": "07378677cec8fc2a10e40d45b12827ad06729c0506b89ccf40e3874c6b0fb5b7",
+      "title": "The Hanford DFLAW registry separates fourteen named process, asset, custody, and disposal stages",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/11-hanford-fourteen-stage-dflaw-registry.txt",
+      "download_sha256": "733a188f3085033fd5ee354f32180d7a4c6a21dbde6fd00830c0da0995189947",
+      "signal_file": "signal-57g-hanford-fourteen-stage-dflaw-registry.mdx",
+      "signal_sha256": "01ec8f3caaf0be5db12d15a7f4e9dd0698b18ee462f682944b7a4b0046a77f70",
+      "signal_excerpt": "FTFN now maintains 14 ordered DFLAW lifecycle nodes from tank retrieval through TSCR, AP-106, laboratory certification, LAW processing, two named melters, container handling, shipment, IDF staging, and final disposal.",
+      "historical_decision": {
+        "action_key": "HANFORD-DFLAW-14-STAGE-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Batch-container-stage registry",
+        "finding": "FTFN now maintains 14 ordered DFLAW lifecycle nodes from tank retrieval through TSCR, AP-106, laboratory certification, LAW processing, two named melters, container handling, shipment, IDF staging, and final disposal.",
+        "denominator": "Fourteen public process or custody nodes derived from DOE and regulator records, each with a stable stage key and explicit input/output relation.",
+        "evidence_limits": [
+          "A stage key is not a public batch or container ID.",
+          "The process path does not prove every transfer occurred for the same material cohort.",
+          "Custody and acceptance authority remain distinct."
+        ],
+        "next_action": "Attach source-reported batch and container identities without inferring missing transitions.",
+        "structured_registry_file": "phase-57g-hanford-batch-container-stage-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-hanford-tscr-ap106-lab-feed-crosswalk",
+      "slug": "57g-hanford-tscr-ap106-lab-feed-crosswalk",
+      "source_file": "research-documents/739-57g-hanford-tscr-ap106-lab-feed-crosswalk.json",
+      "reviewed_source_sha256": "9431fcfd325ff19c62404ebfb649b3afffa16d972b653bbba78dd4be565f0705",
+      "title": "TSCR, AP-106, 222-S certification, and LAW transfer now have distinct feed-stage identities",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2020-02-18",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/making-space-hanford-prepares-key-tank-waste-treatment-mission",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/12-hanford-tscr-ap106-lab-feed-crosswalk.txt",
+      "download_sha256": "40c40761a61a52fc70dc82394c1ddd301592cec4043fd3793138b70a39b0c775",
+      "signal_file": "signal-57g-hanford-tscr-ap106-lab-feed-crosswalk.mdx",
+      "signal_sha256": "09255eb50b6bcc918ac62a937b4433ef4e406c666846a551fe8f5bcd555c4e5c",
+      "signal_excerpt": "The registry separates cesium-and-solids removal, AP-106 staging, laboratory certification, underground transfer, and LAW receipt; DOE's 1.1-million-gallon tank specification and waste-feed mission are attached only to AP-106's facility and mission records.",
+      "historical_decision": {
+        "action_key": "HANFORD-TSCR-AP106-FEED-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Batch-container-stage registry",
+        "finding": "The registry separates cesium-and-solids removal, AP-106 staging, laboratory certification, underground transfer, and LAW receipt; DOE's 1.1-million-gallon tank specification and waste-feed mission are attached only to AP-106's facility and mission records.",
+        "denominator": "Five distinct feed preparation, quality, transfer, and receipt nodes plus one AP-106 feed-staging mission milestone.",
+        "evidence_limits": [
+          "The 1.1-million-gallon figure is tank capacity, not measured feed staged.",
+          "A documented feed-staging mission is not evidence that a batch was received or transferred.",
+          "The source provides no stable public batch IDs or accepted mass balance."
+        ],
+        "next_action": "Publish batch IDs, certification dates, exact transferred volume and mass, LAW receipt, exceptions, and acceptance state.",
+        "structured_registry_file": "phase-57g-hanford-batch-container-stage-registry.json",
+        "publication_date": "2020-02-18"
+      }
+    },
+    {
+      "id": "research-doc-57g-hanford-melter-container-handling-registry",
+      "slug": "57g-hanford-melter-container-handling-registry",
+      "source_file": "research-documents/740-57g-hanford-melter-container-handling-registry.json",
+      "reviewed_source_sha256": "a0458d11c43850659d98bf5fbb1c61739e658220688cc0554da39de77108e6db",
+      "title": "Melter 1, Melter 2, fill, lid, swab, export, and shipment remain separate asset and container stages",
+      "publisher": "U.S. Department of Energy Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2025-09-30",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-plant-completes-20-containers-immobilized-waste",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/13-hanford-melter-container-handling-registry.txt",
+      "download_sha256": "31a35e7bcb922ac7141c3e409a6968e575ac10fa93b7445e5ab46b2690c7fe1f",
+      "signal_file": "signal-57g-hanford-melter-container-handling-registry.mdx",
+      "signal_sha256": "413f8f4c853740a475ffe3cde38008633b4769aa22ef458e73ef4c4f899e35fa",
+      "signal_excerpt": "DOE records support separate registry nodes for both LAW melters and for fill, lid and exterior swab, export-bay handoff, reusable transport sleeve, and shipment; no public record supplies a stable container-level join across them.",
+      "historical_decision": {
+        "action_key": "HANFORD-MELTER-CONTAINER-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Batch-container-stage registry",
+        "finding": "DOE records support separate registry nodes for both LAW melters and for fill, lid and exterior swab, export-bay handoff, reusable transport sleeve, and shipment; no public record supplies a stable container-level join across them.",
+        "denominator": "Two named melter assets and five post-melter container lifecycle or handoff stages.",
+        "evidence_limits": [
+          "Nominal filled-container weight is not observed output mass.",
+          "A filled count is not a quality-released, shipped, accepted, staged, or disposed count.",
+          "The public sources do not identify each container."
+        ],
+        "next_action": "Publish stable container IDs with fill, quality, export, shipment, receipt, acceptance, staging, disposal, tare, gross, glass, and waste fields.",
+        "structured_registry_file": "phase-57g-hanford-batch-container-stage-registry.json",
+        "publication_date": "2025-09-30"
+      }
+    },
+    {
+      "id": "research-doc-57g-hanford-nine-observation-stage-ledger",
+      "slug": "57g-hanford-nine-observation-stage-ledger",
+      "source_file": "research-documents/741-57g-hanford-nine-observation-stage-ledger.json",
+      "reviewed_source_sha256": "eee25d29a6a57c6ed795e31cbbc315ab189a95a720c885211a743debf3f24552",
+      "title": "Nine dated Hanford observations now attach to exact lifecycle stages and operators",
+      "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://pdw.hanford.gov/download/v2/AR-39756",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/14-hanford-nine-observation-stage-ledger.txt",
+      "download_sha256": "ab76612c9ebd6eeaac2923436cc7a3041e2b7f2cc725515d8ea3dc2ac5fd1503",
+      "signal_file": "signal-57g-hanford-nine-observation-stage-ledger.mdx",
+      "signal_sha256": "4f18037f08b497f17899e569dba5d3feb1b57cad53e25f02e8550ef16fa7263c",
+      "signal_excerpt": "The registry stores nine bounded observations, including greater-than thresholds, exact counts, an approximate count, and milestone events, without assuming that feed-volume and container-stage observations share one cohort.",
+      "historical_decision": {
+        "action_key": "HANFORD-NINE-STAGE-OBSERVATION-LEDGER-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Batch-container-stage registry",
+        "finding": "The registry stores nine bounded observations, including greater-than thresholds, exact counts, an approximate count, and milestone events, without assuming that feed-volume and container-stage observations share one cohort.",
+        "denominator": "Nine source-attributed observations across AP-106 staging, acceptable-glass startup, container fill or handling, shipment, IDF staging, and disposal.",
+        "evidence_limits": [
+          "Different dates, verbs, authorities, and units remain non-interchangeable.",
+          "No observation supplies the missing public batch and container IDs.",
+          "The ledger is not a complete monthly material balance."
+        ],
+        "next_action": "Add only compatible stage observations and preserve each threshold operator, unit, authority, and revision.",
+        "structured_registry_file": "phase-57g-hanford-batch-container-stage-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-hanford-null-identity-and-nonconversion-contract",
+      "slug": "57g-hanford-null-identity-and-nonconversion-contract",
+      "source_file": "research-documents/742-57g-hanford-null-identity-and-nonconversion-contract.json",
+      "reviewed_source_sha256": "53c8fd0b63a12bb4cdd52d739f84a72c1d52d5bc466f31acfeb400ca6e981796",
+      "title": "Missing batch and container identities are now explicit null fields, not synthetic joins",
+      "publisher": "U.S. Department of Energy, Office of Environmental Management",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/em/articles/hanford-releases-new-direct-feed-low-activity-waste-program-animation",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/15-hanford-null-identity-and-nonconversion-contract.txt",
+      "download_sha256": "ef13ae490d4e785a2cead730752a630965deb30fdbe34104659a89ff6ca7f7bf",
+      "signal_file": "signal-57g-hanford-null-identity-and-nonconversion-contract.mdx",
+      "signal_sha256": "19b8876a1d80176828c3c3639ef836662f7bdfad6ea8f2ebaa101e29eb2c873d",
+      "signal_excerpt": "The Hanford schema reserves batch ID, container ID, stage date, unit, quality disposition, shipment, receipt, acceptance, and disposal fields while recording zero public batch IDs and zero public container IDs in the current source set.",
+      "historical_decision": {
+        "action_key": "HANFORD-NULL-ID-NONCONVERSION-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Batch-container-stage registry",
+        "finding": "The Hanford schema reserves batch ID, container ID, stage date, unit, quality disposition, shipment, receipt, acceptance, and disposal fields while recording zero public batch IDs and zero public container IDs in the current source set.",
+        "denominator": "The 14-stage registry and nine observations, with identity availability explicitly recorded as zero rather than inferred.",
+        "evidence_limits": [
+          "Unknown identity is not evidence that no identifier exists operationally.",
+          "Nominal weight may not be multiplied by aggregate counts.",
+          "Gallon, glass, container, shipment, acceptance, and disposal observations cannot be synthetically converted."
+        ],
+        "next_action": "Reopen the mass-balance hold only with regulator-verifiable batch and container identities across every material stage.",
+        "structured_registry_file": "phase-57g-hanford-batch-container-stage-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-nnsa-two-site-site-facility-registry",
+      "slug": "57g-nnsa-two-site-site-facility-registry",
+      "source_file": "research-documents/743-57g-nnsa-two-site-site-facility-registry.json",
+      "reviewed_source_sha256": "9e11aded111e4e15f9957078015c3f8b8fed4a936e6b6d8dc4abc1e89b57f0fd",
+      "title": "The NNSA registry separates the enterprise mission, two sites, PF-4, former MOX building, and project umbrellas",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/nnsa/plutonium-pit-production",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/16-nnsa-two-site-site-facility-registry.txt",
+      "download_sha256": "8ce3c67679fd6be5c169e3bc51107500cfe679442c797568db1bd6d5aa166139",
+      "signal_file": "signal-57g-nnsa-two-site-site-facility-registry.mdx",
+      "signal_sha256": "201615d751bd3ca3b126a98cefcf5bcf53930d4271fbf91b3bc8be00d8de4733",
+      "signal_excerpt": "FTFN now distinguishes NNSA's enterprise mission, LANL and Savannah River sites, PF-4 operating facility, former MOX host building, LAP4 project umbrella, and SRPPF project umbrella as separate work-breakdown objects.",
+      "historical_decision": {
+        "action_key": "NNSA-TWO-SITE-FACILITY-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Site-facility-program registry",
+        "finding": "FTFN now distinguishes NNSA's enterprise mission, LANL and Savannah River sites, PF-4 operating facility, former MOX host building, LAP4 project umbrella, and SRPPF project umbrella as separate work-breakdown objects.",
+        "denominator": "One enterprise mission, two sites, two facility objects, and two capital-project umbrellas within an 18-entry crosswalk.",
+        "evidence_limits": [
+          "A site is not a facility or project.",
+          "A host building is not accepted production capacity.",
+          "Project activity does not establish recurring qualified output."
+        ],
+        "next_action": "Attach future scope, cost, schedule, qualification, capacity, and output observations to the exact work-breakdown object.",
+        "structured_registry_file": "phase-57g-nnsa-work-breakdown-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-nnsa-lap4-work-breakdown-registry",
+      "slug": "57g-nnsa-lap4-work-breakdown-registry",
+      "source_file": "research-documents/744-57g-nnsa-lap4-work-breakdown-registry.json",
+      "reviewed_source_sha256": "2686e7f60093f432fcbb7c0d79764e0654cea41a5326dd927de1a1130ebb3909",
+      "title": "LAP4 now separates 30 Base, 30 Reliable, 30 Diamond, D&D, TDC, and WECF scope objects",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/nnsa/articles/nnsa-approves-start-construction-plutonium-pit-production-subproject-los-alamos",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/17-nnsa-lap4-work-breakdown-registry.txt",
+      "download_sha256": "8a1f8c853836906fde73d9f34ff2e9867d3e9b344021ad9d64ed1a80489db969",
+      "signal_file": "signal-57g-nnsa-lap4-work-breakdown-registry.mdx",
+      "signal_sha256": "50b36f8015eb9d273c39336a809c193c011de1342f2d82c02ff05e99af2e34b7",
+      "signal_excerpt": "The LANL work breakdown distinguishes the LAP4 umbrella from 30 Base Equipment Installation, 30 Reliable Equipment Installation, later 30 Diamond scope, Decontamination and Demolition, Training and Development Center, and West Entry Control Facility objects.",
+      "historical_decision": {
+        "action_key": "NNSA-LAP4-WBS-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Site-facility-program registry",
+        "finding": "The LANL work breakdown distinguishes the LAP4 umbrella from 30 Base Equipment Installation, 30 Reliable Equipment Installation, later 30 Diamond scope, Decontamination and Demolition, Training and Development Center, and West Entry Control Facility objects.",
+        "denominator": "One LAP4 umbrella plus six named subproject or scope objects joined to PF-4 and LANL.",
+        "evidence_limits": [
+          "30 Diamond is retained as a scope strategy, not treated as a facility.",
+          "A CD-2/3 approval is not current completion.",
+          "Cost and schedule baselines do not establish operating rate or qualified output."
+        ],
+        "next_action": "Track every baseline, forecast, construction, readiness, and output observation against its exact LAP4 object and effective date.",
+        "structured_registry_file": "phase-57g-nnsa-work-breakdown-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-nnsa-srppf-work-breakdown-registry",
+      "slug": "57g-nnsa-srppf-work-breakdown-registry",
+      "source_file": "research-documents/745-57g-nnsa-srppf-work-breakdown-registry.json",
+      "reviewed_source_sha256": "ca2540510e0caa94944d6f5fafef08eb2db29320d514eb731ebabff52dc8d2b8",
+      "title": "SRPPF now separates the site, former MOX host, project umbrella, Main Process Building, and HFTOC",
+      "publisher": "U.S. Government Accountability Office",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.gao.gov/assets/gao-26-107777.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/18-nnsa-srppf-work-breakdown-registry.txt",
+      "download_sha256": "d638c5a038f3768a114fb506f021769d1b2ee41364f2ee46bec8887ac52ae6aa",
+      "signal_file": "signal-57g-nnsa-srppf-work-breakdown-registry.mdx",
+      "signal_sha256": "c2d9ff103bc77deff043573741a15b587988f8393d98de12904158a6955d714f",
+      "signal_excerpt": "The Savannah River registry distinguishes SRS, the former MOX facility, SRPPF, the Main Process Building subproject, and the High-Fidelity Training and Operations Center subproject.",
+      "historical_decision": {
+        "action_key": "NNSA-SRPPF-WBS-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Site-facility-program registry",
+        "finding": "The Savannah River registry distinguishes SRS, the former MOX facility, SRPPF, the Main Process Building subproject, and the High-Fidelity Training and Operations Center subproject.",
+        "denominator": "Five distinct Savannah River site, facility, project, and subproject objects.",
+        "evidence_limits": [
+          "Repurposing does not establish accepted capability.",
+          "Subproject critical decisions are not umbrella-project completion.",
+          "Training infrastructure does not establish qualified production output."
+        ],
+        "next_action": "Join baselines, construction, equipment, qualification, readiness, capacity, and output evidence only at the correct SRPPF work-breakdown level.",
+        "structured_registry_file": "phase-57g-nnsa-work-breakdown-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-nnsa-capacity-qualification-acceptance-crosswalk",
+      "slug": "57g-nnsa-capacity-qualification-acceptance-crosswalk",
+      "source_file": "research-documents/746-57g-nnsa-capacity-qualification-acceptance-crosswalk.json",
+      "reviewed_source_sha256": "0cbc2aee834d53bd790e7f0d6dd5518a2815935c8804794bffddd19522f34dc4",
+      "title": "The 30-plus-50 capacity plan and the W87-1 first production unit now occupy different registry objects",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/nnsa/articles/nnsa-completes-and-diamond-stamps-first-plutonium-pit-w87-1-warhead",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/19-nnsa-capacity-qualification-acceptance-crosswalk.txt",
+      "download_sha256": "a5f0468300574dba17e89b358e84e003ea652173d9ef9d57a52bb4084e557eb7",
+      "signal_file": "signal-57g-nnsa-capacity-qualification-acceptance-crosswalk.mdx",
+      "signal_sha256": "e4d40239e61eef7990e8ec0950466b6939c97300b769bd3acb8681f7eda6b328",
+      "signal_excerpt": "The registry separates LANL's planned 30-per-year contribution, Savannah River's planned at-least-50 contribution, the enterprise at-least-80 objective, and the one October 2024 fully qualified and diamond-stamped W87-1 first production unit.",
+      "historical_decision": {
+        "action_key": "NNSA-CAPACITY-QUALIFICATION-CROSSWALK-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Site-facility-program registry",
+        "finding": "The registry separates LANL's planned 30-per-year contribution, Savannah River's planned at-least-50 contribution, the enterprise at-least-80 objective, and the one October 2024 fully qualified and diamond-stamped W87-1 first production unit.",
+        "denominator": "Three capacity-plan quantities and one named qualification-and-acceptance event, with no inferred recurring production between them.",
+        "evidence_limits": [
+          "Capacity is not output.",
+          "One first production unit is not a rate.",
+          "Current generalized capability language still lacks a site-period terminology and disposition crosswalk."
+        ],
+        "next_action": "Publish dated site-period development, produced, rejected, reworked, qualified, accepted, and stockpile-entered counts.",
+        "structured_registry_file": "phase-57g-nnsa-work-breakdown-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-nnsa-gao-baseline-work-breakdown-crosswalk",
+      "slug": "57g-nnsa-gao-baseline-work-breakdown-crosswalk",
+      "source_file": "research-documents/747-57g-nnsa-gao-baseline-work-breakdown-crosswalk.json",
+      "reviewed_source_sha256": "23458a6b61ffc649dbe9f715533e09b44274771bf7c8de54c92d93cc56b12133",
+      "title": "The GAO enterprise baseline recommendation is now distinct from project and subproject baselines",
+      "publisher": "U.S. Government Accountability Office",
+      "document_type": "Data Release",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.gao.gov/products/gao-23-104661",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/20-nnsa-gao-baseline-work-breakdown-crosswalk.txt",
+      "download_sha256": "4e0b5a2588e080cd181c57128f6107a7a25b7092b35b6a88b2c2d310a88c8531",
+      "signal_file": "signal-57g-nnsa-gao-baseline-work-breakdown-crosswalk.mdx",
+      "signal_sha256": "6cc9cd6692158ea48caac1b276ac24514735415ca24ad0b5a065445e856caa92",
+      "signal_excerpt": "GAO-23-104661 Recommendation 1 now has its own registry object, separate from LAP4, SRPPF, 30 Base, Main Process Building, and HFTOC baseline objects; the recommendation remains Open and the December 2026 estimate remains a forecast.",
+      "historical_decision": {
+        "action_key": "NNSA-GAO-BASELINE-WBS-REGISTRY-2026-01",
+        "parent_hold_key": null,
+        "record_status": "Published",
+        "evidence_stage": "Site-facility-program registry",
+        "finding": "GAO-23-104661 Recommendation 1 now has its own registry object, separate from LAP4, SRPPF, 30 Base, Main Process Building, and HFTOC baseline objects; the recommendation remains Open and the December 2026 estimate remains a forecast.",
+        "denominator": "One independent enterprise life-cycle-cost recommendation object joined to, but not substituted by, named project and subproject baseline objects.",
+        "evidence_limits": [
+          "A project baseline cannot satisfy an enterprise life-cycle-cost recommendation by substitution.",
+          "Agency planning is not GAO closure.",
+          "A forecast date is not a completed and independently accepted estimate."
+        ],
+        "next_action": "Reopen the exact-baseline hold only when GAO records implementation or closure against the recommendation's own sufficiency criteria.",
+        "structured_registry_file": "phase-57g-nnsa-work-breakdown-registry.json",
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-amtrak-pids-closeout-reliability-hold",
+      "slug": "57g-preserved-amtrak-pids-closeout-reliability-hold",
+      "source_file": "research-documents/748-57g-preserved-amtrak-pids-closeout-reliability-hold.json",
+      "reviewed_source_sha256": "c10b4c4578c6b542ee91bf2375915fd3e87303fe19f201ff7a75c4efb0c51c1f",
+      "title": "Amtrak PIDS closeout hold: historical lineage does not resolve the 2026 asset register",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Technical Report",
+      "publication_date": "2026-06-01",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/21-preserved-amtrak-pids-closeout-reliability-hold.txt",
+      "download_sha256": "9a73bca3c1c926b7c437d17b3a1a7c5a9331378e60a5ba04d2031bbf68bfce33",
+      "signal_file": "signal-57g-preserved-amtrak-pids-closeout-reliability-hold.mdx",
+      "signal_sha256": "106cf320b56c1239e2a9640f7ca2572919c373d558f613e346c43a9bf9c79fe7",
+      "signal_excerpt": "The historical 120-station and 96-completion cohort clarifies lineage but does not reconcile the June 2026 93-deployment and 117-installation counts or establish accepted closeout and operating quality.",
+      "historical_decision": {
+        "action_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-06",
+        "parent_hold_key": "AMTRAK-PIDS-CLOSEOUT-HOLD-2026-05",
+        "record_status": "In Review",
+        "evidence_stage": "Measured reliability outcome hold",
+        "finding": "The historical 120-station and 96-completion cohort clarifies lineage but does not reconcile the June 2026 93-deployment and 117-installation counts or establish accepted closeout and operating quality.",
+        "denominator": "One reconciled station-device register spanning the historical 120 and 96 records and the June 2026 93 and 117 records, with stable identities and acceptance state.",
+        "evidence_limits": [
+          "Historical portfolio structure cannot be assumed to match the 2026 scope.",
+          "Aggregate completion is not accepted closeout.",
+          "No compatible uptime, outage, use, complaint, resolution, or rider-outcome observations are public."
+        ],
+        "next_action": "Reopen only with accepted closeout, a reconciled station-device register, and compatible operating-quality observations.",
+        "structured_registry_file": null,
+        "publication_date": "2026-06-01"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-amtrak-named-asset-reliability-hold",
+      "slug": "57g-preserved-amtrak-named-asset-reliability-hold",
+      "source_file": "research-documents/749-57g-preserved-amtrak-named-asset-reliability-hold.json",
+      "reviewed_source_sha256": "42250ce64fb0d8be52f7be0c3dac3844959214bf6756b42042fd0134d4f0c45e",
+      "title": "Amtrak named-asset reliability hold: station cohorts still lack asset-period outcomes",
+      "publisher": "National Railroad Passenger Corporation",
+      "document_type": "Technical Report",
+      "publication_date": "2026-06-01",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/businessplanning/Amtrak-Stations-ALP-Appendices-FY24-29.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/22-preserved-amtrak-named-asset-reliability-hold.txt",
+      "download_sha256": "bed588360bedea500299bcc516e42fd3636c901b1070b16fbd8a55518eaff60f",
+      "signal_file": "signal-57g-preserved-amtrak-named-asset-reliability-hold.mdx",
+      "signal_sha256": "9b950e7629b659674380845aa907d9bb461f6982e91953c8c9b62c6e8d88cddc",
+      "signal_excerpt": "Named historical station cohorts are available, but official reports still do not publish compatible asset-period reliability, actual-use, complaint, resolution, boarding-time, or rider-experience results.",
+      "historical_decision": {
+        "action_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-05",
+        "parent_hold_key": "AMTRAK-NAMED-RELIABILITY-HOLD-2026-04",
+        "record_status": "In Review",
+        "evidence_stage": "Measured reliability outcome hold",
+        "finding": "Named historical station cohorts are available, but official reports still do not publish compatible asset-period reliability, actual-use, complaint, resolution, boarding-time, or rider-experience results.",
+        "denominator": "Each stable station and accessibility asset by reporting period, including installed, accepted, available, failed, repaired, used, complained, resolved, and rider-outcome fields.",
+        "evidence_limits": [
+          "Station identity alone does not identify each device or mobility asset.",
+          "Construction status does not establish reliability.",
+          "Aggregate engagement and remediation statements cannot supply asset-period outcomes."
+        ],
+        "next_action": "Reopen with stable asset identifiers and compatible asset-period reliability, use, complaint, and rider-outcome tables.",
+        "structured_registry_file": null,
+        "publication_date": "2026-06-01"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-louisiana-nextlink-observed-adoption-hold",
+      "slug": "57g-preserved-louisiana-nextlink-observed-adoption-hold",
+      "source_file": "research-documents/750-57g-preserved-louisiana-nextlink-observed-adoption-hold.json",
+      "reviewed_source_sha256": "d92299ecd97222bd9a7453d3b8258d327108cef7e8e894075a78ed1fe591e719",
+      "title": "Louisiana Nextlink adoption hold: Montana's schema identifies fields but supplies no 104-location result",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "document_type": "Technical Report",
+      "publication_date": "2026-05-13",
+      "captured_date": "2026-08-03",
+      "official_url": "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/23-preserved-louisiana-nextlink-observed-adoption-hold.txt",
+      "download_sha256": "1e5c76afc373180275fb634f0c20b0a25fdded4c22b00c4c2522b131173aa214",
+      "signal_file": "signal-57g-preserved-louisiana-nextlink-observed-adoption-hold.mdx",
+      "signal_sha256": "4948338e9ef3a36807983f702b4078574bf5296411bd72b7a5af7a30f59c1cdd",
+      "signal_excerpt": "The 104 Nextlink locations remain serviceable without public installed, subscribed, tested, retained, priced, complained, remediated, or accepted-closeout outcomes; Montana's measurement schema is not Louisiana evidence.",
+      "historical_decision": {
+        "action_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-06",
+        "parent_hold_key": "LA-BEAD-NEXTLINK-VALIDATION-HOLD-2026-05",
+        "record_status": "In Review",
+        "evidence_stage": "Observed adoption outcome hold",
+        "finding": "The 104 Nextlink locations remain serviceable without public installed, subscribed, tested, retained, priced, complained, remediated, or accepted-closeout outcomes; Montana's measurement schema is not Louisiana evidence.",
+        "denominator": "The same 104 Bossier Parish BEAD locations followed through serviceability, installation, subscription, performance, retention, price, complaint, remediation, and accepted closeout.",
+        "evidence_limits": [
+          "Cross-state requirements cannot substitute for Louisiana results.",
+          "Provider-wide subscriber totals cannot be assigned to the 104-location cohort.",
+          "No privacy-safe cohort adoption table is public."
+        ],
+        "next_action": "Reopen with privacy-safe counts for all 104 locations at each adoption and acceptance stage.",
+        "structured_registry_file": null,
+        "publication_date": "2026-05-13"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-louisiana-starlink-observed-adoption-hold",
+      "slug": "57g-preserved-louisiana-starlink-observed-adoption-hold",
+      "source_file": "research-documents/751-57g-preserved-louisiana-starlink-observed-adoption-hold.json",
+      "reviewed_source_sha256": "9fc213304d650da81b1b04608847143993005f22c1898f3ecf580836ff3b72c1",
+      "title": "Louisiana Starlink adoption hold: a comparable LEO schema exists but the 10,635-location cohort has no result",
+      "publisher": "Louisiana Office of Broadband Development and Connectivity",
+      "document_type": "Technical Report",
+      "publication_date": "2026-07-17",
+      "captured_date": "2026-08-03",
+      "official_url": "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/24-preserved-louisiana-starlink-observed-adoption-hold.txt",
+      "download_sha256": "5a5fb39e5abcfa139426fc7671d5e206dfbdce2d74e8ea2ce98feeee239759eb",
+      "signal_file": "signal-57g-preserved-louisiana-starlink-observed-adoption-hold.mdx",
+      "signal_sha256": "9cc2952b39aa1c367d15df743a022325da9b1ded5f9a80675f59308994c32920",
+      "signal_excerpt": "Montana defines a privacy-safe LEO reporting structure, but Louisiana's 10,635 planned Starlink locations still lack public activation, subscriber, test, retention, price, complaint, remediation, or accepted-closeout results.",
+      "historical_decision": {
+        "action_key": "LA-BEAD-STARLINK-HOLD-2026-06",
+        "parent_hold_key": "LA-BEAD-STARLINK-HOLD-2026-05",
+        "record_status": "In Review",
+        "evidence_stage": "Observed adoption outcome hold",
+        "finding": "Montana defines a privacy-safe LEO reporting structure, but Louisiana's 10,635 planned Starlink locations still lack public activation, subscriber, test, retention, price, complaint, remediation, or accepted-closeout results.",
+        "denominator": "The exact 10,635-location Louisiana agreement cohort reconciled to eligible, activated, installed, subscribed, tested, retained, complained, remediated, and accepted states.",
+        "evidence_limits": [
+          "Montana's reporting contract does not govern or measure Louisiana's award.",
+          "Availability targets are not activation or adoption.",
+          "No stable public subscriber or retention denominator is available."
+        ],
+        "next_action": "Reopen after activated locations and privacy-safe denominators, subscribers, tests, retention, price, complaints, remediation, and closeout are public.",
+        "structured_registry_file": null,
+        "publication_date": "2026-07-17"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-montana-quarterly-observed-results-hold",
+      "slug": "57g-preserved-montana-quarterly-observed-results-hold",
+      "source_file": "research-documents/752-57g-preserved-montana-quarterly-observed-results-hold.json",
+      "reviewed_source_sha256": "1c2a524b84dda3cd4eebe6b3acfc03455cafbf26d3c18eb0b95b368777815578",
+      "title": "Montana BEAD result hold: detailed terrestrial and LEO schemas still lack completed public awardee tables",
+      "publisher": "Montana Department of Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://doa.mt.gov/ConnectMT/iija/",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/25-preserved-montana-quarterly-observed-results-hold.txt",
+      "download_sha256": "efda2d9bdc4754c017d82a3c171ed01420e99e9bc6ae54288fa73147397f90e0",
+      "signal_file": "signal-57g-preserved-montana-quarterly-observed-results-hold.mdx",
+      "signal_sha256": "3b592a99653b7b071d4b00982187e06def56b1f927abed474809dc831b1ffe96",
+      "signal_excerpt": "ConnectMT publishes forms, instructions, served-location files, test controls, and monitoring guidance, but the public resource index does not expose completed awardee quarterly or closeout outcome tables.",
+      "historical_decision": {
+        "action_key": "MT-BEAD-QUARTERLY-HOLD-2026-06",
+        "parent_hold_key": "MT-BEAD-QUARTERLY-HOLD-2026-05",
+        "record_status": "In Review",
+        "evidence_stage": "Observed adoption outcome hold",
+        "finding": "ConnectMT publishes forms, instructions, served-location files, test controls, and monitoring guidance, but the public resource index does not expose completed awardee quarterly or closeout outcome tables.",
+        "denominator": "Each stable terrestrial or LEO award and approved location cohort by quarter, with served, subscribed, tested, retained, failed, remediated, and accepted counts.",
+        "evidence_limits": [
+          "A form index is not a submitted report.",
+          "Required fields cannot be read as zero or nonzero results.",
+          "No project-specific complaint, affordability, retention, or state-acceptance outcome is public."
+        ],
+        "next_action": "Reopen with completed privacy-safe quarterly or closeout tables and state acceptance or corrective-action decisions.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-hanford-complete-material-balance-hold",
+      "slug": "57g-preserved-hanford-complete-material-balance-hold",
+      "source_file": "research-documents/753-57g-preserved-hanford-complete-material-balance-hold.json",
+      "reviewed_source_sha256": "74e1ff85b662093f0ba91468394cb5884f1f34360824b9260ed676b0b7c57515",
+      "title": "Hanford mass-balance hold: new cumulative and container observations still do not reconcile every stage",
+      "publisher": "U.S. Department of Energy Hanford Field Office and Washington State Department of Ecology",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://pdw.hanford.gov/download/v2/AR-39756",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/26-preserved-hanford-complete-material-balance-hold.txt",
+      "download_sha256": "a78f88a3c3bea4015c9b26792c1f274df85072196407574c318f8d5af3159968",
+      "signal_file": "signal-57g-preserved-hanford-complete-material-balance-hold.mdx",
+      "signal_sha256": "65aa5796c5dcbf7899cc3580802f3c98d2d993d31a75356bea840f3c690d6352",
+      "signal_excerpt": "The 19-container shipment record, the greater-than-100,000-gallon milestone, and later container snapshots deepen the ledger but do not produce a regulator-verifiable monthly batch and container mass balance.",
+      "historical_decision": {
+        "action_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-03",
+        "parent_hold_key": "HANFORD-WTP-MASS-BALANCE-HOLD-2026-02",
+        "record_status": "In Review",
+        "evidence_stage": "Full output reconciliation hold",
+        "finding": "The 19-container shipment record, the greater-than-100,000-gallon milestone, and later container snapshots deepen the ledger but do not produce a regulator-verifiable monthly batch and container mass balance.",
+        "denominator": "The complete DFLAW monthly material balance from TSCR feed through LAW and EMF streams, glass, stable container identities, quality disposition, shipment, acceptance, disposal, secondary waste, and ending inventory.",
+        "evidence_limits": [
+          "Cumulative lower bounds cannot replace exact monthly flows.",
+          "Nominal container weight cannot replace measured material mass.",
+          "Separate dates, stages, and authorities cannot be assumed to describe one material cohort."
+        ],
+        "next_action": "Reopen only with a regulator-verifiable monthly balance and stable batch and container identities across all stages.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-nnsa-recurring-qualified-output-hold",
+      "slug": "57g-preserved-nnsa-recurring-qualified-output-hold",
+      "source_file": "research-documents/754-57g-preserved-nnsa-recurring-qualified-output-hold.json",
+      "reviewed_source_sha256": "4f80dd42de7a160fa4a0f0750e06308ca0a57b1f2ea9f3efe5587786c78019ea",
+      "title": "NNSA recurring-output hold: the public state conflict does not supply site-period yield",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/nnsa/plutonium-pit-production",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/27-preserved-nnsa-recurring-qualified-output-hold.txt",
+      "download_sha256": "4381499031a5ecfea2d8c59239e199166855f048e6af6e57e979638319fa0d8d",
+      "signal_file": "signal-57g-preserved-nnsa-recurring-qualified-output-hold.mdx",
+      "signal_sha256": "95089183e92f3a19f0ec5c22204d9af1ddcb59bf7fbc5bd8bf087a2a6fc06374",
+      "signal_excerpt": "The first production unit, current R&D-only capability statement, and future capacity goal still do not provide compatible produced, qualified, rejected, reworked, and accepted counts by site and period.",
+      "historical_decision": {
+        "action_key": "NNSA-PIT-RATE-HOLD-2026-06",
+        "parent_hold_key": "NNSA-PIT-RATE-HOLD-2026-05",
+        "record_status": "In Review",
+        "evidence_stage": "Qualified output outcome hold",
+        "finding": "The first production unit, current R&D-only capability statement, and future capacity goal still do not provide compatible produced, qualified, rejected, reworked, and accepted counts by site and period.",
+        "denominator": "Each named production site and reporting period with stable definitions for development, produced, qualified, rejected, reworked, accepted, and acceptance-authority states.",
+        "evidence_limits": [
+          "One first production unit does not establish recurrence.",
+          "A generalized capability statement is not a count.",
+          "A future annual capacity objective is not observed output."
+        ],
+        "next_action": "Reopen only with site-period produced, qualified, rejected, reworked, and accepted counts under stable definitions.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-nnsa-final-capacity-readiness-hold",
+      "slug": "57g-preserved-nnsa-final-capacity-readiness-hold",
+      "source_file": "research-documents/755-57g-preserved-nnsa-final-capacity-readiness-hold.json",
+      "reviewed_source_sha256": "6417373342e2518d9c6bfbb0f979d1c0f99e46931d9cdd742938cbb7e3972c9f",
+      "title": "NNSA capacity hold: current two-site policy still does not establish final accepted operating capacity",
+      "publisher": "National Nuclear Security Administration",
+      "document_type": "Technical Report",
+      "publication_date": "2026-08-03",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.energy.gov/sites/default/files/2026-04/draft-eis-0573-plutonium-pit-production-vol-1-2026-04.pdf",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/28-preserved-nnsa-final-capacity-readiness-hold.txt",
+      "download_sha256": "9185bd847890ceae59030cd2dd3d865d15fcbcbceff8eb9cb0e08fd0f21e00e5",
+      "signal_file": "signal-57g-preserved-nnsa-final-capacity-readiness-hold.mdx",
+      "signal_sha256": "d1e4633dc1084485b78a70ddbaf2c81f570809a891663f56f9237e46579be976",
+      "signal_excerpt": "The current two-site program description and draft PEIS alternatives do not supply a final decision, installed and accepted capacity, readiness authorization, or recurring qualified output.",
+      "historical_decision": {
+        "action_key": "NNSA-PIT-PEIS-HOLD-2026-06",
+        "parent_hold_key": "NNSA-PIT-PEIS-HOLD-2026-05",
+        "record_status": "In Review",
+        "evidence_stage": "Qualified output outcome hold",
+        "finding": "The current two-site program description and draft PEIS alternatives do not supply a final decision, installed and accepted capacity, readiness authorization, or recurring qualified output.",
+        "denominator": "The final decision, installed equipment, acceptance evidence, readiness authorization, and recurring output at Los Alamos and Savannah River as separate stages.",
+        "evidence_limits": [
+          "A policy approach is not a final site-specific readiness decision.",
+          "Analyzed or planned capacity is not installed accepted capacity.",
+          "No recurring qualified-output table is public."
+        ],
+        "next_action": "Reopen with a final decision, installed and accepted capacity, readiness authorization, and recurring qualified output.",
+        "structured_registry_file": null,
+        "publication_date": "2026-08-03"
+      }
+    },
+    {
+      "id": "research-doc-57g-preserved-nnsa-exact-gao-baseline-hold",
+      "slug": "57g-preserved-nnsa-exact-gao-baseline-hold",
+      "source_file": "research-documents/756-57g-preserved-nnsa-exact-gao-baseline-hold.json",
+      "reviewed_source_sha256": "b1b3968709dc612c3b820b5b3db025f079a69f7908f9a7f7a1b6d49ac869b1b6",
+      "title": "NNSA enterprise-baseline hold: GAO's exact recommendation remains Open",
+      "publisher": "U.S. Government Accountability Office",
+      "document_type": "Technical Report",
+      "publication_date": "2026-04-30",
+      "captured_date": "2026-08-03",
+      "official_url": "https://www.gao.gov/products/gao-23-104661",
+      "download": "/downloads/named-asset-project-cohort-registry-expansion-2026/official-links/29-preserved-nnsa-exact-gao-baseline-hold.txt",
+      "download_sha256": "030569a47a42ce28d1a5117ff396632416d0da3fcb866d74d06499b23ab47f43",
+      "signal_file": "signal-57g-preserved-nnsa-exact-gao-baseline-hold.mdx",
+      "signal_sha256": "4de007edfe24f44dee266ac7acc1491bab30f8224d39c6ae13fe661312be3bfb",
+      "signal_excerpt": "GAO-23-104661 remains Open because a GAO-aligned lifecycle cost estimate is still absent; the December 2026 forecast and other portfolio-governance closures do not satisfy the exact recommendation.",
+      "historical_decision": {
+        "action_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-07",
+        "parent_hold_key": "NNSA-PIT-GAO-BASELINE-HOLD-2026-06",
+        "record_status": "In Review",
+        "evidence_stage": "Qualified output outcome hold",
+        "finding": "GAO-23-104661 remains Open because a GAO-aligned lifecycle cost estimate is still absent; the December 2026 forecast and other portfolio-governance closures do not satisfy the exact recommendation.",
+        "denominator": "The complete plutonium-modernization integrated master schedule and lifecycle cost estimate evaluated against GAO best practices and the exact GAO-23-104661 recommendation identity.",
+        "evidence_limits": [
+          "Forecast completion is not actual completion.",
+          "Different GAO recommendation identities cannot be substituted.",
+          "A public artifact must still receive the exact GAO sufficiency or closure decision."
+        ],
+        "next_action": "Reopen only when the complete integrated schedule and lifecycle-cost estimate are available and GAO records the exact recommendation sufficient or closed.",
+        "structured_registry_file": null,
+        "publication_date": "2026-04-30"
+      }
+    }
+  ],
+  "briefing": {
+    "source_file": "briefings/research-watch-037-named-asset-project-cohort-registry-expansion.mdx",
+    "reviewed_source_sha256": "1fb707e627bfe140add260959cf0d9e1dd262a70f440e5564573132e9fdb15eb"
+  },
+  "previous_reference_count": 808,
+  "previous_records_hash": "cc0d2364a043c021b6123c9677f3c490827789f952483a05e4b96410ee407710",
+  "previous_signal_count": 790,
+  "previous_signal_records_hash": "4b109b23ce09aba0284c3b5b4dc968610d0ec2632fb632add8ea1a351658e56c",
+  "prior_input_pins": [
+    {
+      "path": "scripts/content-205-216/reference-attribution-reviews.json",
+      "sha256": "8ed1eecd8e010c40b5a79bf342be49de4efcd905940844e66c07be0dba56526d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57x-inputs.json",
+      "sha256": "cecaa7493b4d47887667a517cb3af1144b76825c83b640110c7a755719a37a40"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57x-reviews.mjs",
+      "sha256": "8b99cc00c2e8e016db84afab5d0c8d93f420b70d1dc0bb6f20e9c10ec324de93"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57w-inputs.json",
+      "sha256": "85065aeb196a55678ba67b59580687f4a380df74c2f467b1511f98c738317eec"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57w-reviews.mjs",
+      "sha256": "b86fb2ffcb1f81c56310462c0b4ff450973676aff5b9d7ff20471a3da680f8e2"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57v-inputs.json",
+      "sha256": "312489bb869005e4ab593ea27c63e87b83a73ee3566a0654d20672f5f2ab2b15"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57v-reviews.mjs",
+      "sha256": "b6d2148b5d8f9baddfe7b4f27f4db8c6686fbc90c9229d370932f25aed1d8cf0"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57u-inputs.json",
+      "sha256": "caa5c688847423773852796fd6766aa684464f3c64ac879a5a4c7b1c88e162f5"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57u-reviews.mjs",
+      "sha256": "720924ca21c3b8c99c24428106127eb3d10571a8aaad3725b46f3aa06f34c7c4"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57t-inputs.json",
+      "sha256": "2b2eec85ae80748f6ed26e152b346774ebabb50c4adfceb0be5f6ea9ae399b2c"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57t-reviews.mjs",
+      "sha256": "87f22c8075743da8ef0604085d816eee2f113e2aaebc75615803b4bd96e64721"
+    },
+    {
+      "path": "src/content/updates/2026-09-14-reference-attribution-57y.json",
+      "sha256": "e9dacdae79838449ba0c156acfc9d187c0e54a119941152bb2e2640a87c202b9"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57x.json",
+      "sha256": "883e2fac41fdf6684a7c4bf9c4ef0a9bf5c68e1f4ed6e8b86fb31a0f3c084e85"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57w.json",
+      "sha256": "23b04e6d864b9a26a3701804de8d611fd8d6f91f90e6f53895eb458c438c26c9"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57v.json",
+      "sha256": "41de863c454da521d012715586bb4a1e38d148aec6340f8126dfd53769d3fca0"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57u.json",
+      "sha256": "facd3393fc901783b086f59a32afb370fe41dce35c635bf5fed5556785ef31b0"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57t.json",
+      "sha256": "d6dc337e431859d41930119ce4fa5904e1d70bed31041b3a06379fd768e7b468"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57rs-inputs.json",
+      "sha256": "d6b4febd5ca313287d6eee2507ae378eae0ff2951b6809f6c2350147e1f5089d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57rs-reviews.mjs",
+      "sha256": "10f9d9b16993da3f2f873a1ffcfa25db41f1184d732e44baf9035e22b350b075"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57s.json",
+      "sha256": "26913dc9625c5318f9ffd44cff046412d42582225951a0dc9794ec7a8e5e073e"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57r.json",
+      "sha256": "b53e41d11b987edfc18321c2d3fc0c6561dd17d0d0f03265e6648a2a9c50f151"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57pq-inputs.json",
+      "sha256": "213313ce1afd3b76bc1b79a49250890087926e21eecf1d1311a8d9f80a6f3bdf"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57pq-reviews.mjs",
+      "sha256": "eb36087df69242fef0c10a4d593f26e057d13eeb5f6e4d6411c5ece6f8c0e9df"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57q.json",
+      "sha256": "8659cc4574e4dac1601f1d9c9f9cd6b84416211764494cfddea96327c474fc50"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57p.json",
+      "sha256": "ef8fa6f81466133a423e99f3f6078c5f0216c9f75590b6155c7debfc01c2bd0b"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57no-inputs.json",
+      "sha256": "6f49cd8fa084e720309061d0153bf7cd7ac224b0e535f4b38cd9e1928532c5e9"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57no-reviews.mjs",
+      "sha256": "f7112f72938db25bfbcecf1d5cc0f90dca4de2c19ea04f8c7ee705300c1dc737"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57o.json",
+      "sha256": "9f4f38e3ced99047b4b58f11183b58907601175a3bd97189886628ca07b3764d"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57n.json",
+      "sha256": "c0c587e7b3b4bc4a69433ba0184468d870d67750e328a83195a1e0f1e2c2cc16"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57m-inputs.json",
+      "sha256": "ae478d2113e3167d55c2084693646f063fd44292efa14e1525fe0f920e94fe10"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57m-reviews.mjs",
+      "sha256": "09e195f39e450026faac3208cc72c35f3f8829ac7f47b167c0d9949b35ac258f"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57m.json",
+      "sha256": "a15907cbc6659618a284c2510d9d57f63b07d0de71b83c58f2516c534c0aafa0"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57l-inputs.json",
+      "sha256": "ccf577930eff183f8824cd660838c767f794995226b15e3fd0fd8e78a6b6156d"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57l-reviews.mjs",
+      "sha256": "4aa404b8a023819f9298a31af3074e11b4f0031be688e948b0347313ca1332d4"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57l.json",
+      "sha256": "06ca8e99a073de0d207bd59aa384a404a7f1b2c2d9fe613c8eaa9d132b676150"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-57l-individual-classifications.json",
+      "sha256": "ed5270a57fcc99e4f86216b62f1ecaab5391d092e3cd693f2fdf62f5a007ac7b"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-56t-inputs.json",
+      "sha256": "71913fa4359c8971e39d80426595ee9e56d9f483db0f5a31894cb86266300bdb"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-56t-reviews.mjs",
+      "sha256": "08617927f2f25990d971d6fe664d8c80486d0f6e1903b4034c1711717f3ea869"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-56t.json",
+      "sha256": "3f7573cee51ed109d0730c3f61ccfca2028441baabef996f9db7cebf094344f2"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-56t-individual-classifications.json",
+      "sha256": "f207864a278d4c3d9e5128d80c79ed2175f11eb62cba0b3ab4cd85b572cce447"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57k-inputs.json",
+      "sha256": "cfbda756393625e145ac831fbe02a16566b62c17bd27ae2d5f456eb75933b412"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57k-reviews.mjs",
+      "sha256": "6f03b553eb5468374ea66cc8f80971da656a3272b52e960cfe2ade85b38991ee"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57k.json",
+      "sha256": "2138d9edf45e489e4b3e6ee442679b269961e925a2aa6854ba8173203e68bdc2"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-57k-individual-classifications.json",
+      "sha256": "c560fc6ab939407692ad4c00033ecd35bd06985246bee26d4f3774d41f2dc420"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57j-inputs.json",
+      "sha256": "f6068c0a622cf21a4d015475f0cd9fe8c49def2afc2dc5eaf26c247db9971748"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57j-reviews.mjs",
+      "sha256": "e2e9596cc761d686eeb9db8a35e4e7487a03d85cfce6167258721a1079284353"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57j.json",
+      "sha256": "5f8197ffd69227f4231496b3228c2f6e4d4bbcbc689ff320863409d86dac3878"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-57j-individual-classifications.json",
+      "sha256": "624e024ce1db4b3f6c4d37c9abf1a71ef1c82228ec2291c9a38f9fd7bb33a39a"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57i-inputs.json",
+      "sha256": "22b6eb8bebeeeac4e75720647381fabf5faa63301cf650a42423caa43b8e5b06"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57i-reviews.mjs",
+      "sha256": "975b7dcae4d5056c0bb7a54eae494f71deb9f75ed10fd0f027798cd53ee6ddf5"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57i.json",
+      "sha256": "85624b7fc682ca19608effe0f5f386d3229e75038bb3c8758ded3dbafa4cbe86"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-57i-individual-classifications.json",
+      "sha256": "437b3e64e8d54dce4c6e4541e1ec30758febf8715e999a05c90fb4159e8e07f6"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57h-inputs.json",
+      "sha256": "0e9e35e6182f74b9f38416e495438effd14f10f2cd435386e64e9a7b183082df"
+    },
+    {
+      "path": "scripts/content-205-216/reference-attribution-57h-reviews.mjs",
+      "sha256": "47f2c01e2753164698c93a581adc9d7c46f13bd683c3b931ce255bc3e3da7a8b"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-reference-attribution-57h.json",
+      "sha256": "aa0816d4981e5368773774b65629f65a571d14c01f464387fbeaecab69a4af52"
+    },
+    {
+      "path": "src/content/updates/2026-09-15-57h-individual-classifications.json",
+      "sha256": "c284e812f4dbceac932f0c194103bdfaaf7a2a7aa96e1d5c842a2016beb388ab"
+    }
+  ],
+  "supporting_registry_pins": [
+    {
+      "path": "src/data/phase-57g-named-asset-project-cohort-registry-expansion.json",
+      "sha256": "c486b98b7798e21b6a83c91aa990894c72806c014c1fd338401796f9d5beb70c"
+    },
+    {
+      "path": "src/data/phase-57g-amtrak-named-station-registry.json",
+      "sha256": "30dc86c56ad41448b6c6a04f8dafef9385868c2404699bc1ff201cf50cb35ec4"
+    },
+    {
+      "path": "src/data/phase-57g-montana-project-cohort-registry.json",
+      "sha256": "e3078cdb3696a73ce69160d30977002d02cbb463dbd2256a5cf0774f720472fa"
+    },
+    {
+      "path": "src/data/phase-57g-hanford-batch-container-stage-registry.json",
+      "sha256": "92548810fcdde742cc52c7e4abcc56efca477658d51fc58e2403f54d358cefd5"
+    },
+    {
+      "path": "src/data/phase-57g-nnsa-work-breakdown-registry.json",
+      "sha256": "865f649606e9a1b3f6f9711a1e535734eb794f1ddb3d60bc73a6fb5a1159ccd2"
+    },
+    {
+      "path": "src/data/phase-57g-publication-review.json",
+      "sha256": "b0839991420de53419d07cd54d18b8951b28cb6a3c459065a46e5a68a18cbb6a"
+    },
+    {
+      "path": "scripts/generate-phase57g-content.mjs",
+      "sha256": "f0f55cfb5aebd43dce078ca96a328625ff32cb6105a265a2f158681c235c28b6"
+    },
+    {
+      "path": "src/data/phase-57h-registry-revision-provenance-compatible-observation-joins.json",
+      "sha256": "b0a38a71a481535411a225123f7266057241ea53e500ca7030b670cb9271366c"
+    }
+  ],
+  "prior_signal_input_pins": [
+    {
+      "path": "scripts/content-205-216/claim-review-inputs.json",
+      "sha256": "0f0efdd1fa0d5528f17f9de8b33c1f1de2818bb772c31a2220d5aa0a303c44d1"
+    },
+    {
+      "path": "scripts/lib/classification-57l.mjs",
+      "sha256": "8574ade1418e5d3585bbba42e1f924b5543e1fbb9e5284a7a3f11d0f22c1e0b1"
+    }
+  ],
+  "current_evidence_hash": "a499d9fd1d00e9516adf247683e2540ba13f53aa7cd91f7606be5599601d0685"
+}

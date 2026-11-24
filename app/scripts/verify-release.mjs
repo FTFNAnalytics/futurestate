@@ -1,11 +1,22 @@
 import { readdir, readFile } from "node:fs/promises";
+import './verify-phase204-reader-completion.mjs';
+import {verifyUpdateArchive, decodeHtmlText} from './lib/verify-update-archive.mjs';
+import {verifyPublicJsonInventory} from './lib/public-json-inventory.mjs';
 import { dirname, extname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { computeV1rcDigestFromDisk, isValidV1rcValidationReceipt } from "./lib/v1rc-candidate-digest.mjs";
+import { isValidV1rcOwnerReceipt } from "./lib/v1rc-owner-receipt.mjs";
+import { computeV1monthDigestFromDisk, isValidV1monthValidationReceipt } from "./lib/v1month-candidate-digest.mjs";
+import { computeV1cycleDigestFromDisk, isValidV1cycleValidationReceipt } from "./lib/v1cycle-candidate-digest.mjs";
+import { computeV1octDigestFromDisk, isValidV1octValidationReceipt, v1octSourceNames } from "./lib/v1oct-candidate-digest.mjs";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const appRoot = resolve(scriptDirectory, "..");
 const workspaceRoot = resolve(appRoot, "..");
 const distRoot = join(appRoot, "dist");
+const dataRoot = join(appRoot, "src", "data");
+const updateRoot = join(appRoot, "src", "content", "updates");
+const sourceRoot = join(appRoot, "src", "content", "sources");
 const manifestPath = join(workspaceRoot, "deployment", "ftfn-v0.2-build.json");
 
 const failures = [];
@@ -60,7 +71,7 @@ function hasCanonical(html, expected) {
 
 const manifest = await readJson(manifestPath);
 const currentReleaseGateContract = [
-  "Confirm 6,504 generated HTML pages, 86 top-level public JSON exports, 169 update records and all required outputs",
+  `Confirm ${manifest.expected_build.static_pages.toLocaleString("en-US")} generated HTML pages, ${manifest.expected_build.public_json_exports} top-level public JSON exports, ${manifest.expected_build.updates} update records and all required outputs`,
   "Confirm all 1,121 Published signal URLs are present in the sitemap and all 285 In Review signal URLs remain outside it",
   "Confirm all 453 Published briefing URLs and 177 Published dependency-map URLs are indexed under their declared publication policy",
   "Confirm all 502 sources supporting Published signals were checked on or after 2026-07-22",
@@ -163,6 +174,7 @@ const v07V09ExportByProgram = new Map(v07V09Exports.map((dataset) => [dataset.pr
 const sitemap = await readText(join(distRoot, "sitemap.xml"));
 const robots = await readText(join(distRoot, "robots.txt"));
 const updatesHtml = await readText(join(distRoot, "updates", "index.html"));
+check(updatesHtml.includes('data-paged-shelf="updates"'), 'Updates root must link the complete paginated receipt archive.');
 const atlasHtml = await readText(join(distRoot, "atlas", "index.html"));
 const researchCollectionDirectory = join(appRoot, "src", "content", "research-collections");
 const researchDocumentDirectory = join(appRoot, "src", "content", "research-documents");
@@ -244,9 +256,15 @@ const htmlCount = allDistFiles.filter(
 const publicJsonExportCount = allDistFiles.filter(
   (path) => dirname(path) === join(distRoot, "data") && extname(path) === ".json",
 ).length;
+await verifyPublicJsonInventory(appRoot, manifest);
 const publicTextExtensions = new Set([".html", ".json", ".xml", ".txt", ".js", ".css"]);
 const publicTextFiles = allDistFiles.filter((path) => publicTextExtensions.has(extname(path)));
-const publicBuildText = (await mapWithConcurrency(publicTextFiles, 32, (path) => readText(path))).join("\n");
+// Scan every original public file without retaining or concatenating the entire
+// site. The expanded shelves exceed V8's single-string length limit.
+const publicBuildChecks = await mapWithConcurrency(publicTextFiles, 8, async (path) => {
+  const text = await readText(path);
+  return {path, candidateId: text.includes('candidate-source-'), privateRegistry: text.includes('private-data/source-candidates')};
+});
 const signalStatusById = new Map(
   await Promise.all(
     signalFiles.map(async (name) => {
@@ -328,6 +346,8 @@ check(
   phase60cDeskExport.count === manifest.expected_build.phase_60c_desk_records,
   `Expected ${manifest.expected_build.phase_60c_desk_records} Wave 60C desk records, found ${phase60cDeskExport.count}.`,
 );
+const phase60cStarlinkDeskRecord = phase60cDeskExport.records.find((record) => record.desk_item_id === "60C-DESK-001");
+const phase60cFutureDeskRecords = phase60cDeskExport.records.filter((record) => record.desk_item_id !== "60C-DESK-001");
 check(
   phase60cDeskExport.dataset === "phase_60c_editorial_desk" &&
   phase60cDeskExport.records.filter((record) => record.item_kind === "cycle_gate").length === 6 &&
@@ -335,9 +355,21 @@ check(
   phase60cDeskExport.records.every((record) =>
     record.desk_item_id && record.scheduled_check_date && record.source_ids?.length && record.signal_ids?.length &&
     record.exact_next_artifact && record.qualifying_evidence && record.insufficient_evidence &&
-    record.required_propagation?.length >= 7 && !("decision_date" in record) && !("receipt_id" in record)
-  ),
-  "The Wave 60C desk must preserve six cycle gates, two companion rechecks, complete decision contracts, and no future receipt fields.",
+    record.required_propagation?.length >= 7
+  ) &&
+  phase60cStarlinkDeskRecord?.cycle_item_id === "60-CYCLE-LOUISIANA-STARLINK-ADOPTION" &&
+  phase60cStarlinkDeskRecord?.decision_status === "no_material_change" &&
+  phase60cStarlinkDeskRecord?.decision_date === "2026-09-01" &&
+  phase60cStarlinkDeskRecord?.receipt_id === "receipt-60-louisiana-starlink-2026-09-01-no-material-change" &&
+  phase60cStarlinkDeskRecord?.checked_source_ids?.length === 5 &&
+  phase60cStarlinkDeskRecord?.attempted_surfaces?.length === 9 &&
+  phase60cStarlinkDeskRecord?.propagation_status === "complete_locally_git_held" &&
+  phase60cStarlinkDeskRecord?.content_propagation_status === "complete" &&
+  phase60cStarlinkDeskRecord?.git_backed_release_status === "held" &&
+  phase60cStarlinkDeskRecord?.next_check_date === "2026-09-08" &&
+  phase60cFutureDeskRecords.length === 7 &&
+  phase60cFutureDeskRecords.every((record) => !("decision_date" in record) && !("receipt_id" in record) && !("attempted_surfaces" in record)),
+  "The Wave 60C desk must preserve one exact September 1 result, seven empty future items, six cycle gates, two companion rechecks, and complete decision contracts.",
 );
 check(
   outcomeCohortsExport.count === manifest.expected_build.phase_68_cohort_records,
@@ -1690,7 +1722,13 @@ check(
 check(
   evidenceQueueExport.records.every((record) => ["Published", "In Review"].includes(record.underlying_signal_status) && record.exact_next_artifact && record.next_check_date) &&
   evidenceQueueExport.records.filter((record) => record.underlying_signal_status === "Published" && record.current_decision === "material_change").length === 1 &&
-  evidenceQueueExport.records.filter((record) => record.underlying_signal_status === "In Review").length === 9,
+  evidenceQueueExport.records.filter((record) => record.underlying_signal_status === "In Review").length === 9 &&
+  evidenceQueueExport.records.some((record) =>
+    record.queue_id === "58-QUEUE-LOUISIANA-STARLINK-ADOPTION" &&
+    record.current_decision === "no_material_change" &&
+    record.latest_receipt?.receipt_id === "receipt-60-louisiana-starlink-2026-09-01-no-material-change" &&
+    record.last_checked_date === "2026-09-01" && record.next_check_date === "2026-09-08"
+  ),
   "Evidence-queue export must contain one resolved measured-result gate and nine bounded held gates.",
 );
 check(
@@ -1702,9 +1740,30 @@ check(
     (record.decision_status === "scheduled" && record.decision_date === null && record.receipt_id === null) ||
     (["material_change", "no_material_change", "blocked_with_public_receipt", "rescheduled_with_watch_note"].includes(record.decision_status) && record.decision_date && record.receipt_id)
   )) &&
-  operatingCycleExport.records.filter((record) => record.decision_status === "scheduled").length === 11 &&
-  operatingCycleExport.records.filter((record) => record.decision_status !== "scheduled").length === 2,
-  "Operating-cycle export must contain two complete Wave 60B decisions and eleven bounded future gates.",
+  operatingCycleExport.records.filter((record) => record.decision_status === "scheduled").length === 10 &&
+  operatingCycleExport.records.filter((record) => record.decision_status !== "scheduled").length === 3 &&
+  operatingCycleExport.records.some((record) =>
+    record.cycle_item_id === "60-CYCLE-LOUISIANA-STARLINK-ADOPTION" &&
+    record.decision_status === "no_material_change" && record.decision_date === "2026-09-01" &&
+    record.receipt_id === "receipt-60-louisiana-starlink-2026-09-01-no-material-change" &&
+    record.propagation_status === "complete_locally_git_held" &&
+    record.content_propagation_status === "complete" && record.git_backed_release_status === "held" &&
+    record.next_check_date === "2026-09-08" && record.supporting_source_ids?.length === 4
+  ),
+  "Operating-cycle export must contain three complete decisions including the September 1 Starlink gate and ten bounded future gates.",
+);
+const evidenceCycleIndexHtml = await readText(routeToHtml("/review/evidence-cycle/"));
+const starlinkEvidenceCycleHtml = await readText(routeToHtml("/review/evidence-cycle/louisiana-starlink-adoption/"));
+check(
+  evidenceCycleIndexHtml.includes("13</strong><span>dated decisions") && evidenceCycleIndexHtml.includes("0</strong><span>scheduled gates"),
+  "The Evidence Cycle index must project thirteen current primary decisions and zero scheduled primary gates, without counting companions as additional identities, closing outstanding follow-ups, or rewriting prior receipts.",
+);
+check(
+  starlinkEvidenceCycleHtml.includes("receipt-60-louisiana-starlink-2026-09-01-no-material-change") &&
+  starlinkEvidenceCycleHtml.includes("No Material Change") && starlinkEvidenceCycleHtml.includes("2026-09-01") &&
+  starlinkEvidenceCycleHtml.includes("2026-09-08") && starlinkEvidenceCycleHtml.includes("Git-backed release: held") &&
+  !starlinkEvidenceCycleHtml.includes("No receipt exists in the operating record"),
+  "The Louisiana Starlink Evidence Cycle route must render the live dated receipt, bounded recheck, and Git-held state.",
 );
 check(
   projectConversionExport.count === manifest.expected_build.project_conversion_records,
@@ -1804,12 +1863,28 @@ check(
         record.decision_date === null && record.propagation_status === "not_started" && record.next_check_date === null) ||
       (record.envelope_state === "Release Verified" && record.decision_status !== "scheduled" && record.attempted_surfaces?.length > 0 &&
         record.access_result && record.receipt_type && record.receipt_id && record.decision_date &&
-        record.propagation_status === "complete" && record.next_check_date)
+        record.propagation_status === "complete" && record.next_check_date) ||
+      (record.envelope_state === "Propagation Complete — Git Held" && record.decision_status !== "scheduled" && record.attempted_surfaces?.length > 0 &&
+        record.access_result && record.receipt_type && record.receipt_id && record.decision_date &&
+        record.propagation_status === "complete_locally_git_held" && record.content_propagation_status === "complete" &&
+        record.git_backed_release_status === "held" && record.next_check_date)
     )
   ) &&
   evidenceReturnEnvelopesExport.records.filter((record) => record.envelope_state === "Release Verified").length === 2 &&
-  evidenceReturnEnvelopesExport.records.filter((record) => record.envelope_state === "Scheduled").length === 11,
-  "Evidence-return export must contain two release-verified Wave 60B envelopes and eleven untouched future envelopes.",
+  evidenceReturnEnvelopesExport.records.filter((record) => record.envelope_state === "Propagation Complete — Git Held").length === 1 &&
+  evidenceReturnEnvelopesExport.records.filter((record) => record.envelope_state === "Scheduled").length === 10 &&
+  evidenceReturnEnvelopesExport.records.some((record) =>
+    record.envelope_id === "67-RETURN-003" &&
+    record.cycle_item_id === "60-CYCLE-LOUISIANA-STARLINK-ADOPTION" &&
+    record.envelope_state === "Propagation Complete — Git Held" && record.decision_status === "no_material_change" &&
+    record.receipt_id === "receipt-60-louisiana-starlink-2026-09-01-no-material-change" &&
+    record.decision_date === "2026-09-01" && record.attempted_surfaces?.length === 9 &&
+    record.propagation_status === "complete_locally_git_held" &&
+    record.content_propagation_status === "complete" && record.git_backed_release_status === "held" &&
+    record.next_check_date === "2026-09-08" &&
+    record.named_file_ids?.length === 0
+  ),
+  "Evidence-return export must contain two Git-backed release-verified envelopes, the September 1 fully propagated Git-held result, and ten untouched future envelopes.",
 );
 check(
   evidenceReturnEnvelopesExport.records.filter((record) => record.named_file_ids.length > 0).length === 3 &&
@@ -1835,8 +1910,8 @@ check(
 );
 check(!JSON.stringify(signals).includes('"editorial_notes"'), "Signal export leaked editorial_notes.");
 check(!JSON.stringify(sources).includes('"automation_notes"') && !JSON.stringify(sources).includes('"notes"'), "Source export leaked private notes.");
-check(!publicBuildText.includes("candidate-source-"), "Public build leaked a private source-candidate ID.");
-check(!publicBuildText.includes("private-data/source-candidates"), "Public build references the private candidate registry path.");
+check(!publicBuildChecks.some(result=>result.candidateId), "Public build leaked a private source-candidate ID.");
+check(!publicBuildChecks.some(result=>result.privateRegistry), "Public build references the private candidate registry path.");
 
 const phase55WSignals = phase55WReview.signal_decisions;
 const phase55WSignalIds = [
@@ -2941,10 +3016,18 @@ for (const route of manifest.qualification_packet_routes) {
 }
 for (const route of manifest.evidence_return_envelope_routes) {
   const html = await readText(routeToHtml(route));
+  const historicalEnvelope = evidenceReturnEnvelopesExport.records.find((record) => record.path === route);
+  // The export preserves the historical snapshot and explicitly carries later receipts.
+  // Historical export assertions above still apply; reader pages show current state.
+  const envelope = historicalEnvelope?.current_state ?? historicalEnvelope;
   check(hasRobots(html, "index, follow"), `${route} is missing index, follow.`);
   check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
   check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
-  check(html.includes("Scheduled check") && html.includes("Future-state integrity") && html.includes("A scheduled envelope is not a completed check"), `${route} lacks its future-return boundary sections.`);
+  if (envelope?.decision_status === "scheduled") {
+    check(html.includes("Scheduled check") && html.includes("Future-state integrity") && html.includes("A scheduled envelope is not a completed check"), `${route} lacks its future-return boundary sections.`);
+  } else {
+    check(html.includes("Decision date") && html.includes("Dated decision") && html.includes("A bounded decision is not a broader outcome claim") && html.includes(envelope?.receipt_id ?? "missing-receipt"), `${route} lacks its completed-return decision and boundary sections.`);
+  }
 }
 const qualificationIndexHtml = await readText(routeToHtml("/evidence/qualification/"));
 check(qualificationIndexHtml.includes("data-qualification-registry") && qualificationIndexHtml.includes("32 qualification packets") && qualificationIndexHtml.includes("13 return envelopes"), "The qualification index is missing its registry or structural counts.");
@@ -3887,12 +3970,28 @@ for (const pathway of readerPathways) {
 }
 for (const route of manifest.reader_pathway_routes) {
   const html = await readText(routeToHtml(route));
-  check(html.includes("data-reader-pathway="), `${route} is missing a reader pathway.`);
-  check(html.includes("Current State"), `${route} is missing the Current State section.`);
-  check(html.includes("Dependency Stack"), `${route} is missing the Dependency Stack section.`);
-  check(html.includes("Evidence Limits"), `${route} is missing the Evidence Limits section.`);
-  check(html.includes("Published Evidence"), `${route} is missing the Published Evidence section.`);
-  check(html.includes("What To Watch Next"), `${route} is missing the What To Watch Next section.`);
+  // Atlas overviews now contain bounded summaries; verify their exact content
+  // and follow each link to the complete narrative instead of requiring the
+  // former duplicated sections (and their superseded headings) on every page.
+  const pathwaySlugs = [...html.matchAll(/data-reader-pathway="([^"]+)"/g)].map(match => match[1]);
+  check(pathwaySlugs.length > 0, `${route} is missing a reader pathway.`);
+  for (const slug of pathwaySlugs) {
+    const pathway = readerPathways.find(item => item.slug === slug);
+    check(Boolean(pathway), `${route} contains an unknown reader pathway ${slug}.`);
+    if (!pathway) continue;
+    const fullRoute = `/pathways/${pathway.slug}/`;
+    check(html.includes(`data-pathway-summary="${pathway.id}"`) && html.includes(`href="${fullRoute}"`), `${route} is missing the exact pathway summary/link for ${pathway.id}.`);
+    const summaryText = decodeHtmlText(html);
+    for (const value of [pathway.title, pathway.summary, pathway.current_state_summary]) {
+      check(summaryText.includes(value), `${route} is missing a preserved summary field for ${pathway.id}.`);
+    }
+    const fullHtml = await readText(routeToHtml(fullRoute));
+    const fullText = decodeHtmlText(fullHtml);
+    for (const value of [pathway.title, pathway.summary, pathway.current_state_summary, ...pathway.current_state, ...pathway.evidence_limits, ...pathway.next_records, ...pathway.dependency_stack.flatMap(stage => [stage.stage, stage.current_state, stage.boundary])]) {
+      check(fullText.includes(value), `${fullRoute} is missing a complete pathway narrative field.`);
+    }
+    check(fullHtml.includes(`data-paged-shelf="pathway-${pathway.slug}"`), `${fullRoute} is missing its complete linked-record archive.`);
+  }
   check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
   check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
 }
@@ -4254,23 +4353,379 @@ check(
   "Phase 144 must keep v1 Held with a Passed validation receipt and the exact 10 Pass / 4 Held / 0 Pending split.",
 );
 
+const v1ReleaseCandidate = await readJson(join(distRoot, "data", "v1-release-candidate.json"));
+check(
+  v1ReleaseCandidate.program_id === "FTFN-V1-RELEASE-CANDIDATE" &&
+  v1ReleaseCandidate.schema_version === "1.0" &&
+  v1ReleaseCandidate.phases?.length === 12 &&
+  v1ReleaseCandidate.public_html_routes?.length >= 58 &&
+  new Set(v1ReleaseCandidate.public_html_routes).size === v1ReleaseCandidate.public_html_routes.length &&
+  v1ReleaseCandidate.public_json_exports?.length === 13 &&
+  new Set(v1ReleaseCandidate.public_json_exports).size === 13,
+  "The v1 release candidate must expose twelve phases, at least the 58 initial unique routes, and 13 unique schema-1.0 exports.",
+);
+check(
+  sameSet(v1ReleaseCandidate.public_html_routes, manifest.v1rc_public_html_routes) &&
+  sameSet(v1ReleaseCandidate.public_json_exports, manifest.v1rc_public_json_exports) &&
+  manifest.expected_build.v1rc_public_html_routes === v1ReleaseCandidate.public_html_routes.length &&
+  manifest.expected_build.v1rc_public_json_exports === 13,
+  "The manifest v1-RC route/export inventory differs from the built aggregate.",
+);
+for (const route of v1ReleaseCandidate.public_html_routes ?? []) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+  check(/<main\b/i.test(html) && /<h1\b/i.test(html) && /<nav\b/i.test(html), `${route} is missing main, h1, or navigation structure.`);
+}
+for (const route of v1ReleaseCandidate.public_json_exports ?? []) {
+  const dataset = await readJson(join(distRoot, route.replace(/^\//, "")));
+  check(dataset.schema_version === "1.0", `${route} does not use schema_version 1.0.`);
+}
+const phase156 = await readJson(join(distRoot, "data", "phase-156-v1-launch-decision.json"));
+const phase156Counts = {
+  passed: phase156.launch_gates?.filter((gate) => gate.state === "Pass").length ?? 0,
+  held: phase156.launch_gates?.filter((gate) => gate.state === "Held").length ?? 0,
+  pending_build: phase156.launch_gates?.filter((gate) => gate.state === "Pending build").length ?? 0,
+};
+const everyV1GatePasses = phase156Counts.passed === 14;
+const currentV1Digest = await computeV1rcDigestFromDisk({ aggregate: v1ReleaseCandidate, dataRoot, updateRoot });
+const expectedV1OwnerGateSnapshot = phase156.launch_gates.map((gate) => ({
+  gate_id: gate.gate_id,
+  state: gate.gate_id === "156-GATE-14-OWNER-ACCEPTANCE" ? "Held" : gate.state,
+}));
+const validV1OwnerReceipt = Boolean(phase156.owner_acceptance_receipt) && isValidV1rcOwnerReceipt({
+  receipt: phase156.owner_acceptance_receipt,
+  aggregate: v1ReleaseCandidate,
+  candidateDigest: currentV1Digest,
+  verifiedGitCommit: process.env.FTFN_VERIFIED_GIT_COMMIT,
+  expectedGateSnapshot: expectedV1OwnerGateSnapshot,
+  requiredLimitations: phase156.owner_packet?.boundaries_requiring_acceptance ?? [],
+  effectiveDate: v1ReleaseCandidate.effective_date,
+});
+check(
+  phase156.v1_promotion_state === (everyV1GatePasses ? "Ready for promotion" : "Held") &&
+  isValidV1rcValidationReceipt({ receipt: phase156.local_validation_receipt, aggregate: v1ReleaseCandidate, candidateDigest: currentV1Digest }) &&
+  phase156Counts.passed + phase156Counts.held + phase156Counts.pending_build === 14 &&
+  phase156Counts.pending_build === 0 &&
+  (!phase156.owner_packet?.public_launch_authorized || phase156.owner_packet?.owner_acceptance) &&
+  (!phase156.owner_packet?.hosted_deployment_authorized || phase156.owner_packet?.owner_acceptance),
+  "Phase 156 must carry a current digest-matching receipt, fourteen resolved local gates, derived promotion state, and internally consistent owner authority.",
+);
+check(
+  phase156.owner_packet?.owner_acceptance === validV1OwnerReceipt &&
+  (validV1OwnerReceipt || (
+    phase156.owner_acceptance_receipt === null &&
+    phase156.owner_packet?.public_launch_authorized === false &&
+    phase156.owner_packet?.hosted_deployment_authorized === false
+  )),
+  "Phase 156 owner authority is not backed by the shared owner-receipt contract and exact verified candidate commit.",
+);
+check(
+  manifest.v1_release_candidate?.local_release_candidate_verified === true &&
+  manifest.v1_release_candidate?.validation_receipt_id === phase156.local_validation_receipt?.receipt_id &&
+  manifest.v1_release_candidate?.artifact_digest === phase156.local_validation_receipt?.artifact_digest &&
+  JSON.stringify(manifest.v1_release_candidate?.launch_gate_state) === JSON.stringify(phase156Counts) &&
+  manifest.v1_release_candidate?.v1_promotion === phase156.v1_promotion_state &&
+  manifest.v1_release_candidate?.owner_acceptance === phase156.owner_packet?.owner_acceptance &&
+  typeof manifest.v1_release_candidate?.github_published === "boolean" &&
+  typeof manifest.v1_release_candidate?.hosted === "boolean" &&
+  manifest.v1_release_candidate?.public_launch_authorized === phase156.owner_packet?.public_launch_authorized,
+  "The deployment manifest overstates or incompletely records the locally validated v1 release candidate.",
+);
+
+const v1MonthlyOperatingProgram = await readJson(join(distRoot, "data", "v1-monthly-operating-program.json"));
+const v1MonthlyOperatingProgramSource = await readJson(join(dataRoot, "v1-monthly-operating-program.json"));
+check(
+  JSON.stringify(v1MonthlyOperatingProgram) === JSON.stringify(v1MonthlyOperatingProgramSource) &&
+  v1MonthlyOperatingProgram.program_id === "FTFN-V1-SEPTEMBER-OPERATING-PROGRAM" &&
+  v1MonthlyOperatingProgram.schema_version === "1.0" &&
+  v1MonthlyOperatingProgram.phases?.length === 8 &&
+  v1MonthlyOperatingProgram.public_html_routes?.length === 67 &&
+  new Set(v1MonthlyOperatingProgram.public_html_routes).size === 67 &&
+  v1MonthlyOperatingProgram.public_json_exports?.length === 9 &&
+  new Set(v1MonthlyOperatingProgram.public_json_exports).size === 9 &&
+  v1MonthlyOperatingProgram.publication_update_files?.length === 8 &&
+  new Set(v1MonthlyOperatingProgram.publication_update_files).size === 8,
+  "The built v1 monthly operating program must exactly match its source and expose eight phases, 67 unique routes, nine unique exports, and eight unique updates.",
+);
+check(
+  sameSet(v1MonthlyOperatingProgram.public_html_routes, manifest.v1month_public_html_routes) &&
+  sameSet(v1MonthlyOperatingProgram.public_json_exports, manifest.v1month_public_json_exports) &&
+  manifest.expected_build.v1month_public_html_routes === 67 &&
+  manifest.expected_build.v1month_public_json_exports === 9,
+  "The manifest v1month route/export inventory differs from the built aggregate.",
+);
+for (const route of v1MonthlyOperatingProgram.public_html_routes ?? []) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+  check(/<main\b/i.test(html) && /<h1\b/i.test(html) && /<nav\b/i.test(html), `${route} is missing main, h1, or navigation structure.`);
+}
+for (const route of v1MonthlyOperatingProgram.public_json_exports ?? []) {
+  const dataset = await readJson(join(distRoot, route.replace(/^\//, "")));
+  check(dataset.schema_version === "1.0", `${route} does not use schema_version 1.0.`);
+}
+const phase164 = await readJson(join(distRoot, "data", "phase-164-monthly-candidate-decision.json"));
+const phase164Counts = {
+  passed: phase164.readiness_gates?.filter((gate) => gate.state === "Pass").length ?? 0,
+  held: phase164.readiness_gates?.filter((gate) => gate.state === "Held").length ?? 0,
+  pending_build: phase164.readiness_gates?.filter((gate) => gate.state === "Pending build").length ?? 0,
+};
+const currentV1monthDigest = await computeV1monthDigestFromDisk({ aggregate: v1MonthlyOperatingProgramSource, dataRoot, updateRoot });
+check(
+  isValidV1monthValidationReceipt({ receipt: phase164.local_validation_receipt, aggregate: v1MonthlyOperatingProgramSource, candidateDigest: currentV1monthDigest }) &&
+  phase164Counts.passed === 10 && phase164Counts.held === 4 && phase164Counts.pending_build === 0 &&
+  phase164.v1_promotion_state === "Held" &&
+  Object.values(phase164.owner_authority ?? {}).every((value) => value === false) &&
+  v1MonthlyOperatingProgram.baseline_v1rc?.receipt_id === phase156.local_validation_receipt?.receipt_id &&
+  v1MonthlyOperatingProgram.baseline_v1rc?.artifact_digest === phase156.local_validation_receipt?.artifact_digest,
+  "Phase 164 must carry a current digest-matching receipt, retain the exact 10 Pass / 4 Held / 0 Pending split, preserve the Phase 156 baseline, and keep every owner/publication authority false.",
+);
+check(
+  manifest.phase_157_164_delta?.local_validation_receipt_id === phase164.local_validation_receipt?.receipt_id &&
+  manifest.phase_157_164_delta?.local_validation_artifact_digest === phase164.local_validation_receipt?.artifact_digest &&
+  manifest.phase_157_164_delta?.v1_promotion_state === "Held" &&
+  manifest.phase_157_164_delta?.github_publication_authorized === false &&
+  manifest.phase_157_164_delta?.hosted_deployment_authorized === false &&
+  manifest.phase_157_164_delta?.public_launch_authorized === false &&
+  manifest.v1_monthly_operating_program?.local_operating_program_verified === true &&
+  manifest.v1_monthly_operating_program?.validation_receipt_id === phase164.local_validation_receipt?.receipt_id &&
+  manifest.v1_monthly_operating_program?.artifact_digest === phase164.local_validation_receipt?.artifact_digest &&
+  JSON.stringify(manifest.v1_monthly_operating_program?.readiness_gate_state) === JSON.stringify(phase164Counts) &&
+  manifest.v1_monthly_operating_program?.v1_promotion === "Held" &&
+  manifest.v1_monthly_operating_program?.owner_acceptance === false &&
+  manifest.v1_monthly_operating_program?.github_published === false &&
+  manifest.v1_monthly_operating_program?.hosted === false &&
+  manifest.v1_monthly_operating_program?.public_launch_authorized === false,
+  "The deployment manifest overstates or incompletely records the locally validated v1 monthly operating program.",
+);
+
+const v1SeptemberEvidenceCycle = await readJson(join(distRoot, "data", "v1-september-evidence-cycle.json"));
+const v1SeptemberEvidenceCycleSource = await readJson(join(dataRoot, "v1-september-evidence-cycle.json"));
+check(
+  JSON.stringify(v1SeptemberEvidenceCycle) === JSON.stringify(v1SeptemberEvidenceCycleSource) &&
+  v1SeptemberEvidenceCycle.program_id === "FTFN-V1-SEPTEMBER-EVIDENCE-TO-PUBLICATION-CYCLE" &&
+  v1SeptemberEvidenceCycle.schema_version === "1.0" &&
+  v1SeptemberEvidenceCycle.phases?.length === 8 &&
+  v1SeptemberEvidenceCycle.public_html_routes?.length === 90 &&
+  new Set(v1SeptemberEvidenceCycle.public_html_routes).size === 90 &&
+  v1SeptemberEvidenceCycle.public_json_exports?.length === 9 &&
+  new Set(v1SeptemberEvidenceCycle.public_json_exports).size === 9 &&
+  v1SeptemberEvidenceCycle.publication_update_files?.length === 8 &&
+  new Set(v1SeptemberEvidenceCycle.publication_update_files).size === 8,
+  "The built v1 September evidence cycle must exactly match source and expose eight phases, 90 unique routes, nine unique exports, and eight unique updates.",
+);
+check(
+  sameSet(v1SeptemberEvidenceCycle.public_html_routes, manifest.v1cycle_public_html_routes) &&
+  sameSet(v1SeptemberEvidenceCycle.public_json_exports, manifest.v1cycle_public_json_exports) &&
+  manifest.expected_build.v1cycle_public_html_routes === 90 &&
+  manifest.expected_build.v1cycle_public_json_exports === 9,
+  "The manifest v1cycle route/export inventory differs from the built aggregate.",
+);
+for (const route of v1SeptemberEvidenceCycle.public_html_routes ?? []) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+  check(/<main\b/i.test(html) && /<h1\b/i.test(html) && /<nav\b/i.test(html), `${route} is missing main, h1, or navigation structure.`);
+}
+for (const route of v1SeptemberEvidenceCycle.public_json_exports ?? []) {
+  const dataset = await readJson(join(distRoot, route.replace(/^\//, "")));
+  check(dataset.schema_version === "1.0", `${route} does not use schema_version 1.0.`);
+}
+const phase165 = await readJson(join(distRoot, "data", "phase-165-live-evidence-operations-cycle-001.json"));
+const phase172 = await readJson(join(distRoot, "data", "phase-172-september-state-report.json"));
+const phase172Counts = {
+  passed: phase172.state_report_gates?.filter((gate) => gate.state === "Pass").length ?? 0,
+  held: phase172.state_report_gates?.filter((gate) => gate.state === "Held").length ?? 0,
+  pending_build: phase172.state_report_gates?.filter((gate) => gate.state === "Pending build").length ?? 0,
+};
+const currentV1cycleDigest = await computeV1cycleDigestFromDisk({ dataRoot, updatesRoot: updateRoot });
+check(
+  isValidV1cycleValidationReceipt({ receipt: phase172.local_validation_receipt, aggregate: v1SeptemberEvidenceCycleSource, candidateDigest: currentV1cycleDigest }) &&
+  phase172Counts.passed === 7 && phase172Counts.held === 7 && phase172Counts.pending_build === 0 &&
+  phase172.v1_promotion_state === "Held" &&
+  Object.values(phase172.owner_authority ?? {}).every((value) => value === false) &&
+  v1SeptemberEvidenceCycle.baseline_v1rc?.receipt_id === phase156.local_validation_receipt?.receipt_id &&
+  v1SeptemberEvidenceCycle.baseline_v1rc?.artifact_digest === phase156.local_validation_receipt?.artifact_digest &&
+  v1SeptemberEvidenceCycle.baseline_v1month?.receipt_id === phase164.local_validation_receipt?.receipt_id &&
+  v1SeptemberEvidenceCycle.baseline_v1month?.artifact_digest === phase164.local_validation_receipt?.artifact_digest,
+  "Phase 172 must carry a current receipt, retain 7 Pass / 7 Held / 0 Pending, bind both immutable baselines, and keep all owner/publication authority false.",
+);
+check(
+  phase165.current_decision_receipt?.receipt_id === "receipt-60-louisiana-starlink-2026-09-01-no-material-change" &&
+  phase165.current_decision_receipt?.receipt_type === "No Material Change" &&
+  phase165.counts?.terminal_evidence_decisions === 1 &&
+  phase165.counts?.future_operations === 9 &&
+  phase165.operation_runs?.filter((operation) => operation.decision !== null).length === 1,
+  "Phase 165 must preserve exactly one lawful September 1 No Material Change decision and nine future operations.",
+);
+check(
+  manifest.phase_165_172_delta?.local_validation_receipt_id === phase172.local_validation_receipt?.receipt_id &&
+  manifest.phase_165_172_delta?.local_validation_artifact_digest === phase172.local_validation_receipt?.artifact_digest &&
+  manifest.phase_165_172_delta?.evidence_decision_receipt_id === phase165.current_decision_receipt?.receipt_id &&
+  manifest.phase_165_172_delta?.v1_promotion_state === "Held" &&
+  manifest.phase_165_172_delta?.github_publication_authorized === false &&
+  manifest.phase_165_172_delta?.hosted_deployment_authorized === false &&
+  manifest.phase_165_172_delta?.public_launch_authorized === false &&
+  manifest.v1_september_evidence_cycle?.local_cycle_verified === true &&
+  manifest.v1_september_evidence_cycle?.validation_receipt_id === phase172.local_validation_receipt?.receipt_id &&
+  manifest.v1_september_evidence_cycle?.artifact_digest === phase172.local_validation_receipt?.artifact_digest &&
+  JSON.stringify(manifest.v1_september_evidence_cycle?.readiness_gate_state) === JSON.stringify(phase172Counts) &&
+  manifest.v1_september_evidence_cycle?.v1_promotion === "Held" &&
+  manifest.v1_september_evidence_cycle?.github_published === false &&
+  manifest.v1_september_evidence_cycle?.hosted === false &&
+  manifest.v1_september_evidence_cycle?.public_launch_authorized === false,
+  "The deployment manifest overstates or incompletely records the locally validated Phase 165–172 cycle.",
+);
+check(
+  manifest.phase_60c_september_1_result?.captured_date === "2026-09-01" &&
+  manifest.phase_60c_september_1_result?.cycle_item_id === "60-CYCLE-LOUISIANA-STARLINK-ADOPTION" &&
+  manifest.phase_60c_september_1_result?.propagation_proof_id === "60-PROP-LOUISIANA-STARLINK-2026-09-01" &&
+  manifest.phase_60c_september_1_result?.return_envelope_id === "67-RETURN-003" &&
+  manifest.phase_60c_september_1_result?.receipt_id === "receipt-60-louisiana-starlink-2026-09-01-no-material-change" &&
+  manifest.phase_60c_september_1_result?.decision_status === "no_material_change" &&
+  manifest.phase_60c_september_1_result?.underlying_signal_status === "In Review" &&
+  manifest.phase_60c_september_1_result?.content_propagation_status === "complete" &&
+  manifest.phase_60c_september_1_result?.git_backed_release_status === "held" &&
+  manifest.phase_60c_september_1_result?.completed_cycle_decisions === 3 &&
+  manifest.phase_60c_september_1_result?.scheduled_cycle_gates === 10 &&
+  manifest.phase_60c_september_1_result?.terminal_return_decisions === 3 &&
+  manifest.phase_60c_september_1_result?.release_verified_return_envelopes === 2 &&
+  manifest.phase_60c_september_1_result?.git_held_return_envelopes === 1 &&
+  manifest.phase_60c_september_1_result?.scheduled_return_envelopes === 10 &&
+  manifest.phase_60c_september_1_result?.official_surfaces_checked === 9 &&
+  manifest.phase_60c_september_1_result?.next_public_surface_recheck === "2026-09-08" &&
+  manifest.phase_60c_september_1_result?.next_scheduled_cycle_gate === "2026-09-09" &&
+  manifest.phase_60c_september_1_result?.phase_61_named_file_transfer === false &&
+  manifest.phase_60c_september_1_result?.local_release_validated === true &&
+  manifest.phase_60c_september_1_result?.owner_acceptance === false &&
+  manifest.phase_60c_september_1_result?.github_published === false &&
+  manifest.phase_60c_september_1_result?.hosted === false,
+  "The deployment manifest must record the exact bounded September 1 Phase 60C decision without overstating Phase 61 transfer or publication authority.",
+);
+
+const v1OctoberOperatingProgram = await readJson(join(distRoot, "data", "v1-october-operating-program.json"));
+const v1OctoberOperatingProgramSource = await readJson(join(dataRoot, "v1-october-operating-program.json"));
+check(
+  JSON.stringify(v1OctoberOperatingProgram) === JSON.stringify(v1OctoberOperatingProgramSource) &&
+  v1OctoberOperatingProgram.program_id === "FTFN-V1-OCTOBER-OPERATING-PROGRAM" &&
+  v1OctoberOperatingProgram.schema_version === "1.0" &&
+  v1OctoberOperatingProgram.phases?.length === 8 &&
+  v1OctoberOperatingProgram.counts?.primary_records === 267 &&
+  v1OctoberOperatingProgram.public_html_routes?.length === 260 &&
+  new Set(v1OctoberOperatingProgram.public_html_routes).size === 260 &&
+  v1OctoberOperatingProgram.public_json_exports?.length === 9 &&
+  new Set(v1OctoberOperatingProgram.public_json_exports).size === 9 &&
+  v1OctoberOperatingProgram.publication_update_files?.length === 8 &&
+  new Set(v1OctoberOperatingProgram.publication_update_files).size === 8 &&
+  v1OctoberOperatingProgram.counts?.new_source_profiles === 10,
+  "The built v1 October operating program must exactly match source and expose eight phases, 267 records, 260 unique routes, nine unique exports, eight unique updates, and ten source profiles.",
+);
+check(
+  sameSet(v1OctoberOperatingProgram.public_html_routes, manifest.v1oct_public_html_routes) &&
+  sameSet(v1OctoberOperatingProgram.public_json_exports, manifest.v1oct_public_json_exports) &&
+  manifest.expected_build.v1oct_primary_records === 267 &&
+  manifest.expected_build.v1oct_public_html_routes === 260 &&
+  manifest.expected_build.v1oct_public_json_exports === 9 &&
+  manifest.expected_build.v1oct_publication_updates === 8 &&
+  manifest.expected_build.v1oct_source_profiles_bound === 10,
+  "The manifest v1oct record/route/export/update/source inventory differs from the built aggregate.",
+);
+for (const route of v1OctoberOperatingProgram.public_html_routes ?? []) {
+  const html = await readText(routeToHtml(route));
+  check(hasRobots(html, "index, follow"), `${route} must be indexable.`);
+  check(hasCanonical(html, `${manifest.canonical_site}${route}`), `${route} has the wrong canonical URL.`);
+  check(sitemap.includes(`${manifest.canonical_site}${route}`), `${route} is missing from the sitemap.`);
+  check(/<main\b/i.test(html) && /<h1\b/i.test(html) && /<nav\b/i.test(html), `${route} is missing main, h1, or navigation structure.`);
+}
+for (const route of v1OctoberOperatingProgram.public_json_exports ?? []) {
+  const dataset = await readJson(join(distRoot, route.replace(/^\//, "")));
+  check(dataset.schema_version === "1.0", `${route} does not use schema_version 1.0.`);
+}
+check(
+  v1octSourceNames.length === 10 &&
+  new Set(v1octSourceNames).size === 10 &&
+  (await Promise.all(v1octSourceNames.map(async (name) => {
+    try {
+      const source = await readJson(join(sourceRoot, name));
+      return source.id === name.replace(/\.json$/, "") && Boolean(source.url) && source.last_checked_date === "2026-09-01";
+    }
+    catch { return false; }
+  }))).every(Boolean),
+  "The v1oct source binding must contain ten unique, readable source profiles checked on September 1.",
+);
+const phase180 = await readJson(join(distRoot, "data", "phase-180-october-state-report-and-v1-promotion-gate.json"));
+const phase180Source = await readJson(join(dataRoot, "phase-180-october-state-report-and-v1-promotion-gate.json"));
+const phase180Counts = {
+  passed: phase180.state_report_gates?.filter((gate) => gate.state === "Pass").length ?? 0,
+  held: phase180.state_report_gates?.filter((gate) => gate.state === "Held").length ?? 0,
+  pending_build: phase180.state_report_gates?.filter((gate) => gate.state === "Pending build").length ?? 0,
+};
+const currentV1octDigest = await computeV1octDigestFromDisk({ dataRoot, updatesRoot: updateRoot, sourcesRoot: sourceRoot });
+check(
+  JSON.stringify(phase180) === JSON.stringify(phase180Source) &&
+  isValidV1octValidationReceipt({ receipt: phase180.local_validation_receipt, aggregate: v1OctoberOperatingProgramSource, candidateDigest: currentV1octDigest }) &&
+  JSON.stringify(phase180.local_validation_receipt) === JSON.stringify(v1OctoberOperatingProgram.local_validation_receipt) &&
+  phase180Counts.passed === 8 && phase180Counts.held === 8 && phase180Counts.pending_build === 0 &&
+  phase180.counts?.false_passes === 0 &&
+  phase180.v1_promotion_state === "Held" && v1OctoberOperatingProgram.v1_promotion_state === "Held" &&
+  Object.values(phase180.owner_authority ?? {}).every((value) => value === false) &&
+  v1OctoberOperatingProgram.baseline_v1rc?.receipt_id === phase156.local_validation_receipt?.receipt_id &&
+  v1OctoberOperatingProgram.baseline_v1rc?.artifact_digest === phase156.local_validation_receipt?.artifact_digest &&
+  v1OctoberOperatingProgram.baseline_v1month?.receipt_id === phase164.local_validation_receipt?.receipt_id &&
+  v1OctoberOperatingProgram.baseline_v1month?.artifact_digest === phase164.local_validation_receipt?.artifact_digest &&
+  v1OctoberOperatingProgram.baseline_v1cycle?.receipt_id === phase172.local_validation_receipt?.receipt_id &&
+  v1OctoberOperatingProgram.baseline_v1cycle?.artifact_digest === phase172.local_validation_receipt?.artifact_digest,
+  "Phase 180 must carry a current receipt, retain 8 Pass / 8 Held / 0 Pending / 0 false passes, bind all three immutable baselines, and keep every owner/publication authority false.",
+);
+check(
+  manifest.phase_173_180_delta?.local_validation_receipt_id === phase180.local_validation_receipt?.receipt_id &&
+  manifest.phase_173_180_delta?.local_validation_artifact_digest === phase180.local_validation_receipt?.artifact_digest &&
+  manifest.phase_173_180_delta?.primary_records === 267 &&
+  manifest.phase_173_180_delta?.public_html_routes_added === 260 &&
+  manifest.phase_173_180_delta?.public_json_exports_added === 9 &&
+  manifest.phase_173_180_delta?.publication_updates_added === 8 &&
+  manifest.phase_173_180_delta?.source_profiles_bound === 10 &&
+  manifest.phase_173_180_delta?.v1_promotion_state === "Held" &&
+  manifest.phase_173_180_delta?.owner_acceptance === false &&
+  manifest.phase_173_180_delta?.github_publication_authorized === false &&
+  manifest.phase_173_180_delta?.github_published === false &&
+  manifest.phase_173_180_delta?.hosted_deployment_authorized === false &&
+  manifest.phase_173_180_delta?.hosted === false &&
+  manifest.phase_173_180_delta?.public_launch_authorized === false &&
+  manifest.v1_october_operating_program?.local_operating_program_verified === true &&
+  manifest.v1_october_operating_program?.validation_receipt_id === phase180.local_validation_receipt?.receipt_id &&
+  manifest.v1_october_operating_program?.artifact_digest === phase180.local_validation_receipt?.artifact_digest &&
+  JSON.stringify(manifest.v1_october_operating_program?.readiness_gate_state) === JSON.stringify(phase180Counts) &&
+  manifest.v1_october_operating_program?.v1_promotion === "Held" &&
+  manifest.v1_october_operating_program?.owner_acceptance === false &&
+  manifest.v1_october_operating_program?.github_published === false &&
+  manifest.v1_october_operating_program?.hosted === false &&
+  manifest.v1_october_operating_program?.public_launch_authorized === false,
+  "The deployment manifest overstates or incompletely records the locally validated Phase 173–180 operating program.",
+);
+
 const updateDirectory = join(appRoot, "src", "content", "updates");
 const updateFiles = (await readdir(updateDirectory)).filter((name) => name.endsWith(".json"));
 check(updateFiles.length === manifest.expected_build.updates, `Expected ${manifest.expected_build.updates} update records, found ${updateFiles.length}.`);
-for (const filename of updateFiles) {
-  const update = await readJson(join(updateDirectory, filename));
-  check(updatesHtml.includes(update.title), `Update page is missing: ${update.title}.`);
-}
+check(await verifyUpdateArchive({appRoot})===updateFiles.length, 'Every historical update must have a complete rendered receipt and crawlable paginated index entry.');
 
 if (failures.length > 0) {
-  console.error("FTFN v0.9 release verification failed:");
+  console.error("FTFN v0.9 plus v1 operating-program release verification failed:");
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exit(1);
 }
 
-console.log("FTFN v0.9 release verification passed.");
+console.log("FTFN v0.9 plus v1-RC, monthly, September-cycle, and October operating-program release verification passed.");
 console.log(`${htmlCount} HTML pages; ${signals.count} Published signals; ${sources.count} sources; ${topics.count} topics; ${updateFiles.length} updates.`);
 console.log("v0.7-v0.9: 170 public HTML routes, 18 public JSON exports, 15 phase updates, and v1 promotion Held.");
+console.log(`v1-RC: ${v1ReleaseCandidate.public_html_routes.length} public HTML routes, ${v1ReleaseCandidate.public_json_exports.length} public JSON exports, ${v1ReleaseCandidate.publication_update_files?.length ?? 0} inventoried updates, local validation Passed, and v1 promotion ${phase156.v1_promotion_state}.`);
+console.log(`v1 monthly program: ${v1MonthlyOperatingProgram.public_html_routes.length} public HTML routes, ${v1MonthlyOperatingProgram.public_json_exports.length} public JSON exports, ${v1MonthlyOperatingProgram.publication_update_files.length} inventoried updates, local validation Passed, and v1 promotion ${phase164.v1_promotion_state}.`);
+console.log(`v1 September evidence cycle: ${v1SeptemberEvidenceCycle.public_html_routes.length} public HTML routes, ${v1SeptemberEvidenceCycle.public_json_exports.length} public JSON exports, ${v1SeptemberEvidenceCycle.publication_update_files.length} inventoried updates, local validation Passed, and v1 promotion ${phase172.v1_promotion_state}.`);
+console.log(`v1 October operating program: ${v1OctoberOperatingProgram.counts.primary_records} primary records, ${v1OctoberOperatingProgram.public_html_routes.length} public HTML routes, ${v1OctoberOperatingProgram.public_json_exports.length} public JSON exports, ${v1OctoberOperatingProgram.publication_update_files.length} inventoried updates, ten bound source profiles, local validation Passed, and v1 promotion ${phase180.v1_promotion_state}.`);
 console.log(
   `${publishedSourceIds.length} Published-support sources checked on or after ${publishedSupportMinimumDate}.`,
 );

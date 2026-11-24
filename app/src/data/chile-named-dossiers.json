@@ -1,0 +1,505 @@
+{
+  "edition_id": "CHILE-NAMED-DOSSIERS-2026-11-22",
+  "inspected_date": "2026-11-22",
+  "timezone": "America/Edmonton",
+  "review_policy": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "review_state": "Dated article authored and AI self-reviewed; production verification pending",
+  "independent_review": false,
+  "phase_60_identity_added": false,
+  "sources": [
+    {
+      "id": "cerro-enel-profile",
+      "title": "Cerro Pabellón plant profile",
+      "publisher": "Enel Chile",
+      "role": "Operator's facility description",
+      "url": "https://www.enel.cl/en/meet-enel/our-power-plants/cerro-pabellon-geothermal-power-plant.html",
+      "publication_date": null,
+      "reference_period": "Construction start 2015; operation start 2017",
+      "language": "English",
+      "interpretation_note": "Plant, municipality and national-grid destination remain different scopes.",
+      "locator": "Facility description and municipality/construction/operation fields",
+      "inspection": "Full substantive page text read",
+      "boundary": "Undated operator description, not a current generation or outage series."
+    },
+    {
+      "id": "cerro-opening-2017",
+      "title": "Enel and ENAP inaugurate Cerro Pabellón",
+      "publisher": "Enel Chile / ENAP",
+      "role": "Dated developer inauguration account",
+      "url": "https://www.enel.cl/es/conoce-enel/prensa/press-enel-chile/d201709-enel-y-enap-inauguran-cerro-pabelln-la-primera-planta-geotrmica-de-sudamrica.html",
+      "publication_date": "2017-09-12",
+      "event_date": "2017-09-12",
+      "language": "Spanish",
+      "interpretation_note": "Potencia instalada bruta means gross installed capacity; annual production language is prospective.",
+      "locator": "Inauguration, two-unit capacity and reinjection paragraphs",
+      "inspection": "Full substantive release body read",
+      "boundary": "The ceremony is not the first date of generation or a full-year operating result."
+    },
+    {
+      "id": "cerro-expansion-2019",
+      "title": "Construction begins on Cerro Pabellón's third unit",
+      "publisher": "Enel Green Power / ENAP",
+      "role": "Developer's construction announcement",
+      "url": "https://www.enel.cl/content/dam/enel-cl/en/media/press-release-enel-green-power/2019/20190827-CP-Cerro-Pabellon-Tercera-Unidad-ENG.pdf",
+      "publication_date": "2019-08-27",
+      "event_date": "2019-08-27",
+      "language": "English",
+      "interpretation_note": "The forecast for the second half of 2020 is not a commissioning date.",
+      "locator": "PDF page 1, third-unit scope and expected schedule",
+      "inspection": "Both PDF pages read as text; screenshot returned Cache miss",
+      "boundary": "Financing, construction and expected output do not establish subsequent delivery."
+    },
+    {
+      "id": "cerro-egp-profile",
+      "title": "Cerro Pabellón operating project and community account",
+      "publisher": "Enel Green Power",
+      "role": "Operator's current web profile",
+      "url": "https://www.enelgreenpower.com/our-projects/operating/geothermal-power-plant-cerro-pabellon",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "The energy field prints an invalid annual-energy unit; it is not silently converted to GWh.",
+      "locator": "Operating capacity, energy field and local-community section",
+      "inspection": "Substantive profile text and numerical labels read",
+      "boundary": "Capacity and community descriptions are operator claims. The annual-energy and household-equivalent fields are not accepted as measured results."
+    },
+    {
+      "id": "cerro-grid-comments",
+      "title": "Responses to comments on the 2026 complementary-services report",
+      "publisher": "Coordinador Eléctrico Nacional",
+      "role": "Grid operator's technical consultation response",
+      "url": "https://www.coordinador.cl/wp-content/uploads/2025/06/2025.06.30-Respuesta-Observaciones-ISSCC-2026.pdf",
+      "publication_date": null,
+      "reference_period": "2026 service report; comments received June 2025",
+      "language": "Spanish",
+      "interpretation_note": "Observation 69 concerns units included in an automatic generation-disconnection scheme, not whether the third unit generates electricity.",
+      "locator": "PDF page 43, observation 69 and the Coordinador response; page 1 submission context",
+      "inspection": "Relevant complete table row and page context read as text; screenshot returned Cache miss",
+      "boundary": "A scheme-specific unit set and table value do not supply current whole-plant net output or an operating acceptance decision."
+    },
+    {
+      "id": "atacama-sma-construction",
+      "title": "Environmental authorities inspect Atacama desalination construction",
+      "publisher": "Superintendencia del Medio Ambiente",
+      "role": "Environmental regulator's inspection account",
+      "url": "https://portal.sma.gob.cl/index.php/atacama-sma-y-autoridades-sectoriales-fiscalizan-las-obras-de-avance-de-planta-desalinizadora/",
+      "publication_date": "2019-05-30",
+      "event_date": "2019-05-29",
+      "language": "Spanish",
+      "interpretation_note": "Fiscalización describes inspection activity; the article does not announce a final compliance determination.",
+      "locator": "Inspection date, Punta Zorro location and environmental scope",
+      "inspection": "Complete article body read",
+      "boundary": "Construction inspection is not current operating compliance or proof of no coastal impacts."
+    },
+    {
+      "id": "atacama-mop-visit",
+      "title": "MOP delegation visits the Atacama desalination plant",
+      "publisher": "Dirección General de Concesiones, Ministerio de Obras Públicas",
+      "role": "Government account of an operating-plant visit",
+      "url": "https://concesiones.mop.gob.cl/autoridades-del-mop-conocen-experiencia-de-planta-desalinizadora-de-atacama/",
+      "publication_date": null,
+      "language": "Spanish",
+      "interpretation_note": "Hasta 450 litros por segundo is an upper production statement; pudiendo ampliarse describes potential expansion, not delivery.",
+      "locator": "Beneficiary municipalities and 450/1,200 litres-per-second paragraph",
+      "inspection": "Substantive visit account read",
+      "boundary": "Header gives Thursday April 3 without a year; no exact publication date inferred. Atacama and the proposed Coquimbo project remain separate."
+    },
+    {
+      "id": "atacama-inima-leaflet",
+      "title": "Atacama desalination project leaflet",
+      "publisher": "GS Inima / Claro Vicuña Valenzuela",
+      "role": "Contractor's project and process description",
+      "url": "https://inima.com/wp-content/uploads/2023/05/Leaflet-atacama_proyecto_ES.pdf",
+      "publication_date": null,
+      "reference_period": "Award 2017; execution begins January 2018; staged design",
+      "language": "Spanish",
+      "interpretation_note": "Primera fase is the first stage; guaranteed specific consumption and the reported reliability-test value are different measures.",
+      "locator": "All three PDF pages: phases, treatment chain and energy statement",
+      "inspection": "Three pages read as text; screenshot supplied no inspectable image",
+      "boundary": "The upload path is not a publication date. The leaflet mixes construction-era language with later test claims; it is not a dated continuous operating dataset."
+    },
+    {
+      "id": "atacama-uc-coast",
+      "title": "UC researchers visit Nueva Atacama to study coastal impacts",
+      "publisher": "Pontificia Universidad Católica de Chile, Hydraulic and Environmental Engineering",
+      "role": "Research team's account of its field visit",
+      "url": "https://www.ing.uc.cl/hidraulica-y-ambiental/2025/08/01/investigadores-uc-visitan-planta-desaladora-en-atacama-para-analizar-impactos-en-el-borde-costero/",
+      "publication_date": "2025-08-01",
+      "language": "Spanish",
+      "interpretation_note": "The account describes observations and conversations, not completed impact findings or community consent.",
+      "locator": "Research objective, fishing-community engagement and intake/discharge observations",
+      "inspection": "Complete article body read",
+      "boundary": "Publication date is not an identified visit date. No underlying environmental measurements were inspected."
+    },
+    {
+      "id": "copiapo-bcn-2026",
+      "title": "Copiapó communal statistical report 2026",
+      "publisher": "Biblioteca del Congreso Nacional de Chile",
+      "role": "Official local compilation citing INE and social-registry data",
+      "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?idcom=3101&ind=sociales",
+      "publication_date": null,
+      "publication_period": "2026",
+      "period_basis": "Edition year; individual tables retain their own reference periods",
+      "reference_period": "Censuses 2017 and 2024; social registry June 2026",
+      "language": "Spanish",
+      "interpretation_note": "Comuna is the municipality, not just its urban centre. Personas en hogares is a person-based indicator, not the percentage of households.",
+      "locator": "Territorial profile and tables 1.1, 1.5 and 2.2",
+      "inspection": "Relevant complete tables, headings and source notes read",
+      "boundary": "The census population and social-registry indicator have different denominators and dates; neither measures desalination beneficiaries."
+    },
+    {
+      "id": "copiapo-bcn-glossary",
+      "title": "Communal report glossary for basic-service access",
+      "publisher": "Biblioteca del Congreso Nacional de Chile",
+      "role": "Indicator definitions citing the social-data glossary",
+      "url": "https://www.bcn.cl/siit/reportescomunales/glosario.html",
+      "publication_date": null,
+      "reference_period": "Definition citation accessed by publisher August 2026",
+      "language": "Spanish",
+      "interpretation_note": "The composite combines water origin, distribution inside the dwelling and excreta disposal; it is not a water-outage rate.",
+      "locator": "Index of basic-service access in the Registro Social de Hogares",
+      "inspection": "Complete definition and citation read",
+      "boundary": "Definition explains the index, not its causal attribution or universal coverage."
+    },
+    {
+      "id": "copiapo-mop-2012",
+      "title": "MOP and SISS outline Copiapó water-supply works",
+      "publisher": "Seremi de Obras Públicas, Región de Atacama",
+      "role": "Historical public infrastructure plan announcement",
+      "url": "https://atacama.mop.gob.cl/mop-y-siss-dan-a-conocer-solucion-de-abastecimiento-de-agua-potable-en-copiapo/",
+      "publication_date": "2012-08-06",
+      "language": "Spanish",
+      "interpretation_note": "Obras proyectadas are proposed works. Pumping stations and conduits are not reported as completed in this announcement.",
+      "locator": "Proposed works, desalination stages and conveyance paragraphs",
+      "inspection": "Substantive historical article text read",
+      "boundary": "The 2012 schedule and infrastructure quantities remain plans, not current installed or accepted assets."
+    },
+    {
+      "id": "copiapo-water-rights-2026",
+      "title": "Copiapó municipality submits surface-water-rights documentation",
+      "publisher": "Municipalidad de Copiapó",
+      "role": "Municipality's dated procedural account",
+      "url": "https://copiapo.cl/index.php/2026/05/26/municipalidad-de-copiapo-concreta-historico-avance-para-resguardar-los-derechos-de-aguas-superficiales-del-rio-copiapo/",
+      "publication_date": "2026-05-26",
+      "language": "Spanish",
+      "interpretation_note": "Acciones de agua are water shares, not litres per second. Submission, individual registration and a later transfer request are separate steps.",
+      "locator": "Submission, 450 shares, DGA resolution reference and next steps",
+      "inspection": "Complete municipal announcement read",
+      "boundary": "The underlying registry entry and Resolution DGA 607 were not inspected; no final transfer or delivered river flow is inferred."
+    }
+  ],
+  "records": [
+    {
+      "record_id": "project-cerro-pabellon",
+      "kind": "Project",
+      "slug": "cerro-pabellon",
+      "title": "Cerro Pabellón geothermal power and grid integration",
+      "route": "/atlas/projects/cerro-pabellon/",
+      "aliases": [
+        "Cerro Pabellón",
+        "Cerro Pabellon",
+        "Geotérmica del Norte",
+        "GDN geothermal"
+      ],
+      "scope": "One Cerro Pabellón geothermal plant in Ollagüe, Antofagasta, counted once across its generating units and expansion. The separate local hybrid electricity system and the wider Atacama Desert are not additional counted projects or places.",
+      "answer": "Cerro Pabellón shows how geothermal heat becomes a grid-connected resource. Its expansion, reservoir management and grid-control duties matter as much as a headline capacity figure.",
+      "stage": "Operating plant reported; annual net output and sustained availability not established by the inspected project accounts",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The identity is the integrated geothermal plant, not each generating unit or its construction announcement. Its national-grid connection does not turn every supplied locality into a project. The local hybrid installation is contextual and adds zero identities. No earlier counted portfolio entry names this plant."
+      },
+      "historical_acquisition": {
+        "record_id": "191-PROJECT-032",
+        "route": "/review/global/projects/chile-acquisition-1/",
+        "decision": "Named editorial project supplied through an additive current account; historical packet and operating-outcome holds retained"
+      },
+      "timeline": [
+        {
+          "date": "2015",
+          "event": "Construction began, according to the operator's facility profile.",
+          "source_ids": [
+            "cerro-enel-profile"
+          ]
+        },
+        {
+          "date": "2017-09-12",
+          "event": "Enel and ENAP inaugurated the original two-unit plant.",
+          "source_ids": [
+            "cerro-opening-2017"
+          ]
+        },
+        {
+          "date": "2019-08-27",
+          "event": "Construction of a third generating unit was announced.",
+          "source_ids": [
+            "cerro-expansion-2019"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "A high-altitude plant connected to a national system",
+          "text": "Cerro Pabellón sits in Ollagüe municipality on the high plateau of the Atacama Desert, in Chile's Antofagasta region. Enel's facility profile places it at about 4,500 metres and identifies Geotérmica del Norte, the Enel–ENAP venture, as its developer. Electricity enters the national system. The location matters because the project is not a desalination asset in the separate Atacama administrative region, nor simply a village power supply. Its engineering and receiving network need their own account.",
+          "source_ids": [
+            "cerro-enel-profile"
+          ]
+        },
+        {
+          "heading": "Reservoir heat and the reinjection dependency",
+          "text": "The original inauguration account describes a binary-cycle plant and the return of extracted geothermal fluid to the reservoir after generation. This arrangement makes subsurface conditions part of the operating system, not merely a fuel resource identified before construction. Sustained performance depends on managing the wells and reservoir alongside the surface equipment. The developer presents reinjection as supporting long-term resource use; the next useful operating evidence would pair production and reinjection records with reservoir trends, rather than assuming an unchanged heat supply indefinitely.",
+          "source_ids": [
+            "cerro-opening-2017"
+          ]
+        },
+        {
+          "heading": "Expansion forecasts retain their original dates",
+          "text": "The August 2019 announcement proposed a third unit of 33 MW beside the original 48 MW plant, forecasting an 81 MW total and operation in the second half of 2020. That is a construction-era design and schedule, not the date of later acceptance. It explains the intended use of the existing transmission connection and development platform. A current capacity description should be read on its own terms rather than obtained by adding historic announcements whose ratings or delivery stages may differ.",
+          "source_ids": [
+            "cerro-expansion-2019"
+          ]
+        },
+        {
+          "heading": "Capacity is not an annual energy measurement",
+          "text": "The current Enel Green Power profile lists 83 MW of operating capacity. Its energy field, however, prints “500 GW per year,” which is not a valid annual-energy quantity. That field is not silently repaired into a measured GWh result. The useful comparison requires net exported energy over a defined year, a compatible capacity basis, outage intervals and any operating restrictions. A nominal rating can describe the installation without establishing how much electricity consumers actually received during that period.",
+          "source_ids": [
+            "cerro-egp-profile"
+          ]
+        },
+        {
+          "heading": "Grid protection has a unit-specific boundary",
+          "text": "In observation 69 of the consultation responses for the 2026 complementary-services report, the grid operator distinguishes Cerro Pabellón's whole-plant table entry from the units included in an automatic generation-disconnection scheme. The response keeps the relevant table focused on units 1 and 2 and explains why unit 3 need not be added to that scheme. This is a protection and system-operation question, not evidence that unit 3 is absent or unable to generate. A scheme-specific unit set cannot substitute for a plant-output record.",
+          "source_ids": [
+            "cerro-grid-comments"
+          ]
+        },
+        {
+          "heading": "Local electricity needs a separate service account",
+          "text": "Enel Green Power also describes a local hybrid installation using solar, wind, cogeneration and storage alongside its geothermal activities. That distinction matters when interpreting its account of round-the-clock electricity for Ollagüe residents. National-grid generation and a local hybrid supply are not interchangeable explanations of household continuity. A useful community follow-up would identify the actual serving network, interruptions and maintenance arrangements. It should preserve the local system's identity rather than attach every household-service claim to the geothermal plant's capacity.",
+          "source_ids": [
+            "cerro-egp-profile"
+          ]
+        }
+      ],
+      "next_artifacts": [
+        "A dated plant-level net-generation and outage series with consistent unit coverage and capacity definitions.",
+        "Reservoir production and reinjection monitoring tied to the same operating period.",
+        "A separate Ollagüe local-service account identifying the hybrid system, serving network and recorded continuity."
+      ],
+      "related": [
+        {
+          "route": "/atlas/projects/atacama-drinking-water-desalination/",
+          "title": "Atacama drinking-water desalination and energy requirements"
+        }
+      ]
+    },
+    {
+      "record_id": "project-atacama-drinking-water-desalination",
+      "kind": "Project",
+      "slug": "atacama-drinking-water-desalination",
+      "title": "Atacama desalination from seawater intake to drinking water",
+      "route": "/atlas/projects/atacama-drinking-water-desalination/",
+      "aliases": [
+        "Planta Desaladora de Atacama",
+        "Nueva Atacama desalination",
+        "ECONSSA Atacama",
+        "Punta Zorro desalination"
+      ],
+      "scope": "One ECONSSA drinking-water desalination project near Caldera, counted once with its treatment and associated marine infrastructure. It is not AguasCAP, a mine-specific desalination plant, Green Atacama or the separate Coquimbo proposal.",
+      "answer": "Atacama's desalination project adds a seawater source for a multi-municipality drinking-water system. Treatment, electricity, coastal discharge and inland delivery remain connected but distinct responsibilities.",
+      "stage": "Operating plant described by government and contractor; expanded design capacity and sustained household outcomes remain separate",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The named project is ECONSSA's drinking-water installation near Caldera, serving a regional utility system. Its staged design is counted once, without adding future phases, pipelines or neighbouring desalination ventures as extra identities. Copiapó is a separately defined receiving municipality, not a duplicate project."
+      },
+      "historical_acquisition": {
+        "record_id": "191-PROJECT-033",
+        "route": "/review/global/projects/chile-acquisition-2/",
+        "decision": "Named editorial project supplied through an additive current account; historical packet and operating-outcome holds retained"
+      },
+      "timeline": [
+        {
+          "date": "2012-08-06",
+          "event": "MOP and SISS described a long-term desalination and conveyance plan for the receiving cities.",
+          "source_ids": [
+            "copiapo-mop-2012"
+          ]
+        },
+        {
+          "date": "2019-05-29",
+          "event": "Environmental and sectoral authorities inspected the project under construction; the account was published the following day.",
+          "source_ids": [
+            "atacama-sma-construction"
+          ]
+        },
+        {
+          "date": "2025-08-01",
+          "event": "UC published its research team's account of a visit to the operating facility and coastal discussions.",
+          "source_ids": [
+            "atacama-uc-coast"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "One supply project serving several municipalities",
+          "text": "The Ministry of Public Works' visit account identifies Chañaral, Caldera, Copiapó and Tierra Amarilla as beneficiaries and describes production of up to 450 litres per second. At constant flow that rate would equal 38,880 cubic metres in a day; this is a unit conversion, not observed daily delivery. The same account describes expansion potential to 1,200 litres per second. That larger figure must not replace the stated operating stage or be divided among municipalities as if each had received a measured allocation.",
+          "source_ids": [
+            "atacama-mop-visit"
+          ]
+        },
+        {
+          "heading": "Treatment continues after salt separation",
+          "text": "The contractor's leaflet describes a chain of filtration and ultrafiltration, reverse osmosis, then remineralization and disinfection before storage and distribution. Reverse osmosis produces a freshwater stream and a concentrated brine stream, each requiring its own handling. The leaflet distinguishes the first 450-litre-per-second stage from marine works and other infrastructure designed for a larger future system. An installed intake or outfall sized for expansion does not establish that all the corresponding treatment trains are installed and producing drinking water.",
+          "source_ids": [
+            "atacama-inima-leaflet"
+          ]
+        },
+        {
+          "heading": "A guarantee and a test are not a long-term average",
+          "text": "GS Inima reports a guaranteed specific electricity consumption of 2.8 kWh per cubic metre and a 2.6 kWh result during a reliability test. The leaflet does not provide a dated continuous operating series for that test claim. Comparing the figures with another plant requires the same system boundary: pumping, treatment and conveyance cannot be included for one facility and excluded for another. For this project, metered production and electricity over the same reporting period would make the efficiency account substantially more useful.",
+          "source_ids": [
+            "atacama-inima-leaflet"
+          ]
+        },
+        {
+          "heading": "The coast is part of the project boundary",
+          "text": "The environmental regulator's May 2019 account locates the intake and brine-discharge works at Punta Zorro near Caldera. Its construction inspection covered atmospheric emissions, waste, vegetation, wildlife habitat and marine effects, with several sectoral authorities participating. The account establishes that those obligations were inspected; it does not announce a final finding that every requirement was satisfied. Coastal monitoring should remain visible alongside freshwater production, because a useful supply project still has to manage the place where it takes in and returns seawater.",
+          "source_ids": [
+            "atacama-sma-construction"
+          ]
+        },
+        {
+          "heading": "Coastal research includes people using the shoreline",
+          "text": "UC's August 2025 account describes an interdisciplinary visit that examined intake, treatment and discharge and sought local perspectives, including those of artisanal fishers. The visit belonged to a public-policy research project on environmental regulation of desalination. It is an account of inquiry and engagement, not a published impact estimate or evidence of community consent. The next substantive step is to connect any resulting findings to defined sampling locations, operating conditions and documented responses to the concerns raised by coastal users.",
+          "source_ids": [
+            "atacama-uc-coast"
+          ]
+        },
+        {
+          "heading": "Delivery and resilience need an end-to-end record",
+          "text": "The next operating account should connect treated water leaving the plant to the inland network, storage and customers. Reporting should separate production interruptions, electricity interruptions, distribution losses and local service restrictions rather than summarize them as one plant-availability percentage. It should also identify the responsibilities for spare parts, membrane replacement and emergency supply. These distinctions let readers ask a practical question: when one part of the chain is unavailable, what service remains, for whom, and for how long? A design-capacity figure alone cannot answer it.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "A dated production, specific-energy and downtime report with explicit plant and conveyance boundaries.",
+        "Current coastal monitoring and inspection findings linked to intake and discharge operation.",
+        "Utility delivery and interruption records for each served locality, with losses, storage and contingency arrangements."
+      ],
+      "related": [
+        {
+          "route": "/atlas/places/copiapo-municipality/",
+          "title": "Copiapó municipality and the receiving water system"
+        },
+        {
+          "route": "/atlas/projects/cerro-pabellon/",
+          "title": "Cerro Pabellón and the distinction between capacity and output"
+        }
+      ]
+    },
+    {
+      "record_id": "place-copiapo-municipality",
+      "kind": "Place",
+      "slug": "copiapo-municipality",
+      "title": "Copiapó municipal water access and river responsibilities",
+      "route": "/atlas/places/copiapo-municipality/",
+      "aliases": [
+        "Copiapó",
+        "Copiapo",
+        "Comuna de Copiapó",
+        "Copiapó municipality"
+      ],
+      "scope": "The comuna of Copiapó, counted as one municipality, including its urban and rural population. It is not the entire Copiapó province, river basin or Atacama region, and it does not include every municipality served by the desalination project.",
+      "answer": "Copiapó receives infrastructure through a wider water system while retaining distinct household-access and river-management questions. A new source of treated water does not settle all three.",
+      "stage": "Receiving municipality with dated demographic and procedural evidence; household service and river recovery require their own outcomes",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "This is one administratively defined commune, with the census and municipal decision tied to that boundary. The city centre, province, basin and regional utility footprint are not counted as interchangeable places. No earlier counted locality record names the same municipal identity; the Chile orientation remains context with zero added local identities."
+      },
+      "historical_acquisition": {
+        "record_id": "192-PLACE-016",
+        "route": "/review/global/places/chile-place-acquisition/",
+        "decision": "Named receiving-place account supplied additively; historical national orientation and outcome holds retained"
+      },
+      "timeline": [
+        {
+          "date": "2012-08-06",
+          "event": "A public plan connected Copiapó's long-term supply to desalination and conveyance works.",
+          "source_ids": [
+            "copiapo-mop-2012"
+          ]
+        },
+        {
+          "date": "2024",
+          "event": "Census reference year for the municipal population reported in the 2026 communal profile.",
+          "source_ids": [
+            "copiapo-bcn-2026"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "event": "The municipality announced submission of documentation for individual registration of surface-water rights.",
+          "source_ids": [
+            "copiapo-water-rights-2026"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "The municipality is larger than the urban centre",
+          "text": "BCN's 2026 communal report records 168,831 residents in the 2024 census, compared with 153,937 in 2017. It separately identifies 6,437 rural residents in 2024. These are municipal population figures, not a count of desalination customers. Keeping the rural population visible matters when discussing a supply system often described through its main cities. A service comparison needs the actual customer or settlement boundary rather than assuming that every person inside the commune receives the same network connection.",
+          "source_ids": [
+            "copiapo-bcn-2026"
+          ]
+        },
+        {
+          "heading": "Basic-service deprivation is not a plant outage rate",
+          "text": "The same report lists 13.2 percent of people in households lacking basic services in the June 2026 social-registry measure. BCN's glossary defines the underlying composite through water origin, water distribution within the dwelling and excreta disposal, with urban and rural distinctions. This is neither the percentage of households nor a measure of desalination downtime. Its registry basis and housing conditions must stay visible before comparing it with census population or using it to diagnose an infrastructure intervention's effect.",
+          "source_ids": [
+            "copiapo-bcn-2026",
+            "copiapo-bcn-glossary"
+          ]
+        },
+        {
+          "heading": "The older plan already recognized conveyance",
+          "text": "The August 2012 MOP and SISS announcement paired a future desalination source with pumping stations and long conduits to reach the consumption centres. It also described nearer-term wells and treatment works and raised the potential effect of investment on tariffs. Those were proposed measures and concerns at that date, not a present-day asset inventory. They show why Copiapó's water story cannot end at the coast: financing, treatment quality and inland delivery were dependencies in the original public plan.",
+          "source_ids": [
+            "copiapo-mop-2012"
+          ]
+        },
+        {
+          "heading": "Regional capacity is not a municipal entitlement",
+          "text": "The later ministry visit account groups Copiapó with three other beneficiary municipalities. It does not assign the entire plant output to Copiapó or establish an equal allocation among them. A local account therefore needs utility delivery boundaries, storage and demand alongside the production figure. Where a household-access indicator remains poor, the explanation may require examining the connection and dwelling as well as the source. Dividing regional capacity by municipal population would obscure those questions rather than provide a service measure.",
+          "source_ids": [
+            "atacama-mop-visit"
+          ]
+        },
+        {
+          "heading": "Water shares and physical flow are different things",
+          "text": "On May 26, 2026, the municipality reported submitting documentation for individual registration of surface-water rights and referred to 450 water shares. Shares are not litres per second. The announcement says registration would precede a request to transfer the waters and refers to a DGA resolution; it does not document completed transfer or restored river flow. The practical next evidence is the resulting registration and any later authorized change, followed separately by observations of where and when water actually flows.",
+          "source_ids": [
+            "copiapo-water-rights-2026"
+          ]
+        },
+        {
+          "heading": "Account for households and the river together",
+          "text": "A stronger local service account would show which neighbourhoods and rural settlements are connected, the duration and location of interruptions, household water costs and the condition of sanitation. River recovery needs a separate set of observations tied to location, season and environmental requirements. Neither should be inferred from the other: reliable treated-water delivery does not by itself demonstrate restored river conditions, and a procedural water-rights milestone does not show a household connection. Keeping the two accounts linked but distinct makes responsibility and the next action clearer.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "A geographically defined utility service record separating urban and rural connections, interruption duration and household costs.",
+        "The completed water-rights registration and any subsequent transfer decision, retaining the difference between shares and flow.",
+        "River-flow and ecological observations with locations, periods and applicable requirements, kept separate from drinking-water production."
+      ],
+      "related": [
+        {
+          "route": "/atlas/projects/atacama-drinking-water-desalination/",
+          "title": "Atacama drinking-water desalination project"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { v1refPhaseDefinitions, v1refProgramId } from "./lib/v1ref-config.mjs";
+import { collectPrimaryRecords, recordId } from "./lib/v1ref-records.mjs";
+import { readerCatalog } from "../src/lib/reader-catalog.mjs";
 
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const appRoot = path.resolve(scriptDir, "..");
@@ -40,11 +43,12 @@ function readMdxCollection(collectionName) {
 function readRegistryIdIndex(fileName, arrayField, idField, label) {
   const filePath = path.join(dataRoot, fileName);
   const registry = JSON.parse(readFileSync(filePath, "utf8"));
-  const records = registry[arrayField];
+  const valueAtField = arrayField.split(".").reduce((value, key) => value?.[key], registry);
+  const records = Array.isArray(valueAtField) ? valueAtField : valueAtField && typeof valueAtField === "object" ? [valueAtField] : null;
   const index = new Map();
 
   if (!Array.isArray(records)) {
-    errors.push(`${toPosixPath(filePath)} is missing registry array ${arrayField}.`);
+    errors.push(`${toPosixPath(filePath)} is missing registry array or object ${arrayField}.`);
     return index;
   }
 
@@ -292,6 +296,18 @@ const researchDocumentIds = indexBy(researchDocuments, "id");
 const readerPathwayIds = indexBy(readerPathways, "id");
 const missionIds = readRegistryIdIndex("phase-121-priority-research-missions.json", "missions", "mission_id", "mission");
 const dossierIds = readRegistryIdIndex("phase-123-comparative-delivery-dossiers.json", "dossiers", "dossier_id", "dossier");
+const evidenceRecordSpecs = [
+  ["montana-project-dossiers.json", "records", "record_id", "Montana project dossier"],
+  ["phase-207-current-operations.json", "review_policy", "policy_id", "Owner-authorized review policy"],
+  ["phase-60-operating-cycle.json", "records", "cycle_item_id", "Phase 60 cycle gate"],
+  ["phase-60c-editorial-desk.json", "records", "desk_item_id", "Phase 60C desk check"],
+  ["phase-61-project-conversion-registry.json", "records", "file_id", "Phase 61 named file"],
+  ["phase-63-conversion-gate-calendar.json", "gate_records", "gate_id", "Phase 63 conversion gate"],
+  ["phase-67-evidence-return-envelope-ledger.json", "envelope_records", "envelope_id", "Phase 67 return envelope"],
+  ["phase-67-qualification-packet-registry.json", "packet_records", "packet_id", "Phase 67 qualification packet"],
+  ["phase-119-deep-project-place-atlas.json", "places", "atlas_place_id", "Atlas place"],
+];
+const evidenceRecordIds = new Map(evidenceRecordSpecs.flatMap(spec=>[...readRegistryIdIndex(...spec)]));
 const releaseRecordSpecs = [
   ["phase-130-authority-gap-closure-maps.json", "gap_maps", "gap_map_id", "Phase 130 gap map"],
   ["phase-131-priority-evidence-admission-dockets.json", "admission_dockets", "docket_id", "Phase 131 admission docket"],
@@ -308,10 +324,50 @@ const releaseRecordSpecs = [
   ["phase-142-topic-delivery-roadmaps.json", "topic_roadmaps", "roadmap_id", "Phase 142 topic roadmap"],
   ["phase-143-editorial-cadence-editions.json", "editions", "edition_id", "Phase 143 edition"],
   ["phase-144-v1-launch-candidate-audit.json", "launch_gates", "gate_id", "Phase 144 launch gate"],
+  ["phase-145-evidence-gate-operations-journal.json", "gate_operations", "operation_id", "Phase 145 gate operation"],
+  ["phase-146-authority-gap-resolution-program.json", "gap_dispositions", "disposition_id", "Phase 146 gap disposition"],
+  ["phase-147-evidence-adjudication-record.json", "adjudication_records", "adjudication_record_id", "Phase 147 adjudication record"],
+  ["phase-148-atlas-changefeed.json", "changefeed_reviews", "changefeed_id", "Phase 148 changefeed review"],
+  ["phase-149-longitudinal-evidence-lab.json", "longitudinal_reviews", "lab_review_id", "Phase 149 longitudinal review"],
+  ["phase-150-comparison-passports-2-0.json", "comparison_passports", "passport_id", "Phase 150 comparison passport"],
+  ["phase-151-weekly-desk-review-ledger.json", "desk_review_ledgers", "desk_review_id", "Phase 151 desk-review ledger"],
+  ["phase-152-frontier-topic-field-guides.json", "field_guides", "field_guide_id", "Phase 152 field guide"],
+  ["phase-153-future-state-report-series.json", "flagship_reports", "report_id", "Phase 153 flagship report"],
+  ["phase-154-september-edition-packets.json", "edition_packets", "edition_packet_id", "Phase 154 edition packet"],
+  ["phase-155-public-method-corrections-library.json", "method_records", "method_id", "Phase 155 method record"],
+  ["phase-156-v1-launch-decision.json", "launch_gates", "gate_id", "Phase 156 launch gate"],
+  ["phase-157-v1-candidate-preservation-ledger.json", "preservation_records", "preservation_id", "Phase 157 preservation record"],
+  ["phase-158-september-evidence-operations-desk.json", "operation_packets", "operation_packet_id", "Phase 158 operation packet"],
+  ["phase-159-owner-decision-sprint.json", "authority_mission_boards", "mission_board_id", "Phase 159 mission board"],
+  ["phase-160-longitudinal-pilot-matrices.json", "pilot_matrices", "pilot_matrix_id", "Phase 160 pilot matrix"],
+  ["phase-161-stack-watch.json", "stack_watch_packets", "stack_watch_packet_id", "Phase 161 Stack Watch packet"],
+  ["phase-162-local-system-expansion.json", "local_system_briefs", "local_system_brief_id", "Phase 162 local-system brief"],
+  ["phase-163-september-editorial-runbooks.json", "editorial_runbooks", "editorial_runbook_id", "Phase 163 editorial runbook"],
+  ["phase-164-monthly-candidate-decision.json", "readiness_gates", "gate_id", "Phase 164 readiness gate"],
+  ["phase-165-live-evidence-operations-cycle-001.json", "operation_runs", "operation_run_id", "Phase 165 operation run"],
+  ["phase-166-weekly-desk-closures-and-editions.json", "weekly_cycles", "weekly_cycle_id", "Phase 166 weekly cycle"],
+  ["phase-167-authority-resolution-hearings.json", "authority_hearings", "authority_hearing_id", "Phase 167 authority hearing"],
+  ["phase-168-requirement-mission-adjudication.json", "adjudication_dockets", "adjudication_docket_id", "Phase 168 adjudication docket"],
+  ["phase-169-longitudinal-pilot-adjudication.json", "longitudinal_adjudication_packets", "longitudinal_adjudication_packet_id", "Phase 169 longitudinal adjudication packet"],
+  ["phase-170-fifteen-place-systems-atlas.json", "place_system_dossiers", "place_system_dossier_id", "Phase 170 place-system dossier"],
+  ["phase-171-frontier-systems-compendium.json", "compendium_records", "compendium_record_id", "Phase 171 compendium record"],
+  ["phase-172-september-state-report.json", "state_report_gates", "gate_id", "Phase 172 state-report gate"],
+  ["phase-173-september-closeout-october-opening-ledger.json", "carryover_records", "carryover_id", "Phase 173 carryover record"],
+  ["phase-174-evidence-cycle-closure-intake.json", "cycle_001_closeout.audit_items", "audit_item_id", "Phase 174 Cycle 001 audit item"],
+  ["phase-174-evidence-cycle-closure-intake.json", "cycle_002_intake.candidates", "candidate_id", "Phase 174 Cycle 002 candidate"],
+  ["phase-175-owner-disposition-sprint-ii.json", "owner_disposition_packets", "owner_disposition_packet_id", "Phase 175 owner-disposition packet"],
+  ["phase-176-longitudinal-admission-and-zero-series-decision.json", "pilot_admission_packets", "pilot_admission_packet_id", "Phase 176 pilot-admission packet"],
+  ["phase-176-longitudinal-admission-and-zero-series-decision.json", "zero_series_owner_disposition", "zero_series_disposition_id", "Phase 176 zero-series disposition"],
+  ["phase-177-october-stack-watch-and-source-currency-sweep.json", "packets", "phase_177_packet_id", "Phase 177 Stack Watch packet"],
+  ["phase-178-systems-atlas-and-compendium-depth-expansion.json", "place_system_dossiers", "place_system_dossier_id", "Phase 178 place-system dossier"],
+  ["phase-178-systems-atlas-and-compendium-depth-expansion.json", "comparison_overlays", "comparison_overlay_id", "Phase 178 comparison overlay"],
+  ["phase-178-systems-atlas-and-compendium-depth-expansion.json", "interpretive_essays", "interpretive_essay_id", "Phase 178 interpretive essay"],
+  ["phase-179-october-weekly-editions-and-month-end-synthesis.json", "editorial_cycles", "editorial_cycle_id", "Phase 179 editorial cycle"],
+  ["phase-180-october-state-report-and-v1-promotion-gate.json", "state_report_gates", "gate_id", "Phase 180 state-report gate"],
 ];
 const releaseProgramIds = new Map(
-  releaseRecordSpecs.map(([fileName], index) => {
-    const phase = 130 + index;
+  releaseRecordSpecs.map(([fileName]) => {
+    const phase = Number(fileName.match(/^phase-(\d+)-/)?.[1]);
     const filePath = path.join(dataRoot, fileName);
     const data = JSON.parse(readFileSync(filePath, "utf8"));
 
@@ -326,11 +382,122 @@ const releaseRecordIndexes = releaseRecordSpecs.map((spec) => readRegistryIdInde
 const releaseRecordIds = new Map(releaseRecordIndexes.flatMap((index) => [...index]));
 const indexedReleaseRecordCount = releaseRecordIndexes.reduce((sum, index) => sum + index.size, 0);
 if (releaseRecordIds.size !== indexedReleaseRecordCount) {
-  errors.push("Phase 130–144 registries contain a duplicate public record ID across release phases.");
+  errors.push("Phase 130–180 registries contain a duplicate public record ID across release phases.");
 }
+const v1refProgramIds = new Map();
+const v1refRecordIds = new Map();
+for (const definition of v1refPhaseDefinitions) {
+  const filePath = path.join(dataRoot, definition.file);
+  const data = JSON.parse(readFileSync(filePath, "utf8"));
+  if (data.phase !== definition.phase || data.program_id !== `FTFN-PHASE-${definition.phase}`) {
+    errors.push(`${toPosixPath(filePath)} has an invalid Phase ${definition.phase} identity.`);
+  }
+  v1refProgramIds.set(data.program_id, { collectionName: "v1 reference program", filePath, data });
+  for (const record of collectPrimaryRecords(data)) {
+    const id = recordId(record);
+    if (!id) {
+      errors.push(`${toPosixPath(filePath)} contains a routed public record without an ID.`);
+    } else if (v1refRecordIds.has(id)) {
+      errors.push(`${toPosixPath(filePath)} contains duplicate Phase 181–204 public record ID "${id}".`);
+    } else {
+      v1refRecordIds.set(id, { collectionName: `Phase ${definition.phase} public record`, filePath, data: record });
+    }
+  }
+}
+const v1refAggregatePath = path.join(dataRoot, "v1-public-reference-edition.json");
+const v1refAggregate = JSON.parse(readFileSync(v1refAggregatePath, "utf8"));
+if (v1refAggregate.program_id !== v1refProgramId || v1refRecordIds.size !== 1048) {
+  errors.push(`${toPosixPath(v1refAggregatePath)} does not bind the exact Phase 181–204 program identity and 1,048-record inventory.`);
+}
+v1refProgramIds.set(v1refAggregate.program_id, { collectionName: "v1 reference aggregate", filePath: v1refAggregatePath, data: v1refAggregate });
 indexBy(updates, "id");
 
+// These identities already have static Atlas project routes. Validate against the
+// source registry, never against IDs supplied by an update itself.
+const atlasProjectIds = readRegistryIdIndex("phase-119-deep-project-place-atlas.json", "projects", "atlas_project_id", "Atlas project");
+const atlasProjectSlugs = new Set();
+for (const [id, record] of atlasProjectIds) {
+  const slug = record.data.slug;
+  if (!slug || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || atlasProjectSlugs.has(slug)) {
+    errors.push(`${toPosixPath(record.filePath)} contains an invalid or duplicate routed project slug for "${id}".`);
+  }
+  atlasProjectSlugs.add(slug);
+}
+
+// Current drafts have real reader routes, including the selected field report.
+// Identity resolution does not confer publication or independent approval.
+const currentReaderIds = readRegistryIdIndex("phase-205-216-current-editorial.json", "records", "record_id", "current reader draft");
+const nevadaReaderIds = readRegistryIdIndex("nevada-named-dossiers.json", "records", "record_id", "dated Nevada dossier");
+const europeReaderIds = readRegistryIdIndex("europe-named-dossiers.json", "records", "record_id", "dated Europe dossier");
+const southernAfricaReaderIds = readRegistryIdIndex("southern-africa-named-dossiers.json", "records", "record_id", "dated Southern Africa dossier");
+const southAsiaReaderIds = readRegistryIdIndex("south-asia-named-dossiers.json", "records", "record_id", "dated South Asia dossier");
+const chileReaderIds = readRegistryIdIndex("chile-named-dossiers.json", "records", "record_id", "dated Chile dossier");
+const brazilReaderIds = readRegistryIdIndex("brazil-named-dossiers.json", "records", "record_id", "dated Brazil dossier");
+const northSeaReaderIds = readRegistryIdIndex("north-sea-named-dossiers.json", "records", "record_id", "dated North Sea dossier");
+const stockholmReaderIds = readRegistryIdIndex("stockholm-named-dossiers.json", "records", "record_id", "dated Stockholm dossier");
+const aucklandReaderIds = readRegistryIdIndex("auckland-named-dossiers.json", "records", "record_id", "dated Auckland dossier");
+const tuasReaderIds = readRegistryIdIndex("tuas-named-dossiers.json", "records", "record_id", "dated Tuas dossier");
+const portCitiesReaderIds = readRegistryIdIndex("port-cities-named-dossiers.json", "records", "record_id", "dated PortCities dossier");
+const urbanServicesReaderIds = readRegistryIdIndex("urban-services-named-dossiers.json", "records", "record_id", "dated UrbanServices dossier");
+const nordicCitiesReaderIds = readRegistryIdIndex("nordic-cities-named-dossiers.json", "records", "record_id", "dated NordicCities dossier");
+const swissRailCityReaderIds = readRegistryIdIndex("swiss-rail-city-named-dossiers.json", "records", "record_id", "dated SwissRailCity dossier");
+const kenyaCorridorReaderIds = readRegistryIdIndex("kenya-corridor-named-dossiers.json", "records", "record_id", "dated KenyaCorridor dossier");
+const gautengMetroReaderIds = readRegistryIdIndex("gauteng-metro-named-dossiers.json", "records", "record_id", "dated GautengMetro dossier");
+const malaysiaMetroReaderIds = readRegistryIdIndex("malaysia-metro-named-dossiers.json", "records", "record_id", "dated MalaysiaMetro dossier");
+const colombiaRailReaderIds = readRegistryIdIndex("colombia-rail-named-dossiers.json", "records", "record_id", "dated ColombiaRail dossier");
+const moroccoCorridorReaderIds = readRegistryIdIndex("morocco-corridor-named-dossiers.json", "records", "record_id", "dated MoroccoCorridor dossier");
+const portugalWaterCitiesReaderIds = readRegistryIdIndex("portugal-water-cities-named-dossiers.json", "records", "record_id", "dated PortugalWaterCities dossier");
+const italyRailLagoonReaderIds = readRegistryIdIndex("italy-rail-lagoon-named-dossiers.json", "records", "record_id", "dated ItalyRailLagoon dossier");
+const austriaHousingCitiesReaderIds = readRegistryIdIndex("austria-housing-cities-named-dossiers.json", "records", "record_id", "dated AustriaHousingCities dossier");
+const ruhrWaterCityReaderIds = readRegistryIdIndex("ruhr-water-city-named-dossiers.json", "records", "record_id", "dated RuhrWaterCity dossier");
+const koreaEnergyCitiesReaderIds = readRegistryIdIndex("korea-energy-cities-named-dossiers.json", "records", "record_id", "dated KoreaEnergyCities dossier");
+const istanbulCrossingsReaderIds = readRegistryIdIndex("istanbul-crossings-named-dossiers.json", "records", "record_id", "dated IstanbulCrossings dossier");
+const finlandMetroCitiesReaderIds = readRegistryIdIndex("finland-metro-cities-named-dossiers.json", "records", "record_id", "dated FinlandMetroCities dossier");
+const andesMetroCityReaderIds = readRegistryIdIndex("andes-metro-city-named-dossiers.json", "records", "record_id", "dated AndesMetroCity dossier");
+const czechMetroCitiesReaderIds = readRegistryIdIndex("czech-metro-cities-named-dossiers.json", "records", "record_id", "dated CzechMetroCities dossier");
+const indonesiaRailCityReaderIds = readRegistryIdIndex("indonesia-rail-city-named-dossiers.json", "records", "record_id", "dated IndonesiaRailCity dossier");
+const senegalMobilityEnergyReaderIds = readRegistryIdIndex("senegal-mobility-energy-named-dossiers.json", "records", "record_id", "dated SenegalMobilityEnergy dossier");
+const kigaliCityReaderIds = readRegistryIdIndex("kigali-city-named-dossiers.json", "records", "record_id", "dated KigaliCity dossier");
+for (const [id, record] of [...currentReaderIds, ...nevadaReaderIds, ...europeReaderIds, ...southernAfricaReaderIds, ...southAsiaReaderIds, ...chileReaderIds, ...brazilReaderIds, ...northSeaReaderIds, ...stockholmReaderIds, ...aucklandReaderIds, ...tuasReaderIds, ...portCitiesReaderIds, ...urbanServicesReaderIds, ...nordicCitiesReaderIds, ...swissRailCityReaderIds, ...kenyaCorridorReaderIds, ...gautengMetroReaderIds, ...malaysiaMetroReaderIds, ...colombiaRailReaderIds, ...moroccoCorridorReaderIds, ...portugalWaterCitiesReaderIds, ...italyRailLagoonReaderIds, ...austriaHousingCitiesReaderIds, ...ruhrWaterCityReaderIds, ...koreaEnergyCitiesReaderIds, ...istanbulCrossingsReaderIds, ...finlandMetroCitiesReaderIds, ...andesMetroCityReaderIds, ...czechMetroCitiesReaderIds, ...indonesiaRailCityReaderIds, ...senegalMobilityEnergyReaderIds, ...kigaliCityReaderIds]) {
+  const catalogEntries = readerCatalog.filter((entry) => entry.id === id);
+  if (catalogEntries.length !== 1 || !record.data.route?.startsWith("/") || catalogEntries[0]?.route !== record.data.route) {
+    errors.push(`${toPosixPath(record.filePath)} contains an unresolved current reader route for "${id}".`);
+  }
+}
+
 const allPublicRecordIds = new Map([
+  ...currentReaderIds,
+  ...nevadaReaderIds,
+  ...europeReaderIds,
+  ...southernAfricaReaderIds,
+  ...southAsiaReaderIds,
+  ...chileReaderIds,
+  ...brazilReaderIds,
+  ...northSeaReaderIds,
+  ...stockholmReaderIds,
+  ...aucklandReaderIds,
+  ...tuasReaderIds,
+  ...portCitiesReaderIds,
+  ...urbanServicesReaderIds,
+  ...nordicCitiesReaderIds,
+  ...swissRailCityReaderIds,
+  ...kenyaCorridorReaderIds,
+  ...gautengMetroReaderIds,
+  ...malaysiaMetroReaderIds,
+  ...colombiaRailReaderIds,
+  ...moroccoCorridorReaderIds,
+  ...portugalWaterCitiesReaderIds,
+  ...italyRailLagoonReaderIds,
+  ...austriaHousingCitiesReaderIds,
+  ...ruhrWaterCityReaderIds,
+  ...koreaEnergyCitiesReaderIds,
+  ...istanbulCrossingsReaderIds,
+  ...finlandMetroCitiesReaderIds,
+  ...andesMetroCityReaderIds,
+  ...czechMetroCitiesReaderIds,
+  ...indonesiaRailCityReaderIds,
+  ...senegalMobilityEnergyReaderIds,
+  ...kigaliCityReaderIds,
   ...sourceIds,
   ...topicIds,
   ...organizationIds,
@@ -346,7 +513,11 @@ const allPublicRecordIds = new Map([
   ...missionIds,
   ...dossierIds,
   ...releaseProgramIds,
-  ...releaseRecordIds
+  ...releaseRecordIds,
+  ...v1refProgramIds,
+  ...v1refRecordIds,
+  ...evidenceRecordIds,
+  ...atlasProjectIds
 ]);
 
 const localSystemNames = new Set(localSystems.map((record) => record.data.name).filter(Boolean));

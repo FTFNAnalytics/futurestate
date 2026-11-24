@@ -1,0 +1,1004 @@
+{
+  "schema_version": "1.0",
+  "phase": 159,
+  "program_id": "FTFN-PHASE-159",
+  "dataset": "phase_159_owner_decision_sprint",
+  "title": "Owner decision sprint",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Present twelve mission boards covering twelve authority dispositions, eighteen requirement decisions, and six mission decisions without fabricating owner action.",
+  "record_scope": "Append-only Phase 159 record over the immutable Phase 145–156 v1-RC baseline.",
+  "publication_boundaries": [
+    "The Phase 157–164 overlay adds operating plans and bounded content without rewriting the immutable Phase 145–156 release candidate.",
+    "Future September checks, desk decisions, edition inputs, publication receipts, and month-end findings remain null until their lawful dates.",
+    "Alternative official artifacts remain candidate pointers unless a dated authorized adjudication admits them; discovery is not evidence admission.",
+    "No project stage, longitudinal observation, outcome, causal finding, score, rank, owner decision, repository publication, hosted deployment, or v1 promotion is inferred."
+  ],
+  "routes": {
+    "hub": "/review/v1month/owner-sprint/",
+    "public_export": "/data/phase-159-owner-decision-sprint.json"
+  },
+  "counts": {
+    "mission_boards": 12,
+    "authority_actions": 12,
+    "requirement_actions": 18,
+    "mission_actions": 6,
+    "total_owner_actions": 36,
+    "terminal_owner_actions": 0,
+    "pending_owner_actions": 36,
+    "fabricated_owner_actions": 0
+  },
+  "authority_mission_boards": [
+    {
+      "mission_board_id": "159-BOARD-001",
+      "mission_id": "121-MISSION-004",
+      "gap_disposition_id": "146-DISPOSITION-001",
+      "topic_id": "topic-advanced-manufacturing",
+      "slug": "advanced-manufacturing-outcome",
+      "title": "Advanced Manufacturing: outcome research mission",
+      "priority_board": true,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Stable product and facility denominator; Multi-period operating series; Revision, downtime and attribution notes under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-56j-kc46-readiness-plan-2026",
+        "source-56k-f15ex-ex16-portland-receipt-2026",
+        "source-56l-monaghan-medical-ccida-fye2025",
+        "source-aca-future48-battery-accelerator-2025"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-GAO-F15EX-2025",
+        "146-ALT-NIST-MEP-AMPHENOL-2025",
+        "146-ALT-NIST-MEP-FY2024-RESULTS"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "f7d204755440df9e1c9ed17c18c802cd489630c519865e66f8444367df757925",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-001",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-001",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "f65037dc7c7034535875c937c4bbbdaa1f857885d3b824aa0d921cc30b2279a9",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-001",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-001",
+          "sequence": 2,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "53f2490c80bc4bf5d38197b0fae6dcc5e6dc0cc7d17c913d2b842f67a6a2286f",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-002",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-002",
+          "sequence": 3,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "37c09a96fe01958923a2cddd1f7d115ede32ef619dcfb4b9aabaf9afb8f54af9",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-003",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-003",
+          "sequence": 4,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "522dfbfa5ac003fe3d7bbb3d32f317a621db3fe8de84f04f7a4fe722b5fc0566",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-MISSION-001",
+          "action_kind": "mission decision",
+          "upstream_record_id": "147-MISSION-001",
+          "sequence": 5,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "3c23734a41c6a19539e3a31a22621b4cfb7b69fc9e01c0e94d1e7211783b2fdd",
+          "allowed_terminal_states": [
+            "Answered",
+            "Bounded conclusion",
+            "No admissible answer",
+            "Carried gap"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/advanced-manufacturing-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-002",
+      "mission_id": "121-MISSION-012",
+      "gap_disposition_id": "146-DISPOSITION-002",
+      "topic_id": "topic-ai-for-science",
+      "slug": "ai-for-science-outcome",
+      "title": "AI for Science: outcome research mission",
+      "priority_board": false,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Stable workflow denominator; Multi-period outcome measures; Human, data and institutional confounders under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-americas-ai-action-plan-2025",
+        "source-fy2027-rd-priorities-m-25-34",
+        "source-nairr-pilot",
+        "source-nist-ai-metrology-center",
+        "source-nist-ai-tevv-program",
+        "source-nist-aria-evaluation-program",
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nsf-2026-nairr-progress"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-DOE-FY24-PERFORMANCE",
+        "146-ALT-NSF-FY25-PERFORMANCE",
+        "146-ALT-NSF-NAIRR-TWO-YEAR"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "c7b9097cd7d2c4e34ab47d7f99e07e1948e1aad9e5ffe56240661ffbb6d0e26a",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-002",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-002",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "97cacd17b2451219df35eb2736830a643012318099e6f97ebc37975c0fe6d4ff",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/ai-for-science-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-003",
+      "mission_id": "121-MISSION-013",
+      "gap_disposition_id": "146-DISPOSITION-003",
+      "topic_id": "topic-aviation",
+      "slug": "aviation-baseline",
+      "title": "Aviation: baseline research mission",
+      "priority_board": true,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Tail, fleet, airport or route identity; Capacity and readiness definitions; Current operating period under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-55z-bts-air-travel-consumer-report-2024",
+        "source-55z-bts-airline-on-time-tables-2025",
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024",
+        "source-darpa-lift-challenge-2026",
+        "source-faa-aam",
+        "source-faa-eipp-selections-2026",
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "8ade18aa469f86885e88d652649853c9a77fb8ce8b181ab084063669d09a0f7d",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-003",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-003",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "d03eef685d70051d29d5156f488506f7a78fc7fde05d077251fa4ad38981d99f",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-004",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-004",
+          "sequence": 2,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "e288a2330a25e7531cc85bc946128147a9ccb6a8a111f444471fe76982072c86",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-005",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-005",
+          "sequence": 3,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "c9b9fb82ddf8fce3901f083eb20661e5c25c02a2df0a4ed5f7673d1f8f867d1d",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-006",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-006",
+          "sequence": 4,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "a886fbf1bcf7b498b8efe1a7a8dfe32bdee48af495cdd1303539d5e13ecd4542",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-MISSION-002",
+          "action_kind": "mission decision",
+          "upstream_record_id": "147-MISSION-002",
+          "sequence": 5,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "70fb98d8eda6a4cf1b907a36907599f47bd28527fcad4da4e868732678091b7c",
+          "allowed_terminal_states": [
+            "Answered",
+            "Bounded conclusion",
+            "No admissible answer",
+            "Carried gap"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/aviation-baseline/"
+    },
+    {
+      "mission_board_id": "159-BOARD-004",
+      "mission_id": "121-MISSION-016",
+      "gap_disposition_id": "146-DISPOSITION-004",
+      "topic_id": "topic-aviation",
+      "slug": "aviation-outcome",
+      "title": "Aviation: outcome research mission",
+      "priority_board": true,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Exposure-compatible safety measures; Route or fleet operating periods; Environmental and access denominators under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-55z-bts-air-travel-consumer-report-2024",
+        "source-55z-bts-airline-on-time-tables-2025",
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024",
+        "source-darpa-lift-challenge-2026",
+        "source-faa-aam",
+        "source-faa-eipp-selections-2026",
+        "source-faa-powered-lift-final-rule-2024"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-BTS-ASQP-2026",
+        "146-ALT-BTS-TD40-2026",
+        "146-ALT-BTS-TRANSTATS-ONTIME",
+        "146-ALT-BTS-T100",
+        "146-ALT-FAA-GA-SAFETY-2025",
+        "146-ALT-NTSB-AVIATION-STATS"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "071a76f465becafbf4a56ca71795620b4000ef9cbb961ff1184a2cacc52cced3",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-004",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-004",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "2903629dd24b7ba0923ca3055a8e0cc99acd0734e202ae92c378c7cd84e26737",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-007",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-007",
+          "sequence": 2,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "9ed7292b5747b95e87c07b4c8a8c95b144e53533540fcd04a08ba27559c3b5d9",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-008",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-008",
+          "sequence": 3,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "f80e31abfbbd74a3a6ee6dce8d60b78b47250e711087d89c73063b03b7b1c6ed",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-009",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-009",
+          "sequence": 4,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "0510fc172ab80ea70668eddfba752c57ee3d00fb27bf368bd98522de7e614e09",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-MISSION-003",
+          "action_kind": "mission decision",
+          "upstream_record_id": "147-MISSION-003",
+          "sequence": 5,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "d7425c1ca0578ef89dc03c6b353caad16006a0c4c3887ba95fce7aa225ce1283",
+          "allowed_terminal_states": [
+            "Answered",
+            "Bounded conclusion",
+            "No admissible answer",
+            "Carried gap"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/aviation-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-005",
+      "mission_id": "121-MISSION-020",
+      "gap_disposition_id": "146-DISPOSITION-005",
+      "topic_id": "topic-chips-and-compute",
+      "slug": "chips-and-compute-outcome",
+      "title": "Chips and Compute: outcome research mission",
+      "priority_board": false,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Facility-level resource and output series; Stable local and service denominators; Revision and attribution boundaries under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-aca-tsmc-registered-technician-apprenticeship-2024",
+        "source-maricopa-association-governments-open-data",
+        "source-phoenix-2025-semiconductor-apprenticeship-agenda",
+        "source-phoenix-2026-water-security-council-update",
+        "source-phoenix-north-3500-pud-2026",
+        "source-phoenix-planning-development",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-phoenix-tsmc-fab3-topping-out-2026",
+        "source-virginia-jlarc-data-centers-2024",
+        "source-virginia-scc-large-load-gs5-2025"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-PHOENIX-TSMC-WASTEWATER-2026",
+        "146-ALT-TSMC-SEC-20F-2025"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "b9a43a822686c22bd14be5a6cc0029aa647b4b0a708dc400ce71a50c4287e440",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-005",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-005",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "904057c7497b1408a4a2891803f0fdc7f0ada920ad2750d41a1373fe25444f17",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/chips-and-compute-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-006",
+      "mission_id": "121-MISSION-025",
+      "gap_disposition_id": "146-DISPOSITION-006",
+      "topic_id": "topic-critical-minerals",
+      "slug": "critical-minerals-baseline",
+      "title": "Critical Minerals: baseline research mission",
+      "priority_board": true,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Asset and material identity; Resource, reserve and capacity definitions; Current environmental and operating state under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-55z-usgs-mcs-2026-data-release",
+        "source-blm-rhyolite-ridge-rod-2024",
+        "source-doe-critical-minerals-materials-program",
+        "source-doe-thacker-pass-loan-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-ndep-thacker-pass-project",
+        "source-usgs-mineral-commodity-summaries"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-USGS-MCS-2026",
+        "146-ALT-USGS-MCS-DATA-2026"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "ef6433423ce5dd0c1c51f8c35c96e3cf115dc2cd2cb2b3713b9f45ac1f09fda6",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-006",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-006",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "605489f27f409261f2b06d9ac6b29f58b4078ebeab6cc6d4ffb25c964b00696e",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-010",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-010",
+          "sequence": 2,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "994019832a6d1e66e3702daf1604c49495f0094347c28fde2efadee1a31b7145",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-011",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-011",
+          "sequence": 3,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "baa5df2d953d139f4f99c81f86c25b294eaf5f3aad527ab860af10d9a82373a8",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-012",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-012",
+          "sequence": 4,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "60ed37131154908882b6ea4d4e3a4e537a1cb9d21387bd433c2bcbf1595f9ddf",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-MISSION-004",
+          "action_kind": "mission decision",
+          "upstream_record_id": "147-MISSION-004",
+          "sequence": 5,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "7c17a36f2803fc94a406efb2c61ba5b5a0d60d8601317507f1644fe45caf109d",
+          "allowed_terminal_states": [
+            "Answered",
+            "Bounded conclusion",
+            "No admissible answer",
+            "Carried gap"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/critical-minerals-baseline/"
+    },
+    {
+      "mission_board_id": "159-BOARD-007",
+      "mission_id": "121-MISSION-032",
+      "gap_disposition_id": "146-DISPOSITION-007",
+      "topic_id": "topic-cybersecurity",
+      "slug": "cybersecurity-outcome",
+      "title": "Cybersecurity: outcome research mission",
+      "priority_board": false,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Stable system and event denominator; Detection and reporting definitions; Loss, recovery and mission series under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-55z-gao-cdm-network-monitoring-2025",
+        "source-56d-nasa-gao-risk-management-2025",
+        "source-56m-hhs-small-hospital-cyber-controls-2026",
+        "source-cisa-bod-23-01-asset-visibility",
+        "source-cisa-cybersecurity-directives",
+        "source-nccoe-pqc-migration",
+        "source-nist-csrc-publications"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-GAO-CDM-2025",
+        "146-ALT-GAO-CYBER-METRICS-2024",
+        "146-ALT-GAO-INCIDENT-RESPONSE-2024"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "c2f20d0119e9e6f636dc55cefe69a5a6756771ee2a3c71d1f76d5ab43bd30c0b",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-007",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-007",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "16412505fe8ce6f715774039750ae9040fec913cbefefb58cca8e651df9ff858",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/cybersecurity-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-008",
+      "mission_id": "121-MISSION-036",
+      "gap_disposition_id": "146-DISPOSITION-008",
+      "topic_id": "topic-discovery-technologies",
+      "slug": "discovery-technologies-outcome",
+      "title": "Discovery Technologies: outcome research mission",
+      "priority_board": false,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Stable workflow outcome measures; Comparable control or prior method; Uncertainty and publication-bias assessment under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-nasa-earthdata-cmr-api",
+        "source-nasa-nisar-public-data-july-2026",
+        "source-nist-metis-semiconductor-data-exchange",
+        "source-nist-semiconductor-metrology-program",
+        "source-nsf-2026-idss-awards",
+        "source-nsf-2026-nairr-progress",
+        "source-nsf-award-search-api"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-DOE-FY24-PERFORMANCE",
+        "146-ALT-NSF-SE-INDICATORS-2026"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "1c6b4919fd241d293c8f16d5e228bf000536160c6d6684e266abd218d299a90b",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-008",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-008",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "af873c19385744dee1ba6afa99a30750e71b90e0f836cb9c493f9e557d6e941b",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/discovery-technologies-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-009",
+      "mission_id": "121-MISSION-049",
+      "gap_disposition_id": "146-DISPOSITION-009",
+      "topic_id": "topic-mobility",
+      "slug": "mobility-baseline",
+      "title": "Mobility: baseline research mission",
+      "priority_board": true,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Operator, route, fleet or service identity; Exposure and service denominator; Current reliability and access baseline under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-cpuc-av-advice-letter-status-2026",
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-nhtsa-safety-recalls",
+        "source-nhtsa-waymo-26e026-recall-2026"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "8fb0be931619eb8710ef28c1f593d9eab764c7c1d4686823f4603242acab20bf",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-009",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-009",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "a37dfde01ee4e91609f6caf1c565375c1e01f2b8f4cdaa9212fa14831b62711a",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-013",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-013",
+          "sequence": 2,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "bf2b2afb7b23d48a2ff9edbe67a85a193a032651d04053e233f276015ffd55a1",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-014",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-014",
+          "sequence": 3,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "b22534bb812c9bf6639365edde177e963314d0876f1200b08fd2b3e301859ef0",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-015",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-015",
+          "sequence": 4,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "26b0c5993b283f940ff82d39080bfd394bf13f05a3b29537ebe58fa145e6e21a",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-MISSION-005",
+          "action_kind": "mission decision",
+          "upstream_record_id": "147-MISSION-005",
+          "sequence": 5,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "75f7c6385fe5159219b29d410d4f8806d6d7f725803afa8f9b0a247daefb03ae",
+          "allowed_terminal_states": [
+            "Answered",
+            "Bounded conclusion",
+            "No admissible answer",
+            "Carried gap"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/mobility-baseline/"
+    },
+    {
+      "mission_board_id": "159-BOARD-010",
+      "mission_id": "121-MISSION-052",
+      "gap_disposition_id": "146-DISPOSITION-010",
+      "topic_id": "topic-mobility",
+      "slug": "mobility-outcome",
+      "title": "Mobility: outcome research mission",
+      "priority_board": false,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Exposure-compatible safety series; User and geography denominator; Multi-period service and externality measures under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-cpuc-av-advice-letter-status-2026",
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-nhtsa-safety-recalls",
+        "source-nhtsa-waymo-26e026-recall-2026"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-CPUC-AV-QUARTERLY-2026",
+        "146-ALT-NHTSA-SGO-2026",
+        "146-ALT-FTA-NTD-2026"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "ac5464f270e862c7b9002b2d03b1f5d10842171ec50b626e0127e952552238f1",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-010",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-010",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "8ea08fc87e6a8420ad9da1d52e24cd82ef98d9dbf3993249bf37cb0c9fb1c987",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/mobility-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-011",
+      "mission_id": "121-MISSION-060",
+      "gap_disposition_id": "146-DISPOSITION-011",
+      "topic_id": "topic-quantum",
+      "slug": "quantum-outcome",
+      "title": "Quantum: outcome research mission",
+      "priority_board": true,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Stable task and system denominator; Multi-period accepted-use evidence; Explicit forecast-versus-observation boundary under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-nist-hqc-selection-2025",
+        "source-nist-piv-pqc-working-drafts-2026",
+        "source-nist-pqc",
+        "source-omb-m-26-15-pqc-migration",
+        "source-white-house-eo-14412-pqc-migration"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-NIST-QC-METRICS-2024",
+        "146-ALT-DARPA-QUANTUM-BENCHMARKING",
+        "146-ALT-DARPA-QBI"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "33cdd70d3fa8c60918503a893ff02553f52e4f6f1b4adab9683dfac55053ef31",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-011",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-011",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "36d635dc4c4722adf3f2cfd615fbfc6f6e29df7cb4265e46f172215576971f15",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-016",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-016",
+          "sequence": 2,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "f62efcb12513b3eb9731089b0a59811e2c2fbb8c36118d1e344b411e91ce1682",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-017",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-017",
+          "sequence": 3,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "d5103959e9f63870942b0cb79d5ccbf4b68948108dabff02279c36d1b0026074",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-REQUIREMENT-018",
+          "action_kind": "requirement decision",
+          "upstream_record_id": "147-REQUIREMENT-018",
+          "sequence": 4,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "c94eec58d6638b77ba9dd27792586ee7f2635700a4c83a23fd004983a31d7b0e",
+          "allowed_terminal_states": [
+            "Accepted",
+            "Rejected",
+            "Inadmissible",
+            "Bounded gap"
+          ]
+        },
+        {
+          "action_id": "159-MISSION-006",
+          "action_kind": "mission decision",
+          "upstream_record_id": "147-MISSION-006",
+          "sequence": 5,
+          "decision_state": "Pending owner adjudication",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "30e99a14ca515801062face4b96686c04f5bd618634d6148ff42455f840c6a64",
+          "allowed_terminal_states": [
+            "Answered",
+            "Bounded conclusion",
+            "No admissible answer",
+            "Carried gap"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/quantum-outcome/"
+    },
+    {
+      "mission_board_id": "159-BOARD-012",
+      "mission_id": "121-MISSION-064",
+      "gap_disposition_id": "146-DISPOSITION-012",
+      "topic_id": "topic-space",
+      "slug": "space-outcome",
+      "title": "Space: outcome research mission",
+      "priority_board": false,
+      "board_state": "Prepared — owner decisions pending",
+      "missing_authority_role": "An official artifact directly satisfying Vehicle-, mission- or site-specific series; Cost and access denominator; Environmental and community measures under the stored identity, period, method, and denominator contract.",
+      "historical_source_ids": [
+        "source-56a-faa-commercial-space-operations-fy2022",
+        "source-56a-faa-commercial-space-operations-fy2023",
+        "source-56a-faa-commercial-space-operations-fy2024",
+        "source-faa-slc40-final-ea",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-nasa-artemis",
+        "source-nasa-kennedy-master-plan-2026",
+        "source-nasa-ksc-causeway-bridge-2025",
+        "source-nasa-moon-to-mars-architecture-rev-c-2025"
+      ],
+      "alternative_candidate_ids": [
+        "146-ALT-FAA-SPACE-LICENSES",
+        "146-ALT-FAA-SPACE-NUMBERS",
+        "146-ALT-FAA-SPACE-FORECAST-2026",
+        "146-ALT-GAO-NASA-MAJOR-PROJECTS-2026"
+      ],
+      "alternative_candidates_are_evidence": false,
+      "board_scope_digest": "fdc1d1113ed2e12edcffd3c4129b23b8e5f0cfd938499d1e28c1cd9d8fd1214f",
+      "owner_actions": [
+        {
+          "action_id": "159-AUTHORITY-012",
+          "action_kind": "authority disposition",
+          "upstream_record_id": "146-DISPOSITION-012",
+          "sequence": 1,
+          "decision_state": "Pending owner disposition",
+          "decision_date": null,
+          "receipt_id": null,
+          "candidate_set_digest": "77c754df2b50b4ec182dab055eb5925e5204371f6c73a9771adfef76b054a731",
+          "allowed_terminal_states": [
+            "Closed — exact artifact mapped",
+            "Carried — bounded gap",
+            "Excluded from v1 scope"
+          ]
+        }
+      ],
+      "sequencing_rule": "Authority and requirement decisions must be independent, dated, and receipted. A mission decision may close only after every required requirement decision is terminal.",
+      "next_action": "Present this board to an authorized reviewer; preserve any unresolved action as pending rather than inferring a decision.",
+      "route": "/review/v1month/owner-sprint/space-outcome/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1month/owner-sprint/",
+    "/review/v1month/owner-sprint/advanced-manufacturing-outcome/",
+    "/review/v1month/owner-sprint/ai-for-science-outcome/",
+    "/review/v1month/owner-sprint/aviation-baseline/",
+    "/review/v1month/owner-sprint/aviation-outcome/",
+    "/review/v1month/owner-sprint/chips-and-compute-outcome/",
+    "/review/v1month/owner-sprint/critical-minerals-baseline/",
+    "/review/v1month/owner-sprint/cybersecurity-outcome/",
+    "/review/v1month/owner-sprint/discovery-technologies-outcome/",
+    "/review/v1month/owner-sprint/mobility-baseline/",
+    "/review/v1month/owner-sprint/mobility-outcome/",
+    "/review/v1month/owner-sprint/quantum-outcome/",
+    "/review/v1month/owner-sprint/space-outcome/"
+  ],
+  "public_json_exports": [
+    "/data/phase-159-owner-decision-sprint.json"
+  ]
+}

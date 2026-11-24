@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import ItalyRailLagoonDossierArticle from '../../../components/review/ItalyRailLagoonDossierArticle.astro';
+import {italyRailLagoonDossiers} from '../../../lib/italy-rail-lagoon-named-dossiers.mjs';
+const record=italyRailLagoonDossiers.records.find(r=>r.record_id==='project-milan-m4')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><ItalyRailLagoonDossierArticle record={record}/></BaseLayout>
+

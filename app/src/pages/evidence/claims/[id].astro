@@ -1,4 +1,5 @@
 ---
+import {projectBriefing} from "../../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
@@ -18,7 +19,7 @@ const packets = isPacket ? [] : registry.outcome_evidence_packets.filter((item) 
 const alternative = isPacket
   ? registry.alternative_explanation_registers.find((item) => item.alternative_register_id === record.alternative_explanation_register_id)
   : registry.alternative_explanation_registers.find((item) => item.alternative_register_id === record.alternative_explanation_register_id);
-const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings").then(records => records.map(projectBriefing)), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
 const briefingById = new Map(briefings.map((item) => [item.data.id, item])); const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item])); const signalById = new Map(signals.map((item) => [item.data.id, item])); const sourceById = new Map(sources.map((item) => [item.data.id, item]));
 const title = isPacket ? `${record.evidence_packet_id}: ${record.measure_label}` : `${record.counterfactual_docket_id}: ${record.named_entity}`;
 const phase73Destination: any = isPacket

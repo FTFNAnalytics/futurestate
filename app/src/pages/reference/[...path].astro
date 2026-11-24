@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../../components/layout/BaseLayout.astro";
+import RegistryDetail from "../../components/review/RegistryDetail.astro";
+import RegistryHub from "../../components/review/RegistryHub.astro";
+import ReferenceArticle from '../../components/review/ReferenceArticle.astro';
+import TranslatedArticle from '../../components/review/TranslatedArticle.astro';
+import {translatedReaders,translationForContract} from '../../lib/translated-readers.mjs';
+import readerEdition from '../../data/phase-204-reader-completion.json';
+import currentEditorial from '../../data/phase-205-216-current-editorial.json';
+import CurrentResearchArticle from '../../components/review/CurrentResearchArticle.astro';
+import {annualCaseOverview, annualCaseTitle} from '../../lib/annual-case-reviews.mjs';
+import { canonicalV1refSlug, v1refNativeDefinitions } from "../../data/v1ref-registry";
+
+export function getStaticPaths() {
+  const trimPath = (route: string) => route.replace(/^\/reference\//, "").replace(/\/$/, "");
+  const routes = new Map<string, any>();
+  const register = (route: string, props: any) => {
+    if (!route.startsWith("/reference/") || route === "/reference/") return;
+    const path = trimPath(route);
+    if (!path) return;
+    if (routes.has(path)) throw new Error(`Duplicate /reference/ route: ${route}`);
+    routes.set(path, { params: { path }, props });
+  };
+
+  for (const { section, registry, items, phase } of v1refNativeDefinitions) {
+    const referenceHub = `/reference/${section}/`;
+    const referenceRegistry = { ...registry, routes: { ...registry.routes, hub: referenceHub } };
+    const referenceItems = items.map((item: any) => {
+      const slug = canonicalV1refSlug(item, registry);
+      return { ...item, source_slug: item.slug, source_route: item.route, slug, route: `${referenceHub}${slug}/` };
+    });
+    register(referenceHub, { kind: "hub", registry: referenceRegistry, items: referenceItems, phase });
+    for (const record of referenceItems) register(record.route, { kind: "detail", registry: referenceRegistry, record, phase });
+
+    if (phase <= 188) {
+      register(registry.routes.hub, { kind: "hub", registry, items, phase, canonicalRoute: referenceHub });
+      for (const record of items) {
+        if (record.route === registry.routes.hub) continue;
+        const canonicalRoute = `${referenceHub}${canonicalV1refSlug(record, registry)}/`;
+        register(record.route, { kind: "detail", registry, record, phase, canonicalRoute });
+      }
+    }
+  }
+
+  for (const translation of translatedReaders) register(translation.route, {kind:'translation',translation});
+  return [...routes.values()];
+}
+
+const { kind, registry, items, record, phase, canonicalRoute, translation } = Astro.props;
+const title = translation ? `${translation.title} | FTFN` : kind === "hub"
+  ? `${registry.title} | FTFN Public Reference`
+  : `${record.title ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? record.slug} | FTFN Public Reference`;
+const description = translation?.overview ?? record?.summary ?? record?.question ?? registry.summary;
+const recordId = record ? Object.entries(record).find(([key]) => key.endsWith('_id'))?.[1] : null;
+const article = readerEdition.records.find(item => item.record_id === recordId);
+const currentArticle = currentEditorial.records.find(item => item.record_id === recordId);
+const contractTranslation = translationForContract(recordId);
+const readerTitle = article ? annualCaseTitle(article, {route:Astro.url.pathname}) : undefined;
+const readerOverview = article ? annualCaseOverview(article, {route:Astro.url.pathname}) : undefined;
+---
+
+<BaseLayout title={currentArticle ? `${currentArticle.title} | FTFN` : article ? `${readerTitle} | FTFN` : title} description={currentArticle?.answer ?? readerOverview ?? description} canonical={canonicalRoute} lang={translation?.locale}>
+  {contractTranslation&&<aside class="page-section prose-page" data-translation-contract-notice><h2>AI-reviewed reading edition available</h2><p>This is the preserved September 1 contract, not a human-review receipt. Its historical URL and empty translation fields are retained. Human review is not a build prerequisite under the owner's September 25 authorization.</p><p><a href={contractTranslation.route} lang={contractTranslation.locale} hreflang={contractTranslation.locale}>{contractTranslation.ui.language} — {contractTranslation.title}</a></p></aside>}
+  {translation ? <TranslatedArticle article={translation} /> : kind === "hub"
+    ? <RegistryHub registry={registry} items={items} phase={phase} release="v1ref" />
+    : currentArticle ? <><CurrentResearchArticle article={currentArticle} /><details class="page-section"><summary>Inspect the preserved research contract</summary><RegistryDetail registry={registry} record={record} phase={phase} release="v1ref" embedded /></details></>
+    : article ? <ReferenceArticle article={article} registry={registry} record={record} phase={phase} />
+    : <RegistryDetail registry={registry} record={record} phase={phase} release="v1ref" />}
+</BaseLayout>

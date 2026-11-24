@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0",
+  "program_id": "FTFN-V1-RELEASE-CANDIDATE",
+  "version": "1.0 release candidate",
+  "title": "FTFN v1 Release Candidate",
+  "effective_date": "2026-08-31",
+  "status": "Complete locally — v1 promotion held",
+  "summary": "A governed operating and content layer spanning evidence gates, alternative authority sources, adjudication, Atlas maintenance, longitudinal review, comparison, field guides, flagship reports, editorial packets, public methods, and a derived v1 launch decision.",
+  "publication_boundaries": [
+    "Alternative official-source discovery expands the review shelf; it does not by itself admit evidence or answer a mission.",
+    "Calendar-bound checks remain unoperated until their lawful date, and shared-date gates retain separate identities, decisions, and receipts.",
+    "No project stage, place state, longitudinal observation, comparison verdict, outcome, score, rank, causal finding, recommendation, owner decision, or public-launch authorization is inferred.",
+    "A bounded repository result describes the reviewed corpus and search path; it never proves that qualifying evidence does not exist elsewhere."
+  ],
+  "counts": {
+    "phases": 12,
+    "public_html_routes": 58,
+    "detail_routes": 45,
+    "public_json_exports": 13,
+    "v1rc_update_records": 12
+  },
+  "evidence_state": {
+    "alternative_official_artifacts_checked": 30,
+    "owner_decisions_pending": 24,
+    "authority_dispositions_pending": 12,
+    "admitted_longitudinal_series": 0,
+    "v1_promotion": "Held"
+  },
+  "phases": [
+    {
+      "phase": 145,
+      "title": "Evidence-gate operations journal",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/gate-journal/",
+      "public_export": "/data/phase-145-evidence-gate-operations-journal.json",
+      "counts": {
+        "operating_records": 15,
+        "completed_upstream_decisions": 2,
+        "future_time_gated_operations": 13,
+        "due_operations_pending": 0,
+        "future_operation_integrity_failures": 0,
+        "predated_operations": 0
+      }
+    },
+    {
+      "phase": 146,
+      "title": "Authority-gap resolution program",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/authority-resolution/",
+      "public_export": "/data/phase-146-authority-gap-resolution-program.json",
+      "counts": {
+        "mission_gaps": 12,
+        "priority_gaps": 6,
+        "unique_alternative_artifacts_checked": 30,
+        "owner_dispositions_pending": 12,
+        "gaps_closed_exact_artifact_mapped": 0,
+        "stale_terminal_dispositions_requiring_revalidation": 0
+      }
+    },
+    {
+      "phase": 147,
+      "title": "Evidence adjudication record",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/adjudication/",
+      "public_export": "/data/phase-147-evidence-adjudication-record.json",
+      "counts": {
+        "requirement_packets": 18,
+        "mission_packets": 6,
+        "total_decision_packets": 24,
+        "terminal_authorized_decisions": 0,
+        "owner_decisions_pending": 24,
+        "stale_terminal_decisions_requiring_revalidation": 0
+      }
+    },
+    {
+      "phase": 148,
+      "title": "Atlas changefeed",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/changefeed/",
+      "public_export": "/data/phase-148-atlas-changefeed.json",
+      "counts": {
+        "atlas_reviews": 39,
+        "project_reviews": 24,
+        "place_reviews": 15,
+        "material_changes": 0,
+        "synthetic_stage_changes": 0
+      }
+    },
+    {
+      "phase": 149,
+      "title": "Longitudinal evidence lab",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/longitudinal-lab/",
+      "public_export": "/data/phase-149-longitudinal-evidence-lab.json",
+      "counts": {
+        "eligibility_reviews": 39,
+        "pilot_reviews_ready": 3,
+        "admitted_series": 0,
+        "observations_transferred": 0,
+        "no_series_boundary_owner_acceptance": 0,
+        "stale_admissions_requiring_revalidation": 0
+      }
+    },
+    {
+      "phase": 150,
+      "title": "Comparison passports 2.0",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/comparison-passports/",
+      "public_export": "/data/phase-150-comparison-passports-2-0.json",
+      "counts": {
+        "comparison_passports": 12,
+        "context_only": 12,
+        "verdict_changes": 0,
+        "scores_created": 0,
+        "ranks_created": 0
+      }
+    },
+    {
+      "phase": 151,
+      "title": "Weekly desk review ledger",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/desk-reviews/",
+      "public_export": "/data/phase-151-weekly-desk-review-ledger.json",
+      "counts": {
+        "desk_baseline_packets": 17,
+        "planned_review_windows": 68,
+        "completed_review_windows": 0,
+        "due_review_windows_pending": 0,
+        "future_editorial_decisions": 68,
+        "predated_editorial_decisions": 0,
+        "stale_window_decisions_requiring_revalidation": 0
+      }
+    },
+    {
+      "phase": 152,
+      "title": "Frontier topic field guides",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/field-guides/",
+      "public_export": "/data/phase-152-frontier-topic-field-guides.json",
+      "counts": {
+        "field_guides": 17,
+        "horizon_questions": 68,
+        "project_links": 80,
+        "place_links": 60,
+        "evidence_annotation_links": 85,
+        "direct_evidence_source_links": 120,
+        "numeric_rankings": 0
+      }
+    },
+    {
+      "phase": 153,
+      "title": "Future State report series",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/reports/",
+      "public_export": "/data/phase-153-future-state-report-series.json",
+      "counts": {
+        "flagship_reports": 4,
+        "topic_links": 27,
+        "mission_links": 108,
+        "claim_blocks": 16,
+        "authored_words": 3177,
+        "minimum_report_words": 765,
+        "scores_created": 0,
+        "recommendations_created": 0
+      }
+    },
+    {
+      "phase": 154,
+      "title": "September edition packets",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/edition-packets/",
+      "public_export": "/data/phase-154-september-edition-packets.json",
+      "counts": {
+        "edition_packets": 4,
+        "source_binding_templates_prepared": 4,
+        "time_gated_editions": 4,
+        "published_editions": 0,
+        "due_editions_pending": 0,
+        "future_content_prepublished": 0,
+        "stale_publications_requiring_revalidation": 0
+      }
+    },
+    {
+      "phase": 155,
+      "title": "Public method and corrections library",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/method-library/",
+      "public_export": "/data/phase-155-public-method-corrections-library.json",
+      "counts": {
+        "public_method_records": 8,
+        "correction_paths": 8,
+        "silent_revision_paths": 0,
+        "owner_only_authorizations_automated": 0
+      }
+    },
+    {
+      "phase": 156,
+      "title": "v1 launch decision",
+      "status": "Complete locally",
+      "hub_route": "/review/v1rc/launch-decision/",
+      "public_export": "/data/phase-156-v1-launch-decision.json",
+      "counts": {
+        "launch_gates": 14,
+        "passed": 10,
+        "held": 4,
+        "pending_build": 0,
+        "false_passes": 0
+      }
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1rc/",
+    "/review/v1rc/gate-journal/",
+    "/review/v1rc/authority-resolution/",
+    "/review/v1rc/adjudication/",
+    "/review/v1rc/changefeed/",
+    "/review/v1rc/longitudinal-lab/",
+    "/review/v1rc/comparison-passports/",
+    "/review/v1rc/comparison-passports/compute-power-water/",
+    "/review/v1rc/comparison-passports/permission-to-operation/",
+    "/review/v1rc/comparison-passports/standards-to-adoption/",
+    "/review/v1rc/comparison-passports/autonomous-service-accountability/",
+    "/review/v1rc/comparison-passports/research-to-assurance/",
+    "/review/v1rc/comparison-passports/minerals-to-manufacturing/",
+    "/review/v1rc/comparison-passports/space-capacity-to-cadence/",
+    "/review/v1rc/comparison-passports/housing-infrastructure-conversion/",
+    "/review/v1rc/comparison-passports/climate-water-industrial-resilience/",
+    "/review/v1rc/comparison-passports/workforce-to-qualified-capacity/",
+    "/review/v1rc/comparison-passports/finance-risk-and-infrastructure/",
+    "/review/v1rc/comparison-passports/observation-to-outcome/",
+    "/review/v1rc/desk-reviews/",
+    "/review/v1rc/field-guides/",
+    "/review/v1rc/field-guides/advanced-manufacturing/",
+    "/review/v1rc/field-guides/agriculture-and-bioeconomy/",
+    "/review/v1rc/field-guides/ai-for-science/",
+    "/review/v1rc/field-guides/aviation/",
+    "/review/v1rc/field-guides/chips-and-compute/",
+    "/review/v1rc/field-guides/climate/",
+    "/review/v1rc/field-guides/critical-minerals/",
+    "/review/v1rc/field-guides/cybersecurity/",
+    "/review/v1rc/field-guides/discovery-technologies/",
+    "/review/v1rc/field-guides/energy/",
+    "/review/v1rc/field-guides/finance-and-risk/",
+    "/review/v1rc/field-guides/human-futures/",
+    "/review/v1rc/field-guides/mobility/",
+    "/review/v1rc/field-guides/policy-and-standards/",
+    "/review/v1rc/field-guides/quantum/",
+    "/review/v1rc/field-guides/space/",
+    "/review/v1rc/field-guides/water/",
+    "/review/v1rc/reports/",
+    "/review/v1rc/reports/broadband-deployment-versus-real-adoption/",
+    "/review/v1rc/reports/project-delivery-versus-operational-capability/",
+    "/review/v1rc/reports/chips-compute-power-and-water/",
+    "/review/v1rc/reports/how-to-know-a-frontier-project-is-working/",
+    "/review/v1rc/edition-packets/",
+    "/review/v1rc/edition-packets/evidence-watch-2026-09-06/",
+    "/review/v1rc/edition-packets/conversion-watch-2026-09-13/",
+    "/review/v1rc/edition-packets/comparison-watch-2026-09-20/",
+    "/review/v1rc/edition-packets/monthly-state-2026-09-27/",
+    "/review/v1rc/method-library/",
+    "/review/v1rc/method-library/evidence-admission/",
+    "/review/v1rc/method-library/authority-and-alternative-sources/",
+    "/review/v1rc/method-library/calendar-gates-and-receipts/",
+    "/review/v1rc/method-library/longitudinal-compatibility/",
+    "/review/v1rc/method-library/comparison-integrity/",
+    "/review/v1rc/method-library/changefeed-and-revisions/",
+    "/review/v1rc/method-library/corrections-and-retractions/",
+    "/review/v1rc/method-library/launch-and-deployment-authority/",
+    "/review/v1rc/launch-decision/"
+  ],
+  "public_json_exports": [
+    "/data/phase-145-evidence-gate-operations-journal.json",
+    "/data/phase-146-authority-gap-resolution-program.json",
+    "/data/phase-147-evidence-adjudication-record.json",
+    "/data/phase-148-atlas-changefeed.json",
+    "/data/phase-149-longitudinal-evidence-lab.json",
+    "/data/phase-150-comparison-passports-2-0.json",
+    "/data/phase-151-weekly-desk-review-ledger.json",
+    "/data/phase-152-frontier-topic-field-guides.json",
+    "/data/phase-153-future-state-report-series.json",
+    "/data/phase-154-september-edition-packets.json",
+    "/data/phase-155-public-method-corrections-library.json",
+    "/data/phase-156-v1-launch-decision.json",
+    "/data/v1-release-candidate.json"
+  ],
+  "publication_update_files": [
+    "2026-08-31-phase-145.json",
+    "2026-08-31-phase-146.json",
+    "2026-08-31-phase-147.json",
+    "2026-08-31-phase-148.json",
+    "2026-08-31-phase-149.json",
+    "2026-08-31-phase-150.json",
+    "2026-08-31-phase-151.json",
+    "2026-08-31-phase-152.json",
+    "2026-08-31-phase-153.json",
+    "2026-08-31-phase-154.json",
+    "2026-08-31-phase-155.json",
+    "2026-08-31-phase-156.json"
+  ]
+}

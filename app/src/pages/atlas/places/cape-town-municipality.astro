@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import SouthernAfricaDossierArticle from '../../../components/review/SouthernAfricaDossierArticle.astro';
+import {southernAfricaDossiers} from '../../../lib/southern-africa-named-dossiers.mjs';
+const record=southernAfricaDossiers.records.find(r=>r.record_id==='place-cape-town-municipality')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><SouthernAfricaDossierArticle record={record}/></BaseLayout>

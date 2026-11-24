@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "review_id": "CANONICAL-ANNUAL-READERS-2026-11-22",
+  "integration_date": "2026-11-22",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "fresh_external_source_check": false,
+  "new_identity_count": 0,
+  "operating_outcomes_admitted": false,
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false,
+  "boundary": "Local route integration of two exact previously assessed narratives, not a new source inspection, blanket review of historical Atlas material or production acceptance.",
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/phase-204-reader-completion.json",
+      "sha256": "38ffd8b3e44dc671dd6590f80658240b6e533c645e5cf5fc3e84f345009d9125"
+    },
+    {
+      "path": "src/data/annual-case-reviews.json",
+      "sha256": "e1e2c92f78471c615363c2684d6169c5f18f0d2e27c5ab248c4cbbad76a0ac7f"
+    },
+    {
+      "path": "src/data/annual-ai-reviews.json",
+      "sha256": "2ca41a3be2f658d8054fd204145f88bbdb6c6c13315c4ec4ce05bced88b213e9"
+    },
+    {
+      "path": "src/data/build-review-policy.json",
+      "sha256": "7d929a7cd0a4904338f74ada8645c038703fc7bdffc383d9dd4d9d48a35d5d30"
+    }
+  ],
+  "records": [
+    {
+      "binding_id": "CANONICAL-ANNUAL-119-PROJECT-003",
+      "canonical_id": "casebook-northern-virginia-large-load",
+      "atlas_record_id": "119-PROJECT-003",
+      "target_route": "/atlas/projects/northern-virginia-large-load/",
+      "prior_casebook_route": "/review/casebooks/northern-virginia-large-load/",
+      "article_record_id": "203-CASE-03",
+      "article_route": "/reference/state-of-future-systems/case-northern-virginia-large-load/",
+      "article_title": "Northern Virginia: a transmission decision and a large-load tariff",
+      "article_sha256": "d3ae856ab09dd005eb50d0d8210ccd978cfc9ef9fab9b6689c3356e20fd3e8dc",
+      "atlas_record_sha256": "fc18a3280b020ec584042ca797b4636b7d9f71ee0f4b59af372c05536e5ee056",
+      "portfolio_decision_sha256": "66de4284807dac71893a7d90c8d6f3bed25810394964ac86899f51c24120ab4d",
+      "eligible_count": 1,
+      "scope": "Golden-Mars transmission project",
+      "original_review_date": "2026-09-27",
+      "correction_review_date": "2026-09-22",
+      "article_review_sha256": "a761a594c98ad5bdc4dfd2723020286ebb1eca02f629611d4b2ac1f31cf026fc",
+      "correction_review_sha256": "bd4d80b5c5011716e5eb0911eb8e9f6ba8ff5f8e21d50e87041b7667d28b2e2c",
+      "presentation_sha256": "3fa206afc0413bda190682105efd975bc6bba3ea94778bad9861046b59178c4c",
+      "section_count": 3,
+      "paragraph_count": 3,
+      "identity_boundary": "Golden-Mars is one transmission-project identity. GS-5 is tariff context, not a second project or proof of customer service.",
+      "current_status_boundary": "This is the exact September 22 clarification assessed September 27, not a November inspection. Its October 1 Loudoun appointment is retained history. The separately dated policy watch below supplies policy context only; it does not establish project compliance or reset Golden-Mars, GS-5 or qualification appointments.",
+      "context_cycle_id": "60-CYCLE-LOUDOUN-STANDARDS",
+      "context_role": "Related policy only",
+      "named_file_id": "61-PROJECT-NOVA-LARGE-LOAD",
+      "decision": "Reuse the exact assessed narrative on this canonical route; preserve historical inputs and separately dated current context"
+    },
+    {
+      "binding_id": "CANONICAL-ANNUAL-119-PROJECT-004",
+      "canonical_id": "casebook-space-coast-authority-to-mission",
+      "atlas_record_id": "119-PROJECT-004",
+      "target_route": "/atlas/projects/space-coast-authority-to-mission/",
+      "prior_casebook_route": "/review/casebooks/space-coast-authority-to-mission/",
+      "article_record_id": "203-CASE-04",
+      "article_route": "/reference/state-of-future-systems/case-space-coast-authority-to-mission/",
+      "article_title": "Space Coast: follow the authority for the site, operator and mission",
+      "article_sha256": "fcec56b0c93db3e36e5ae7a4c7a9b7d3ce3d42580e7a5668fa5fb30bcb7bd77f",
+      "atlas_record_sha256": "d08cf322ffe9e251f39a928749db748ee5e7b2b3f50b992aba42bbfec8c46683",
+      "portfolio_decision_sha256": "16eeffec4362ac40436108ec1f42e60b2a211f65bb1374e26277de4113fd2255",
+      "eligible_count": 0,
+      "scope": "Multi-asset comparison",
+      "original_review_date": "2026-09-27",
+      "correction_review_date": "2026-09-22",
+      "article_review_sha256": "16ea4342e7545d0aea4070e5ec2c2f079085f07d015d383e5a2e8935282405ce",
+      "correction_review_sha256": "6683e8a437ac78a3c947bae69aa4a23337439b64a42c3b53d8721f29753db623",
+      "presentation_sha256": "092e9d27f7d61805a553f7d40bab1ecb99ab805abf428900e86327da564bc17c",
+      "section_count": 3,
+      "paragraph_count": 3,
+      "identity_boundary": "This is a zero-count, multi-asset context account. Shuttle Landing Facility, LC-39A and SLC-40 retain separate authorities; this integration creates no counted child projects.",
+      "current_status_boundary": "This is the exact September 22 clarification assessed September 27, not a November inspection. Its recorded October 9 follow-up is retained history. Later Shuttle Landing Facility receipts above carry their own inspection dates, access limits and appointments; they do not reissue the January instrument or establish mission performance.",
+      "context_cycle_id": "60-CYCLE-SPACE-COAST-SLF-LICENCE",
+      "context_role": "Independent site-licence follow-up",
+      "named_file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "decision": "Reuse the exact assessed narrative on this canonical route; preserve historical inputs and separately dated current context"
+    }
+  ]
+}

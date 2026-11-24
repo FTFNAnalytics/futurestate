@@ -1,0 +1,1031 @@
+{
+  "schema_version": "1.0",
+  "phase": 176,
+  "program_id": "FTFN-PHASE-176",
+  "dataset": "phase_176_longitudinal_admission_and_zero_series_decision",
+  "title": "Longitudinal Admission and Zero-Series Decision",
+  "effective_date": "2026-09-01",
+  "prepared_date": "2026-09-01",
+  "target_window": {
+    "start": "2026-10-12",
+    "end": "2026-10-18",
+    "calendar_gate": false
+  },
+  "record_status": "Prepared",
+  "build_status": "Complete locally — evidence and owner outcomes held",
+  "summary": "Prepare three six-test longitudinal admission packets, six-row provenance tables, and one separate zero-series owner disposition while transferring no observation and recording no decision.",
+  "record_scope": "Append-only Phase 176 decision preparation over immutable Phase 156, Phase 164, and Phase 172 validation receipts.",
+  "interpretation_boundary": "Upstream legacy observations remain inventory only. No value, series, trend, outcome, rank, comparison, or zero substitute enters Phase 176 before six terminal compatibility receipts and a pilot admission receipt bind the exact series-definition digest.",
+  "publication_boundaries": [
+    "Upstream legacy observations remain inventory only. No value, series, trend, outcome, rank, comparison, or zero substitute enters Phase 176 before six terminal compatibility receipts and a pilot admission receipt bind the exact series-definition digest.",
+    "Missing, unavailable, suppressed, revised, and incompatible observations remain distinct and are never converted to zero.",
+    "The zero-series public boundary requires one separate dated owner receipt after the three pilot decisions are terminal."
+  ],
+  "immutable_baseline_bindings": [
+    {
+      "phase": 156,
+      "receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+      "artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a"
+    },
+    {
+      "phase": 164,
+      "receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+      "artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19"
+    },
+    {
+      "phase": 172,
+      "receipt_id": "172-LOCAL-VALIDATION-2026-09-01-65326aad9d30",
+      "artifact_digest": "cdf822b6451e02523dbdcadfc0f21470011285033de55c919718785aaffd9b34"
+    }
+  ],
+  "digest_contract": {
+    "upstream_file_sha256": "SHA-256 over exact source-file bytes.",
+    "upstream_record_sha256": "SHA-256 over recursively key-sorted JSON encoded as UTF-8.",
+    "series_definition_digest": "Inherited without recomputation from the bound Phase 160 and Phase 169 records; equality is asserted before generation."
+  },
+  "upstream_file_bindings": [
+    {
+      "phase": 160,
+      "program_id": "FTFN-PHASE-160",
+      "dataset": "phase_160_longitudinal_pilot_matrices",
+      "path": "app/src/data/phase-160-longitudinal-pilot-matrices.json",
+      "sha256": "2ab2f4528b82e222e88d307e6885e73f40ebf84304a247995dcbe928f0166dc5"
+    },
+    {
+      "phase": 169,
+      "program_id": "FTFN-PHASE-169",
+      "dataset": "phase_169_longitudinal_pilot_adjudication",
+      "path": "app/src/data/phase-169-longitudinal-pilot-adjudication.json",
+      "sha256": "988dcca30d8ae8ccabf533d2a25864f025aefcbfde6a91875f30de84137aaf16"
+    }
+  ],
+  "routes": {
+    "hub": "/review/v1oct/longitudinal-decisions/",
+    "public_export": "/data/phase-176-longitudinal-admission-and-zero-series-decision.json"
+  },
+  "counts": {
+    "complete_prepared_packets": 4,
+    "compatibility_pilots": 3,
+    "provenance_tables": 3,
+    "provenance_rows": 18,
+    "compatibility_test_decisions": 18,
+    "terminal_compatibility_test_decisions": 0,
+    "pending_compatibility_test_decisions": 18,
+    "pilot_admission_decisions": 3,
+    "terminal_pilot_admission_decisions": 0,
+    "admitted_series": 0,
+    "observations_transferred": 0,
+    "zero_series_owner_dispositions": 1,
+    "terminal_zero_series_owner_dispositions": 0,
+    "pending_zero_series_owner_dispositions": 1,
+    "phase_175_owner_controlled_actions": 36,
+    "combined_owner_controlled_backlog": 37,
+    "public_html_routes": 5,
+    "detail_routes": 4,
+    "public_json_exports": 1
+  },
+  "counting_contract": {
+    "governed_evidence_decisions": "18 compatibility-test decisions + 3 pilot-admission decisions = 21 governed evidence-review decisions.",
+    "phase_176_owner_controlled_actions": "Only the separate zero-series public-boundary disposition is counted as a Phase 176 owner action.",
+    "combined_owner_controlled_backlog": "The 36 Phase 175 docket actions plus the one Phase 176 zero-series owner disposition equal 37 owner-controlled actions. The 21 governed evidence-review decisions are reported separately."
+  },
+  "compatibility_dimension_contract": [
+    "identity",
+    "period",
+    "measure",
+    "denominator",
+    "revision lineage",
+    "dual review"
+  ],
+  "provenance_dimension_contract": [
+    "identity",
+    "denominator",
+    "period",
+    "method",
+    "revision policy",
+    "missingness"
+  ],
+  "pilot_admission_packets": [
+    {
+      "pilot_admission_packet_id": "176-PILOT-001",
+      "slug": "hornsdale-power-reserve",
+      "title": "Hornsdale Power Reserve compatibility pilot",
+      "packet_state": "Prepared — six-test compatibility adjudication pending",
+      "entity_id": "119-PROJECT-012",
+      "legacy_panel_id": "panel-56e-hornsdale-power-reserve",
+      "legacy_observation_inventory": {
+        "declared_upstream_count": 4,
+        "values_copied_into_phase_176": 0,
+        "observation_values": [],
+        "boundary": "The count describes upstream inventory only; it is not an admitted observation count."
+      },
+      "series_definition_digest": "621edbd8b249951a959cc2fade8420c44f0debec09fc195f060208522029ff36",
+      "upstream_records": [
+        {
+          "phase": 160,
+          "record_id": "160-PILOT-001",
+          "record_sha256": "c4b62672777f81a42a916be8f93469babd676d20d06c2a6cb92d1b6002861375"
+        },
+        {
+          "phase": 169,
+          "record_id": "169-PACKET-001",
+          "record_sha256": "89e9c9936d5a8645e27a200ede695ca2a2d1eb219e2dcfbbbcbf4d0d7eedea30"
+        }
+      ],
+      "eligibility_id": "138-ELIGIBILITY-012",
+      "upstream_lab_review_id": "149-REVIEW-012",
+      "compatibility_decisions": [
+        {
+          "compatibility_decision_id": "176-COMPAT-001",
+          "pilot_packet_id": "176-PILOT-001",
+          "dimension": "identity",
+          "inherited_state": "Exact upstream identity join available",
+          "inherited_reason": "Curated mapping resolves exact legacy panel panel-56e-hornsdale-power-reserve for Hornsdale Power Reserve; no legacy observation is transferred into the governed chain.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test identity against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-002",
+          "pilot_packet_id": "176-PILOT-001",
+          "dimension": "period",
+          "inherited_state": "Legacy periods present — compatibility not adjudicated",
+          "inherited_reason": "The legacy panel records 4 observations under period November 2019 through current installation profile; Phase 138 does not declare them compatible with the newer Phase 68–74 chain.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test period against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-003",
+          "pilot_packet_id": "176-PILOT-001",
+          "dimension": "measure",
+          "inherited_state": "Legacy measure present — admission not transferred",
+          "inherited_reason": "The legacy indicator is “Incident response, service capability, compliance, and stated capacity” in Dated operating or regulatory observation; its observations remain in Phase 56.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test measure against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-004",
+          "pilot_packet_id": "176-PILOT-001",
+          "dimension": "denominator",
+          "inherited_state": "Legacy denominator recorded — compatibility not adjudicated",
+          "inherited_reason": "The legacy denominator is “The specific event, service, offer interval, or installed capacity stated in the record”; Phase 138 creates no cross-period or cross-regime bridge.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test denominator against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-005",
+          "pilot_packet_id": "176-PILOT-001",
+          "dimension": "revision lineage",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "inherited_reason": "No complete revision, correction, break, and supersession chain has been adjudicated for transfer.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test revision lineage against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-006",
+          "pilot_packet_id": "176-PILOT-001",
+          "dimension": "dual review",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "inherited_reason": "No two independent reviewer receipts bind the same series definition and observation set.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Obtain two independent reviewer receipts binding the same series definition and observation set."
+        }
+      ],
+      "provenance_table": [
+        {
+          "provenance_row_id": "176-PROVENANCE-001-IDENTITY",
+          "dimension": "identity",
+          "source_pointer": "169-PACKET-001/compatibility_tests/identity",
+          "inherited_state": "Exact upstream identity join available",
+          "known_value": {
+            "entity_id": "119-PROJECT-012",
+            "legacy_panel_id": "panel-56e-hornsdale-power-reserve"
+          },
+          "evidence_required": "Exact stable entity identity across every candidate observation and every revision.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "Curated mapping resolves exact legacy panel panel-56e-hornsdale-power-reserve for Hornsdale Power Reserve; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-001-DENOMINATOR",
+          "dimension": "denominator",
+          "source_pointer": "169-PACKET-001/compatibility_tests/denominator",
+          "inherited_state": "Legacy denominator recorded — compatibility not adjudicated",
+          "known_value": null,
+          "evidence_required": "A source-defined denominator that remains compatible across every proposed period, or an explicit break declaration.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy denominator is “The specific event, service, offer interval, or installed capacity stated in the record”; Phase 138 creates no cross-period or cross-regime bridge."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-001-PERIOD",
+          "dimension": "period",
+          "source_pointer": "169-PACKET-001/compatibility_tests/period",
+          "inherited_state": "Legacy periods present — compatibility not adjudicated",
+          "known_value": null,
+          "evidence_required": "Exact start, end, frequency, cutoff, and comparability treatment for every proposed observation period.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy panel records 4 observations under period November 2019 through current installation profile; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-001-METHOD",
+          "dimension": "method",
+          "source_pointer": "169-PACKET-001/compatibility_tests/measure",
+          "inherited_state": "Legacy measure present — admission not transferred",
+          "known_value": null,
+          "evidence_required": "Exact measure name, unit, collection method, acceptance rule, and method-change treatment.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy indicator is “Incident response, service capability, compliance, and stated capacity” in Dated operating or regulatory observation; its observations remain in Phase 56. The bound packet does not yet establish a compatible method bridge."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-001-REVISION",
+          "dimension": "revision policy",
+          "source_pointer": "169-PACKET-001/compatibility_tests/revision lineage",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "known_value": null,
+          "evidence_required": "Complete correction, supersession, vintage, restatement, and series-break lineage.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "No complete revision, correction, break, and supersession chain has been adjudicated for transfer."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-001-MISSINGNESS",
+          "dimension": "missingness",
+          "source_pointer": "169-PACKET-001/compatibility_tests",
+          "inherited_state": "Not specified in the bound Phase 160/169 packet",
+          "known_value": null,
+          "evidence_required": "A declared missingness taxonomy distinguishing missing, unavailable, not applicable, suppressed, revised, and incompatible values.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "No governed missingness policy is present in the bound packet. Missing, unavailable, and incompatible observations must not be converted to zero."
+        }
+      ],
+      "tests_required": 6,
+      "tests_terminal": 0,
+      "tests_compatible": 0,
+      "admission_outcome": null,
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "primary_reviewer_role": null,
+      "independent_reviewer_role": null,
+      "rationale": null,
+      "admission_receipt_required_fields": [
+        "decision_receipt_id",
+        "pilot_admission_packet_id",
+        "series_definition_digest",
+        "six_terminal_compatibility_decision_ids",
+        "admission_outcome",
+        "decision_date",
+        "primary_reviewer_role",
+        "independent_reviewer_role",
+        "rationale",
+        "revision_and_missingness_boundary"
+      ],
+      "decisive_next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails.",
+      "stop_rule": "Do not transfer a legacy value unless identity, period, measure, denominator, revision lineage, and dual-review admission all pass under the governed contract.",
+      "route": "/review/v1oct/longitudinal-decisions/hornsdale-power-reserve/"
+    },
+    {
+      "pilot_admission_packet_id": "176-PILOT-002",
+      "slug": "dalrymple-grid-battery",
+      "title": "Dalrymple grid battery compatibility pilot",
+      "packet_state": "Prepared — six-test compatibility adjudication pending",
+      "entity_id": "119-PROJECT-014",
+      "legacy_panel_id": "panel-56e-dalrymple-escri-bess",
+      "legacy_observation_inventory": {
+        "declared_upstream_count": 4,
+        "values_copied_into_phase_176": 0,
+        "observation_values": [],
+        "boundary": "The count describes upstream inventory only; it is not an admitted observation count."
+      },
+      "series_definition_digest": "a1caf7e1231f36598624ccf578dec8cab8af526a0469e8bda45280980519cf4e",
+      "upstream_records": [
+        {
+          "phase": 160,
+          "record_id": "160-PILOT-002",
+          "record_sha256": "e49cc453eecd342ac43c523030d8a08099b26294d6ef9d192bf62fdc522c0033"
+        },
+        {
+          "phase": 169,
+          "record_id": "169-PACKET-002",
+          "record_sha256": "124f07c6ecc4c3dcc39e87756dc8a93c1c5d5f330e77037d64c6fe57ec1a34cf"
+        }
+      ],
+      "eligibility_id": "138-ELIGIBILITY-014",
+      "upstream_lab_review_id": "149-REVIEW-014",
+      "compatibility_decisions": [
+        {
+          "compatibility_decision_id": "176-COMPAT-007",
+          "pilot_packet_id": "176-PILOT-002",
+          "dimension": "identity",
+          "inherited_state": "Exact upstream identity join available",
+          "inherited_reason": "Curated mapping resolves exact legacy panel panel-56e-dalrymple-escri-bess for Dalrymple ESCRI-SA Battery Energy Storage System; no legacy observation is transferred into the governed chain.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test identity against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-008",
+          "pilot_packet_id": "176-PILOT-002",
+          "dimension": "period",
+          "inherited_state": "Legacy periods present — compatibility not adjudicated",
+          "inherited_reason": "The legacy panel records 4 observations under period December 2018 through April 2021; Phase 138 does not declare them compatible with the newer Phase 68–74 chain.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test period against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-009",
+          "pilot_packet_id": "176-PILOT-002",
+          "dimension": "measure",
+          "inherited_state": "Legacy measure present — admission not transferred",
+          "inherited_reason": "The legacy indicator is “System-event response, islanding, state-of-charge constraint, and project results” in Dated operating observation; its observations remain in Phase 56.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test measure against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-010",
+          "pilot_packet_id": "176-PILOT-002",
+          "dimension": "denominator",
+          "inherited_state": "Legacy denominator recorded — compatibility not adjudicated",
+          "inherited_reason": "The legacy denominator is “The system events, reporting window, or enabled service declared in each record”; Phase 138 creates no cross-period or cross-regime bridge.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test denominator against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-011",
+          "pilot_packet_id": "176-PILOT-002",
+          "dimension": "revision lineage",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "inherited_reason": "No complete revision, correction, break, and supersession chain has been adjudicated for transfer.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test revision lineage against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-012",
+          "pilot_packet_id": "176-PILOT-002",
+          "dimension": "dual review",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "inherited_reason": "No two independent reviewer receipts bind the same series definition and observation set.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Obtain two independent reviewer receipts binding the same series definition and observation set."
+        }
+      ],
+      "provenance_table": [
+        {
+          "provenance_row_id": "176-PROVENANCE-002-IDENTITY",
+          "dimension": "identity",
+          "source_pointer": "169-PACKET-002/compatibility_tests/identity",
+          "inherited_state": "Exact upstream identity join available",
+          "known_value": {
+            "entity_id": "119-PROJECT-014",
+            "legacy_panel_id": "panel-56e-dalrymple-escri-bess"
+          },
+          "evidence_required": "Exact stable entity identity across every candidate observation and every revision.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "Curated mapping resolves exact legacy panel panel-56e-dalrymple-escri-bess for Dalrymple ESCRI-SA Battery Energy Storage System; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-002-DENOMINATOR",
+          "dimension": "denominator",
+          "source_pointer": "169-PACKET-002/compatibility_tests/denominator",
+          "inherited_state": "Legacy denominator recorded — compatibility not adjudicated",
+          "known_value": null,
+          "evidence_required": "A source-defined denominator that remains compatible across every proposed period, or an explicit break declaration.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy denominator is “The system events, reporting window, or enabled service declared in each record”; Phase 138 creates no cross-period or cross-regime bridge."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-002-PERIOD",
+          "dimension": "period",
+          "source_pointer": "169-PACKET-002/compatibility_tests/period",
+          "inherited_state": "Legacy periods present — compatibility not adjudicated",
+          "known_value": null,
+          "evidence_required": "Exact start, end, frequency, cutoff, and comparability treatment for every proposed observation period.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy panel records 4 observations under period December 2018 through April 2021; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-002-METHOD",
+          "dimension": "method",
+          "source_pointer": "169-PACKET-002/compatibility_tests/measure",
+          "inherited_state": "Legacy measure present — admission not transferred",
+          "known_value": null,
+          "evidence_required": "Exact measure name, unit, collection method, acceptance rule, and method-change treatment.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy indicator is “System-event response, islanding, state-of-charge constraint, and project results” in Dated operating observation; its observations remain in Phase 56. The bound packet does not yet establish a compatible method bridge."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-002-REVISION",
+          "dimension": "revision policy",
+          "source_pointer": "169-PACKET-002/compatibility_tests/revision lineage",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "known_value": null,
+          "evidence_required": "Complete correction, supersession, vintage, restatement, and series-break lineage.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "No complete revision, correction, break, and supersession chain has been adjudicated for transfer."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-002-MISSINGNESS",
+          "dimension": "missingness",
+          "source_pointer": "169-PACKET-002/compatibility_tests",
+          "inherited_state": "Not specified in the bound Phase 160/169 packet",
+          "known_value": null,
+          "evidence_required": "A declared missingness taxonomy distinguishing missing, unavailable, not applicable, suppressed, revised, and incompatible values.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "No governed missingness policy is present in the bound packet. Missing, unavailable, and incompatible observations must not be converted to zero."
+        }
+      ],
+      "tests_required": 6,
+      "tests_terminal": 0,
+      "tests_compatible": 0,
+      "admission_outcome": null,
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "primary_reviewer_role": null,
+      "independent_reviewer_role": null,
+      "rationale": null,
+      "admission_receipt_required_fields": [
+        "decision_receipt_id",
+        "pilot_admission_packet_id",
+        "series_definition_digest",
+        "six_terminal_compatibility_decision_ids",
+        "admission_outcome",
+        "decision_date",
+        "primary_reviewer_role",
+        "independent_reviewer_role",
+        "rationale",
+        "revision_and_missingness_boundary"
+      ],
+      "decisive_next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails.",
+      "stop_rule": "Do not transfer a legacy value unless identity, period, measure, denominator, revision lineage, and dual-review admission all pass under the governed contract.",
+      "route": "/review/v1oct/longitudinal-decisions/dalrymple-grid-battery/"
+    },
+    {
+      "pilot_admission_packet_id": "176-PILOT-003",
+      "slug": "f15ex-production-delivery",
+      "title": "F-15EX production and delivery compatibility pilot",
+      "packet_state": "Prepared — six-test compatibility adjudication pending",
+      "entity_id": "119-PROJECT-016",
+      "legacy_panel_id": "panel-56e-f15ex-st-louis-line",
+      "legacy_observation_inventory": {
+        "declared_upstream_count": 4,
+        "values_copied_into_phase_176": 0,
+        "observation_values": [],
+        "boundary": "The count describes upstream inventory only; it is not an admitted observation count."
+      },
+      "series_definition_digest": "0de12e30135f727c909f7984955ad0b8d58b654ff1abf18a170fa9480c0352a7",
+      "upstream_records": [
+        {
+          "phase": 160,
+          "record_id": "160-PILOT-003",
+          "record_sha256": "e0020ce9aacd316dc5d8eec42c88843ad935e2d648abadcb3954487502dbded2"
+        },
+        {
+          "phase": 169,
+          "record_id": "169-PACKET-003",
+          "record_sha256": "e7c9e51533aa81b65fcc71967f0f6a554e8ccfefc30fd2c521d5a3b8b6c0790d"
+        }
+      ],
+      "eligibility_id": "138-ELIGIBILITY-016",
+      "upstream_lab_review_id": "149-REVIEW-016",
+      "compatibility_decisions": [
+        {
+          "compatibility_decision_id": "176-COMPAT-013",
+          "pilot_packet_id": "176-PILOT-003",
+          "dimension": "identity",
+          "inherited_state": "Exact upstream identity join available",
+          "inherited_reason": "Curated mapping resolves exact legacy panel panel-56e-f15ex-st-louis-line for Boeing F-15EX St. Louis production line; no legacy observation is transferred into the governed chain.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test identity against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-014",
+          "pilot_packet_id": "176-PILOT-003",
+          "dimension": "period",
+          "inherited_state": "Legacy periods present — compatibility not adjudicated",
+          "inherited_reason": "The legacy panel records 4 observations under period March 2021 through December 2025; Phase 138 does not declare them compatible with the newer Phase 68–74 chain.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test period against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-015",
+          "pilot_packet_id": "176-PILOT-003",
+          "dimension": "measure",
+          "inherited_state": "Legacy measure present — admission not transferred",
+          "inherited_reason": "The legacy indicator is “Cumulative aircraft delivery milestones and line interruption” in Cumulative delivered aircraft; its observations remain in Phase 56.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test measure against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-016",
+          "pilot_packet_id": "176-PILOT-003",
+          "dimension": "denominator",
+          "inherited_state": "Legacy denominator recorded — compatibility not adjudicated",
+          "inherited_reason": "The legacy denominator is “F-15EX aircraft recorded as delivered by the Air Force”; Phase 138 creates no cross-period or cross-regime bridge.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test denominator against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-017",
+          "pilot_packet_id": "176-PILOT-003",
+          "dimension": "revision lineage",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "inherited_reason": "No complete revision, correction, break, and supersession chain has been adjudicated for transfer.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Test revision lineage against the original artifacts and the Phase 69–70 contract; record a dated result without transferring a value."
+        },
+        {
+          "compatibility_decision_id": "176-COMPAT-018",
+          "pilot_packet_id": "176-PILOT-003",
+          "dimension": "dual review",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "inherited_reason": "No two independent reviewer receipts bind the same series definition and observation set.",
+          "upstream_admitted_flag": false,
+          "allowed_decisions": [
+            "Compatible",
+            "Incompatible",
+            "Insufficient evidence",
+            "Carried"
+          ],
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "primary_reviewer_role": null,
+          "independent_reviewer_role": null,
+          "rationale": null,
+          "next_action": "Obtain two independent reviewer receipts binding the same series definition and observation set."
+        }
+      ],
+      "provenance_table": [
+        {
+          "provenance_row_id": "176-PROVENANCE-003-IDENTITY",
+          "dimension": "identity",
+          "source_pointer": "169-PACKET-003/compatibility_tests/identity",
+          "inherited_state": "Exact upstream identity join available",
+          "known_value": {
+            "entity_id": "119-PROJECT-016",
+            "legacy_panel_id": "panel-56e-f15ex-st-louis-line"
+          },
+          "evidence_required": "Exact stable entity identity across every candidate observation and every revision.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "Curated mapping resolves exact legacy panel panel-56e-f15ex-st-louis-line for Boeing F-15EX St. Louis production line; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-003-DENOMINATOR",
+          "dimension": "denominator",
+          "source_pointer": "169-PACKET-003/compatibility_tests/denominator",
+          "inherited_state": "Legacy denominator recorded — compatibility not adjudicated",
+          "known_value": null,
+          "evidence_required": "A source-defined denominator that remains compatible across every proposed period, or an explicit break declaration.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy denominator is “F-15EX aircraft recorded as delivered by the Air Force”; Phase 138 creates no cross-period or cross-regime bridge."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-003-PERIOD",
+          "dimension": "period",
+          "source_pointer": "169-PACKET-003/compatibility_tests/period",
+          "inherited_state": "Legacy periods present — compatibility not adjudicated",
+          "known_value": null,
+          "evidence_required": "Exact start, end, frequency, cutoff, and comparability treatment for every proposed observation period.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy panel records 4 observations under period March 2021 through December 2025; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-003-METHOD",
+          "dimension": "method",
+          "source_pointer": "169-PACKET-003/compatibility_tests/measure",
+          "inherited_state": "Legacy measure present — admission not transferred",
+          "known_value": null,
+          "evidence_required": "Exact measure name, unit, collection method, acceptance rule, and method-change treatment.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "The legacy indicator is “Cumulative aircraft delivery milestones and line interruption” in Cumulative delivered aircraft; its observations remain in Phase 56. The bound packet does not yet establish a compatible method bridge."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-003-REVISION",
+          "dimension": "revision policy",
+          "source_pointer": "169-PACKET-003/compatibility_tests/revision lineage",
+          "inherited_state": "Not tested — governed adjudication pending",
+          "known_value": null,
+          "evidence_required": "Complete correction, supersession, vintage, restatement, and series-break lineage.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "No complete revision, correction, break, and supersession chain has been adjudicated for transfer."
+        },
+        {
+          "provenance_row_id": "176-PROVENANCE-003-MISSINGNESS",
+          "dimension": "missingness",
+          "source_pointer": "169-PACKET-003/compatibility_tests",
+          "inherited_state": "Not specified in the bound Phase 160/169 packet",
+          "known_value": null,
+          "evidence_required": "A declared missingness taxonomy distinguishing missing, unavailable, not applicable, suppressed, revised, and incompatible values.",
+          "compatibility_outcome": null,
+          "decision_date": null,
+          "decision_receipt_id": null,
+          "boundary": "No governed missingness policy is present in the bound packet. Missing, unavailable, and incompatible observations must not be converted to zero."
+        }
+      ],
+      "tests_required": 6,
+      "tests_terminal": 0,
+      "tests_compatible": 0,
+      "admission_outcome": null,
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "primary_reviewer_role": null,
+      "independent_reviewer_role": null,
+      "rationale": null,
+      "admission_receipt_required_fields": [
+        "decision_receipt_id",
+        "pilot_admission_packet_id",
+        "series_definition_digest",
+        "six_terminal_compatibility_decision_ids",
+        "admission_outcome",
+        "decision_date",
+        "primary_reviewer_role",
+        "independent_reviewer_role",
+        "rationale",
+        "revision_and_missingness_boundary"
+      ],
+      "decisive_next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails.",
+      "stop_rule": "Do not transfer a legacy value unless identity, period, measure, denominator, revision lineage, and dual-review admission all pass under the governed contract.",
+      "route": "/review/v1oct/longitudinal-decisions/f15ex-production-delivery/"
+    }
+  ],
+  "zero_series_owner_disposition": {
+    "zero_series_disposition_id": "176-ZERO-SERIES-001",
+    "slug": "zero-series-launch-boundary",
+    "packet_kind": "separate owner-controlled zero-series public-boundary disposition",
+    "title": "Explicit zero-series launch boundary",
+    "packet_state": "Held — pilot decisions and owner disposition pending",
+    "upstream_records": [
+      {
+        "phase": 160,
+        "record_id": "160-BOUNDARY-001",
+        "record_sha256": "cf0709948189ef4a50a99edb481d4599d53ec5ff9774bf8101c2318b0d13e553"
+      },
+      {
+        "phase": 169,
+        "record_id": "169-PACKET-004",
+        "record_sha256": "de844beb622257364d6483b1507ff5adc94e51cbe066ce046efa7e44315f14c6"
+      }
+    ],
+    "boundary_scope_digest": "90a6e4c5922b1e361c2f2ecdae7f65d36fa98e1a4d94e3c417c043d9fe5a82ad",
+    "reviewed_eligibility_ids": [
+      "138-ELIGIBILITY-001",
+      "138-ELIGIBILITY-002",
+      "138-ELIGIBILITY-003",
+      "138-ELIGIBILITY-004",
+      "138-ELIGIBILITY-005",
+      "138-ELIGIBILITY-006",
+      "138-ELIGIBILITY-007",
+      "138-ELIGIBILITY-008",
+      "138-ELIGIBILITY-009",
+      "138-ELIGIBILITY-010",
+      "138-ELIGIBILITY-011",
+      "138-ELIGIBILITY-012",
+      "138-ELIGIBILITY-013",
+      "138-ELIGIBILITY-014",
+      "138-ELIGIBILITY-015",
+      "138-ELIGIBILITY-016",
+      "138-ELIGIBILITY-017",
+      "138-ELIGIBILITY-018",
+      "138-ELIGIBILITY-019",
+      "138-ELIGIBILITY-020",
+      "138-ELIGIBILITY-021",
+      "138-ELIGIBILITY-022",
+      "138-ELIGIBILITY-023",
+      "138-ELIGIBILITY-024",
+      "138-ELIGIBILITY-025",
+      "138-ELIGIBILITY-026",
+      "138-ELIGIBILITY-027",
+      "138-ELIGIBILITY-028",
+      "138-ELIGIBILITY-029",
+      "138-ELIGIBILITY-030",
+      "138-ELIGIBILITY-031",
+      "138-ELIGIBILITY-032",
+      "138-ELIGIBILITY-033",
+      "138-ELIGIBILITY-034",
+      "138-ELIGIBILITY-035",
+      "138-ELIGIBILITY-036",
+      "138-ELIGIBILITY-037",
+      "138-ELIGIBILITY-038",
+      "138-ELIGIBILITY-039"
+    ],
+    "proposed_scope": "v1 may launch without longitudinal claims if every one of the 39 reviews is disclosed, every trend/outcome/comparison surface states zero admitted series, and a dated owner receipt accepts that boundary.",
+    "prerequisite_compatibility_decision_ids": [
+      "176-COMPAT-001",
+      "176-COMPAT-002",
+      "176-COMPAT-003",
+      "176-COMPAT-004",
+      "176-COMPAT-005",
+      "176-COMPAT-006",
+      "176-COMPAT-007",
+      "176-COMPAT-008",
+      "176-COMPAT-009",
+      "176-COMPAT-010",
+      "176-COMPAT-011",
+      "176-COMPAT-012",
+      "176-COMPAT-013",
+      "176-COMPAT-014",
+      "176-COMPAT-015",
+      "176-COMPAT-016",
+      "176-COMPAT-017",
+      "176-COMPAT-018"
+    ],
+    "prerequisite_pilot_admission_packet_ids": [
+      "176-PILOT-001",
+      "176-PILOT-002",
+      "176-PILOT-003"
+    ],
+    "prerequisite_state": "Not satisfied — eighteen compatibility outcomes and three pilot admission outcomes remain null",
+    "allowed_owner_outcomes": [
+      "Accept zero-series public boundary",
+      "Decline zero-series public boundary",
+      "Carry pending pilot adjudication"
+    ],
+    "owner_outcome": null,
+    "owner_accepted_zero_series": null,
+    "decision_date": null,
+    "decision_receipt_id": null,
+    "reviewer_role": null,
+    "rationale": null,
+    "admitted_series_id": null,
+    "observations_transferred": 0,
+    "receipt_required_fields": [
+      "decision_receipt_id",
+      "zero_series_disposition_id",
+      "boundary_scope_digest",
+      "owner_outcome",
+      "decision_date",
+      "reviewer_role",
+      "rationale",
+      "public_boundary_text",
+      "next_action"
+    ],
+    "decisive_next_action": "Obtain one dated owner disposition: admit only a Phase 69–70-compatible pilot or explicitly accept the disclosed zero-series boundary.",
+    "stop_rule": "The absence of an admitted series forbids trends, outcome claims, rankings, scores, and causal comparisons.",
+    "route": "/review/v1oct/longitudinal-decisions/zero-series-launch-boundary/"
+  },
+  "public_method_note": {
+    "state": "Prepared — publication decision absent",
+    "title": "Why incompatible observations are not pooled",
+    "principles": [
+      "A shared entity label does not prove a stable series identity.",
+      "Periods, measures, methods, and denominators must be compatible or carry a visible series break.",
+      "Revision lineage and dual review must bind the exact proposed observation set.",
+      "Missing, unavailable, suppressed, revised, and incompatible observations are not zero.",
+      "If no pilot qualifies, the public product may state zero admitted series only after the separate owner receipt accepts that boundary."
+    ],
+    "publication_outcome": null,
+    "publication_date": null,
+    "publication_receipt_id": null
+  },
+  "public_html_routes": [
+    "/review/v1oct/longitudinal-decisions/",
+    "/review/v1oct/longitudinal-decisions/hornsdale-power-reserve/",
+    "/review/v1oct/longitudinal-decisions/dalrymple-grid-battery/",
+    "/review/v1oct/longitudinal-decisions/f15ex-production-delivery/",
+    "/review/v1oct/longitudinal-decisions/zero-series-launch-boundary/"
+  ],
+  "public_json_exports": [
+    "/data/phase-176-longitudinal-admission-and-zero-series-decision.json"
+  ],
+  "publication_state": "Prepared for local review routing — compatibility, admission, and zero-series outcomes remain unpublished",
+  "next_action": "Run the eighteen compatibility reviews against original artifacts under dual control; issue a pilot admission, rejection, or carry receipt only after all six cells are terminal, then seek the separate zero-series owner disposition if no pilot qualifies."
+}

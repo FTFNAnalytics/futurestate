@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import PortugalWaterCitiesDossierArticle from '../../../components/review/PortugalWaterCitiesDossierArticle.astro';
+import {portugalWaterCitiesDossiers} from '../../../lib/portugal-water-cities-named-dossiers.mjs';
+const record=portugalWaterCitiesDossiers.records.find(r=>r.record_id==='place-porto')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><PortugalWaterCitiesDossierArticle record={record}/></BaseLayout>

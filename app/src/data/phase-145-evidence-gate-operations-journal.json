@@ -1,0 +1,982 @@
+{
+  "schema_version": "1.0",
+  "phase": 145,
+  "program_id": "FTFN-PHASE-145",
+  "dataset": "phase_145_evidence_gate_operations_journal",
+  "title": "Evidence-gate operations journal",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Bind every Phase 60 gate and companion Phase 61 recheck to its lawful date, exact artifact, independent receipt, and complete propagation contract.",
+  "record_scope": "Evidence-gate operations journal records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "Alternative official-source discovery expands the review shelf; it does not by itself admit evidence or answer a mission.",
+    "Calendar-bound checks remain unoperated until their lawful date, and shared-date gates retain separate identities, decisions, and receipts.",
+    "No project stage, place state, longitudinal observation, comparison verdict, outcome, score, rank, causal finding, recommendation, owner decision, or public-launch authorization is inferred.",
+    "A bounded repository result describes the reviewed corpus and search path; it never proves that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v1rc/gate-journal/",
+    "public_export": "/data/phase-145-evidence-gate-operations-journal.json"
+  },
+  "counts": {
+    "operating_records": 15,
+    "completed_upstream_decisions": 2,
+    "future_time_gated_operations": 13,
+    "due_operations_pending": 0,
+    "future_operation_integrity_failures": 0,
+    "predated_operations": 0
+  },
+  "gate_operations": [
+    {
+      "operation_id": "145-GATE-001",
+      "cycle_item_id": "60-CYCLE-DARPA-RESULTS",
+      "slug": "darpa-results",
+      "title": "DARPA Lift Challenge official measured results",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-08-14",
+      "time_gated": false,
+      "decision_status": "material_change",
+      "decision_date": "2026-08-23",
+      "receipt_id": "receipt-60-darpa-2026-08-23-results",
+      "source_checked_date": "2026-08-23",
+      "receipt_type": "Change Note",
+      "bounded_result": "Official measured competition results and prize decisions publish; no evidence transfers to Waymo or to an operating-outcome stage.",
+      "next_check_date": "2026-09-23",
+      "exact_next_artifact": "A dated DARPA final-results artifact identifying measured team performance, winners, and prize decisions.",
+      "source_ids": [
+        "source-darpa-lift-challenge-2026"
+      ],
+      "underlying_signal_id": "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": "60-PROP-DARPA-2026-08-23",
+      "signal_decision": "promote_to_published_measured_result",
+      "canonical_dossier_ids": [
+        "briefing-adoption-003-autonomy-evtol",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": "update-2026-08-23-phase-60b-evidence-decisions",
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-adoption-003-autonomy-evtol",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-autonomy-regulation-to-service",
+        "dependency-map-technology-adoption-is-not-operating-outcome",
+        "update-2026-08-23-phase-60b-evidence-decisions"
+      ],
+      "preparation_state": "Completed upstream — complete",
+      "stop_rule": "Preserve the dated upstream receipt and exact Phase 60 propagation proof; do not rewrite the historical decision."
+    },
+    {
+      "operation_id": "145-GATE-002",
+      "cycle_item_id": "60-CYCLE-SPACE-COAST-SLF-LICENCE",
+      "slug": "space-coast-slf-licence",
+      "title": "Space Coast Shuttle Landing Facility licence disposition",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-08-15",
+      "time_gated": false,
+      "decision_status": "no_material_change",
+      "decision_date": "2026-08-15",
+      "receipt_id": "receipt-60-slf-2026-08-15-no-material-change",
+      "source_checked_date": "2026-08-15",
+      "receipt_type": "No Material Change",
+      "bounded_result": "The formal site-licence disposition remains unresolved; no named-file stage, matrix cell, mission, operation, or utilization state changes.",
+      "next_check_date": "2026-09-15",
+      "exact_next_artifact": "A formal FAA renewal, replacement, lapse, surrender, or other current disposition for the Shuttle Landing Facility site licence.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license"
+      ],
+      "underlying_signal_id": "signal-shuttle-landing-facility-license-status-watch",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": "60-PROP-SLF-2026-08-15",
+      "signal_decision": "retain_in_review_no_material_change",
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-004-space-coast",
+        "briefing-project-conversion-004-space-coast-authority",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-local-authorization-is-not-operation"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "named_file_ids": [
+        "61-PROJECT-SPACE-COAST-AUTHORITY"
+      ],
+      "update_id": "update-2026-08-23-phase-60b-evidence-decisions",
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-local-conversion-004-space-coast",
+        "briefing-project-conversion-004-space-coast-authority",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-space-coast-plan-to-mission",
+        "dependency-map-local-authorization-is-not-operation",
+        "local-florida-space-coast-launch-corridor",
+        "61-PROJECT-SPACE-COAST-AUTHORITY",
+        "update-2026-08-23-phase-60b-evidence-decisions"
+      ],
+      "preparation_state": "Completed upstream — complete",
+      "stop_rule": "Preserve the dated upstream receipt and exact Phase 60 propagation proof; do not rewrite the historical decision."
+    },
+    {
+      "operation_id": "145-GATE-003",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+      "slug": "louisiana-starlink-adoption",
+      "title": "Louisiana Starlink observed adoption",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-01",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+      "source_ids": [
+        "source-57b-louisiana-starlink-bead-agreement"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-la-starlink-adoption",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-policy-standards-to-implementation",
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-01. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-004",
+      "cycle_item_id": "60-CYCLE-LOUISIANA-NEXTLINK-ADOPTION",
+      "slug": "louisiana-nextlink-adoption",
+      "title": "Louisiana Nextlink observed adoption",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-09",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "Observed subscription or take-rate evidence for a fixed eligible-location cohort after service availability.",
+      "source_ids": [
+        "source-57b-louisiana-nextlink-first-bead-tower"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-la-nextlink-adoption",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-policy-standards-to-implementation",
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-09. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-005",
+      "cycle_item_id": "60-CYCLE-AMTRAK-PIDS-CLOSEOUT",
+      "slug": "amtrak-pids-closeout",
+      "title": "Amtrak PIDS final closeout",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-10",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A final FRA-accepted closeout record tied to the PIDS program scope and completed deployment denominator.",
+      "source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-amtrak-pids",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-autonomy-regulation-to-service",
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-10. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-006",
+      "cycle_item_id": "60-CYCLE-HANFORD-MATERIAL-BALANCE",
+      "slug": "hanford-material-balance",
+      "title": "Hanford complete material balance",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-10",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A compatible material balance covering feed, immobilized glass, secondary waste, inventory change, losses, period, and reconciliation method.",
+      "source_ids": [
+        "source-57d-hanford-wtp-consent-july-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-hanford-mass-balance",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-advanced-manufacturing-research-to-production",
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-10. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-007",
+      "cycle_item_id": "60-CYCLE-NNSA-GAO-BASELINE",
+      "slug": "nnsa-gao-baseline",
+      "title": "NNSA GAO enterprise baseline closure",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-10",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A final enterprise-wide integrated cost and schedule baseline plus GAO closure evidence tied to recommendation GAO-23-104661.",
+      "source_ids": [
+        "source-56q-gao-23-104661-recommendation-status"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-gao-baseline",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-policy-standards-to-implementation",
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-10. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-008",
+      "cycle_item_id": "60-CYCLE-MONTANA-COMPLETED-QUARTER",
+      "slug": "montana-completed-quarter",
+      "title": "Montana BEAD completed quarterly outcome",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-15",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "One complete public quarterly report with project identity, reporting period, locations, completion state, and outcome denominator.",
+      "source_ids": [
+        "source-57f-montana-bead-resource-index-august-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-mt-bead-quarter",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-policy-standards-to-implementation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-local-authorization-is-not-operation"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-policy-standards-to-implementation",
+        "dependency-map-local-authorization-is-not-operation"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-15. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-009",
+      "cycle_item_id": "60-CYCLE-ARIZONA-WASTEWATER",
+      "slug": "arizona-wastewater",
+      "title": "Phoenix and TSMC wastewater delivery and operation",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-22",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A project record establishing completed and accepted conveyance work, operating reclaimed-water infrastructure, measured flow, discharge or compliance, or a facility water balance.",
+      "source_ids": [
+        "source-phoenix-tsmc-2026-wastewater-development-agreement"
+      ],
+      "underlying_signal_id": "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-001-southwest-chips",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-industrial-water-agreement-to-reuse-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ],
+      "local_system_ids": [
+        "local-us-southwest-chip-corridor"
+      ],
+      "named_file_ids": [
+        "61-PROJECT-TSMC-ARIZONA"
+      ],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-local-conversion-001-southwest-chips",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-industrial-water-agreement-to-reuse-operation",
+        "dependency-map-frontier-system-constraint-atlas",
+        "local-us-southwest-chip-corridor",
+        "61-PROJECT-TSMC-ARIZONA"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-22. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-010",
+      "cycle_item_id": "60-CYCLE-NNSA-ACCEPTED-CAPACITY",
+      "slug": "nnsa-accepted-capacity",
+      "title": "NNSA accepted operating capacity",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-09-24",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A final accepted operating-capacity artifact linked to operating configuration, acceptance criteria, and observed qualified output.",
+      "source_ids": [
+        "source-57b-nnsa-pit-production-draft-peis-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-accepted-capacity",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-adoption-004-advanced-manufacturing",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-adoption-004-advanced-manufacturing",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-advanced-manufacturing-research-to-production",
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-09-24. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-011",
+      "cycle_item_id": "60-CYCLE-LOUDOUN-STANDARDS",
+      "slug": "loudoun-standards",
+      "title": "Loudoun Phase 2 data-center standards",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-10-01",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A county staff report, public-hearing record, board action, adopted text, effective date, or formal revised schedule for Phase 2 standards.",
+      "source_ids": [
+        "source-loudoun-phase2-data-center-standards"
+      ],
+      "underlying_signal_id": "signal-loudoun-phase2-data-center-standards-watch",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-local-conversion-002-northern-virginia-compute",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-northern-virginia-compute-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ],
+      "local_system_ids": [
+        "local-northern-virginia-data-center-corridor"
+      ],
+      "named_file_ids": [
+        "61-PROJECT-NOVA-LARGE-LOAD"
+      ],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-local-conversion-002-northern-virginia-compute",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-northern-virginia-compute-to-service",
+        "dependency-map-frontier-system-constraint-atlas",
+        "local-northern-virginia-data-center-corridor",
+        "61-PROJECT-NOVA-LARGE-LOAD"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-10-01. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-012",
+      "cycle_item_id": "60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY",
+      "slug": "amtrak-named-asset-reliability",
+      "title": "Amtrak named-asset reliability",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-10-09",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A repeated named-asset reliability series with stable asset identity, period, denominator, failure definition, and repair outcome.",
+      "source_ids": [
+        "source-57e-amtrak-accessibility-progress-june-2026"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-amtrak-reliability",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-autonomy-regulation-to-service"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-autonomy-regulation-to-service",
+        "dependency-map-comparative-outcomes-require-common-denominators"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-10-09. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-GATE-013",
+      "cycle_item_id": "60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE",
+      "slug": "nnsa-recurring-qualified-rate",
+      "title": "NNSA recurring qualified pit rate",
+      "operation_kind": "Phase 60 evidence gate",
+      "lawful_date": "2026-10-09",
+      "time_gated": true,
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "bounded_result": null,
+      "next_check_date": null,
+      "exact_next_artifact": "A recurring qualified-output series with acceptance definition, facility identity, period, denominator, and comparable rate calculation.",
+      "source_ids": [
+        "source-57f-nnsa-pit-production-current"
+      ],
+      "underlying_signal_id": "signal-57y-preserved-nnsa-qualified-rate",
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-adoption-004-advanced-manufacturing",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-advanced-manufacturing-research-to-production"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "local_system_ids": [],
+      "named_file_ids": [],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-adoption-004-advanced-manufacturing",
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-advanced-manufacturing-research-to-production",
+        "dependency-map-technology-adoption-is-not-operating-outcome"
+      ],
+      "preparation_state": "Decision and complete typed propagation contract assembled — operation not yet lawful",
+      "stop_rule": "Do not operate, date, receipt, or populate the signal decision/update proof before 2026-10-09. A No Material Change, bounded blocker, or contract-compliant reschedule remains a valid result."
+    },
+    {
+      "operation_id": "145-RECHECK-PROJECT-TORONTO-24-254930-2026-09-09",
+      "cycle_item_id": null,
+      "phase_61_file_id": "61-PROJECT-TORONTO-24-254930",
+      "slug": "project-toronto-24-254930",
+      "title": "Toronto application 24 254930",
+      "operation_kind": "Independent Phase 61 project-file recheck",
+      "lawful_date": "2026-09-09",
+      "time_gated": true,
+      "operation_scope_digest": "41144e6bb41d655054af60e5e5e86b667fefcba2f36542608b5e011bef172e4a",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_result": null,
+      "next_check_date": "2026-09-09",
+      "exact_next_artifact": "Introduced or enacted amendment numbers, accepted condition-compliance records, or the first confirmed permit, start, completion, or occupancy record for the application.",
+      "source_ids": [
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-development-pipeline-2025"
+      ],
+      "underlying_signal_ids": [
+        "signal-toronto-24-254930-community-council-recommendation",
+        "signal-toronto-2025-development-pipeline-delivery-gap"
+      ],
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-local-authorization-is-not-operation"
+      ],
+      "local_system_ids": [
+        "local-ontario-real-estate"
+      ],
+      "named_file_ids": [
+        "61-PROJECT-TORONTO-24-254930"
+      ],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-local-conversion-southwest-ontario",
+        "reader-pathway-cross-corridor-authorization-to-operation",
+        "dependency-map-frontier-system-constraint-atlas",
+        "dependency-map-local-authorization-is-not-operation",
+        "local-ontario-real-estate",
+        "61-PROJECT-TORONTO-24-254930"
+      ],
+      "preparation_state": "Decision and propagation contract assembled — operation not yet lawful",
+      "prior_terminal_state_not_preserved": false,
+      "stop_rule": "Do not treat Council adoption as enactment or use aggregate Toronto and CMHC stages as this project's delivery outcome. Keep this recheck independent from any same-date Phase 60 gate."
+    },
+    {
+      "operation_id": "145-RECHECK-PROJECT-SPACE-COAST-AUTHORITY-2026-09-15",
+      "cycle_item_id": null,
+      "phase_61_file_id": "61-PROJECT-SPACE-COAST-AUTHORITY",
+      "slug": "project-space-coast-authority",
+      "title": "Space Coast authorization-to-mission stack",
+      "operation_kind": "Independent Phase 61 project-file recheck",
+      "lawful_date": "2026-09-15",
+      "time_gated": true,
+      "operation_scope_digest": "d5988eba8c89a0d270822653c9d12e2692df7a8e8e83790af912351929ce7996",
+      "decision_status": "scheduled",
+      "decision_date": null,
+      "receipt_id": null,
+      "source_checked_date": null,
+      "receipt_type": null,
+      "reviewer_role": null,
+      "rationale": null,
+      "bounded_result": null,
+      "next_check_date": "2026-09-15",
+      "exact_next_artifact": "The FAA's formal Shuttle Landing Facility licence disposition or a named operator authorization, accepted capital asset, mission, or repeated service record.",
+      "source_ids": [
+        "source-faa-shuttle-landing-facility-license",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-faa-slc40-final-ea"
+      ],
+      "underlying_signal_ids": [
+        "signal-shuttle-landing-facility-license-status-watch",
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-slc40-final-environmental-decision"
+      ],
+      "propagation_contract_id": "phase-60-evidence-to-decision-propagation",
+      "propagation_proof_id": null,
+      "signal_decision": null,
+      "canonical_dossier_ids": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline"
+      ],
+      "outcomes_watch_id": "briefing-outcomes-watch-001-what-actually-changed",
+      "evidence_cycle_digest_id": "briefing-evidence-cycle-001-operating-baseline",
+      "reader_pathway_ids": [
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation"
+      ],
+      "dependency_map_ids": [
+        "dependency-map-frontier-system-constraint-atlas"
+      ],
+      "local_system_ids": [
+        "local-florida-space-coast-launch-corridor"
+      ],
+      "named_file_ids": [
+        "61-PROJECT-SPACE-COAST-AUTHORITY"
+      ],
+      "update_id": null,
+      "required_sequence": [
+        "source_check",
+        "receipt",
+        "signal_decision",
+        "canonical_dossier",
+        "reader_pathway",
+        "dependency_map",
+        "outcomes_watch",
+        "update_log",
+        "git_backed_release_validation"
+      ],
+      "propagation_targets": [
+        "briefing-outcomes-watch-001-what-actually-changed",
+        "briefing-evidence-cycle-001-operating-baseline",
+        "reader-pathway-space-coast-plan-to-mission",
+        "reader-pathway-cross-corridor-authorization-to-operation",
+        "dependency-map-frontier-system-constraint-atlas",
+        "local-florida-space-coast-launch-corridor",
+        "61-PROJECT-SPACE-COAST-AUTHORITY"
+      ],
+      "preparation_state": "Decision and propagation contract assembled — operation not yet lawful",
+      "prior_terminal_state_not_preserved": false,
+      "stop_rule": "Do not treat environmental review, a site licence, or an infrastructure milestone as operator approval, mission completion, or corridor reliability. Keep this recheck independent from any same-date Phase 60 gate."
+    }
+  ],
+  "operating_date": "2026-08-31",
+  "calendar_contract": "Operate only the due item on or after its America/Edmonton calendar date. Same-date items remain independent decisions and receipts.",
+  "public_html_routes": [
+    "/review/v1rc/gate-journal/"
+  ],
+  "public_json_exports": [
+    "/data/phase-145-evidence-gate-operations-journal.json"
+  ]
+}

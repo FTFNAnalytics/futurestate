@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import RuhrWaterCityDossierArticle from '../../../components/review/RuhrWaterCityDossierArticle.astro';
+import {ruhrWaterCityDossiers} from '../../../lib/ruhr-water-city-named-dossiers.mjs';
+const record=ruhrWaterCityDossiers.records.find(r=>r.record_id==='project-phoenix-see')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><RuhrWaterCityDossierArticle record={record}/></BaseLayout>

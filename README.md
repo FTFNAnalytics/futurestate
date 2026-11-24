@@ -1,5 +1,65 @@
 # FTFN
 
+Current September 25 build: [owner-authorized AI determinations and five new Montana dossiers](docs/owner-authorized-build-2026-09-25.md). Human review is no longer a build prerequisite. All 25 backlog and 103 reviewed identity/counting decisions are recorded; locales and translation mapping are decided. Content expansion and exact-version AI review continue. Earlier waiting-for-human-review entries below are historical and superseded; nothing has been published.
+
+Latest September 25 local batch: [Vermont facility geography](docs/release-reviews/2026-09-22/vermont-facility-geography-followthrough-2026-09-25.md) passed full validation at 21:54:44.132 UTC as candidate `c341284d`, followed by exact recovery of application source `82473409` at 21:57:12.593 UTC. Output is 16,646 pages, 159 exports, 346 updates and 714,193 resolving local references. Annual/subject/reader preparation checks pass with unchanged readings, prompts and human-return fields. Four exact readings now distinguish historical permit/maps, separate source extents and an unresolved parcel/location discrepancy without accepting a current fab boundary. The separate [battery-source screen](docs/release-reviews/2026-09-22/battery-portfolio-source-screen-2026-09-25.md) is recorded without changing a measurement series. Keep the candidate stable for actual findings and decisions in the coordination handoff. The full six-stage goal and actual review, coverage, reader/accessibility, measurement and final-release/operating requirements remain open. Nothing was published. Earlier latest/current entries below retain their dated scope.
+
+Latest September 25 local batch: [Essex municipal identifiers](docs/release-reviews/2026-09-22/essex-municipal-followthrough-2026-09-25.md) passed full validation at 21:21:51.273 UTC as candidate `617ad958`, followed by exact recovery of application source `a43b5038` at 21:24:11.969 UTC. Output is 16,645 pages, 159 exports, 345 updates and 714,169 resolving local references. Annual/subject/reader preparation checks pass with unchanged readings, prompts and human-return fields. The separate [facility-geography preparation](docs/release-reviews/2026-09-22/vermont-facility-geography-source-preparation-2026-09-25.md#next-bounded-implementation) records historical maps and an unresolved planning/parcel discrepancy; it is not yet in the application or an accepted fab boundary. The full six-stage goal and actual review, coverage, reader/accessibility, measurement and final-release/operating requirements remain open. Nothing was published. Earlier latest/current entries below retain their dated scope.
+
+Latest September 25 local batch complete: [Vermont parcel identifiers](docs/release-reviews/2026-09-22/vermont-parcel-followthrough-2026-09-25.md) now appear on four exact related readings, preserving prior notes and separate source years. Full validation passed at 20:50:26.558 UTC: 16,644 pages, 159 exports, 344 updates and zero missing local targets. Candidate `d1da1460` is exactly recovered from source `9e9f591d`; annual, subject and reader preparation checks pass against the refreshed version without new human results. The [coordination handoff](docs/coordinator-handoff-2026-09-25.md) and [next Essex municipal batch](docs/release-reviews/2026-09-22/essex-2026-parcel-source-preparation-2026-09-25.md#next-bounded-implementation) are current. Nothing was published; the full six-stage objective remains open. Earlier current/latest entries below retain their dated scope.
+
+Latest September 25 local batch complete: [F-15EX official-source follow-up](docs/release-reviews/2026-09-22/f15ex-syndicated-access-2026-09-25.md) adds bounded source access and timing context while preserving the earlier receipts and measurement hold. Full validation passed at 20:11:54.260 UTC: 16,643 pages, 159 exports, 343 updates and zero missing local targets. Candidate `28a1095e` is exactly recovered from source `3911fe46`; annual, subject and reader preparation checks pass against the refreshed version. [Coordination handoff](docs/coordinator-handoff-2026-09-25.md) and [next Vermont batch](docs/release-reviews/2026-09-22/vermont-parcel-source-preparation-2026-09-25.md#next-implementation-batch) are current. No publishing or full-v1 completion is claimed; earlier entries below retain their dated scope.
+
+September 25 build complete locally: [Vermont planning geography follow-through](docs/release-reviews/2026-09-22/vermont-planning-followthrough-2026-09-25.md) adds source-located context to four existing readings after owner acceptance of the previous local deliverable. Full generation/validation passed: 16,642 pages, 159 exports, 342 updates and zero missing local link targets. Candidate `cd18cd5c`, receipt `204-FULL-LOCAL-VALIDATION-2026-09-25-28ab975b9072`. [Coordination handoff](docs/coordinator-handoff-2026-09-25.md) retains the review assignments and remaining decisions. Nothing was published; earlier entries below retain their dated scope.
+
+September 24 operation complete locally: [NNSA accepted-capacity decision and final validation](docs/phase-207-nnsa-capacity-recheck-2026-09-24.md). The bounded No Material Change receipt brings the cycle to 10/13 dated decisions without capacity admission or changing separate NNSA gates. Full validation, receipt-bearing rebuild and release verification passed: 16,641 HTML / 159 top-level JSON / 341 updates / zero missing targets. Receipt `204-FULL-LOCAL-VALIDATION-2026-09-24-a81c908440f5` binds the exact candidate. Later PDF visual follow-through is linked separately, preserving earlier access history. The existing monitor is updated; next operation is Toronto September 28. No push, deployment, launch or independent approval; Phases 205–216 remain open at their protected acceptance gates.
+
+Current planning: [September 24 next-build stages](docs/next-build-execution-plan-2026-09-24.md) — six delivery stages, the first five-working-day sprint, proposed responsibilities, dependencies and measurable completion gates. This is a planning update, not a new build receipt or release approval. Dated implementation entries below retain their historical scope.
+
+September 22 operation and build repair complete: [Arizona wastewater decision and final validation](docs/phase-207-arizona-recheck-2026-09-22.md). A bounded No Material Change receipt retains the Published agreement without asset/operation admission; the cycle is now 9/13 dated, with four future gates. Historical-date and release-manifest checks are repaired without rewriting prior receipts. Full local validation and receipt-bearing rebuild passed: 16,618 HTML / 157 top-level JSON / 319 updates / zero missing targets, receipt `204-FULL-LOCAL-VALIDATION-2026-09-22-536f9d7a0614`. The existing monitor now includes Toronto September 28 and the completed repair. Next primary gate: NNSA accepted capacity September 24. No push, deployment or launch; independent/owner/actual-month gates remain open. Earlier entries below are dated history.
+
+September 21 current operation complete: [Toronto project-file recheck](docs/phase-207-toronto-recheck-2026-09-21.md) preserves September 14 and records bounded No Material Change after exact application-portal and eight-address permit checks. Portal/Council discrepancies are explicit; no permit or stage advancement is inferred. Full local validation, receipt-bearing rebuild and release checks passed: 16,616 HTML / 157 top-level JSON / 317 updates, zero missing targets. Current receipt: `204-FULL-LOCAL-VALIDATION-2026-09-21-271e8a5718e4`. Next Toronto check: September 28, documented but not yet added to the scheduler because its update tool was unavailable. No push, deployment or launch; independent acceptance gates remain open. Earlier repair/receipt entries below are dated history.
+
+Latest September 15 repair complete: [Dependency/build repair and validation report](docs/phase-214-build-repair-2026-09-15.md). The approved repair has zero known npm audit vulnerabilities and passes strict checking, the full logged validation, receipt-bearing rebuild and release verification: 16,615 HTML pages / 157 top-level exports / 316 updates / zero missing internal targets. Receipt `204-FULL-LOCAL-VALIDATION-2026-09-15-29b5a7b8ab48` binds the current local candidate. Four official PDFs and nine selected pages were visually checked without changing measurement admissions. Independent acceptance, publication, deployment, launch and actual operating-month gates remain open; Phases 205–216 are not collectively complete. Earlier approval-blocked entries below are historical snapshots, not current instructions.
+
+Latest September 15 measurement continuation: [Dalrymple method follow-up](docs/phase-211-dalrymple-method-2026-09-15.md) narrows the required availability definition and interval-record request. It preserves all original pilot observations and research, with explicit text-only/access limits. No measured series is admitted and Phases 205–216 remain incomplete. Earlier entries below are historical snapshots.
+
+Latest September 15 reading continuation: [English reading presentation and source context](docs/phase-213-reading-editions-2026-09-15.md) adds paired-format navigation for 34 English drafts, direct original citations and section navigation across 104 unchanged articles, and 52 bounded source-check contexts across 37 articles. Source tests pass; rendered budgets and independent acceptance remain pending. The production verifier is prepared for exact receipt identities and separate companion checks, not run against mixed output. Phases 205–216 remain incomplete. Earlier entries below are historical snapshots.
+
+Latest September 15 continuation: [Briefing references and signal backlinks](docs/phase-208-reading-navigation-2026-09-15.md) replace oversized related-reading lists with complete paginated archives for 458 briefings and 744 signal backlinks. Direct citations precede shared-ID maps; original narratives and classification holds remain. Safe source checks pass and three templates parse. Candidate expectations: 16,600 HTML / 157 top-level JSON / 313 updates, not production. Phases 205–216, production, independent acceptance, release and the real operating month remain incomplete. Earlier entries below are historical snapshots.
+
+September 15 navigation continuation: [Complete Atlas relationship archives](docs/phase-208-atlas-navigation-2026-09-15.md) replace unbounded source/map and related-record lists with paginated reading. All 1,243 node rows and 1,177 link rows are preserved, duplicate graph rows are explicit, and previews link to the complete first page. Safe regressions and syntax checks pass; production rendering and real reader acceptance remain pending. Earlier entries below are historical snapshots.
+
+September 15 continuation: [Acquisition attribution and count corrections](docs/phase-206-reference-attribution-56gh-2026-09-15.md) add 21 documents, two briefings and seven linked-signal reviews. Current totals: 839 documents / 22 briefings and 826 signal classifications. Source-level tests pass; historical states, dates, archives and real receipts remain unchanged. The lexical triage has no unresolved matches for current text, but this does not clear the remaining corpus or satisfy release acceptance. Production, independent review and Phase 216 remain open. Earlier counts below are historical snapshots.
+
+September 15 attribution continuation: [57G registry corrections](docs/phase-206-reference-attribution-57g-2026-09-15.md) add 29 documents, Watch 037 and 29 linked signal reviews. Current totals: 818 documents / twenty briefings and 819 reviewed-cohort signal classifications. Embedded aggregate arithmetic, process schematics and schema fields are distinguished from fresh source reconciliation and operating evidence. Source-level checks pass; original history and actual receipts remain unchanged. Four lexical-screen candidates remain, not confirmed defects or whole-corpus clearance. Production, independent acceptance and Phase 216 remain open. Earlier counts below are historical snapshots.
+
+September 15 attribution continuation: [57H provenance and comparison corrections](docs/phase-206-reference-attribution-57h-2026-09-15.md) add 29 documents, Watch 038 and 29 linked signal reviews. Privacy guarantees, Hanford gate claims and NNSA source-join counts are corrected; an inherited report-ID mismatch remains explicit. Current totals: 789 documents / nineteen briefings and 790 reviewed-cohort signal classifications. Source-level checks pass; original history, earlier reviews and evidence receipts remain unchanged. Attribution, production, independent acceptance and Phase 216 remain open. Earlier counts below are historical snapshots.
+
+September 15 attribution continuation: [57I source-analysis and intake-control corrections](docs/phase-206-reference-attribution-57i-2026-09-15.md) add 29 documents, Watch 039 and 29 linked signal reviews. Eleven analyses, nine control notes and nine dockets distinguish historical source observations from assigned flags, pending reports and actual operating results. Current totals: 760 documents / eighteen briefings and 761 reviewed-cohort signal classifications. Source-level checks pass; original history, earlier reviews and evidence receipts are preserved. Remaining attribution, production, independent acceptance and Phase 216 remain open. Earlier counts below are historical snapshots.
+
+September 15 attribution continuation: [57J backfill and denominator corrections](docs/phase-206-reference-attribution-57j-2026-09-15.md) add 29 documents, Watch 040 and 29 linked signal reviews. The NNSA authority split is corrected; generated Montana controls remain distinct from completed reports and real migrations. Current totals: 731 documents / seventeen briefings and 732 reviewed-cohort signal classifications. Source-level checks pass; original history, earlier reviews and evidence receipts are preserved. Remaining attribution, production, independent acceptance and Phase 216 remain open. Earlier counts below are historical snapshots.
+
+September 15 attribution continuation: [57K transition-analysis corrections](docs/phase-206-reference-attribution-57k-2026-09-15.md) add 29 documents, Watch 041 and 29 linked signal reviews. Current totals: 702 documents / sixteen briefings and 703 reviewed-cohort signal classifications. Source-level checks pass; original history, earlier reviews and current evidence receipts are unchanged. Remaining attribution, production, independent acceptance and Phase 216 stay open. Earlier progress counts below are historical snapshots.
+
+September 15 attribution continuation: [56T recommendation-record corrections](docs/phase-206-reference-attribution-56t-2026-09-15.md) add 24 documents, Watch 024 and 24 linked signal reviews. Current totals: 673 documents / fifteen briefings and 674 reviewed-cohort signal classifications. Earlier reviews and evidence receipts are unchanged. Source-level checks pass; production, independent acceptance and Phase 216 remain open. Earlier progress counts below are historical snapshots.
+
+September 15 attribution continuation: [Phase 57L analysis, methods and linked-signal corrections](docs/phase-206-reference-attribution-57l-2026-09-15.md) add 29 documents, one briefing and 29 signal reviews. Totals: 649 documents / fourteen briefings and 650 reviewed-cohort signal classifications. Earlier reviews and dated evidence receipts are unchanged. Source-level checks pass; production, independent acceptance and Phase 216 remain open.
+
+September 15 attribution continuation: [Phase 57M corrections and remaining-corpus triage](docs/phase-206-reference-attribution-57m-2026-09-15.md) complete the 57M–57Y collection set: 620 documents / thirteen briefings. All 603 earlier reviews and real evidence receipts remain unchanged. A read-only screen identifies 74 additional research candidates, not verdicts; 57L is the next review priority. Production, independent acceptance and Phase 216 remain open.
+
+September 15 attribution continuation: [Separate Phase 57O / 57N corrections](docs/phase-206-reference-attribution-57no-2026-09-15.md) add 58 documents and two briefings. Coverage is 591 documents / twelve briefings; all 543 earlier reviews and current evidence decisions remain unchanged. Tests distinguish templates, label matching, case subsets and actual review authority. Production, independent acceptance and Phase 216 completion remain open.
+
+September 15 attribution continuation: [Separate Phase 57Q / 57P corrections](docs/phase-206-reference-attribution-57pq-2026-09-15.md) add 74 documents and two briefings, preserving distinct contract/cohort counts and separate review/release authority. Totals: 533 documents / ten briefings; all 467 earlier reviews and current evidence decisions are unchanged. Production, independent review and Phase 216 completion remain open.
+
+September 15 attribution continuation: [Separate Phase 57S / 57R corrections](docs/phase-206-reference-attribution-57rs-2026-09-15.md) add 90 reviewed documents and two briefings, preserving August 9 history, exact reopening requests and non-additive synthesis counts. Totals: 459 documents / eight briefings; 375 earlier reviews and current evidence decisions remain unchanged. Production, independent review and Phase 216 completion remain open.
+
+September 15 attribution update: [Phase 57X authorship and claim corrections](docs/phase-206-reference-attribution-57x-2026-09-15.md) add 63 reviewed documents and Research Watch 054. Totals: 126 documents / two briefings; earlier reviews and current evidence receipts remain unchanged. This is not full-corpus, production or Phase 216 acceptance.
+
+September 15 evidence update: [Montana no-change receipt and Shuttle formal-renewal correction](docs/phase-207-september-15-evidence-decisions.md). Eight of thirteen cycle gates now have dated decisions; five remain scheduled. The separate Shuttle companion preserves the August receipt and changes only the current site-authority account. Phases 205–216, independent acceptance, production validation and release remain incomplete.
+
+Latest local work: [all eight selected project drafts expanded](docs/phase-210-project-depth-progress-2026-09-15.md), joining the four expanded place profiles; historical identities and Toronto/Hanford receipts remain unchanged. The [first 25-item research batch](docs/phase-207-first-batch-research-complete-2026-09-14.md) has 213 checks and all 25 dispositions pending. [Full remaining gates](docs/phase-205-216-followup-2026-09-14.md). Phases 205–216 remain incomplete; no successful production build, GitHub push, deployment, independent approval or v1 launch is implied.
+
 Civilization is a choice.
 
 FTFN is a future-state intelligence project planned for `ftfn.io`. It tracks what could be, what it depends on, and what could stop it from happening.
@@ -18,16 +78,29 @@ It is a stack of dependencies.
 
 ## Current Local Milestone
 
-The active content milestone is **FTFN v0.9.0**, spanning Phases 130–144 and the three cumulative editions built on the retained v0.6 corpus:
+**September 9 audit and next work:** The fresh local build and all 22 selected npm-script checks passed at **10,233 pages, 151 top-level JSON exports, 231 updates, and 833 sources**. An independent output audit found 16 missing link targets, and the content review identified classification, coverage, source-currency, and reader-experience work. Start with the [build/content audit](docs/audits/2026-09-09-build-and-content-audit.md) and [Phase 205–216 roadmap](docs/roadmap-next-phases-205-216.md). The twelve next work packages are planned, not implemented. Historical hosted Sites version 79 remains separate from this local candidate.
 
-- **v0.7 — Evidence Admission Dockets:** twelve authority-gap closure maps, six priority mission dockets, eighteen requirement dockets, dated source-check receipts, an owner adjudication board, and six mission-decision packets.
-- **v0.8 — Conversion and Longitudinal Atlas:** readiness reviews for all 24 projects and 15 places, 24 named project chronicles, 15 place delivery ledgers, 39 longitudinal-eligibility reviews, and 12 governed comparison re-reviews.
-- **v0.9 — Living Public Intelligence:** 17 living topic desks, a 56-entry frontier systems almanac, 17 four-horizon delivery roadmaps, one inaugural edition plus four visibly scheduled editions, and the Phase 144 v1 launch-candidate audit.
+The active local milestone is the **FTFN v1 Public Reference Edition**, spanning Phases 181–204 on top of the immutable release-candidate and the still-live September/October operating programs:
 
-The verified local production contract is **6,504 HTML pages, 86 public JSON exports, and 169 public update records**. On 2026-08-31, the clean receipted build, manifest update, all 170 v0.7–v0.9 route checks, all 18 edition-export checks, and global release verification passed. This local result does not certify a commit, GitHub push, hosted deployment, DNS change, public-access change, owner acceptance, or v1 promotion.
+- **v1 release candidate / Phases 145–156:** evidence-gate operations, authority and evidence adjudication, longitudinal review, comparison passports, topic field guides, flagship reports, September edition packets, and the first derived v1 launch decision.
+- **September operating program / Phases 157–164:** candidate preservation, ten evidence-operation packets, 36 owner dockets, longitudinal pilots, 24 Stack Watch packets, local-system expansion, editorial runbooks, and the monthly candidate decision.
+- **September evidence cycle / Phases 165–172:** one lawful September 1 No Material Change decision, four weekly operating rooms, authority and mission hearings, longitudinal safeguards, a fifteen-place systems atlas, a frontier-systems compendium, and the September State Report.
+- **October operating program / Phases 173–180:** a 129-item closeout/opening ledger, Cycle 001 audit and Cycle 002 intake, 37 owner-controlled packets, longitudinal admission controls, a 32-packet current-source layer, ten deeper place dossiers, eight comparison overlays, four essays, and the October editorial/state-report system.
+- **Public Reference Edition / Phases 181–204:** canonical topic and question systems, a visible evidence backlog, global authority/jurisdiction/project/place architecture, comparison and longitudinal controls, failure and public-value research, correction services, accessible-edition contracts, and the *State of Future Systems 2026* package.
+
+The Phase 181–204 program contains **1,048 primary records, 3,216 unique public HTML routes, 25 JSON exports, and 24 dated update records**. Its complete local candidate passed the inherited and Phase 181–204 validation suite under receipt `204-FULL-LOCAL-VALIDATION-2026-09-01-be92c873cfdb`, with a 10,230-page / 151-export / 230-update / 830-source whole-site snapshot. Future evidence, owner decisions, expert and translation review, Git publication, hosting, DNS, public launch, and v1 promotion remain separate held states.
 
 ## Project Documents
 
+- [September 9 Build and Content Audit](docs/audits/2026-09-09-build-and-content-audit.md) - fresh validation, content depth and classification findings, source currency, generated links, page sizes, and hosted provenance.
+- [Next Build Roadmap: Phases 205–216](docs/roadmap-next-phases-205-216.md) - priorities, dependencies, owners, effort, content targets, release decisions, and twelve executable work packages.
+- [v1 Public Reference Edition Roadmap](docs/roadmap-v1-public-reference-edition.md) - ambitious, evidence-bounded Phase 181–204 content architecture, exact inventory, operating follow-through, and acceptance contract.
+- [v1 Public Reference Edition Session Handoff](docs/session-handoff-v1-public-reference-edition.md) - current 1,048-record candidate, validation boundary, held decisions, next sequence, and stop rules.
+- [October 2026 Operating Roadmap](docs/roadmap-v1-october-operating-program.md) - accelerated Phase 173–180 implementation plus the remaining lawful calendar, owner, publication, and v1 gates.
+- [October 2026 Session Handoff](docs/session-handoff-v1-october-operating-program.md) - exact accelerated inventory, immutable baselines, next lawful move, and stop rules.
+- [September Evidence-to-Publication Roadmap](docs/roadmap-v1-september-evidence-to-publication-cycle.md) - locally completed Phases 165–172 and the remaining lawful September/October calendar.
+- [September Operating Roadmap](docs/roadmap-v1-september-operating-program.md) - locally completed Phases 157–164 and the owner/time-gated operating backlog.
+- [v1 Release-Candidate Roadmap](docs/roadmap-v1-release-candidate.md) - locally completed Phases 145–156 and the immutable launch-candidate baseline.
 - [v0.9 Roadmap](docs/roadmap-v0.9.md) - completed Phases 140–144: living topic desks, the frontier systems almanac, delivery roadmaps, editorial editions, and the v1 launch-candidate audit.
 - [v0.9 Build Summary](docs/build-summary-v0.9.md) - the complete Living Public Intelligence route, data, cadence, and launch-gate contract.
 - [v0.9 Session Handoff](docs/session-handoff-v0.9.md) - owner-adjudication, evidence-calendar, and v1 promotion boundaries.
@@ -163,28 +236,23 @@ The verified local production contract is **6,504 HTML pages, 86 public JSON exp
 
 The Astro + TypeScript application lives in [app](app/). It includes schema-backed content collections, generated public routes, versioned JSON exports, source monitoring and coverage, the Evidence Fieldbook, the named project/place Atlas, and the v0.7–v0.9 public review layers.
 
-The Phase 130–144 source registries and routes are complete and locally release-verified. The sequence below is the reproducible certification path; Git publication, hosting, public access, DNS, owner acceptance, and v1 promotion remain separate decisions.
+The Phase 130–180 source, operating, and review layers are complete and locally release-verified. The sequence below is the reproducible Phase 173–180 certification path; Git publication, hosting, public access, DNS, owner acceptance, and v1 promotion remain separate decisions.
 
 From `app/`:
 
 ```text
-npm run build:v09-content
-npm run test:v07
-npm run test:v08
-npm run test:v09
-npm run validate:content
-npm run validate:candidates
-npm run source:health
-npm run check
+npm run build:v1oct-content
+npm run test:v1oct
+# Run the next command only when a changed candidate reports validation Pending.
+npm run finalize:v1oct-validation
+npm run build:v1oct-content
 npm run build
-npm run update:v09-manifest
-npm run verify:v07
-npm run verify:v08
-npm run verify:v09
+npm run verify:v1oct
+npm run update:v1oct-manifest
 npm run verify:release
 ```
 
-The verified v0.9.0 run produced 6,504 generated HTML pages, 86 public JSON exports, and 169 update records. Any later content change must rerun the sequence above before inheriting that verification claim.
+The verified Phase 180 run produced 7,014 generated HTML pages, 126 top-level JSON exports, 206 update records, and 830 canonical source records. Receipt `180-LOCAL-VALIDATION-2026-09-01-e42929fa956a` binds the exact Phase 173–180 candidate digest `ed6d79c0c0994f3a037355f681d94ad3dd01f430704d596ccddaea770154e0be`. Any later candidate change must create or match a valid content-addressed receipt and rerun the post-receipt build and release checks before inheriting this verification claim.
 
 The homepage now uses real seed records for signals, topics, sources, local systems, and briefings while preserving the 42/59 framing and dependency-stack thesis.
 

@@ -1,0 +1,1931 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-27",
+  "review_mode": "user_authorized_ai_editorial_judgment",
+  "scope": "All fourteen remaining annual topic chapters: original/current overviews and seventy sections/paragraphs, substantive inherited source-profile fields, the existing Climate/Space/Water clarifications, their two explicitly additional source profiles, the substantive September 15 SLF receipt and September 22 Arizona receipt. No new external source retrieval, PDF/browser inspection, legal or financial advice, operating observations or independent scientific reproduction.",
+  "counts": {
+    "annual_records": 14,
+    "paired_essay_presentations": 0,
+    "sections": 70,
+    "paragraphs": 70,
+    "section_findings": 70,
+    "required_presentation_changes": 6,
+    "source_profiles": 52,
+    "supplementary_source_profiles": 2,
+    "retained_prior_context_inputs": 1,
+    "additional_evidence_inputs": 1,
+    "new_primary_checks": 0,
+    "total_annual_assessments_including_prior_thirty_four": 48,
+    "remaining_annual_assessments": 10
+  },
+  "input_files": [
+    {
+      "path": "app/src/data/phase-204-reader-completion.json",
+      "whole_file_sha256": "38ffd8b3e44dc671dd6590f80658240b6e533c645e5cf5fc3e84f345009d9125"
+    },
+    {
+      "path": "app/src/data/annual-case-reviews.json",
+      "whole_file_sha256": "e1e2c92f78471c615363c2684d6169c5f18f0d2e27c5ab248c4cbbad76a0ac7f"
+    },
+    {
+      "path": "app/src/content/sources/source-noaa-2025-global-climate-report.json",
+      "whole_file_sha256": "dd8c9f18902e20b541696978d494fdaf7238849a6e453093262c1cd487b1c3bc"
+    },
+    {
+      "path": "app/src/content/sources/source-chandler-reclaimed-water-system.json",
+      "whole_file_sha256": "b21de1128514758b92beb9f446b31234794e249cd2d7c5657c280ce57912cf8a"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "203-TOPIC-04",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one scope clarification: the retained powered-lift rule concerns pilot/instructor certification and operating pathways, not issuance of all aircraft, operator or facility approvals. The rest of the chapter correctly separates selected pilots, company milestones and proposed service measures.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-04",
+          "route": "/reference/state-of-future-systems/topic-aviation/",
+          "title": "Aviation: connecting aircraft development to dependable service",
+          "original_payload_sha256": "df3bc809af9e718d285d8dbb9a5665e683251c1a5576dbdd4669c07369d2d75c",
+          "current_reading_sha256": "6125dcea4c50c73c1e6115a6938fb6cd1c6921226f5c13ce0e79cff080dedb76",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-faa-powered-lift-final-rule-2024",
+              "path": "app/src/content/sources/source-faa-powered-lift-final-rule-2024.json",
+              "whole_file_sha256": "b74dd7432e4a96d4322e305ec78723f94b3020591e0c3e33b78c23b7c6b0f8c8"
+            },
+            {
+              "source_id": "source-faa-eipp-selections-2026",
+              "path": "app/src/content/sources/source-faa-eipp-selections-2026.json",
+              "whole_file_sha256": "a259b52440ebb22d5c84ded88c7ae1f7d56bd157c47af05f3606fe865680316b"
+            },
+            {
+              "source_id": "source-joby-faa-conforming-aircraft-2026",
+              "path": "app/src/content/sources/source-joby-faa-conforming-aircraft-2026.json",
+              "whole_file_sha256": "d064d090fb77c111bd8cf28058bf8be55a718450a064a8a924281385ec96dce5"
+            },
+            {
+              "source_id": "source-56f-bts-technical-directive-40",
+              "path": "app/src/content/sources/source-56f-bts-technical-directive-40.json",
+              "whole_file_sha256": "4728b6a849793ca5c409e5b155c6e076a12b493c0e882bcc63192c446a4ccf69"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Read the approval stack in parts",
+              "payload_sha256": "989a51159cf5e2dfd36347bfd659aacca6ec4d478216582cedca4d286422aeaf"
+            },
+            {
+              "heading": "Integration pilots are evidence opportunities",
+              "payload_sha256": "c66726ff6e65fb95c87098119effc3f0d80d274d438092d97ec5d83b1a9d4949"
+            },
+            {
+              "heading": "Keep company milestones attributed",
+              "payload_sha256": "419b0fe481af53d2aeafce71f093eb0400bc740176111d6639fae08a4b1ec272"
+            },
+            {
+              "heading": "Service quality depends on the full journey",
+              "payload_sha256": "9948d264aedcfa7efa240746aae3a0e85e4592362e93db3d42aab77e34041193"
+            },
+            {
+              "heading": "The next decisive reporting package",
+              "payload_sha256": "e7ada322d39cd18d73dc9dad4783b6334508593f4bd46bc4c8913bee24d9e806"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                0,
+                "paragraphs",
+                0
+              ],
+              "prior": "Aircraft design approval, production approval, pilot qualification and an operator's authority are distinct objects. The FAA powered-lift rule creates operating and certification pathways within its scope; it does not issue every approval needed by a particular service. Local facilities, airspace procedures and emergency arrangements introduce additional responsibilities. A clear project account should name the relevant authority beside each step and identify the actual document, including conditions. This allows a reader to see where a technical milestone fits without inferring that one approval completes the entire operating chain.",
+              "replacement": "Aircraft design approval, production approval, pilot qualification and an operator's authority are distinct objects. The retained FAA powered-lift rule profile describes pilot and instructor certification and operating pathways; it does not itself grant an aircraft type certificate, operator certificate, route authority or vertiport approval. Local facilities, airspace procedures and emergency arrangements have additional responsibilities. A clear project account should name the relevant authority and exact instrument, including its conditions. This preserves the rule's stated scope without treating one milestone as the entire operating chain or claiming a new check of current permissions."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-04-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Read the approval stack in parts",
+          "claim_payload_sha256": "989a51159cf5e2dfd36347bfd659aacca6ec4d478216582cedca4d286422aeaf",
+          "disposition": "qualify",
+          "rationale": "Qualify certification pathways as pilot/instructor certification and operating provisions. Preserve aircraft design, production, operator, local-facility and other permissions as separate instruments; this is not a fresh legal-status check.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-04-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Integration pilots are evidence opportunities",
+          "claim_payload_sha256": "c66726ff6e65fb95c87098119effc3f0d80d274d438092d97ec5d83b1a9d4949",
+          "disposition": "retain",
+          "rationale": "Retain eIPP proposal selection as an opportunity for documented tests, not evidence of agreements, certification, completed flights or passenger service. Test conditions, unsuccessful attempts and plan changes remain proposed evidence requirements.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-04-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Keep company milestones attributed",
+          "claim_payload_sha256": "419b0fe481af53d2aeafce71f093eb0400bc740176111d6639fae08a4b1ec272",
+          "disposition": "retain",
+          "rationale": "Retain Joby attribution to the interested-party announcement. A conforming-aircraft milestone is not FAA type certification, and design claims, tests and recurring measures need configuration and conditions before comparison.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-04-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Service quality depends on the full journey",
+          "claim_payload_sha256": "9948d264aedcfa7efa240746aae3a0e85e4592362e93db3d42aab77e34041193",
+          "disposition": "retain",
+          "rationale": "Retain full-journey service dimensions and separate accessibility, noise and community populations. Weather, charging, staffing and cancellations are candidate dimensions, not observed problems assigned to a named operator.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-04-SECTION-5",
+          "section_index": 4,
+          "section_heading": "The next decisive reporting package",
+          "claim_payload_sha256": "e7ada322d39cd18d73dc9dad4783b6334508593f4bd46bc4c8913bee24d9e806",
+          "disposition": "retain",
+          "rationale": "Retain aircraft/site/route/date/exposure identity and bounded disclosure. The BTS reporting directive is a definition and obligation source, not a completed-year result or a ready-made comparison for another aviation model.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "f0560c436cdca57a0bb6ff790074c33246a8d0ef970e3e5cdc7d4b440cce6dbc"
+    },
+    {
+      "record_id": "203-TOPIC-05",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Chips and Compute chapter without further changes. Its stated capacity, utility, permitting and supplier boundaries agree with the inherited program and Virginia source profiles, and its final operating package is explicitly prospective.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-05",
+          "route": "/reference/state-of-future-systems/topic-chips-and-compute/",
+          "title": "Chips and Compute: the infrastructure behind usable capacity",
+          "original_payload_sha256": "05c6d59431b1695df26b4a4e18aada02c249b967d567e869f47dd85fd55e099d",
+          "current_reading_sha256": "c2683af654900ce4383551d9668265f6071dcf1cfe985cea7db40795aea93503",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-nist-chips",
+              "path": "app/src/content/sources/source-nist-chips.json",
+              "whole_file_sha256": "24730e0d1b1db8a03515a7b9f79b6349a6b40eea146daaed36a1617374e99ede"
+            },
+            {
+              "source_id": "source-virginia-jlarc-data-centers-2024",
+              "path": "app/src/content/sources/source-virginia-jlarc-data-centers-2024.json",
+              "whole_file_sha256": "4e15e4fbe8739fb3d9863f29352a098bcca6d2216380848ad9bef19d9971631e"
+            },
+            {
+              "source_id": "source-virginia-deq-data-center-air-permits",
+              "path": "app/src/content/sources/source-virginia-deq-data-center-air-permits.json",
+              "whole_file_sha256": "5a488e29a8ca2b64ca333f3b9848fdc402d30d60f299e24d660d6a1193d89d8d"
+            },
+            {
+              "source_id": "source-virginia-scc-transmission-projects",
+              "path": "app/src/content/sources/source-virginia-scc-transmission-projects.json",
+              "whole_file_sha256": "368f37cbdb123aac73c1f37f20cd6f562dbc19a6588d39820a5581148c42bfd4"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Define capacity before comparing it",
+              "payload_sha256": "bd5e7a0c15b2608a0ea4a53f9e68fcedf2c7b70a500b5537c621b9cb6617d18f"
+            },
+            {
+              "heading": "Follow electricity from forecast to customer service",
+              "payload_sha256": "47531484f2a42c40a99f9b4314057ebe4a918980e71a35fbdc76a4f3f09c34be"
+            },
+            {
+              "heading": "Permits reveal responsibilities, not completed operation",
+              "payload_sha256": "ba48f353fed6e6c096820a8955912864b5013fc0a7d02276dbe0ce9b345a6bb8"
+            },
+            {
+              "heading": "Supply chains and skills need evidence of delivery",
+              "payload_sha256": "68443683ec99204591afff68dd956a07332a1b031be42543c208e4024019db2c"
+            },
+            {
+              "heading": "What readers should be able to inspect next",
+              "payload_sha256": "de3df4503f46da2f4b4e4f26692ac4332831b98e49c1ce935b5216d538abe4e2"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-05-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Define capacity before comparing it",
+          "claim_payload_sha256": "bd5e7a0c15b2608a0ea4a53f9e68fcedf2c7b70a500b5537c621b9cb6617d18f",
+          "disposition": "retain",
+          "rationale": "Retain fab process/product qualification versus compute equipment/service definitions. Investment, area and demand are not output, and one operating campus phase cannot establish readiness of every announced expansion.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-05-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Follow electricity from forecast to customer service",
+          "claim_payload_sha256": "47531484f2a42c40a99f9b4314057ebe4a918980e71a35fbdc76a4f3f09c34be",
+          "disposition": "retain",
+          "rationale": "Retain the dated JLARC baseline and SCC docket-listing role. Neither identifies available power for a customer; exact decisions, conditions, construction, energization and service arrangements remain distinct.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-05-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Permits reveal responsibilities, not completed operation",
+          "claim_payload_sha256": "ba48f353fed6e6c096820a8955912864b5013fc0a7d02276dbe0ce9b345a6bb8",
+          "disposition": "retain",
+          "rationale": "Retain DEQ permits as permission and conditions for backup or onsite generation, not completed construction or compliant operation. Water-provider and treatment boundaries remain project-specific.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-05-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Supply chains and skills need evidence of delivery",
+          "claim_payload_sha256": "68443683ec99204591afff68dd956a07332a1b031be42543c208e4024019db2c",
+          "disposition": "retain",
+          "rationale": "Retain CHIPS and research-program activity as support context, not qualified supplier delivery or workforce sufficiency. Orders, delivery, acceptance and sustained availability require their own records.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-05-SECTION-5",
+          "section_index": 4,
+          "section_heading": "What readers should be able to inspect next",
+          "claim_payload_sha256": "de3df4503f46da2f4b4e4f26692ac4332831b98e49c1ce935b5216d538abe4e2",
+          "disposition": "retain",
+          "rationale": "Retain named facility and period joins, workload definitions and accepted chip-production criteria. Employment and public costs are separate economic questions; no capacity or regional dominance forecast is admitted.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "28004e5c210d0043145fc25546ecad04b350db3dd5d72137ce6e2448cf672d90"
+    },
+    {
+      "record_id": "203-TOPIC-06",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete currently corrected Climate chapter. Its September 23 additional NOAA source check resolves the original unnamed global-product reference while preserving annual/monthly scope, forecast distinctions and the absence of local causal or avoided-loss findings.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-06",
+          "route": "/reference/state-of-future-systems/topic-climate/",
+          "title": "Climate: connecting broad observations to local decisions",
+          "original_payload_sha256": "95218f6e2a8a7073ade45278e22a588b723308fb94c1ffa878901aa695a57ff5",
+          "current_reading_sha256": "4db32c91251d47787715267807756d9be7ccf45197e52a5de391ea077d1afd50",
+          "existing_review_payload_sha256": "64106489532c54d46bb14e4a1c6bca6921908c4f7af3750080f011672d8a8ee7",
+          "existing_review_absent": false,
+          "source_profiles": [
+            {
+              "source_id": "source-noaa-cpc-enso",
+              "path": "app/src/content/sources/source-noaa-cpc-enso.json",
+              "whole_file_sha256": "a7b3c926500051c55d64777c8d175ac5abc1c8ce939b6268869a41bd75703da3"
+            },
+            {
+              "source_id": "source-eccc-historical-climate-data",
+              "path": "app/src/content/sources/source-eccc-historical-climate-data.json",
+              "whole_file_sha256": "4c516a2ed8ab6b16e01f0966618e5e2f467d32b1f5a8f6d24f78186ae7b50213"
+            },
+            {
+              "source_id": "source-noaa-storm-events",
+              "path": "app/src/content/sources/source-noaa-storm-events.json",
+              "whole_file_sha256": "e6779b0b336411d0aba396eef690291a9e31c85b6e76ddde80a127d438a4d1d6"
+            },
+            {
+              "source_id": "source-usgcrp-nca5-transportation",
+              "path": "app/src/content/sources/source-usgcrp-nca5-transportation.json",
+              "whole_file_sha256": "d1d89a705d411438e9215eb27afadcc40e7cda45d85148afcab27d0dcc5912f7"
+            },
+            {
+              "source_id": "source-epa-ghg-inventory-reporting-boundary",
+              "path": "app/src/content/sources/source-epa-ghg-inventory-reporting-boundary.json",
+              "whole_file_sha256": "d1f1a108594bd9a2d9b2dc882df3788d20214c2921f8d0e6590cbdc42970637f"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Keep observation, forecast and scenario distinct",
+              "payload_sha256": "94b3aa6190109e8486cf615dd9859e44a0d68322d0ff84f96e62bfd1d72a6ba3"
+            },
+            {
+              "heading": "Translate hazards into an asset-specific exposure",
+              "payload_sha256": "6046910441b948e272f54adfe4ff70607a200d3083ec3a7663bfaba1ea2b1c91"
+            },
+            {
+              "heading": "Treat event and loss records as bounded observations",
+              "payload_sha256": "51499aadb9056d853d02b2168423d97ea8cf22e1ee366539d7afdfa21513e19c"
+            },
+            {
+              "heading": "Emissions accounts require their own boundaries",
+              "payload_sha256": "3d09842be26988304934200cd7b3392d881e2c6021d5e271ea53b3fe2ccb23ea"
+            },
+            {
+              "heading": "Show adaptation as a documented decision and follow-up",
+              "payload_sha256": "ca01542aa6e4eb7ed83c785003446de3245f3a779e232f7703593949d03061e5"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-06-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Keep observation, forecast and scenario distinct",
+          "claim_payload_sha256": "94b3aa6190109e8486cf615dd9859e44a0d68322d0ff84f96e62bfd1d72a6ba3",
+          "disposition": "retain",
+          "rationale": "Retain the January 14, 2026 NOAA summary for calendar 2025 and its separate December scope. Preserve ENSO forecasts, station observations, metadata and information-availability dates. The additional global-report profile was not an original citation and remains explicitly additional.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-06-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Translate hazards into an asset-specific exposure",
+          "claim_payload_sha256": "6046910441b948e272f54adfe4ff70607a200d3083ec3a7663bfaba1ea2b1c91",
+          "disposition": "retain",
+          "rationale": "Retain the NCA transportation framework at national/regional scope. Hazard, exposure, damage and service interruption require distinct local evidence; no named local loss is attributed to climate change.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-06-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Treat event and loss records as bounded observations",
+          "claim_payload_sha256": "51499aadb9056d853d02b2168423d97ea8cf22e1ee366539d7afdfa21513e19c",
+          "disposition": "retain",
+          "rationale": "Retain Storm Events reporting, revisions, geography and incomplete loss coverage. Insurance, repair and business-interruption records cannot be summed without overlap and definition checks.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-06-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Emissions accounts require their own boundaries",
+          "claim_payload_sha256": "3d09842be26988304934200cd7b3392d881e2c6021d5e271ea53b3fe2ccb23ea",
+          "disposition": "retain",
+          "rationale": "Retain national inventory versus facility-program scope, thresholds, methods, years and revisions. Neither a facility trend nor a change in reporting alone establishes regional balance, policy causation or compliance.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-06-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Show adaptation as a documented decision and follow-up",
+          "claim_payload_sha256": "ca01542aa6e4eb7ed83c785003446de3245f3a779e232f7703593949d03061e5",
+          "disposition": "retain",
+          "rationale": "Retain adaptation decisions, implementation and later observations as separate steps. Avoided harm requires an appropriate counterfactual; no such calculation, data reconstruction or new observation was performed.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "c03ea7dcb5d1febb9ce6aa128697f8f52093b30d561c13eb231a4e273ca22664"
+    },
+    {
+      "record_id": "203-TOPIC-07",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Critical Minerals chapter without changes. It preserves commodity/material identity, financing versus physical progress, jurisdiction-specific conditions and customer qualification without asserting newly accepted production or supply security.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-07",
+          "route": "/reference/state-of-future-systems/topic-critical-minerals/",
+          "title": "Critical Minerals: from a resource opportunity to accepted material",
+          "original_payload_sha256": "b106ba3b96eb66a8a0e6b3b426060cc756e471a79d1a1708b1dd44a358311380",
+          "current_reading_sha256": "ba1f6cdaeb636859eb045cbb4d80886f4902b26a38a4b31ca50a240d9816dceb",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-usgs-mineral-commodity-summaries",
+              "path": "app/src/content/sources/source-usgs-mineral-commodity-summaries.json",
+              "whole_file_sha256": "fd4d8bc3a78422cee12b975f22f930af6f4f7c1f2ebf7e9816a0719e2e33b7d1"
+            },
+            {
+              "source_id": "source-dod-mp-materials-loan-2025",
+              "path": "app/src/content/sources/source-dod-mp-materials-loan-2025.json",
+              "whole_file_sha256": "d88186fda7e0f606393190dd59109ed6539f9f12e8383c2ad5193690c8e8f401"
+            },
+            {
+              "source_id": "source-usaspending-api",
+              "path": "app/src/content/sources/source-usaspending-api.json",
+              "whole_file_sha256": "20601b7cb25c22415adbc284b41618ca3522881bcfec9b5cae7e07af98f6022e"
+            },
+            {
+              "source_id": "source-doe-critical-minerals-materials-program",
+              "path": "app/src/content/sources/source-doe-critical-minerals-materials-program.json",
+              "whole_file_sha256": "9cacd8e6f4fc12eb6283dc9d14339eb0d21c9c6eb2a9189bf48c385a8e006287"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Begin with the material and its intended use",
+              "payload_sha256": "4280d7e82fed88a3ec196a5abbeebbc97e3752da294f3a9d9e77bee160e52ea7"
+            },
+            {
+              "heading": "Financing changes a project's options",
+              "payload_sha256": "1aee6606c031201d5cce17a09ecec685dc2e90a0707e09c386de588e33825ef6"
+            },
+            {
+              "heading": "Permits and conditions belong to specific jurisdictions",
+              "payload_sha256": "070e5bf660b3a8723f3cabf7e2dea2eec1e1808dd3cc3945702fbc246c9c8d2a"
+            },
+            {
+              "heading": "Qualification connects extraction to manufacturing",
+              "payload_sha256": "93fbed2a3eadba2439e98086e1959c91c0cf9a4199b477040357ec5a13ef52e6"
+            },
+            {
+              "heading": "Assess security of supply with more than announced capacity",
+              "payload_sha256": "953f7dc6ac8e98ddf8903906096caf63c9657c5db22ce1a5171835c5891e97ec"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-07-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Begin with the material and its intended use",
+          "claim_payload_sha256": "4280d7e82fed88a3ec196a5abbeebbc97e3752da294f3a9d9e77bee160e52ea7",
+          "disposition": "retain",
+          "rationale": "Retain occurrence, resource, mine product and qualified processed input as different objects. Application-specific substitution and customer requirements cannot be inferred from the annual USGS commodity context; revisions and lag remain visible.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-07-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Financing changes a project's options",
+          "claim_payload_sha256": "1aee6606c031201d5cce17a09ecec685dc2e90a0707e09c386de588e33825ef6",
+          "disposition": "retain",
+          "rationale": "Retain the named executed-loan role and the distinction among support, obligation, outlay and accepted work. Face value is not commissioned capacity, feedstock, repayment or sustained output.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-07-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Permits and conditions belong to specific jurisdictions",
+          "claim_payload_sha256": "070e5bf660b3a8723f3cabf7e2dea2eec1e1808dd3cc3945702fbc246c9c8d2a",
+          "disposition": "retain",
+          "rationale": "Retain separate land, environmental, water and operating instruments and conditional compliance. This is a general reading framework, not a newly verified permit or timetable for a named project.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-07-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Qualification connects extraction to manufacturing",
+          "claim_payload_sha256": "93fbed2a3eadba2439e98086e1959c91c0cf9a4199b477040357ec5a13ef52e6",
+          "disposition": "retain",
+          "rationale": "Retain composition, lot identity, specification and customer acceptance. Pilot material, a first lot and recurring supply differ; feedstock, yield, residue and inventory fields are proposed, not invented observations.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-07-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Assess security of supply with more than announced capacity",
+          "claim_payload_sha256": "953f7dc6ac8e98ddf8903906096caf63c9657c5db22ce1a5171835c5891e97ec",
+          "disposition": "retain",
+          "rationale": "Retain compatible facility periods, mix and ownership before trends. Supply continuity, cost, environmental performance and customer concentration remain separate; recycling comparisons need the same material specification.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "fcb667d9738c33e35f3c95b465aee2528b49be5908a5e62e2cea8eaeb11d765a"
+    },
+    {
+      "record_id": "203-TOPIC-08",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one scope correction: identify the inherited OMB memorandum as applying to non-national-security federal systems. The chapter otherwise gives a bounded defensive evidence framework without asserting local compromise, remediation success or generalized security improvement.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-08",
+          "route": "/reference/state-of-future-systems/topic-cybersecurity/",
+          "title": "Cybersecurity: making obligations observable in operating systems",
+          "original_payload_sha256": "28a7aec77fb930df593c59f4e14e88a6614e4349bbd40dcafceb2c5b6e2d05b4",
+          "current_reading_sha256": "4bbf6345b9ac8fb73fea41d7a0fcdd1b6131c150150807a0c50146f337324af0",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-nist-nvd-api",
+              "path": "app/src/content/sources/source-nist-nvd-api.json",
+              "whole_file_sha256": "9e3157c6005c253b90b33c937a872708878ebc37ffc4d5b143ddfed19aefed55"
+            },
+            {
+              "source_id": "source-cisa-kev-catalog",
+              "path": "app/src/content/sources/source-cisa-kev-catalog.json",
+              "whole_file_sha256": "47df56400a5d10291016d471c1c102cd40959e5df8f33974adf53e4107908711"
+            },
+            {
+              "source_id": "source-cisa-cybersecurity-advisories",
+              "path": "app/src/content/sources/source-cisa-cybersecurity-advisories.json",
+              "whole_file_sha256": "bd8bb1ac65dfa5fe64d78fe653a09b757244c20d3e18baf8e27b790ea0251e3b"
+            },
+            {
+              "source_id": "source-nist-pqc",
+              "path": "app/src/content/sources/source-nist-pqc.json",
+              "whole_file_sha256": "fbb067a36696801dd0203ca831526ff0ca017ca6eb9a92ace0e6931b0a3a1b21"
+            },
+            {
+              "source_id": "source-omb-m-26-15-pqc-migration",
+              "path": "app/src/content/sources/source-omb-m-26-15-pqc-migration.json",
+              "whole_file_sha256": "59019836e32bc8c3d0cd11ab85a6219df557d2c8847aa315f96648dda9efc08b"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "A vulnerability record needs an asset context",
+              "payload_sha256": "d561ddee98df24b540ce5e81e34c3bfe7af6452045b046f1b6539d47fc090a78"
+            },
+            {
+              "heading": "Inventory quality shapes every later measure",
+              "payload_sha256": "9fbf6e6f90efc6015ec1ffda77c5ba798de36af4b024cdc32191ba3bd54947a5"
+            },
+            {
+              "heading": "Separate action from verification",
+              "payload_sha256": "3c01e898795db493a79208bdf6e0f470529dfb97363daea61007085a6b3ae2c2"
+            },
+            {
+              "heading": "Post-quantum migration illustrates the implementation problem",
+              "payload_sha256": "40fbfe2cce3aa602273be07599c51c159c001e23030d2a4626f01ab032acf903"
+            },
+            {
+              "heading": "Measure outcomes without rewarding incomplete visibility",
+              "payload_sha256": "97d384d7a121b678503728b0a624f7f4638f1cf9c3b76c8d3445b9972607f142"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                3,
+                "paragraphs",
+                0
+              ],
+              "prior": "NIST standards and federal migration guidance make cryptographic change more concrete, but a standard does not replace cryptography in an operating system. Institutions need to identify where vulnerable algorithms are used, which information needs long protection and which suppliers control implementation. Procurement, interoperability testing, cutover and retirement then become distinct milestones. The report should keep those records tied to named systems and versions. A plan can be useful evidence of preparation while the actual migration remains unproven; an isolated pilot cannot establish organization-wide completion.",
+              "replacement": "NIST standards and the retained federal migration guidance make cryptographic change more concrete, but a standard does not replace cryptography in an operating system. The inherited OMB M-26-15 profile describes planning requirements for non-national-security federal systems, not an identical obligation for every system or institution. A named account still needs the actual cryptographic inventory, data-protection needs and supplier dependencies, followed by procurement, interoperability testing, cutover and retirement records tied to system versions. A plan demonstrates preparation, not completed migration; an isolated pilot cannot establish organization-wide completion. This assessment does not newly verify the memorandum, later amendments or agency compliance."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-08-SECTION-1",
+          "section_index": 0,
+          "section_heading": "A vulnerability record needs an asset context",
+          "claim_payload_sha256": "d561ddee98df24b540ce5e81e34c3bfe7af6452045b046f1b6539d47fc090a78",
+          "disposition": "retain",
+          "rationale": "Retain NVD metadata and KEV known-exploitation listings as inputs to asset-specific assessment. Neither listing establishes exposure or compromise at a named organization; version, reachability and mitigations remain necessary.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-08-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Inventory quality shapes every later measure",
+          "claim_payload_sha256": "9fbf6e6f90efc6015ec1ffda77c5ba798de36af4b024cdc32191ba3bd54947a5",
+          "disposition": "retain",
+          "rationale": "Retain inventory discovery date, environment, owner, exceptions and missing assets as part of every denominator. These are proposed dimensions, not measured agency coverage.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-08-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Separate action from verification",
+          "claim_payload_sha256": "3c01e898795db493a79208bdf6e0f470529dfb97363daea61007085a6b3ae2c2",
+          "disposition": "retain",
+          "rationale": "Retain attempted patch action versus later verification and distinct incident-response stages. The account can explain scope and responsible review without exposing exploitable configurations; no actual remediation finding is claimed.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-08-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Post-quantum migration illustrates the implementation problem",
+          "claim_payload_sha256": "40fbfe2cce3aa602273be07599c51c159c001e23030d2a4626f01ab032acf903",
+          "disposition": "qualify",
+          "rationale": "Qualify the M-26-15 non-national-security federal-system boundary. Standards, plans, procurement, testing, cutover and retirement are distinct; the chapter does not verify current compliance or any organization-wide migration.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-08-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Measure outcomes without rewarding incomplete visibility",
+          "claim_payload_sha256": "97d384d7a121b678503728b0a624f7f4638f1cf9c3b76c8d3445b9972607f142",
+          "disposition": "retain",
+          "rationale": "Retain incident definitions, exposure, detection changes, periods and exclusions before interpreting fewer reports or shorter recovery. Reject a catalog-count security score and causal benefit without operating evidence.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "116fb65743abea3351266d35dafb34b12176e044b25f38a9f33acf0a73a86867"
+    },
+    {
+      "record_id": "203-TOPIC-09",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Discovery Technologies chapter without changes. Portal discovery, actual data products, coverage, interpretation and institutional use retain their distinct evidence roles, with no newly computed map, impact estimate or claimed scientific reproduction.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-09",
+          "route": "/reference/state-of-future-systems/topic-discovery-technologies/",
+          "title": "Discovery Technologies: turning observations into usable knowledge",
+          "original_payload_sha256": "f15d0b7401ebcd24f2af7a03299431034a77b78ca45eaba67345eaa4f32a596d",
+          "current_reading_sha256": "83a48ed74391fbcced3606043f7b394b591b44543e7f64041447f156acea9f07",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-usgs-3d-elevation-program",
+              "path": "app/src/content/sources/source-usgs-3d-elevation-program.json",
+              "whole_file_sha256": "66bb14201acd1a60b8db005c13022fc7e6bbc6bda7c150e8045b49ebdd885a6e"
+            },
+            {
+              "source_id": "source-nasa-earthdata-cmr-api",
+              "path": "app/src/content/sources/source-nasa-earthdata-cmr-api.json",
+              "whole_file_sha256": "144291d2073fe7307889c41fb87fbd3e727bcc0f7d40ff2d2cf90b7f8a040c0a"
+            },
+            {
+              "source_id": "source-usgs-landsat-data-access",
+              "path": "app/src/content/sources/source-usgs-landsat-data-access.json",
+              "whole_file_sha256": "9ae427a1ae3e28edcc79ed86e55fc54c61a859e1652a79ee1045b922761f252f"
+            },
+            {
+              "source_id": "source-noaa-ocean-exploration-data",
+              "path": "app/src/content/sources/source-noaa-ocean-exploration-data.json",
+              "whole_file_sha256": "ea2071f6b2b8769d47775134414875a5f0991af537ab9fce624fff47d7e57e5a"
+            },
+            {
+              "source_id": "source-noaa-ncei-access",
+              "path": "app/src/content/sources/source-noaa-ncei-access.json",
+              "whole_file_sha256": "55e69066c174a3da2997eea959e0606295a15dee199e2ef4799e884ecf1922ed"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Identify the actual data product",
+              "payload_sha256": "be481e83db24ab7fd30c5c30b98a4e9867cc8c0733b62c0854de86e8b8bd590a"
+            },
+            {
+              "heading": "Coverage determines what can be seen",
+              "payload_sha256": "59d9b36c2c9e289d8181f1c26112632b8db042964893212b016869ddea85537b"
+            },
+            {
+              "heading": "Validation connects a signal to an interpretation",
+              "payload_sha256": "ce1313f380746e50c4f21500566e7f8e8aee0d7c1ad6aad0afc5b2c56ff19310"
+            },
+            {
+              "heading": "Institutional adoption is an observable step",
+              "payload_sha256": "71411cccf316734969b8a4b47eee9a5f41533fb56de75b5007830cfae1cf9e44"
+            },
+            {
+              "heading": "The next reporting package should be reproducible",
+              "payload_sha256": "1e3d11d3d43ef48c68c2c9d01ed7bcf36a51414ab7b43bb151ebafd4d249a314"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-09-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Identify the actual data product",
+          "claim_payload_sha256": "be481e83db24ab7fd30c5c30b98a4e9867cc8c0733b62c0854de86e8b8bd590a",
+          "disposition": "retain",
+          "rationale": "Retain CMR as metadata discovery rather than the selected dataset itself. Instrument, processing level, version, resolution, coverage and vintage must accompany an actual analysis.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-09-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Coverage determines what can be seen",
+          "claim_payload_sha256": "59d9b36c2c9e289d8181f1c26112632b8db042964893212b016869ddea85537b",
+          "disposition": "retain",
+          "rationale": "Retain clouds, tracks, revisit timing, sampling methods and quality as coverage limits. Missing or unobserved areas are not negative findings about local hazards, resources or infrastructure.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-09-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Validation connects a signal to an interpretation",
+          "claim_payload_sha256": "ce1313f380746e50c4f21500566e7f8e8aee0d7c1ad6aad0afc5b2c56ff19310",
+          "disposition": "retain",
+          "rationale": "Retain reference observations, processing changes and validation limits. The chapter proposes interpretation checks rather than certifying every inherited product for every local use.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-09-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Institutional adoption is an observable step",
+          "claim_payload_sha256": "71411cccf316734969b8a4b47eee9a5f41533fb56de75b5007830cfae1cf9e44",
+          "disposition": "retain",
+          "rationale": "Retain named decision/workflow records as evidence of use. Download counts, model improvements and institutional adoption do not establish better resident or infrastructure outcomes.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-09-SECTION-5",
+          "section_index": 4,
+          "section_heading": "The next reporting package should be reproducible",
+          "claim_payload_sha256": "1e3d11d3d43ef48c68c2c9d01ed7bcf36a51414ab7b43bb151ebafd4d249a314",
+          "disposition": "retain",
+          "rationale": "Retain selected files, procedures, validation, decision dates and revision effects in a future reproducible package. Public reproduction limits should be disclosed; avoided loss, productivity and scientific importance require separate evidence.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "0c61174a5e577cba6a06462c09fea2adac747b5a8f05a5d995caa889d053fddb"
+    },
+    {
+      "record_id": "203-TOPIC-10",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Energy chapter without further changes. Its definitions and proposed service chain preserve power versus energy, system versus project scope, separate storage services and incident chronology without fabricating reliability, savings or safety results.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-10",
+          "route": "/reference/state-of-future-systems/topic-energy/",
+          "title": "Energy: from installed equipment to service when it is needed",
+          "original_payload_sha256": "12a73079fc8203c9e134496e21b9ef31bdc6cd2c46b0c566287cc6421ee173b6",
+          "current_reading_sha256": "55de338346886df8526f045f7220d0a13560b8c0d6a77bd3ae6e1c7e127a9742",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-eia-electricity-data",
+              "path": "app/src/content/sources/source-eia-electricity-data.json",
+              "whole_file_sha256": "4587ca6c3fe07c2089f7abbd9f29e22dc65bf619f2bb09d58a58c89d4be0f131"
+            },
+            {
+              "source_id": "source-iea-ai",
+              "path": "app/src/content/sources/source-iea-ai.json",
+              "whole_file_sha256": "367a843a45f1fabf65adc2261a20298c4d825860c1c422afa4f474b7ab578a74"
+            },
+            {
+              "source_id": "source-doe-office-electricity-energy-storage",
+              "path": "app/src/content/sources/source-doe-office-electricity-energy-storage.json",
+              "whole_file_sha256": "4fdadb0c10a4ec291d58f2e9472e4d825dbf380054d4f0305e1e665dc59dba4f"
+            },
+            {
+              "source_id": "source-arizona-corporation-commission-utilities",
+              "path": "app/src/content/sources/source-arizona-corporation-commission-utilities.json",
+              "whole_file_sha256": "e1532e0f01fdd328d86d84c758cab62a26baf83e49715f9eb18d0471934a4c1f"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Use the right measure for the question",
+              "payload_sha256": "8f972354b8eaa8263e7357dfe07fd42fe244e2aca486d0e2cc2f2f718a44486e"
+            },
+            {
+              "heading": "Connect system forecasts to actual projects",
+              "payload_sha256": "c6abad660c646bf0be12626695f68880bcea30a0665c1dec623c4aaaaecf827c"
+            },
+            {
+              "heading": "Storage performs several different jobs",
+              "payload_sha256": "666e9eb40263ab45511ef729b13eecb68775cf749075d05bece5951821b08bf9"
+            },
+            {
+              "heading": "Safety and recovery have a chronology",
+              "payload_sha256": "573477e88d1706e2c49370279d578a0cfa6fbbc21f0af83ef72708d4a805ca95"
+            },
+            {
+              "heading": "Make the next energy edition useful to communities",
+              "payload_sha256": "43a6fd0e90d9ed87c560d8959648853291f0b5de40e031edc192380903554c0f"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-10-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Use the right measure for the question",
+          "claim_payload_sha256": "8f972354b8eaa8263e7357dfe07fd42fe244e2aca486d0e2cc2f2f718a44486e",
+          "disposition": "retain",
+          "rationale": "Retain power as a rate, energy as an amount and storage constraints as separate from nameplate values. Survey/vintage/period definitions and monthly versus interval observations remain necessary before dependable-service claims.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-10-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Connect system forecasts to actual projects",
+          "claim_payload_sha256": "c6abad660c646bf0be12626695f68880bcea30a0665c1dec623c4aaaaecf827c",
+          "disposition": "retain",
+          "rationale": "Retain IEA/EIA system context versus a specific customer service date or capacity. Utility territory, interconnection, tariffs, construction, energization and customer use remain distinct evidence steps.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-10-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Storage performs several different jobs",
+          "claim_payload_sha256": "666e9eb40263ab45511ef729b13eecb68775cf749075d05bece5951821b08bf9",
+          "disposition": "retain",
+          "rationale": "Retain energy shifting, frequency response and network support as different services. A single disturbance response is not annual availability, degradation, revenue or customer savings.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-10-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Safety and recovery have a chronology",
+          "claim_payload_sha256": "573477e88d1706e2c49370279d578a0cfa6fbbc21f0af83ef72708d4a805ca95",
+          "disposition": "retain",
+          "rationale": "Retain incident, corrective response, inspection and restart as different records with equipment-specific scope. No sitewide safe/failed/recovered label or denominator-free comparison is introduced.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-10-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Make the next energy edition useful to communities",
+          "claim_payload_sha256": "43a6fd0e90d9ed87c560d8959648853291f0b5de40e031edc192380903554c0f",
+          "disposition": "retain",
+          "rationale": "Retain recurring operation and customer-level cost/reliability evidence with a defensible comparison. A proposed asset history does not establish realized public benefit from the inherited program pages.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "b12cfe379b0caf2fe3a4ec860ede478a1fb1839dae472177a33897f4384420d7"
+    },
+    {
+      "record_id": "203-TOPIC-11",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one sample-and-source-role clarification. Make the nongeneralizable 18-effort GAO sample explicit beside the GSA purchasing channel so readers cannot transfer its findings to unrelated agreements or treat procurement availability as performance.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-11",
+          "route": "/reference/state-of-future-systems/topic-finance-and-risk/",
+          "title": "Finance and Risk: following commitments into delivered assets",
+          "original_payload_sha256": "07837346ef7b4436744a1b5043df088fdedad193b20530d23c786286b0ef7a52",
+          "current_reading_sha256": "4b5f491532e245aa3c961ab49adbbb29d2041addc34539d70d7cd37187d5806c",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-cmhc-housing-market-information-portal",
+              "path": "app/src/content/sources/source-cmhc-housing-market-information-portal.json",
+              "whole_file_sha256": "4afa11c05714c7ade391e874d756587766dfd88f182e9e46f09c89bf90da0371"
+            },
+            {
+              "source_id": "source-statcan-building-permits-survey",
+              "path": "app/src/content/sources/source-statcan-building-permits-survey.json",
+              "whole_file_sha256": "c77ed6253dcdb8620238f7d8be3ff82136369d03802d7aa4e39c0227cc4bcbb4"
+            },
+            {
+              "source_id": "source-gao-2025-prototype-ota-transition-report",
+              "path": "app/src/content/sources/source-gao-2025-prototype-ota-transition-report.json",
+              "whole_file_sha256": "fe6ac7f2764d7109bdae36aa3f9f1a10c0944618d6683939b01896509587705f"
+            },
+            {
+              "source_id": "source-gsa-buy-ai-onegov-2026",
+              "path": "app/src/content/sources/source-gsa-buy-ai-onegov-2026.json",
+              "whole_file_sha256": "6a5b2776229d4d47e5b3072aa28f9ecc2d1269f30f29d10bdeaab7c7f4dfc53a"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Name the transaction and its stage",
+              "payload_sha256": "40a0d9f1610206036899b777d05b09b4a819f21c87977d3881fd571b76eb88eb"
+            },
+            {
+              "heading": "Construction intentions provide context",
+              "payload_sha256": "7bea2e8fe53bd69256ceb8616ace0612621b5f6b979f326c336c9b211a568d99"
+            },
+            {
+              "heading": "Procurement availability is not procurement performance",
+              "payload_sha256": "fa16b37e247fb218b844af235799b5d5d08a84fd6342ce82e244875f06c61233"
+            },
+            {
+              "heading": "Risk allocation deserves its own explanation",
+              "payload_sha256": "b70b4fe629dc50922919ba6d196caf2067304425ee1e78ff37e3fe937ffaad56"
+            },
+            {
+              "heading": "Build an account of delivery and continuing exposure",
+              "payload_sha256": "28a75b19ea5e3077e48cc099e523b22e78db467d2af7f56a4aba8302461f50c2"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                2,
+                "paragraphs",
+                0
+              ],
+              "prior": "A purchasing channel can make a product accessible to government buyers without demonstrating that any agency has ordered or successfully used it. GSA's AI purchasing material illustrates this distinction. Follow-up evidence would identify the buyer, order, scope, acceptance criteria and operating period. The GAO prototype-transition work offers another caution: its sampled findings and department-level tracking limitations should remain separate from the fate of an individual prototype. A financing or acquisition story becomes more useful when it follows the actual transaction into a receiving organization's documented result.",
+              "replacement": "A purchasing channel can make a product available to eligible government buyers without showing that an agency ordered, accepted or successfully used it. The retained GSA Buy AI profile supplies channel and procurement context, not an operating outcome. Follow-up needs the buyer, order, scope, acceptance criteria and operating period. The retained GAO-25-107546 profile describes department-wide tracking limitations and a nongeneralizable sample of 18 weapon-system efforts; it does not establish the outcome of an unrelated prototype agreement. A useful financing or acquisition history follows the actual transaction into the receiving organization's documented result while keeping those source populations separate."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-11-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Name the transaction and its stage",
+          "claim_payload_sha256": "40a0d9f1610206036899b777d05b09b4a819f21c87977d3881fd571b76eb88eb",
+          "disposition": "retain",
+          "rationale": "Retain announced investment, signed loan, obligation, outlay and payment for accepted work as distinct transaction stages. Party, purpose, date and unsatisfied conditions determine what an amount represents.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-11-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Construction intentions provide context",
+          "claim_payload_sha256": "7bea2e8fe53bd69256ceb8616ace0612621b5f6b979f326c336c9b211a568d99",
+          "disposition": "retain",
+          "rationale": "Retain building permits as intentions and CMHC data as contextual statistics, not site viability, completed units or financial advice. Revisions and information-availability dates must not be backdated.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-11-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Procurement availability is not procurement performance",
+          "claim_payload_sha256": "fa16b37e247fb218b844af235799b5d5d08a84fd6342ce82e244875f06c61233",
+          "disposition": "qualify",
+          "rationale": "Qualify GAO-25-107546 as a nongeneralizable sample of 18 weapon-system efforts plus a tracking-system limitation. It does not assess unrelated prototype agreements. GSA availability, promotional terms and eligibility are not agency orders, acceptance or measured use.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-11-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Risk allocation deserves its own explanation",
+          "claim_payload_sha256": "b70b4fe629dc50922919ba6d196caf2067304425ee1e78ff37e3fe937ffaad56",
+          "disposition": "retain",
+          "rationale": "Retain documented risk allocation among parties without predicting defaults or losses. Missing contract, tariff or guarantee terms are unresolved evidence, not favorable terms inferred from financing.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-11-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Build an account of delivery and continuing exposure",
+          "claim_payload_sha256": "28a75b19ea5e3077e48cc099e523b22e78db467d2af7f56a4aba8302461f50c2",
+          "disposition": "retain",
+          "rationale": "Retain financial close, drawdown, accepted work and recurring operations with compatible costs/revenues. Public benefit and affordability need separate populations and attribution; no investment recommendation or single risk rating is made.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "4b3cce7eb01b668369f568517e9c5a2b44a493631bf7d76bf9b1c37a222731eb"
+    },
+    {
+      "record_id": "203-TOPIC-12",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one dating clarification. State the inherited Ontario tracker target year and displayed update date explicitly; the general population, workforce, participation and household-outcome framework is otherwise appropriately bounded.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-12",
+          "route": "/reference/state-of-future-systems/topic-human-futures/",
+          "title": "Human Futures: who can use, afford and influence new systems",
+          "original_payload_sha256": "463af90ea042a95162b2232fba232fbff18909315456b714cedae3102d0ae726",
+          "current_reading_sha256": "700af1ba80f39278470dff1f44acf353f5395c561bde61ec1efbecb1feab866a",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-cmhc-housing-market-information-portal",
+              "path": "app/src/content/sources/source-cmhc-housing-market-information-portal.json",
+              "whole_file_sha256": "4afa11c05714c7ade391e874d756587766dfd88f182e9e46f09c89bf90da0371"
+            },
+            {
+              "source_id": "source-ontario-housing-supply-progress",
+              "path": "app/src/content/sources/source-ontario-housing-supply-progress.json",
+              "whole_file_sha256": "18809c03ee3ab43080d6a766ff597963f86348f889eb81503cb8daa0c259a77f"
+            },
+            {
+              "source_id": "source-statcan-building-permits-survey",
+              "path": "app/src/content/sources/source-statcan-building-permits-survey.json",
+              "whole_file_sha256": "c77ed6253dcdb8620238f7d8be3ff82136369d03802d7aa4e39c0227cc4bcbb4"
+            },
+            {
+              "source_id": "source-census-building-permits-survey",
+              "path": "app/src/content/sources/source-census-building-permits-survey.json",
+              "whole_file_sha256": "84ee30ef494588d6b6fe236e508e3bcf6f18e37b2cd4b3436311e460aee1f2e7"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Start with the affected population",
+              "payload_sha256": "91b4f0625b6cc57891ea7030d9014a708916cd7b1254c2c3d8175cae08409623"
+            },
+            {
+              "heading": "Housing supply moves through several observable events",
+              "payload_sha256": "b5db190569d0eee948d92431e17231a94d1f9d6dab06100106df3c528168776f"
+            },
+            {
+              "heading": "Workforce programs need a follow-up chain",
+              "payload_sha256": "6d3d5a0ed2f584d8d04de23b46c20e462cb564218888ddf0abe3071cf56b7fe8"
+            },
+            {
+              "heading": "Public participation has a documented role",
+              "payload_sha256": "28f4c6893bd458a1cf473e39c52ef842257515888e0dbcc8af0e1328a33aca43"
+            },
+            {
+              "heading": "Connect service measures to household experience",
+              "payload_sha256": "015a903d950815d38669cfa06f30d09b156a59a45559c9b6a747fa1cca1472b7"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                1,
+                "paragraphs",
+                0
+              ],
+              "prior": "Permit surveys describe authorization, and development pipelines describe projects at different planning and building stages. Neither guarantees starts, completions or occupancy. The inherited Ontario tracking material also has a defined target year and update date that must remain attached. For a named development, the useful next evidence includes enacted approvals, satisfied conditions, servicing, construction and occupancy. Affordability requires additional information about prices or rents, household circumstances and relevant periods. A count of proposed homes cannot answer that question, even when the proposal is large relative to a local pipeline.",
+              "replacement": "Permit surveys describe authorization, and development pipelines mix planning and building stages; neither guarantees starts, completions or occupancy. The retained Ontario tracker profile concerns the 2024 target year and a displayed December 15, 2025 update, not a newly measured 2025 or 2026 delivery period. This assessment does not check for a later tracker release. A named development still needs enacted approvals, satisfied conditions, servicing, construction and occupancy records. Affordability additionally requires prices or rents, household circumstances and compatible periods. Proposed-home totals cannot establish that outcome."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-12-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Start with the affected population",
+          "claim_payload_sha256": "91b4f0625b6cc57891ea7030d9014a708916cd7b1254c2c3d8175cae08409623",
+          "disposition": "retain",
+          "rationale": "Retain residents, households, workers, customers and participants as different populations. Area availability and project outputs do not prove eligibility, affordability, accessibility or lived benefit.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-12-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Housing supply moves through several observable events",
+          "claim_payload_sha256": "b5db190569d0eee948d92431e17231a94d1f9d6dab06100106df3c528168776f",
+          "disposition": "qualify",
+          "rationale": "Qualify the Ontario tracker as the retained 2024 target-year account, displayed as updated December 15, 2025. Its July 2026 profile check does not turn it into 2025/2026 delivery data. Keep permit authorization, construction, occupancy and affordability distinct.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-12-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Workforce programs need a follow-up chain",
+          "claim_payload_sha256": "6d3d5a0ed2f584d8d04de23b46c20e462cb564218888ddf0abe3071cf56b7fe8",
+          "disposition": "retain",
+          "rationale": "Retain enrollment, completion, placement and retention cohorts, exclusions and follow-up windows. Employer assertions do not establish a regional shortage or causal program effects on wages or productivity.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-12-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Public participation has a documented role",
+          "claim_payload_sha256": "28f4c6893bd458a1cf473e39c52ef842257515888e0dbcc8af0e1328a33aca43",
+          "disposition": "retain",
+          "rationale": "Retain participation rules, open decisions, recorded input and adopted responses. Meetings, complaints, approval or absence of objections do not measure representative opinion or public trust.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-12-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Connect service measures to household experience",
+          "claim_payload_sha256": "015a903d950815d38669cfa06f30d09b156a59a45559c9b6a747fa1cca1472b7",
+          "disposition": "retain",
+          "rationale": "Retain recurring service, cost, waiting, eligibility and interruptions by population and period. Geography or eligibility changes require reconciliation before improvement claims; missing household outcomes remain unmeasured.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "95e06f0b60483c3a59c0f8cd0e346c5d720c3c2d3de26665463fa5d7e18266db"
+    },
+    {
+      "record_id": "203-TOPIC-13",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Mobility chapter without further changes. It distinguishes assistance, testing and paid service, keeps permission separate from actual availability and requires compatible exposure before safety or service comparisons.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-13",
+          "route": "/reference/state-of-future-systems/topic-mobility/",
+          "title": "Mobility: measuring the service people actually receive",
+          "original_payload_sha256": "d41b65945cb06fc2dcb6ae7e35630799218381d601550dddcc6031da72c6a42a",
+          "current_reading_sha256": "72cec43590f9c157ef1a41ce5a0dd6057c6e1214c1afc9398a489dd9d4b1763c",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-nhtsa-automated-vehicles",
+              "path": "app/src/content/sources/source-nhtsa-automated-vehicles.json",
+              "whole_file_sha256": "75971d28ab4393e2cf9112ae7337769e3064201c0e9c2467dc123925b14d4948"
+            },
+            {
+              "source_id": "source-cpuc-waymo-al2-disposition-2024",
+              "path": "app/src/content/sources/source-cpuc-waymo-al2-disposition-2024.json",
+              "whole_file_sha256": "d929ce9c1043567d5a4f58a4171cbf80592cfd2ad69fa9700762028cd82238c4"
+            },
+            {
+              "source_id": "source-55z-cpuc-av-quarterly-reporting-2026",
+              "path": "app/src/content/sources/source-55z-cpuc-av-quarterly-reporting-2026.json",
+              "whole_file_sha256": "4f970815a1d0c3bd468f258b37b3c7c3c439072bc536bb24ff39708b78ce3796"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Define the activity being measured",
+              "payload_sha256": "d5c06d95443baf016dd44c56f0efe4a4105b9f885f35dc4e1bd526d985cfcb8c"
+            },
+            {
+              "heading": "Permission establishes an operating boundary",
+              "payload_sha256": "3f1350655e705106fed916526ccc2178bd2818cf614e5c41fa3436bd4996a475"
+            },
+            {
+              "heading": "Safety comparisons need compatible exposure",
+              "payload_sha256": "95fb5ba34a8003c2ffad4a21cc470dc329c63b7a5e4bb5775ae0f9ca2ed24355"
+            },
+            {
+              "heading": "Service quality extends beyond completed trips",
+              "payload_sha256": "c6dc59ad031543cb0823f82d56bd45b40b7961d657c34ee1a9b76bcc207ed876"
+            },
+            {
+              "heading": "Build local operating histories",
+              "payload_sha256": "b1b0f670a2de9657a3499ff2e75f9395d47307ecfdbb6f90244d87e502bf78dd"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-13-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Define the activity being measured",
+          "claim_payload_sha256": "d5c06d95443baf016dd44c56f0efe4a4105b9f885f35dc4e1bd526d985cfcb8c",
+          "disposition": "retain",
+          "rationale": "Retain operator, vehicle system, geography, conditions and period for distinct driving/testing/service activities. Weather, road type and design restrictions are comparison boundaries, not reasons to merge populations.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-13-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Permission establishes an operating boundary",
+          "claim_payload_sha256": "3f1350655e705106fed916526ccc2178bd2818cf614e5c41fa3436bd4996a475",
+          "disposition": "retain",
+          "rationale": "Retain the CPUC permission within its named operator/geographic scope. It does not establish fleet size, trips, universal coverage, safety or that every resident can obtain a ride.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-13-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Safety comparisons need compatible exposure",
+          "claim_payload_sha256": "95fb5ba34a8003c2ffad4a21cc470dc329c63b7a5e4bb5775ae0f9ca2ed24355",
+          "disposition": "retain",
+          "rationale": "Retain compatible miles/trips/hours/encounters, reporting definitions and duplicate-event handling. A recall or investigation has its own scope; no human-driving or operator superiority claim is asserted.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-13-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Service quality extends beyond completed trips",
+          "claim_payload_sha256": "c6dc59ad031543cb0823f82d56bd45b40b7961d657c34ee1a9b76bcc207ed876",
+          "disposition": "retain",
+          "rationale": "Retain unserved requests, cancellations, waiting, accessibility and actual pricing context. Proposed reporting dimensions are not measured service outcomes, and completed trips are not a complete usefulness metric.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-13-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Build local operating histories",
+          "claim_payload_sha256": "b1b0f670a2de9657a3499ff2e75f9395d47307ecfdbb6f90244d87e502bf78dd",
+          "disposition": "retain",
+          "rationale": "Retain stable local histories, recurring periods, complaints, disruptions and corrective actions. Reporting requirements and public-road trials do not substitute for comparable service returns or justify a forced ranking.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "62420a58b824e1429e47519ca6b4c7f869cc9cec2e57550673cc25bbde00a24c"
+    },
+    {
+      "record_id": "203-TOPIC-14",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete Policy and Standards chapter without changes. It explicitly presents an instrument-reading method rather than new legal interpretation, preserves exact authority and recommendation identities and does not treat compliance as measured public benefit.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-14",
+          "route": "/reference/state-of-future-systems/topic-policy-and-standards/",
+          "title": "Policy and Standards: how permission becomes implementation",
+          "original_payload_sha256": "960787668b1bda4464baca54b5d243d8b69a758394c7ae5a15ca594c7bc0805f",
+          "current_reading_sha256": "c93c7363f92d25d8af8dde6b537b39d618932fb596f91f62744915cfca5e5754",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-faa-aam",
+              "path": "app/src/content/sources/source-faa-aam.json",
+              "whole_file_sha256": "774f47c8760734c6a9c748e689df6d5e79a07e8f12f6a78dde9185c03023ad2e"
+            },
+            {
+              "source_id": "source-nhtsa-automated-vehicles",
+              "path": "app/src/content/sources/source-nhtsa-automated-vehicles.json",
+              "whole_file_sha256": "75971d28ab4393e2cf9112ae7337769e3064201c0e9c2467dc123925b14d4948"
+            },
+            {
+              "source_id": "source-nist-pqc",
+              "path": "app/src/content/sources/source-nist-pqc.json",
+              "whole_file_sha256": "fbb067a36696801dd0203ca831526ff0ca017ca6eb9a92ace0e6931b0a3a1b21"
+            },
+            {
+              "source_id": "source-omb-m-26-15-pqc-migration",
+              "path": "app/src/content/sources/source-omb-m-26-15-pqc-migration.json",
+              "whole_file_sha256": "59019836e32bc8c3d0cd11ab85a6219df557d2c8847aa315f96648dda9efc08b"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Identify the kind of instrument",
+              "payload_sha256": "db8f7f5d090859a4b94962206b12c51781956aba5e8b74c619edd45a6f269adb"
+            },
+            {
+              "heading": "Standards define requirements within a scope",
+              "payload_sha256": "e8aa8d07531a363bcd28f8d9ada7c66dd0877db79a4996b5b20eceaeff1723b2"
+            },
+            {
+              "heading": "Conditions explain why an approval is incomplete",
+              "payload_sha256": "73a212448d2fff6721380bbfe5f8e70a617b5736a1dcec54716a86f0d384eee8"
+            },
+            {
+              "heading": "Implementation needs a receiving institution",
+              "payload_sha256": "7dbeb6a55d8a1742c1bc41ac276df62f0d33c1538f07c21f6647da52bd59994b"
+            },
+            {
+              "heading": "Compare the delivered requirement, not the policy label",
+              "payload_sha256": "56cbc7567e6d68f93180ab757820ac34b20bdab1fab275f5fd2a67f3eef33a16"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-14-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Identify the kind of instrument",
+          "claim_payload_sha256": "db8f7f5d090859a4b94962206b12c51781956aba5e8b74c619edd45a6f269adb",
+          "disposition": "retain",
+          "rationale": "Retain proposals, rules, standards, guidance, permits and contracts as different instruments. Issuer, jurisdiction, effective date, covered activity and dependent decisions are required; the chapter supplies no new consequential legal determination.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-14-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Standards define requirements within a scope",
+          "claim_payload_sha256": "e8aa8d07531a363bcd28f8d9ada7c66dd0877db79a4996b5b20eceaeff1723b2",
+          "disposition": "retain",
+          "rationale": "Retain standard/version scope and evidence of conformity separately from publication. NIST and aviation context do not demonstrate that products, aircraft, operators or entire industries have completed implementation.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-14-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Conditions explain why an approval is incomplete",
+          "claim_payload_sha256": "73a212448d2fff6721380bbfe5f8e70a617b5736a1dcec54716a86f0d384eee8",
+          "disposition": "retain",
+          "rationale": "Retain servicing, design, land and permission conditions, including agenda recommendation versus final decision. Approval in one sense does not establish satisfaction of every downstream requirement.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-14-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Implementation needs a receiving institution",
+          "claim_payload_sha256": "7dbeb6a55d8a1742c1bc41ac276df62f0d33c1538f07c21f6647da52bd59994b",
+          "disposition": "retain",
+          "rationale": "Retain the receiving institution, system, action and date, with exact oversight recommendation identity. Agency concurrence and closure by the responsible oversight authority are different events.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-14-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Compare the delivered requirement, not the policy label",
+          "claim_payload_sha256": "56cbc7567e6d68f93180ab757820ac34b20bdab1fab275f5fd2a67f3eef33a16",
+          "disposition": "retain",
+          "rationale": "Retain obligation, recipient, deadline/trigger, action, acceptance and later observations. Compliance does not alone prove safety, lower costs or access; cross-jurisdiction definitions must be reconciled before comparing outcomes.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "659829eb1338e6b530a9e66e75a6b025fe018f4e1c0e10d6aed54be16f3d0878"
+    },
+    {
+      "record_id": "203-TOPIC-15",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one planning-scope clarification. The chapter correctly separates quantum task performance, HQC selection, laboratory practice and actual migration, but its federal guidance paragraph should identify the inherited non-national-security system boundary.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-15",
+          "route": "/reference/state-of-future-systems/topic-quantum/",
+          "title": "Quantum: separate research capability from cryptographic migration",
+          "original_payload_sha256": "78bb0ab4c7f5cec1987b68e6f134bd5ce6868bc0acc20311ba4ee2747fcaa0d1",
+          "current_reading_sha256": "467339747dbaca1b8f5fd39ca95156f26a929005b0ee5d3f7dea6fb85727b001",
+          "existing_review_payload_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "existing_review_absent": true,
+          "source_profiles": [
+            {
+              "source_id": "source-nist-pqc",
+              "path": "app/src/content/sources/source-nist-pqc.json",
+              "whole_file_sha256": "fbb067a36696801dd0203ca831526ff0ca017ca6eb9a92ace0e6931b0a3a1b21"
+            },
+            {
+              "source_id": "source-nist-hqc-selection-2025",
+              "path": "app/src/content/sources/source-nist-hqc-selection-2025.json",
+              "whole_file_sha256": "baf173d7b16394a4a8a54ca2e6d7fe9b05de8996b4ad977a0ff86ab72c9872cb"
+            },
+            {
+              "source_id": "source-nccoe-pqc-migration",
+              "path": "app/src/content/sources/source-nccoe-pqc-migration.json",
+              "whole_file_sha256": "7b509c1ec09e16ef6c3cf2942f943957a6c73832527170efd6482bea5b2dda3f"
+            },
+            {
+              "source_id": "source-omb-m-26-15-pqc-migration",
+              "path": "app/src/content/sources/source-omb-m-26-15-pqc-migration.json",
+              "whole_file_sha256": "59019836e32bc8c3d0cd11ab85a6219df557d2c8847aa315f96648dda9efc08b"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Describe the demonstrated task",
+              "payload_sha256": "e175b08257e4aa13ed59d261042c4ab59af01e8eee275eaac79e54c26baac9e5"
+            },
+            {
+              "heading": "Selection and standardization are different milestones",
+              "payload_sha256": "6a2d2de966cb0ea1de1ffac43cff03919658384cd4cfb2b1927779ca084a6418"
+            },
+            {
+              "heading": "Migration begins with knowing what must change",
+              "payload_sha256": "37bb7512a0c9c402caa828c2cf63b9a499ca3b7434f5ad536b194a2ff7dd8cb4"
+            },
+            {
+              "heading": "Interoperability and acceptance make change concrete",
+              "payload_sha256": "19b8c7afe36af03289ba81b880d979253e4485e008e216545b3f5e61519c2282"
+            },
+            {
+              "heading": "What the next edition should make inspectable",
+              "payload_sha256": "67d8c3798b1c37f9f1ca0b60778f29a8ba1eefe7f4991964aff620159ecbc429"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                2,
+                "paragraphs",
+                0
+              ],
+              "prior": "Institutions need a cryptographic inventory that identifies protocols, libraries, certificates, devices and services, including dependencies controlled by suppliers. The useful unit is the system and its cryptographic use, not merely the number of products acquired. Prioritization should explain the relevant data-protection needs and transition constraints. Federal migration guidance supplies a planning framework, but does not expose every agency's completed inventory or decisions. The report should therefore distinguish the existence of a requirement from evidence that a named organization has carried it out.",
+              "replacement": "A cryptographic inventory needs to identify protocols, libraries, certificates, devices and services, including supplier-controlled dependencies. The useful unit is a named system and its cryptographic use, not a product count. Prioritization should explain protection needs and transition constraints. The retained OMB M-26-15 profile supplies planning requirements for non-national-security federal systems; it is not an identical requirement for every institution and does not expose every agency's completed inventory or migration decisions. Keep a requirement separate from evidence that a named organization fulfilled it. This assessment does not newly inspect amendments, agency compliance or current implementation status."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-15-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Describe the demonstrated task",
+          "claim_payload_sha256": "e175b08257e4aa13ed59d261042c4ab59af01e8eee275eaac79e54c26baac9e5",
+          "disposition": "retain",
+          "rationale": "Retain task, system, comparison, resources, assumptions and conditions before a research-performance claim. Sensing sensitivity, field deployment and changed decisions remain different stages; no quantum advantage is invented.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-15-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Selection and standardization are different milestones",
+          "claim_payload_sha256": "6a2d2de966cb0ea1de1ffac43cff03919658384cd4cfb2b1927779ca084a6418",
+          "disposition": "retain",
+          "rationale": "Retain HQC selection as upstream of final standard, validated implementation, supported product and completed migration. Preserve the inherited algorithm function/version context without asserting current standardization status.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-15-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Migration begins with knowing what must change",
+          "claim_payload_sha256": "37bb7512a0c9c402caa828c2cf63b9a499ca3b7434f5ad536b194a2ff7dd8cb4",
+          "disposition": "qualify",
+          "rationale": "Qualify the inherited M-26-15 non-national-security federal-system scope. Inventory and system-specific cryptographic use, supplier dependencies and protection needs remain required; a requirement is not a completed agency inventory or migration.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-15-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Interoperability and acceptance make change concrete",
+          "claim_payload_sha256": "19b8c7afe36af03289ba81b880d979253e4485e008e216545b3f5e61519c2282",
+          "disposition": "retain",
+          "rationale": "Retain NCCoE laboratory/practice and interoperability work apart from production cutover. Version, counterparties, acceptance and remaining legacy cryptography matter; a pilot leaves untested estate outside its scope.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-15-SECTION-5",
+          "section_index": 4,
+          "section_heading": "What the next edition should make inspectable",
+          "claim_payload_sha256": "67d8c3798b1c37f9f1ca0b60778f29a8ba1eefe7f4991964aff620159ecbc429",
+          "disposition": "retain",
+          "rationale": "Retain inventory through procurement, testing, accepted cutover and retirement with exceptions and later updates. No speculative threat countdown, whole-estate completion or new independent reproduction is claimed.",
+          "evidence_basis": "inherited_source_profiles_only",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "ef11025acc55a5c20eca8a78bee828441baeab612582e08664e37f4af6276571"
+    },
+    {
+      "record_id": "203-TOPIC-16",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_current_bounded_treatment",
+      "rationale": "Accept the complete currently corrected Space chapter. Its retained September 15 SLF finding resolves the earlier missing site-renewal document while preserving NASA/NOAA source roles, exact instrument dates and the separate operating evidence still needed.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-16",
+          "route": "/reference/state-of-future-systems/topic-space/",
+          "title": "Space: from architecture and hardware to recurring mission use",
+          "original_payload_sha256": "e60fc3bb33c8adbb6c22f3f3f771cdb2e4997241a76572e775004d5d54900574",
+          "current_reading_sha256": "7226498d9cd99cd1c5011ec9bd6eb2973b253e51cbdab3952f9f74ab13412e67",
+          "existing_review_payload_sha256": "298af515901513b42d29050b8aefd62e70b493d4a5fe9aea6573c5d3cfa0ff27",
+          "existing_review_absent": false,
+          "source_profiles": [
+            {
+              "source_id": "source-nasa-moon-to-mars-architecture-rev-c-2025",
+              "path": "app/src/content/sources/source-nasa-moon-to-mars-architecture-rev-c-2025.json",
+              "whole_file_sha256": "85954a20d8d8cbf0dd93b7998c756233fee9904683f1861d1c899e33a45759bd"
+            },
+            {
+              "source_id": "source-nasa-lunar-communications-navigation-2026",
+              "path": "app/src/content/sources/source-nasa-lunar-communications-navigation-2026.json",
+              "whole_file_sha256": "b3f112c4921909a29c15f948496cc6726a74ef08d1208d00f8bb854132e57f22"
+            },
+            {
+              "source_id": "source-nasa-integrated-lunar-power-strategy-2025",
+              "path": "app/src/content/sources/source-nasa-integrated-lunar-power-strategy-2025.json",
+              "whole_file_sha256": "a1b865af3f012b29883ec644df2584b7be4cf3d5b6c1ef0a736e7772b88b5a47"
+            },
+            {
+              "source_id": "source-nasa-technical-reports-server",
+              "path": "app/src/content/sources/source-nasa-technical-reports-server.json",
+              "whole_file_sha256": "6861c5dedbc8a2b8866edc2a12c8ed1116dbaaba09948b5dd88af5c9301d677c"
+            },
+            {
+              "source_id": "source-noaa-space-weather-products-data",
+              "path": "app/src/content/sources/source-noaa-space-weather-products-data.json",
+              "whole_file_sha256": "d88e998c979d95838eaa5c031b4d4c24645a895b0eb52840ea627903c4fbd069"
+            }
+          ],
+          "retained_contexts": [
+            {
+              "collection": "evidence_receipts",
+              "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+              "path": "app/src/data/phase-60-current-decisions.json",
+              "payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+              "checked_date": "2026-09-15",
+              "route": "/review/evidence-cycle/space-coast-slf-licence/",
+              "relation": "This additional context concerns the chapter's named Shuttle Landing Facility example; the FAA source is not part of the chapter's original NASA/NOAA source list. It reuses the September 15 receipt without attributing its finding to those unrelated sources, resetting the check date or supplying independent acceptance.",
+              "matched_source_ids": [],
+              "additional_artifact_urls": []
+            }
+          ],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Read an architecture as a relationship map",
+              "payload_sha256": "51599531c5198cbbf32187e743d30e63ca3236d06eb798022ceca691950b4965"
+            },
+            {
+              "heading": "Hardware milestones need configuration and test context",
+              "payload_sha256": "c90aff2d741eb12e9c0b02564d47f8497a49436c89fd63ae23082172010b7185"
+            },
+            {
+              "heading": "Communications and power are operating services",
+              "payload_sha256": "2602e2cef77e83828f7a8202181ff5bdbbadcd0b49282ed283be7e131e861edc"
+            },
+            {
+              "heading": "A launch site has several independent permissions",
+              "payload_sha256": "cba08208bd4a91b207dd3403b48f5d9eb912d511a53db8257cc0d2146025c7cb"
+            },
+            {
+              "heading": "Build recurring-service evidence around named missions",
+              "payload_sha256": "6736ee94e0d0cc9bdbeb8acea1124ab570aca2b0a7141001822dbb3741be3c56"
+            }
+          ],
+          "required_presentation_changes": []
+        }
+      ],
+      "additional_evidence_inputs": [],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-16-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Read an architecture as a relationship map",
+          "claim_payload_sha256": "51599531c5198cbbf32187e743d30e63ca3236d06eb798022ceca691950b4965",
+          "disposition": "retain",
+          "rationale": "Retain Moon to Mars Revision C as elements, interfaces and gaps, not a funded manifest, appropriation, contract or execution guarantee. Program ownership and dependencies remain questions for later records.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-16-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Hardware milestones need configuration and test context",
+          "claim_payload_sha256": "c90aff2d741eb12e9c0b02564d47f8497a49436c89fd63ae23082172010b7185",
+          "disposition": "retain",
+          "rationale": "Retain hardware identity/configuration and document-type differences. Assembly, integration, test, readiness and actual mission use are distinct; an NTRS presentation is not a formal acceptance act.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-16-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Communications and power are operating services",
+          "claim_payload_sha256": "2602e2cef77e83828f7a8202181ff5bdbbadcd0b49282ed283be7e131e861edc",
+          "disposition": "retain",
+          "rationale": "Retain communications/navigation specifications and the power strategy as requirements and tradeoffs, not deployed service, measured coverage, accepted installation or sustained availability.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-16-SECTION-4",
+          "section_index": 3,
+          "section_heading": "A launch site has several independent permissions",
+          "claim_payload_sha256": "cba08208bd4a91b207dd3403b48f5d9eb912d511a53db8257cc0d2146025c7cb",
+          "disposition": "retain",
+          "rationale": "Retain LRSO 18-018 Revision 2/Order A-1 issue January 8, effective January 15, 2026 and expiry January 15, 2031 as the September 15 receipt finding. Site authority is not vehicle/operator permission or mission performance. Preserve the broken cross-reference, unverified digital signature and earlier stale displays; no fresh legal-status conclusion is made.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-16-SECTION-5",
+          "section_index": 4,
+          "section_heading": "Build recurring-service evidence around named missions",
+          "claim_payload_sha256": "6736ee94e0d0cc9bdbeb8acea1124ab570aca2b0a7141001822dbb3741be3c56",
+          "disposition": "retain",
+          "rationale": "Retain named mission/configuration/period/exposure and responsible findings before recurring service. Space-weather forecasts or alerts do not establish downstream incident causation, local outcomes or a composite readiness score.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "b95d9c3a456954c60e51933b0a89f891cfe7c1c03fd65967552e0b7ffe16130c"
+    },
+    {
+      "record_id": "203-TOPIC-17",
+      "review_date": "2026-09-27",
+      "reviewer_kind": "AI editorial assessment authorized by user",
+      "disposition": "accept_with_dated_scope_clarifications",
+      "rationale": "Accept with one authorization-versus-execution clarification using the retained September 22 Arizona receipt. Preserve the existing Chandler comparison and its explicit additional source; do not turn Council adoption, conditional capacity or future reuse goals into accepted infrastructure or measured flows.",
+      "readings": [
+        {
+          "record_id": "203-TOPIC-17",
+          "route": "/reference/state-of-future-systems/topic-water/",
+          "title": "Water: from a service agreement to measured supply and reuse",
+          "original_payload_sha256": "fb9bf7fb0f299fabbe1da05333aefb715efd8cc2fe14d8fd90d990abb61d3250",
+          "current_reading_sha256": "7a6536f18cfceec2a357aa5b20c0f0eccbe515bba5cc9d2c091ca4b5d90ce3bc",
+          "existing_review_payload_sha256": "2b221457169353be26b7c8d242bd5864da1f8a8bafb3062461affed8415dba0e",
+          "existing_review_absent": false,
+          "source_profiles": [
+            {
+              "source_id": "source-arizona-department-water-resources",
+              "path": "app/src/content/sources/source-arizona-department-water-resources.json",
+              "whole_file_sha256": "c7e76ad9c2c0e8e116653d62b360d62de0d40706d572663e7d175f80828fd481"
+            },
+            {
+              "source_id": "source-arizona-corporation-commission-utilities",
+              "path": "app/src/content/sources/source-arizona-corporation-commission-utilities.json",
+              "whole_file_sha256": "e1532e0f01fdd328d86d84c758cab62a26baf83e49715f9eb18d0471934a4c1f"
+            },
+            {
+              "source_id": "source-phoenix-tsmc-2026-wastewater-development-agreement",
+              "path": "app/src/content/sources/source-phoenix-tsmc-2026-wastewater-development-agreement.json",
+              "whole_file_sha256": "1e9efdd4751e4be9721b6c808c03b7300f5c8121b2bc88c32ee32c53c00fc7b7"
+            },
+            {
+              "source_id": "source-adwr-groundwater-site-inventory",
+              "path": "app/src/content/sources/source-adwr-groundwater-site-inventory.json",
+              "whole_file_sha256": "c3c3cb63814c0b0aa91172e06e8f7a19dd5a5d80a8a0b9d23710ebdbd30c6b77"
+            },
+            {
+              "source_id": "source-epa-echo-web-services",
+              "path": "app/src/content/sources/source-epa-echo-web-services.json",
+              "whole_file_sha256": "0cc83a2b2402ae4c1be456f1b1cc89f9f52f7adf1dea77d0c0cfdd8e8decb1f1"
+            }
+          ],
+          "retained_contexts": [],
+          "sections_reviewed": 5,
+          "paragraphs_reviewed": 5,
+          "overview_reviewed": true,
+          "reviewed_section_hashes": [
+            {
+              "heading": "Define the water boundary",
+              "payload_sha256": "ad8f2986a64d8935f136c9e20705828b484c9ca9c60c23316792d9c904a907c3"
+            },
+            {
+              "heading": "Rights and service arrangements answer different questions",
+              "payload_sha256": "2bb62d2de610bcbf5439cde5b09b9d1038320d7bff01b7c25b9e6f22b74d2967"
+            },
+            {
+              "heading": "Observations need a location and a method",
+              "payload_sha256": "c7d632f911667e7800718c4cdcd576ec27a03e58d729d63c4305a587366c9e54"
+            },
+            {
+              "heading": "Use operating comparators without transferring their results",
+              "payload_sha256": "37f663e60c586f561f505211c76f4fd63245eceebbb48d24729b14d735c15d04"
+            },
+            {
+              "heading": "The next useful record is a connected operating account",
+              "payload_sha256": "9196c2bca81bdd4d14f8d2496bba144a83a539c2438699f0c1ffc2ddf14cafd9"
+            }
+          ],
+          "required_presentation_changes": [
+            {
+              "path": [
+                "sections",
+                1,
+                "paragraphs",
+                0
+              ],
+              "prior": "Arizona water programs supply regional and regulatory context, while utility records establish particular service responsibilities. A management plan does not prove a named project's allocation or connection. A development agreement can establish who will provide or finance infrastructure without confirming that it has been built and accepted. The Phoenix TSMC wastewater agreement is therefore valuable as a project-specific arrangement, with its construction and operating evidence still distinct. A useful profile should follow the agreement into engineering, inspection, acceptance and metered service rather than assume the signed terms are already physical capacity.",
+              "replacement": "Arizona water programs provide regional and regulatory context, while named utility records establish service responsibilities. A management plan does not prove a project allocation or connection. For Phoenix/TSMC, the retained September 22 receipt records adoption of Item 73/Ordinance S-52899 as Council authorization; it does not establish executed-agreement delivery, completed conveyance work or City acceptance. Conditional flow capacity and future reuse targets are not measured results. That bounded review retrieved no exact completed-and-accepted or operating return, which is not proof that such records or operation do not exist. Follow the named arrangement into engineering, inspection, acceptance and metered service without treating authorized terms as physical capacity."
+            }
+          ]
+        }
+      ],
+      "additional_evidence_inputs": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-arizona-2026-09-22-no-material-change",
+          "path": "app/src/data/phase-60-current-decisions.json",
+          "payload_sha256": "c2a5d96b203d5de5f0f3bfbecf1aea02fb40c33f391ecfe0572f7afc8013dd05",
+          "checked_date": "2026-09-22",
+          "route": "/review/evidence-cycle/arizona-wastewater/",
+          "relation": "Retained Council-adoption and downstream-acceptance check clarifies the chapter's named Phoenix/TSMC agreement example without a new retrieval or operating admission."
+        }
+      ],
+      "claim_findings": [
+        {
+          "claim_id": "203-TOPIC-17-SECTION-1",
+          "section_index": 0,
+          "section_heading": "Define the water boundary",
+          "claim_payload_sha256": "ad8f2986a64d8935f136c9e20705828b484c9ca9c60c23316792d9c904a907c3",
+          "disposition": "retain",
+          "rationale": "Retain withdrawal, delivery, consumption, discharge and reuse as different quantities with provider, connection, period and quality boundaries. Do not assemble an inferred balance from incompatible locations or time periods.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-17-SECTION-2",
+          "section_index": 1,
+          "section_heading": "Rights and service arrangements answer different questions",
+          "claim_payload_sha256": "2bb62d2de610bcbf5439cde5b09b9d1038320d7bff01b7c25b9e6f22b74d2967",
+          "disposition": "qualify",
+          "rationale": "Qualify Phoenix Item 73/Ordinance S-52899 as Council authorization, not proof of executed-agreement delivery, completed improvements or accepted operating capacity. The September 22 bounded search found no exact downstream return; it did not prove that none exists.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-17-SECTION-3",
+          "section_index": 2,
+          "section_heading": "Observations need a location and a method",
+          "claim_payload_sha256": "c7d632f911667e7800718c4cdcd576ec27a03e58d729d63c4305a587366c9e54",
+          "disposition": "retain",
+          "rationale": "Retain groundwater sites as point observations and ECHO as multi-program records with differing identifiers and update cycles. Neither absent displayed violations nor an unsubmitted search form establishes current compliance or zero results.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-17-SECTION-4",
+          "section_index": 3,
+          "section_heading": "Use operating comparators without transferring their results",
+          "claim_payload_sha256": "37f663e60c586f561f505211c76f4fd63245eceebbb48d24729b14d735c15d04",
+          "disposition": "retain",
+          "rationale": "Retain the already-corrected Chandler account as city-attributed system organization, not customer-level industrial performance or transferable Phoenix outcomes. Its September 23 additional profile/check remains separate from the original source list.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        },
+        {
+          "claim_id": "203-TOPIC-17-SECTION-5",
+          "section_index": 4,
+          "section_heading": "The next useful record is a connected operating account",
+          "claim_payload_sha256": "9196c2bca81bdd4d14f8d2496bba144a83a539c2438699f0c1ffc2ddf14cafd9",
+          "disposition": "retain",
+          "rationale": "Retain accepted assets, metered inflow/reuse/discharge, interruptions and stable periods as future evidence. Drought sufficiency, costs and effects on other users need separate records, not one snapshot or a prospective recycling target.",
+          "evidence_basis": "retained_dated_clarifications_receipts_and_source_profiles",
+          "new_primary_inspection_this_assessment": false
+        }
+      ],
+      "application_projection_integrated": false,
+      "independent_human_review": false,
+      "new_operating_observation": false,
+      "new_safety_classification": false,
+      "new_series_admission": false,
+      "review_payload_sha256": "6e3f0f31f34c978fe7f9d6f92a21aa2f2888b62e4a9133fb400284cd1f20f569"
+    }
+  ],
+  "boundaries": {
+    "application_projection_integrated": false,
+    "historical_human_fields_unchanged": true,
+    "source_profile_dates_unchanged": true,
+    "new_primary_source_checks": false,
+    "independent_human_review": false,
+    "measurement_series_admitted": false,
+    "current_external_status_verified": false,
+    "operating_month_completed": false,
+    "publishing_authorized": false
+  },
+  "implementation_notes": [
+    "Prepared separately while the 34-decision candidate validates; these fourteen are not applied or covered by its production pass.",
+    "Eight chapters need no body changes; six each need one exact replacement. Preserve eleven actual absent prior reviews.",
+    "Keep the exact existing Climate/Water additional source checks, their profile bytes and original-source-list distinction. Preserve the Space formal-instrument link, conditions and historical receipt.",
+    "The Water addition reuses the already recorded Arizona receipt; render its limitations, exact next artifact and next action without claiming a new check.",
+    "After integration all seventeen topic chapters will be assessed. Ten annual syntheses remain to assess; related readings do not inherit these decisions."
+  ]
+}

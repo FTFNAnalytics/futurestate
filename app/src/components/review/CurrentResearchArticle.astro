@@ -1,0 +1,59 @@
+---
+import {canonicalReaderPresentation,canonicalReaderIntegrationDate,canonicalReaderLinksFor} from '../../lib/canonical-reader-bindings.mjs';
+import {canonicalProjectRefreshes} from '../../lib/canonical-project-refreshes.mjs';
+import {selectedArticlePresentation,selectedReviewDate,selectedReviewStatus} from '../../lib/selected-article-reviews.mjs';
+interface Article {record_id:string;route?:string;title:string;answer:string;kind:string;authored_date:string;updated_date?:string;review_status:string;source_check_boundary:string;historical_record_title?:string|null;sections:{heading:string;text:string;citations?:number[];case_id?:string;paragraphs?:{text:string;citations:number[]}[]}[];sources:{title:string;url:string;artifact_date:string}[];source_notes?:{source_index:number;checked_date:string;locator:string;scope:string;access:string}[];identity_evidence?:{candidate_name:string;identifier:string|null;scope:string;aliases:string[];not_equivalent:string[];matched_source_indices:number[];checked_date:string;disposition:string};language_notes?:{lang:string;term:string;reading:string;source_index:number;review_status:string}[];}
+interface Props { article:Article; embedded?:boolean; }
+const {article:original,embedded=false}=Astro.props;
+const refreshedProject=Astro.url.pathname===original.route?canonicalProjectRefreshes.records.find(r=>r.related[0]?.route===original.route):undefined;
+const SectionHeading=embedded?'h3':'h2';
+const canonicalPresentation=canonicalReaderPresentation(original,{route:Astro.url.pathname});
+const binding=canonicalPresentation?.binding;
+const relatedReaders=binding?canonicalReaderLinksFor(binding.binding_id):[];
+const presentation=canonicalPresentation?.presentation ?? selectedArticlePresentation(original,{route:Astro.url.pathname});
+const article:Article=presentation.article;
+const {review,changes,chapters}=presentation;
+---
+<article class="page-section current-research" data-current-research={article.record_id}>
+  <div class="eyebrow">{article.kind} · {review?'AI-reviewed dated article':'Dated editorial draft'}</div>
+  {embedded ? <h2>{article.title}</h2> : <h1 class="page-title">{article.title}</h1>}
+  <p class="lede">{article.answer}</p>
+  {refreshedProject&&<aside data-later-project-account={refreshedProject.record_id}><p><a href={refreshedProject.route}>Read the later project account, checked {canonicalProjectRefreshes.review_date}</a>. This earlier reading retains its own dates and review.</p></aside>}
+  {binding&&<aside data-canonical-reader-binding={binding.binding_id}>
+    <p>This dated reading was integrated into this Atlas page on {canonicalReaderIntegrationDate}. Its source observations and original AI assessment retain the dates below.</p>
+    <p>{binding.current_status_boundary}</p>
+    {relatedReaders.length>0&&<nav aria-label="Related accounts with separate scopes" data-canonical-related-readers><ul>{relatedReaders.map(link=><li><a href={link.route}>{link.label}</a></li>)}</ul></nav>}
+    <p><a href={binding.article_route}>Open the original reviewed reading</a> · <a href="/data/build-decisions.json">Inspect the exact article-to-page decision</a></p>
+  </aside>}
+  <p><strong>{review?selectedReviewStatus:article.review_status}</strong> · Written {article.authored_date}{review&&` · AI reviewed ${selectedReviewDate}`}</p>
+  {review&&<section id={`${article.record_id}-ai-review`} data-selected-ai-review={article.record_id} data-review-sha256={review.sha256}>
+    <SectionHeading>{review.decision}</SectionHeading><p>{review.rationale}</p>
+    <p>Reviewed by Codex under the owner's authorization. No human review is required or claimed. This is an exact-version editorial assessment, not a fresh external source check, operating result or approval of linked content.</p>
+    <details><summary>Located findings and exact reviewed inputs</summary><dl>{review.findings.map((f:{location:string;disposition:string;finding:string})=><><dt>{f.location} — {f.disposition}</dt><dd>{f.finding}</dd></>)}</dl><p>Original article SHA-256: <code>{review.source_record_sha256}</code>.</p><p><a href="/data/build-decisions.json">Download this decision, exact presentation changes and reviewed-input hashes</a></p></details>
+    <details data-prior-editorial-review><summary>Original wording and review fields — retained history</summary><p>{original.review_status}</p><dl>{changes.map((change:{path:(string|number)[];label:string;prior:string})=><><dt>{change.label}</dt><dd data-original-field={change.path.join('.')}>{change.prior}</dd></>)}</dl><p>These complete original fields remain unchanged in the original export. Earlier human-review wording is history, not a current build prerequisite.</p></details>
+    {chapters.length>0&&<section data-selected-chapter-decisions><h3>Each case has its own decision</h3><ul>{chapters.map((chapter:{record_id:string;route:string;title:string;decision:string})=><li><a href={`${chapter.route}#${chapter.record_id}-ai-review`}>{chapter.title}</a> — {chapter.decision}</li>)}</ul><p>The selected report does not approve historical chapters or linked material by association.</p></section>}
+  </section>}
+  {article.updated_date&&<p data-editorial-updated>Updated {article.updated_date}; original authorship date retained.</p>}
+  <p>{article.source_check_boundary}</p>
+  {article.historical_record_title && <p class="muted">Existing research identity: {article.historical_record_title}</p>}
+  {article.identity_evidence&&<section data-identity-evidence={article.record_id}>
+    <SectionHeading>Identity and boundary</SectionHeading>
+    <p><strong>{article.identity_evidence.disposition}</strong> · Evidence checked {article.identity_evidence.checked_date}{review&&` · AI reviewed ${selectedReviewDate}`}</p>
+    <dl><dt>Named entity</dt><dd>{article.identity_evidence.candidate_name}</dd><dt>Official identifier</dt><dd>{article.identity_evidence.identifier??'No separate official identifier established by this check'}</dd><dt>Geographic / asset scope</dt><dd>{article.identity_evidence.scope}</dd><dt>Matched names</dt><dd>{article.identity_evidence.aliases.join('; ')}</dd><dt>Do not merge with</dt><dd>{article.identity_evidence.not_equivalent.join('; ')}</dd></dl>
+    <p class="citations">Identity evidence: {article.identity_evidence.matched_source_indices.map(i=><a href={article.sources[i].url}>{article.sources[i].title}</a>)}</p>
+  </section>}
+  {article.sections.map((section,sectionIndex)=><section data-topic-case={section.case_id} data-current-section={sectionIndex}>
+    <SectionHeading>{section.heading}</SectionHeading><p>{section.text}</p>
+    {section.citations && section.citations.length>0 && <p class="citations">Evidence: {section.citations.map(i=><a href={article.sources[i].url}>{article.sources[i].title}</a>)}</p>}
+    {section.paragraphs?.map(paragraph=><><p>{paragraph.text}</p>{paragraph.citations.length>0&&<p class="citations">Evidence: {paragraph.citations.map(i=><a href={article.sources[i].url}>{article.sources[i].title}</a>)}</p>}</>)}
+  </section>)}
+  <section><SectionHeading>Exact sources and dates</SectionHeading><ol>{article.sources.map(source=><li><a href={source.url}>{source.title}</a> — {source.artifact_date}</li>)}</ol></section>
+  {article.source_notes&&<section data-topic-source-appendix={article.kind==='Topic'?true:undefined} data-source-appendix><SectionHeading>Sources, methods and limits</SectionHeading><p>These are bounded research inspections, not independent acceptance or a blanket currency review. {review&&'The dated access notes below are preserved history; the current AI editorial assessment is above.'}</p><ol>{article.source_notes.map(note=><li><p><a href={article.sources[note.source_index].url}>{article.sources[note.source_index].title}</a> · Checked {note.checked_date}</p><p>Location: {note.locator}. {note.access}.</p><p>{note.scope}</p></li>)}</ol></section>}
+  {article.language_notes&&<section data-language-notes><SectionHeading>Language and interpretation notes</SectionHeading><p>Source-language terms remain visible. {review?'The AI assessment covers these exact displayed readings in their retained context, not full source translations or legal advice.':'The English readings below are editorial explanations, not independently approved translations or legal advice.'}</p><dl>{article.language_notes.map(note=><><dt lang={note.lang}>{note.term}</dt><dd><p>{note.reading}</p><p><a href={article.sources[note.source_index].url}>{article.sources[note.source_index].title}</a> · {note.review_status}</p></dd></>)}</dl></section>}
+  <p><a href="/reference/explore/1/">Browse reader editions and answers</a> · <a href="/data/current-editorial.json">Download this dated editorial set</a></p>
+</article>
+<style>
+  .current-research{max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere;}
+  .citations{font-size:.9rem;display:flex;gap:.75rem;flex-wrap:wrap;}
+  section{margin-block:2rem;}
+</style>

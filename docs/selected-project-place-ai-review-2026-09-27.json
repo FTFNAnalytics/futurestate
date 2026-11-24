@@ -1,0 +1,1095 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI editorial reviewer; not independent and not claiming professional credentials)",
+  "human_review_required": false,
+  "human_review_claimed": false,
+  "fresh_external_source_check": false,
+  "review_scope": "Actual full reading of six remaining projects and four remaining places, their 61 sections and 56 nested interpretations, all source notes and identity/language notes, plus the identified retained pilot/receipt findings and complete related question. Language assessment covers only displayed terms in their retained context, not full source-language legal or technical certification.",
+  "reviewed_articles": 10,
+  "required_changed_records": 10,
+  "required_presentation_changes": 35,
+  "total_distinct_selected_assessments": 33,
+  "selected_article_target": 33,
+  "remaining_unassessed_selected_articles": 0,
+  "current_application_assessments": 4,
+  "prepared_not_integrated_assessments": 29,
+  "application_projection_integrated": false,
+  "records": [
+    {
+      "record_id": "191-PROJECT-003",
+      "route": "/reference/international-projects/hornsdale-power-reserve/",
+      "title": "Hornsdale Power Reserve: operating evidence without an inherited outcome score",
+      "decision": "Accept the dated Hornsdale account with explicit AI-review and reproduction wording",
+      "rationale": "The complete six-section account and its six nested interpretations separate publication, revision, event and observation periods; distinguish service enablement from measured system benefit; and retain the invalid printed WAPS date without an invented issuer correction. The September 22 retained pilot resolves selected-page access, not the missing availability calculation or current configuration. The article can be accepted as a bounded historical account without human sign-off; quantitative admission remains evidence-dependent.",
+      "findings": [
+        {
+          "location": "Dates and services",
+          "disposition": "Accept distinct milestones",
+          "finding": "March 31, 2026 is the landing-page update, August 7, 2024 the final-report revision release, and the July/September 2022 and November 2023 events are different work packages. No reported curtailment change remains visible alongside other milestones."
+        },
+        {
+          "location": "Testing and later H1 report",
+          "disposition": "Accept access clarification, retain discrepancy",
+          "finding": "Witnessed tests, reversion and monitoring are not a continuous outcome series. The H1 2024 report was released February 21, 2025; its impossible 31/11/2023 date conflicts with the separate November 30 account. The retained September 22 review covers only physical pages 1, 9 and 13 and does not digitize plots or inspect 2026 operation."
+        },
+        {
+          "location": "Outcome and next-records sections",
+          "disposition": "Replace obsolete independent-acceptance framing",
+          "finding": "Missing service definitions, eligible intervals and configuration records remain real requirements. AI assessment does not reproduce a half-year percentage, infer retail savings or make another project identity."
+        }
+      ],
+      "source_record_sha256": "c7e09d03c942772b640585b4f50d6834f86c2224819c9a60616a505adf70c359",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Three dates, three meanings",
+          "sha256": "73d3d8e9365755d6739c23155fa05c44ede8ab76f661d01c425fc022a6660ad5"
+        },
+        {
+          "heading": "Service milestones are not interchangeable",
+          "sha256": "f7c86a4ae3fe62ef2a8337154708224a9260331b3c70845ca5d65456aec526bc"
+        },
+        {
+          "heading": "Testing and operation use different evidence",
+          "sha256": "19be4c450236b19fd2d9d122dc5d495330e0c34bdebf7207ca786f41dc399894"
+        },
+        {
+          "heading": "Recovered report, unresolved date and denominator",
+          "sha256": "3bc66eeb59162a07f6aac7094273b41afdeb40c64e9bdee3c90a3bfc5c2c678f"
+        },
+        {
+          "heading": "From grid service to public benefit",
+          "sha256": "b6466eb265075d13078101af656a68930275ad991a814118a6876ac17255f54e"
+        },
+        {
+          "heading": "Next decisive records",
+          "sha256": "7ba715982417c2c6f6126e75d9ffb14438f9153d1d422eaf8fa9f8182e007ff4"
+        }
+      ],
+      "reviewed_source_notes_sha256": "38643ec8cb380e597f4eca98a82fdd8f281ed778c71c14011b662df0a4ef8b16",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "d6af47dd2cd0e1f2f75d14064e00dca68d84ea463e119f977d31b37ea6857ad8",
+      "reviewed_language_notes_sha256": null,
+      "related_article_inputs": [],
+      "pilot_inputs": [
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-HORNSDALE-ACCESS-2026-09-22",
+          "sha256": "cf4dbfc40ced5a44cf08253f340e973448455833ba09b1b5edd52424e4cf4e1d",
+          "reviewed_scope": "Retained findings, dates, source-check summaries, access limitations and required-artifact lists; not a new visual inspection or source retrieval."
+        }
+      ],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            4,
+            "text"
+          ],
+          "replacement": "The expanded account does not calculate a retail-bill saving, avoided-outage total or general grid-benefit score. The inherited project stage remains unchanged. This dated account has an AI editorial assessment; it does not admit measured outcomes.",
+          "prior": "The expanded account does not calculate a retail-bill saving, avoided-outage total or general grid-benefit score. The inherited project stage and all independent decisions remain unchanged.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "Obtain the accepted service definition, configuration boundary, compatible interval ledger, exclusions and revision policy. Resolve the printed date discrepancy and reproduce any proposed series from the exact compatible records before admission. Check current configuration and adverse-event records before extending the historical account into 2026.",
+          "prior": "Obtain the accepted service definition, configuration boundary, compatible interval ledger, exclusions and revision policy. Resolve the printed date discrepancy and reproduce any proposed series independently before admission. Check current configuration and adverse-event records before extending the historical account into 2026.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            5,
+            "paragraphs",
+            0,
+            "text"
+          ],
+          "replacement": "FTFN interpretation: A strong dossier can explain why evidence is useful without overstating it. Preserve the distinction between a source-supported description, AI-assessed content with explicit limits and a governed outcome series.",
+          "prior": "FTFN interpretation: A strong dossier can explain why evidence is useful without overstating it. Preserve the distinction between a source-supported description, independently accepted content and a governed outcome series.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Inherited project identity; independent expanded-content acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "5e8f4ab17628e70e4082485c0e09ccff8b8927f8410b2e061a8d3404941b775d"
+    },
+    {
+      "record_id": "191-PROJECT-004",
+      "route": "/reference/international-projects/victoria-big-battery/",
+      "title": "Victorian Big Battery: operational service and a commissioning fire both belong in the record",
+      "decision": "Accept the differentiated VBB incident, regulator and service account",
+      "rationale": "All six sections and six nested interpretations correctly distinguish the rolling emergency account, a most-likely-cause regulator statement, conditional non-objection to restart, and later service registration/operation. Neither a final remediation certificate nor current reliability, safety or household benefit is inferred. Asset aliases and power/energy/service reservations do not create extra projects.",
+      "findings": [
+        {
+          "location": "Identity and incident chronology",
+          "disposition": "Accept bounded asset and event scope",
+          "finding": "Moorabool/Geelong and Victoria/Victorian labels identify one asset, not multiple projects. Preserve July 30 fire, August 2 control at 15:05 and August 3 investigation chronology without assigning final causation to the emergency account."
+        },
+        {
+          "location": "Regulator and restart",
+          "disposition": "Accept qualified causal language",
+          "finding": "The September 28 ESV statement gives a most-likely coolant-leak mechanism supported by its described investigation. Conditional non-objection is not an unconditional safety certification or proof that every corrective action and enforcement question was closed."
+        },
+        {
+          "location": "Power, service and later limits",
+          "disposition": "Accept non-additive scopes",
+          "finding": "300 MW, 450 MWh and up to 250 MW reserved service measure different quantities. The December 2021 operational milestone and February 2023 page date do not establish 2026 availability, a current unsafe condition or customer bill effects. The retained regulator-PDF reading was text-only, not a new visual audit."
+        }
+      ],
+      "source_record_sha256": "435fe44071fb1777a4d5041511a303e7deee31e21b894957ec91085307d41181",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Preserve the exact site and its service",
+          "sha256": "830ed9979edced0240945148859bd598915d80f14fedfa0aa71941d1d4977144"
+        },
+        {
+          "heading": "July and August: response milestones",
+          "sha256": "80a97e2176a3a9e14c542bf0a94df5614e55150aea0b30ad0de2aea79ea23ce6"
+        },
+        {
+          "heading": "September: a bounded technical finding",
+          "sha256": "b1425915132b0a1da8f44085226d6f903b0001c6ac1c2f35158a2ebfce36cd64"
+        },
+        {
+          "heading": "Recommissioning is not blanket closure",
+          "sha256": "db663ce4304909532692b1f50abb0b037622e38a38a1f47548386c80359e0fe5"
+        },
+        {
+          "heading": "December: a different operating milestone",
+          "sha256": "c232e1d766ab133291f2d4b6ea7c6288474c20e3daec2a3c4a0d65bd128e4586"
+        },
+        {
+          "heading": "Next decisive records",
+          "sha256": "c1416cf41ef2672fe10c6aa851ffc250ad7a0a29bf54a9aea46dc1b5dd2fb89d"
+        }
+      ],
+      "reviewed_source_notes_sha256": "1603459d16e470a77d2c0037750ad75ac5cf40d843f7209c3a0cd38273bf8f33",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "45ba3c338c58ee5f7dffc94ad4edf78ed29842957f647eacd3a6f60d1bf39046",
+      "reviewed_language_notes_sha256": null,
+      "related_article_inputs": [],
+      "pilot_inputs": [],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Inherited project identity; independent expanded-content acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "1e682dc28cf70afd9f9278c1c3d3b93a573c35806c964a8e367cdd6614738829"
+    },
+    {
+      "record_id": "191-PROJECT-005",
+      "route": "/reference/international-projects/dalrymple-grid-battery/",
+      "title": "Dalrymple ESCRI-SA: a local network case, not a universal battery result",
+      "decision": "Accept the Dalrymple account after surfacing the later retained access clarification",
+      "rationale": "The six sections and six nested interpretations separate energisation, commercial handover, local network scope, power/energy and contractual availability. They preserve the fourth-period correction as editorial reconciliation rather than an issuer erratum. Current readers should see that later retained visual access succeeded while the calculation contract and compatible interval records remain missing.",
+      "findings": [
+        {
+          "location": "Milestones and service scope",
+          "disposition": "Accept different dates and units",
+          "finding": "October 2017 construction, April 2018 energisation and December 2018 commercial operation are not interchangeable. The 30 MW / 8 MWh local network does not use all South Australian residents as an eligible customer denominator."
+        },
+        {
+          "location": "Report period and contract",
+          "disposition": "Accept period reconciliation, reject numerical admission",
+          "finding": "Report 4 June 14–December 14, 2020 and its source-reported 98.80% remain separate from the final report’s conflicting period and the annual 96% guarantee. Contract cycles and the below-2.4-MWh state-of-charge condition are not generic full cycles; denominator, exclusion and version records remain absent from the retained acquisition."
+        },
+        {
+          "location": "Historical defects and access",
+          "disposition": "Required dated-access context, not a new observation",
+          "finding": "Historical cooling/model-validation issues and no reported heat derating in that period can coexist; they are not September 2026 defects. The September 15 nine-page visual receipt and September 22 method search supersede earlier access limitations only within their stated scopes."
+        }
+      ],
+      "source_record_sha256": "e323fe1c3838d64101182eda6b08200be8feaef0872eade54fcb673f1334316b",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Construction, energisation and commercial service",
+          "sha256": "67b59e5d3866e965c579acb02a4b5d3565819952c2f5196b58f950ef9ecc2711"
+        },
+        {
+          "heading": "A local network, not an entire state",
+          "sha256": "ffb3e9171f71ea54ea93164cae925e9bd4574704a2d804b8083ef2ffb749a06c"
+        },
+        {
+          "heading": "The period amendment stays bounded",
+          "sha256": "cd0634d6bbce3afb9043a38d00743456c77e4fbcae391ab82275c12c81d47592"
+        },
+        {
+          "heading": "Contract measures require their own definitions",
+          "sha256": "3f463379d5a578a6cc80def7e045b9fce3c812c3f910fe926aff8a153c1ca694"
+        },
+        {
+          "heading": "Retain adverse evidence at its historical date",
+          "sha256": "b7d12c1ececf9c41a4da38db80bffeb10c97ddea1ddbebae7da9b2444fa34e9e"
+        },
+        {
+          "heading": "Next decisive records",
+          "sha256": "154a4f66c7eef30dab9cafff9fb5210e9e59ded1b1b1fed457688d23304d15a3"
+        }
+      ],
+      "reviewed_source_notes_sha256": "50773d6267911ab8a5dc424fe9788f168a69912b5cf99a417b23993946da5048",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "86b9b8cf903288fabbcb1dcb328421c3d0e9943463bbcf93611e322c6ca1c80a",
+      "reviewed_language_notes_sha256": null,
+      "related_article_inputs": [],
+      "pilot_inputs": [
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-DEFINITION-2026-09-15",
+          "sha256": "b9107cf89ffc88eba01afbb4929fd2b004b16837bb36304ee68b57db666635e9",
+          "reviewed_scope": "Retained findings, dates, source-check summaries, access limitations and required-artifact lists; not a new visual inspection or source retrieval."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-VISUAL-2026-09-15",
+          "sha256": "ca0fd85c2be6cde790c05303ab8f335d62c29da71ee1eaf9e5a9b43b02902e48",
+          "reviewed_scope": "Retained findings, dates, source-check summaries, access limitations and required-artifact lists; not a new visual inspection or source retrieval."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "sha256": "8f5f810edacd39d74e9935ac52ca48a90d70cecd7700b61f01822425ec329f6f",
+          "reviewed_scope": "Retained findings, dates, source-check summaries, access limitations and required-artifact lists; not a new visual inspection or source retrieval."
+        }
+      ],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "Obtain the full calculation contract and interval inputs, reproduce the candidate values independently, and seek authorized admission. For current service claims, add configuration-matched event logs and defect-resolution evidence. The measured pilot remains unadmitted. The retained September 15 follow-up successfully downloaded four reports and visually checked nine named pages, including report 4’s period and the final report’s conflicting heading. The September 22 acquisition pass added method-version context but did not obtain the applicable Schedule 7, protocol history or interval ledger. Earlier source-note access limits remain dated history, not the current access disposition.",
+          "prior": "Obtain the full calculation contract and interval inputs, reproduce the candidate values independently, and seek authorized admission. For current service claims, add configuration-matched event logs and defect-resolution evidence. The measured pilot remains unadmitted.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            5,
+            "paragraphs",
+            0,
+            "text"
+          ],
+          "replacement": "FTFN interpretation: Keep the report useful as a case study while its quantitative acceptance remains open. The reproducible record must let a reader trace every period, numerator, denominator and exception without relying on a rounded headline.",
+          "prior": "FTFN interpretation: Keep the report useful as a case study while its quantitative acceptance remains open. A reviewer should be able to trace every period, numerator, denominator and exception without relying on a rounded headline.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Inherited project identity; independent expanded-content acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "3f55c85daf663e8997bc03633cbaa8b34186e3364f80b95ca197c6890f3e5e56"
+    },
+    {
+      "record_id": "191-PROJECT-012",
+      "route": "/reference/international-projects/france-acquisition-1/",
+      "title": "ITER at Cadarache: a revised research baseline is not delivered electricity",
+      "decision": "Accept the ITER dossier and limited displayed-term readings without a legal or operating certification",
+      "rationale": "The six sections and five nested interpretations preserve the installation/operator/municipality distinction and the limited scope of each authority document. The perimeter decree is not commissioning, a decision-record title is not the full regulator instrument, and a Council approach is not an unconditional current baseline. The displayed French term glosses are acceptable in their stated context; no full bilingual legal review or new external inspection is claimed.",
+      "findings": [
+        {
+          "location": "Identity and perimeter",
+          "disposition": "Accept exact bounded identity",
+          "finding": "INB 174 is not the whole CEA centre, ITER Organization is not the municipality, and the installation is not a commercial electricity plant. Keep decree 2026-328 of April 28, April 30 publication and NOR ECOP2604505D; the uninspected annex cannot supply an exact boundary polygon."
+        },
+        {
+          "location": "Regulatory record and baseline",
+          "disposition": "Accept documentary limits",
+          "finding": "The April 14 ASNR decision record published April 15 concerns vacuum-vessel pressure-regulation scope, not whole-facility operating permission. The November 21, 2024 Council account accepted an overall approach with cost/risk work, not a newly verified September 2026 baseline."
+        },
+        {
+          "location": "Logistics and language",
+          "disposition": "Accept contextual term readings only",
+          "finding": "The February 17, 2026 retrospective’s 104-km/16-commune logistics history is not fusion performance or a measured regional benefit. Périmètre reads as boundary and chambre à vide as vacuum vessel in these passages; this is not interpretation of uninspected legal provisions or certification of every French source."
+        }
+      ],
+      "source_record_sha256": "1408b8fa2f18f9c852a50655c3d54ab72d530058442c7117eca2c9ce03a8ad39",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Identity: the installation, operator and host are different things",
+          "sha256": "1593f2fcb0c70d6040d2780d6b7dfe8f7dde78e0667a7163be70c52fad7fabb4"
+        },
+        {
+          "heading": "2024 chronology: what the Council actually endorsed",
+          "sha256": "d656d7a7724e37ff4811bcb17b003407abbcfd2a04878d6a545ebfafaa84c3f4"
+        },
+        {
+          "heading": "2026 chronology: a bounded regulatory change",
+          "sha256": "5ee4fa3e877e4b185cf713be2c3040810b2babff78009d5b3629a372bb0b753a"
+        },
+        {
+          "heading": "Read component decisions at their own scope",
+          "sha256": "98cdcc14fd0263317abfed49318b0b5c76097737f4401778123fa3fb429e2cf6"
+        },
+        {
+          "heading": "Receiving infrastructure: a route is part of the project",
+          "sha256": "08a8420275b1e91545e57666b8d43fd541d75f50ec3426fe81bd60fd0800b5c2"
+        },
+        {
+          "heading": "Next decisive evidence and remaining limits",
+          "sha256": "8042fb659a35a49a7d9c19eb889c9876ba66ccda52b7a231f60d5601710610d0"
+        }
+      ],
+      "reviewed_source_notes_sha256": "4f7727d54e940cbcd14ee7b5b83522ad167b8cf3c2346502cbb54f779c10a933",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "270112248f0baa947dfc7e029dd10ae71430401efcc1413845075661abae86d3",
+      "reviewed_language_notes_sha256": "7703fa344f3e343ee6d3e4493235b0116bb23bea30a32b6b44d8944b7aa666a4",
+      "related_article_inputs": [],
+      "pilot_inputs": [],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Evidence-bound candidate; independent identity decision pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            0,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            1,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "b2ee7a635427caa8eb9bb8add1ec21189e897766bd6181903abace397d2dc1b9"
+    },
+    {
+      "record_id": "191-PROJECT-020",
+      "route": "/reference/international-projects/japan-acquisition-1/",
+      "title": "JT-60SA at Naka: first plasma is a research milestone",
+      "decision": "Accept the JT-60SA dossier and limited Japanese term readings after removing the human-review prerequisite",
+      "rationale": "All six sections and four nested interpretations distinguish facility identity, first plasma, dated upgrade entries and institutional participation. They do not convert experiments into commercial electricity or a training announcement into completed qualifications. The displayed Japanese glosses are appropriate in the retained context; source-language and identity decisions can be made by AI without claiming independent bilingual source verification.",
+      "findings": [
+        {
+          "location": "Project and first plasma",
+          "disposition": "Accept matched scope and time",
+          "finding": "QST’s 801-1 Mukoyama location is not a regulatory identifier, the city or a commercial successor plant. October 23, 2023 first plasma at about 17:30 JST is not net electricity, energy gain or a recurring service rate."
+        },
+        {
+          "location": "Upgrade and training dates",
+          "disposition": "Accept source/event separation",
+          "finding": "An August 6, 2026 page header does not redate the April/June/July 2025 entries or prove all upgrades completed. The Japanese and English August 31 releases are one issuer announcement, not independent corroboration or completed graduates/local employment."
+        },
+        {
+          "location": "Language and remaining outcomes",
+          "disposition": "Accept glosses; retain evidence limits",
+          "finding": "初プラズマ生成 denotes first plasma generation, 増力作業 upgrade work in this record, and 人材育成 human-resource development. No current transit timetable, pulse-level campaign reproduction, full Japanese source recertification or operating authorization is established."
+        }
+      ],
+      "source_record_sha256": "0a0fc94c5c44971fc0026a2c605625da1d09eb346270de8861f549cf8f9ac3f7",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Identity and physical location",
+          "sha256": "1c4dd96a901e1df7de1d3eafc00127993349b87be1b33e060df5ee7011cd6e21"
+        },
+        {
+          "heading": "October 2023: an observed experimental milestone",
+          "sha256": "a674d68a687f57dc4744326337c30520cafbcd4b1ee30924134529f7b0e390fc"
+        },
+        {
+          "heading": "Upgrade entries are not dated by the page header",
+          "sha256": "3db3a0d81c2ce96cedf566f8019258f8821c4077d2bf4dcffd7ca3217ef84ae6"
+        },
+        {
+          "heading": "August 2026: a research-participation announcement",
+          "sha256": "75bb90572f392740a80e5433280850bd2bbcf66076d7ef45d79445b978617712"
+        },
+        {
+          "heading": "Dependencies that belong in the experiment record",
+          "sha256": "0f9346c1024227787c8945da94260a0b01f50421b7707245f5dbb6786fe6e877"
+        },
+        {
+          "heading": "Next decisive evidence and remaining limits",
+          "sha256": "fb16095dbcea7d0355458b79cc913e6d739d5f34ea83f8b0e82eff4b661e9262"
+        }
+      ],
+      "reviewed_source_notes_sha256": "aabaa5c0418c25a886e5639aa36b0d8c4679d951761dd49d5cb59a6a00f660ba",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "4b36d35c6105a7281b52064e8a6a50b95386208970e5742ae2575d9d2e8c8c13",
+      "reviewed_language_notes_sha256": "4673959f8ac16dfce4062376ae12835bf7d3d6c2b592ebf159042aed6457f197",
+      "related_article_inputs": [],
+      "pilot_inputs": [],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "Seek campaign results and upgrade acceptance with pulse-level methods, exclusions and uncertainty. Record training completion separately from participation. The stated identity boundary, dated account and displayed term readings have an AI assessment; no operating authorization or recurring service stage is inferred.",
+          "prior": "Seek campaign results and upgrade acceptance with pulse-level methods, exclusions and uncertainty. Record training completion separately from participation. Independent identity, subject and language acceptance remain pending; no operating authorization or recurring service stage is inferred.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Evidence-bound candidate; independent identity decision pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            0,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            1,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            2,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "43ee67ed8f9f52fcbb1b71fddadbb015df19b27d74e6be64b3de592405f811f0"
+    },
+    {
+      "record_id": "119-PROJECT-022",
+      "route": "/atlas/projects/hanford-dflaw-operation/",
+      "title": "Hanford DFLAW: retain the boundaries of the material account",
+      "decision": "Accept the bounded Hanford account after adding later retained PDF access and AI-review wording",
+      "rationale": "The complete six-section account and six nested interpretations preserve waste-stream, facility, batch, unit and observation-period distinctions. They do not divide monthly feed by cumulative containers or count a repeated shipment twice. Later selected-page retrieval is already recorded on the related question and should accompany the earlier failed-access history; it does not resolve the missing process balance or create a new gate receipt.",
+      "findings": [
+        {
+          "location": "Commissioning and quantities",
+          "disposition": "Accept distinct milestone and material meanings",
+          "finding": "July 1 Melter 2 restoration and July 20 Melter 1 switch do not establish stable recurring production. Preserve 38,412.1 gallons monthly feed, 119 cumulative containers and 7,274 gallons monthly EMF shipment as different quantities; the repeated shipment is one event."
+        },
+        {
+          "location": "Receiving event and later access",
+          "disposition": "Required access clarification",
+          "finding": "The related September 22 question records selected images of both exact PDFs, including recovered AR-41695 despite failed web-text retrieval. This resolves that access limitation for named pages, not complete inventory reconciliation, all-container disposal acceptance or a full-document audit."
+        },
+        {
+          "location": "Balance and next evidence",
+          "disposition": "Accept substantive requirements, remove human gate",
+          "finding": "Keep September 10 No Material Change and October 9 next check. Compatible feed/output/inventory/loss/adjustment records and uncertainty remain necessary. AI editorial acceptance does not advance the historical Atlas stage or invent another reviewer."
+        }
+      ],
+      "source_record_sha256": "6337406a30364e7689a1aa40bc14dc27c8deaa0045253bb5e7ad67398d779fde",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Keep the process boundary smaller than Hanford",
+          "sha256": "39ccc948fec03b6603bb7f0e3a8ee3cf7ee9de34e1a3b3589d0e6b60d2f99924"
+        },
+        {
+          "heading": "Commissioning contains several milestones",
+          "sha256": "372cc9504b2cffbb37a1ec96006c6926b60a022b441bc3ed128e9598e0c6762b"
+        },
+        {
+          "heading": "Three quantities that cannot be divided into a yield",
+          "sha256": "2644df3ee7da2ab4efaf6412b07e5bf8619becc54c97d073286fc191412d3eca"
+        },
+        {
+          "heading": "A receiving event is another decision",
+          "sha256": "0865503ad837acb6790704b7da77291f619eb59b1c2f54479875026e0ff1cbe6"
+        },
+        {
+          "heading": "Preserve the material-balance decision",
+          "sha256": "5a1070697396ece43e78c587ca16b2ab843b11f6f741e1dc660bdec22b0b35fa"
+        },
+        {
+          "heading": "Next decisive records",
+          "sha256": "755f13aa5d9babcbeb98d8f496a0bb760a3a8b667d1560e5a63c19a8ebe67de3"
+        }
+      ],
+      "reviewed_source_notes_sha256": "e29aa1c1e8ec0e80a8a4cb35d41f973f6a108fcfcec68ec4f4ed54ed4b1d7d80",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "37f77408d542a84627589ad7ae6900a6d65ea89801606a97aae32607f2646770",
+      "reviewed_language_notes_sha256": null,
+      "related_article_inputs": [
+        {
+          "path": "app/src/data/phase-205-216-current-editorial.json",
+          "record_id": "195-BRIEF-067",
+          "sha256": "18784e552633dc1633d42d9de71b124edfed5ad7de11f1b9546515b35ed00fe6",
+          "reviewed_scope": "Complete related question and its dated source/access notes; no new retrieval, reproduction or approval by association."
+        }
+      ],
+      "pilot_inputs": [],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            3,
+            "text"
+          ],
+          "replacement": "The monthly account describes LAW container movement to the disposal facility. The retained AR-41695 review supplies additional inventory context; its direct PDF retrieval failed in this check. The related September 22 question records later successful direct retrieval of the exact AR-41695 PDF and visual inspection of physical pages 1, 16 and 17. AR-41694 physical pages 1, 23 and 24 were also inspected in that retained check. This editorial review did not repeat that retrieval or inspection, and the later access does not supply a complete material balance.",
+          "prior": "The monthly account describes LAW container movement to the disposal facility. The retained AR-41695 review supplies additional inventory context; its direct PDF retrieval failed in this check.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "Seek a complete period-matched material account, accepted glass quantities and downstream acceptance evidence, with reconciliation method and uncertainty. The AI editorial assessment applies to this exact dated narrative; any later evidence-based gate decision remains separate.",
+          "prior": "Seek a complete period-matched material account, accepted glass quantities and downstream acceptance evidence, with reconciliation method and uncertainty. Independent review and any later gate decision remain separate from this expanded project narrative.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            5,
+            "paragraphs",
+            0,
+            "text"
+          ],
+          "replacement": "FTFN interpretation: The appropriate next step is not a larger cumulative headline. It is a bounded process account that can be reproduced from the exact records and connected to the actual receiving system without changing units, periods or waste streams mid-calculation.",
+          "prior": "FTFN interpretation: The appropriate next step is not a larger cumulative headline. It is a bounded process account that another reviewer can reproduce and connect to the actual receiving system without changing units, periods or waste streams mid-calculation.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Inherited project identity; independent expanded-content acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "c05be13fe26cfcc9809ad86f5a6c5b9166318042e14b38afbaa7a10ec2c62370"
+    },
+    {
+      "record_id": "192-PLACE-001",
+      "route": "/reference/global-places-ii/ontario-real-estate/",
+      "title": "Ontario: connect housing supply, household access and a named development decision",
+      "decision": "Accept the Ontario housing account with current retained Toronto context and AI-policy wording",
+      "rationale": "The seven sections and seven nested interpretations correctly separate province, metro, municipality and parcel; actual counts, annualized rates and rolling sums; and rent quartiles, vacancy segments and household cohorts. The article needs its already retained September 21 Toronto context and must stop displaying pending human acceptance as a current build condition. It remains a dated account, not a fresh housing-data release, affordability certification or personal financial guidance.",
+      "findings": [
+        {
+          "location": "Geography and starts",
+          "disposition": "Accept matched units and periods",
+          "finding": "Toronto CMA and source-labelled Ottawa are not Ontario as a whole or Gatineau. Starts are a physical milestone; SAAR is not an actual annual count. Figure 1’s 6,386 freehold, 12,062 rental and 8,289 condominium starts cover the four-quarter sum ending Q2, not Q2 alone or the first half."
+        },
+        {
+          "location": "Vacancy, turnover and rent",
+          "disposition": "Accept population-specific measures",
+          "finding": "Toronto 3% purpose-built and 1% rental-condominium vacancy do not inherit Ottawa’s under-1% lower-rent finding. Turnover 7.9%/12.1% uses lowest/highest rent quartiles, not calendar quarters. Asking/occupied rents and the two-earner illustration cannot describe every household."
+        },
+        {
+          "location": "Toronto decision and exclusions",
+          "disposition": "Required dated-context update; retain exclusions",
+          "finding": "September 21 portal/eight-address findings do not resolve Council/portal date and design conflicts or prove no enactment exists. September 28 is the next bounded check, not completed here. The inconsistent July growth figure and unabsorbed-inventory method remain excluded; failed tracker/catalog access is not zero activity."
+        }
+      ],
+      "source_record_sha256": "dd2edce309daab86a11e8441da0690a1512d665edbfeefa1e7a0824299b833cf",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Start with the geographic unit",
+          "sha256": "e1f3226075c4dc71976ac733d04641671da3ee41c601705cbf63a0addcec5bab"
+        },
+        {
+          "heading": "A start is a physical milestone, not a completed home",
+          "sha256": "2d15942ebb15af36bd28d499a10c02be87fee87ff0b772adb992e6c15aaa117b"
+        },
+        {
+          "heading": "Read the Toronto tenure mix with its full observation window",
+          "sha256": "7cbe8deb8a7dcd0f2ab7fe3cd4480c22ba94c323559339e4253b88ca13845297"
+        },
+        {
+          "heading": "Vacancy can coexist with difficulty finding an affordable home",
+          "sha256": "7386ec59080871057f69fb8f4ac7790310fdd1bdf2986d5301262a2285193703"
+        },
+        {
+          "heading": "Turnover and rent measures reveal different parts of access",
+          "sha256": "9fd85ebfb7bacdc8e784bb3f253e40ad8b4d51b38057e276e8bf0b19f9b24ea7"
+        },
+        {
+          "heading": "Keep the Toronto decision tied to its own file",
+          "sha256": "ea594b7e02adb999020ba4cf968a2b18f5e077cd7c102037fed87ed215b9809a"
+        },
+        {
+          "heading": "Method warnings are part of the account",
+          "sha256": "8c7ac715fa3445643bc45de2783944953920fad014224ba91c7a2a8d2e020a61"
+        }
+      ],
+      "reviewed_source_notes_sha256": "8c1cfa3837c392ca46739e59eacf4171b8ec773bf693d9ee40a8e438e16d6382",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "72c6425b2230432f781dc74508e2eb95940bf82b2897d771e5021baad0548fec",
+      "reviewed_language_notes_sha256": null,
+      "related_article_inputs": [],
+      "pilot_inputs": [],
+      "receipt_inputs": [
+        {
+          "path": "app/src/data/phase-207-project-checks/207-TORONTO-2026-09-21-BOUNDED-RECHECK.json",
+          "receipt_id": "207-TORONTO-2026-09-21-BOUNDED-RECHECK",
+          "sha256": "b894a24a020d5ad552f9749b9e2ecd42bff0c9746e06747fac8ee0ff33486e5e",
+          "reviewed_scope": "Retained exact-address/portal findings, unresolved conflicts and limitations; not new source inspection or legal certification."
+        }
+      ],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "The retained September 14 receipt leaves application 24 254930 at “City Council adoption with amendment bills withheld.” It records a bounded official-history check and retains September 21 as the next project check. This expansion does not advance that stage. The later September 21 receipt recovered the application portal and checked eight exact addresses without finding the qualifying enactment, accepted compliance record or application-matched permit within that bounded search. Portal decision-date and design discrepancies remain unresolved. The next bounded check is September 28; this AI editorial assessment is not that source check.",
+          "prior": "The retained September 14 receipt leaves application 24 254930 at “City Council adoption with amendment bills withheld.” It records a bounded official-history check and retains September 21 as the next project check. This expansion does not advance that stage.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            6,
+            "paragraphs",
+            0,
+            "text"
+          ],
+          "replacement": "FTFN interpretation: Do not guess a corrected number, treat access failure as nonexistence, or date an old tracker total as current. The next research pass needs a clarified inventory series, reconciled starts observations and an accessible provincial release. This dated account has an AI editorial assessment; no place score or household-benefit claim is issued.",
+          "prior": "FTFN interpretation: Do not guess a corrected number, treat access failure as nonexistence, or date an old tracker total as current. The next research pass needs a clarified inventory series, reconciled starts observations and an accessible provincial release. Independent factual acceptance remains pending; no place score or household-benefit claim is issued.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Inherited exact place identity; independent expanded-content acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "3b2a1c0f399bbd345df8363c07b474ed6b64d071bf7d2bcaeb1f2ef08392c761"
+    },
+    {
+      "record_id": "192-PLACE-002",
+      "route": "/reference/global-places-ii/south-australia-grid-storage/",
+      "title": "South Australia: distinguish generation, network services and household electricity costs",
+      "decision": "Accept the South Australia place account with explicit historical timing and AI-policy wording",
+      "rationale": "The six sections and six nested interpretations keep residents, customer connections, annual generation, local network service and tariff cohorts distinct. They do not turn generation mix into reliability or attribute standing-offer changes to a battery. The September 17 sentence must be anchored to its original September 14 assessment instead of continuing to imply a future release; this review has not inspected that later population release.",
+      "findings": [
+        {
+          "location": "Population and generation",
+          "disposition": "Accept separate denominators and periods",
+          "finding": "1,910.6 thousand is the rounded, revisable December 31, 2025 resident estimate in a June release, not a September population or customer count. Calendar-2025 generation shares of 77.0% renewable and 21.3% gas do not cover demand served or interval reliability."
+        },
+        {
+          "location": "Dalrymple and standing offers",
+          "disposition": "Accept separate local/service/cohort scopes",
+          "finding": "30 MW and 8 MWh concern one local network. AER’s 1.4% flat-rate standing-offer increase and 1.1% time-of-use standing-offer decrease effective July 1 are not every household’s bill or demonstrated battery effects."
+        },
+        {
+          "location": "Method, exclusions and language of review",
+          "disposition": "Required temporal and policy clarification",
+          "finding": "A compatible event/load/counterfactual record remains necessary. Uninspected PDF extrema and wholesale prices stay excluded. Retained Dalrymple pilot access does not validate a statewide series. Replace independent human acceptance/method-review conditions with actual AI assessment and reproducible evidence requirements."
+        }
+      ],
+      "source_record_sha256": "e1730cf0669a3f3d8e4fafa75af8f5132eb21a9cc31f65da8877ad7a8e178aac",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Residents are not electricity connections",
+          "sha256": "abda91cd45a67b51e763348b0c88efd535e1016d5f9fbff976cf8a47eb90bca4"
+        },
+        {
+          "heading": "Annual generation share is not continuous supply",
+          "sha256": "199776a0b09ed099142123bfa6feb8551a7ba4ba769bbe2b7db355050ce6b4b5"
+        },
+        {
+          "heading": "Dalrymple serves a defined local network",
+          "sha256": "e6f434b1f6b9bd8e0f3516fce67a74adc9f774ab710ded7edbd66638ae3ab8e5"
+        },
+        {
+          "heading": "The retail result depends on the customer cohort",
+          "sha256": "a185fd83a069998c5afa75624154d587c297ed9c08ff841ba61fce7f18c8e525"
+        },
+        {
+          "heading": "Build an event account before comparing performance",
+          "sha256": "fd7177c5cd7d42972a950c3e1bc4a39983cc62d5fd83cfdeb89b9a48371806c9"
+        },
+        {
+          "heading": "Next evidence and what was excluded",
+          "sha256": "e917e11e9f19296fe8f6d5f2da791bfd0fab3735f37e514c7f17b1f16efd4e47"
+        }
+      ],
+      "reviewed_source_notes_sha256": "498924c96ead4fc8296f9e5100979a56896ea1e93b4d96a1580dbfb7c6799df3",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "ec1147a385801e3381fbbe21860717a03eae4f19217506e43c3c05574213b31c",
+      "reviewed_language_notes_sha256": null,
+      "related_article_inputs": [],
+      "pilot_inputs": [
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-DEFINITION-2026-09-15",
+          "sha256": "b9107cf89ffc88eba01afbb4929fd2b004b16837bb36304ee68b57db666635e9",
+          "reviewed_scope": "Retained findings, dates, source-check summaries, access limitations and required-artifact lists; not a new visual inspection or source retrieval."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-VISUAL-2026-09-15",
+          "sha256": "ca0fd85c2be6cde790c05303ab8f335d62c29da71ee1eaf9e5a9b43b02902e48",
+          "reviewed_scope": "Retained findings, dates, source-check summaries, access limitations and required-artifact lists; not a new visual inspection or source retrieval."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "sha256": "8f5f810edacd39d74e9935ac52ca48a90d70cecd7700b61f01822425ec329f6f",
+          "reviewed_scope": "Retained findings, dates, source-check summaries, access limitations and required-artifact lists; not a new visual inspection or source retrieval."
+        }
+      ],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "The next reporting needs compatible operator reliability observations, customer-cohort evidence and a reproducible method assessment. AEMO report-dependent demand extrema and wholesale-price claims were excluded because PDF visual inspection could not be completed. The original September 14 account did not inspect the then-future September 17 population release. This AI assessment has not performed that later check and adds no operating result.",
+          "prior": "The next reporting needs compatible operator reliability observations, customer-cohort evidence and independent method review. AEMO report-dependent demand extrema and wholesale-price claims were excluded because PDF visual inspection could not be completed. No September 17 population release or future operating result is prewritten.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            5,
+            "paragraphs",
+            0,
+            "text"
+          ],
+          "replacement": "FTFN interpretation: The present HTML sources support a bounded place account, not a complete electricity-system verdict. Review the exact local service topology and retail cohort before adding outcomes. Existing identity is retained; this dated expanded account has an AI assessment, while public release remains separately unauthorized.",
+          "prior": "FTFN interpretation: The present HTML sources support a bounded place account, not a complete electricity-system verdict. Review the exact local service topology and retail cohort before adding outcomes. Existing identity is retained; independent acceptance of the expanded content and any later release remain open.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Inherited exact place identity; independent expanded-content acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "949ddf33bbcc49a9a7c624afd6a08409cc2576755d3f6e62f249aa98904ccf9a"
+    },
+    {
+      "record_id": "192-PLACE-006",
+      "route": "/reference/global-places-ii/france-place-acquisition/",
+      "title": "Saint-Paul-lès-Durance: the municipality around the ITER research site",
+      "decision": "Accept the commune-level account and limited French term readings without an impact or legal certification",
+      "rationale": "The six sections and five nested interpretations consistently distinguish Saint-Paul-lès-Durance commune 13099 from the ITER installation, worker catchment and multi-commune logistics route. Census periods, source suppression and housing categories are preserved. The displayed French glossary readings are acceptable within that context; no independent jurisdiction review or new legal opinion is needed to accept this bounded editorial account.",
+      "findings": [
+        {
+          "location": "Identity and population/workplace measures",
+          "disposition": "Accept municipality and non-equivalent populations",
+          "finding": "January 1, 2026 geography and 2023 observations remain separate. 885 residents and 9,068 workplace jobs are neither the same population nor an ITER-employment count. The decree’s spelling variant does not create another municipality."
+        },
+        {
+          "location": "Housing and language",
+          "disposition": "Accept category definitions; reject inferred affordability",
+          "finding": "692 dwellings and 58.5% principal, 35.3% secondary/occasional and 6.2% vacant shares are dated housing stock. Suppressed poverty is not zero. Emplois au lieu de travail concerns workplace jobs, not employed residents; logements vacants is a census category, not proof of available or affordable homes."
+        },
+        {
+          "location": "Logistics, authority and next evidence",
+          "disposition": "Accept scope, remove independent-human prerequisite",
+          "finding": "Sixteen-commune logistics is not all host-commune activity or net economic benefit. The perimeter instrument does not measure water quality or capacity; its annex and consolidated legal history remain uninspected. Future utility/service/distribution claims need their own compatible records."
+        }
+      ],
+      "source_record_sha256": "d636b84b38b883975938d3263fad1b7a9c30930ad2f441ebc2c0aee7fc9780cc",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Start with the municipal boundary",
+          "sha256": "ffcf833a0ceb6b809234a79b10b62d500fd0d9c56dcf3847ed249af74cbdcffa"
+        },
+        {
+          "heading": "Residents and workplaces answer different questions",
+          "sha256": "31ace356d09aeedfddc3f7f4ef81e438bf7449e53d900fcaa13d3d043016fad8"
+        },
+        {
+          "heading": "Housing is a stock, not an affordability verdict",
+          "sha256": "2d594a152358191ea1aec920593de9c437739e285f7ef357871e1a0256284778"
+        },
+        {
+          "heading": "Infrastructure extends beyond the host commune",
+          "sha256": "d8a8b8a79e66e0e47c46bdfecda4ea66b9b5a2e833c4511f2fb60bad8bb91810"
+        },
+        {
+          "heading": "Authority and water-related boundaries",
+          "sha256": "afc3c749eca8648a56a9003504595ef24e5909060c0f1e56b744f6fb8b35b3ae"
+        },
+        {
+          "heading": "What remains outside the place account",
+          "sha256": "4dd5f20c6dc34b60dd0adfa9f1ef03666310a72f7955c2df1f5b622e21fae76f"
+        }
+      ],
+      "reviewed_source_notes_sha256": "d76224f9a9d031dc8f281a430cba3ceddcf26996f4d8c50a2215a0a94111cbd3",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "a9842bfef0c96f6bde391a1d4b7e987381d904dd3ae5b7abf7f03c67fa6406b8",
+      "reviewed_language_notes_sha256": "678ff60d9f4ef5064ca588a8843e61b6a75b9e98b95d993c1d1cddb97b944547",
+      "related_article_inputs": [],
+      "pilot_inputs": [],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "The selected evidence does not yet establish utility adequacy, transport reliability, public-service costs or the distribution of benefits. There is no synthetic place score. Obtain accepted local-system records and compatible household/service observations, and assess the exact evidence and jurisdictional scope. This dated account and its displayed term readings have an AI editorial assessment; no full bilingual legal review or external factual certification is claimed.",
+          "prior": "The selected evidence does not yet establish utility adequacy, transport reliability, public-service costs or the distribution of benefits. There is no synthetic place score. Obtain accepted local-system records and compatible household/service observations, then seek independent jurisdiction and factual review.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Evidence-bound candidate; independent identity decision pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            0,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            1,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "d7fc99a9380896f53404e32400cc634b3e689de5efc69346def5f8bc84a19658"
+    },
+    {
+      "record_id": "192-PLACE-010",
+      "route": "/reference/global-places-ii/japan-place-acquisition/",
+      "title": "Naka, Japan: distinguish a research campus from an energy service",
+      "decision": "Accept the Naka place account and scoped Japanese term readings after replacing obsolete review-gate wording",
+      "rationale": "All six sections and five nested interpretations preserve the city/campus/device distinction, two separate population counting methods, dated travel guidance, training participation and facility-specific cooling work. The displayed Japanese glosses fit these retained contexts. Acceptance is editorial and scope-specific, not a current timetable check, legal identity registration, full bilingual source reinspection or city-service finding.",
+      "findings": [
+        {
+          "location": "Place and population definitions",
+          "disposition": "Accept separate boundaries and counting methods",
+          "finding": "801-1 Mukoyama is the campus location. September 1 municipal register totals of 52,176 residents/23,834 households are distinct from the 51,193 census-based estimate. 住民基本台帳人口 is the municipal register population and 常住人口 the described census-based series; their difference is not a count of temporary researchers."
+        },
+        {
+          "location": "Access and training",
+          "disposition": "Accept dated guidance and non-outcome announcement",
+          "finding": "April 2024 access guidance is not today’s operator timetable or observed commute reliability. The paired August 31 announcements are one institutional release, not completed graduates, retained jobs or qualified operators. 那珂市 identifies the city, not the institute itself."
+        },
+        {
+          "location": "Cooling and remaining evidence",
+          "disposition": "Accept subfacility scope; remove human prerequisite",
+          "finding": "The April 30, 2025 piping/support entry is not integrated-system acceptance or city water reliability. A newer page header does not change its date. No city energy-service result, regional score or extra counted identity is created by the current editorial assessment."
+        }
+      ],
+      "source_record_sha256": "12aecd7b548de8eaf88a2192096f7aa89eae673a7f23dc5cb31cc0dd76f8d462",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Bind the institute to a place without merging them",
+          "sha256": "b60e33411d87f9183ac119618e13bad236dc454b1e9c8b9030609b4ea7b20386"
+        },
+        {
+          "heading": "Two population totals, two definitions",
+          "sha256": "14afb7c479c6a5421220e1ee0699eb0f1252d04ff09e0977dd8cd1c2b2bbad0c"
+        },
+        {
+          "heading": "Access is a dependency, not a verified commute outcome",
+          "sha256": "eb8a676814ecdc000a968c8ace3573a3a9764b9036a3d8d19394265036dc7f30"
+        },
+        {
+          "heading": "Workforce development: count participation separately",
+          "sha256": "910126a53c2db16c33560cfa6091a8f41da1527fca13fb914f62ddfa26dc5068"
+        },
+        {
+          "heading": "Cooling work belongs to a facility, not the city water service",
+          "sha256": "224ac654a3c8799ec79223b9b20058bc9db5b9898a89fccb5e1fe52cd0768d3c"
+        },
+        {
+          "heading": "Remaining place questions",
+          "sha256": "87c9bc719237e76a433371c44b1423b39d1d01edf0f886d7b9387b8cd31c3c47"
+        }
+      ],
+      "reviewed_source_notes_sha256": "ed0c6f6188be37da94d4743cfa42a98f2810a0d4efe7a5fde4ea80598a1f6e05",
+      "source_notes_absent": false,
+      "reviewed_identity_evidence_sha256": "281c0f7225027022bec7d0399524efc745ed18910ef803a549c0b263e4e3415f",
+      "reviewed_language_notes_sha256": "ac860e3075000d981f251c7a1e9cbc7b31485ad1d60adfea91e79b6788379b93",
+      "related_article_inputs": [],
+      "pilot_inputs": [],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "replacement": "Acquire municipal service, household and access evidence beyond the research programme, with comparable dates and spatial boundaries. The displayed native-language interpretations and stated city/campus boundary have an AI assessment, not a new external or independent bilingual source check. This account contains no regional score, completed training outcome or city energy-service result; portfolio eligibility remains its separate recorded decision.",
+          "prior": "Acquire municipal service, household and access evidence beyond the research programme, with comparable dates and spatial boundaries. Review the native-language interpretations independently. The draft contains no regional score, completed training outcome, city energy-service result or formally accepted place identity.",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "identity_evidence",
+            "disposition"
+          ],
+          "replacement": "AI editorial assessment accepts the stated entity boundary and non-equivalences for this exact dated account; portfolio eligibility and operating stage remain separate recorded decisions.",
+          "prior": "Evidence-bound candidate; independent identity decision pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            0,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            1,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        },
+        {
+          "path": [
+            "language_notes",
+            2,
+            "review_status"
+          ],
+          "replacement": "AI assessment accepts this displayed term reading in the retained context; no full bilingual source reinspection, independent human review or legal certification is claimed.",
+          "prior": "Independent language/jurisdiction acceptance pending",
+          "original_preservation": "Keep the complete original field or paragraph in native history and preserve the original source record and export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact current-presentation changes and preserve complete original history, including nested paragraphs and identity/language status fields. Verify designated route, every section and citation, original exports and dated source context. No new counted identity, human review, source retrieval or operating admission follows.",
+      "sha256": "51eef0cc279ec385addec98d59c5fdeaa2ef6cd0f695bb1a774e9bd17caadf06"
+    }
+  ],
+  "boundary": "All 33 exact selected articles now have actual individual AI dispositions across five ledgers. Only four decisions are integrated in the current application. The other 29 and their required changes still require implementation and validation; they are not already current UI acceptance. Reachable historical content, all 58 annual assessments, 24 translations, portfolio expansion and evidence-based measurement remain separate work."
+}

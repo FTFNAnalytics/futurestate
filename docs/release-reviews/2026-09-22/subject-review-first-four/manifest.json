@@ -1,0 +1,721 @@
+{
+  "schema_version": "1.0",
+  "prepared_date": "2026-09-23",
+  "purpose": "Independent-review preparation only; not a source refresh, review return, approval, contact or release decision.",
+  "candidate_binding": {
+    "candidate_digest": "c341284d9defad5635a12d52d77aa065cfbd666f545d8b6a013da44472088e3b",
+    "validation_status": "terminal_pass",
+    "validation_results": "outputs/validation/2026-09-25T21-33-22.087Z-MdLWKr/results.json",
+    "receipt_id": "204-FULL-LOCAL-VALIDATION-2026-09-25-2058af752c4f",
+    "validation_finished_at": "2026-09-25T21:54:44.132Z",
+    "recovered_source_commit": "824734092ec6af6171c273527c532587808f605a",
+    "recovery_report": "outputs/release-checkpoints/2026-09-25T21-56-05.587Z-Av7lZ0/git-recovery-verification.json",
+    "recovered_prior_commit": "2f7e524cc6f0a40abb75f6fa25b657807fc4a487",
+    "boundary": "The recovered application includes the September 25 Vermont facility-geography follow-up. These later review-binding fields are not claimed to be inside that commit. The four answer records, claim prompts and all human-return fields remain unchanged."
+  },
+  "article_source": "app/src/data/phase-205-216-current-editorial.json",
+  "independent_approvals": 0,
+  "external_contacts": 0,
+  "supplementary_records": [
+    {
+      "id": "119-PROJECT-001",
+      "file": "app/src/data/phase-205-216-current-editorial.json",
+      "array": "records",
+      "key": "record_id",
+      "record_sha256": "5e34823cb151793e7d6ac7ecab8bd96f41bc02b9335495777776a44f2a31e36e",
+      "locator": "source_notes; related dossier, not new checks for this answer",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "Article body: Fab 1 and Fab 2 milestones",
+          "scope": "City account relaying company claims. A separately verified Fab 3 milestone was not established in this article.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "Item 73, printed pages 198–199 / PDF pages 197–198 (zero based)",
+          "scope": "Request for authorization, not minutes, an enacted ordinance, an executed agreement or utility acceptance. Flow quantities are prospective capacity, not metered use.",
+          "access": "Relevant PDF text inspected in the September 14–15 research session. Screenshot request returned no inspectable image; visual verification remains pending. No table-derived series admitted."
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Printed page 8; Item 73",
+          "scope": "Council adoption authorizes the agreement; it does not establish completed works, commissioning, acceptance or measured flow.",
+          "access": "Text inspection retained from receipt-60-arizona-2026-09-22-no-material-change. PDF visual/signature verification was not established."
+        }
+      ]
+    },
+    {
+      "id": "191-PROJECT-001",
+      "file": "app/src/data/phase-205-216-current-editorial.json",
+      "array": "records",
+      "key": "record_id",
+      "record_sha256": "b3ad31442d6feed5e5f6c0138b3378204bff94dac390ad575a27ea80bd45cefa",
+      "locator": "source_notes; related dossier, not new checks for this answer",
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "City Council decision, especially clauses 4–10",
+          "scope": "Adoption and conditional withholding of bills; not proof of later enactment, satisfaction or a building permit.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "Application number, address list, proposal and meeting date",
+          "scope": "Proposal-stage identity and intended uses. Proposed community space and parkland are not delivered facilities.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        }
+      ]
+    },
+    {
+      "id": "receipt-60-nextlink-2026-09-10-no-material-change",
+      "file": "app/src/data/phase-60-current-decisions.json",
+      "array": "receipts",
+      "key": "receipt_id",
+      "record_sha256": "02f8b6f03b55f56ceb50415e6bc7cfb2ba0ea1c97ae958dd92a73253a0059eae",
+      "locator": "official_surface_checks, evidence_boundary, bounded_finding",
+      "checked_date": "2026-09-10",
+      "bounded_finding": "The reviewed state and provider records establish service availability for 104 Bossier locations, not measured subscriptions for that cohort. The September construction forecast is not an adoption return.",
+      "next_check_date": "2026-10-09"
+    },
+    {
+      "id": "receipt-60-arizona-2026-09-22-no-material-change",
+      "file": "app/src/data/phase-60-current-decisions.json",
+      "array": "receipts",
+      "key": "receipt_id",
+      "record_sha256": "c2a5d96b203d5de5f0f3bfbecf1aea02fb40c33f391ecfe0572f7afc8013dd05",
+      "locator": "official_surface_checks, evidence_boundary, bounded_finding",
+      "checked_date": "2026-09-22",
+      "bounded_finding": "The September 22 public-source check retrieved Council authorization and conditional wastewater capacity, City completion/acceptance guidance, and operator plans, but no exact TSMC completed-and-accepted conveyance, operating reclaimed-water asset, measured flow/discharge/compliance return or facility water balance. The agreement signal remains Published; no downstream operating or qualification claim is admitted.",
+      "next_check_date": "2026-10-09"
+    },
+    {
+      "id": "207-TORONTO-2026-09-21-BOUNDED-RECHECK",
+      "file": "app/src/data/phase-207-project-checks/207-TORONTO-2026-09-21-BOUNDED-RECHECK.json",
+      "array": null,
+      "key": "receipt_id",
+      "record_sha256": "b894a24a020d5ad552f9749b9e2ecd42bff0c9746e06747fac8ee0ff33486e5e",
+      "locator": "source_checks, permit_address_checks, search_scope, bounded_finding",
+      "checked_date": "2026-09-21",
+      "bounded_finding": "The September 21 check retains Council adoption with amendment bills withheld. The exact application portal was recovered, but its decision date and design particulars conflict with the Council record and are flagged, not reconciled by assumption. No qualifying enacted amendment, accepted condition-compliance record or project-specific permit was retrieved in the stated scope. Eight exact-address permit searches do not prove that no permit exists. No project advancement, condition acceptance or new outcome is inferred.",
+      "next_check_date": "2026-09-28"
+    },
+    {
+      "id": "60-CYCLE-LOUISIANA-STARLINK-ADOPTION",
+      "file": "app/src/data/phase-60-operating-cycle.json",
+      "array": "records",
+      "key": "cycle_item_id",
+      "record_sha256": "db9ead4ef885246d6260db9e4e683ef53ca48ce39ed41ce432e96f14dc147400",
+      "locator": "receipt_id and companion_rechecks[0]; preserve separate decision identities",
+      "checked_date": "2026-09-01",
+      "companion_checked_date": "2026-09-08"
+    }
+  ],
+  "assignments": [
+    {
+      "article_id": "195-BRIEF-017",
+      "article_payload_sha256": "7047895a946a78cc17bcc0878d912ad005cf9afbba134e3f4298cacf6ea05dab",
+      "record_sha256": "0d7ae7b3f913d72d9c67a79e1021139e6ba63bd197e9bf751d591a5ec799f4eb",
+      "article_snapshot": {
+        "record_id": "195-BRIEF-017",
+        "title": "Which TSMC Arizona stages are supported?",
+        "topic": "Chips and Compute",
+        "source_project": "119-PROJECT-001",
+        "updated_date": "2026-09-22",
+        "receipt_ids": [
+          "receipt-60-arizona-2026-09-22-no-material-change"
+        ],
+        "answer": "Phoenix’s July account relays Fab 1 production and Fab 2 construction milestones. The September 22 wastewater review also establishes Council adoption of the May agreement authorization, but not completed-and-accepted utility works or measured reclaimed-water operation.",
+        "detail": "Item 73 was adopted in the May 20 Council results, printed page 8. The agenda’s conditional capacity terms remain separate from actual flow or asset acceptance. The July article does not independently re-certify the inherited Fab 3 milestone. The September 22 receipt records a bounded No Material Change decision on downstream wastewater evidence; it does not say the authorization is missing or that no operating record exists anywhere. Its next cycle check is October 9; the separate November 21 appointment remains intact.",
+        "source_check_boundary": "Editorial reconciliation on September 22 reuses the completed September 22 wastewater receipt and the earlier July-article inspection. No additional source check, new gate decision or independent review is implied.",
+        "next": "Exact facility-level utility or qualification acceptance and period-matched production evidence.",
+        "kind": "Question",
+        "sources": [
+          {
+            "title": "Phoenix: TSMC Arizona campus investment update",
+            "url": "https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html",
+            "artifact_date": "2026-07-16"
+          },
+          {
+            "title": "Phoenix formal agenda, Item 73: wastewater development agreement request",
+            "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Agenda-FINAL.pdf",
+            "artifact_date": "2026-05-20 meeting; revised 2026-05-19"
+          },
+          {
+            "title": "Phoenix formal results, Item 73: adopted authorization",
+            "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Results-FINAL.pdf",
+            "artifact_date": "2026-05-20; inspected in September 22 receipt"
+          }
+        ],
+        "sections": [
+          {
+            "heading": "What the evidence establishes",
+            "text": "Item 73 was adopted in the May 20 Council results, printed page 8. The agenda’s conditional capacity terms remain separate from actual flow or asset acceptance. The July article does not independently re-certify the inherited Fab 3 milestone. The September 22 receipt records a bounded No Material Change decision on downstream wastewater evidence; it does not say the authorization is missing or that no operating record exists anywhere. Its next cycle check is October 9; the separate November 21 appointment remains intact.",
+            "citations": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "heading": "What would change this answer",
+            "text": "Exact facility-level utility or qualification acceptance and period-matched production evidence.",
+            "citations": []
+          },
+          {
+            "heading": "Scope of this answer",
+            "text": "This is a named-case answer under a broader existing research question. It does not resolve every entity or jurisdiction covered by that question. Independent editorial/subject acceptance is pending.",
+            "citations": []
+          }
+        ],
+        "route": "/reference/questions/chips-and-compute--116-q-017/",
+        "authored_date": "2026-09-14",
+        "review_status": "Editorial draft — independent review pending",
+        "approved": false,
+        "historical_record_title": "Which named fabs, data centers and compute services have defensible baselines for installed, available and qualified capacity?",
+        "sha256": "7047895a946a78cc17bcc0878d912ad005cf9afbba134e3f4298cacf6ea05dab"
+      },
+      "reviewer": {
+        "name": null,
+        "expertise": null,
+        "conflicts": null,
+        "review_date": null,
+        "contact_authorized": false
+      },
+      "article_decision": null,
+      "decision_rationale": null,
+      "claims": [
+        {
+          "id": "TSMC-01",
+          "article_field": "answer",
+          "exact_text": "Phoenix’s July account relays Fab 1 production and Fab 2 construction milestones.",
+          "source_indices": [
+            0
+          ],
+          "supplementary_ids": [
+            "119-PROJECT-001"
+          ],
+          "review_question": "Does the City account support these separately attributed milestones? Check Fab 1, Fab 2 and the excluded Fab 3 independently.",
+          "entity_period_unit_boundary": "Each fab is a distinct facility/stage. July 16, 2026 account; no independently reproduced production-rate series.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "TSMC-02",
+          "article_field": "detail",
+          "exact_text": "Item 73 was adopted in the May 20 Council results, printed page 8.",
+          "source_indices": [
+            1,
+            2
+          ],
+          "supplementary_ids": [
+            "receipt-60-arizona-2026-09-22-no-material-change"
+          ],
+          "review_question": "Confirm exact Item 73 identity and the difference between agenda request, adopted authorization and executed/accepted works.",
+          "entity_period_unit_boundary": "May 20, 2026 Council event; agenda revised May 19. No measured flow or capacity acceptance.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "TSMC-03",
+          "article_field": "detail",
+          "exact_text": "The agenda’s conditional capacity terms remain separate from actual flow or asset acceptance.",
+          "source_indices": [
+            1,
+            2
+          ],
+          "supplementary_ids": [
+            "receipt-60-arizona-2026-09-22-no-material-change"
+          ],
+          "review_question": "Verify the conditional terms on printed pages 198–199. Is any wording being read as commissioning, metered flow or acceptance?",
+          "entity_period_unit_boundary": "Prospective capacity is not an operating observation. No compatible period, meter ledger or denominator is supplied.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "TSMC-04",
+          "article_field": "detail",
+          "exact_text": "The September 22 receipt records a bounded No Material Change decision on downstream wastewater evidence; it does not say the authorization is missing or that no operating record exists anywhere.",
+          "source_indices": [
+            1,
+            2
+          ],
+          "supplementary_ids": [
+            "receipt-60-arizona-2026-09-22-no-material-change"
+          ],
+          "review_question": "Check the receipt's bounded finding and search limitations, including the unsubmitted ADEQ form. Preserve separate October 9 and November 21 follow-ups.",
+          "entity_period_unit_boundary": "September 22 is the inspection/decision date, not a new asset event. PDF visual/signature verification remains unestablished.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        }
+      ]
+    },
+    {
+      "article_id": "195-BRIEF-053",
+      "article_payload_sha256": "62ce627d1239a3446d257697a21a6079e41e77e946a2f2e5193773e6d1ef00c5",
+      "record_sha256": "35cc131a88cb0f0d32cf3dd3d38f7fd7b34c3f0774e56a405446e5055a97bb50",
+      "article_snapshot": {
+        "record_id": "195-BRIEF-053",
+        "title": "What does Toronto file 24 254930 permit us to conclude?",
+        "topic": "Policy and Standards",
+        "source_project": "191-PROJECT-001",
+        "updated_date": "2026-09-22",
+        "receipt_ids": [
+          "207-TORONTO-2026-09-21-BOUNDED-RECHECK"
+        ],
+        "answer": "The September 21 check retains Council adoption with amendment bills withheld pending conditions. The recovered application portal and eight exact-address permit searches did not supply a qualifying enactment, accepted condition-compliance record or project-specific permit.",
+        "detail": "The portal’s decision date and design particulars differ from the Council item; those differences remain unresolved. Draft documents, a Council Approved label and nearby-area permits do not establish permitted construction. The address-search limits also prevent a claim that no permit exists. The next separate Toronto check is September 28, not an additional primary evidence-cycle decision. This is a source-status answer, not legal advice or an opinion about what an owner may build.",
+        "source_check_boundary": "Editorial reconciliation on September 22 reuses the actual September 21 project receipt. It is not a new Council, permit or source-check decision.",
+        "next": "The enacted instruments, condition-compliance records and exact application-matched permit.",
+        "kind": "Question",
+        "sources": [
+          {
+            "title": "Toronto Council item 2026.SC33.9",
+            "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+            "artifact_date": "City Council 2026-07-29/30"
+          },
+          {
+            "title": "Toronto public notice 7606, application 24 254930 ESC 20 OZ",
+            "url": "https://secure.toronto.ca/nm/api/individual/notice/7606.do",
+            "artifact_date": "Meeting 2026-07-09"
+          }
+        ],
+        "sections": [
+          {
+            "heading": "What the evidence establishes",
+            "text": "The portal’s decision date and design particulars differ from the Council item; those differences remain unresolved. Draft documents, a Council Approved label and nearby-area permits do not establish permitted construction. The address-search limits also prevent a claim that no permit exists. The next separate Toronto check is September 28, not an additional primary evidence-cycle decision. This is a source-status answer, not legal advice or an opinion about what an owner may build.",
+            "citations": [
+              0,
+              1
+            ]
+          },
+          {
+            "heading": "What would change this answer",
+            "text": "The enacted instruments, condition-compliance records and exact application-matched permit.",
+            "citations": []
+          },
+          {
+            "heading": "Scope of this answer",
+            "text": "This is a named-case answer under a broader existing research question. It does not resolve every entity or jurisdiction covered by that question. Independent editorial/subject acceptance is pending.",
+            "citations": []
+          }
+        ],
+        "route": "/reference/questions/policy-and-standards--116-q-053/",
+        "authored_date": "2026-09-14",
+        "review_status": "Editorial draft — independent review pending",
+        "approved": false,
+        "historical_record_title": "Which laws, rules, standards, permits and institutional responsibilities currently govern each priority conversion pathway?",
+        "sha256": "62ce627d1239a3446d257697a21a6079e41e77e946a2f2e5193773e6d1ef00c5"
+      },
+      "reviewer": {
+        "name": null,
+        "expertise": null,
+        "conflicts": null,
+        "review_date": null,
+        "contact_authorized": false
+      },
+      "article_decision": null,
+      "decision_rationale": null,
+      "claims": [
+        {
+          "id": "TORONTO-01",
+          "article_field": "answer",
+          "exact_text": "The September 21 check retains Council adoption with amendment bills withheld pending conditions.",
+          "source_indices": [
+            0,
+            1
+          ],
+          "supplementary_ids": [
+            "191-PROJECT-001",
+            "207-TORONTO-2026-09-21-BOUNDED-RECHECK"
+          ],
+          "review_question": "Check Council clauses 4–10, especially recommendation 8, against the exact application identity and withholding prerequisites.",
+          "entity_period_unit_boundary": "Application 24 254930 ESC 20 OZ; July 29–30, 2026 Council meeting. Adoption is separate from enactment and permits.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "TORONTO-02",
+          "article_field": "detail",
+          "exact_text": "The portal’s decision date and design particulars differ from the Council item; those differences remain unresolved.",
+          "source_indices": [
+            0,
+            1
+          ],
+          "supplementary_ids": [
+            "207-TORONTO-2026-09-21-BOUNDED-RECHECK"
+          ],
+          "review_question": "Reconcile, or explicitly leave unresolved, the receipt's portal/Council date, storey and community-space discrepancies. Do not select the latest-looking value as authoritative by assumption.",
+          "entity_period_unit_boundary": "Receipt reports July 29–30 versus August 28; 35/17 versus 35/14 storeys; 641 versus 390 square metres. These are source-version differences, not established revised approval.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "TORONTO-03",
+          "article_field": "answer",
+          "exact_text": "The recovered application portal and eight exact-address permit searches did not supply a qualifying enactment, accepted condition-compliance record or project-specific permit.",
+          "source_indices": [
+            0,
+            1
+          ],
+          "supplementary_ids": [
+            "207-TORONTO-2026-09-21-BOUNDED-RECHECK"
+          ],
+          "review_question": "Inspect the receipt's six source checks, eight address queries and search_scope. Does the answer preserve bounded coverage rather than claim no permit exists?",
+          "entity_period_unit_boundary": "September 21 inspection; 54 document listings, not downloaded bodies; eight exact addresses, not an exhaustive permit-number or certified parcel history.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        }
+      ]
+    },
+    {
+      "article_id": "195-BRIEF-047",
+      "article_payload_sha256": "80b459b17ec9217f559cbf843648147326ecfbf3188df57ba0c89e73085f20cb",
+      "record_sha256": "a236ce870beead170b3637970c0d2040998703ab5d44c8fc5d3138b709ff9e3c",
+      "article_snapshot": {
+        "record_id": "195-BRIEF-047",
+        "title": "Has Louisiana availability become observed broadband adoption?",
+        "topic": "Human Futures",
+        "updated_date": "2026-09-22",
+        "receipt_ids": [
+          "receipt-60-nextlink-2026-09-10-no-material-change"
+        ],
+        "source_check_boundary": "The exact May 13 ConnectLA release was re-read September 22 for this answer. The September 10 adoption receipt remains unchanged; this narrow text check is not a new gate decision or an exhaustive search for later subscriptions.",
+        "sources": [
+          {
+            "title": "Nextlink tower availability release",
+            "url": "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+            "artifact_date": "2026-05-13; exact release re-read September 22"
+          },
+          {
+            "title": "Phase 60 current decisions",
+            "url": "/data/current-evidence-decisions.json",
+            "artifact_date": "September 10 receipt; not a new gate check"
+          }
+        ],
+        "source_notes": [
+          {
+            "source_index": 0,
+            "checked_date": "2026-09-22",
+            "locator": "Opening paragraphs and About Nextlink",
+            "scope": "The tower is located in Bienville Parish and serves the stated 104-location Bossier cohort. The statewide 7,460-location award and company-wide subscriber total are different populations; neither supplies this cohort’s subscriptions.",
+            "access": "Official release HTML inspected; no subscription ledger, speed test or later-provider search performed"
+          }
+        ],
+        "answer": "The retained Nextlink review establishes availability to the named 104-location Bossier cohort, not observed subscriptions in that cohort. The Starlink gate has its own separate decision and must not inherit Nextlink’s location count.",
+        "detail": "A statewide provider award, an availability checker and a company-wide subscriber total have different populations. None supplies the missing take-rate fraction for this cohort. The two providers remain separate even when a statewide announcement mentions both.",
+        "next": "Provider-specific subscriptions or take-up with a fixed eligible cohort, period, numerator, denominator and method.",
+        "kind": "Question",
+        "sections": [
+          {
+            "heading": "What the evidence establishes",
+            "text": "A statewide provider award, an availability checker and a company-wide subscriber total have different populations. None supplies the missing take-rate fraction for this cohort. The two providers remain separate even when a statewide announcement mentions both.",
+            "citations": [
+              0,
+              1
+            ]
+          },
+          {
+            "heading": "What would change this answer",
+            "text": "Provider-specific subscriptions or take-up with a fixed eligible cohort, period, numerator, denominator and method.",
+            "citations": []
+          },
+          {
+            "heading": "Scope of this answer",
+            "text": "This is a named-case answer under a broader existing research question. It does not resolve every entity or jurisdiction covered by that question. Independent editorial/subject acceptance is pending.",
+            "citations": []
+          }
+        ],
+        "route": "/reference/questions/human-futures--116-q-047/",
+        "authored_date": "2026-09-14",
+        "review_status": "Editorial draft — independent review pending",
+        "approved": false,
+        "historical_record_title": "Which accepted and repeated services establish real availability, accessibility, quality and use for defined populations?",
+        "sha256": "80b459b17ec9217f559cbf843648147326ecfbf3188df57ba0c89e73085f20cb"
+      },
+      "reviewer": {
+        "name": null,
+        "expertise": null,
+        "conflicts": null,
+        "review_date": null,
+        "contact_authorized": false
+      },
+      "article_decision": null,
+      "decision_rationale": null,
+      "claims": [
+        {
+          "id": "LOUISIANA-01",
+          "article_field": "answer",
+          "exact_text": "The retained Nextlink review establishes availability to the named 104-location Bossier cohort, not observed subscriptions in that cohort.",
+          "source_indices": [
+            0,
+            1
+          ],
+          "supplementary_ids": [
+            "receipt-60-nextlink-2026-09-10-no-material-change"
+          ],
+          "review_question": "Check opening release paragraphs: distinguish the Bienville tower location from the Bossier service cohort and an actual subscription ledger.",
+          "entity_period_unit_boundary": "May 13, 2026 release; 104 eligible locations are not 104 subscribers. September 22 text check does not replace September 10 gate decision.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "LOUISIANA-02",
+          "article_field": "detail",
+          "exact_text": "A statewide provider award, an availability checker and a company-wide subscriber total have different populations.",
+          "source_indices": [
+            0,
+            1
+          ],
+          "supplementary_ids": [
+            "receipt-60-nextlink-2026-09-10-no-material-change"
+          ],
+          "review_question": "Check opening paragraphs and About Nextlink; confirm the 7,460-location statewide award and company-wide totals are not denominators or numerators for this cohort.",
+          "entity_period_unit_boundary": "Fixed provider/cohort, period, subscription numerator and eligible-location denominator are missing for a take-rate calculation.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "LOUISIANA-03",
+          "article_field": "answer",
+          "exact_text": "The Starlink gate has its own separate decision and must not inherit Nextlink’s location count.",
+          "source_indices": [
+            1
+          ],
+          "supplementary_ids": [
+            "receipt-60-nextlink-2026-09-10-no-material-change",
+            "60-CYCLE-LOUISIANA-STARLINK-ADOPTION"
+          ],
+          "review_question": "Compare the separately identified baseline Starlink decision and September 8 companion with the Nextlink receipt. Do not merge provider cohorts.",
+          "entity_period_unit_boundary": "Nextlink 104-location cohort differs from the Starlink companion's 10,635 unique planning IDs; neither is an observed adoption numerator.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        }
+      ]
+    },
+    {
+      "article_id": "195-BRIEF-057",
+      "article_payload_sha256": "726b36d15c129a6b94a271f1a831c3826bc4c0d70b90372cd3572486f74d0a1a",
+      "record_sha256": "a44c5ba4f970bdf76c9b392fe9dfcc820853746bac7c249afa203bb7dc9ecd21",
+      "article_snapshot": {
+        "record_id": "195-BRIEF-057",
+        "title": "What quantum capability has actually been demonstrated?",
+        "topic": "Quantum",
+        "source_topic": "quantum",
+        "updated_date": "2026-09-22",
+        "source_check_boundary": "September 22 bounded editorial check: the version-3 arXiv abstract/revision notes and IBM author-hosted abstract were re-read. Both Nature links failed through the text reader, so their September 14 inspections remain inherited, not refreshed. No numerical reproduction or independent subject acceptance is claimed.",
+        "source_notes": [
+          {
+            "source_index": 0,
+            "checked_date": "2026-09-14",
+            "locator": "Willow paper and retained topic source appendix",
+            "scope": "The memory result remains bounded to its experiment. No September 22 full-text verification.",
+            "access": "September 22 text-reader retrieval failed at the publisher redirect; prior inspection retained"
+          },
+          {
+            "source_index": 1,
+            "checked_date": "2026-09-22",
+            "locator": "Author-hosted abstract, especially noise-model and assumed physical-error conditions",
+            "scope": "Protocol and model-conditioned result, not an observed general commercial application.",
+            "access": "IBM Research HTML abstract inspected; linked full paper and code not reproduced"
+          },
+          {
+            "source_index": 2,
+            "checked_date": "2026-09-22",
+            "locator": "Version 3 abstract, Comments and submission history",
+            "scope": "November 17, 2024 revision; better-than-physical comparisons depend on post-selection and the corrected physical-teleportation baseline.",
+            "access": "Exact arXiv version page inspected; underlying data not independently reproduced"
+          },
+          {
+            "source_index": 3,
+            "checked_date": "2026-09-14",
+            "locator": "Retained author-correction inspection concerning Figure 3a",
+            "scope": "No September 22 verification of the correction body; prior finding remains explicitly inherited.",
+            "access": "September 22 text-reader retrieval failed at the publisher redirect"
+          }
+        ],
+        "answer": "The reviewed research establishes bounded quantum-memory and logical-circuit error-correction results. It does not establish a general economical application or interchangeable performance across hardware platforms.",
+        "detail": "The Willow experiment tests a memory under specified surface-code conditions; the April 2026 correction concerns repetition-code labeling in Figure 3a. The trapped-ion source is now pinned to November 17, 2024 version 3, whose notes correct a physical teleportation baseline and whose comparisons depend on post-selection. Code-design research supplies another kind of evidence. Preserve experiment, baseline, version and acceptance rules before making an application claim.",
+        "next": "A reproducible named application with end-to-end resources, uncertainty and a credible classical comparison.",
+        "kind": "Question",
+        "sources": [
+          {
+            "title": "Google Quantum AI: Quantum error correction below the surface code threshold",
+            "url": "https://www.nature.com/articles/s41586-024-08449-y",
+            "artifact_date": "2024-12-09; page flags 2026-04-28 author correction"
+          },
+          {
+            "title": "High-threshold and low-overhead fault-tolerant quantum memory — exact Nature paper, author-hosted record",
+            "url": "https://research.ibm.com/publications/high-threshold-and-low-overhead-fault-tolerant-quantum-memory--2",
+            "artifact_date": "2024-03-27"
+          },
+          {
+            "title": "Demonstration of logical qubits and repeated error correction with better-than-physical error rates — v3",
+            "url": "https://arxiv.org/abs/2404.02280v3",
+            "artifact_date": "2024-11-17 revision; first submitted 2024-04-02"
+          },
+          {
+            "title": "Author Correction: Quantum error correction below the surface code threshold",
+            "url": "https://www.nature.com/articles/s41586-026-10559-8",
+            "artifact_date": "2026-04-28"
+          }
+        ],
+        "sections": [
+          {
+            "heading": "What the evidence establishes",
+            "text": "The Willow experiment tests a memory under specified surface-code conditions; the April 2026 correction concerns repetition-code labeling in Figure 3a. The trapped-ion source is now pinned to November 17, 2024 version 3, whose notes correct a physical teleportation baseline and whose comparisons depend on post-selection. Code-design research supplies another kind of evidence. Preserve experiment, baseline, version and acceptance rules before making an application claim.",
+            "citations": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "heading": "What would change this answer",
+            "text": "A reproducible named application with end-to-end resources, uncertainty and a credible classical comparison.",
+            "citations": []
+          },
+          {
+            "heading": "Scope of this answer",
+            "text": "This is a named-case answer under a broader existing research question. It does not resolve every entity or jurisdiction covered by that question. Independent editorial/subject acceptance is pending.",
+            "citations": []
+          }
+        ],
+        "route": "/reference/questions/quantum--116-q-057/",
+        "authored_date": "2026-09-14",
+        "review_status": "Editorial draft — independent review pending",
+        "approved": false,
+        "historical_record_title": "Which quantum systems and use cases have reproducible baselines for fidelity, scale, error, runtime, cost and classical alternatives?",
+        "sha256": "726b36d15c129a6b94a271f1a831c3826bc4c0d70b90372cd3572486f74d0a1a"
+      },
+      "reviewer": {
+        "name": null,
+        "expertise": null,
+        "conflicts": null,
+        "review_date": null,
+        "contact_authorized": false
+      },
+      "article_decision": null,
+      "decision_rationale": null,
+      "claims": [
+        {
+          "id": "QUANTUM-01",
+          "article_field": "answer",
+          "exact_text": "The reviewed research establishes bounded quantum-memory and logical-circuit error-correction results. It does not establish a general economical application or interchangeable performance across hardware platforms.",
+          "source_indices": [
+            0,
+            1,
+            2
+          ],
+          "supplementary_ids": [],
+          "review_question": "Evaluate whether the synthesis accurately separates memory, logical-operation and model-conditioned code-design evidence. Identify any statement outside your expertise.",
+          "entity_period_unit_boundary": "Do not pool hardware platforms, experimental regimes, physical-error assumptions or acceptance rules into a common application score.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "QUANTUM-02",
+          "article_field": "detail",
+          "exact_text": "The Willow experiment tests a memory under specified surface-code conditions; the April 2026 correction concerns repetition-code labeling in Figure 3a.",
+          "source_indices": [
+            0,
+            3
+          ],
+          "supplementary_ids": [],
+          "review_question": "Inspect the exact paper and correction body. The retained locator is not fresh full-text or visual clearance; provide precise pages/figure wording or leave the claim unresolved.",
+          "entity_period_unit_boundary": "December 9, 2024 paper; April 28, 2026 correction. September 22 Nature retrievals failed; prior September 14 inspection remains inherited.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "QUANTUM-03",
+          "article_field": "detail",
+          "exact_text": "The trapped-ion source is now pinned to November 17, 2024 version 3, whose notes correct a physical teleportation baseline and whose comparisons depend on post-selection.",
+          "source_indices": [
+            2
+          ],
+          "supplementary_ids": [],
+          "review_question": "Verify v3 abstract, Comments and history, then assess the actual baseline and post-selection conditions in the paper. Record whether numerical reproduction was performed.",
+          "entity_period_unit_boundary": "Version 3 dated November 17, 2024; initial submission April 2. Abstract inspection does not independently reproduce underlying data.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        },
+        {
+          "id": "QUANTUM-04",
+          "article_field": "detail",
+          "exact_text": "Code-design research supplies another kind of evidence.",
+          "source_indices": [
+            1
+          ],
+          "supplementary_ids": [],
+          "review_question": "Locate the author-hosted abstract's noise-model/physical-error assumptions and determine whether the concise wording adequately communicates the result's limits.",
+          "entity_period_unit_boundary": "March 27, 2024 publication; model-conditioned memory research, not measured general commercial deployment. Linked paper/code not reproduced.",
+          "reviewer_finding": null,
+          "reviewer_rationale": null,
+          "proposed_wording": null,
+          "editor_response": null,
+          "revised_article_sha256": null,
+          "revised_version_acceptance": null
+        }
+      ]
+    }
+  ]
+}

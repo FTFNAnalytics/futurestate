@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import BrazilDossierArticle from '../../../components/review/BrazilDossierArticle.astro';
+import {brazilDossiers} from '../../../lib/brazil-named-dossiers.mjs';
+const record=brazilDossiers.records.find(r=>r.record_id==='place-sao-joao-da-barra')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><BrazilDossierArticle record={record}/></BaseLayout>

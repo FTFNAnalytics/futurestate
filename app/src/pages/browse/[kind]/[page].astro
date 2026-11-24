@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import PagedShelf from '../../../components/review/PagedShelf.astro';
+import {getShelfData} from '../../../lib/shelf-catalog';
+export async function getStaticPaths(){
+  const {shelves,labels}=await getShelfData();
+  return Object.entries(shelves).flatMap(([kind,records])=>Array.from({length:Math.max(1,Math.ceil(records.length/40))},(_,i)=>({params:{kind,page:String(i+1)},props:{kind,records,page:i+1,label:labels[kind]}})));
+}
+const {kind,records,page,label}=Astro.props;
+---
+<BaseLayout title={`${label} — page ${page} | FTFN`}><section class="page-section"><h1 class="page-title">{label}</h1>{kind==='classification'?<p>Every record here is excluded from the external-development feed. Titles marked “Under review” quote historical presentations awaiting classification, not verified findings. Review dates are not outside observation dates. <a href="/method/editorial-review/">Read the classification policy and correction history.</a></p>:<p>Preserved record states are shown separately from current evidence acceptance. Source dates are recorded check dates, not checks performed by this page. Research metadata can include FTFN method records awaiting classification; it is not a list of independently verified outside developments. Geography-only candidates are not sources cited by a local profile.</p>}<PagedShelf records={records} kind={kind} page={page}/></section></BaseLayout>

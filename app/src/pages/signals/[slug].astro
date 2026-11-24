@@ -5,6 +5,9 @@ import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import EvidenceAnnotation from "../../components/review/EvidenceAnnotation.astro";
 import annotationLedger from "../../data/phase-125-evidence-annotation-ledger.json";
+import {projectSignal} from '../../lib/signal-classification.mjs';
+import SignalClassificationNotice from '../../components/review/SignalClassificationNotice.astro';
+import {goldenMarsSignalContext} from '../../lib/golden-mars-signal-review.mjs';
 import {
   formatDate,
   getClaimScopeNote,
@@ -24,8 +27,10 @@ export async function getStaticPaths() {
   }));
 }
 
-const { signal } = Astro.props;
-const { Content } = await render(signal);
+const { signal: historicalSignal } = Astro.props;
+const signal = projectSignal(historicalSignal);
+const signalReview = goldenMarsSignalContext(signal.data.id);
+const { Content } = await render(historicalSignal);
 const sources = await getCollection("sources");
 const signalSources = sources.filter((source) => signal.data.source_ids.includes(source.data.id));
 const localSystems = await getCollection("localSystems");
@@ -34,13 +39,6 @@ const relatedLocalSystems = localSystems.filter((system) =>
 );
 const evidenceGaps = await getCollection("evidenceGaps");
 const linkedEvidenceGaps = evidenceGaps.filter((gap) => signal.data.evidence_gap_ids.includes(gap.data.id));
-const relatedDependencyMaps = (await getCollection("dependencyMaps"))
-  .filter((dependencyMap) => dependencyMap.data.signal_ids.includes(signal.data.id))
-  .map((dependencyMap) => ({
-    map: dependencyMap,
-    relationship: "Signal ID",
-    note: "This dependency map explicitly cites this signal as part of its evidence trail."
-  }));
 const sourceCheckedDates = signalSources.map((source) => formatDate(source.data.last_checked_date));
 const sourceCheckedSummary = sourceCheckedDates.length > 0 ? sourceCheckedDates.join(", ") : "No source date";
 const publishedDateSummary = signal.data.published_date ? formatDate(signal.data.published_date) : "Not published";
@@ -55,6 +53,7 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
 ---
 
 <BaseLayout title={`${signal.data.title} | FTFN`} description={signal.data.summary} robots={robots}>
+  <SignalClassificationNotice id={signal.data.id} />
   <article class="page-section">
     <div class="eyebrow">Signal Brief</div>
     <h1 class="page-title">{signal.data.title}</h1>
@@ -77,7 +76,7 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
       <article class="status-item">
         <div class="eyebrow">Record Status</div>
         <h2>{signal.data.record_status}</h2>
-        <p>{getStatusNote(signal.data.record_status)}</p>
+        <p>{getStatusNote(signal.data.record_status, Boolean(signal.data.editorial_classification))}</p>
       </article>
       <article class="status-item">
         <div class="eyebrow">Publication Date</div>
@@ -90,9 +89,10 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
         <p>Evidence label: {signal.data.evidence_quality}</p>
       </article>
       <article class="status-item">
-        <div class="eyebrow">Source Check</div>
+        <div class="eyebrow">{signalReview ? 'Retained Profile Dates' : 'Source Check'}</div>
         <h2>{sourceCheckedSummary}</h2>
         <p>{signalSources.length} source{signalSources.length === 1 ? "" : "s"} attached to this signal.</p>
+        {signalReview && <p>The separately dated artifact checks appear below; these profile dates were not reset.</p>}
       </article>
       <article class="status-item">
         <div class="eyebrow">Claim Scope</div>
@@ -149,19 +149,45 @@ const robots = signal.data.record_status === "Published" ? "index, follow" : "no
   )}
 
   <DependencyMapLinks
-    maps={relatedDependencyMaps}
+    recordId={signal.data.id}
     title="Dependency maps using this signal."
     description="These maps cite this signal by ID. The relationship is explicit; it is not inferred from page text."
   />
 
   <section class="page-section prose">
-    <Content />
+    {signalReview ? <>
+      <aside data-dated-signal-review={signalReview.review_id} aria-label="Dated signal correction">
+        <h2>Editorial clarification · {signalReview.review_date}</h2>
+        <p>{signalReview.boundary}</p>
+        <p><a href={`/updates/${signalReview.update_id}/`}>Dated correction record</a> · <a href={signalReview.retained_review_route}>Annual case and retained source review</a> · <a href="/data/signals.json">Signal metadata and correction export</a></p>
+      </aside>
+      <div data-current-signal-body={signal.data.id}>
+        {signalReview.sections.map(section => <section><h2>{section.heading}</h2>{section.paragraphs.map(paragraph => <p>{paragraph}</p>)}</section>)}
+      </div>
+      <section data-signal-exact-sources={signal.data.id}>
+        <h2>Exact artifacts in the retained September 22 check</h2>
+        {signalReview.source_checks.map(source => <section>
+          <h3><a href={source.url}>{source.locator}</a></h3>
+          {'relation' in source && source.relation && <p>{source.relation}</p>}
+          <p>{source.finding}</p><p>{source.access}</p>
+        </section>)}
+      </section>
+      <details data-original-signal={signal.data.id}>
+        <summary>Earlier headline, metadata and narrative · captured {capturedDateSummary}</summary>
+        <h2>{signalReview.prior.title}</h2><p>{signalReview.prior.summary}</p>
+        <h3>Earlier dependencies</h3><ul>{signalReview.prior.dependencies.map(item => <li>{item}</li>)}</ul>
+        <h3>Earlier local implication</h3>{signalReview.prior.local_implications.map(item => <p>{item}</p>)}
+        <p>Earlier review date: {signalReview.prior.last_reviewed_date}. The source file, publication date and capture date are preserved.</p>
+        <Content />
+      </details>
+    </> : <Content />}
   </section>
 
   {evidenceAnnotation && <EvidenceAnnotation note={evidenceAnnotation} />}
 
   <section class="page-section">
-    <h2>Sources</h2>
+    <h2>{signalReview ? 'Retained source profiles' : 'Sources'}</h2>
+    {signalReview && <p>These profiles retain their original URLs and check dates. For the corrected transmission chronology, use the exact artifacts and inspection limits above; the general SCC information page is not the located order.</p>}
     <div class="grid">
       {signalSources.map((source) => (
         <article class="record-card source-card">

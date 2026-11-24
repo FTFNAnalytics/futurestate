@@ -1,6 +1,6 @@
 # Phase 60C Work Package: Evidence Return Publication Preflight
 
-Status: complete and locally release-validated; dated decisions, content commit, and owner-only deployment pending
+Status: operating; September 1 decision propagated locally; five cycle gates, two companion rechecks, content commit, Git-backed release, and owner-only deployment pending
 
 Captured: 2026-08-23
 
@@ -132,7 +132,8 @@ The verified local candidate contains:
 - thirteen dependency maps: twelve Published and one In Review;
 - 92 public updates and fourteen public JSON exports;
 - eight Wave 60C editorial desk records;
-- six future Wave 60C return envelopes with empty decision fields;
+- one dated Wave 60C decision with complete evidence propagation and Git-backed release Held;
+- five future Wave 60C cycle envelopes and two companion rechecks with empty outcome fields;
 - sixty-four research collections and 1,629 research documents;
 - 1,425 Published research export records;
 - 502 current Published-support sources.
@@ -154,3 +155,13 @@ Phase 57W remains live as owner-only Sites version 79. A newer owner-only deploy
 ## Next Gate
 
 On September 1, review the current official Louisiana Starlink surfaces for actual installation or subscription evidence tied to a fixed eligible-location cohort. Record exactly one bounded receipt and propagate the decision through its assigned surfaces. If the artifact is unavailable or insufficient, publish a bounded No Material Change, Watch Note, or Blocked Check rather than inferring the outcome.
+
+## September 1 Operating Result
+
+The first Wave 60C cycle gate is now a real dated decision. Receipt `receipt-60-louisiana-starlink-2026-09-01-no-material-change` records **No Material Change** after nine official public-surface checks: planned access, adjacent offer terms, reporting duties, and current program documents do not supply a compatible observed installation, subscription, or service-taken result for a fixed Louisiana BEAD cohort. The underlying signal remains In Review, the next bounded recheck is September 8, and no Phase 61 named file shares the provider identity. Five later Wave 60C cycle gates and both companion rechecks remain scheduled with empty future outcome fields. Evidence propagation is complete; Git-backed release remains Held.
+
+## September 8 Companion Recheck
+
+The bounded follow-up is complete under receipt `receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change`. Seventeen official surfaces resolve the planning cohort to 10,635 unique location IDs across 87 SpaceX projects but do not return a compatible observed outcome numerator, period, and method. The September 1 gate decision remains canonical; this companion receipt does not add a fourteenth cycle item, change the three-of-thirteen decision count, or prefill any future desk outcome. The signal remains In Review, no Phase 61 identity transfer occurs, and Git-backed release remains Held.
+
+The next due desk operations are the independent September 9 Louisiana Nextlink cycle gate and Toronto application `24 254930` project-file recheck. The Louisiana Starlink hold reopens earlier for the exact issuer return or is reconciled at the existing October 9 final audit.

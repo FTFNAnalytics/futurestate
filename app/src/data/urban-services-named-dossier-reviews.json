@@ -1,0 +1,130 @@
+{
+  "review_id": "URBAN-SERVICES-NAMED-ARTICLES-AI-REVIEW-2026-11-22",
+  "review_date": "2026-11-22",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision": "Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review": false,
+  "edition_sha256": "cb3d7b6eca74c8c585b3b55e85b88f589df733e74dabca57995f212ff6b7ffee",
+  "sources_sha256": "65d85dba02fd6c7959486b0dd87c50a2ef162495f712e2c01fcccc2f3d103ffe",
+  "records": [
+    {
+      "record_id": "project-madrid-nuevo-norte",
+      "sha256": "ca5af07992df6c00be9ad385084c59a162d89575723850d1c0c831c7853d4dd1",
+      "determination": "One Madrid Nuevo Norte development. Planning conditions, urbanization approval, developer works account, Metro study notice and historical water proposal keep separate stages. Municipal housing management is not protected tenure or occupancy."
+    },
+    {
+      "record_id": "place-madrid-municipality",
+      "sha256": "2cfbcaf4ea3cdd7a542852108b88b0cf214ac143adc1e897a85832c2ba644d6f",
+      "determination": "One Madrid municipality, not the autonomous community. Dated housing handover, driver training, fleet snapshot, seasonal cultural schedule and river maintenance are distinct. No citywide service result."
+    },
+    {
+      "record_id": "place-mexico-city",
+      "sha256": "d1a2438810604b974ff09fe32db7941353c80a20db01ef70df7c44fa848f0d92",
+      "determination": "One Ciudad de México administrative place. Five official indexed-text records support bounded historical context; direct retrieval failures are explicit. Trips, programme targets, beneficiary publication and working installations are distinct. No live service verification or personal data reproduced."
+    }
+  ],
+  "review_checks": [
+    "Fifteen primary-source records reviewed November 22 in America/Edmonton: ten relevant Spanish HTML bodies and five official indexed-text records. The five Mexico City direct retrievals failed or timed out; those limitations are explicit in each source and article, not represented as live endpoint checks.",
+    "Spanish text interpreted by Codex and AI self-reviewed under the owner-authorized policy. This is not independent language review and adds no translated-reading admission.",
+    "Three articles contain eighteen substantive sections and eleven chronology events, with five sourced sections and one editorial evidence-test section each. Each has three concrete next-artifact requests.",
+    "Madrid Nuevo Norte planning approval with conditions on March 25, 2020, July 22 verification and July 24 gazette publication remain distinct. The regional Metro notice is October 16, 2026; its gazette date is October 21. Linked instruments and technical archives were not inspected.",
+    "Las Tablas Oeste's January approval gives 741 planned homes, 184 protected and 276 municipally managed. Overlapping categories are not added. The developer's 2027 simultaneity objective is not present housing construction or occupancy.",
+    "The water proposal has a March 2021 dated URL but no separate date label in the retrieved body; publication_date remains null. Its proposed works are not current completion evidence.",
+    "Madrid's district directory is the municipal directory, not the similarly titled parking-area district table. Undated population statistics are excluded. Four-week EMT training is completed but next-day entry remains scheduled.",
+    "Cañaveral 9 is a bounded authority handover report. Summer opening dates are not November availability, attendance or cooling efficacy. The Manzanares contract's future end date is not delivered maintenance.",
+    "Mexico City source geography uses 2020 framework metadata; files were not inspected. Cablebús body counts trips, not unique people. A 2025 household programme target is not a 2026 installation total. Publication of the 2025 register in April 2026 is not an installation or functionality date.",
+    "Rain-harvesting guide limits remain explicit: maintained domestic systems, not drinking-water advice. Linked manuals, evaluations and personal beneficiary registers were not inspected or reproduced.",
+    "Prior identities and acquisition links screened. Three unused historical dockets gain additive named accounts; original fixtures, 103 historical determinations, all 34 readings and the evidence ledger remain unchanged.",
+    "Local integration adds one eligible project identity and two place identities. It does not assert every historical dossier is complete, add a cycle gate, admit comparable outcomes, authorize publication or launch, or complete production verification and stewardship."
+  ],
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/phase-61-project-conversion-registry.json",
+      "sha256": "9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"
+    },
+    {
+      "path": "src/data/phase-191-international-named-project-conversion-cohort.json",
+      "sha256": "0f57d402c94cf3ae867fedcbe0faaacf119264a559aee4ffe229dd84cf12ac71"
+    },
+    {
+      "path": "src/data/phase-192-global-place-systems-atlas.json",
+      "sha256": "2d0d9c46823e0716fb9f1ccda364b929f8172e5be1a0706fb1db17d1ef2d3ecc"
+    },
+    {
+      "path": "src/data/chile-named-dossiers.json",
+      "sha256": "2917226c524e13706985b9823e46f09ab4e273250c27179d0824bcf5cb53092e"
+    },
+    {
+      "path": "src/data/chile-named-dossier-reviews.json",
+      "sha256": "5884961882b9db3f88f9867e04b3a690067a5ee03312d4d669e4cca203a496b8"
+    },
+    {
+      "path": "src/data/phase-60-current-decisions.json",
+      "sha256": "3d39efa26c08b1964c13f212849569e00504ac2b191ccc256b5ad9fcab634b63"
+    },
+    {
+      "path": "src/data/ai-reviewed-translations.json",
+      "sha256": "73f2ee14df297b244f37ff38b6dd2df03b5681f41d85bf3cb3cf63078d4fa191"
+    },
+    {
+      "path": "src/data/brazil-named-dossiers.json",
+      "sha256": "7911e702eee06d075f35de4e4cf129bd93e7c2cae9f8560abc2a3519e67d8bcb"
+    },
+    {
+      "path": "src/data/brazil-named-dossier-reviews.json",
+      "sha256": "6fa3aabb7c255291d46a83395d60c5aff6972522377d06ac41bf862b1b03817c"
+    },
+    {
+      "path": "src/data/north-sea-named-dossiers.json",
+      "sha256": "4e6d20affdafd2cbb883f7fffadb85aa1f33b662df6339ae7ed9ac5f57e42ebf"
+    },
+    {
+      "path": "src/data/north-sea-named-dossier-reviews.json",
+      "sha256": "0de26a1e1355fafce36b742ccd6e4427bf065999082f8235a093c14818db3a3b"
+    },
+    {
+      "path": "src/data/stockholm-named-dossiers.json",
+      "sha256": "60c42bd8ff99214e47c75ee8641fb8fef7c7f9ef5bc7c010c35c83d11526b8b1"
+    },
+    {
+      "path": "src/data/stockholm-named-dossier-reviews.json",
+      "sha256": "9b87396e549828ad783c1a49abf14181795fe5f07303d9a4f5a821a5ac827111"
+    },
+    {
+      "path": "src/data/auckland-named-dossiers.json",
+      "sha256": "6f8a590b45adcc5f397d150be7d26d42d7de37c56a7c5ae524e2923f19578827"
+    },
+    {
+      "path": "src/data/auckland-named-dossier-reviews.json",
+      "sha256": "41d81c1fede5522e1933b66f662de5db427f204a661ecf3d22b2a03c97bf2e58"
+    },
+    {
+      "path": "src/data/tuas-named-dossiers.json",
+      "sha256": "d2511b08facd37d93126fa531ca851e24abfd8dc1f5f78c3706bf111a59499dc"
+    },
+    {
+      "path": "src/data/tuas-named-dossier-reviews.json",
+      "sha256": "8dfbb064064a41d46a8adba92498a5b34156db3a0a01e89a1cd58253b5e96c78"
+    },
+    {
+      "path": "src/data/port-cities-named-dossiers.json",
+      "sha256": "224442d22dbb3b870399fe38a31322e9275863314402a29eaeb8328c366ef761"
+    },
+    {
+      "path": "src/data/port-cities-named-dossier-reviews.json",
+      "sha256": "3835c7755399006026f9519d0504edfde3545b03c826eddc7db3de7b8ec5cb09"
+    }
+  ],
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false
+}

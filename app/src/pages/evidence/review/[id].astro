@@ -1,4 +1,5 @@
 ---
+import {projectBriefing} from "../../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
@@ -21,7 +22,7 @@ const cohortReviews = !isReview ? registry.observation_review_dockets.filter((it
 const nextPanel = isReview ? outcomeRegistry.longitudinal_panel_shells.find((item) => item.specification_id === record.specification_id) : null;
 const nextOutcome = !isReview ? outcomeRegistry.outcome_claim_dockets.find((item) => item.cohort_id === record.cohort_id) : null;
 const [briefings, dependencyMaps, signals, sources] = await Promise.all([
-  getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")
+  getCollection("briefings").then(records => records.map(projectBriefing)), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")
 ]);
 const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
 const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));

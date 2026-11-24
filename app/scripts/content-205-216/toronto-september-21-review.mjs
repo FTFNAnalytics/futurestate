@@ -1,0 +1,50 @@
+// Authored only after the actual September 21 official-source inspection.
+// Regeneration is not a new source check. Issuer dates are not inspection dates.
+export const torontoSeptember21Review = {
+  receipt_id: '207-TORONTO-2026-09-21-BOUNDED-RECHECK',
+  file_id: '61-PROJECT-TORONTO-24-254930',
+  desk_item_id: '60C-DESK-003',
+  conversion_gate_id: '63-GATE-TORONTO-24-254930',
+  prior_receipt_id: '207-TORONTO-2026-09-14-BOUNDED-RECHECK',
+  original_scheduled_date: '2026-09-09',
+  scheduled_date: '2026-09-21',
+  checked_date: '2026-09-21',
+  decision: 'Bounded No Material Change; retain adoption-with-conditions stage',
+  decision_status: 'no_material_change',
+  receipt_type: 'No Material Change',
+  prior_stage: 'City Council adoption with amendment bills withheld',
+  current_stage: 'City Council adoption with amendment bills withheld',
+  cycle_item_id: null,
+  counts_as_cycle_decision: false,
+  phase64_cell_change: 'none',
+  qualification_packet_change: 'none',
+  return_envelope_id: null,
+  return_envelope_boundary: 'No Phase 67 return envelope is assigned to this separate Toronto check. Four same-file qualification packets receive context only; no packet acceptance or new cycle gate is created.',
+  source_profile_dates_changed: false,
+  source_checks: [
+    {url:'https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9', access:'Official Council item retrieved in full on September 21', artifact_date:'2026-07-29/2026-07-30 Council meeting; 2026-06-22 staff report', finding:'Council adoption remains the established authority step. Recommendation 8 retains prerequisites before the amendment bills proceed: an accepted revised wind study and implemented recommendations, the 6 Thora land exchange agreement and completion, and laneway closure approval and acquisition. This item does not document their later satisfaction.'},
+    {url:'https://secure.toronto.ca/nm/api/individual/notice/7606.do', access:'Official notice read on September 21', artifact_date:'2026-06-18 notice; 2026-07-09 meeting', finding:'The notice binds the public meeting to application 24 254930 ESC 20 OZ and the eight listed properties. It is not an enactment or permit instrument.'},
+    {url:'https://secure.toronto.ca/council/bill-bylaw.do?meeting=2026.CC43', access:'July 29–30 Council bill/by-law index retrieved and screened on September 21', artifact_date:'2026-07-29/2026-07-30 meeting index', finding:'Exact text checks for SC33.9 and Thora returned no match in this meeting index. This bounded screen does not cover every subsequent enactment or establish nonexistence.'},
+    {url:'https://haveyoursay.toronto.ca/city-planning-development-review-community-consultations/507-511-513-victoria-park-avenue-and-4-6-7-11-14-thora-avenue', access:'Official consultation page read and its application link followed in the browser on September 21', artifact_date:'2025-11-20 consultation', finding:'The older consultation describes 39/16 storeys and links application 24 254930 to the exact application portal. It is retained as earlier design context, not the latest approval.'},
+    {url:'https://www.toronto.ca/city-government/planning-development/application-details/?id=5562023&pid=7609&title=507,-511,513-VICTORIA-PARK-AVE-AND-4,6,7,11,14-THORA-AVE&WT.rd_id=%2F507VictoriaParkAve', access:'Interactive official application page inspected on September 21: expanded milestones, related applications, eight properties and all 54 supporting-document listings', artifact_date:'Portal milestone labels and document dates vary; observation date 2026-09-21', finding:'Exact application 24254930ESC20OZ is labelled Council Approved and City Council Decision Made. Its decision milestone displays 28/08/2026, whereas the Council item dates adoption to July 29–30. Its description says 35/14 storeys and 390 square metres of community space, versus 35/17 and 641 in the Council item. These unresolved source/version discrepancies do not establish a new Council decision or revised approval. The 54 visible document listings extend through April 24, 2026, including a pedestrian wind study and draft amendments; listing a study or draft does not establish acceptance or enactment. Document bodies were not downloaded or inspected in this check.'},
+    {url:'https://secure.toronto.ca/ApplicationStatus/setup.do?action=init', access:'Public Building Permit address search actually submitted for all eight listed parcels on September 21', artifact_date:'Live address-query responses observed 2026-09-21', finding:'Each exact address returned no application for that address, alongside hundreds of nearby-area applications. Nearby results were not attributed to this project. The planning OZ identifier was not entered as a building-permit number. This is bounded address-search coverage, not a certified parcel history or proof that no project permit exists.'}
+  ],
+  permit_address_checks: [
+    {address:'507 Victoria Park Avenue',exact_address_application_found:false,nearby_area_results:408},
+    {address:'511 Victoria Park Avenue',exact_address_application_found:false,nearby_area_results:408},
+    {address:'513 Victoria Park Avenue',exact_address_application_found:false,nearby_area_results:408},
+    {address:'4 Thora Avenue',exact_address_application_found:false,nearby_area_results:410},
+    {address:'6 Thora Avenue',exact_address_application_found:false,nearby_area_results:407},
+    {address:'7 Thora Avenue',exact_address_application_found:false,nearby_area_results:412},
+    {address:'11 Thora Avenue',exact_address_application_found:false,nearby_area_results:403},
+    {address:'14 Thora Avenue',exact_address_application_found:false,nearby_area_results:404}
+  ],
+  search_scope:'Official Council history, public notice, the July Council bill/by-law index, exact-identity official-site searches, the application portal with all 54 document listings and expanded milestones, and eight public Building Permit address queries. Browser access recovered the application page after the text-reader redirect failed. No private project file, certified title history or complete permit-number register was inspected. The aggregate development-pipeline source remains contextual and was not freshly re-reviewed.',
+  bounded_finding:'The September 21 check retains Council adoption with amendment bills withheld. The exact application portal was recovered, but its decision date and design particulars conflict with the Council record and are flagged, not reconciled by assumption. No qualifying enacted amendment, accepted condition-compliance record or project-specific permit was retrieved in the stated scope. Eight exact-address permit searches do not prove that no permit exists. No project advancement, condition acceptance or new outcome is inferred.',
+  next_check_date:'2026-09-28',
+  next_action:'Recheck the exact application and clerk/building records on September 28, or earlier if a same-file official artifact returns. Retrieve introduced/enacted amendment numbers, named-authority acceptance of the wind, land-exchange and laneway conditions, or a project-specific permit with its identifier and scope. Reconcile the portal decision-date/design discrepancies against dated official instruments; do not treat portal labels, draft listings or nearby-area permits as qualifying evidence.',
+  human_admission_authorized:false,
+  publication_authorized:false,
+  independent_review_complete:false,
+  update_id:'update-2026-09-21-toronto-bounded-project-recheck'
+};

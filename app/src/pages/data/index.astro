@@ -1,5 +1,8 @@
 ---
+import {projectResearchDocument} from "../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
+import {currentEvidenceLedger} from '../../lib/current-evidence.mjs';
+import {currentGapReviewLedger} from '../../lib/current-gap-reviews.mjs';
 import BaseLayout from "../../components/layout/BaseLayout.astro";
 import MetaPill from "../../components/ui/MetaPill.astro";
 import evidenceQueue from "../../data/phase-58-dated-evidence-queue.json";
@@ -79,19 +82,124 @@ import phase141 from "../../data/phase-141-frontier-systems-almanac.json";
 import phase142 from "../../data/phase-142-topic-delivery-roadmaps.json";
 import phase143 from "../../data/phase-143-editorial-cadence-editions.json";
 import phase144 from "../../data/phase-144-v1-launch-candidate-audit.json";
+import v1ReleaseCandidate from "../../data/v1-release-candidate.json";
+import phase145 from "../../data/phase-145-evidence-gate-operations-journal.json";
+import phase146 from "../../data/phase-146-authority-gap-resolution-program.json";
+import phase147 from "../../data/phase-147-evidence-adjudication-record.json";
+import phase148 from "../../data/phase-148-atlas-changefeed.json";
+import phase149 from "../../data/phase-149-longitudinal-evidence-lab.json";
+import phase150 from "../../data/phase-150-comparison-passports-2-0.json";
+import phase151 from "../../data/phase-151-weekly-desk-review-ledger.json";
+import phase152 from "../../data/phase-152-frontier-topic-field-guides.json";
+import phase153 from "../../data/phase-153-future-state-report-series.json";
+import phase154 from "../../data/phase-154-september-edition-packets.json";
+import phase155 from "../../data/phase-155-public-method-corrections-library.json";
+import phase156 from "../../data/phase-156-v1-launch-decision.json";
+import v1MonthlyOperatingProgram from "../../data/v1-monthly-operating-program.json";
+import phase157 from "../../data/phase-157-v1-candidate-preservation-ledger.json";
+import phase158 from "../../data/phase-158-september-evidence-operations-desk.json";
+import phase159 from "../../data/phase-159-owner-decision-sprint.json";
+import phase160 from "../../data/phase-160-longitudinal-pilot-matrices.json";
+import phase161 from "../../data/phase-161-stack-watch.json";
+import phase162 from "../../data/phase-162-local-system-expansion.json";
+import phase163 from "../../data/phase-163-september-editorial-runbooks.json";
+import phase164 from "../../data/phase-164-monthly-candidate-decision.json";
+import v1SeptemberEvidenceCycle from "../../data/v1-september-evidence-cycle.json";
+import phase165 from "../../data/phase-165-live-evidence-operations-cycle-001.json";
+import phase166 from "../../data/phase-166-weekly-desk-closures-and-editions.json";
+import phase167 from "../../data/phase-167-authority-resolution-hearings.json";
+import phase168 from "../../data/phase-168-requirement-mission-adjudication.json";
+import phase169 from "../../data/phase-169-longitudinal-pilot-adjudication.json";
+import phase170 from "../../data/phase-170-fifteen-place-systems-atlas.json";
+import phase171 from "../../data/phase-171-frontier-systems-compendium.json";
+import phase172 from "../../data/phase-172-september-state-report.json";
+import v1OctoberOperatingProgram from "../../data/v1-october-operating-program.json";
+import phase173 from "../../data/phase-173-september-closeout-october-opening-ledger.json";
+import phase174 from "../../data/phase-174-evidence-cycle-closure-intake.json";
+import phase175 from "../../data/phase-175-owner-disposition-sprint-ii.json";
+import phase176 from "../../data/phase-176-longitudinal-admission-and-zero-series-decision.json";
+import phase177 from "../../data/phase-177-october-stack-watch-and-source-currency-sweep.json";
+import phase178 from "../../data/phase-178-systems-atlas-and-compendium-depth-expansion.json";
+import placeIdentityReviews from '../../data/place-identity-reviews.json';
+import annualCaseReviews from '../../data/annual-case-reviews.json';
+import phase179 from "../../data/phase-179-october-weekly-editions-and-month-end-synthesis.json";
+import phase180 from "../../data/phase-180-october-state-report-and-v1-promotion-gate.json";
+import v1PublicReferenceEdition from "../../data/v1-public-reference-edition.json";
+import { v1refNativeDefinitions } from "../../data/v1ref-registry";
 
 const sources = await getCollection("sources");
 const topics = await getCollection("topics");
 const signals = (await getCollection("signals")).filter((signal) => signal.data.record_status === "Published");
 const researchCollections = (await getCollection("researchCollections"))
   .filter((collection) => collection.data.record_status === "Published");
-const researchDocuments = (await getCollection("researchDocuments"))
+const researchDocuments = (await getCollection("researchDocuments").then(records => records.map(projectResearchDocument)))
   .filter((document) => document.data.record_status === "Published");
 const readerPathways = (await getCollection("readerPathways"))
   .filter((pathway) => pathway.data.record_status === "Published");
 
+const v1refDatasets = [
+  { title: 'September 10 reader editions', href: '/data/phase-204-reader-completion.json', count: 104, summary: 'Dated prose for 104 existing records, including 92 distinct texts. Independent review and public release held.' },
+  { title: 'Current evidence decisions', href: '/data/current-evidence-decisions.json', count: currentEvidenceLedger.receipts.length, summary: 'Additive dated decisions and follow-ups with source checks, exact artifacts, dates and assigned propagation surfaces. Receipt count is not the count of primary cycle identities.' },
+  { title: 'Separate acceptance reviews', href: '/data/current-gap-reviews.json', count: currentGapReviewLedger.records.length, summary: 'Dated Phase 55Q acceptance holds, distinct from the Phase 60 operating-evidence cycle. Historical gap and source records remain intact.' },
+  {
+    title: v1PublicReferenceEdition.title,
+    href: "/data/v1-public-reference-edition.json",
+    count: v1PublicReferenceEdition.counts.primary_records,
+    summary: v1PublicReferenceEdition.summary,
+  },
+  ...v1refNativeDefinitions.map(({ registry, items, phase }) => ({
+    title: `Phase ${phase}: ${registry.title}`,
+    href: registry.routes.public_export,
+    count: items.length,
+    summary: registry.summary,
+  })),
+];
+
 const datasets = [
+  ...v1refDatasets,
   ...([
+    ["FTFN v1 October Operating Program", "/data/v1-october-operating-program.json", v1OctoberOperatingProgram.counts.primary_records, v1OctoberOperatingProgram.summary],
+    ["September Closeout and October Opening Ledger", "/data/phase-173-september-closeout-october-opening-ledger.json", phase173.counts.carryover_records, phase173.summary],
+    ["Evidence Cycle Closure and Intake", "/data/phase-174-evidence-cycle-closure-intake.json", phase174.counts.cycle_001_audit_items + phase174.counts.cycle_002_candidates, phase174.summary],
+    ["Owner Disposition Sprint II", "/data/phase-175-owner-disposition-sprint-ii.json", phase175.counts.owner_disposition_packets, phase175.summary],
+    ["Longitudinal Admission and Zero-Series Decision", "/data/phase-176-longitudinal-admission-and-zero-series-decision.json", phase176.counts.complete_prepared_packets, phase176.summary],
+    ["October Stack Watch", "/data/phase-177-october-stack-watch-and-source-currency-sweep.json", phase177.counts.packets, phase177.title],
+    ["Systems Atlas and Compendium Depth Expansion", "/data/phase-178-systems-atlas-and-compendium-depth-expansion.json", phase178.counts.place_system_dossiers + phase178.counts.comparison_overlays + phase178.counts.interpretive_essays, phase178.title],
+    ["Dated place identity checks", "/data/place-identity-reviews.json", placeIdentityReviews.records.length, "Geographic scope and historical source periods; independent identity review and portfolio acceptance pending"],
+    ["Annual-case editorial clarifications", "/data/annual-case-reviews.json", annualCaseReviews.records.length, "Dated overview and paragraph clarifications with exact source-context notes; original reader records and all independent review holds preserved"],
+    ["October Weekly Editions and Month-End Synthesis", "/data/phase-179-october-weekly-editions-and-month-end-synthesis.json", phase179.counts.editorial_cycles, phase179.summary],
+    ["October State Report and v1 Promotion Gate", "/data/phase-180-october-state-report-and-v1-promotion-gate.json", phase180.counts.readiness_gates, phase180.summary],
+    ["FTFN v1 September Evidence Cycle", "/data/v1-september-evidence-cycle.json", v1SeptemberEvidenceCycle.phases.length, v1SeptemberEvidenceCycle.summary],
+    ["Live Evidence Operations Cycle 001", "/data/phase-165-live-evidence-operations-cycle-001.json", phase165.operation_runs.length, phase165.summary],
+    ["Weekly Desk Closures and Editions", "/data/phase-166-weekly-desk-closures-and-editions.json", phase166.weekly_cycles.length, phase166.summary],
+    ["Authority Resolution Hearings", "/data/phase-167-authority-resolution-hearings.json", phase167.authority_hearings.length, phase167.summary],
+    ["Requirement and Mission Adjudication", "/data/phase-168-requirement-mission-adjudication.json", phase168.adjudication_dockets.length, phase168.summary],
+    ["Longitudinal Pilot Adjudication", "/data/phase-169-longitudinal-pilot-adjudication.json", phase169.longitudinal_adjudication_packets.length, phase169.summary],
+    ["Fifteen-Place Systems Atlas", "/data/phase-170-fifteen-place-systems-atlas.json", phase170.place_system_dossiers.length, phase170.summary],
+    ["Frontier Systems Compendium", "/data/phase-171-frontier-systems-compendium.json", phase171.compendium_records.length, phase171.summary],
+    ["September State Report", "/data/phase-172-september-state-report.json", phase172.state_report_gates.length, phase172.summary],
+    ["FTFN v1 September Operating Program", "/data/v1-monthly-operating-program.json", v1MonthlyOperatingProgram.phases.length, v1MonthlyOperatingProgram.summary],
+    ["v1 Candidate Preservation Ledger", "/data/phase-157-v1-candidate-preservation-ledger.json", phase157.counts.preservation_records, phase157.summary],
+    ["September Evidence Operations Desk", "/data/phase-158-september-evidence-operations-desk.json", phase158.counts.september_operation_packets, phase158.summary],
+    ["Owner Decision Sprint", "/data/phase-159-owner-decision-sprint.json", phase159.counts.mission_boards, phase159.summary],
+    ["Longitudinal Pilot Matrices", "/data/phase-160-longitudinal-pilot-matrices.json", phase160.counts.pilot_matrices, phase160.summary],
+    ["Stack Watch", "/data/phase-161-stack-watch.json", phase161.counts.stack_watch_packets, phase161.summary],
+    ["Local-System and Dependency Expansion", "/data/phase-162-local-system-expansion.json", phase162.counts.local_system_briefs, phase162.summary],
+    ["September Editorial Runbooks", "/data/phase-163-september-editorial-runbooks.json", phase163.counts.editorial_runbooks, phase163.summary],
+    ["Monthly Candidate Decision", "/data/phase-164-monthly-candidate-decision.json", phase164.counts.readiness_gates, phase164.summary],
+    ["FTFN v1 Release Candidate", "/data/v1-release-candidate.json", v1ReleaseCandidate.phases.length, v1ReleaseCandidate.summary],
+    ["Evidence-Gate Operations Journal", "/data/phase-145-evidence-gate-operations-journal.json", phase145.counts.operating_records, phase145.summary],
+    ["Authority-Gap Resolution Program", "/data/phase-146-authority-gap-resolution-program.json", phase146.counts.mission_gaps, phase146.summary],
+    ["Evidence Adjudication Record", "/data/phase-147-evidence-adjudication-record.json", phase147.counts.total_decision_packets, phase147.summary],
+    ["Atlas Changefeed", "/data/phase-148-atlas-changefeed.json", phase148.counts.atlas_reviews, phase148.summary],
+    ["Longitudinal Evidence Lab", "/data/phase-149-longitudinal-evidence-lab.json", phase149.counts.eligibility_reviews, phase149.summary],
+    ["Comparison Passports 2.0", "/data/phase-150-comparison-passports-2-0.json", phase150.counts.comparison_passports, phase150.summary],
+    ["Weekly Desk Review Ledger", "/data/phase-151-weekly-desk-review-ledger.json", phase151.counts.desk_baseline_packets, phase151.summary],
+    ["Frontier Topic Field Guides", "/data/phase-152-frontier-topic-field-guides.json", phase152.counts.field_guides, phase152.summary],
+    ["Future State Report Series", "/data/phase-153-future-state-report-series.json", phase153.counts.flagship_reports, phase153.summary],
+    ["September Edition Packets", "/data/phase-154-september-edition-packets.json", phase154.counts.edition_packets, phase154.summary],
+    ["Public Method and Corrections Library", "/data/phase-155-public-method-corrections-library.json", phase155.counts.public_method_records, phase155.summary],
+    ["v1 Launch Decision", "/data/phase-156-v1-launch-decision.json", phase156.counts.launch_gates, phase156.summary],
     ["FTFN v0.9 Living Public Intelligence", "/data/v09-living-public-intelligence.json", v09LivingIntelligence.phases.length, v09LivingIntelligence.summary],
     ["Living Topic Desks", "/data/phase-140-living-topic-desks.json", phase140.counts.living_topic_desks, phase140.summary],
     ["Frontier Systems Almanac", "/data/phase-141-frontier-systems-almanac.json", phase141.counts.almanac_entries, phase141.summary],
@@ -241,7 +349,7 @@ const datasets = [
     title: "Evidence Cycle 001",
     href: "/data/operating-cycle.json",
     count: operatingCycle.records.length,
-    summary: "Thirteen scheduled gates with exact artifacts, decision state, and assigned dossier, pathway, map, and local-system propagation surfaces."
+    summary: "Thirteen governed gates with exact artifacts and propagation surfaces: three dated decisions are complete and ten gates remain scheduled."
   },
   {
     title: "Named Project Conversion Registry",
@@ -277,13 +385,13 @@ const datasets = [
     title: "Evidence Return Envelopes",
     href: "/data/evidence-return-envelopes.json",
     count: evidenceReturnEnvelopes.envelope_records.length,
-    summary: "Thirteen scheduled return envelopes preserving dates, artifacts, bindings, no-transfer decisions, and empty future receipt fields."
+    summary: "Thirteen return envelopes preserving dates, artifacts, bindings, and no-transfer decisions: two are release-verified, one is fully propagated with Git held, and ten remain scheduled."
   },
   {
     title: "Wave 60C Editorial Desk",
     href: "/data/phase-60c-editorial-desk.json",
     count: phase60cDesk.records.length,
-    summary: "Six September cycle gates and two separate named-file rechecks with qualifying-evidence tests, mandatory holds, and future-safe publication assignments."
+    summary: "Six September cycle gates and two separate named-file rechecks: the September 1 Starlink decision is complete under No Material Change and seven later items remain future-safe."
   },
   {
     title: "Compatible Series And Outcome Cohorts",
@@ -506,6 +614,7 @@ const datasets = [
     <div class="hero__copy">
       <div class="eyebrow">ftfn.io / Data</div>
       <h1 class="page-title">Inspectable metadata for the evidence stack.</h1>
+      <p><a href="/data/build-decisions.json">Owner-authorized AI decisions, project/place dossiers and translations</a>: exact backlog determinations, portfolio counting rules, all 32 proposal-stage Montana dossiers, ten complete locality accounts, accepted translated texts, selected-article assessments and retained evidence inputs.</p>
       <p class="lede">
         These static JSON files expose stable public fields without publishing
         private candidate notes, internal automation instructions, or review-only

@@ -1,10 +1,12 @@
 ---
+import {projectBriefing,projectResearchDocument} from "../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../components/layout/BaseLayout.astro";
 import MetaPill from "../components/ui/MetaPill.astro";
 import { getStatusTone } from "../lib/editorial";
+import {isCurrentFeedEligible,projectSignal} from '../lib/signal-classification.mjs';
 
-const allSignals = await getCollection("signals");
+const allSignals = (await getCollection("signals")).map(projectSignal).filter(isCurrentFeedEligible);
 const signals = allSignals
   .filter((signal) => signal.data.record_status === "Published")
   .sort((a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf())
@@ -16,7 +18,7 @@ const localSystems = await getCollection("localSystems");
 const dependencyMaps = (await getCollection("dependencyMaps")).sort((a, b) =>
   a.data.title.localeCompare(b.data.title)
 );
-const briefings = (await getCollection("briefings")).sort(
+const briefings = (await getCollection("briefings").then(records => records.map(projectBriefing))).sort(
   (a, b) => b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
 );
 const researchCollections = (await getCollection("researchCollections"))
@@ -25,7 +27,7 @@ const researchCollections = (await getCollection("researchCollections"))
     b.data.captured_date.valueOf() - a.data.captured_date.valueOf()
     || b.data.title.localeCompare(a.data.title)
   );
-const researchDocuments = await getCollection("researchDocuments");
+const researchDocuments = await getCollection("researchDocuments").then(records => records.map(projectResearchDocument));
 
 const highPrioritySources = sources
   .filter((source) => source.data.capture_priority === "High")
@@ -184,7 +186,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
     </div>
 
     <div class="source-list">
-      {dependencyMaps.map((dependencyMap) => (
+      {dependencyMaps.slice(0, 6).map((dependencyMap) => (
         <article class="source-row">
           <div class="meta-row">
             <MetaPill label={dependencyMap.data.map_type} />

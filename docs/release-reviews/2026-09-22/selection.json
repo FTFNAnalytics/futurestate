@@ -1,0 +1,1736 @@
+{
+  "prepared_date": "2026-09-22",
+  "candidate_digest": "c341284d9defad5635a12d52d77aa065cfbd666f545d8b6a013da44472088e3b",
+  "source_checkpoint": "7b0e7c412df53c1653b5477c29271223f1be689b",
+  "checkpoint_boundary": "Pre-reconciliation recovery baseline; not the final revised source commit",
+  "scope_approved": false,
+  "independently_approved": 0,
+  "records": [
+    {
+      "id": "184-TOPIC-006",
+      "kind": "Topic",
+      "title": "Climate constraints: connect the regional signal to the actual asset",
+      "route": "/reference/topic-canon/climate--edition-2/",
+      "article_sha256": "3737b9bdce538548aeeac093468387ce6f2c76a33d809c7bf9e4f0a568136173",
+      "rendered_record_sha256": "6abdb4d86bd0c4c83d5904cc02fca23761dfb9c64861ac7eb2b856230386de0f",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded topic/answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "NOAA 2025 U.S. climate assessment",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202513",
+          "artifact_date": "2026-01-13"
+        },
+        {
+          "title": "NOAA August 2026 U.S. climate assessment",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202608",
+          "artifact_date": "2026-09-09"
+        },
+        {
+          "title": "Reclamation Glen Canyon operating update — rolling page",
+          "url": "https://www.usbr.gov/uc/water/crsp/cs/gcd.html",
+          "artifact_date": "2026-09-15 update; earlier 2026-08-21 snapshot retained as history"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Annual assessment: Temperature; Precipitation; Published January 13, 2026",
+          "scope": "Calendar-2025 regional context was re-read; it is not a site reading or outage attribution.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Key Takeaways; Temperature; Drought; Published September 9, 2026",
+          "scope": "August, June–August summer and the September 1 drought snapshot retain different periods. The linked detailed report was not inspected in this recheck.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Current Status; Current Operations; Inflow Forecasts and Model Projections; Last Updated September 15, 2026",
+          "scope": "The rolling page now reports August observations; the August 21/July account is retained history. Inflow, release and closing storage are not a complete balance. Forecasts are not actual deliveries. No entitlement interpretation.",
+          "access": "Official HTML inspected and retained locally September 22; no interval ledger or independently reproduced balance acquired"
+        }
+      ],
+      "source_check_boundary": "September 22 recheck of the three cited pages. NOAA retains its named annual/monthly periods; the rolling Reclamation page now carries a September 15 update. Earlier July observations and the September 14 reading are retained as history. No facility outcome, allocation interpretation, independent acceptance or new gate decision is inferred.",
+      "next_action": "The next useful additions are local time-stamped observations and the corresponding operator records: load, outages, cooling restrictions, withdrawals, deliveries or curtailment instructions with defined units and periods. Record the event and the comparator before attributing a consequence. Independent subject review remains pending. No legal water allocation, causal attribution, project-stage change or future operating outcome is admitted by this edition.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "184-TOPIC-002",
+      "kind": "Topic",
+      "title": "Genome-edited livestock: authorization is not a field-outcome series",
+      "route": "/reference/topic-canon/agriculture-and-bioeconomy--edition-2/",
+      "article_sha256": "b56c38cb746b1cfba6bfc0f307717b6e83d853c7b8ddc350edc98bf5fcfba885",
+      "rendered_record_sha256": "4a9d36159f70ded9c3d831a0ea9ee4832b13d0b1507712adbbecc49ea88adb75",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded topic/answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "FDA NADA 141-609 original approval and study summary",
+          "url": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/16887",
+          "artifact_date": "2025-04-29"
+        },
+        {
+          "title": "FDA PRLR-SLICK risk assessment V-006378",
+          "url": "https://www.fda.gov/media/155706/download",
+          "artifact_date": "2022"
+        },
+        {
+          "title": "FDA PRLR-SLICK low-risk determination announcement",
+          "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/30dba74",
+          "artifact_date": "2022-03-07"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "NADA 141-609, printed pages 1–3 and 18; Table VIII.4 and its exclusion note",
+          "scope": "Genotype, day-21 endpoint and KS06 limitation remain essential. The aggregate table excludes a challenge without infected controls. No commercial adoption estimate or current strain-surveillance result.",
+          "access": "Exact 20-page FDA PDF text reviewed in relevant sections; pages 1–3 and 18 rendered and visually inspected September 22, not a full experimental reproduction"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "V-006378, Conclusions on printed page 8, including lineage scope and approval-status wording",
+          "scope": "Enforcement discretion is distinct from approval and is limited to products from the two reviewed cattle and their progeny. This is not a repeated field-outcome study.",
+          "access": "Exact eight-page FDA PDF conclusion rendered and visually inspected September 22; other pages were not visually re-reviewed"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "FDA bulletin dated March 7, 2022: decision type, two cattle and offspring",
+          "scope": "The announcement communicates the same lineage-limited low-risk decision. It is not a separate commercial-cohort experiment.",
+          "access": "Exact official HTML text re-read September 22"
+        }
+      ],
+      "source_check_boundary": "September 22 bounded recheck of the named FDA decisions and announcement, with selected PDF pages visually inspected. Original approval/announcement dates remain unchanged. The recheck does not establish commercial adoption, current pathogen prevalence, full experimental reproduction or independent subject acceptance.",
+      "next_action": "The reviewed artifacts establish two specific regulatory decisions and their bounded safety/effectiveness reasoning. They do not settle whether a named commercial deployment has delivered repeatable benefits under field conditions. Seek disclosed post-authorization monitoring, exact commercial-cohort evidence and independently reviewed outcome methods. This is a source-checked editorial draft; independent subject review is still required. It makes no recommendation about food, animal treatment or farm purchasing.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "184-TOPIC-015",
+      "kind": "Topic",
+      "title": "Quantum progress: memory, logical operations and useful applications are different tests",
+      "route": "/reference/topic-canon/quantum--edition-2/",
+      "article_sha256": "a09bf754c45525f9ac3690d0f04419a551f7368be793736670ba9b5be39d9edb",
+      "rendered_record_sha256": "56542cfa1becda4d3a98412c207ecbf0e2b0884f9cd0f66e702cea21844b17ae",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "Google Quantum AI: Quantum error correction below the surface code threshold",
+          "url": "https://www.nature.com/articles/s41586-024-08449-y",
+          "artifact_date": "2024-12-09; page flags 2026-04-28 author correction"
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory — exact Nature paper, author-hosted record",
+          "url": "https://research.ibm.com/publications/high-threshold-and-low-overhead-fault-tolerant-quantum-memory--2",
+          "artifact_date": "2024-03-27"
+        },
+        {
+          "title": "Demonstration of logical qubits and repeated error correction with better-than-physical error rates — v3",
+          "url": "https://arxiv.org/abs/2404.02280v3",
+          "artifact_date": "2024-11-17 revision; first submitted 2024-04-02"
+        },
+        {
+          "title": "Author Correction: Quantum error correction below the surface code threshold",
+          "url": "https://www.nature.com/articles/s41586-026-10559-8",
+          "artifact_date": "2026-04-28"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "Abstract; A surface code memory below threshold; High-distance repetition codes; Change history",
+          "scope": "Memory and repetition-code tests are kept separate. The paper’s main text was inspected; no new raw-data reproduction or universal application claim is made.",
+          "access": "Official artifact text inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-14",
+          "locator": "Published-paper abstract and date in IBM Research’s Nature record",
+          "scope": "Author-hosted exact-paper record used after direct publisher retrieval failed. It describes a noise-model/code-design result, not an installed processor; the differently stated QIP talk abstract is not substituted.",
+          "access": "Official artifact text inspected"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-14",
+          "locator": "arXiv:2404.02280v3, Abstract; Comments; Submission history",
+          "scope": "Version pinned to November 17, 2024. Post-selection and the corrected physical teleportation baseline remain visible. Full experimental reproduction and independent subject review remain open.",
+          "access": "Official artifact text inspected"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "Author Correction, April 28, 2026: Figure 3a axis and legend",
+          "scope": "Specific repetition-code labeling correction. It does not establish that unrelated numerical claims changed.",
+          "access": "Publisher correction text retrieved through official-domain search; direct article/PDF retrieval failed, so no PDF visual inspection is claimed."
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "FTFN interpretation: a useful-application claim needs an identified task, accuracy requirement, end-to-end resource accounting and a credible classical baseline. Include state preparation, error-correction overhead, repetitions, decoding, execution time and verification where relevant. A memory lifetime is one enabling condition; it does not substitute for that application-level test. Equally, a narrowly bounded experiment should not be dismissed because it is not yet a product. The reference should say which prerequisite improved and which prerequisites were not tested.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "184-TOPIC-009",
+      "kind": "Topic",
+      "title": "From instrument to discovery: preserve the measurement and inference boundary",
+      "route": "/reference/topic-canon/discovery-technologies--edition-2/",
+      "article_sha256": "11eb1583113ab4c537de40c8a8495880ab1b9a174553270fbce380c4bc535c9a",
+      "rendered_record_sha256": "ae2964bc7a2daf361828edc9ab4c2238644f0bada989b9975097d05a9c08f657",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded topic/answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "Rubin Observatory First Look release",
+          "url": "https://rubinobservatory.org/news/first-imagery-rubin",
+          "artifact_date": "2025-06-23"
+        },
+        {
+          "title": "LIGO/Virgo GWTC-3 original catalog record",
+          "url": "https://dcc.ligo.org/LIGO-P2000318/public",
+          "artifact_date": "Versioned catalog; O3b observations 2019-11-01 to 2020-03-27"
+        },
+        {
+          "title": "NASA Deep Space Station 23 operating milestone",
+          "url": "https://www.nasa.gov/technology/space-comms/deep-space-network/new-next-gen-dish-adds-muscle-to-nasas-deep-space-network/",
+          "artifact_date": "2026-08-25 publication; operations reported from 2026-08-03"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "First Look release, June 23, 2025: test-observation interval; imagery caption; commissioning statement",
+          "scope": "The release describes early observations and a then-future survey. It was re-read as a historical milestone, not evidence of the complete September 2026 survey state.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "LIGO-P2000318-v11: Abstract; Notes and Changes; linked data release",
+          "scope": "O3b runs from November 1, 2019 to March 27, 2020 and uses p-astro above 0.5. This accepted-version record is historical, not the latest event total.",
+          "access": "Exact document record re-read September 22; linked paper, data release and strain data not independently reproduced"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "NASA publication date August 25, 2026; paragraph beginning After completing a testing campaign; Page Last Updated",
+          "scope": "May–July testing, August 3 operations and August 25 publication are distinct dates. This is NASA’s milestone account, not an independently reproduced availability series.",
+          "access": "Exact official HTML text re-read September 22"
+        }
+      ],
+      "source_check_boundary": "September 22 recheck of the three exact source pages: Rubin First Look, LIGO-P2000318-v11 and NASA DSS-23. The earlier milestones remain historical; no current survey-state search, strain-data reproduction, new observation series or independent acceptance is claimed.",
+      "next_action": "For a survey, seek dated observing coverage, calibration and validated data-release documentation. For a catalog, preserve the event-selection contract and reproducible analysis. For network service, seek named capacity, availability and delivery records. Independent subject review remains pending for this draft. No alert count, discovery rate, causal claim or cross-instrument score is manufactured to fill an absent denominator.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "119-PROJECT-001",
+      "kind": "Project",
+      "title": "TSMC Arizona: a campus contains several different delivery stages",
+      "route": "/atlas/projects/tsmc-arizona/",
+      "article_sha256": "08ffcc776e1dc855f953910954c5e901392d1edabe540da730c63204f6232fcc",
+      "rendered_record_sha256": "5e34823cb151793e7d6ac7ecab8bd96f41bc02b9335495777776a44f2a31e36e",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Completed evidence receipt reconciled; independent review pending",
+      "sources": [
+        {
+          "title": "Phoenix: TSMC Arizona campus investment update",
+          "url": "https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html",
+          "artifact_date": "2026-07-16"
+        },
+        {
+          "title": "Phoenix formal agenda, Item 73: wastewater development agreement request",
+          "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Agenda-FINAL.pdf",
+          "artifact_date": "2026-05-20 meeting; revised 2026-05-19"
+        },
+        {
+          "title": "Phoenix formal results, Item 73: adopted authorization",
+          "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Results-FINAL.pdf",
+          "artifact_date": "2026-05-20; inspected in September 22 receipt"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "Article body: Fab 1 and Fab 2 milestones",
+          "scope": "City account relaying company claims. A separately verified Fab 3 milestone was not established in this article.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "Item 73, printed pages 198–199 / PDF pages 197–198 (zero based)",
+          "scope": "Request for authorization, not minutes, an enacted ordinance, an executed agreement or utility acceptance. Flow quantities are prospective capacity, not metered use.",
+          "access": "Relevant PDF text inspected in the September 14–15 research session. Screenshot request returned no inspectable image; visual verification remains pending. No table-derived series admitted."
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Printed page 8; Item 73",
+          "scope": "Council adoption authorizes the agreement; it does not establish completed works, commissioning, acceptance or measured flow.",
+          "access": "Text inspection retained from receipt-60-arizona-2026-09-22-no-material-change. PDF visual/signature verification was not established."
+        }
+      ],
+      "source_check_boundary": "The September 22 editorial reconciliation retains the July-article inspection and incorporates the actual September 22 wastewater receipt. It is not another source check, a production audit or an independent acceptance.",
+      "next_action": "Seek completed-and-accepted conveyance, operating reclaimed-water infrastructure, measured facility returns and separate fab-specific recurring production evidence. The next cycle check is October 9; the separate Phase 55Q November 21 appointment is preserved.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "191-PROJECT-001",
+      "kind": "Project",
+      "title": "Toronto 24 254930: adoption and enactment remain separate questions",
+      "route": "/reference/international-projects/toronto-24-254930/",
+      "article_sha256": "f4d528b5539233c8bcf5d583b8dac2d753b2bc24dc47b0e5c5dab874b62bd844",
+      "rendered_record_sha256": "b3ad31442d6feed5e5f6c0138b3378204bff94dac390ad575a27ea80bd45cefa",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Completed evidence receipt reconciled; independent review pending",
+      "sources": [
+        {
+          "title": "Toronto Council item 2026.SC33.9",
+          "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+          "artifact_date": "City Council 2026-07-29/30"
+        },
+        {
+          "title": "Toronto public notice 7606, application 24 254930 ESC 20 OZ",
+          "url": "https://secure.toronto.ca/nm/api/individual/notice/7606.do",
+          "artifact_date": "Meeting 2026-07-09"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "City Council decision, especially clauses 4–10",
+          "scope": "Adoption and conditional withholding of bills; not proof of later enactment, satisfaction or a building permit.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "Application number, address list, proposal and meeting date",
+          "scope": "Proposal-stage identity and intended uses. Proposed community space and parkland are not delivered facilities.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        }
+      ],
+      "source_check_boundary": "Editorial reconciliation on September 22 incorporates the actual September 21 project check. Earlier source notes remain dated; the receipt’s portal and address-search limitations are retained. No fresh source check or legal determination is implied.",
+      "next_action": "Seek enacted amendment identifiers, accepted condition-compliance records, the exact permit and subsequent construction/occupancy evidence. Continue to distinguish public benefit commitments from observed household and service outcomes.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "191-PROJECT-003",
+      "kind": "Project",
+      "title": "Hornsdale Power Reserve: operating evidence without an inherited outcome score",
+      "route": "/reference/international-projects/hornsdale-power-reserve/",
+      "article_sha256": "6fbba20315a718385d1fc09ba2fd38fe42a778345307b5baa7ce6ed8e53d7a7d",
+      "rendered_record_sha256": "c7e09d03c942772b640585b4f50d6834f86c2224819c9a60616a505adf70c359",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 report access and invalid-date limitation incorporated; independent review pending",
+      "sources": [
+        {
+          "title": "ARENA Hornsdale expansion final-report record",
+          "url": "https://arena.gov.au/knowledge-bank/hornsdale-power-reserve-expansion-final-project-report/",
+          "artifact_date": "Landing page updated 2026-03-31"
+        },
+        {
+          "title": "Neoen Hornsdale expansion final report, Revision 1",
+          "url": "https://arena.gov.au/assets/2024/09/Neoen-HPRX-Final-Project-Report_2024.pdf",
+          "artifact_date": "Released 2024-08-07"
+        },
+        {
+          "title": "Neoen Hornsdale H1 2024 operations report, Revision 1",
+          "url": "https://arena.gov.au/assets/2025/03/Neoen-%E2%80%93-Hornsdale-Power-Reserve-Upgrade-%E2%80%93-Operations-Report-H1-2024.pdf",
+          "artifact_date": "Released 2025-02-21; H1 2024 observation period"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "Report description and last-updated field",
+          "scope": "Funder-hosted description of the expansion. Landing-page currency is distinct from report and observation dates.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "Cover; Table 1; sections 4.1–4.3",
+          "scope": "Neoen-authored account of separate service changes, not independent verification. No numerical response plots or tables independently reproduced.",
+          "access": "Relevant PDF text inspected in the September 14–15 research session. Screenshot request returned no inspectable image; visual verification remains pending. No table-derived series admitted."
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Physical PDF pages 1, 9 and 13: cover, Table 1 on printed page 4, and Figures 4–5 on printed page 8",
+          "scope": "The invalid printed WAPS date 31/11/2023 is retained. Event response does not reproduce a half-year available/eligible interval measure. No values digitized or series admitted.",
+          "access": "Exact PDF downloaded, hash-pinned and three named pages visually inspected; the September 14 failed retrieval remains in the original pilot receipt. Not a full-document or independent review."
+        }
+      ],
+      "source_check_boundary": "September 22 recovered the exact H1 2024 PDF and visually checked three named pages. Earlier final-report and landing-page inspections retain their dates; this is not a current 2026 operating audit or independent acceptance.",
+      "next_action": "Obtain the accepted service definition, configuration boundary, compatible interval ledger, exclusions and revision policy. Resolve the printed date discrepancy and reproduce any proposed series independently before admission. Check current configuration and adverse-event records before extending the historical account into 2026.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "191-PROJECT-004",
+      "kind": "Project",
+      "title": "Victorian Big Battery: operational service and a commissioning fire both belong in the record",
+      "route": "/reference/international-projects/victoria-big-battery/",
+      "article_sha256": "8d790977e4a48cf62d1978f419303e2992c5695ef10defb8c04e49c18c4d6c6b",
+      "rendered_record_sha256": "435fe44071fb1777a4d5041511a303e7deee31e21b894957ec91085307d41181",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-15",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "Victoria government: Victorian Big Battery",
+          "url": "https://www.energy.vic.gov.au/renewable-energy/batteries-energy-storage-projects/victorian-big-battery",
+          "artifact_date": "Page updated 2023-02-02"
+        },
+        {
+          "title": "CFA: battery-fire response near Geelong",
+          "url": "https://news.cfa.vic.gov.au/news/firefighters-bring-large-battery-fire-near-geelong-under-control",
+          "artifact_date": "Published 2021-07-30; updates through 2021-08-03"
+        },
+        {
+          "title": "Energy Safe Victoria: statement of technical findings",
+          "url": "https://www.energysafe.vic.gov.au/sites/default/files/2022-12/VBB_StatementOfFindings_FINAL_28Sep2021.pdf",
+          "artifact_date": "2021-09-28 statement"
+        },
+        {
+          "title": "AEMO: Victorian battery energy reserves",
+          "url": "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer",
+          "artifact_date": "2021-12-08"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "Project location, rating, seasonal allocation and page update",
+          "scope": "Moorabool/Geelong project identity. Historical service description, not fresh 2026 performance data.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "Dated July 30 and August 2–3 incident updates",
+          "scope": "Fire response and transfer toward investigation, not final regulatory disposition.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-15",
+          "locator": "All three pages; methodology, corrective actions and next steps",
+          "scope": "Most-likely-cause finding includes Tesla testing and ESV inspection. Conditional recommissioning position; enforcement determination still prospective in this statement.",
+          "access": "Relevant PDF text inspected in the September 14–15 research session. Screenshot request returned no inspectable image; visual verification remains pending. No table-derived series admitted."
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-15",
+          "locator": "December 8 release and SIPS explanatory note",
+          "scope": "AEMO confirms operational scheme and contracted reserve scope, not actual annual dispatch or a causal bill-saving measure.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "Seek final disposition and corrective-action verification, followed by interval service and outage records for the relevant configuration. No annual reliability score, current unsafe-condition finding or independent stage admission is made.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "191-PROJECT-005",
+      "kind": "Project",
+      "title": "Dalrymple ESCRI-SA: a local network case, not a universal battery result",
+      "route": "/reference/international-projects/dalrymple-grid-battery/",
+      "article_sha256": "a8561ebf844d2a8b13087426de354a137b030fdb9912f57b830762f30cc4b879",
+      "rendered_record_sha256": "e323fe1c3838d64101182eda6b08200be8feaef0872eade54fcb673f1334316b",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-15",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "ARENA: ElectraNet South Australian battery retrospective",
+          "url": "https://arena.gov.au/blog/electranet-south-australian-battery-shows-the-way-forward/",
+          "artifact_date": "2021-04-15"
+        },
+        {
+          "title": "ESCRI-SA operational report 4, public Version 1.0",
+          "url": "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-4.pdf",
+          "artifact_date": "2021-02; final six-month interval ends 2020-12-14"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "Chronology, location and islanded-network description",
+          "scope": "Funder retrospective about a defined local system. Project-wide success language is not independently verified here.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "Printed pages 14–15, Table 3-1; sections 6.2–6.4, pages 35–36",
+          "scope": "Contract-defined measures and historical defects. The fourth period is June 14–December 14, 2020. Preserve the existing source-backed amendment; no issuer erratum or denominator reproduction is implied.",
+          "access": "Relevant PDF text inspected in the September 14–15 research session. Screenshot request returned no inspectable image; visual verification remains pending. No table-derived series admitted."
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "Obtain the full calculation contract and interval inputs, reproduce the candidate values independently, and seek authorized admission. For current service claims, add configuration-matched event logs and defect-resolution evidence. The measured pilot remains unadmitted.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "191-PROJECT-012",
+      "kind": "Project",
+      "title": "ITER at Cadarache: a revised research baseline is not delivered electricity",
+      "route": "/reference/international-projects/france-acquisition-1/",
+      "article_sha256": "d15508098430e111f49718fde539b963d32528636d792b41f7e4b7cc11a38311",
+      "rendered_record_sha256": "1408b8fa2f18f9c852a50655c3d54ab72d530058442c7117eca2c9ce03a8ad39",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "Légifrance — decree 2026-328, initial published text",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053981234",
+          "artifact_date": "2026-04-28; JORF publication 2026-04-30"
+        },
+        {
+          "title": "ASNR — decision 2026-DC-042 record",
+          "url": "https://reglementation-controle.asnr.fr/reglementation/bulletin-officiel-de-l-asnr/installations-nucleaires/decisions-individuelles/decision-no-2026-dc-042-de-l-asnr-du-14-avril-2026",
+          "artifact_date": "Decision 2026-04-14; publication 2026-04-15"
+        },
+        {
+          "title": "ITER — 35th Council baseline-approach account",
+          "url": "https://www.iter.org/35th-iter-council-support-overall-baseline-approach",
+          "artifact_date": "Meeting concluded 2024-11-21"
+        },
+        {
+          "title": "CEA–Agence ITER France — ten years of ITER convoys",
+          "url": "https://www.itercadarache.cea.fr/Pages/Medias/Actualites/2026-10-ans-convois-ITER.aspx",
+          "artifact_date": "2026-02-17"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "Title, NOR ECOP2604505D, object notice and Article 1",
+          "scope": "An installation-perimeter amendment, not commissioning acceptance. The annexed perimeter plan and consolidated legal history were not inspected.",
+          "access": "Official initial-version HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-14",
+          "locator": "Individual-decision title and subject paragraph",
+          "scope": "The exact decision record names INB 174 and ITER ORGANIZATION. The downloadable decision text was not inspected; no full legal analysis or general operating authorization is claimed.",
+          "access": "Official artifact-specific HTML record inspected"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-14",
+          "locator": "Paragraph below the 35th Council heading",
+          "scope": "Endorsement of the overall approach, with continued risk and cost work. This historical account is not a complete September 2026 approved schedule.",
+          "access": "Official meeting-account HTML inspected"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "Opening summary and first three body paragraphs",
+          "scope": "Issuer-reported logistics history, not independent regional economic-impact attribution. Later related-link convoy schedules were not treated as completed journeys.",
+          "access": "Official dated article HTML inspected"
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "Obtain the current approved baseline, the relevant complete regulator instruments, and configuration-specific commissioning acceptance. For the host system, add exact utility and environmental-monitoring records. No recurring output, electricity service, regional benefit score or independent dossier acceptance is asserted.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "191-PROJECT-020",
+      "kind": "Project",
+      "title": "JT-60SA at Naka: first plasma is a research milestone",
+      "route": "/reference/international-projects/japan-acquisition-1/",
+      "article_sha256": "9011d5adef5a77e5c2319d4e3cb29d75ca9308cfb061c70bc7bf5452b3d4335f",
+      "rendered_record_sha256": "0a0fc94c5c44971fc0026a2c605625da1d09eb346270de8861f549cf8f9ac3f7",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "QST — JT-60SA first-plasma press release",
+          "url": "https://www.qst.go.jp/site/press/20231024-1.html",
+          "artifact_date": "Published 2023-10-24; event 2023-10-23, about 17:30 Japan time"
+        },
+        {
+          "title": "QST — Naka facility location and access record",
+          "url": "https://www.qst.go.jp/site/jt60/4941.html",
+          "artifact_date": "Page updated 2024-04-01"
+        },
+        {
+          "title": "QST — JT-60SA upgrade work log",
+          "url": "https://www.qst.go.jp/site/jt60/progress.html",
+          "artifact_date": "Page updated 2026-08-06; selected entries 2025-04-30, 2025-06-03 and 2025-07-09"
+        },
+        {
+          "title": "QST / EUROfusion / F4E — on-site laboratory, Japanese release",
+          "url": "https://www.qst.go.jp/site/press/20260831.html",
+          "artifact_date": "2026-08-31"
+        },
+        {
+          "title": "QST / EUROfusion / F4E — on-site laboratory, English release",
+          "url": "https://www.qst.go.jp/site/news/on-site-labo.html",
+          "artifact_date": "2026-08-31"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "Opening statement, second paragraph and glossary item 1",
+          "scope": "Issuer account of an experimental milestone and the named Naka facility. Not a recurring plasma-performance series or a grid-output result.",
+          "access": "Official Japanese press-release HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-14",
+          "locator": "所在地 and rail/bus access sections",
+          "scope": "Facility address and dated access guidance. Neither current transit timetables nor actual commute reliability were checked.",
+          "access": "Official Japanese facility-specific HTML inspected"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-14",
+          "locator": "Dated work-status entries for cooling-water piping, coil insulation and poloidal-coil power supplies",
+          "scope": "Entry dates, not the newer page header, date the selected work. No completion of all upgrades is inferred; linked social posts/videos were not inspected.",
+          "access": "Official Japanese HTML work entries inspected"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "発表のポイント and main on-site laboratory paragraphs",
+          "scope": "European institutional participation and strengthening of the programme. Participation is not a count of graduates, retained local jobs or qualified operators.",
+          "access": "Official Japanese HTML inspected alongside its linked English version"
+        },
+        {
+          "source_index": 4,
+          "checked_date": "2026-09-14",
+          "locator": "News Highlights, Abstract and glossary item 2",
+          "scope": "Issuer English companion uses launch/expansion wording. The Japanese companion emphasizes strengthening. These are one announcement, not two independent confirmations.",
+          "access": "Official linked English HTML inspected; independent bilingual acceptance pending"
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "Seek campaign results and upgrade acceptance with pulse-level methods, exclusions and uncertainty. Record training completion separately from participation. Independent identity, subject and language acceptance remain pending; no operating authorization or recurring service stage is inferred.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "119-PROJECT-022",
+      "kind": "Project",
+      "title": "Hanford DFLAW: retain the boundaries of the material account",
+      "route": "/atlas/projects/hanford-dflaw-operation/",
+      "article_sha256": "63bb8cea519c8c0bf993f9ba8113c8ea19c92d1fbaa88e2e1f9456d934c2f815",
+      "rendered_record_sha256": "6337406a30364e7689a1aa40bc14dc27c8deaa0045253bb5e7ad67398d779fde",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-15",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "Hanford Waste Treatment and Immobilization Plant project",
+          "url": "https://www.hanford.gov/?page=519",
+          "artifact_date": "Page updated 2026-07-15"
+        },
+        {
+          "title": "Hanford Consent Decree monthly report AR-41694",
+          "url": "https://pdw.hanford.gov/download/v2/AR-41694",
+          "artifact_date": "July 1–31, 2026 observation period; September meeting footer"
+        },
+        {
+          "title": "Hanford Tri-Party Agreement report AR-41695",
+          "url": "https://pdw.hanford.gov/download/v2/AR-41695",
+          "artifact_date": "July 2026; retained September 10 inspection"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-15",
+          "locator": "Project identity, process description and last-updated field",
+          "scope": "General WTP description, not a complete commissioning or observed environmental-performance record.",
+          "access": "Official HTML body inspected in the September 14–15 research session; no independent content acceptance implied."
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-15",
+          "locator": "LAW and supporting-facility sections, PDF pages 22–25 (zero based)",
+          "scope": "Monthly feed, cumulative container and separate secondary-waste measures have different boundaries. Meeting footer is not the observation month.",
+          "access": "Relevant PDF text inspected in the September 14–15 research session. Screenshot request returned no inspectable image; visual verification remains pending. No table-derived series admitted."
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-15",
+          "locator": "Exact AR-41695 PDF; prior receipt official_surface_checks",
+          "scope": "Retained September 10 review includes basin inventory context but not a complete WTP reconciliation. Do not say inventory evidence is absent.",
+          "access": "September 14 direct open returned Internal Error. Earlier inspection is explicitly retained, not relabelled as a successful current retrieval."
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "Seek a complete period-matched material account, accepted glass quantities and downstream acceptance evidence, with reconciliation method and uncertainty. Independent review and any later gate decision remain separate from this expanded project narrative.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "192-PLACE-001",
+      "kind": "Place",
+      "title": "Ontario: connect housing supply, household access and a named development decision",
+      "route": "/reference/global-places-ii/ontario-real-estate/",
+      "article_sha256": "2ac6d19534537aba90028f31c4a3c90ec20495166e9d1a2f3a1df071c44b7211",
+      "rendered_record_sha256": "dd2edce309daab86a11e8441da0690a1512d665edbfeefa1e7a0824299b833cf",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "CMHC monthly housing starts: July 2026 edition and methodology notice",
+          "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-data/data-tables/housing-market-data/monthly-housing-starts-construction-data-tables",
+          "artifact_date": "Published 2026-08-18; July 2026 edition"
+        },
+        {
+          "title": "CMHC 2025 Rental Market Report release: Toronto and Ottawa findings",
+          "url": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/canadas-vacancy-rate-rises-amid-historically-high-rental-construction",
+          "artifact_date": "2025-12-11; 2025 rental observations"
+        },
+        {
+          "title": "CMHC mid-year rental market update: definitions and rent-quartile turnover",
+          "url": "https://www.cmhc-schl.gc.ca/observer/2026/2026-mid-year-rental-market-update",
+          "artifact_date": "2026-06-09; periods vary by figure"
+        },
+        {
+          "title": "CMHC Housing Supply Report: Fall 2026, Toronto and Ottawa",
+          "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/housing-market/housing-supply-report/",
+          "artifact_date": "Published 2026-09-10; selected Toronto figure through 2026 Q2"
+        },
+        {
+          "title": "Toronto SC33.9: retained application-specific council history",
+          "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+          "artifact_date": "July 2026 council decision; retained 2026-09-14 research receipt"
+        },
+        {
+          "title": "Ontario housing-supply tracker: current retrieval unavailable",
+          "url": "https://www.ontario.ca/page/tracking-housing-supply-progress",
+          "artifact_date": "Current edition not retrieved; access checked 2026-09-14"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "Important notice, July highlights and starts/SAAR definitions",
+          "scope": "CMHC flags an Ontario unabsorbed-inventory methodology review. The July year-over-year direction conflicts with its labelled year/value pair. That growth claim is excluded, not silently corrected. Linked workbooks were not acquired.",
+          "access": "Official HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-14",
+          "locator": "Toronto and Ottawa metropolitan findings",
+          "scope": "The Toronto rental categories and source-labelled Ottawa low-rent finding are different cohorts. Gatineau is listed separately in the release; it is not merged here. These are 2025 observations, not a September 2026 survey or an Ontario-wide estimate.",
+          "access": "Official HTML inspected"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-14",
+          "locator": "Figure 3 and footnotes 4–5; asking-rent and average-rent discussion",
+          "scope": "Q1–Q4 in Figure 3 mean rent quartiles, not calendar quarters. Affordability illustrations use a specified two-earner household; asking and paid rents use different reference periods. Balanced-vacancy ranges are preliminary, not a universal threshold.",
+          "access": "Official HTML inspected"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "Fall 2026 edition; Toronto Figure 1 and its four-quarter-moving-sum footnote",
+          "scope": "The selected tenure values cover four quarters ending 2026 Q2. They are neither Q2 alone nor first-half totals. The living URL must be rechecked before using a newer edition. Scenario supply gaps are not observed construction.",
+          "access": "Official HTML inspected"
+        },
+        {
+          "source_index": 4,
+          "checked_date": "2026-09-14",
+          "locator": "Retained receipt 207-TORONTO-2026-09-14-BOUNDED-RECHECK; SC33.9 history and Recommendation 8",
+          "scope": "The retained bounded check did not establish exact downstream enactment or permit evidence. This place expansion neither reruns the project gate nor proves those artifacts absent. Next project check remains September 21.",
+          "access": "Previously retrieved official item retained through a hash-pinned local receipt; no new gate retrieval"
+        },
+        {
+          "source_index": 5,
+          "checked_date": "2026-09-14",
+          "locator": "Provincial tracker endpoint",
+          "scope": "HTTP 403 prevented current-page inspection. No present-day target achievement, progress total or revised provincial series is taken from this endpoint. The separately attempted catalogue resource returned 429; neither failure establishes missing data.",
+          "access": "Unavailable: HTTP 403; no access workaround attempted"
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "CMHC is reviewing Ontario’s unabsorbed-inventory methodology. Its July highlights also contain a direction/number inconsistency in a year-over-year starts statement; this draft excludes that growth figure. The provincial housing tracker returned HTTP 403, so its current contents were not inspected.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "192-PLACE-002",
+      "kind": "Place",
+      "title": "South Australia: distinguish generation, network services and household electricity costs",
+      "route": "/reference/global-places-ii/south-australia-grid-storage/",
+      "article_sha256": "cfb4b2079b913719257b54ad23fc1b6de36400eef8929e32ac297027aff3c83c",
+      "rendered_record_sha256": "e1730cf0669a3f3d8e4fafa75af8f5132eb21a9cc31f65da8877ad7a8e178aac",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "ABS National, state and territory population: December 2025",
+          "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2025",
+          "artifact_date": "Released 2026-06-18; reference 2025-12-31"
+        },
+        {
+          "title": "DCCEEW Australian electricity generation fuel mix: calendar 2025",
+          "url": "https://www.energy.gov.au/energy-data/australian-energy-statistics/data-charts/australian-electricity-generation-fuel-mix-calendar-year-2025",
+          "artifact_date": "Australian Energy Statistics 2026; calendar 2025 observations"
+        },
+        {
+          "title": "ARENA: ElectraNet South Australian battery retrospective",
+          "url": "https://arena.gov.au/blog/electranet-south-australian-battery-shows-the-way-forward/",
+          "artifact_date": "2021-04-15 retrospective"
+        },
+        {
+          "title": "AER final Default Market Offer 2026–27 announcement",
+          "url": "https://www.aer.gov.au/news/articles/news-releases/aer-releases-final-default-market-offer-2026-27",
+          "artifact_date": "Published 2026-05-26; effective 2026-07-01"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "Annual population change at 31 December 2025; South Australia row and methodology",
+          "scope": "Population is in thousands and subject to revision. This is estimated residents, not households, meters or customers. The next scheduled release on September 17 is not treated as already observed.",
+          "access": "Official HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-14",
+          "locator": "Calendar-year 2025 fuel-mix table; South Australia row",
+          "scope": "77.0% is the renewable share of generation, not demand served or availability in every interval. The selected HTML table cites Australian Energy Statistics 2026 Table O; the underlying workbook was not acquired.",
+          "access": "Official HTML inspected"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-14",
+          "locator": "Dalrymple capacity, commissioning chronology and local-islanding description",
+          "scope": "A dated funder retrospective, not an independent 2026 reliability audit. Rated MW and MWh describe different quantities; no repeated-event or household-benefit series is admitted.",
+          "access": "Official HTML inspected"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "South Australian residential flat-rate and time-of-use standing-offer changes",
+          "scope": "Final issuer announcement, not the earlier draft or a review of the full decision attachments. The stated changes apply to specified standing-offer tariffs, not every customer’s actual bill.",
+          "access": "Official HTML inspected"
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "The next reporting needs compatible operator reliability observations, customer-cohort evidence and independent method review. AEMO report-dependent demand extrema and wholesale-price claims were excluded because PDF visual inspection could not be completed. No September 17 population release or future operating result is prewritten.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "192-PLACE-006",
+      "kind": "Place",
+      "title": "Saint-Paul-lès-Durance: the municipality around the ITER research site",
+      "route": "/reference/global-places-ii/france-place-acquisition/",
+      "article_sha256": "cfe4fc9b1c809b1a13b2f4fcf753e1987e0812e2f7e9379677c1d2bad2d0835d",
+      "rendered_record_sha256": "d636b84b38b883975938d3263fad1b7a9c30930ad2f441ebc2c0aee7fc9780cc",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "INSEE — Saint-Paul-lès-Durance, COG 13099",
+          "url": "https://www.insee.fr/fr/metadonnees/geographie/commune/13099-saint-paul-les-durance",
+          "artifact_date": "Geography reference 2026-01-01"
+        },
+        {
+          "title": "INSEE — Saint-Paul-lès-Durance territorial comparator",
+          "url": "https://www.insee.fr/fr/statistiques/1405599?geo=COM-13099+FE-1",
+          "artifact_date": "Published 2026-08-27; selected observations 2023; geography 2026-01-01"
+        },
+        {
+          "title": "CEA–Agence ITER France — ten years of ITER convoys",
+          "url": "https://www.itercadarache.cea.fr/Pages/Medias/Actualites/2026-10-ans-convois-ITER.aspx",
+          "artifact_date": "2026-02-17"
+        },
+        {
+          "title": "Légifrance — decree 2026-328, initial published text",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053981234",
+          "artifact_date": "2026-04-28; JORF publication 2026-04-30"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "Code Officiel Géographique and intercommunality sections",
+          "scope": "Commune identity and administrative membership, not the Cadarache campus perimeter or a commuting catchment.",
+          "access": "Official geography-record HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-14",
+          "locator": "Population, Logement, Niveau de vie and Emploi tables and their source notes",
+          "scope": "Selected commune observations retain their own periods and populations. A suppressed poverty rate is not zero; jobs at workplace are not jobs created by ITER.",
+          "access": "Official HTML tables inspected; underlying microdata not reproduced"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-14",
+          "locator": "Opening summary and first three body paragraphs",
+          "scope": "Issuer-reported logistics history, not independent regional economic-impact attribution. Later related-link convoy schedules were not treated as completed journeys.",
+          "access": "Official dated article HTML inspected"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "Title, NOR ECOP2604505D, object notice and Article 1",
+          "scope": "An installation-perimeter amendment, not commissioning acceptance. The annexed perimeter plan and consolidated legal history were not inspected.",
+          "access": "Official initial-version HTML inspected"
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "The selected evidence does not yet establish utility adequacy, transport reliability, public-service costs or the distribution of benefits. There is no synthetic place score. Obtain accepted local-system records and compatible household/service observations, then seek independent jurisdiction and factual review.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "192-PLACE-010",
+      "kind": "Place",
+      "title": "Naka, Japan: distinguish a research campus from an energy service",
+      "route": "/reference/global-places-ii/japan-place-acquisition/",
+      "article_sha256": "43cfe0eae1546a6170b1de63772998eb5eec3b6a903faa7291e0cde94c367ab0",
+      "rendered_record_sha256": "12aecd7b548de8eaf88a2192096f7aa89eae673a7f23dc5cb31cc0dd76f8d462",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "QST — Naka facility location and access record",
+          "url": "https://www.qst.go.jp/site/jt60/4941.html",
+          "artifact_date": "Page updated 2024-04-01"
+        },
+        {
+          "title": "Naka City — September 1, 2026 population and households",
+          "url": "https://www.city.naka.lg.jp/gyousei/toukei/page000081.html",
+          "artifact_date": "Observation 2026-09-01; retrieved 2026-09-14"
+        },
+        {
+          "title": "QST / EUROfusion / F4E — on-site laboratory, Japanese release",
+          "url": "https://www.qst.go.jp/site/press/20260831.html",
+          "artifact_date": "2026-08-31"
+        },
+        {
+          "title": "QST / EUROfusion / F4E — on-site laboratory, English release",
+          "url": "https://www.qst.go.jp/site/news/on-site-labo.html",
+          "artifact_date": "2026-08-31"
+        },
+        {
+          "title": "QST — JT-60SA upgrade work log",
+          "url": "https://www.qst.go.jp/site/jt60/progress.html",
+          "artifact_date": "Page updated 2026-08-06; selected entries 2025-04-30, 2025-06-03 and 2025-07-09"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "所在地 and rail/bus access sections",
+          "scope": "Facility address and dated access guidance. Neither current transit timetables nor actual commute reliability were checked.",
+          "access": "Official Japanese facility-specific HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-14",
+          "locator": "住民基本台帳人口, 常住人口 and the explanation of the two counting methods",
+          "scope": "Municipal resident-register and census-based estimates are distinct. The page is a living URL; historical workbook rows and subcity districts were not inspected.",
+          "access": "Official Japanese HTML tables inspected; linked spreadsheets not acquired"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-14",
+          "locator": "発表のポイント and main on-site laboratory paragraphs",
+          "scope": "European institutional participation and strengthening of the programme. Participation is not a count of graduates, retained local jobs or qualified operators.",
+          "access": "Official Japanese HTML inspected alongside its linked English version"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "News Highlights, Abstract and glossary item 2",
+          "scope": "Issuer English companion uses launch/expansion wording. The Japanese companion emphasizes strengthening. These are one announcement, not two independent confirmations.",
+          "access": "Official linked English HTML inspected; independent bilingual acceptance pending"
+        },
+        {
+          "source_index": 4,
+          "checked_date": "2026-09-14",
+          "locator": "Dated work-status entries for cooling-water piping, coil insulation and poloidal-coil power supplies",
+          "scope": "Entry dates, not the newer page header, date the selected work. No completion of all upgrades is inferred; linked social posts/videos were not inspected.",
+          "access": "Official Japanese HTML work entries inspected"
+        }
+      ],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "Acquire municipal service, household and access evidence beyond the research programme, with comparable dates and spatial boundaries. Review the native-language interpretations independently. The draft contains no regional score, completed training outcome, city energy-service result or formally accepted place identity.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-021",
+      "kind": "Question",
+      "title": "What climate conditions constrain a named infrastructure decision?",
+      "route": "/reference/questions/climate--116-q-021/",
+      "article_sha256": "e8a3c046d9c0b0f3219aa119814fbde7d6e103aa61140362adf2cac3ecb4c97d",
+      "rendered_record_sha256": "7665a9df5ab426cef147074c91012df3ae28103ac81d0b57a5fe7d830912a216",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded topic/answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "NOAA 2025 U.S. climate assessment",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202513",
+          "artifact_date": "2026-01-13"
+        },
+        {
+          "title": "NOAA August 2026 U.S. climate assessment",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202608",
+          "artifact_date": "2026-09-09"
+        },
+        {
+          "title": "Reclamation Glen Canyon operating update — rolling page",
+          "url": "https://www.usbr.gov/uc/water/crsp/cs/gcd.html",
+          "artifact_date": "2026-09-15 update; earlier 2026-08-21 snapshot retained as history"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Annual assessment: Temperature; Precipitation; Published January 13, 2026",
+          "scope": "Calendar-2025 regional context was re-read; it is not a site reading or outage attribution.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Key Takeaways; Temperature; Drought; Published September 9, 2026",
+          "scope": "August, June–August summer and the September 1 drought snapshot retain different periods. The linked detailed report was not inspected in this recheck.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Current Status; Current Operations; Inflow Forecasts and Model Projections; Last Updated September 15, 2026",
+          "scope": "The rolling page now reports August observations; the August 21/July account is retained history. Inflow, release and closing storage are not a complete balance. Forecasts are not actual deliveries. No entitlement interpretation.",
+          "access": "Official HTML inspected and retained locally September 22; no interval ledger or independently reproduced balance acquired"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the two named NOAA assessments and the rolling Glen Canyon page. Reclamation now displays a September 15 update describing August observations; the earlier August 21 snapshot and July figures remain historical. No facility outcome, water-right interpretation, independent acceptance or evidence-cycle decision is added.",
+      "next_action": "A named asset’s limits and dated service record matched to local conditions.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-006",
+      "kind": "Question",
+      "title": "Has genome-edited livestock moved beyond a controlled trial?",
+      "route": "/reference/questions/agriculture-and-bioeconomy--116-q-006/",
+      "article_sha256": "3461fc19f3e36499251df6a5bf41170d68bbb4877faa220f6dcbd1bca54e8439",
+      "rendered_record_sha256": "30ee05b144f1efb238ab7c808a4099361eb732e799f12dc67a80455094f9983a",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded topic/answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "FDA NADA 141-609 original approval and study summary",
+          "url": "https://animaldrugsatfda.fda.gov/adafda/app/search/public/document/downloadFoi/16887",
+          "artifact_date": "2025-04-29"
+        },
+        {
+          "title": "FDA PRLR-SLICK risk assessment V-006378",
+          "url": "https://www.fda.gov/media/155706/download",
+          "artifact_date": "2022"
+        },
+        {
+          "title": "FDA PRLR-SLICK low-risk determination announcement",
+          "url": "https://content.govdelivery.com/accounts/USFDA/bulletins/30dba74",
+          "artifact_date": "2022-03-07"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "NADA 141-609, printed pages 1–3 and 18; Table VIII.4 and its exclusion note",
+          "scope": "Genotype, day-21 endpoint and KS06 limitation remain essential. The aggregate table excludes a challenge without infected controls. No commercial adoption estimate or current strain-surveillance result.",
+          "access": "Exact 20-page FDA PDF text reviewed in relevant sections; pages 1–3 and 18 rendered and visually inspected September 22, not a full experimental reproduction"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "V-006378, Conclusions on printed page 8, including lineage scope and approval-status wording",
+          "scope": "Enforcement discretion is distinct from approval and is limited to products from the two reviewed cattle and their progeny. This is not a repeated field-outcome study.",
+          "access": "Exact eight-page FDA PDF conclusion rendered and visually inspected September 22; other pages were not visually re-reviewed"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "FDA bulletin dated March 7, 2022: decision type, two cattle and offspring",
+          "scope": "The announcement communicates the same lineage-limited low-risk decision. It is not a separate commercial-cohort experiment.",
+          "access": "Exact official HTML text re-read September 22"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial inspection of the exact FDA documents and announcement, including selected rendered PDF pages. This checks the scope of the published decisions, not later commercial uptake, current pathogen surveillance or a complete independent study reproduction. No food, treatment, purchasing or legal advice is supplied.",
+      "next_action": "Commercial-cohort monitoring with genotype, management, exposure, comparator and outcome definitions.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-057",
+      "kind": "Question",
+      "title": "What quantum capability has actually been demonstrated?",
+      "route": "/reference/questions/quantum--116-q-057/",
+      "article_sha256": "726b36d15c129a6b94a271f1a831c3826bc4c0d70b90372cd3572486f74d0a1a",
+      "rendered_record_sha256": "a44c5ba4f970bdf76c9b392fe9dfcc820853746bac7c249afa203bb7dc9ecd21",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Assisted first-pass review recorded below; independent review pending",
+      "sources": [
+        {
+          "title": "Google Quantum AI: Quantum error correction below the surface code threshold",
+          "url": "https://www.nature.com/articles/s41586-024-08449-y",
+          "artifact_date": "2024-12-09; page flags 2026-04-28 author correction"
+        },
+        {
+          "title": "High-threshold and low-overhead fault-tolerant quantum memory — exact Nature paper, author-hosted record",
+          "url": "https://research.ibm.com/publications/high-threshold-and-low-overhead-fault-tolerant-quantum-memory--2",
+          "artifact_date": "2024-03-27"
+        },
+        {
+          "title": "Demonstration of logical qubits and repeated error correction with better-than-physical error rates — v3",
+          "url": "https://arxiv.org/abs/2404.02280v3",
+          "artifact_date": "2024-11-17 revision; first submitted 2024-04-02"
+        },
+        {
+          "title": "Author Correction: Quantum error correction below the surface code threshold",
+          "url": "https://www.nature.com/articles/s41586-026-10559-8",
+          "artifact_date": "2026-04-28"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-14",
+          "locator": "Willow paper and retained topic source appendix",
+          "scope": "The memory result remains bounded to its experiment. No September 22 full-text verification.",
+          "access": "September 22 text-reader retrieval failed at the publisher redirect; prior inspection retained"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Author-hosted abstract, especially noise-model and assumed physical-error conditions",
+          "scope": "Protocol and model-conditioned result, not an observed general commercial application.",
+          "access": "IBM Research HTML abstract inspected; linked full paper and code not reproduced"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Version 3 abstract, Comments and submission history",
+          "scope": "November 17, 2024 revision; better-than-physical comparisons depend on post-selection and the corrected physical-teleportation baseline.",
+          "access": "Exact arXiv version page inspected; underlying data not independently reproduced"
+        },
+        {
+          "source_index": 3,
+          "checked_date": "2026-09-14",
+          "locator": "Retained author-correction inspection concerning Figure 3a",
+          "scope": "No September 22 verification of the correction body; prior finding remains explicitly inherited.",
+          "access": "September 22 text-reader retrieval failed at the publisher redirect"
+        }
+      ],
+      "source_check_boundary": "September 22 bounded editorial check: the version-3 arXiv abstract/revision notes and IBM author-hosted abstract were re-read. Both Nature links failed through the text reader, so their September 14 inspections remain inherited, not refreshed. No numerical reproduction or independent subject acceptance is claimed.",
+      "next_action": "A reproducible named application with end-to-end resources, uncertainty and a credible classical comparison.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-033",
+      "kind": "Question",
+      "title": "What does a discovery instrument’s milestone establish?",
+      "route": "/reference/questions/discovery-technologies--116-q-033/",
+      "article_sha256": "24bd0751a29ea5ced6f465669ade9b0decab5ed1f3c18c1a66d0a0d4ca452fc5",
+      "rendered_record_sha256": "b54666ae3e473d5121efb86321e96237eb5412289ebe95eff1099845c47259c2",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded topic/answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "Rubin Observatory First Look release",
+          "url": "https://rubinobservatory.org/news/first-imagery-rubin",
+          "artifact_date": "2025-06-23"
+        },
+        {
+          "title": "LIGO/Virgo GWTC-3 original catalog record",
+          "url": "https://dcc.ligo.org/LIGO-P2000318/public",
+          "artifact_date": "Versioned catalog; O3b observations 2019-11-01 to 2020-03-27"
+        },
+        {
+          "title": "NASA Deep Space Station 23 operating milestone",
+          "url": "https://www.nasa.gov/technology/space-comms/deep-space-network/new-next-gen-dish-adds-muscle-to-nasas-deep-space-network/",
+          "artifact_date": "2026-08-25 publication; operations reported from 2026-08-03"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "First Look release, June 23, 2025: test-observation interval; imagery caption; commissioning statement",
+          "scope": "The release describes early observations and a then-future survey. It was re-read as a historical milestone, not evidence of the complete September 2026 survey state.",
+          "access": "Exact official HTML text re-read September 22"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "LIGO-P2000318-v11: Abstract; Notes and Changes; linked data release",
+          "scope": "O3b runs from November 1, 2019 to March 27, 2020 and uses p-astro above 0.5. This accepted-version record is historical, not the latest event total.",
+          "access": "Exact document record re-read September 22; linked paper, data release and strain data not independently reproduced"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "NASA publication date August 25, 2026; paragraph beginning After completing a testing campaign; Page Last Updated",
+          "scope": "May–July testing, August 3 operations and August 25 publication are distinct dates. This is NASA’s milestone account, not an independently reproduced availability series.",
+          "access": "Exact official HTML text re-read September 22"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the exact Rubin release, LIGO-P2000318-v11 document record and NASA DSS-23 article. This is not a survey-status search, strain-data reanalysis or independently reproduced network-service series. The June 2025 and O3b milestones remain historical.",
+      "next_action": "Instrument calibration, coverage, released analysis and operating-service records appropriate to the exact claim.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-017",
+      "kind": "Question",
+      "title": "Which TSMC Arizona stages are supported?",
+      "route": "/reference/questions/chips-and-compute--116-q-017/",
+      "article_sha256": "7047895a946a78cc17bcc0878d912ad005cf9afbba134e3f4298cacf6ea05dab",
+      "rendered_record_sha256": "0d7ae7b3f913d72d9c67a79e1021139e6ba63bd197e9bf751d591a5ec799f4eb",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Assisted first-pass review recorded below; independent review pending",
+      "sources": [
+        {
+          "title": "Phoenix: TSMC Arizona campus investment update",
+          "url": "https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html",
+          "artifact_date": "2026-07-16"
+        },
+        {
+          "title": "Phoenix formal agenda, Item 73: wastewater development agreement request",
+          "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Agenda-FINAL.pdf",
+          "artifact_date": "2026-05-20 meeting; revised 2026-05-19"
+        },
+        {
+          "title": "Phoenix formal results, Item 73: adopted authorization",
+          "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Results-FINAL.pdf",
+          "artifact_date": "2026-05-20; inspected in September 22 receipt"
+        }
+      ],
+      "source_notes": [],
+      "source_check_boundary": "Editorial reconciliation on September 22 reuses the completed September 22 wastewater receipt and the earlier July-article inspection. No additional source check, new gate decision or independent review is implied.",
+      "next_action": "Exact facility-level utility or qualification acceptance and period-matched production evidence.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-053",
+      "kind": "Question",
+      "title": "What does Toronto file 24 254930 permit us to conclude?",
+      "route": "/reference/questions/policy-and-standards--116-q-053/",
+      "article_sha256": "62ce627d1239a3446d257697a21a6079e41e77e946a2f2e5193773e6d1ef00c5",
+      "rendered_record_sha256": "35cc131a88cb0f0d32cf3dd3d38f7fd7b34c3f0774e56a405446e5055a97bb50",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Assisted first-pass review recorded below; independent review pending",
+      "sources": [
+        {
+          "title": "Toronto Council item 2026.SC33.9",
+          "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+          "artifact_date": "City Council 2026-07-29/30"
+        },
+        {
+          "title": "Toronto public notice 7606, application 24 254930 ESC 20 OZ",
+          "url": "https://secure.toronto.ca/nm/api/individual/notice/7606.do",
+          "artifact_date": "Meeting 2026-07-09"
+        }
+      ],
+      "source_notes": [],
+      "source_check_boundary": "Editorial reconciliation on September 22 reuses the actual September 21 project receipt. It is not a new Council, permit or source-check decision.",
+      "next_action": "The enacted instruments, condition-compliance records and exact application-matched permit.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-047",
+      "kind": "Question",
+      "title": "Has Louisiana availability become observed broadband adoption?",
+      "route": "/reference/questions/human-futures--116-q-047/",
+      "article_sha256": "80b459b17ec9217f559cbf843648147326ecfbf3188df57ba0c89e73085f20cb",
+      "rendered_record_sha256": "a236ce870beead170b3637970c0d2040998703ab5d44c8fc5d3138b709ff9e3c",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Assisted first-pass review recorded below; independent review pending",
+      "sources": [
+        {
+          "title": "Nextlink tower availability release",
+          "url": "https://connect.la.gov/press-releases/nextlink-activates-first-bead-funded-tower-in-the-united-states-connecting-rural-louisiana",
+          "artifact_date": "2026-05-13; exact release re-read September 22"
+        },
+        {
+          "title": "Phase 60 current decisions",
+          "url": "/data/current-evidence-decisions.json",
+          "artifact_date": "September 10 receipt; not a new gate check"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Opening paragraphs and About Nextlink",
+          "scope": "The tower is located in Bienville Parish and serves the stated 104-location Bossier cohort. The statewide 7,460-location award and company-wide subscriber total are different populations; neither supplies this cohort’s subscriptions.",
+          "access": "Official release HTML inspected; no subscription ledger, speed test or later-provider search performed"
+        }
+      ],
+      "source_check_boundary": "The exact May 13 ConnectLA release was re-read September 22 for this answer. The September 10 adoption receipt remains unchanged; this narrow text check is not a new gate decision or an exhaustive search for later subscriptions.",
+      "next_action": "Provider-specific subscriptions or take-up with a fixed eligible cohort, period, numerator, denominator and method.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-054",
+      "kind": "Question",
+      "title": "Has NNSA resolved the pit-production cost-and-schedule requirements?",
+      "route": "/reference/questions/policy-and-standards--116-q-054/",
+      "article_sha256": "35c56ad7743e1b82711fc15379b1ea500142e369e0c5be070b9a5d0fb3ec6303",
+      "rendered_record_sha256": "574ec5916840aaaa3f7416e47a85ac317eea7491681e42717f0be628afc42161",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "GAO-23-104661 — cost recommendation 1",
+          "url": "https://www.gao.gov/products/gao-23-104661",
+          "artifact_date": "Recommendation status re-read 2026-09-22; latest narrative April 2026"
+        },
+        {
+          "title": "GAO-20-703 — schedule recommendation 3",
+          "url": "https://www.gao.gov/products/gao-20-703",
+          "artifact_date": "Recommendation status re-read 2026-09-22; latest narrative April 2026"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Recommendations for Executive Action, Recommendation 1 and April 2026 follow-up",
+          "scope": "The displayed Open entry concerns the program-wide pit-production life-cycle cost estimate. The December 2026 estimate date is an expectation, not a delivered baseline.",
+          "access": "Exact GAO HTML entry inspected; underlying baseline documents not obtained or independently assessed"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Recommendations for Executive Action, Recommendation 3; neighboring recommendations 1, 2 and 4",
+          "scope": "The schedule recommendation remains Open on this page. Closures of other recommendations do not close it; the expected end-of-fiscal-2026 schedule is not a completed artifact.",
+          "access": "Exact GAO HTML entry inspected; no agency-wide or later-record completeness claim"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of two exact GAO recommendation entries. Their latest displayed progress narratives refer to April 2026; this is not a complete agency-record search, an independent baseline assessment or a new evidence-cycle decision. The September 10 receipt and future gate dates remain unchanged.",
+      "next_action": "The final program-wide baseline artifacts and exact recommendation dispositions from the responsible oversight record.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-067",
+      "kind": "Question",
+      "title": "Does Hanford’s operating record close the material balance?",
+      "route": "/reference/questions/water--116-q-067/",
+      "article_sha256": "85956e2f2147fddb5c79847279070bb598aa3f4ef6220be84825d7777b81ad4a",
+      "rendered_record_sha256": "18784e552633dc1633d42d9de71b124edfed5ad7de11f1b9546515b35ed00fe6",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "Hanford Waste Treatment and Immobilization Plant project",
+          "url": "https://www.hanford.gov/?page=519",
+          "artifact_date": "Page updated 2026-07-15"
+        },
+        {
+          "title": "Hanford Consent Decree monthly report AR-41694",
+          "url": "https://pdw.hanford.gov/download/v2/AR-41694",
+          "artifact_date": "July 1–31, 2026; September 2026 meeting"
+        },
+        {
+          "title": "Hanford Tri-Party Agreement report AR-41695",
+          "url": "https://pdw.hanford.gov/download/v2/AR-41695",
+          "artifact_date": "July 1–31, 2026; September 2026 meeting"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Project description and Last Updated July 15, 2026",
+          "scope": "A general project description is not a period-matched material account or a new operating-stage acceptance.",
+          "access": "Official project-page HTML inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Cover and footnote 1; Low-Activity Waste Facility, printed pages 22–23 (PDF pages 23–24)",
+          "scope": "July feed, cumulative feed, cumulative filled containers and July EMF shipments have distinct units, periods and process meanings. The cover separately dates earned-value data through June.",
+          "access": "Exact 29-page PDF downloaded; physical pages 1, 23 and 24 rendered and visually inspected; no complete numerical reconciliation"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Cover and footnote 1; Tank-Side Cesium Removal System, printed pages 13–14 (PDF pages 16–17)",
+          "scope": "The section separates tank-waste operations from the treatment-plant scope and records an incomplete planned pretreatment batch. Available tank space is not treated-waste output.",
+          "access": "Web text retrieval failed; exact 46-page PDF recovered directly, with physical pages 1, 16 and 17 rendered and visually inspected"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial check of the named project page and selected pages of the two July reports, including actual PDF page-image inspection. The September meeting footer is not the observation month. No complete balance, independent accounting review, new operating-stage admission or replacement of the September 10 decision is claimed.",
+      "next_action": "Matched-period feed, product, secondary waste and opening/closing inventories with compatible units and process boundaries.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-051",
+      "kind": "Question",
+      "title": "What did Amtrak PIDS deployment complete?",
+      "route": "/reference/questions/mobility--116-q-051/",
+      "article_sha256": "86cae2b8096ba393133ceeb70593df2967066763c3184b7de71eb72091df8fd8",
+      "rendered_record_sha256": "ffa9139a4168e9b373af1e82d96144b9052fbd5bdce13716ba1001df99c61670",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 assisted text recheck; Amtrak visual verification and independent review pending",
+      "sources": [
+        {
+          "title": "Amtrak June 2026 ADA progress report",
+          "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-ada-progress-report-june-2026.pdf",
+          "artifact_date": "June 2026; observation period 2025-11-01 through 2026-04-30"
+        },
+        {
+          "title": "Amtrak Accessible Canada Act progress report",
+          "url": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/foia/amtrak-accessibility-plan-feedback-process-canada-act-0626.pdf",
+          "artifact_date": "2026-06-01; observation period 2025-05-01 through 2026-04-30"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Printed pages 1 and 3–4: reporting period, PIDS paragraph and snapshot row",
+          "scope": "The retained 93 count is labeled deployments; the performance period ended March 31, while the report still describes reporting review as pending. No later closeout is established.",
+          "access": "Web-extracted PDF text inspected; two direct-client attempts failed and no usable page image was obtained; visual verification pending"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Printed pages 1–2: introduction, reporting window and Built Environment/Stations PIDS bullet",
+          "scope": "The retained 117 count is labeled installations. This report covers a different window and mentions pending financial closeout; no crosswalk reconciles it with the ADA deployment count.",
+          "access": "Web-extracted PDF text inspected; direct download returned HTTP 403 and screenshot retrieval failed; no new visual inspection"
+        }
+      ],
+      "source_check_boundary": "September 22 text-only recheck of the two exact June reports. Direct downloads failed, then returned HTTP 403; usable page images were not obtained, so new visual table verification remains pending. This is not a later FRA closeout search, independent acceptance, or a new gate decision; the September 10 receipt and October 9 appointment remain unchanged.",
+      "next_action": "An exact final closeout/acceptance record; separate named-asset reliability evidence for any operating-performance claim.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-027",
+      "kind": "Question",
+      "title": "When does a critical-minerals project become dependable supply?",
+      "route": "/reference/questions/critical-minerals--116-q-027/",
+      "article_sha256": "b3e1c4fd1255cacd733f62aa97162acc873a907ffef4c797fb855c1bb5cb7c7a",
+      "rendered_record_sha256": "c4666d56494d54453b5c6dd8e584a8452dd4d7d32a26898059290163f4a850bb",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "DOE Thacker Pass project account",
+          "url": "https://www.energy.gov/edf/thacker-pass",
+          "artifact_date": "Last updated October 2024; historical loan-closing summary"
+        },
+        {
+          "title": "Lithium Americas June 2026 quarterly filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/1966983/000119312526347826/lac-20260630.htm",
+          "artifact_date": "Period ended 2026-06-30"
+        },
+        {
+          "title": "BLM Thacker Pass decision notice",
+          "url": "https://www.blm.gov/press-release/humboldt-river-field-office-issues-record-decision-thacker-pass-lithium-mine",
+          "artifact_date": "2021-01-15; explicitly archived notice"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "Project Summary; Project Statistics; Last Updated October 2024 and estimate footnotes",
+          "scope": "Historical construction financing and anticipated output/jobs are not actual production, current financing terms or delivered supply.",
+          "access": "Exact DOE HTML summary inspected; later financing instruments not independently reviewed"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Management’s Discussion and Analysis, printed page 25: General Motors Equity Investment, Joint Venture and Offtake",
+          "scope": "Phase 1 and Phase 2 commitments and the October 2025 amendment concern purchase/forecast obligations. They do not document acceptance of recurring shipments.",
+          "access": "Exact SEC-hosted company filing HTML inspected in the named section; no shipment ledger or independent acceptance audit"
+        },
+        {
+          "source_index": 2,
+          "checked_date": "2026-09-22",
+          "locator": "Archive banner; January 15, 2021 date; opening decision paragraph and final EIS/ROD link",
+          "scope": "The announcement identifies a historical permitting decision. It is not the full operative instrument or a current legal-status determination.",
+          "access": "Exact BLM archived notice inspected; linked decision and later legal instruments not re-reviewed"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the exact DOE summary, company filing and archived BLM announcement. Their original dates and institutional roles are retained. This is not a current permit/legal opinion, a complete shipment search, investment advice or independent production acceptance.",
+      "next_action": "Accepted-product evidence and recurring qualified shipments, retaining product specification, receiver, period and exceptions.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "195-BRIEF-039",
+      "kind": "Question",
+      "title": "What has a named battery demonstrated beyond installed capacity?",
+      "route": "/reference/questions/energy--116-q-039/",
+      "article_sha256": "a55ffeefb4e72d3dea401dc698e5fbc18c2278cc5e9b3a5e886ee2c809932c02",
+      "rendered_record_sha256": "a5a5ac0aa30fab7ad0709c9b7f555ed6c9ecacb758883a06370f8b24a1190e9c",
+      "authored_date": "2026-09-14",
+      "updated_date": "2026-09-22",
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "September 22 bounded answer source review completed; independent review pending",
+      "sources": [
+        {
+          "title": "ARENA: ElectraNet South Australian battery retrospective",
+          "url": "https://arena.gov.au/blog/electranet-south-australian-battery-shows-the-way-forward/",
+          "artifact_date": "2021-04-15"
+        },
+        {
+          "title": "ESCRI-SA operational report 4, public Version 1.0",
+          "url": "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-4.pdf",
+          "artifact_date": "2021-02; final six-month interval ends 2020-12-14"
+        }
+      ],
+      "source_notes": [
+        {
+          "source_index": 0,
+          "checked_date": "2026-09-22",
+          "locator": "April 15, 2021 retrospective: chronology and local service description",
+          "scope": "April 2018 energisation and December 2018 commercial operation are distinct milestones. Funder success language is not an independent comparative reliability finding.",
+          "access": "Exact ARENA HTML retrospective inspected"
+        },
+        {
+          "source_index": 1,
+          "checked_date": "2026-09-22",
+          "locator": "Cover; printed/PDF pages 14–15, Table 3-1 and sections 3.1–3.3; page 35, section 6.2",
+          "scope": "Four historical reporting intervals and contract-defined measures are not a current service series. The report describes a calculation agreement but does not supply the monthly eligible-time inputs for reproduction.",
+          "access": "Exact 40-page PDF downloaded; pages 1, 14, 15 and 35 rendered and visually inspected; SHA-256 matches the September 15 capture"
+        }
+      ],
+      "source_check_boundary": "September 22 editorial recheck of the ARENA retrospective and selected pages of operational report 4. The PDF bytes match the retained September 15 capture. This does not replace the original extraction or amendment, perform independent reproduction, admit a series or establish September 2026 performance.",
+      "next_action": "Reproducible service measures and compatible periods, independently reviewed and admitted before a measurement feature ships.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "198-CASE-016",
+      "kind": "Casebook",
+      "title": "F-15EX: a production recovery is not yet a monthly acceptance series",
+      "route": "/reference/failure-casebooks/f15ex-production-delivery/",
+      "article_sha256": "6e2cf9adb8aa1ef80cca8afe2341cd7128547a4c172b90de4b609aec7bad3fa5",
+      "rendered_record_sha256": "4feb0936ecfa8feaff2644719c5997a1d1d12eb58dde80a7396e01c085205f2d",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "Air Force Life Cycle Management Center: production rebounds",
+          "url": "https://www.aflcmc.af.mil/NEWS/Article/4359770/f-15ex-production-rebounds-deliveries-continue/",
+          "artifact_date": "2025-12-15; retrieved 2026-09-14"
+        }
+      ],
+      "source_notes": [],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "For a defensible monthly chart, the editor would reconcile planned and formally accepted aircraft by stable identity, acceptance date and revision history. A second person should reproduce the count from those records, including months with no acceptance and aircraft returned for rework. Unit arrival announcements can help explain the sequence, but should not replace the selected acceptance event. The current pilot stays unadmitted: the story is readable now, while the numerical comparison remains a separate piece of work.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "198-CASE-002",
+      "kind": "Casebook",
+      "title": "Toronto 24 254930: the receiving system after a Council decision",
+      "route": "/reference/failure-casebooks/toronto-24-254930/",
+      "article_sha256": "eee0db76e1288c1521d92f665f5ebcb9a1b341b62ad36c93ab6c22433c7e1485",
+      "rendered_record_sha256": "2d6a5201fe0f0ac52612e9e27360ae287981567e0bd91dd8536af5ad66735572",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "Toronto Council item 2026.SC33.9",
+          "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+          "artifact_date": "Council 2026-07-29/30; retrieved 2026-09-14"
+        }
+      ],
+      "source_notes": [],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "The next project update should identify the enacted amendment, accepted condition record or application-matched permit, and explain exactly what changed. Evidence of construction and occupancy would follow on their own terms. A public-value account would then ask who can access the housing, at what cost and with what services, using a defined population rather than the proposal’s headline scale. Until those records are reviewed, this is an account of a conditional decision and its receiving system, not a finding of delay, failure or completed delivery.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "198-CASE-013",
+      "kind": "Casebook",
+      "title": "Victorian Big Battery: keep the incident and the service in the same history",
+      "route": "/reference/failure-casebooks/victoria-big-battery/",
+      "article_sha256": "0401e390af6d9e817b30ce50e66c79b80db467f21dab6d52e312e63e00aef556",
+      "rendered_record_sha256": "ae97f9c85743841c2eeba41ab3fe857cc83361964a972b80ea23d316cf10acec",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "CFA incident chronology",
+          "url": "https://news.cfa.vic.gov.au/news/firefighters-bring-large-battery-fire-near-geelong-under-control",
+          "artifact_date": "2021-07-30, updated 2021-08-03; retrieved 2026-09-14"
+        },
+        {
+          "title": "Victoria government project description",
+          "url": "https://www.energy.vic.gov.au/renewable-energy/batteries-energy-storage-projects/victorian-big-battery",
+          "artifact_date": "Page last updated 2023-02-02; retrieved 2026-09-14"
+        }
+      ],
+      "source_notes": [],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "A reliability study would define the obligated service, eligible intervals, outages, derating and changes in configuration. It would distinguish service availability from energy dispatched and from the total power rating. Household-price or avoided-outage claims would need additional evidence about the receiving network and a credible comparison, rather than inheriting the promotional language of a project description. The present case preserves a documented incident and a dated service description. Final-cause, remedy verification and current performance remain explicit research questions, not blank spaces filled with a success label.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "198-CASE-014",
+      "kind": "Casebook",
+      "title": "Dalrymple: a useful number still needs the right period and denominator",
+      "route": "/reference/failure-casebooks/dalrymple-grid-battery/",
+      "article_sha256": "0724e2d54f635b5b51fb045da5eee16dda444e3bf0f3c79fe616a34dda5865e5",
+      "rendered_record_sha256": "1d08f6d5b9e128bda9772c899d5df3dece32da132e4d98b4075d0993ca379821",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "ESCRI-SA final knowledge-sharing report, Table 3",
+          "url": "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-final-report.pdf",
+          "artifact_date": "2021-03; printed page 19"
+        },
+        {
+          "title": "ESCRI-SA operational report 4, Table 3-1 and section 6.2",
+          "url": "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-4.pdf",
+          "artifact_date": "2021-02; printed pages 14–15 and 35; retrieved 2026-09-14"
+        }
+      ],
+      "source_notes": [],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "The extraction should retain the original table cells, source versions and locators, then separately record the supported replacement period. Another reviewer should check the transcription and obtain the availability definition, interval population and exclusions before any admission decision. Configuration changes or a changed service definition may require a separate segment rather than a continuous line. No admitted series or trend chart is created here. The value of this case is concrete: a reader can see what was inconsistent, which artifact resolves it, and precisely why further review is still necessary.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    },
+    {
+      "id": "212-REPORT-001",
+      "kind": "Report",
+      "title": "State of Future Systems: September 14 field edition",
+      "route": "/reference/field-report/2026-09-14/",
+      "article_sha256": "8f26f01d095320f9be7f1ef2e5169d7e4ea62c4c8f838609d37cbfa7faffdcea",
+      "rendered_record_sha256": "9f06ab8d6e388d3cabb4fe84222ece2f04be54d0f65b9a4ea187587662ade0cc",
+      "authored_date": "2026-09-14",
+      "updated_date": null,
+      "scope": "Proposed review selection; owner release scope not approved",
+      "review_state": "Existing source-checked draft; independent claim review pending",
+      "sources": [
+        {
+          "title": "ITER baseline explanation",
+          "url": "https://www.iter.org/node/20687/new-baseline-prioritize-robust-start-exploitation",
+          "artifact_date": "2024-07-03; retrieved 2026-09-14"
+        }
+      ],
+      "source_notes": [],
+      "source_check_boundary": "Source notes distinguish September 14–15 review, inherited September 10 receipts and remaining retrieval gaps. This is not a blanket refresh of the corpus.",
+      "next_action": "The four chapters below are the complete selected narrative for this edition. The earlier State of Future Systems collection remains available separately, with its original draft and research-contract states. Its seventeen topic chapters are not silently promoted by this selection. The current topic essays and twelve scoped questions offer additional reading, not additional completed investigations claimed by this report. The next revisions should respond to exact receiving-party records and resolved review comments. A new source changes only the claims it supports; future calendar gates, independent approvals and the thirty-day post-launch period cannot be completed by editing this report.",
+      "independent_reviewer": null,
+      "independent_decision": null
+    }
+  ]
+}

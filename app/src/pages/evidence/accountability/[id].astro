@@ -1,4 +1,5 @@
 ---
+import {projectBriefing} from "../../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
@@ -20,7 +21,7 @@ const ledgers = isLedger
   ? [record]
   : registry.implementation_commitment_realization_ledgers.filter((item) => item.decision_accountability_dossier_id === record.decision_accountability_dossier_id);
 const audit = registry.post_decision_audit_remediation_registers.find((item) => item.decision_accountability_dossier_id === decision?.decision_accountability_dossier_id);
-const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings").then(records => records.map(projectBriefing)), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
 const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
 const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
 const signalById = new Map(signals.map((item) => [item.data.id, item]));

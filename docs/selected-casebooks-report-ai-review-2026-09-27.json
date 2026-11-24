@@ -1,0 +1,448 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI editorial reviewer; not independent and not claiming professional credentials)",
+  "human_review_required": false,
+  "human_review_claimed": false,
+  "fresh_external_source_check": false,
+  "review_scope": "Actual full reading of four casebooks and the six-section selected report, plus the identified retained pilot/receipt findings. This is an editorial disposition with explicit changes, not an independent factual certification or approval by association.",
+  "reviewed_articles": 5,
+  "required_changed_records": 4,
+  "required_paragraph_changes": 6,
+  "total_distinct_selected_assessments": 19,
+  "selected_article_target": 33,
+  "remaining_unassessed_selected_articles": 14,
+  "application_projection_integrated": false,
+  "records": [
+    {
+      "record_id": "198-CASE-016",
+      "route": "/reference/failure-casebooks/f15ex-production-delivery/",
+      "title": "F-15EX: a production recovery is not yet a monthly acceptance series",
+      "decision": "Qualify; bring the retained timing discrepancy into the current narrative",
+      "rationale": "The four-section case correctly separates production, delivery, arrival, formal acceptance and readiness, and does not admit a monthly series. Its first paragraph still repeats the issuer’s less-than-three-weeks sequence without the later retained December 11 arrival qualification. The assigned September 25 notice already records that discrepancy, but the current narrative should carry it directly. Reproducibility remains necessary; a second human is not a prerequisite under the owner policy.",
+      "findings": [
+        {
+          "location": "First section",
+          "disposition": "Required dated-context clarification",
+          "finding": "Keep the August 4–November 17 interruption and deliveries during that interval attributed to the issuer. Add the later official-copy and receiving-wing timing conflict without pretending the two sources necessarily use the same milestone."
+        },
+        {
+          "location": "Aircraft identity and recovery sections",
+          "disposition": "Accept evidence distinction",
+          "finding": "An identifier is not a cumulative count. Factory completion, government transfer, physical arrival and readiness can have different dates. No throughput, on-time fraction or fleet-readiness series follows from selected deliveries."
+        },
+        {
+          "location": "Decisive comparison",
+          "disposition": "Replace human prerequisite, retain reproducibility",
+          "finding": "Require the full identity-linked acceptance population, revisions, rework and actual zero-acceptance periods before a numerical series. Do not claim that missing months equal zero or that a second person has reviewed anything."
+        }
+      ],
+      "source_record_sha256": "4feb0936ecfa8feaff2644719c5997a1d1d12eb58dde80a7396e01c085205f2d",
+      "reviewed_section_hashes": [
+        {
+          "heading": "The dated event, and who reports it",
+          "sha256": "c95acb604f89d6a1ec5e8ebf3f1f50e411dde38245abd36f20d9149efe714f56"
+        },
+        {
+          "heading": "Follow the aircraft, not just the announcement",
+          "sha256": "9f14cc64e0ca94aaec026a5609c78c38e07d2e9fb8534db826ed5dde1de0537d"
+        },
+        {
+          "heading": "What the recovery claim can and cannot answer",
+          "sha256": "c818df480fcfe21eaa44d7108ef689c4a8d2739455b291157a86a61305f35fed"
+        },
+        {
+          "heading": "The decisive comparison",
+          "sha256": "c33332eb9593029cc90988b8e6465700f6d8197726a98a00748c9d6ffc676f0a"
+        }
+      ],
+      "reviewed_source_notes_sha256": null,
+      "source_notes_absent": true,
+      "pilot_inputs": [
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-F15EX-ACCESS-2026-09-22",
+          "sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-F15EX-SYNDICATED-2026-09-25",
+          "sha256": "a6367d0db342c3e7fd2b7a8e5874d3271636244ba05cbb4149a41cd682bae76f",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        }
+      ],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            0,
+            "text"
+          ],
+          "heading": "The dated event, and who reports it",
+          "prior": "The Air Force account attributes a production-line halt from August 4 to November 17, 2025 to a strike at Boeing’s St. Louis facility. It also reports EX14 delivery on August 19, EX15 on November 16 and EX16 less than three weeks later. The article therefore describes deliveries within the stated production-halt interval; it does not say that every delivery activity stopped. These are the issuer’s stated events and attribution, not an independently reconstructed production ledger.",
+          "replacement": "The Air Force account attributes a production-line halt from August 4 to November 17, 2025 to a strike at Boeing’s St. Louis facility. It also reports EX14 delivery on August 19, EX15 on November 16 and EX16 less than three weeks later. The article therefore describes deliveries within the stated production-halt interval; it does not say that every delivery activity stopped. These are the issuer’s stated events and attribution, not an independently reconstructed production ledger. The retained September 25 follow-up recovered the separately identified official DVIDS copy; it did not restore access to the original endpoint. The receiving-wing description reports EX16 arrival on December 11. That is not within three weeks of the November 16 EX15 delivery if both dates refer to the same arrival milestone. The event definitions and timing remain unreconciled, not silently corrected.",
+          "original_preservation": "Retain the complete original paragraph in native history and keep the source record/export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            3,
+            "text"
+          ],
+          "heading": "The decisive comparison",
+          "prior": "For a defensible monthly chart, the editor would reconcile planned and formally accepted aircraft by stable identity, acceptance date and revision history. A second person should reproduce the count from those records, including months with no acceptance and aircraft returned for rework. Unit arrival announcements can help explain the sequence, but should not replace the selected acceptance event. The current pilot stays unadmitted: the story is readable now, while the numerical comparison remains a separate piece of work.",
+          "replacement": "For a defensible monthly chart, the editor would reconcile planned and formally accepted aircraft by stable identity, acceptance date and revision history. A separate reproducibility check should reconstruct the count from those records, including months with no acceptance and aircraft returned for rework. Unit arrival announcements can help explain the sequence, but should not replace the selected acceptance event. The current pilot stays unadmitted: the story is readable now, while the numerical comparison remains a separate piece of work.",
+          "original_preservation": "Retain the complete original paragraph in native history and keep the source record/export unchanged."
+        }
+      ],
+      "required_chapter_ids": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact required current-presentation changes, preserve complete history, and verify the designated route and dependent chapter context.",
+      "sha256": "730b6254708b7dc0900138bbac3b32f605b46e6a0cda961b3ba3a9e1933189d0"
+    },
+    {
+      "record_id": "198-CASE-002",
+      "route": "/reference/failure-casebooks/toronto-24-254930/",
+      "title": "Toronto 24 254930: the receiving system after a Council decision",
+      "decision": "Qualify; retain the historical decision and add the later bounded Toronto context",
+      "rationale": "The complete four-section case correctly treats conditions as substantive and refuses to transfer citywide housing outcomes to one application. Its dated September 14 paragraph remains accurate historical scope, but a current AI-reviewed presentation should explicitly carry the already retained September 21 portal/address findings and unresolved conflicts. Neither review supplies an enactment, compliance acceptance or permission to build.",
+      "findings": [
+        {
+          "location": "First section",
+          "disposition": "Required later-context clarification",
+          "finding": "Keep Recommendation 8, the wind study, land exchange and laneway matters. Add the September 21 application-portal/eight-address scope with unresolved date/design conflict and bounded absence language."
+        },
+        {
+          "location": "Conditions and citywide pipeline sections",
+          "disposition": "Accept receiving-system interpretation",
+          "finding": "Submission is not accepted compliance. Regional starts/completions cannot fill project events, and one project does not establish Ontario household affordability."
+        },
+        {
+          "location": "Next useful answer",
+          "disposition": "Accept sequenced evidence requirements",
+          "finding": "Enactment, matched permit, construction, occupancy and population-specific housing access are different claims. The route name failure-casebooks is not a finding that this project failed or was delayed."
+        }
+      ],
+      "source_record_sha256": "2d6a5201fe0f0ac52612e9e27360ae287981567e0bd91dd8536af5ad66735572",
+      "reviewed_section_hashes": [
+        {
+          "heading": "The record we can identify",
+          "sha256": "67bc15685510d253339c612418f2a41c04b0154f0a32f690ae84421c9cf3a21d"
+        },
+        {
+          "heading": "Why the conditions are part of the story",
+          "sha256": "dcbe524ac694615f2381fdc5d1fe5825bde4717a9e1aaad85979926c3d8d057c"
+        },
+        {
+          "heading": "A project is not the citywide pipeline",
+          "sha256": "6a90cbd187db7fe457dbba65c2ce2ec6c1ae80d879d7a0617cfee8f7dd9a578d"
+        },
+        {
+          "heading": "The next useful answer",
+          "sha256": "6388b13234d908b083d84383e52aee82310d51ecc458a75d74815799d736cb7c"
+        }
+      ],
+      "reviewed_source_notes_sha256": null,
+      "source_notes_absent": true,
+      "pilot_inputs": [],
+      "receipt_inputs": [
+        {
+          "path": "app/src/data/phase-207-project-checks/207-TORONTO-2026-09-21-BOUNDED-RECHECK.json",
+          "receipt_id": "207-TORONTO-2026-09-21-BOUNDED-RECHECK",
+          "sha256": "b894a24a020d5ad552f9749b9e2ecd42bff0c9746e06747fac8ee0ff33486e5e",
+          "reviewed_scope": "Retained bounded source and exact-address findings and limitations; not every listed document body or a current legal certification."
+        }
+      ],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            0,
+            "text"
+          ],
+          "heading": "The record we can identify",
+          "prior": "The Council history records adoption of the item, retaining requirements before the amendment bills proceed. Recommendation 8 addresses a wind study, a land exchange and laneway matters. FTFN’s September 14 bounded recheck retained this decision state; it did not retrieve an exact downstream enacted instrument or permit for application 24 254930. That retrieval limit is not evidence that no such instrument exists.",
+          "replacement": "The Council history records adoption of the item, retaining requirements before the amendment bills proceed. Recommendation 8 addresses a wind study, a land exchange and laneway matters. FTFN’s September 14 bounded recheck retained this decision state; it did not retrieve an exact downstream enacted instrument or permit for application 24 254930. That retrieval limit is not evidence that no such instrument exists. A separate September 21 receipt recovered the application portal and checked eight exact addresses. It did not provide the qualifying enactment, accepted condition-compliance record or application-matched permit within that search. The portal’s decision date and design particulars differ from the Council record and remain unresolved. The next bounded Toronto check is September 28; this editorial assessment is not that check.",
+          "original_preservation": "Retain the complete original paragraph in native history and keep the source record/export unchanged."
+        }
+      ],
+      "required_chapter_ids": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact required current-presentation changes, preserve complete history, and verify the designated route and dependent chapter context.",
+      "sha256": "7233d6fad02e0aafda467e13cee3d456582b9b9a00ac0eff80e4c2a7405272c3"
+    },
+    {
+      "record_id": "198-CASE-013",
+      "route": "/reference/failure-casebooks/victoria-big-battery/",
+      "title": "Victorian Big Battery: keep the incident and the service in the same history",
+      "decision": "Accept the dated incident-and-service narrative with no current reliability finding",
+      "rationale": "All four sections maintain the July 30 fire, August 2 control and August 3 investigation chronology, then separately attribute the February 2023 service description. Capacity, reserved transmission support and market participation are not confused with energy output, current availability or household benefits. The case neither invents a final cause nor treats later operation as proof that every failure mechanism was eliminated.",
+      "findings": [
+        {
+          "location": "Incident section",
+          "disposition": "Accept emergency-response boundary",
+          "finding": "Keep two affected packs and the then-unfinished investigation attributed to the rolling CFA account. No final cause, complete remediation or September 2026 condition is established."
+        },
+        {
+          "location": "Dated service section",
+          "disposition": "Accept differentiated power/service scopes",
+          "finding": "300 MW asset description, up-to-250 MW virtual-transmission role and 50 MW summer/300 MW other-time market participation are not additive independent assets or measured energy delivery. February 2, 2023 remains the page date."
+        },
+        {
+          "location": "Shortcuts and reliability sections",
+          "disposition": "Accept non-transfer rule",
+          "finding": "Neither the incident nor later service proves universal battery failure/success. Availability needs its own eligible intervals, obligations, outages and configuration; bills and avoided outages need receiving-population and comparator evidence."
+        }
+      ],
+      "source_record_sha256": "ae97f9c85743841c2eeba41ab3fe857cc83361964a972b80ea23d316cf10acec",
+      "reviewed_section_hashes": [
+        {
+          "heading": "An incident record is not a current condition report",
+          "sha256": "0f05ef0f3a918ae5beb8850b695fbabfa3899d2d44ffbc252cf4a140baaa5e8b"
+        },
+        {
+          "heading": "The later service has a specific boundary",
+          "sha256": "4ec4292eb628a26a571a41660b1dcf65b52684f7d2dc46008368ae035a36ab1b"
+        },
+        {
+          "heading": "Avoid the two shortcuts",
+          "sha256": "6e0864d4b1f5b616834f4dcd1d28f9c5a9da0fe7bd3d4f2c50a12ebdf5ce0ab4"
+        },
+        {
+          "heading": "What a useful reliability study would add",
+          "sha256": "316f48d40c96a70b13f8a90345d6c91c564e2fef4087f0cbff3c660ff9d62794"
+        }
+      ],
+      "reviewed_source_notes_sha256": null,
+      "source_notes_absent": true,
+      "pilot_inputs": [],
+      "receipt_inputs": [],
+      "required_presentational_changes": [],
+      "required_chapter_ids": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Retain all dated evidence qualifications and verify the designated route; do not claim a fresh source check.",
+      "sha256": "07636b956ea6bd7b7b2378af6a27914a0ff23ef74ec26642d7bcce462455eb6b"
+    },
+    {
+      "record_id": "198-CASE-014",
+      "route": "/reference/failure-casebooks/dalrymple-grid-battery/",
+      "title": "Dalrymple: a useful number still needs the right period and denominator",
+      "decision": "Accept the period reconciliation with a non-human reproducibility requirement",
+      "rationale": "The four-section case preserves the conflicting final-report period, the report-4 replacement interval and the associated source-reported 98.80% without calling it an admitted observation. It properly separates a corrected interpretation, the missing contractual denominator and a public-benefit claim. The instruction to obtain another reviewer should be expressed as a verifiable reproduction task under the owner-authorized AI policy.",
+      "findings": [
+        {
+          "location": "Discrepancy section",
+          "disposition": "Accept transparent editorial replacement",
+          "finding": "Retain final-report June 14, 2019–December 14, 2020 and report-4 June 14–December 14, 2020 as different printed records. No issuer erratum or retrospectively altered source is claimed."
+        },
+        {
+          "location": "Measurement/public-value sections",
+          "disposition": "Qualify the percentage",
+          "finding": "98.80% is a source-reported replacement candidate, not reproduced availability. Agreement/protocol definitions, eligible-time ledgers and exclusions remain missing. Availability does not prove lower bills or avoided interruption."
+        },
+        {
+          "location": "Reproducible next step",
+          "disposition": "Required policy wording update",
+          "finding": "Replace another-reviewer phrasing with an exact-source check and reproducible method/data requirement. Preserve configuration breaks and separate current/historical versions; do not fabricate a second review or admit a series."
+        }
+      ],
+      "source_record_sha256": "1d08f6d5b9e128bda9772c899d5df3dece32da132e4d98b4075d0993ca379821",
+      "reviewed_section_hashes": [
+        {
+          "heading": "The discrepancy is preserved",
+          "sha256": "95c04960d63b3090565b678776926595c006fc64362fc1d685861333c9c50d33"
+        },
+        {
+          "heading": "Why the replacement is not a finished series",
+          "sha256": "686c2642335279dc5c90738bbc1e8f6c84df0d2bc806a18ca0e14c8c7f3d4518"
+        },
+        {
+          "heading": "Public value is a further question",
+          "sha256": "6e0e28cf592ed80224a723ea33525821705a34bdbdc735c3ade6520cbd0452ae"
+        },
+        {
+          "heading": "A reproducible next step",
+          "sha256": "02d89f6ed5c78ab0a2e1279689686b0dc7f269c1cb8d1fbd9ef11a2892fb2fe3"
+        }
+      ],
+      "reviewed_source_notes_sha256": null,
+      "source_notes_absent": true,
+      "pilot_inputs": [
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-DEFINITION-2026-09-15",
+          "sha256": "b9107cf89ffc88eba01afbb4929fd2b004b16837bb36304ee68b57db666635e9",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-VISUAL-2026-09-15",
+          "sha256": "ca0fd85c2be6cde790c05303ab8f335d62c29da71ee1eaf9e5a9b43b02902e48",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "sha256": "8f5f810edacd39d74e9935ac52ca48a90d70cecd7700b61f01822425ec329f6f",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        }
+      ],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            3,
+            "text"
+          ],
+          "heading": "A reproducible next step",
+          "prior": "The extraction should retain the original table cells, source versions and locators, then separately record the supported replacement period. Another reviewer should check the transcription and obtain the availability definition, interval population and exclusions before any admission decision. Configuration changes or a changed service definition may require a separate segment rather than a continuous line. No admitted series or trend chart is created here. The value of this case is concrete: a reader can see what was inconsistent, which artifact resolves it, and precisely why further review is still necessary.",
+          "replacement": "The extraction should retain the original table cells, source versions and locators, then separately record the supported replacement period. The transcription should be checked against the exact source, and reproduction requires the availability definition, interval population and exclusions before any admission decision. Human participation is not a build prerequisite; actual compatible evidence remains required. Configuration changes or a changed service definition may require a separate segment rather than a continuous line. No admitted series or trend chart is created here. The value of this case is concrete: a reader can see what was inconsistent, which artifact resolves it, and precisely why further review is still necessary.",
+          "original_preservation": "Retain the complete original paragraph in native history and keep the source record/export unchanged."
+        }
+      ],
+      "required_chapter_ids": [],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact required current-presentation changes, preserve complete history, and verify the designated route and dependent chapter context.",
+      "sha256": "a206123588a3fbdd855cf1c98ad21a52bd603268b09caa5b6619fd60dbfa4e64"
+    },
+    {
+      "record_id": "212-REPORT-001",
+      "route": "/reference/field-report/2026-09-14/",
+      "title": "State of Future Systems: September 14 field edition",
+      "decision": "Qualify the selected synthesis; apply policy wording and reviewed-chapter context without blanket promotion",
+      "rationale": "The complete six-section report is a bounded synthesis of four unlike cases, not a census, causal model, comparative score or admission of the seventeen historical topic chapters. The issuer-reported July 2024 ITER baseline is correctly time-bounded. Current review wording must reflect the owner’s AI authorization, and the four chapters need their own exact decisions and required corrections rather than inheriting approval from this report.",
+      "findings": [
+        {
+          "location": "Executive account and reading map",
+          "disposition": "Accept selected scope only",
+          "finding": "Four selected cases illustrate different evidence tests and are not ranked. Retain the full chapter identities; the historical seventeen-topic collection and all reachable claims are not approved by this assessment."
+        },
+        {
+          "location": "Time belongs to the claim",
+          "disposition": "Accept issuer-attributed historical schedule",
+          "finding": "July 2024 baseline discussion and the 2039 deuterium-tritium expectation describe a proposed schedule change, not current final approval, achieved research or commercial electricity. No fresh ITER source check occurred here."
+        },
+        {
+          "location": "Figures and final scope",
+          "disposition": "Required AI-policy wording; retain evidence/release limits",
+          "finding": "Methods, populations, revisions and credible comparisons remain necessary. Replace independent-human approval language as a build gate, but retain separate source appointments, publication authorization and actual elapsed operating days."
+        }
+      ],
+      "source_record_sha256": "9f06ab8d6e388d3cabb4fe84222ece2f04be54d0f65b9a4ea187587662ade0cc",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Executive account",
+          "sha256": "4912160362e70edeb809e441251e2e569f3dcb8029694471a85e73aac0a4f084"
+        },
+        {
+          "heading": "The connective question: who receives the capability?",
+          "sha256": "c478c70957041b51dd848160454dba9682e126969ca63596c297f87964c16187"
+        },
+        {
+          "heading": "Time belongs to the claim, not just the page",
+          "sha256": "e7ed84e4a115045ef378ea776e745e261392000040fd6bed67284960980c93e3"
+        },
+        {
+          "heading": "Read the four cases as different tests",
+          "sha256": "6eccf33bf8c3e13d375c75049e70dcf133d8f7a28adb2e30994dd3f257fb3573"
+        },
+        {
+          "heading": "What the figures do not settle",
+          "sha256": "1e42cd7d057443b44f7319a9ffd9dff7be31fb9c4be50da1880f3ccae2ac7cd7"
+        },
+        {
+          "heading": "Coverage, lineage and next evidence",
+          "sha256": "9e39e16031fd309f48efdb326f627670583f90b98bed9a5b5ec744359113bef7"
+        }
+      ],
+      "reviewed_source_notes_sha256": null,
+      "source_notes_absent": true,
+      "pilot_inputs": [
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-DEFINITION-2026-09-15",
+          "sha256": "b9107cf89ffc88eba01afbb4929fd2b004b16837bb36304ee68b57db666635e9",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-VISUAL-2026-09-15",
+          "sha256": "ca0fd85c2be6cde790c05303ab8f335d62c29da71ee1eaf9e5a9b43b02902e48",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "sha256": "8f5f810edacd39d74e9935ac52ca48a90d70cecd7700b61f01822425ec329f6f",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-F15EX-ACCESS-2026-09-22",
+          "sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        },
+        {
+          "path": "app/src/data/phase-207-current-operations.json",
+          "review_id": "211-F15EX-SYNDICATED-2026-09-25",
+          "sha256": "a6367d0db342c3e7fd2b7a8e5874d3271636244ba05cbb4149a41cd682bae76f",
+          "reviewed_scope": "Retained findings, dates and access/required-artifact limits; not a new retrieval or reproduction."
+        }
+      ],
+      "receipt_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            0,
+            "text"
+          ],
+          "heading": "Executive account",
+          "prior": "This is a bounded field edition, not a census of every emerging technology. Aircraft delivery, a Toronto development application and two Australian battery cases let us examine distinct kinds of evidence in detail. The cases are intentionally not ranked: a permit, an incident, a delivery and an availability percentage are not equivalent observations. Each chapter explains a concrete source finding, the interpretation it can support and the missing evidence that would change the answer. Independent subject review and public release remain open.",
+          "replacement": "This is a bounded field edition, not a census of every emerging technology. Aircraft delivery, a Toronto development application and two Australian battery cases let us examine distinct kinds of evidence in detail. The cases are intentionally not ranked: a permit, an incident, a delivery and an availability percentage are not equivalent observations. Each chapter explains a concrete source finding, the interpretation it can support and the missing evidence that would change the answer. AI-led review is recorded article by article; public release remains separately unauthorized.",
+          "original_preservation": "Retain the complete original paragraph in native history and keep the source record/export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "heading": "Coverage, lineage and next evidence",
+          "prior": "The four chapters below are the complete selected narrative for this edition. The earlier State of Future Systems collection remains available separately, with its original draft and research-contract states. Its seventeen topic chapters are not silently promoted by this selection. The current topic essays and twelve scoped questions offer additional reading, not additional completed investigations claimed by this report. The next revisions should respond to exact receiving-party records and resolved review comments. A new source changes only the claims it supports; future calendar gates, independent approvals and the thirty-day post-launch period cannot be completed by editing this report.",
+          "replacement": "The four chapters below are the complete selected narrative for this edition. The earlier State of Future Systems collection remains available separately, with its original draft and research-contract states. Its seventeen topic chapters are not silently promoted by this selection. The current topic essays and twelve scoped questions offer additional reading, not additional completed investigations claimed by this report. The next revisions should respond to exact receiving-party records and resolved review comments. A new source changes only the claims it supports; future evidence appointments, publication authorization and the actual thirty-day post-launch period cannot be completed by editing this report.",
+          "original_preservation": "Retain the complete original paragraph in native history and keep the source record/export unchanged."
+        }
+      ],
+      "required_chapter_ids": [
+        "198-CASE-016",
+        "198-CASE-002",
+        "198-CASE-013",
+        "198-CASE-014"
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply all exact required current-presentation changes, preserve complete history, and verify the designated route and dependent chapter context.",
+      "sha256": "62d99c53030b40c4f26bf570298fdfc13f8329847275f7bff3a4ddbf69461bec"
+    }
+  ],
+  "boundary": "These five decisions are prepared, not current UI statuses. Four require exact presentation changes before acceptance transfers to the reader. Together with the preceding four and ten-question ledgers, 19 distinct selected articles have actual dispositions; 14 are unassessed. All reachable historical content, 58 annual assessments, remaining translations and portfolio expansion remain separate work."
+}

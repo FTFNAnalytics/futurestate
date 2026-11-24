@@ -1,0 +1,950 @@
+{
+  "schema_version": "1.0",
+  "phase": 193,
+  "program_id": "FTFN-PHASE-193",
+  "dataset": "phase_193_comparative_evidence_lab",
+  "title": "Comparative Evidence Lab",
+  "effective_date": "2026-09-01",
+  "record_status": "Published operating scaffold",
+  "build_status": "Complete locally — external and owner-controlled decisions held",
+  "summary": "Prepare twenty-four cross-jurisdiction comparison passports with exact rail identities and explicit compatibility tests; all substantive verdicts remain blocked until paired exact artifacts exist.",
+  "record_scope": "Append-only Phase 193 global-reference content layer over the Phase 116–180 evidence and operating corpus.",
+  "publication_boundaries": [
+    "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision.",
+    "An institutional home page is an authority-discovery rail, not an exact artifact and not evidence for a downstream claim.",
+    "Unknown, unavailable, not-yet-reviewed, and incompatible are preserved as distinct states; no unsuccessful search is treated as proof of nonexistence."
+  ],
+  "routes": {
+    "hub": "/review/global/comparisons/",
+    "public_export": "/data/phase-193-comparative-evidence-lab.json"
+  },
+  "counts": {
+    "comparison_passports": 24,
+    "jurisdiction_pairs": 24,
+    "compatibility_dimensions": 144,
+    "comparable_claims": 0,
+    "blocked_verdicts": 24,
+    "scores": 0,
+    "ranks": 0
+  },
+  "comparison_passports": [
+    {
+      "global_comparison_passport_id": "193-PASSPORT-001",
+      "slug": "canada-and-australia-official-statistics-and-measurement",
+      "title": "Canada and Australia: Official statistics and measurement",
+      "comparison_question": "What, if anything, can be compared between exact official statistics and measurement artifacts from Canada and Australia after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-001",
+        "jurisdiction_name": "Canada",
+        "rail_id": "117-RAIL-001",
+        "source_id": "source-117-global-canada-statistics-canada",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-002",
+        "jurisdiction_name": "Australia",
+        "rail_id": "117-RAIL-005",
+        "source_id": "source-117-global-australia-australian-bureau-of-statistics",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/canada-and-australia-official-statistics-and-measurement/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-002",
+      "slug": "australia-and-european-union-energy-utility-and-system-operation",
+      "title": "Australia and European Union: Energy, utility and system operation",
+      "comparison_question": "What, if anything, can be compared between exact energy, utility and system operation artifacts from Australia and European Union after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-002",
+        "jurisdiction_name": "Australia",
+        "rail_id": "117-RAIL-006",
+        "source_id": "source-117-global-australia-australian-energy-market-operator",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-003",
+        "jurisdiction_name": "European Union",
+        "rail_id": "117-RAIL-010",
+        "source_id": "source-117-global-european-union-european-commission-directorate-general-for-energy",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/australia-and-european-union-energy-utility-and-system-operation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-003",
+      "slug": "european-union-and-united-kingdom-infrastructure-environment-and-territorial-delivery",
+      "title": "European Union and United Kingdom: Infrastructure, environment and territorial delivery",
+      "comparison_question": "What, if anything, can be compared between exact infrastructure, environment and territorial delivery artifacts from European Union and United Kingdom after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-003",
+        "jurisdiction_name": "European Union",
+        "rail_id": "117-RAIL-011",
+        "source_id": "source-117-global-european-union-eur-lex",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-004",
+        "jurisdiction_name": "United Kingdom",
+        "rail_id": "117-RAIL-015",
+        "source_id": "source-117-global-united-kingdom-planning-inspectorate",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/european-union-and-united-kingdom-infrastructure-environment-and-territorial-delivery/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-004",
+      "slug": "united-kingdom-and-germany-science-technology-and-industrial-innovation",
+      "title": "United Kingdom and Germany: Science, technology and industrial innovation",
+      "comparison_question": "What, if anything, can be compared between exact science, technology and industrial innovation artifacts from United Kingdom and Germany after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-004",
+        "jurisdiction_name": "United Kingdom",
+        "rail_id": "117-RAIL-016",
+        "source_id": "source-117-global-united-kingdom-uk-research-and-innovation",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-005",
+        "jurisdiction_name": "Germany",
+        "rail_id": "117-RAIL-020",
+        "source_id": "source-117-global-germany-federal-ministry-of-research-technology-and-space",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/united-kingdom-and-germany-science-technology-and-industrial-innovation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-005",
+      "slug": "germany-and-france-official-statistics-and-measurement",
+      "title": "Germany and France: Official statistics and measurement",
+      "comparison_question": "What, if anything, can be compared between exact official statistics and measurement artifacts from Germany and France after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-005",
+        "jurisdiction_name": "Germany",
+        "rail_id": "117-RAIL-017",
+        "source_id": "source-117-global-germany-federal-statistical-office-of-germany",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-006",
+        "jurisdiction_name": "France",
+        "rail_id": "117-RAIL-021",
+        "source_id": "source-117-global-france-insee",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/germany-and-france-official-statistics-and-measurement/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-006",
+      "slug": "france-and-netherlands-energy-utility-and-system-operation",
+      "title": "France and Netherlands: Energy, utility and system operation",
+      "comparison_question": "What, if anything, can be compared between exact energy, utility and system operation artifacts from France and Netherlands after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-006",
+        "jurisdiction_name": "France",
+        "rail_id": "117-RAIL-022",
+        "source_id": "source-117-global-france-rte",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-007",
+        "jurisdiction_name": "Netherlands",
+        "rail_id": "117-RAIL-026",
+        "source_id": "source-117-global-netherlands-netherlands-enterprise-agency",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/france-and-netherlands-energy-utility-and-system-operation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-007",
+      "slug": "netherlands-and-norway-infrastructure-environment-and-territorial-delivery",
+      "title": "Netherlands and Norway: Infrastructure, environment and territorial delivery",
+      "comparison_question": "What, if anything, can be compared between exact infrastructure, environment and territorial delivery artifacts from Netherlands and Norway after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-007",
+        "jurisdiction_name": "Netherlands",
+        "rail_id": "117-RAIL-027",
+        "source_id": "source-117-global-netherlands-rijkswaterstaat",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-008",
+        "jurisdiction_name": "Norway",
+        "rail_id": "117-RAIL-031",
+        "source_id": "source-117-global-norway-norwegian-environment-agency",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/netherlands-and-norway-infrastructure-environment-and-territorial-delivery/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-008",
+      "slug": "norway-and-sweden-science-technology-and-industrial-innovation",
+      "title": "Norway and Sweden: Science, technology and industrial innovation",
+      "comparison_question": "What, if anything, can be compared between exact science, technology and industrial innovation artifacts from Norway and Sweden after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-008",
+        "jurisdiction_name": "Norway",
+        "rail_id": "117-RAIL-032",
+        "source_id": "source-117-global-norway-research-council-of-norway",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-009",
+        "jurisdiction_name": "Sweden",
+        "rail_id": "117-RAIL-036",
+        "source_id": "source-117-global-sweden-vinnova",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/norway-and-sweden-science-technology-and-industrial-innovation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-009",
+      "slug": "sweden-and-japan-official-statistics-and-measurement",
+      "title": "Sweden and Japan: Official statistics and measurement",
+      "comparison_question": "What, if anything, can be compared between exact official statistics and measurement artifacts from Sweden and Japan after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-009",
+        "jurisdiction_name": "Sweden",
+        "rail_id": "117-RAIL-033",
+        "source_id": "source-117-global-sweden-statistics-sweden",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-010",
+        "jurisdiction_name": "Japan",
+        "rail_id": "117-RAIL-037",
+        "source_id": "source-117-global-japan-e-stat-japan",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/sweden-and-japan-official-statistics-and-measurement/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-010",
+      "slug": "japan-and-south-korea-energy-utility-and-system-operation",
+      "title": "Japan and South Korea: Energy, utility and system operation",
+      "comparison_question": "What, if anything, can be compared between exact energy, utility and system operation artifacts from Japan and South Korea after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-010",
+        "jurisdiction_name": "Japan",
+        "rail_id": "117-RAIL-038",
+        "source_id": "source-117-global-japan-ministry-of-economy-trade-and-industry",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-011",
+        "jurisdiction_name": "South Korea",
+        "rail_id": "117-RAIL-042",
+        "source_id": "source-117-global-south-korea-ministry-of-trade-industry-and-energy",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/japan-and-south-korea-energy-utility-and-system-operation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-011",
+      "slug": "south-korea-and-singapore-infrastructure-environment-and-territorial-delivery",
+      "title": "South Korea and Singapore: Infrastructure, environment and territorial delivery",
+      "comparison_question": "What, if anything, can be compared between exact infrastructure, environment and territorial delivery artifacts from South Korea and Singapore after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-011",
+        "jurisdiction_name": "South Korea",
+        "rail_id": "117-RAIL-043",
+        "source_id": "source-117-global-south-korea-korea-power-exchange",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-012",
+        "jurisdiction_name": "Singapore",
+        "rail_id": "117-RAIL-047",
+        "source_id": "source-117-global-singapore-land-transport-authority",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/south-korea-and-singapore-infrastructure-environment-and-territorial-delivery/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-012",
+      "slug": "singapore-and-india-science-technology-and-industrial-innovation",
+      "title": "Singapore and India: Science, technology and industrial innovation",
+      "comparison_question": "What, if anything, can be compared between exact science, technology and industrial innovation artifacts from Singapore and India after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-012",
+        "jurisdiction_name": "Singapore",
+        "rail_id": "117-RAIL-048",
+        "source_id": "source-117-global-singapore-infocomm-media-development-authority",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-013",
+        "jurisdiction_name": "India",
+        "rail_id": "117-RAIL-052",
+        "source_id": "source-117-global-india-ministry-of-new-and-renewable-energy",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/singapore-and-india-science-technology-and-industrial-innovation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-013",
+      "slug": "india-and-new-zealand-official-statistics-and-measurement",
+      "title": "India and New Zealand: Official statistics and measurement",
+      "comparison_question": "What, if anything, can be compared between exact official statistics and measurement artifacts from India and New Zealand after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-013",
+        "jurisdiction_name": "India",
+        "rail_id": "117-RAIL-049",
+        "source_id": "source-117-global-india-open-government-data-platform-india",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-014",
+        "jurisdiction_name": "New Zealand",
+        "rail_id": "117-RAIL-053",
+        "source_id": "source-117-global-new-zealand-stats-nz",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/india-and-new-zealand-official-statistics-and-measurement/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-014",
+      "slug": "new-zealand-and-brazil-energy-utility-and-system-operation",
+      "title": "New Zealand and Brazil: Energy, utility and system operation",
+      "comparison_question": "What, if anything, can be compared between exact energy, utility and system operation artifacts from New Zealand and Brazil after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-014",
+        "jurisdiction_name": "New Zealand",
+        "rail_id": "117-RAIL-054",
+        "source_id": "source-117-global-new-zealand-electricity-authority",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-015",
+        "jurisdiction_name": "Brazil",
+        "rail_id": "117-RAIL-058",
+        "source_id": "source-117-global-brazil-national-electric-energy-agency",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/new-zealand-and-brazil-energy-utility-and-system-operation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-015",
+      "slug": "brazil-and-chile-infrastructure-environment-and-territorial-delivery",
+      "title": "Brazil and Chile: Infrastructure, environment and territorial delivery",
+      "comparison_question": "What, if anything, can be compared between exact infrastructure, environment and territorial delivery artifacts from Brazil and Chile after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-015",
+        "jurisdiction_name": "Brazil",
+        "rail_id": "117-RAIL-059",
+        "source_id": "source-117-global-brazil-energy-research-office",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-016",
+        "jurisdiction_name": "Chile",
+        "rail_id": "117-RAIL-063",
+        "source_id": "source-117-global-chile-environmental-assessment-service",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/brazil-and-chile-infrastructure-environment-and-territorial-delivery/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-016",
+      "slug": "chile-and-south-africa-science-technology-and-industrial-innovation",
+      "title": "Chile and South Africa: Science, technology and industrial innovation",
+      "comparison_question": "What, if anything, can be compared between exact science, technology and industrial innovation artifacts from Chile and South Africa after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-016",
+        "jurisdiction_name": "Chile",
+        "rail_id": "117-RAIL-064",
+        "source_id": "source-117-global-chile-ministry-of-energy",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-017",
+        "jurisdiction_name": "South Africa",
+        "rail_id": "117-RAIL-068",
+        "source_id": "source-117-global-south-africa-council-for-scientific-and-industrial-research",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/chile-and-south-africa-science-technology-and-industrial-innovation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-017",
+      "slug": "south-africa-and-mexico-official-statistics-and-measurement",
+      "title": "South Africa and Mexico: Official statistics and measurement",
+      "comparison_question": "What, if anything, can be compared between exact official statistics and measurement artifacts from South Africa and Mexico after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-017",
+        "jurisdiction_name": "South Africa",
+        "rail_id": "117-RAIL-065",
+        "source_id": "source-117-global-south-africa-statistics-south-africa",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-018",
+        "jurisdiction_name": "Mexico",
+        "rail_id": "117-RAIL-069",
+        "source_id": "source-117-global-mexico-inegi",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/south-africa-and-mexico-official-statistics-and-measurement/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-018",
+      "slug": "mexico-and-united-arab-emirates-energy-utility-and-system-operation",
+      "title": "Mexico and United Arab Emirates: Energy, utility and system operation",
+      "comparison_question": "What, if anything, can be compared between exact energy, utility and system operation artifacts from Mexico and United Arab Emirates after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-018",
+        "jurisdiction_name": "Mexico",
+        "rail_id": "117-RAIL-070",
+        "source_id": "source-117-global-mexico-secretariat-of-energy",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-019",
+        "jurisdiction_name": "United Arab Emirates",
+        "rail_id": "117-RAIL-074",
+        "source_id": "source-117-global-united-arab-emirates-ministry-of-energy-and-infrastructure",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/mexico-and-united-arab-emirates-energy-utility-and-system-operation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-019",
+      "slug": "united-arab-emirates-and-multilateral-systems-infrastructure-environment-and-territorial-delivery",
+      "title": "United Arab Emirates and Multilateral systems: Infrastructure, environment and territorial delivery",
+      "comparison_question": "What, if anything, can be compared between exact infrastructure, environment and territorial delivery artifacts from United Arab Emirates and Multilateral systems after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-019",
+        "jurisdiction_name": "United Arab Emirates",
+        "rail_id": "117-RAIL-075",
+        "source_id": "source-117-global-united-arab-emirates-telecommunications-and-digital-government-regulatory-authority",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-020",
+        "jurisdiction_name": "Multilateral systems",
+        "rail_id": "117-RAIL-079",
+        "source_id": "source-117-global-multilateral-systems-oecd-data-explorer",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/united-arab-emirates-and-multilateral-systems-infrastructure-environment-and-territorial-delivery/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-020",
+      "slug": "multilateral-systems-and-canada-science-technology-and-industrial-innovation",
+      "title": "Multilateral systems and Canada: Science, technology and industrial innovation",
+      "comparison_question": "What, if anything, can be compared between exact science, technology and industrial innovation artifacts from Multilateral systems and Canada after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-020",
+        "jurisdiction_name": "Multilateral systems",
+        "rail_id": "117-RAIL-080",
+        "source_id": "source-117-global-multilateral-systems-international-renewable-energy-agency",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-001",
+        "jurisdiction_name": "Canada",
+        "rail_id": "117-RAIL-004",
+        "source_id": "source-117-global-canada-innovation-science-and-economic-development-canada",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/multilateral-systems-and-canada-science-technology-and-industrial-innovation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-021",
+      "slug": "canada-and-south-korea-official-statistics-and-measurement",
+      "title": "Canada and South Korea: Official statistics and measurement",
+      "comparison_question": "What, if anything, can be compared between exact official statistics and measurement artifacts from Canada and South Korea after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-001",
+        "jurisdiction_name": "Canada",
+        "rail_id": "117-RAIL-001",
+        "source_id": "source-117-global-canada-statistics-canada",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-011",
+        "jurisdiction_name": "South Korea",
+        "rail_id": "117-RAIL-041",
+        "source_id": "source-117-global-south-korea-korean-statistical-information-service",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/canada-and-south-korea-official-statistics-and-measurement/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-022",
+      "slug": "australia-and-singapore-energy-utility-and-system-operation",
+      "title": "Australia and Singapore: Energy, utility and system operation",
+      "comparison_question": "What, if anything, can be compared between exact energy, utility and system operation artifacts from Australia and Singapore after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-002",
+        "jurisdiction_name": "Australia",
+        "rail_id": "117-RAIL-006",
+        "source_id": "source-117-global-australia-australian-energy-market-operator",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-012",
+        "jurisdiction_name": "Singapore",
+        "rail_id": "117-RAIL-046",
+        "source_id": "source-117-global-singapore-energy-market-authority",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/australia-and-singapore-energy-utility-and-system-operation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-023",
+      "slug": "european-union-and-india-infrastructure-environment-and-territorial-delivery",
+      "title": "European Union and India: Infrastructure, environment and territorial delivery",
+      "comparison_question": "What, if anything, can be compared between exact infrastructure, environment and territorial delivery artifacts from European Union and India after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-003",
+        "jurisdiction_name": "European Union",
+        "rail_id": "117-RAIL-011",
+        "source_id": "source-117-global-european-union-eur-lex",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-013",
+        "jurisdiction_name": "India",
+        "rail_id": "117-RAIL-051",
+        "source_id": "source-117-global-india-central-electricity-authority",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/european-union-and-india-infrastructure-environment-and-territorial-delivery/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    },
+    {
+      "global_comparison_passport_id": "193-PASSPORT-024",
+      "slug": "united-kingdom-and-new-zealand-science-technology-and-industrial-innovation",
+      "title": "United Kingdom and New Zealand: Science, technology and industrial innovation",
+      "comparison_question": "What, if anything, can be compared between exact science, technology and industrial innovation artifacts from United Kingdom and New Zealand after identity, period, definition, method, unit, denominator, geography, and revision treatment are aligned?",
+      "left": {
+        "jurisdiction_id": "117-JURISDICTION-004",
+        "jurisdiction_name": "United Kingdom",
+        "rail_id": "117-RAIL-016",
+        "source_id": "source-117-global-united-kingdom-uk-research-and-innovation",
+        "exact_artifact_id": null
+      },
+      "right": {
+        "jurisdiction_id": "117-JURISDICTION-014",
+        "jurisdiction_name": "New Zealand",
+        "rail_id": "117-RAIL-056",
+        "source_id": "source-117-global-new-zealand-ministry-for-the-environment",
+        "exact_artifact_id": null
+      },
+      "compatibility_dimensions": {
+        "identity": "Held — exact subject identities not yet bound",
+        "period": "Held — observation or decision periods not yet bound",
+        "definition": "Held — measure or milestone definitions not yet bound",
+        "method": "Held — collection and revision methods not yet bound",
+        "unit_and_denominator": "Held — units and denominators not yet bound",
+        "geography": "Known jurisdictions are non-equivalent; exact geographic scopes remain unbound"
+      },
+      "comparable_claim": null,
+      "prohibited_comparison": "Do not compare portal coverage, institutional prominence, announced quantities, unaligned stages, national aggregates, or incompatible denominators as performance.",
+      "verdict": "Blocked — exact artifacts not yet bound",
+      "score": null,
+      "rank": null,
+      "review_date": null,
+      "reviewer_role": null,
+      "route": "/review/global/comparisons/united-kingdom-and-new-zealand-science-technology-and-industrial-innovation/",
+      "interpretation_boundary": "Prepared content and evidence-control architecture only. A mapped authority, source portal, acquisition slot, question, or review packet does not establish an external fact, project stage, accepted service, compatible series, comparison result, score, rank, translation approval, expert approval, or publication decision."
+    }
+  ],
+  "public_html_routes": [
+    "/review/global/comparisons/",
+    "/review/global/comparisons/canada-and-australia-official-statistics-and-measurement/",
+    "/review/global/comparisons/australia-and-european-union-energy-utility-and-system-operation/",
+    "/review/global/comparisons/european-union-and-united-kingdom-infrastructure-environment-and-territorial-delivery/",
+    "/review/global/comparisons/united-kingdom-and-germany-science-technology-and-industrial-innovation/",
+    "/review/global/comparisons/germany-and-france-official-statistics-and-measurement/",
+    "/review/global/comparisons/france-and-netherlands-energy-utility-and-system-operation/",
+    "/review/global/comparisons/netherlands-and-norway-infrastructure-environment-and-territorial-delivery/",
+    "/review/global/comparisons/norway-and-sweden-science-technology-and-industrial-innovation/",
+    "/review/global/comparisons/sweden-and-japan-official-statistics-and-measurement/",
+    "/review/global/comparisons/japan-and-south-korea-energy-utility-and-system-operation/",
+    "/review/global/comparisons/south-korea-and-singapore-infrastructure-environment-and-territorial-delivery/",
+    "/review/global/comparisons/singapore-and-india-science-technology-and-industrial-innovation/",
+    "/review/global/comparisons/india-and-new-zealand-official-statistics-and-measurement/",
+    "/review/global/comparisons/new-zealand-and-brazil-energy-utility-and-system-operation/",
+    "/review/global/comparisons/brazil-and-chile-infrastructure-environment-and-territorial-delivery/",
+    "/review/global/comparisons/chile-and-south-africa-science-technology-and-industrial-innovation/",
+    "/review/global/comparisons/south-africa-and-mexico-official-statistics-and-measurement/",
+    "/review/global/comparisons/mexico-and-united-arab-emirates-energy-utility-and-system-operation/",
+    "/review/global/comparisons/united-arab-emirates-and-multilateral-systems-infrastructure-environment-and-territorial-delivery/",
+    "/review/global/comparisons/multilateral-systems-and-canada-science-technology-and-industrial-innovation/",
+    "/review/global/comparisons/canada-and-south-korea-official-statistics-and-measurement/",
+    "/review/global/comparisons/australia-and-singapore-energy-utility-and-system-operation/",
+    "/review/global/comparisons/european-union-and-india-infrastructure-environment-and-territorial-delivery/",
+    "/review/global/comparisons/united-kingdom-and-new-zealand-science-technology-and-industrial-innovation/"
+  ],
+  "public_json_exports": [
+    "/data/phase-193-comparative-evidence-lab.json"
+  ]
+}

@@ -1,0 +1,71 @@
+---
+import {annualCaseReviews, annualReviewContexts, annualReviewDate, annualReviewVersions} from '../../lib/annual-case-reviews.mjs';
+import CurrentOperationsNotice from './CurrentOperationsNotice.astro';
+interface Props { review: typeof annualCaseReviews.records[number]; }
+const {review} = Astro.props;
+const contexts = annualReviewContexts(review);
+const earlierReviews = annualReviewVersions(review).slice(0, -1);
+---
+<aside aria-label="Dated annual-case editorial review" data-annual-case-review={review.record_id}>
+  <h2>Editorial clarification and source context · {annualReviewDate(review)}</h2>
+  <p>{review.summary}</p>
+  <p>{annualCaseReviews.boundary}</p>
+  {earlierReviews.map(prior => <details data-annual-prior-review={review.record_id} data-annual-prior-update={prior.update_id ?? annualCaseReviews.update_id}>
+    <summary>Earlier editorial review · {annualReviewDate(prior)}</summary>
+    <p>{prior.summary}</p>
+    <p>This is an earlier review, not the current wording. Its complete record is retained in the dated changes export; the current clarification above explains subsequent changes.</p>
+    <p><a href={`/updates/${prior.update_id ?? annualCaseReviews.update_id}/`}>Earlier dated change record</a></p>
+  </details>)}
+  {review.title_replacement && <details data-annual-original-title={review.record_id}>
+    <summary>Earlier title</summary>
+    <p>{review.title_replacement.original_text}</p><p><strong>Reason for clarification:</strong> {review.title_replacement.reason}</p>
+  </details>}
+  {review.overview_replacement && <details data-annual-original-overview={review.record_id}>
+    <summary>Earlier overview</summary>
+    <p>{review.overview_replacement.original_text}</p><p><strong>Reason for clarification:</strong> {review.overview_replacement.reason}</p>
+  </details>}
+  {(review.heading_replacements ?? []).map(change => <details data-annual-original-heading={review.record_id}>
+    <summary>Earlier section heading</summary>
+    <p>{change.original_text}</p><p><strong>Reason for clarification:</strong> {change.reason}</p>
+  </details>)}
+  {review.replacements.length > 0 && <p>The {review.replacements.length === 1 ? 'clarified paragraph is' : 'clarified paragraphs are'} shown in the reading text below. The earlier wording remains available here and in the dated reader export.</p>}
+  {review.replacements.map(change => <details data-annual-original={review.record_id}>
+    <summary>Earlier wording: {change.section_heading}</summary>
+    <p>{change.original_text}</p><p><strong>Reason for clarification:</strong> {change.reason}</p>
+  </details>)}
+  {review.source_checks.map(source => <section data-annual-source-check={source.source_id}>
+    <h3><a href={source.url}>{'additional_source' in source && source.additional_source === true ? 'Additional source' : 'Source check'}: {source.locator}</a></h3>
+    {'checked_date' in source && <p>Editorial source check: {source.checked_date}. This additional citation does not replace the original source list or reset the source profile's check date.</p>}
+    {'retained_checked_date' in source && <p>Retained primary-page check: {source.retained_checked_date}. This locator reuses the recorded inspection; no fresh retrieval or source-profile date reset is claimed.</p>}
+    {'primary_checked_date' in source && <p>Primary-page check: {source.primary_checked_date}. The original reader source list and profile check date remain unchanged.</p>}
+    {'relation' in source && source.relation && <p>{source.relation}</p>}
+    <p>{source.finding}</p><p>{source.access}</p>
+  </section>)}
+  {'local_provenance_context' in review && review.local_provenance_context && <section data-annual-local-provenance={review.record_id}>
+    <h3>Local source-list comparison · {review.local_provenance_context.checked_date}</h3>
+    <p>{review.local_provenance_context.scope}</p>
+    <p>{review.local_provenance_context.report_records} original annual readers were compared: {review.local_provenance_context.expanded_pairs} use the expanded paired-essay text and sources; the other {review.local_provenance_context.remaining_subset_records} have no source IDs outside their original report contracts.</p>
+    <ul>{review.local_provenance_context.artifacts.map(artifact => <li><a href={artifact.route}>{artifact.label}</a></li>)}</ul>
+    <p>This comparison establishes local editorial lineage, not independent factual acceptance of the sources or their claims.</p>
+  </section>}
+  {'related_readings' in review && review.related_readings && <section data-annual-related-readings={review.record_id}>
+    <h3>Related editorial case</h3>
+    <ul>{review.related_readings.map(reading => <li><a href={reading.route}>{reading.label}</a><p>{reading.relation}</p></li>)}</ul>
+    <p>A linked case supplies editorial context, not independent acceptance of this article.</p>
+  </section>}
+  {contexts.map(context => <section data-annual-retained-context={context.id}>
+    <h3><a href={context.route}>Retained finding · {context.checked_date}</a></h3>
+    <p>{context.relation}</p><p>{context.summary}</p>
+    {'formal_artifact' in context && context.formal_artifact && <section data-annual-formal-artifact={context.id}>
+      <h4><a href={context.formal_artifact.url}>Retained instrument: {context.formal_artifact.title}</a></h4>
+      <p>Recorded inspection: {context.checked_date}. Issued {context.formal_artifact.issued_date}; effective {context.formal_artifact.effective_date}; expiry {context.formal_artifact.expiration_date}.</p>
+      <p>{context.evidence_boundary}</p>
+    </section>}
+    <p><strong>Next evidence required:</strong> {context.next_action}</p>
+    {context.next_check_date && <p>Recorded next check: {context.next_check_date}. This editorial clarification does not reset that appointment.</p>}
+    {context.matched_source_ids.length > 0 && <ul>{context.matched_source_ids.map((id: string) => <li><a href={`/atlas/sources/${id}/`}>Matched source: {id}</a></li>)}</ul>}
+    {context.additional_artifact_urls.length > 0 && <ul>{context.additional_artifact_urls.map((url: string,index: number) => <li><a href={url}>Additional method artifact {index + 1} cited in the retained finding</a></li>)}</ul>}
+  </section>)}
+  <p><a href={annualCaseReviews.export_route}>Download these dated changes and source bindings</a> · <a href={`/updates/${review.update_id ?? annualCaseReviews.update_id}/`}>Dated change record</a></p>
+</aside>
+<CurrentOperationsNotice researchContextIds={contexts.filter(context=>context.collection==='pilot_research_followups').map(context=>context.id)} />

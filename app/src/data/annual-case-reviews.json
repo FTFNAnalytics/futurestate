@@ -1,0 +1,1763 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-09-22",
+  "latest_review_date": "2026-09-23",
+  "reviewer": "Codex assisted editorial review",
+  "boundary": "Dated wording and source-context review only. Original September 10 reader records and their September 1 evidence cutoff are preserved. No project-stage change, measurement admission, independent approval or release authorization is supplied.",
+  "export_route": "/data/annual-case-reviews.json",
+  "update_id": "update-2026-09-22-annual-case-clarifications",
+  "records": [
+    {
+      "record_id": "203-CASE-02",
+      "route": "/reference/state-of-future-systems/case-toronto-24-254930/",
+      "source_record_sha256": "8805e89defd8a912277e3a7d62c277b356ba9381c4b394376372e8bf25d2ed46",
+      "summary": "Council adoption and enacted development permission remain distinct. The dated clarification removes an ambiguous permission claim without asserting whether any later enactment or permit exists.",
+      "replacements": [
+        {
+          "section_heading": "Follow instruments before construction",
+          "paragraph_index": 0,
+          "original_text": "The next chronology should distinguish acceptance of each condition from introduction or enactment of the amendments. A permit, site servicing, construction start, completion and occupancy would follow their own documentary trail. Readers should also retain the exact application number when searching, because an address or nearby project can lead to a different file. This discipline makes the remaining work understandable: a favorable planning decision changes permission, while the project still needs the instruments and practical arrangements that allow building to proceed.",
+          "replacement_text": "The next chronology should distinguish acceptance of each condition from introduction or enactment of the amendments. A permit, site servicing, construction start, completion and occupancy would follow their own documentary trail. Readers should also retain the exact application number when searching, because an address or nearby project can lead to a different file. Council adoption records a planning decision subject to the stated conditions; it does not by itself establish that the withheld amendments have been enacted or that a building permit has been issued.",
+          "reason": "Replace the shorthand that adoption changes permission with the narrower distinction supported by Council decision part 8."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-toronto-2026-sc33-9-item-history",
+          "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.9",
+          "locator": "City Council decision, July 29-30, 2026; part 8 and conditions 8a-8d",
+          "access": "Official HTML text inspected September 22; no new application-portal, permit-file or later by-law search in this editorial pass",
+          "finding": "The adopted decision directs the solicitor to withhold enactment bills until the specified wind, land-exchange and laneway conditions. This source alone does not establish their later completion or permit issuance."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "receipts",
+          "id": "207-TORONTO-2026-09-21-BOUNDED-RECHECK",
+          "receipt_payload_sha256": "b894a24a020d5ad552f9749b9e2ecd42bff0c9746e06747fac8ee0ff33486e5e",
+          "route": "/updates/update-2026-09-21-toronto-bounded-project-recheck/",
+          "relation": "Exact Council source ID shared with this article. The development-pipeline source was context only in the September 21 receipt and is not treated as freshly checked.",
+          "matched_source_ids": [
+            "source-toronto-2026-sc33-9-item-history"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-12",
+      "route": "/reference/state-of-future-systems/case-hornsdale-power-reserve/",
+      "source_record_sha256": "cd4214b85c06033154e2361be52ff039406ccc3da3d33548c36bf0fa365db39d",
+      "summary": "The later retained report check distinguishes its H1 2024 observation period, February 2025 release and invalid printed date. It does not establish a half-year availability denominator or new operating result.",
+      "replacements": [],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-HORNSDALE-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "cf4dbfc40ced5a44cf08253f340e973448455833ba09b1b5edd52424e4cf4e1d",
+          "route": "/method/editorial-review/#211-HORNSDALE-ACCESS-2026-09-22",
+          "relation": "The article's H1 2024 source profile points to the exact URL inspected in this retained receipt. This is an artifact-specific association, not a fresh whole-article or 2026 operating review.",
+          "matched_source_ids": [
+            "source-56j-hornsdale-h1-2024-operations"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-14",
+      "route": "/reference/state-of-future-systems/case-dalrymple-grid-battery/",
+      "source_record_sha256": "93609bb5da09f65c33557386fc2fe553c6eb69cef3b613f099b2b6907d20fe4e",
+      "summary": "The final report is attributed to ElectraNet and its ARENA-hosted copy is distinguished from ARENA's retrospective. Separate later method findings identify missing protocol versions and interval records without changing the historical extraction.",
+      "replacements": [
+        {
+          "section_heading": "Read the project results within their design",
+          "paragraph_index": 0,
+          "original_text": "ARENA's final and retrospective materials describe the project and reported results. They can support an account of the demonstrated functions and the conditions under which they were examined. They are not an independent estimate of what customer reliability would have been without the project. A reader should identify the reporting period, event or operating mode and the source of each measure. This keeps the demonstration useful while preserving the difference between a project report and a causal evaluation of broader public benefit.",
+          "replacement_text": "ElectraNet's final report, hosted by ARENA, and ARENA's retrospective account describe the project and reported results. They can support an account of the demonstrated functions and the conditions under which they were examined. They are not an independent estimate of what customer reliability would have been without the project. A reader should identify the reporting period, event or operating mode and the source of each measure. This keeps the demonstration useful while preserving the difference between a project report and a causal evaluation of broader public benefit.",
+          "reason": "Distinguish the final report's institutional identity from its host and the separately authored retrospective."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56e-dalrymple-arena-final-2021",
+          "url": "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-final-report.pdf",
+          "locator": "Cover and Copyright and Disclaimer, one-based physical PDF pages 1-2; March 2021, Version 1.0",
+          "access": "September 15 retained PDF re-read September 22; cover and page 2 rendered and visually inspected. No fresh PDF download or review of all performance tables",
+          "finding": "The cover bears ElectraNet's identity; page 2 identifies ElectraNet's rights/responsibility and separately describes ARENA funding and the government-view disclaimer. Hosting does not make the report an ARENA-authored independent evaluation.",
+          "captured_sha256": "f431e507a48bb61c27247495e8365f9bb1e2b830c5b2145d0ca6bf41aaee7b99",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-56e-dalrymple-arena-retrospective-2021",
+          "url": "https://arena.gov.au/blog/electranet-south-australian-battery-shows-the-way-forward/",
+          "locator": "Article header and byline; April 15, 2021",
+          "access": "Official HTML text inspected September 22 for authorship/date; no independent performance or financial verification",
+          "finding": "The retrospective identifies ARENA as its author and has its own April 2021 publication date. This is separate from the March 2021 final report."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "receipt_payload_sha256": "8f5f810edacd39d74e9935ac52ca48a90d70cecd7700b61f01822425ec329f6f",
+          "route": "/method/editorial-review/#211-DALRYMPLE-ACQUISITION-2026-09-22",
+          "relation": "Explicit additional-method context for the same ESCRI-SA project. Reports 2 and 3 are separate artifacts, not exact source-ID matches to this article's final report, retrospective or AEMO constraint source. No automatic URL or project-name join is used.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": [
+            "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-2.pdf",
+            "https://arena.gov.au/assets/2021/04/escri-sa-battery-energy-storage-report-3.pdf"
+          ]
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-04",
+      "route": "/reference/state-of-future-systems/case-space-coast-authority-to-mission/",
+      "source_record_sha256": "fcec56b0c93db3e36e5ae7a4c7a9b7d3ce3d42580e7a5668fa5fb30bcb7bd77f",
+      "update_id": "update-2026-09-22-annual-space-coast-f15ex-followthrough",
+      "summary": "The current overview and two paragraphs now reflect the formal site-licence renewal already recorded on September 15. The inherited uncertainty remains inspectable; site, operator, vehicle and mission authority are still distinct.",
+      "overview_replacement": {
+        "original_text": "The Space Coast case brings together site licensing and environmental records that often appear in one development narrative. Their permissions differ. The inherited edition also retains an unresolved Shuttle Landing Facility license disposition, making this a useful example of how uncertainty should remain visible alongside documented progress elsewhere in the corridor.",
+        "replacement_text": "The Space Coast case brings together site licensing and environmental records with different scopes. The September 15 source check located the Shuttle Landing Facility's formal site-licence renewal, resolving the missing-document question retained in the inherited edition. That finding does not supply operator-, vehicle- or mission-specific authority or demonstrate actual use.",
+        "reason": "Carry the retained renewal finding into the current overview, search/catalog summary and page description without rewriting the historical reader record."
+      },
+      "replacements": [
+        {
+          "section_heading": "Several records, several scopes",
+          "paragraph_index": 0,
+          "original_text": "The FAA environmental records for LC-39A and SLC-40 concern defined review stages. They do not themselves establish every operator authorization, completed mitigation, accepted capital asset or successful mission. The Shuttle Landing Facility record raises a separate question about the formal disposition of its license. The inherited August recheck did not resolve that question from the displayed expiration and linked document. An old date alone cannot establish renewal, lapse or current authority. Each conclusion must stay attached to its exact instrument.",
+          "replacement_text": "The FAA environmental records for LC-39A and SLC-40 concern defined review stages. They do not themselves establish every operator authorization, completed mitigation, accepted capital asset or successful mission. The inherited August recheck left the Shuttle Landing Facility's formal licence disposition unresolved. The retained September 15 source check subsequently located LRSO 18-018 Revision 2 and Order A-1: the instrument records issue on January 8, 2026, effect from January 15, 2026 and expiry on January 15, 2031. This resolves the missing renewal artifact in the editorial account, not every authorization or operating question. Each conclusion remains attached to its instrument and recorded check date.",
+          "reason": "Distinguish the unresolved historical recheck from the later, already-recorded formal instrument; no new licence search or present-status certification is claimed."
+        },
+        {
+          "section_heading": "The next decisive documents",
+          "paragraph_index": 0,
+          "original_text": "The formal FAA license disposition would resolve the specific Shuttle Landing Facility authority question. Operator-specific authorization or an accepted infrastructure record could advance another named strand. Mission and repeated-use records would support later conclusions at their own scope. All should retain event and publication dates separately. The case does not infer that unresolved authority prevents every activity in the region, nor that neighboring approvals resolve it. It identifies the exact documentary joins needed for a reliable authorization-to-mission account.",
+          "replacement_text": "The missing formal renewal artifact was located in the September 15 check. Its recorded October 9 follow-up remains a check for later amendments or disposition, not a request to rediscover the same instrument. Operator- and vehicle-specific authority, required agreements, infrastructure acceptance and actual mission evidence remain separate next documents for any operating claim. Repeated-use and reliability conclusions need their own observations. Event, issue, effective and check dates should remain distinct; neither the site licence nor neighboring approvals establish every permission or actual use in the corridor.",
+          "reason": "Replace the already-resolved acquisition request with the retained follow-up and still-missing operation-specific evidence."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+          "matched_source_ids": [
+            "source-faa-shuttle-landing-facility-license"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-16",
+      "route": "/reference/state-of-future-systems/case-f15ex-production-delivery/",
+      "source_record_sha256": "cd874920a9ade1e95b69e71d3d7d297cdeb3c2f20ae59d8874408e06b81de15d",
+      "update_id": "update-2026-09-22-annual-space-coast-f15ex-followthrough",
+      "summary": "The September 22 access failure is now visible beside the annual case. The earlier Air Force narrative remains inherited, not freshly verified; no aircraft acceptance event or monthly production count was obtained.",
+      "replacements": [],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-F15EX-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "route": "/method/editorial-review/#211-F15EX-ACCESS-2026-09-22",
+          "relation": "The article's production-resumption source profile points to the exact Air Force URL in this failed-acquisition receipt. The association adds a dated access limit, not a new source verification or a conclusion that no aircraft were produced, delivered or accepted.",
+          "matched_source_ids": [
+            "source-56e-f15ex-production-resumes-2025"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-03",
+      "route": "/reference/state-of-future-systems/case-northern-virginia-large-load/",
+      "source_record_sha256": "d3ae856ab09dd005eb50d0d8210ccd978cfc9ef9fab9b6689c3356e20fd3e8dc",
+      "update_id": "update-2026-09-22-annual-golden-mars-current-applications",
+      "summary": "Exact Golden-Mars orders and dated docket context now supplement the inherited general-information link. The GS-5 decision is distinguished from its announced commencement; neither establishes electricity delivered to a customer.",
+      "overview_replacement": {
+        "original_text": "Golden-Mars and GS-5 belong in the same regional story because they concern infrastructure and the terms for serving large loads. They remain different evidence objects. The inherited record combines conditional transmission authority with a future rate-class decision, without treating either as proof of electricity already delivered to a named customer.",
+        "replacement_text": "Golden-Mars and GS-5 connect transmission planning with the terms for serving large loads, but their decisions and timelines differ. The June 29, 2026 route order and September 22 appeal-status check belong to the transmission case. GS-5 was announced as approved in November 2025, with commencement scheduled for January 2027. Neither establishes service to a named customer.",
+        "reason": "Distinguish the located transmission decision and appeal context from an already-made rate-class decision with later announced commencement."
+      },
+      "replacements": [
+        {
+          "section_heading": "What each instrument contributes",
+          "paragraph_index": 0,
+          "original_text": "The Golden-Mars material identifies an SCC decision and a route condition. It does not establish final land arrangements, completed construction or energization. The GS-5 order defines a large-load rate class and risk-allocation rules with a later effective date in the inherited record. It does not identify a particular customer's capacity or consumption. A regional account should explain both instruments while preserving their separate recipients, obligations and timelines. That makes the connection between infrastructure planning and commercial service intelligible without merging their stages.",
+          "replacement_text": "The SCC's June 29, 2026 Final Order in PUR-2025-00056 approves Route 3A, incorporates its April 9 order and specifies a subsequent map/CPCN process. The July 20 order declines to suspend that decision; it does not cancel the transmission approval. The official docket checked September 22 lists Under Appeal. That docket field is not an appellate merits ruling or confirmation of unrestricted construction authority. Separately, the SCC's November 25, 2025 announcement reports approval of GS-5 with effect from January 1, 2027. This check covered the announcement, not the full rate order or later amendments. The records do not establish land-right completion, energization, customer eligibility or actual billing.",
+          "reason": "Replace a general-information citation and ambiguous future-decision wording with located, separately dated artifacts and their inspection limits."
+        },
+        {
+          "section_heading": "What to examine next",
+          "paragraph_index": 0,
+          "original_text": "A final route or land record would clarify the infrastructure path; an inspection or energization record would demonstrate a later physical event. A named GS-5 service agreement or customer operating return would illuminate a different part of the chain. Any claim about costs borne by other customers would need the relevant tariff and accounting evidence. The September case preserves those questions as separate next steps and offers no capacity, reliability or affordability outcome for the corridor as a whole.",
+          "replacement_text": "The June route order is now located; the remaining legal review concerns the incorporated April conditions, map/CPCN compliance, land rights and later court or appellate orders. The Supreme Court docket and appeal merits were not inspected. Construction, inspection, energization and a named service arrangement still require their own records. For GS-5, inspect the full tariff, applicable amendments and customer-specific documents before drawing eligibility, billing or cost-allocation conclusions. The separate October 1 Loudoun standards appointment is unchanged. No corridor-wide capacity, reliability or affordability outcome follows from this correction.",
+          "reason": "Retire the resolved request to locate a final route order while retaining the unreviewed compliance, appellate, physical-service and tariff questions."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-18",
+      "route": "/reference/state-of-future-systems/case-current-applications-capacity/",
+      "source_record_sha256": "6b3a264c3e41397c155bccaa8c652cc1bad486c6a9698fc0e8e9971218177198",
+      "update_id": "update-2026-09-22-annual-golden-mars-current-applications",
+      "summary": "The overview and expansion section now distinguish a combined grant-project status from a finding about all physical expansion or the company's operating condition.",
+      "overview_replacement": {
+        "original_text": "Current Applications combines an attributed manufacturing-improvement case study, company capability material and a record concerning a canceled expansion. The evidence is useful precisely because it resists a simple success-or-failure narrative. Each document covers a particular activity and leaves questions about persistence, causes and later operating effects unresolved.",
+        "replacement_text": "Current Applications combines an attributed manufacturing-improvement case, company capability material and a grant project labeled Cancelled/Declined. That administrative label does not settle what happened to every physical expansion or later operation. The records address different activities and do not support a simple company-wide success-or-failure verdict.",
+        "reason": "Preserve the exact grant-status category without treating it as verified cancellation of all expansion."
+      },
+      "heading_replacements": [
+        {
+          "original_text": "A canceled project is not a complete company diagnosis",
+          "replacement_text": "A grant-project status is not a complete company diagnosis",
+          "reason": "The original heading collapses a combined administrative category into an unqualified cancellation claim. Keep the existing section anchor."
+        }
+      ],
+      "replacements": [
+        {
+          "section_heading": "A canceled project is not a complete company diagnosis",
+          "paragraph_index": 0,
+          "original_text": "The expansion record does not establish why that project stopped, whether another expansion occurred or what happened to output and employment afterward. The report should preserve the named project and event rather than infer a company-wide decline. It should also avoid using a later capability statement to erase the earlier cancellation. The two sources can coexist in a chronology while answering different questions. That is a more faithful treatment of industrial development than assigning a broad adverse-event label from one incomplete strand.",
+          "replacement_text": "The official Current Application Capital page identifies CFA 19418, Round 2, with a $140,000 award, $0 grant money disbursed and status Black - Cancelled/Declined. Its proposed expansion is not a completion report. The page supplies no status-effective date or reason, and does not establish cancellation of every physical expansion. Zero grant disbursement is not zero private investment. Neither this administrative record nor a later capability statement establishes subsequent output, employment or company-wide decline.",
+          "reason": "Name the exact administrative project and preserve its combined label, funding boundary and missing causal/operating evidence."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56c-current-applications-cancelled-expansion",
+          "url": "https://regionalcouncils.ny.gov/cfa/project/51146",
+          "locator": "Current Application Capital; CFA Number 19418, Round 2; award, disbursement and Project Status fields",
+          "access": "Exact official HTML text rechecked September 22. No grant contract, applicant correspondence or later plant-investment record was inspected.",
+          "finding": "The specific grant record retains the combined Cancelled/Declined category without a displayed effective date or explanation. URL path 51146 is not the CFA number."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-01",
+      "route": "/reference/state-of-future-systems/synthesis-compute-power-water/",
+      "source_record_sha256": "ca7c4b969ddf8bf77147e6e9df15cb3786ec715e4c64a431590be5bf503c4c4d",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 0,
+          "replacement_text": "Virginia's large-load rate decision and transmission decision address different parts of the service chain. The SCC's November 25, 2025 announcement reports approval of GS-5 with effect from January 1, 2027. Separately, its June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines to suspend that decision. The official docket checked September 22 lists Under Appeal. That dated field is not an appellate merits ruling or proof of unrestricted construction authority. The rate announcement and transmission orders do not establish a named customer's connection, eligibility or actual bill.",
+          "reason": "Carry the located route order and dated appeal context into both readings, keeping the announced tariff commencement separate from delivered service.",
+          "original_text": "The inherited Golden-Mars and GS-5 case contains two concrete decisions. Virginia approved a future large-load rate class, scheduled to become effective January 1, 2027, and conditionally approved a transmission project with a local route dependency. The first concerns the terms under which a class of customers would be served. The second concerns authority for a physical transmission proposal. Their proximity does not make them one customer delivery event."
+        },
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 1,
+          "replacement_text": "The route order is located; the remaining questions concern its incorporated April conditions, map/CPCN compliance, land rights and any later court or appellate orders. Those matters were not fully inspected in the retained check. Construction, inspection, energization and a named service arrangement require their own records. For GS-5, the full tariff, applicable amendments and customer documents remain necessary before an eligibility or billing conclusion. Resolving one procedural question does not close the physical service or customer-acceptance gap.",
+          "reason": "Replace the still-missing-final-route framing with the unverified compliance, court, land, physical-delivery and customer-specific questions.",
+          "original_text": "The next useful questions therefore concern final routing, land rights, construction, inspection and energization, followed by an identifiable customer agreement. Those are distinct documents with different responsible parties. A regulatory approval can resolve an institutional dependency while leaving the physical service dependency open."
+        },
+        {
+          "section_heading": "What would strengthen the next edition",
+          "paragraph_index": 0,
+          "replacement_text": "For Northern Virginia, follow the located route order through its conditions, land rights and later legal instruments, then seek accepted transmission assets and a named customer service record. For Arizona, the decisive additions remain facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition.",
+          "reason": "Retire the resolved request to locate a final route order without claiming that the downstream evidence has been obtained or changing the Arizona boundary.",
+          "original_text": "For Northern Virginia, the decisive additions are the final route or land instrument, accepted transmission assets and a named customer service record. For Arizona, they are facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "200-MONOGRAPH-01",
+      "route": "/reference/constraint-monographs/compute-power-water/",
+      "source_record_sha256": "edf9284df5bad49b28bce7703147b731588b419d66fad58169afa1e978b5c279",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 0,
+          "replacement_text": "Virginia's large-load rate decision and transmission decision address different parts of the service chain. The SCC's November 25, 2025 announcement reports approval of GS-5 with effect from January 1, 2027. Separately, its June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines to suspend that decision. The official docket checked September 22 lists Under Appeal. That dated field is not an appellate merits ruling or proof of unrestricted construction authority. The rate announcement and transmission orders do not establish a named customer's connection, eligibility or actual bill.",
+          "reason": "Carry the located route order and dated appeal context into both readings, keeping the announced tariff commencement separate from delivered service.",
+          "original_text": "The inherited Golden-Mars and GS-5 case contains two concrete decisions. Virginia approved a future large-load rate class, scheduled to become effective January 1, 2027, and conditionally approved a transmission project with a local route dependency. The first concerns the terms under which a class of customers would be served. The second concerns authority for a physical transmission proposal. Their proximity does not make them one customer delivery event."
+        },
+        {
+          "section_heading": "Northern Virginia shows the institutional handoffs",
+          "paragraph_index": 1,
+          "replacement_text": "The route order is located; the remaining questions concern its incorporated April conditions, map/CPCN compliance, land rights and any later court or appellate orders. Those matters were not fully inspected in the retained check. Construction, inspection, energization and a named service arrangement require their own records. For GS-5, the full tariff, applicable amendments and customer documents remain necessary before an eligibility or billing conclusion. Resolving one procedural question does not close the physical service or customer-acceptance gap.",
+          "reason": "Replace the still-missing-final-route framing with the unverified compliance, court, land, physical-delivery and customer-specific questions.",
+          "original_text": "The next useful questions therefore concern final routing, land rights, construction, inspection and energization, followed by an identifiable customer agreement. Those are distinct documents with different responsible parties. A regulatory approval can resolve an institutional dependency while leaving the physical service dependency open."
+        },
+        {
+          "section_heading": "What would strengthen the next edition",
+          "paragraph_index": 0,
+          "replacement_text": "For Northern Virginia, follow the located route order through its conditions, land rights and later legal instruments, then seek accepted transmission assets and a named customer service record. For Arizona, the decisive additions remain facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition.",
+          "reason": "Retire the resolved request to locate a final route order without claiming that the downstream evidence has been obtained or changing the Arizona boundary.",
+          "original_text": "For Northern Virginia, the decisive additions are the final route or land instrument, accepted transmission assets and a named customer service record. For Arizona, they are facility-specific utility acceptance and operating measurements. Repeated reporting should retain the same building or fab identity, measurement period, units, configuration and exception treatment so readers can distinguish a new measurement from a changed definition."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-03",
+      "route": "/reference/state-of-future-systems/synthesis-infrastructure-access-affordability/",
+      "source_record_sha256": "e50495b0900d864db1f78095c324f603726a16482c941e82cbc5ef554c144903",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "A tariff decision is one part of the cost story",
+          "paragraph_index": 0,
+          "replacement_text": "The SCC's November 25, 2025 announcement reports approval of Virginia's GS-5 large-load rate class with effect from January 1, 2027. That is a decision with a later announced commencement, not a measured customer bill. The separate June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines suspension, and the docket checked September 22 lists Under Appeal. These records do not establish an appellate outcome, completed land rights, energization or a customer's connection. Full tariff and customer-specific records remain necessary for cost-allocation conclusions.",
+          "reason": "Replace the inherited local-route-condition shorthand with the located decision history, retaining the affordability and customer-specific evidence limits.",
+          "original_text": "Virginia's GS-5 decision gives the corpus a concrete large-load rate mechanism, scheduled for January 2027. It is more informative for cost allocation than a national demand scenario because it identifies a regulated customer category. The Golden-Mars decision separately identifies a transmission proposal and local route condition. Neither record establishes a completed customer connection in the inherited baseline."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "200-MONOGRAPH-03",
+      "route": "/reference/constraint-monographs/infrastructure-access-affordability/",
+      "source_record_sha256": "f6a8fc89ca6390d8d514ab3b11e2af557f70ea950f9f5872c084c59cad56be23",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-golden-mars-paired-readings",
+      "summary": "September 23 editorial follow-through using the exact September 22 Golden-Mars and GS-5 checks retained with the annual case. This is not a new artifact retrieval, a decision on appeal, independent article acceptance or evidence of delivered service. The original September reader and source list remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "A tariff decision is one part of the cost story",
+          "paragraph_index": 0,
+          "replacement_text": "The SCC's November 25, 2025 announcement reports approval of Virginia's GS-5 large-load rate class with effect from January 1, 2027. That is a decision with a later announced commencement, not a measured customer bill. The separate June 29, 2026 Golden-Mars order approves Route 3A; the July 20 order declines suspension, and the docket checked September 22 lists Under Appeal. These records do not establish an appellate outcome, completed land rights, energization or a customer's connection. Full tariff and customer-specific records remain necessary for cost-allocation conclusions.",
+          "reason": "Replace the inherited local-route-condition shorthand with the located decision history, retaining the affordability and customer-specific evidence limits.",
+          "original_text": "Virginia's GS-5 decision gives the corpus a concrete large-load rate mechanism, scheduled for January 2027. It is more informative for cost allocation than a national demand scenario because it identifies a regulated customer category. The Golden-Mars decision separately identifies a transmission proposal and local route condition. Neither record establishes a completed customer connection in the inherited baseline."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8d5z01%21.PDF",
+          "relation": "Located decision in the named Golden-Mars case, supplementing the historical profile's general SCC information URL; not a claim that the original URL itself contains this order.",
+          "locator": "PUR-2025-00056, Final Order, June 29, 2026; printed page 4; document 260690071",
+          "access": "Official PDF text checked September 22; retained original hash verified and operative page 4 visually re-inspected. All five pages were visually inspected in the earlier same-day acquisition. The incorporated April order and later compliance submissions were not fully inspected.",
+          "finding": "The order approves Route 3A, incorporates the April 9 order and directs a map/CPCN process. Approval is not evidence of completed construction or customer service.",
+          "captured_sha256": "5c23200353d195cc79d4101681c7b0a7de9d8f60c17c726dac4c0a84db6d50ec",
+          "visually_checked_pages": [
+            4
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/8dj_01%21.PDF",
+          "relation": "Subsequent order in the same exact case; separate from both the June decision and the original general-information profile URL.",
+          "locator": "PUR-2025-00056, Order Denying Suspension, July 20, 2026; both pages and page 2 footnote 2; document 260730107",
+          "access": "Official PDF text checked September 22; retained original hash verified and both pages rendered and visually re-inspected. No Supreme Court order or appeal merits review.",
+          "finding": "The SCC declines suspension and dismisses the matter; footnote 2 denies reopening the record. This does not cancel the June transmission approval or establish an appellate outcome.",
+          "captured_sha256": "0bee8f19fa878f11aff25982156fb74097dc9a3ad675eb913c9f978803640054",
+          "visually_checked_pages": [
+            1,
+            2
+          ]
+        },
+        {
+          "source_id": "source-virginia-scc-golden-mars-2026",
+          "profile_url": "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "url": "https://www.scc.virginia.gov/docketsearch#caseDetails/146021",
+          "relation": "Exact public docket metadata for PUR-2025-00056, matter 146021; not an inferred status from the general source profile.",
+          "locator": "Official case-detail fields: Case_Number, Status, Appealed, Disposition, Final_Order_Date and Closed_Date",
+          "access": "Public read-only case API rechecked September 22 using the site's exact matter filter; selected parsed fields match the retained same-day response. The text browser did not retrieve the API. No appeal-document or Supreme Court docket inspection.",
+          "finding": "The response lists Under Appeal, Appealed Yes, disposition Approved, final order June 29 and closed date July 20, 2026. These are docket fields, not proof of an appellate ruling, a stay's absence or unconditional construction authority.",
+          "captured_sha256": "c550b8590b92c089246b0743813267f6addc967ac6f81fb85118bd338c4b1ca9"
+        },
+        {
+          "source_id": "source-virginia-scc-large-load-gs5-2025",
+          "url": "https://www.scc.virginia.gov/about-the-scc/newsreleases/release/scc-issues-order-on-dev-biennial-review-2025/scc-rules-in-dev-biennial-review-case.html",
+          "locator": "SCC announcement dated November 25, 2025; opening paragraphs and PUR-2025-00058 reference",
+          "access": "Official announcement text rechecked September 22; underlying full rate order and later tariff amendments not inspected.",
+          "finding": "The announcement describes an approved GS-5 class with a January 1, 2027 effective date. It is not a customer-specific eligibility or billing determination."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-06",
+      "route": "/reference/state-of-future-systems/synthesis-land-permits-construction-operation/",
+      "source_record_sha256": "1615288737473bc4c146efc4fd74c0d5d08e71e6dd9577b614b2a919bed66906",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
+      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+      "replacements": [
+        {
+          "section_heading": "Space infrastructure carries several authorities at once",
+          "paragraph_index": 0,
+          "replacement_text": "The Space Coast case contains environmental decisions for LC-39A and SLC-40 with defined scopes; they do not supply every operator licence, safety determination, construction acceptance or mission authorization. The separate Shuttle Landing Facility renewal question remained unresolved in the inherited August 15 bounded review. The retained September 15 check subsequently located LRSO 18-018 Revision 2 and Order A-1, recording issue on January 8, 2026, effect from January 15, 2026 and expiry on January 15, 2031. Those dates describe the located instrument, not the date FTFN first inspected it.",
+          "original_text": "The Space Coast case contains final environmental decisions for LC-39A and SLC-40. Those records address specific environmental review scopes. They do not supply every vehicle-operator license, safety determination, construction acceptance or mission authorization. The separate Shuttle Landing Facility license question remained unresolved in the inherited August 15 bounded review.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "Space infrastructure carries several authorities at once",
+          "paragraph_index": 1,
+          "replacement_text": "The later instrument resolves the missing renewal artifact in the editorial account; the stale public display does not override it or prove lapse. A site licence still does not establish vehicle- or operator-specific authority, required operating agreements, accepted assets or a completed mission. A spaceport, launch site, vehicle operator and mission remain distinct entities. Their records can be linked when the instruments establish the relationship, not simply because they share a geographic label.",
+          "original_text": "That unresolved public display must not be interpreted as proof of license renewal or lapse. It also cannot be answered by observing launches elsewhere in the region. A spaceport, launch site, vehicle operator and individual mission are different entities. Their records can be linked when the instruments identify the relationship, not simply because they share a geographic label.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "Make the next handoff inspectable",
+          "paragraph_index": 0,
+          "replacement_text": "For Toronto, the next decisive instruments concern enactment and condition satisfaction before later delivery claims. For the Shuttle Landing Facility, the renewal artifact has been located; the recorded October 9 follow-up concerns later amendments or disposition. Operator- and vehicle-specific authority, required agreements, infrastructure acceptance and actual mission evidence remain separate next documents. For Amtrak, asset-level acceptance and recurring service measurements would extend the construction account. Each claim should retain the responsible authority and the exact scope of its evidence.",
+          "original_text": "For Toronto, the next decisive instruments concern enactment and condition satisfaction before later delivery claims. For the Space Coast, operator-specific authority and the formal license disposition remain separate from construction and mission evidence. For Amtrak, asset-level acceptance and recurring service measurements would extend the construction account. Each case should retain the responsible authority and exact scope of the missing record.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "Make the next handoff inspectable",
+          "paragraph_index": 1,
+          "replacement_text": "The resulting project narrative can recognize progress while explaining why operation remains a larger claim. It should preserve exceptions such as partial acceptance, an unfinished component or conditions attached to permission. The original September 1 evidence baseline remains inspectable; this dated licence clarification carries forward only the retained September 15 finding and does not establish a later operating result or independent legal acceptance.",
+          "original_text": "The resulting project narrative can recognize real progress while explaining why operation remains a larger claim. It should also preserve exceptions: partial acceptance, an unfinished component or a condition attached to permission can be more decision-relevant than a single completion date. This draft describes the September 1 evidence position and makes no later legal or operating determination.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+          "matched_source_ids": [
+            "source-faa-shuttle-landing-facility-license"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "200-MONOGRAPH-06",
+      "route": "/reference/constraint-monographs/land-permits-construction-operation/",
+      "source_record_sha256": "acf274556614b58e9686f6a9be453e9a67bbbdbaf45ccafe2e28ec3221ea930e",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
+      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+      "replacements": [
+        {
+          "section_heading": "Space infrastructure carries several authorities at once",
+          "paragraph_index": 0,
+          "replacement_text": "The Space Coast case contains environmental decisions for LC-39A and SLC-40 with defined scopes; they do not supply every operator licence, safety determination, construction acceptance or mission authorization. The separate Shuttle Landing Facility renewal question remained unresolved in the inherited August 15 bounded review. The retained September 15 check subsequently located LRSO 18-018 Revision 2 and Order A-1, recording issue on January 8, 2026, effect from January 15, 2026 and expiry on January 15, 2031. Those dates describe the located instrument, not the date FTFN first inspected it.",
+          "original_text": "The Space Coast case contains final environmental decisions for LC-39A and SLC-40. Those records address specific environmental review scopes. They do not supply every vehicle-operator license, safety determination, construction acceptance or mission authorization. The separate Shuttle Landing Facility license question remained unresolved in the inherited August 15 bounded review.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "Space infrastructure carries several authorities at once",
+          "paragraph_index": 1,
+          "replacement_text": "The later instrument resolves the missing renewal artifact in the editorial account; the stale public display does not override it or prove lapse. A site licence still does not establish vehicle- or operator-specific authority, required operating agreements, accepted assets or a completed mission. A spaceport, launch site, vehicle operator and mission remain distinct entities. Their records can be linked when the instruments establish the relationship, not simply because they share a geographic label.",
+          "original_text": "That unresolved public display must not be interpreted as proof of license renewal or lapse. It also cannot be answered by observing launches elsewhere in the region. A spaceport, launch site, vehicle operator and individual mission are different entities. Their records can be linked when the instruments identify the relationship, not simply because they share a geographic label.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "Make the next handoff inspectable",
+          "paragraph_index": 0,
+          "replacement_text": "For Toronto, the next decisive instruments concern enactment and condition satisfaction before later delivery claims. For the Shuttle Landing Facility, the renewal artifact has been located; the recorded October 9 follow-up concerns later amendments or disposition. Operator- and vehicle-specific authority, required agreements, infrastructure acceptance and actual mission evidence remain separate next documents. For Amtrak, asset-level acceptance and recurring service measurements would extend the construction account. Each claim should retain the responsible authority and the exact scope of its evidence.",
+          "original_text": "For Toronto, the next decisive instruments concern enactment and condition satisfaction before later delivery claims. For the Space Coast, operator-specific authority and the formal license disposition remain separate from construction and mission evidence. For Amtrak, asset-level acceptance and recurring service measurements would extend the construction account. Each case should retain the responsible authority and exact scope of the missing record.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "Make the next handoff inspectable",
+          "paragraph_index": 1,
+          "replacement_text": "The resulting project narrative can recognize progress while explaining why operation remains a larger claim. It should preserve exceptions such as partial acceptance, an unfinished component or conditions attached to permission. The original September 1 evidence baseline remains inspectable; this dated licence clarification carries forward only the retained September 15 finding and does not establish a later operating result or independent legal acceptance.",
+          "original_text": "The resulting project narrative can recognize real progress while explaining why operation remains a larger claim. It should also preserve exceptions: partial acceptance, an unfinished component or a condition attached to permission can be more decision-relevant than a single completion date. This draft describes the September 1 evidence position and makes no later legal or operating determination.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+          "matched_source_ids": [
+            "source-faa-shuttle-landing-facility-license"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-08",
+      "route": "/reference/state-of-future-systems/synthesis-climate-infrastructure-reliability/",
+      "source_record_sha256": "76d0af628095047fd694eddcb8b3efb53795a4b0a73df3945e0f8d5806ae4606",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change. The current battery name is now corrected to Victorian Big Battery; this naming change is not a new battery source inspection. The preceding review and its renewal clarification remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "Launch activity illustrates another denominator problem",
+          "paragraph_index": 1,
+          "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
+          "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "System composition is not an asset reliability measure",
+          "paragraph_index": 0,
+          "original_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victoria Big Battery's maintenance condition.",
+          "replacement_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victorian Big Battery's maintenance condition.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "Commissioning, registration and later service need separate records",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "replacement_text": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+          "matched_source_ids": [
+            "source-faa-shuttle-landing-facility-license"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "previous_review": {
+        "record_id": "203-SYNTHESIS-08",
+        "route": "/reference/state-of-future-systems/synthesis-climate-infrastructure-reliability/",
+        "source_record_sha256": "76d0af628095047fd694eddcb8b3efb53795a4b0a73df3945e0f8d5806ae4606",
+        "review_date": "2026-09-23",
+        "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
+        "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+        "replacements": [
+          {
+            "section_heading": "Launch activity illustrates another denominator problem",
+            "paragraph_index": 1,
+            "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
+            "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
+            "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+          }
+        ],
+        "source_checks": [],
+        "retained_contexts": [
+          {
+            "collection": "evidence_receipts",
+            "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+            "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+            "route": "/review/evidence-cycle/space-coast-slf-licence/",
+            "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+            "matched_source_ids": [
+              "source-faa-shuttle-landing-facility-license"
+            ],
+            "additional_artifact_urls": []
+          }
+        ],
+        "independent_article_review": false,
+        "approval_receipt_id": null
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+        }
+      ]
+    },
+    {
+      "record_id": "200-MONOGRAPH-08",
+      "route": "/reference/constraint-monographs/climate-infrastructure-reliability/",
+      "source_record_sha256": "724dfa15362b4aa800558ddc59d5f9a35c7ee25b33392f891598a80ed3f2c8fd",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change. The current battery name is now corrected to Victorian Big Battery; this naming change is not a new battery source inspection. The preceding review and its renewal clarification remain preserved.",
+      "replacements": [
+        {
+          "section_heading": "Launch activity illustrates another denominator problem",
+          "paragraph_index": 1,
+          "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
+          "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
+          "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+        },
+        {
+          "section_heading": "System composition is not an asset reliability measure",
+          "paragraph_index": 0,
+          "original_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victoria Big Battery's maintenance condition.",
+          "replacement_text": "AEMO reports renewable generation at 46.5% of National Electricity Market supply in the first quarter of 2026. It also reports that South Australia's renewable-and-storage contribution reached 98.8% during one half-hour. These are meaningful system and interval observations. They do not state Hornsdale's annual availability, Dalrymple's individual dispatch or the Victorian Big Battery's maintenance condition.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "Commissioning, registration and later service need separate records",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "replacement_text": "The Victorian Big Battery dossier separates Energy Safe Victoria's fire-investigation material from AEMO registration and operational information. Its documented questions concern commissioning and isolation, system-protection participation and emergency reserve controls. The inherited account leaves corrective-action closure and a compatible annual operating series unresolved. It does not turn the chronology into a general safety or reliability verdict.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+          "matched_source_ids": [
+            "source-faa-shuttle-landing-facility-license"
+          ],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "previous_review": {
+        "record_id": "200-MONOGRAPH-08",
+        "route": "/reference/constraint-monographs/climate-infrastructure-reliability/",
+        "source_record_sha256": "724dfa15362b4aa800558ddc59d5f9a35c7ee25b33392f891598a80ed3f2c8fd",
+        "review_date": "2026-09-23",
+        "update_id": "update-2026-09-23-annual-space-coast-paired-readings",
+        "summary": "Reuses the existing renewal finding, not a fresh FAA search or present-authority certification. Original readers and dates, the August receipt, site/operator/vehicle/mission distinctions and October follow-up remain. Other numerical, battery, Toronto and Amtrak claims are not cleared by this scoped change.",
+        "replacements": [
+          {
+            "section_heading": "Launch activity illustrates another denominator problem",
+            "paragraph_index": 1,
+            "replacement_text": "The Space Coast environmental and licensing records concern particular sites and authorizations. The retained September 15 check located the Shuttle Landing Facility's formal site-licence renewal; launches elsewhere in the region neither supplied that instrument nor establish its operator-, vehicle- or mission-specific permissions. The October 9 follow-up remains a check for later amendments or disposition. Site authority, actual use and safety outcomes have different scopes and cannot be combined into one reliability trend.",
+            "original_text": "The Space Coast environmental and licensing records likewise concern particular sites and authorizations. A launch count elsewhere in the region cannot resolve an open Shuttle Landing Facility license question. This example belongs in a resilience chapter because it exposes the temptation to combine activity, permission and safety into one trend when their populations differ.",
+            "reason": "Carry the retained September 15 site-renewal finding into the paired current reading while preserving earlier text and distinct permission/operating boundaries."
+          }
+        ],
+        "source_checks": [],
+        "retained_contexts": [
+          {
+            "collection": "evidence_receipts",
+            "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+            "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+            "route": "/review/evidence-cycle/space-coast-slf-licence/",
+            "relation": "Exact Shuttle Landing Facility source ID shared with the retained September 15 decision. This applies an existing finding to the annual reader; it is not a fresh licence check, an independent article review or a new stage admission.",
+            "matched_source_ids": [
+              "source-faa-shuttle-landing-facility-license"
+            ],
+            "additional_artifact_urls": []
+          }
+        ],
+        "independent_article_review": false,
+        "approval_receipt_id": null
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+        }
+      ]
+    },
+    {
+      "record_id": "203-APPENDIX-01",
+      "route": "/reference/state-of-future-systems/appendix-methods/",
+      "source_record_sha256": "97f1b5c3f210fd837c9119074d49d9c6d45855f9a5fed76e570711ece26d8c10",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-citation-provenance-followthrough",
+      "summary": "Later editorial support from the separately recorded September 23 primary-page acquisition. The additional source was not in this reader's original source list. Original dates, source lists and article bytes remain inspectable; unrelated claims and independent article acceptance remain open.",
+      "replacements": [
+        {
+          "section_heading": "Admit a measure only within its definition",
+          "paragraph_index": 0,
+          "original_text": "A numerical observation needs its unit, denominator, geography, period, method and revision lineage. An EIA nameplate-capacity record cannot establish availability; a queue entry cannot establish a completed plant. NERC planning submissions and LBNL scenarios have their own forward-looking meanings. These inherited examples show why the label on a quantity matters as much as the quantity itself. Missing outcome fields remain missing. A calculated value should be added only when the inputs describe compatible objects and the calculation preserves their limitations.",
+          "replacement_text": "A numerical observation needs its unit, denominator, geography, period, method and revision lineage. An EIA nameplate-capacity record cannot establish availability; a queue entry cannot establish a completed plant. NERC planning submissions and the scenario range through 2028 in LBNL's 2024 United States Data Center Energy Usage Report have their own forward-looking meanings. The latter study separately estimates historical electricity use and is distinct from LBNL's queue report. These examples show why the label on a quantity matters as much as the quantity itself. Missing outcome fields remain missing. A calculated value should be added only when the inputs describe compatible objects and the calculation preserves their limitations.",
+          "reason": "Name and cite the actual scenario study without conflating it with the separate LBNL queue report."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-161-lbnl-data-center-energy-usage-2024",
+          "url": "https://seta.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report",
+          "additional_source": true,
+          "checked_date": "2026-09-23",
+          "source_profile_sha256": "0a31c39d4b27d17075a368fb20ba2ff7f91b569594d3447cc3019c65c8edf7a6",
+          "relation": "Explicitly additional editorial support, not part of the original September 10 reader source list. The profile hash identifies retained local profile bytes, not a remote-page capture. Original profile check dates and the September 1 reader baseline remain unchanged.",
+          "locator": "Official 2024 United States Data Center Energy Usage Report landing page; publication date December 19, 2024, DOI 10.71468/P1WC7Q, abstract separating historical estimates from the scenario range through 2028.",
+          "finding": "The abstract distinguishes historical U.S. data-center electricity-use estimates from forward-looking scenarios through 2028. This is the scenario study, not the separate queue report. No scenario quantity, local allocation, forecast or measured project outcome is verified here.",
+          "access": "The September 23 acquisition read the returned primary HTML text. The full linked report, assumptions, numerical tables and underlying inputs were not inspected; no raw remote-file capture hash or independent numerical reproduction is claimed."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-APPENDIX-02",
+      "route": "/reference/state-of-future-systems/appendix-source-catalogue/",
+      "source_record_sha256": "a2b5ff9b2ec0f5885cfb51d68ef9e6e166f61cd0613773692bae42524cec9818",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-citation-provenance-followthrough",
+      "summary": "Local provenance correction, not a new external source inspection. Exact source-ID and original-body relationships across all 58 annual drafts and twelve synthesis/essay pairs support this wording; they do not independently verify the cited claims.",
+      "replacements": [
+        {
+          "section_heading": "Make the route from chapter to evidence visible",
+          "paragraph_index": 0,
+          "original_text": "Each reader asset carries source IDs drawn from its original Phase 203 record. The focused list identifies the material most relevant to its argument, while the underlying registry retains the wider inherited collection. Method pages and data exports provide additional context for interpreting these links. Readers should be able to determine whether a passage is a source-bound statement, an editorial explanation or a proposal for future research. This prevents a long bibliography from appearing to support claims that no individual source actually establishes.",
+          "replacement_text": "Each dated reader draft carries an explicit source list, but that list is not always limited to the original Phase 203 report contract. The twelve annual syntheses reuse the corresponding expanded monograph reader's text and source list; those lists include sources beyond the preserved report contracts. The remaining forty-six annual reader lists contain no source IDs outside their respective original report contracts in the source-ID comparison. These relationships describe editorial lineage, not proof that every cited artifact supports every claim. Preserve the historical report contracts, original reader drafts and any later dated clarifications separately. Method pages and data exports let readers inspect the distinction between source-bound statements, editorial explanation and proposed research; bibliography length alone is not support.",
+          "reason": "Correct the source-list lineage description using exact record-ID comparisons across all 58 annual drafts and twelve synthesis/essay pairs."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "local_provenance_context": {
+        "checked_date": "2026-09-23",
+        "scope": "Exact local record-ID comparison, not independent verification of external claims.",
+        "report_records": 58,
+        "expanded_pairs": 12,
+        "remaining_subset_records": 46,
+        "artifacts": [
+          {
+            "route": "/data/phase-203-state-of-future-systems-2026.json",
+            "sha256": "5623c3d52263ab65628edc38d987dc33a31d19909312be1a282dd56c027d9021",
+            "label": "Original Phase 203 report contracts"
+          },
+          {
+            "route": "/data/phase-204-reader-completion.json",
+            "sha256": "38ffd8b3e44dc671dd6590f80658240b6e533c645e5cf5fc3e84f345009d9125",
+            "label": "Original Phase 204 reader drafts and paired essays"
+          }
+        ]
+      }
+    },
+    {
+      "record_id": "203-TOPIC-17",
+      "route": "/reference/state-of-future-systems/topic-water/",
+      "source_record_sha256": "fb9bf7fb0f299fabbe1da05333aefb715efd8cc2fe14d8fd90d990abb61d3250",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-citation-provenance-followthrough",
+      "summary": "Later editorial support from the separately recorded September 23 primary-page acquisition. The additional source was not in this reader's original source list. Original dates, source lists and article bytes remain inspectable; unrelated claims and independent article acceptance remain open.",
+      "replacements": [
+        {
+          "section_heading": "Use operating comparators without transferring their results",
+          "paragraph_index": 0,
+          "original_text": "The inherited Chandler material provides an operating municipal and industrial comparison. It can help readers understand how reclaimed-water infrastructure and reporting may be organized. It cannot establish Phoenix project-specific performance, because provider systems, customers and measurement boundaries differ. A defensible comparison should identify what is actually shared: perhaps a reporting concept or a treatment function, rather than an outcome value. The report should retain operator attribution and avoid treating a successful arrangement in one place as proof that another planned system has achieved the same result.",
+          "replacement_text": "The City of Chandler describes a reclaimed-water network serving municipal and other users, with reuse that includes industrial use and aquifer recharge. Its public system account provides a comparison of how treatment and distribution are organized, not a customer-level industrial operating record. It does not establish Phoenix project-specific performance: providers, customers and measurement boundaries differ. A defensible comparison identifies a shared treatment or reporting function without transferring one system's stated outcomes to another. Metered industrial flows, reliability and facility balances still require their own records.",
+          "reason": "Add the exact municipal source and limit the comparison to attributed system organization, retaining provider and measurement boundaries."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-chandler-reclaimed-water-system",
+          "url": "https://www.chandleraz.gov/residents/water/water-conservation/reclaimed-water",
+          "additional_source": true,
+          "checked_date": "2026-09-23",
+          "source_profile_sha256": "b21de1128514758b92beb9f446b31234794e249cd2d7c5657c280ce57912cf8a",
+          "relation": "Explicitly additional editorial support, not part of the original September 10 reader source list. The profile hash identifies retained local profile bytes, not a remote-page capture. Original profile check dates and the September 1 reader baseline remain unchanged.",
+          "locator": "City of Chandler reclaimed-water system page; municipal infrastructure and end-use description, separately acquired September 23.",
+          "finding": "The city describes reclamation facilities and a distribution network serving multiple municipal and non-residential users, with industrial reuse and aquifer recharge. This supports an attributed system-organization comparison, not customer-level industrial flows, a dated operating series, plant availability, current compliance or accepted Phoenix infrastructure.",
+          "access": "The September 23 acquisition read the returned primary HTML text. The page is undated; no linked code, permit, customer ledger, measurement method, video or independent inspection was reviewed. No numerical outcome or raw remote capture hash is added."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-TOPIC-06",
+      "route": "/reference/state-of-future-systems/topic-climate/",
+      "source_record_sha256": "95218f6e2a8a7073ade45278e22a588b723308fb94c1ffa878901aa695a57ff5",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-citation-provenance-followthrough",
+      "summary": "Later editorial support from the separately recorded September 23 primary-page acquisition. The additional source was not in this reader's original source list. Original dates, source lists and article bytes remain inspectable; unrelated claims and independent article acceptance remain open.",
+      "replacements": [
+        {
+          "section_heading": "Keep observation, forecast and scenario distinct",
+          "paragraph_index": 0,
+          "original_text": "NOAA's global reporting describes broad conditions over stated periods, while ENSO discussions provide probabilistic outlooks. Historical station observations answer a more local question, but station moves, missing values and quality flags can affect interpretation. A forecast issued on one date is not an observation of what later happened. A useful account should identify which kind of product it uses, when the information was available and the period it describes. This makes it possible to evaluate the decision without granting its authors knowledge they did not have at the time.",
+          "replacement_text": "NOAA NCEI's January 14, 2026 summary of the 2025 Global Climate Report describes retrospective global conditions for calendar 2025; its December section has a separate monthly scope. ENSO discussions, by contrast, provide probabilistic outlooks. Historical station observations answer a more local question, but station moves, missing values and quality flags can affect interpretation. A forecast issued on one date is not an observation of what later happened. A useful account should identify which kind of product it uses, when the information was available and the period it describes. This makes it possible to evaluate the decision without granting its authors knowledge they did not have at the time.",
+          "reason": "Name the actual global product and its reporting period without shifting the original baseline to a later monthly release."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-noaa-2025-global-climate-report",
+          "url": "https://www.ncei.noaa.gov/news/global-climate-202513",
+          "additional_source": true,
+          "checked_date": "2026-09-23",
+          "source_profile_sha256": "dd8c9f18902e20b541696978d494fdaf7238849a6e453093262c1cd487b1c3bc",
+          "relation": "Explicitly additional editorial support, not part of the original September 10 reader source list. The profile hash identifies retained local profile bytes, not a remote-page capture. Original profile check dates and the September 1 reader baseline remain unchanged.",
+          "locator": "NOAA NCEI news summary for the 2025 Global Climate Report, published January 14, 2026; annual 2025 sections distinguished from the December section.",
+          "finding": "The named summary is retrospective global reporting for calendar 2025, with a distinct December monthly section. It is not an ENSO forecast or a local station, infrastructure-loss or avoided-harm estimate. No rank, anomaly value, numerical attribution or later 2026 monthly product is introduced.",
+          "access": "The September 23 acquisition read the returned primary HTML text. The linked full report, underlying datasets and visual figures were not inspected or independently reproduced. This supports the exact product reference only; no raw remote capture hash is claimed."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-TOPIC-16",
+      "route": "/reference/state-of-future-systems/topic-space/",
+      "source_record_sha256": "e60fc3bb33c8adbb6c22f3f3f771cdb2e4997241a76572e775004d5d54900574",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The Space chapter now links the retained site-renewal instrument and the corrected Space Coast case. This adds the already-recorded September 15 finding, not a fresh FAA check or operator-, vehicle- or mission-specific authorization.",
+      "replacements": [
+        {
+          "section_heading": "A launch site has several independent permissions",
+          "paragraph_index": 0,
+          "original_text": "The Space Coast case demonstrates why site licensing, environmental review, operator authority and mission activity remain separate. An environmental decision can support later action without issuing a vehicle operator license. Construction acceptance does not demonstrate mission utilization. An old displayed license date also needs a formal disposition before the report concludes that authority was renewed or ended. Keeping the issuer, instrument and scope visible makes the account useful to local readers who need to understand the difference between a planning milestone and an actual change in operations.",
+          "replacement_text": "The Space Coast case demonstrates why site licensing, environmental review, operator authority and mission activity remain separate. An environmental decision does not itself issue a vehicle operator licence, and construction acceptance does not demonstrate mission use. An old displayed licence date alone cannot establish renewal or lapse. For the Shuttle Landing Facility, the retained September 15 check located LRSO 18-018 Revision 2 and Order A-1, issued January 8, 2026, effective January 15, 2026 and expiring January 15, 2031. The linked instrument and case resolve that earlier missing-document question, not operator- or vehicle-specific permission, required agreements or actual mission performance.",
+          "reason": "Supply the specifically identified retained renewal context while preserving the general old-date rule and the separate operating-evidence boundaries."
+        }
+      ],
+      "source_checks": [],
+      "retained_contexts": [
+        {
+          "collection": "evidence_receipts",
+          "id": "receipt-60-slf-2026-09-15-renewal-discovered",
+          "receipt_payload_sha256": "31a421cdc7705d44486ab989eb22eae37528260d9793b6547cf027993270fab4",
+          "route": "/review/evidence-cycle/space-coast-slf-licence/",
+          "relation": "This additional context concerns the chapter's named Shuttle Landing Facility example; the FAA source is not part of the chapter's original NASA/NOAA source list. It reuses the September 15 receipt without attributing its finding to those unrelated sources, resetting the check date or supplying independent acceptance.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": [],
+          "include_formal_artifact": true
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "related_readings": [
+        {
+          "record_id": "203-CASE-04",
+          "route": "/reference/state-of-future-systems/case-space-coast-authority-to-mission/",
+          "label": "Space Coast case — retained site-renewal finding",
+          "relation": "The current case distinguishes the located site instrument from operator, vehicle, mission and recurring-use evidence."
+        }
+      ]
+    },
+    {
+      "record_id": "203-SYNTHESIS-04",
+      "route": "/reference/state-of-future-systems/synthesis-standards-procurement-implementation/",
+      "source_record_sha256": "7fd558afaf0c28fa8fc6c4dfbd9b8b372a6e6c0853e39b463b65eae816b0d5e2",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The existing adjustment-through-April qualification now has the precise Reclamation announcement locator from the retained September 22 HTML check. The paired text is unchanged; neither the check nor this notice supplies independent acceptance.",
+      "replacements": [],
+      "source_checks": [
+        {
+          "source_id": "source-161-usbr-colorado-river-2027-decision",
+          "url": "https://www.usbr.gov/newsroom/news-release/5392",
+          "source_profile_sha256": "dc54a7b42943f45035787dd49e87abdd5cc85e008e67609f3140f9855782e40c",
+          "retained_checked_date": "2026-09-22",
+          "locator": "August 21, 2026 announcement: the paragraph immediately after the August 2026 24-Month Study introduction",
+          "finding": "The announcement says releases will be adjusted through April, when the water-year 2027 volume is determined. This supplies the exact locator for the existing month-specific qualification; it does not reverse the original wording.",
+          "access": "Reuses the recorded September 22 official HTML inspection, not a new retrieval. The underlying guidelines, Record of Decision, study and later revisions were not inspected in that check. No municipal allocation, facility delivery or operating-water outcome follows."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "200-MONOGRAPH-04",
+      "route": "/reference/constraint-monographs/standards-procurement-implementation/",
+      "source_record_sha256": "4eb119834b986d2905caf6c5730293fdadcd0db2130e9576dd29a4a9e17d2e06",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The existing adjustment-through-April qualification now has the precise Reclamation announcement locator from the retained September 22 HTML check. The paired text is unchanged; neither the check nor this notice supplies independent acceptance.",
+      "replacements": [],
+      "source_checks": [
+        {
+          "source_id": "source-161-usbr-colorado-river-2027-decision",
+          "url": "https://www.usbr.gov/newsroom/news-release/5392",
+          "source_profile_sha256": "dc54a7b42943f45035787dd49e87abdd5cc85e008e67609f3140f9855782e40c",
+          "retained_checked_date": "2026-09-22",
+          "locator": "August 21, 2026 announcement: the paragraph immediately after the August 2026 24-Month Study introduction",
+          "finding": "The announcement says releases will be adjusted through April, when the water-year 2027 volume is determined. This supplies the exact locator for the existing month-specific qualification; it does not reverse the original wording.",
+          "access": "Reuses the recorded September 22 official HTML inspection, not a new retrieval. The underlying guidelines, Record of Decision, study and later revisions were not inspected in that check. No municipal allocation, facility delivery or operating-water outcome follows."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-SYNTHESIS-11",
+      "route": "/reference/state-of-future-systems/synthesis-logistics-supply-recurring-output/",
+      "source_record_sha256": "985c45ad40db2dffa615c837e8dc5c5e756492e7bab54eaa6248d188a905fc70",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The financing paragraph now distinguishes a signed award/loan agreement from payment and production; the aircraft paragraph separates receiving-unit arrival from formal contractual acceptance. Two September 23 official HTML checks and the separate retained acceptance-ledger gap remain bounded, not admissions.",
+      "replacements": [
+        {
+          "section_heading": "A capacity target does not establish an integrated chain",
+          "paragraph_index": 0,
+          "original_text": "Commerce's USA Rare Earth agreement describes proposed support of up to $277 million in incentives and up to $1.3 billion in lending. The associated system targets 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets. Those are separate product-stage targets, not two independent quantities that should automatically be added into one output total.",
+          "replacement_text": "Commerce's June 3, 2026 announcement records a signed final incentive award of up to $277 million and a loan agreement of up to $1.3 billion. Its 10,000-ton annual targets for metals/alloys and magnets describe separate planned product stages, not additive delivered output. Signing does not establish payment, completed facilities or accepted production.",
+          "reason": "Distinguish a finalized financing instrument from proposed capacity and actual disbursement or operating delivery."
+        },
+        {
+          "section_heading": "Receiving-party evidence strengthens a delivery claim",
+          "paragraph_index": 0,
+          "original_text": "The Advanced Manufacturing topic includes a named F-15EX receipt by a receiving wing, alongside other production and delivery records. A receiver-linked record is useful because it identifies where an asset entered a real operating organization. It remains narrower than a claim about fleet readiness, mission availability or sustained production cadence.",
+          "replacement_text": "The Advanced Manufacturing topic includes a named F-15EX arrival at a receiving wing, alongside other production and delivery records. The wing's video-page description identifies EX16 and a December 11, 2025 receipt, while the page is dated February 17, 2026. This is receiving-unit arrival evidence, not a formal contractual acceptance date, fleet-readiness finding or complete production series. The separately retained September 22 failed-access finding concerns another Air Force production page; it neither verifies nor contradicts this wing account. An identity-linked acceptance ledger and compatible repeated observations are still required.",
+          "reason": "Preserve the receiving-unit account and distinct event/publication dates without converting arrival or a different source access failure into formal acceptance or a recurring series."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-161-nist-usa-rare-earth-june-2026",
+          "url": "https://www.nist.gov/news-events/news/2026/06/department-commerces-chips-program-finalizes-definitive-agreement-usa-rare",
+          "source_profile_sha256": "7d9562b9b4cbe279475dbbbae3955aef8a4eeccf19f10c81781f6761a6169d6a",
+          "primary_checked_date": "2026-09-23",
+          "locator": "June 3, 2026 NIST announcement: opening award/loan paragraph and final production-target paragraph",
+          "finding": "The announcement records signed financing instruments; the capacities are planned product-stage targets, not observed production.",
+          "access": "Official HTML inspected September 23. The linked PDF, executed agreements, disbursement ledger, milestone conditions and facility acceptance records were not inspected. Local profile hash is not a remote-page capture."
+        },
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "source_profile_sha256": "3d539092bdbfcec4fbdb1057404cd85ee62f764460ae46b007d7ee72fa39ebda",
+          "primary_checked_date": "2026-09-23",
+          "locator": "EX 16 Comes to Portland: date and description beside the embedded video",
+          "finding": "The description reports EX16 reaching the wing on December 11, 2025; its displayed publication date is February 17, 2026. These are different dates, and neither is identified as contractual acceptance.",
+          "access": "Official HTML description and visible metadata inspected September 23. The embedded video was not watched, downloaded or transcribed; no acceptance or complete production ledger was acquired. Local profile hash is not a remote-page capture."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-F15EX-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "route": "/method/editorial-review/#211-F15EX-ACCESS-2026-09-22",
+          "relation": "This separate September 22 access failure concerns the Air Force production-resumption page, not the receiving-wing source cited here. It is retained to explain the unresolved acceptance-ledger requirement; it does not claim that the wing page failed or that no aircraft were accepted.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "related_readings": [
+        {
+          "record_id": "203-CASE-16",
+          "route": "/reference/state-of-future-systems/case-f15ex-production-delivery/",
+          "label": "F-15EX case — retained acceptance-ledger and access limits",
+          "relation": "The annual case preserves the separate production-source access finding without admitting an aircraft-acceptance series."
+        }
+      ]
+    },
+    {
+      "record_id": "200-MONOGRAPH-11",
+      "route": "/reference/constraint-monographs/logistics-supply-recurring-output/",
+      "source_record_sha256": "4186df29a50f5dad93585544bf8157c00caf62eed04d38969ee6f5528ae1109d",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-locators-acceptance-boundaries",
+      "summary": "The financing paragraph now distinguishes a signed award/loan agreement from payment and production; the aircraft paragraph separates receiving-unit arrival from formal contractual acceptance. Two September 23 official HTML checks and the separate retained acceptance-ledger gap remain bounded, not admissions.",
+      "replacements": [
+        {
+          "section_heading": "A capacity target does not establish an integrated chain",
+          "paragraph_index": 0,
+          "original_text": "Commerce's USA Rare Earth agreement describes proposed support of up to $277 million in incentives and up to $1.3 billion in lending. The associated system targets 10,000 tons annually of rare-earth metals and alloys and 10,000 tons annually of NdFeB magnets. Those are separate product-stage targets, not two independent quantities that should automatically be added into one output total.",
+          "replacement_text": "Commerce's June 3, 2026 announcement records a signed final incentive award of up to $277 million and a loan agreement of up to $1.3 billion. Its 10,000-ton annual targets for metals/alloys and magnets describe separate planned product stages, not additive delivered output. Signing does not establish payment, completed facilities or accepted production.",
+          "reason": "Distinguish a finalized financing instrument from proposed capacity and actual disbursement or operating delivery."
+        },
+        {
+          "section_heading": "Receiving-party evidence strengthens a delivery claim",
+          "paragraph_index": 0,
+          "original_text": "The Advanced Manufacturing topic includes a named F-15EX receipt by a receiving wing, alongside other production and delivery records. A receiver-linked record is useful because it identifies where an asset entered a real operating organization. It remains narrower than a claim about fleet readiness, mission availability or sustained production cadence.",
+          "replacement_text": "The Advanced Manufacturing topic includes a named F-15EX arrival at a receiving wing, alongside other production and delivery records. The wing's video-page description identifies EX16 and a December 11, 2025 receipt, while the page is dated February 17, 2026. This is receiving-unit arrival evidence, not a formal contractual acceptance date, fleet-readiness finding or complete production series. The separately retained September 22 failed-access finding concerns another Air Force production page; it neither verifies nor contradicts this wing account. An identity-linked acceptance ledger and compatible repeated observations are still required.",
+          "reason": "Preserve the receiving-unit account and distinct event/publication dates without converting arrival or a different source access failure into formal acceptance or a recurring series."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-161-nist-usa-rare-earth-june-2026",
+          "url": "https://www.nist.gov/news-events/news/2026/06/department-commerces-chips-program-finalizes-definitive-agreement-usa-rare",
+          "source_profile_sha256": "7d9562b9b4cbe279475dbbbae3955aef8a4eeccf19f10c81781f6761a6169d6a",
+          "primary_checked_date": "2026-09-23",
+          "locator": "June 3, 2026 NIST announcement: opening award/loan paragraph and final production-target paragraph",
+          "finding": "The announcement records signed financing instruments; the capacities are planned product-stage targets, not observed production.",
+          "access": "Official HTML inspected September 23. The linked PDF, executed agreements, disbursement ledger, milestone conditions and facility acceptance records were not inspected. Local profile hash is not a remote-page capture."
+        },
+        {
+          "source_id": "source-56k-f15ex-ex16-portland-receipt-2026",
+          "url": "https://www.142wg.ang.af.mil/News/Video/dvpTag/F-15EX/",
+          "source_profile_sha256": "3d539092bdbfcec4fbdb1057404cd85ee62f764460ae46b007d7ee72fa39ebda",
+          "primary_checked_date": "2026-09-23",
+          "locator": "EX 16 Comes to Portland: date and description beside the embedded video",
+          "finding": "The description reports EX16 reaching the wing on December 11, 2025; its displayed publication date is February 17, 2026. These are different dates, and neither is identified as contractual acceptance.",
+          "access": "Official HTML description and visible metadata inspected September 23. The embedded video was not watched, downloaded or transcribed; no acceptance or complete production ledger was acquired. Local profile hash is not a remote-page capture."
+        }
+      ],
+      "retained_contexts": [
+        {
+          "collection": "pilot_research_followups",
+          "id": "211-F15EX-ACCESS-2026-09-22",
+          "receipt_payload_sha256": "2cdde166f54593a01e247db479fcc434755f1725ad2d49fe3291fe188645cf28",
+          "route": "/method/editorial-review/#211-F15EX-ACCESS-2026-09-22",
+          "relation": "This separate September 22 access failure concerns the Air Force production-resumption page, not the receiving-wing source cited here. It is retained to explain the unresolved acceptance-ledger requirement; it does not claim that the wing page failed or that no aircraft were accepted.",
+          "matched_source_ids": [],
+          "additional_artifact_urls": []
+        }
+      ],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "related_readings": [
+        {
+          "record_id": "203-CASE-16",
+          "route": "/reference/state-of-future-systems/case-f15ex-production-delivery/",
+          "label": "F-15EX case — retained acceptance-ledger and access limits",
+          "relation": "The annual case preserves the separate production-source access finding without admitting an aircraft-acceptance series."
+        }
+      ]
+    },
+    {
+      "record_id": "203-CASE-11",
+      "route": "/reference/state-of-future-systems/case-gateway-battery-storage/",
+      "source_record_sha256": "89b13399dcc2ae8f2d7e9af2f008c582cb83f68e175ac933cd7ed9adc403fc0a",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Replaces generic resolution guidance with the dated Gateway contract decision and its limited scope. Retained PDF inspection is not evidence of current capacity, incident closure, recurring performance or independent article acceptance.",
+      "replacements": [
+        {
+          "section_heading": "A resolution does not answer every performance question",
+          "paragraph_index": 0,
+          "original_text": "The inherited resolution provides a formal regulatory record, but the source contract does not supply a common availability denominator, full restored capacity or recurring cycle and degradation measures. It also does not establish revenue or customer reliability. Those questions concern different operating and economic evidence. A useful profile should explain what the resolution actually addresses and identify the equipment and conditions involved. It should then show which later observations would be needed, rather than treating a formal decision as a universal return-to-normal statement.",
+          "replacement_text": "CPUC Resolution E-5428 was adopted and effective on November 20, 2025; its cover transmittal is dated November 24. The operative order approved the amended Gateway contract and related costs. The summary table distinguishes 75 MW nameplate from 55.5 MW capacity value for mid-term reliability compliance. The amendment gives June 1, 2027 as expected initial delivery, with an August 1 deadline; the resolution says capacity and price remain as previously approved. These are contractual terms, not 75 MW of demonstrated restoration. Its historical account reports partial return while the fire-affected building remained offline and investigations were ongoing at that 2025 snapshot. The contracts cover portions of output, not specified facility resources. Later physical return, investigation closure, annual availability and customer reliability require separate evidence; this decision establishes none of their September 2026 status.",
+          "reason": "Replace generic discussion with exact decision, table and footnote context while separating contractual capacity, historical partial return and unverified later operation."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56d-gateway-cpuc-resolution-e5428-2025",
+          "url": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M588/K329/588329444.PDF",
+          "source_profile_sha256": "ed28a8e479c954305d2728c2c88eb1622824d73497d9622aa589970fbe68900c",
+          "retained_checked_date": "2026-09-23",
+          "captured_sha256": "91e08643835ea813ff5f84251ef48876f2e5ed1804e1d968b9a0e298f4758cfd",
+          "visually_checked_pages": [
+            1,
+            2,
+            3,
+            4,
+            9,
+            21,
+            22
+          ],
+          "locator": "Resolution E-5428: cover; summary-table headers and Gateway row (PDF pages 2-3); history and delivery dates (page 4); footnote 6 (page 9); operative order and adoption (pages 21-22).",
+          "access": "Retained official PDF visually inspected on the listed pages. The original contract, confidential appendix terms, later investigation status and subsequent operating records were not inspected. This is not a fresh remote retrieval or a whole-document review.",
+          "finding": "The November 20, 2025 decision approved the amended contract and related costs. Its table separates 75 MW nameplate from 55.5 MW compliance value; the amendment concerns expected June 1, 2027 delivery and an August 1 deadline. The partial-return account is a 2025 snapshot, not a present-status finding."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null
+    },
+    {
+      "record_id": "203-CASE-13",
+      "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+      "source_record_sha256": "a26e33103bc61c43d0f0ab476c4b226262107038931b0668486fa5f8c3c30a5c",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-chronology",
+      "summary": "Corrects the current asset name and separates the 2021 commissioning findings, registration announcement and reserve-service announcement. Reuses scoped September 22-23 source inspections; no later operating-status check, universal safety finding or independent acceptance is supplied.",
+      "replacements": [
+        {
+          "section_heading": "Keep the event chronology visible",
+          "paragraph_index": 0,
+          "original_text": "The Energy Safe Victoria findings concern the commissioning incident within their stated scope. AEMO registration establishes a different administrative and market milestone. Neither should erase the other or be treated as a complete operating-performance assessment. Readers need the event date, investigated equipment, relevant findings and the actual registration or operating record. This preserves what each authority was examining and avoids using the passage of time alone as evidence that corrective work was accepted or that later operation was uninterrupted.",
+          "replacement_text": "Energy Safe Victoria's statement, dated September 28, 2021 on its official investigation index, concerns the July 30 commissioning fire involving two Megapacks. It identifies a coolant leak as the most likely initiating fault, with monitoring and protection unavailable in offline service mode contributing to the outcome. That attribution rests on the engineering work, scene examination and telemetry described in the statement, not an independently reproduced investigation here. ESV had no objection to recommencing commissioning provided the specified testing, inspection, monitoring and protection measures were in place. Further fire-spread findings and possible enforcement remained matters for subsequent assessment at that date. Separately, AEMO's October 8 update lists the 300 MW battery among generators registered since July 1. This establishes a registration-reporting window, not an exact registration day or proof of operation on July 1.",
+          "reason": "Replace undated generalities with attributed, separately scoped incident, conditional commissioning and registration evidence."
+        },
+        {
+          "section_heading": "Later performance needs later observations",
+          "paragraph_index": 0,
+          "original_text": "An investigation index is a discovery resource rather than a continuing audit of availability, dispatch or safety. Registration also does not establish how much equipment was available in every operating period. A useful continuation would identify the accepted corrective measures and any operating conditions, then follow the asset through a defined service window. The relevant measures might include availability, interruptions or delivery of a specified grid service. Those are proposed reporting needs, not results established by the inherited profile or inferred from the asset's presence in a registry.",
+          "replacement_text": "AEMO's December 8, 2021 announcement reports the System Integrity Protection Scheme reserve service operational following commissioning. It describes a contract for up to 250 MW of reserve, distinct from the Victorian Big Battery facility's 300 MW/450 MWh size. A reserve-service announcement is not a measurement of annual availability, actual dispatch, degradation or customer benefit. The underlying service contract and a compatible subsequent operating ledger were not inspected. The investigation index is likewise a discovery source, not a continuing safety audit. These dated records establish different milestones without proving that every corrective action was closed or that later service was uninterrupted.",
+          "reason": "Identify the later service announcement without equating contracted reserve, facility capacity and measured recurring performance."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-56e-vbb-esv-fire-findings-2021",
+          "url": "https://www.energysafe.vic.gov.au/sites/default/files/2022-12/VBB_StatementOfFindings_FINAL_28Sep2021.pdf",
+          "source_profile_sha256": "2bd1158cbb185a960f8e162c87a9c32e5e2a494d0812c08edf7ed8f45720dc43",
+          "retained_checked_date": "2026-09-23",
+          "captured_sha256": "38fee3d05597fa3c59fb03a5101f40de56b0db313e255a06bf2a43fa17d687e2",
+          "visually_checked_pages": [
+            1,
+            2,
+            3
+          ],
+          "locator": "Statement of Technical Findings, PDF pages 1-3: Background, Methodology, Root cause, Contributory factors, prevention measures and Next steps.",
+          "access": "All three pages of the retained official PDF were visually inspected. The described engineering tests were not independently reproduced; later corrective-action closure, enforcement and operating records were not inspected. No fresh remote retrieval is claimed.",
+          "finding": "The statement concerns the July 30, 2021 commissioning fire. ESV attributed the probable initiating fault to a coolant leak and had no objection to commissioning recommencing provided the stated measures were in place; further fire-spread findings and enforcement assessment remained outstanding at that statement date."
+        },
+        {
+          "source_id": "source-56e-vbb-esv-investigations",
+          "url": "https://www.energysafe.vic.gov.au/about-us/our-organisation/reports/electrical-incident-and-technical-investigations-reports",
+          "source_profile_sha256": "48a4d3faee061d6d552a1e9310dff45aab12b301f2ed1c1fbaa767cb8f6b7ad5",
+          "retained_checked_date": "2026-09-23",
+          "locator": "Electrical incident and technical investigations index: Victorian Big Battery statement entry dated September 28, 2021.",
+          "access": "Retains the September 23 official-index HTML check documented in the acquisition record; not a new retrieval or a continuing safety audit.",
+          "finding": "The official index supplies the September 28, 2021 statement date independently of the PDF filename or footer."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-registration-2021",
+          "url": "https://www.aemo.com.au/newsroom/news-updates/state-of-the-system-update-october-2021",
+          "source_profile_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773",
+          "retained_checked_date": "2026-09-22",
+          "locator": "October 8, 2021 State of the System update, NEM connections / Q3 highlights: generators registered since July 1.",
+          "access": "Retains the September 22 official HTML inspection. No registration instrument, exact registration day or subsequent operating ledger was inspected.",
+          "finding": "AEMO lists the 300 MW Victorian Big Battery among registrations since July 1. That reporting interval does not establish a July 1 registration or operating start."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-operational-2021",
+          "url": "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer",
+          "source_profile_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1",
+          "retained_checked_date": "2026-09-22",
+          "locator": "December 8, 2021 service announcement: opening three paragraphs and System Integrity Protection Scheme (SIPS) footnote.",
+          "access": "Retains the September 22 official HTML inspection, not a new retrieval. The underlying service contract, telemetry and subsequent availability records were not inspected.",
+          "finding": "AEMO reported the reserve service operational after commissioning. Its up-to-250 MW reserve contract is distinct from the 300 MW/450 MWh facility; the announcement does not measure annual availability or realized service delivery."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "title_replacement": {
+        "original_text": "Victoria Big Battery: commissioning, registration and later service",
+        "replacement_text": "Victorian Big Battery: commissioning, registration and later service",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      },
+      "overview_replacement": {
+        "original_text": "Victoria Big Battery provides a clear example of records that describe different moments in an asset's history. The inherited shelf includes commissioning-incident findings, market registration and operational material. Those documents should be read in sequence while keeping the evidence for an incident distinct from evidence about subsequent service.",
+        "replacement_text": "Victorian Big Battery provides a clear example of records that describe different moments in an asset's history. The inherited shelf includes commissioning-incident findings, market registration and operational material. Those documents should be read in sequence while keeping the evidence for an incident distinct from evidence about subsequent service.",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      }
+    },
+    {
+      "record_id": "203-SYNTHESIS-10",
+      "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
+      "source_record_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-registration-reserve",
+      "summary": "Separates market registration from the contracted SIPS reserve-service arrangement in the Victorian Big Battery discussion. Preserves the Nevada permit clarification, corrected asset name and complete earlier reviews. The two dated announcements do not establish corrective-action closure or recurring performance; independent article acceptance remains pending.",
+      "replacements": [
+        {
+          "section_heading": "Victoria's case separates investigation from operation",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+          "replacement_text": "The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.",
+          "reason": "Separate market registration from the reserve-service arrangement while retaining the corrected asset name and unresolved evidence boundaries."
+        },
+        {
+          "section_heading": "The next edition should make correction status verifiable",
+          "paragraph_index": 0,
+          "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "Industrial importance does not settle a safety question",
+          "paragraph_index": 1,
+          "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+          "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+          "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
+        },
+        {
+          "section_heading": "Victoria's case separates investigation from operation",
+          "paragraph_index": 1,
+          "original_text": "Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition.",
+          "replacement_text": "Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows.",
+          "reason": "Remove the conflation of market and protection-scheme registration; keep announcement, investigation, closure and recurring-performance evidence separate."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+          "url": "https://ndep.nv.gov/uploads/documents/202505amt_2020107_WPCP_Rnwl2024_Rev00_-_signed.pdf",
+          "source_profile_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c",
+          "primary_checked_date": "2026-09-23",
+          "captured_sha256": "59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be",
+          "visually_checked_pages": [
+            1,
+            2,
+            3,
+            14,
+            15,
+            16
+          ],
+          "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
+          "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
+          "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-registration-2021",
+          "url": "https://www.aemo.com.au/newsroom/news-updates/state-of-the-system-update-october-2021",
+          "source_profile_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773",
+          "primary_checked_date": "2026-09-23",
+          "locator": "October 8, 2021 State of the System update: NEM connections update / Highlights of Q3, 2021 – to date, opening sentence and Victorian Big Battery list entry.",
+          "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+          "finding": "The NEM connections section includes Victorian Big Battery among registrations since July 1, 2021. It does not specify its exact registration day or establish a SIPS contract."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-operational-2021",
+          "url": "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer",
+          "source_profile_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1",
+          "primary_checked_date": "2026-09-23",
+          "locator": "December 8, 2021 reserve-service announcement: opening paragraphs and About System Integrity Protection Scheme (SIPS) footnote.",
+          "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+          "finding": "The announcement separately describes contracted SIPS reserve service and reports it operational at that time. This is not a market-registration instrument or a later operating ledger."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "overview_replacement": {
+        "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+        }
+      ],
+      "previous_review": {
+        "record_id": "203-SYNTHESIS-10",
+        "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
+        "source_record_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
+        "review_date": "2026-09-23",
+        "update_id": "update-2026-09-23-annual-nevada-permit-identity",
+        "summary": "Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.",
+        "replacements": [
+          {
+            "section_heading": "Victoria's case separates investigation from operation",
+            "paragraph_index": 0,
+            "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+            "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+          },
+          {
+            "section_heading": "The next edition should make correction status verifiable",
+            "paragraph_index": 0,
+            "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+            "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+          },
+          {
+            "section_heading": "Industrial importance does not settle a safety question",
+            "paragraph_index": 1,
+            "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+            "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+            "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
+          }
+        ],
+        "source_checks": [
+          {
+            "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+            "url": "https://ndep.nv.gov/uploads/documents/202505amt_2020107_WPCP_Rnwl2024_Rev00_-_signed.pdf",
+            "source_profile_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c",
+            "primary_checked_date": "2026-09-23",
+            "captured_sha256": "59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be",
+            "visually_checked_pages": [
+              1,
+              2,
+              3,
+              14,
+              15,
+              16
+            ],
+            "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
+            "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
+            "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+          }
+        ],
+        "retained_contexts": [],
+        "independent_article_review": false,
+        "approval_receipt_id": null,
+        "overview_replacement": {
+          "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+          "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        "related_readings": [
+          {
+            "record_id": "203-CASE-13",
+            "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+            "label": "Victorian Big Battery: dated case history",
+            "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+          }
+        ],
+        "previous_review": {
+          "record_id": "203-SYNTHESIS-10",
+          "route": "/reference/state-of-future-systems/synthesis-safety-incident-correction-restart/",
+          "source_record_sha256": "909c96aa0e9716d44223b8d706b471622d604ace44270fb932efe9cf30d46482",
+          "review_date": "2026-09-23",
+          "update_id": "update-2026-09-23-annual-battery-chronology",
+          "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+          "replacements": [
+            {
+              "section_heading": "Victoria's case separates investigation from operation",
+              "paragraph_index": 0,
+              "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+              "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+              "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            },
+            {
+              "section_heading": "The next edition should make correction status verifiable",
+              "paragraph_index": 0,
+              "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+              "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+              "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            }
+          ],
+          "source_checks": [],
+          "retained_contexts": [],
+          "independent_article_review": false,
+          "approval_receipt_id": null,
+          "overview_replacement": {
+            "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+            "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+          },
+          "related_readings": [
+            {
+              "record_id": "203-CASE-13",
+              "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+              "label": "Victorian Big Battery: dated case history",
+              "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "record_id": "200-MONOGRAPH-10",
+      "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
+      "source_record_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
+      "review_date": "2026-09-23",
+      "update_id": "update-2026-09-23-annual-battery-registration-reserve",
+      "summary": "Separates market registration from the contracted SIPS reserve-service arrangement in the Victorian Big Battery discussion. Preserves the Nevada permit clarification, corrected asset name and complete earlier reviews. The two dated announcements do not establish corrective-action closure or recurring performance; independent article acceptance remains pending.",
+      "replacements": [
+        {
+          "section_heading": "Victoria's case separates investigation from operation",
+          "paragraph_index": 0,
+          "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+          "replacement_text": "The Victorian Big Battery dossier brings together investigation, National Electricity Market (NEM) registration and reserve-service records. AEMO's October 8, 2021 update reports registration; its December 8 announcement describes the separately contracted System Integrity Protection Scheme (SIPS) service. Registration and a reserve-service contract are different milestones, neither of which establishes corrective-action closure or later annual performance.",
+          "reason": "Separate market registration from the reserve-service arrangement while retaining the corrected asset name and unresolved evidence boundaries."
+        },
+        {
+          "section_heading": "The next edition should make correction status verifiable",
+          "paragraph_index": 0,
+          "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        {
+          "section_heading": "Industrial importance does not settle a safety question",
+          "paragraph_index": 1,
+          "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+          "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+          "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
+        },
+        {
+          "section_heading": "Victoria's case separates investigation from operation",
+          "paragraph_index": 1,
+          "original_text": "Those records should be read as a sequence of differently scoped evidence. Registration may establish participation in a market or protection arrangement; an investigation concerns an event and its findings. Neither automatically establishes the long-term performance of the other. The inherited account does not assign a universal safety grade or conclude that one event explains every subsequent operating condition.",
+          "replacement_text": "Market registration should not be described as protection-scheme registration. The separately announced reserve service does not settle corrective-action closure, and neither announcement provides a later annual availability, dispatch or cycling series. Each conclusion still needs evidence matched to its question; no universal safety grade follows.",
+          "reason": "Remove the conflation of market and protection-scheme registration; keep announcement, investigation, closure and recurring-performance evidence separate."
+        }
+      ],
+      "source_checks": [
+        {
+          "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+          "url": "https://ndep.nv.gov/uploads/documents/202505amt_2020107_WPCP_Rnwl2024_Rev00_-_signed.pdf",
+          "source_profile_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c",
+          "primary_checked_date": "2026-09-23",
+          "captured_sha256": "59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be",
+          "visually_checked_pages": [
+            1,
+            2,
+            3,
+            14,
+            15,
+            16
+          ],
+          "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
+          "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
+          "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-registration-2021",
+          "url": "https://www.aemo.com.au/newsroom/news-updates/state-of-the-system-update-october-2021",
+          "source_profile_sha256": "f338eb86406b67fe26271ca8d63a6c598b6b0f2f5d82af4cd9d6e34a762a5773",
+          "primary_checked_date": "2026-09-23",
+          "locator": "October 8, 2021 State of the System update: NEM connections update / Highlights of Q3, 2021 – to date, opening sentence and Victorian Big Battery list entry.",
+          "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+          "finding": "The NEM connections section includes Victorian Big Battery among registrations since July 1, 2021. It does not specify its exact registration day or establish a SIPS contract."
+        },
+        {
+          "source_id": "source-56e-vbb-aemo-operational-2021",
+          "url": "https://www.aemo.com.au/newsroom/media-release/victorian-battery-delivering-energy-reserves-in-summer",
+          "source_profile_sha256": "c99570e1aab3515ec9968954dd3775469afed0c8f81b5b82f224105c9330d9d1",
+          "primary_checked_date": "2026-09-23",
+          "locator": "December 8, 2021 reserve-service announcement: opening paragraphs and About System Integrity Protection Scheme (SIPS) footnote.",
+          "access": "The public HTML was reopened on September 23, 2026. No HTML byte capture, underlying registration instrument, service contract or later operating ledger was obtained. This source check is not independent article acceptance.",
+          "finding": "The announcement separately describes contracted SIPS reserve service and reports it operational at that time. This is not a market-registration instrument or a later operating ledger."
+        }
+      ],
+      "retained_contexts": [],
+      "independent_article_review": false,
+      "approval_receipt_id": null,
+      "overview_replacement": {
+        "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+        "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+      },
+      "related_readings": [
+        {
+          "record_id": "203-CASE-13",
+          "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+          "label": "Victorian Big Battery: dated case history",
+          "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+        }
+      ],
+      "previous_review": {
+        "record_id": "200-MONOGRAPH-10",
+        "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
+        "source_record_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
+        "review_date": "2026-09-23",
+        "update_id": "update-2026-09-23-annual-nevada-permit-identity",
+        "summary": "Names Rhyolite Ridge and its exact Nevada permit separately from the adjacent Thacker Pass financing discussion. Adds a scoped primary-PDF inspection while preserving the earlier Victorian Big Battery naming correction. Permit requirements are not proof of completed compliance, operation or an incident; independent article acceptance remains pending.",
+        "replacements": [
+          {
+            "section_heading": "Victoria's case separates investigation from operation",
+            "paragraph_index": 0,
+            "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+            "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+          },
+          {
+            "section_heading": "The next edition should make correction status verifiable",
+            "paragraph_index": 0,
+            "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+            "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+          },
+          {
+            "section_heading": "Industrial importance does not settle a safety question",
+            "paragraph_index": 1,
+            "original_text": "The Nevada permit case does identify pre-operation inspection, monitoring and reporting requirements. Such conditions can guide future evidence collection without implying a violation. A requirement and a finding of noncompliance are different statements. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+            "replacement_text": "Separately, Rhyolite Ridge is the project covered by Nevada water pollution control permit NEV2020107 (Renewal 2025, Revision 00), not Thacker Pass. Its schedule specifies pre-operation notice and inspection arrangements, and its monitoring and reporting provisions guide later evidence collection. Schedule items require written Division approval before they count as completed. These requirements do not establish that operations began, an inspection passed or a violation occurred. Public importance, investment scale or supply-chain urgency should not change the evidentiary test applied to either favorable or adverse project claims.",
+            "reason": "Remove project-identity ambiguity by naming the permit and its Rhyolite Ridge scope, without inferring completed conditions, current operations or violations."
+          }
+        ],
+        "source_checks": [
+          {
+            "source_id": "source-ndep-rhyolite-ridge-water-permit-2025",
+            "url": "https://ndep.nv.gov/uploads/documents/202505amt_2020107_WPCP_Rnwl2024_Rev00_-_signed.pdf",
+            "source_profile_sha256": "854449efc992d0e8922bebc6a1c9f1585156ab43ce2e5df33951c3095a28041c",
+            "primary_checked_date": "2026-09-23",
+            "captured_sha256": "59e57f2cd151af476c0a7f6b1ca8534028be8c4b7c7c6767148b3819834152be",
+            "visually_checked_pages": [
+              1,
+              2,
+              3,
+              14,
+              15,
+              16
+            ],
+            "locator": "Permit NEV2020107, Renewal 2025, Revision 00: project identity on PDF page 1; Schedule of Compliance I.B on page 2; monitoring I.D beginning on page 3; reporting II.B on pages 14-16.",
+            "access": "The public 21-page PDF was downloaded on September 23, 2026 and only pages 1-3 and 14-16 were visually inspected. The signature was not authenticated. Later versions, compliance records, inspection outcomes and current operating status were not checked; no whole-document review or independent article acceptance is claimed.",
+            "finding": "The instrument identifies Rhyolite Ridge rather than Thacker Pass. It sets notice, inspection-arrangement, monitoring and reporting requirements; schedule items require written Division approval before completion. Requirements are not evidence that activities began, inspections passed or violations occurred."
+          }
+        ],
+        "retained_contexts": [],
+        "independent_article_review": false,
+        "approval_receipt_id": null,
+        "overview_replacement": {
+          "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+          "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+          "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+        },
+        "related_readings": [
+          {
+            "record_id": "203-CASE-13",
+            "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+            "label": "Victorian Big Battery: dated case history",
+            "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+          }
+        ],
+        "previous_review": {
+          "record_id": "200-MONOGRAPH-10",
+          "route": "/reference/constraint-monographs/safety-incident-correction-restart/",
+          "source_record_sha256": "3da242fb7d3af48e39ac1f8cf7fe40070ba5d6f08f1b5147d6218ae7294eeb14",
+          "review_date": "2026-09-23",
+          "update_id": "update-2026-09-23-annual-battery-chronology",
+          "summary": "Corrects the current name to Victorian Big Battery without changing the incident, correction, restart or unresolved-performance claims. This is a naming correction, not a fresh source inspection or independent review.",
+          "replacements": [
+            {
+              "section_heading": "Victoria's case separates investigation from operation",
+              "paragraph_index": 0,
+              "original_text": "The Victoria Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+              "replacement_text": "The Victorian Big Battery dossier preserves Energy Safe Victoria material alongside AEMO registration and operational records. It identifies commissioning and isolation work, protection-scheme registration and emergency reserve controls as separate parts of the case. Its open questions include corrective-action closure and annual availability, dispatch, cycling and other later operating measures.",
+              "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            },
+            {
+              "section_heading": "The next edition should make correction status verifiable",
+              "paragraph_index": 0,
+              "original_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victoria Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+              "replacement_text": "For Moss Landing, the strongest addition would be a reviewing authority's item-level disposition tied to the correct audit, alongside separate records for the battery-fire investigation. For Victorian Big Battery, it would be accepted corrective-action closure and a compatible subsequent operating series. Both require stable asset identities, exact dates and clear attribution of who considers an action complete.",
+              "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+            }
+          ],
+          "source_checks": [],
+          "retained_contexts": [],
+          "independent_article_review": false,
+          "approval_receipt_id": null,
+          "overview_replacement": {
+            "original_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victoria Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+            "replacement_text": "An incident, an investigation, a company's corrective-action response and a regulator's closure decision are different records. A trustworthy safety account identifies which one supports each statement and avoids turning later activity into proof of recovery. The inherited Moss Landing and Victorian Big Battery cases provide concrete examples. Mineral and financing sources remain relevant background to industrial expansion, but they contain no incident finding and cannot establish that a particular project failed or restarted.",
+            "reason": "Correct the current asset name to Victorian Big Battery; preserve the original wording, scope and evidence limitations."
+          },
+          "related_readings": [
+            {
+              "record_id": "203-CASE-13",
+              "route": "/reference/state-of-future-systems/case-victoria-big-battery/",
+              "label": "Victorian Big Battery: dated case history",
+              "relation": "The case separates commissioning, registration and reserve service; it does not independently clear other claims in this paired reading."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

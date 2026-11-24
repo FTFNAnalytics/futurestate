@@ -1,0 +1,22 @@
+---
+import {northSeaDossiers,northSeaSourcesFor} from '../../lib/north-sea-named-dossiers.mjs';
+interface Props {record: (typeof northSeaDossiers.records)[number]}
+const {record}=Astro.props;
+const sources=northSeaSourcesFor(record);
+---
+<article class="page-section dossier" data-north-sea-dossier={record.record_id}>
+  <div class="eyebrow">Atlas / {record.kind} / North Sea</div>
+  <h1 class="page-title">{record.title}</h1>
+  <p class="lede">{record.answer}</p><p><strong>{record.stage}</strong></p>
+  <p>Written and AI-reviewed {northSeaDossiers.inspected_date} by Codex under the <a href="/method/editorial-review/">owner-authorized review policy</a>. This is author self-review, not independent review.</p>
+  <section><h2>Scope</h2><p>{record.scope}</p></section>
+  <section><h2>Dated chronology</h2><ol>{record.timeline.map(item=><li data-dossier-event><time datetime={item.date}>{item.date}</time>: {item.event} <span class="citations">{item.source_ids.map((id,index)=><>{index>0?' · ':''}<a href={`#source-${id}`}>{sources.find(s=>s.id===id)!.title}</a></>)}</span></li>)}</ol></section>
+  {record.sections.map(section=><section data-dossier-section><h2>{section.heading}</h2><p>{section.text}</p>{section.source_ids.length>0&&<p class="citations">Sources: {section.source_ids.map((id,index)=><>{index>0?' · ':''}<a href={`#source-${id}`}>{sources.find(s=>s.id===id)!.title}</a></>)}</p>}</section>)}
+  <section><h2>Next evidence to follow</h2><ul>{record.next_artifacts.map(value=><li>{value}</li>)}</ul></section>
+  <section><h2>Sources and dates</h2><p>Inspected {northSeaDossiers.inspected_date} in America/Edmonton. Publication, event, reporting and effective dates remain separate. A month or year is not an invented exact day.</p>
+    <ol>{sources.map(source=><li id={`source-${source.id}`} data-dossier-source={source.id}><p><a href={source.url}>{source.title}</a> — {source.publisher}. {source.role}.</p><details><summary>Dates and evidence scope</summary><ul>{Object.entries(source).filter(([key,value])=>(key.endsWith('_date')||key.endsWith('_period'))&&value).map(([key,value])=><li>{key.replaceAll('_',' ')}: {String(value)}</li>)}</ul><p>Language: {source.language}. {source.interpretation_note}</p><p>Location: {source.locator}. {source.inspection}.</p><p>{source.boundary}</p></details></li>)}</ol>
+  </section>
+  <section data-portfolio-addition={record.record_id}><h2>Identity and counting</h2><p>{record.identity_decision.rationale}</p><p><a href={record.historical_acquisition.route}>Retained acquisition record {record.historical_acquisition.record_id}</a>. {record.historical_acquisition.decision}. This dated named account is additive; it does not rewrite the original record or admit operating outcomes.</p><p><a href="/method/portfolio-decisions/">Current totals and retained historical decisions</a> · <a href="/data/build-decisions.json">Download the articles and exact-version review</a></p></section>
+  <nav aria-label="Related project and place accounts"><h2>Related accounts</h2><ul>{record.related.map(link=><li><a href={link.route}>{link.title}</a></li>)}</ul><p><a href={record.kind==='Project'?'/atlas/projects/':'/atlas/places/'}>Return to the {record.kind} Atlas</a></p></nav>
+</article>
+<style>.dossier{max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere}section,nav{margin-block:2rem}.citations{font-size:.9rem}li{margin-block:.65rem}summary{cursor:pointer}summary:focus-visible{outline:3px solid currentColor;outline-offset:4px}</style>

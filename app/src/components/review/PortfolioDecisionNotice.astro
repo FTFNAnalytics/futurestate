@@ -1,0 +1,10 @@
+---
+import decisions from '../../data/portfolio-eligibility-decisions.json';
+const decision=[...decisions.canonical,...decisions.named_places,...decisions.new_editorial_candidates].find(d=>d.route===Astro.url.pathname);
+---
+{decision&&<aside class="page-section" aria-label="Current portfolio determination" data-portfolio-decision={decision.record_id}>
+  <h2>Portfolio determination · {decisions.decision_date}</h2>
+  <p><strong>{decision.decision}</strong> — {decision.scope}. {decision.rationale}</p>
+  <p>Codex made this determination under the owner-authorized AI policy. Older statements that identity requires independent approval are historical. This decides identity and counting, not every factual claim in the older article.</p>
+  <p><a href="/method/portfolio-decisions/">Counting rules and all determinations</a> · <a href="/data/build-decisions.json">Exact decision data</a></p>
+</aside>}

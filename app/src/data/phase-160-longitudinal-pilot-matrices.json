@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "phase": 160,
+  "program_id": "FTFN-PHASE-160",
+  "dataset": "phase_160_longitudinal_pilot_matrices",
+  "title": "Longitudinal pilot matrices",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Prepare three full compatibility matrices and the explicit zero-series boundary while transferring no values and admitting no series.",
+  "record_scope": "Append-only Phase 160 record over the immutable Phase 145–156 v1-RC baseline.",
+  "publication_boundaries": [
+    "The Phase 157–164 overlay adds operating plans and bounded content without rewriting the immutable Phase 145–156 release candidate.",
+    "Future September checks, desk decisions, edition inputs, publication receipts, and month-end findings remain null until their lawful dates.",
+    "Alternative official artifacts remain candidate pointers unless a dated authorized adjudication admits them; discovery is not evidence admission.",
+    "No project stage, longitudinal observation, outcome, causal finding, score, rank, owner decision, repository publication, hosted deployment, or v1 promotion is inferred."
+  ],
+  "routes": {
+    "hub": "/review/v1month/longitudinal-pilots/",
+    "public_export": "/data/phase-160-longitudinal-pilot-matrices.json"
+  },
+  "counts": {
+    "pilot_matrices": 4,
+    "compatibility_pilots": 3,
+    "compatibility_tests": 12,
+    "zero_series_boundary_records": 1,
+    "admitted_series": 0,
+    "observations_transferred": 0,
+    "owner_dispositions_pending": 1
+  },
+  "pilot_matrices": [
+    {
+      "pilot_matrix_id": "160-PILOT-001",
+      "matrix_kind": "compatibility pilot",
+      "upstream_lab_review_id": "149-REVIEW-012",
+      "eligibility_id": "138-ELIGIBILITY-012",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-012",
+      "slug": "hornsdale-power-reserve",
+      "title": "Hornsdale Power Reserve compatibility pilot",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-hornsdale-power-reserve",
+      "legacy_observation_count": 4,
+      "series_definition_digest": "621edbd8b249951a959cc2fade8420c44f0debec09fc195f060208522029ff36",
+      "compatibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-hornsdale-power-reserve for Hornsdale Power Reserve; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 4 observations under period November 2019 through current installation profile; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Incident response, service capability, compliance, and stated capacity” in Dated operating or regulatory observation; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The specific event, service, offer interval, or installed capacity stated in the record”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "matrix_state": "Prepared — governed Phase 69–70 audit required",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "decisive_next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails.",
+      "stop_rule": "Do not transfer a legacy value unless identity, period, measure, denominator, revision lineage, and dual-review admission all pass under the governed contract.",
+      "route": "/review/v1month/longitudinal-pilots/hornsdale-power-reserve/"
+    },
+    {
+      "pilot_matrix_id": "160-PILOT-002",
+      "matrix_kind": "compatibility pilot",
+      "upstream_lab_review_id": "149-REVIEW-014",
+      "eligibility_id": "138-ELIGIBILITY-014",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-014",
+      "slug": "dalrymple-grid-battery",
+      "title": "Dalrymple grid battery compatibility pilot",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-dalrymple-escri-bess",
+      "legacy_observation_count": 4,
+      "series_definition_digest": "a1caf7e1231f36598624ccf578dec8cab8af526a0469e8bda45280980519cf4e",
+      "compatibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-dalrymple-escri-bess for Dalrymple ESCRI-SA Battery Energy Storage System; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 4 observations under period December 2018 through April 2021; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “System-event response, islanding, state-of-charge constraint, and project results” in Dated operating observation; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “The system events, reporting window, or enabled service declared in each record”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "matrix_state": "Prepared — governed Phase 69–70 audit required",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "decisive_next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails.",
+      "stop_rule": "Do not transfer a legacy value unless identity, period, measure, denominator, revision lineage, and dual-review admission all pass under the governed contract.",
+      "route": "/review/v1month/longitudinal-pilots/dalrymple-grid-battery/"
+    },
+    {
+      "pilot_matrix_id": "160-PILOT-003",
+      "matrix_kind": "compatibility pilot",
+      "upstream_lab_review_id": "149-REVIEW-016",
+      "eligibility_id": "138-ELIGIBILITY-016",
+      "entity_kind": "project",
+      "entity_id": "119-PROJECT-016",
+      "slug": "f15ex-production-delivery",
+      "title": "F-15EX production and delivery compatibility pilot",
+      "review_date": "2026-08-31",
+      "legacy_panel_id": "panel-56e-f15ex-st-louis-line",
+      "legacy_observation_count": 4,
+      "series_definition_digest": "0de12e30135f727c909f7984955ad0b8d58b654ff1abf18a170fa9480c0352a7",
+      "compatibility_tests": [
+        {
+          "dimension": "identity",
+          "state": "Exact upstream identity join available",
+          "reason": "Curated mapping resolves exact legacy panel panel-56e-f15ex-st-louis-line for Boeing F-15EX St. Louis production line; no legacy observation is transferred into the governed chain."
+        },
+        {
+          "dimension": "period",
+          "state": "Legacy periods present — compatibility not adjudicated",
+          "reason": "The legacy panel records 4 observations under period March 2021 through December 2025; Phase 138 does not declare them compatible with the newer Phase 68–74 chain."
+        },
+        {
+          "dimension": "measure",
+          "state": "Legacy measure present — admission not transferred",
+          "reason": "The legacy indicator is “Cumulative aircraft delivery milestones and line interruption” in Cumulative delivered aircraft; its observations remain in Phase 56."
+        },
+        {
+          "dimension": "denominator",
+          "state": "Legacy denominator recorded — compatibility not adjudicated",
+          "reason": "The legacy denominator is “F-15EX aircraft recorded as delivered by the Air Force”; Phase 138 creates no cross-period or cross-regime bridge."
+        }
+      ],
+      "matrix_state": "Prepared — governed Phase 69–70 audit required",
+      "compatibility_decision": "Not admitted",
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "decisive_next_action": "Apply the complete Phase 69–70 specification, intake, dual-review, lineage, break, and admission contract to the original artifacts; stop if any identity, period, measure, or denominator test fails.",
+      "stop_rule": "Do not transfer a legacy value unless identity, period, measure, denominator, revision lineage, and dual-review admission all pass under the governed contract.",
+      "route": "/review/v1month/longitudinal-pilots/f15ex-production-delivery/"
+    },
+    {
+      "pilot_matrix_id": "160-BOUNDARY-001",
+      "matrix_kind": "zero-series launch boundary",
+      "slug": "zero-series-launch-boundary",
+      "title": "Explicit zero-series launch boundary",
+      "review_date": "2026-08-31",
+      "reviewed_eligibility_ids": [
+        "138-ELIGIBILITY-001",
+        "138-ELIGIBILITY-002",
+        "138-ELIGIBILITY-003",
+        "138-ELIGIBILITY-004",
+        "138-ELIGIBILITY-005",
+        "138-ELIGIBILITY-006",
+        "138-ELIGIBILITY-007",
+        "138-ELIGIBILITY-008",
+        "138-ELIGIBILITY-009",
+        "138-ELIGIBILITY-010",
+        "138-ELIGIBILITY-011",
+        "138-ELIGIBILITY-012",
+        "138-ELIGIBILITY-013",
+        "138-ELIGIBILITY-014",
+        "138-ELIGIBILITY-015",
+        "138-ELIGIBILITY-016",
+        "138-ELIGIBILITY-017",
+        "138-ELIGIBILITY-018",
+        "138-ELIGIBILITY-019",
+        "138-ELIGIBILITY-020",
+        "138-ELIGIBILITY-021",
+        "138-ELIGIBILITY-022",
+        "138-ELIGIBILITY-023",
+        "138-ELIGIBILITY-024",
+        "138-ELIGIBILITY-025",
+        "138-ELIGIBILITY-026",
+        "138-ELIGIBILITY-027",
+        "138-ELIGIBILITY-028",
+        "138-ELIGIBILITY-029",
+        "138-ELIGIBILITY-030",
+        "138-ELIGIBILITY-031",
+        "138-ELIGIBILITY-032",
+        "138-ELIGIBILITY-033",
+        "138-ELIGIBILITY-034",
+        "138-ELIGIBILITY-035",
+        "138-ELIGIBILITY-036",
+        "138-ELIGIBILITY-037",
+        "138-ELIGIBILITY-038",
+        "138-ELIGIBILITY-039"
+      ],
+      "boundary_scope_digest": "90a6e4c5922b1e361c2f2ecdae7f65d36fa98e1a4d94e3c417c043d9fe5a82ad",
+      "matrix_state": "Prepared — owner acceptance pending",
+      "proposed_scope": "v1 may launch without longitudinal claims if every one of the 39 reviews is disclosed, every trend/outcome/comparison surface states zero admitted series, and a dated owner receipt accepts that boundary.",
+      "owner_accepted": false,
+      "decision_date": null,
+      "decision_receipt_id": null,
+      "admitted_series_id": null,
+      "observations_transferred": 0,
+      "decisive_next_action": "Obtain one dated owner disposition: admit only a Phase 69–70-compatible pilot or explicitly accept the disclosed zero-series boundary.",
+      "stop_rule": "The absence of an admitted series forbids trends, outcome claims, rankings, scores, and causal comparisons.",
+      "route": "/review/v1month/longitudinal-pilots/zero-series-launch-boundary/"
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1month/longitudinal-pilots/",
+    "/review/v1month/longitudinal-pilots/hornsdale-power-reserve/",
+    "/review/v1month/longitudinal-pilots/dalrymple-grid-battery/",
+    "/review/v1month/longitudinal-pilots/f15ex-production-delivery/",
+    "/review/v1month/longitudinal-pilots/zero-series-launch-boundary/"
+  ],
+  "public_json_exports": [
+    "/data/phase-160-longitudinal-pilot-matrices.json"
+  ]
+}

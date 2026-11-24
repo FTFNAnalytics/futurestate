@@ -1,0 +1,24 @@
+---
+import type {CollectionEntry} from 'astro:content';
+import {canonicalContentPath} from '../../lib/canonical-content-paths.mjs';
+interface Props {update:CollectionEntry<'updates'>;}
+const {update}=Astro.props;const u=update.data;
+const date=(d:Date)=>d.toISOString().slice(0,10);
+---
+<article class="source-row" id={u.id} data-update-receipt={u.id}>
+  <p>{u.entry_type} · {date(u.effective_date)}{u.receipt_type?` · ${u.receipt_type}`:''}{u.materiality?` · ${u.materiality}`:''}</p>
+  <h2>Recorded decision</h2><p>{u.summary}</p>
+  <p><strong>Evidence note:</strong> {u.evidence_note}</p>
+  <dl>
+    {u.receipt_id&&<div><dt>Receipt</dt><dd><code>{u.receipt_id}</code></dd></div>}
+    {u.source_checked_date&&<div><dt>Source checked</dt><dd>{date(u.source_checked_date)}</dd></div>}
+    {u.decision_date&&<div><dt>Decision date</dt><dd>{date(u.decision_date)}</dd></div>}
+    {u.prior_state&&<div><dt>Prior state</dt><dd>{u.prior_state}</dd></div>}
+    {u.current_state&&<div><dt>Current state</dt><dd>{u.current_state}</dd></div>}
+    {u.publication_effect&&<div><dt>Publication effect</dt><dd>{u.publication_effect}</dd></div>}
+    {u.next_check_date&&<div><dt>Next check</dt><dd>{date(u.next_check_date)}</dd></div>}
+  </dl>
+  <h2>Affected records</h2><ul>{u.affected_record_ids.map(id=><li><code>{id}</code></li>)}</ul>
+  {u.related_paths.length>0&&<><h2>Related pages</h2><ul>{u.related_paths.map(path=><li><a href={canonicalContentPath(path)}>{canonicalContentPath(path)}</a></li>)}</ul></>}
+</article>
+<style>article{overflow-wrap:anywhere;}dt{font-weight:600;}dd{margin-inline-start:0;margin-bottom:.7rem;}</style>

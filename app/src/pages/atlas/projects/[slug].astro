@@ -1,23 +1,38 @@
 ---
+import {projectSignal} from "../../../lib/signal-classification.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
+import {canonicalReaderForProject} from '../../../lib/canonical-reader-bindings.mjs';
+import {canonicalAnnualForProject} from '../../../lib/canonical-annual-reader-bindings.mjs';
+import {selectedArticleReviewFor} from '../../../lib/selected-article-reviews.mjs';
+import ReferenceArticle from '../../../components/review/ReferenceArticle.astro';
+import {projectRefreshFor} from '../../../lib/canonical-project-refreshes.mjs';
+import CanonicalProjectRefresh from '../../../components/review/CanonicalProjectRefresh.astro';
+import {nevadaComparisonFor} from '../../../lib/nevada-project-comparison.mjs';
+import NevadaProjectComparison from '../../../components/review/NevadaProjectComparison.astro';
+import currentEditorial from '../../../data/phase-205-216-current-editorial.json';
+import CurrentResearchArticle from '../../../components/review/CurrentResearchArticle.astro';
 import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
+import portfolioDecisions from '../../../data/portfolio-eligibility-decisions.json';
 import eventRegistry from "../../../data/phase-62-conversion-event-ledgers.json";
 import biographies from "../../../data/phase-127-project-place-conversion-biographies.json";
 import readiness from "../../../data/phase-135-atlas-conversion-readiness-audit.json";
 import chronicles from "../../../data/phase-136-named-project-chronicles.json";
 import eligibility from "../../../data/phase-138-longitudinal-evidence-eligibility.json";
+import {currentNamedFileAccount, namedFileEvidenceDecisions} from '../../../lib/current-evidence.mjs';
+import NevadaDossierLinks from '../../../components/review/NevadaDossierLinks.astro';
 
 export function getStaticPaths() {
   return atlas.projects.map((record) => ({ params: { slug: record.slug }, props: { projectId: record.atlas_project_id } }));
 }
 
 const project = atlas.projects.find((record) => record.atlas_project_id === Astro.props.projectId)!;
+const excludedFromProjectTarget=portfolioDecisions.canonical.find(record=>record.record_id===project.canonical_id&&record.route===project.routes.atlas)?.eligible_count===0;
 const biography = biographies.project_biographies.find((record) => record.atlas_project_id === project.atlas_project_id)!;
 const owner = atlas.update_owners.find((record) => record.owner_id === project.update_owner_id)!;
 const relatedPlaces = project.relationships.related_place_ids.map((id) => atlas.places.find((record) => record.atlas_place_id === id)).filter(Boolean);
-const signals = await getCollection("signals");
+const signals = await getCollection("signals").then(records => records.map(projectSignal));
 const signalById = new Map(signals.map((record) => [record.data.id, record]));
 const selectedSignals = project.evidence_rails.signal_ids.map((id) => signalById.get(id)).filter(Boolean);
 const sources = await getCollection("sources");
@@ -27,27 +42,43 @@ const events = project.chronology.event_ids.map((id) => eventRegistry.events.fin
 const chronicle = chronicles.project_chronicles.find((record) => record.atlas_project_id === project.atlas_project_id)!;
 const readinessRecord = readiness.readiness_records.find((record) => record.entity_id === project.atlas_project_id)!;
 const eligibilityRecord = eligibility.eligibility_records.find((record) => record.entity_id === project.atlas_project_id)!;
+const canonicalReader=canonicalReaderForProject(project);
+const refreshedArticle=projectRefreshFor(project);
+const annualReader=canonicalAnnualForProject(project);
+const comparisonAccount=nevadaComparisonFor(project);
+const currentArticle=canonicalReader?.article ?? currentEditorial.records.find(record=>record.record_id===project.atlas_project_id);
+const directArticleReview=currentArticle?selectedArticleReviewFor(currentArticle,{route:Astro.url.pathname}):null;
+const hasCurrentAccount=Boolean(canonicalReader||refreshedArticle||annualReader||directArticleReview||comparisonAccount);
+const LegacyContainer=hasCurrentAccount?'details':'div';
+const authorityAccount=project.relationships.phase_61_file_ids.map(id=>currentNamedFileAccount(id)).find(Boolean);
+const authorityReceipt=project.relationships.phase_61_file_ids.flatMap(id=>namedFileEvidenceDecisions(id)).sort((a,b)=>a.decision_date.localeCompare(b.decision_date)).at(-1);
 ---
 
 <BaseLayout title={`${project.title} | FTFN Project Atlas`} description={project.editorial_question}>
   <section class="page-section">
     <div class="eyebrow">Atlas / Projects / {project.canonical_id}</div>
     <h1 class="page-title">{project.title}</h1>
+    {excludedFromProjectTarget&&<p data-excluded-project-context={project.atlas_project_id}>Context only · excluded from the eligible-project target.</p>}
     <p class="lede">{project.editorial_question}</p>
     <div class="meta-row">
       <MetaPill label={project.coverage.label} tone={project.coverage.tier_id === "Tier A" ? "review" : "default"} />
       <MetaPill label={`Record ${project.atlas_project_id}`} />
       <MetaPill label={`Phase 127 · ${biography.biography_id}`} tone="possibility" />
       <MetaPill label={project.entity_kind} />
-      <MetaPill label={`Reviewed ${project.last_reviewed_date}`} />
+      <MetaPill label={`${hasCurrentAccount?'Historical Atlas review':'Reviewed'} ${project.last_reviewed_date}`} />
     </div>
   </section>
 
-  <section class="page-section briefing-band">
+  {currentArticle && <CurrentResearchArticle article={currentArticle} embedded />}
+  {refreshedArticle && <CanonicalProjectRefresh record={refreshedArticle} />}
+  {annualReader && <ReferenceArticle article={annualReader.article!} embedded />}
+  {comparisonAccount && <NevadaProjectComparison record={comparisonAccount} />}
+  {project.slug==='nevada-lithium-to-qualified-material'&&!comparisonAccount&&<NevadaDossierLinks/>}
+  <section class="page-section briefing-band" data-recorded-conversion-stage={hasCurrentAccount?project.atlas_project_id:undefined}>
     <div class="briefing-band__copy">
-      <div class="eyebrow">Current conversion stage</div>
-      <h2>{project.conversion.current_stage}</h2>
-      <p>{project.conversion.stage_basis}</p>
+      <div class="eyebrow">{hasCurrentAccount?'Recorded conversion stage':'Current conversion stage'}</div>
+      <h2>{authorityAccount?.current_stage ?? project.conversion.current_stage}</h2>
+      <p>{authorityAccount?.established ?? project.conversion.stage_basis}</p>
     </div>
     <article class="record-card record-card--featured">
       <div class="eyebrow">Coverage basis</div>
@@ -57,6 +88,9 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
     </article>
   </section>
 
+  <LegacyContainer data-prior-atlas-account={hasCurrentAccount?project.atlas_project_id:undefined}>
+  {hasCurrentAccount&&<summary>Earlier Atlas account and evidence links</summary>}
+  {hasCurrentAccount&&<p class="page-section">The earlier Atlas material below is retained for comparison. The dated reading above has its own exact-version assessment; that decision does not approve every linked or historical record. Later project checks, when available, remain separate notices above.</p>}
   <section class="page-section"><div class="section-heading"><div><div class="eyebrow">v0.8 named project chronicle · {chronicle.chronicle_id}</div><h2>The complete conversion account is now a maintained public file.</h2><p>{chronicle.unresolved_bridge}</p></div><MetaPill label={chronicle.coverage_tier} tone="review" /></div><div class="button-row"><a class="inline-link" href={chronicle.route}>Open the v0.8 chronicle</a><a class="inline-link" href="/review/v08/projects/">Browse all project chronicles</a></div></section>
 
   <section class="page-section review-columns">
@@ -68,14 +102,14 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
     <article>
       <div class="eyebrow">Unresolved gate</div>
       <h2>Where the claim stops.</h2>
-      <p>{project.conversion.unresolved}</p>
-      <p class="card-note">{project.conversion.unresolved_gate}</p>
+      <p>{authorityAccount?.unresolved ?? project.conversion.unresolved}</p>
+      <p class="card-note">{authorityReceipt?.next_action ?? project.conversion.unresolved_gate}</p>
     </article>
     <article>
       <div class="eyebrow">Exact next artifact</div>
       <h2>What can move this file.</h2>
-      <p>{project.conversion.exact_next_artifact}</p>
-      {project.conversion.next_check_date && <MetaPill label={`Next check ${project.conversion.next_check_date}`} tone="urgency" />}
+      <p>{authorityReceipt?.next_action ?? project.conversion.exact_next_artifact}</p>
+      {(authorityReceipt?.next_check_date ?? project.conversion.next_check_date) && <MetaPill label={`${authorityReceipt?'Next independent file check':hasCurrentAccount?'Historical Atlas appointment':'Next check'} ${authorityReceipt?.next_check_date ?? project.conversion.next_check_date}`} tone="urgency" />}
       {project.conversion.reopening_trigger && <p class="card-note">Trigger: {project.conversion.reopening_trigger}</p>}
     </article>
   </section>
@@ -177,4 +211,5 @@ const eligibilityRecord = eligibility.eligibility_records.find((record) => recor
   </section>
 
   <section class="page-section prose-page"><h2>Interpretation boundary</h2><p>{project.interpretation_boundary}</p><p class="card-note">Stop rule: {project.conversion.stop_rule}</p><p><a class="inline-link" href="/atlas/projects/">Return to the Project Atlas</a></p></section>
+  </LegacyContainer>
 </BaseLayout>

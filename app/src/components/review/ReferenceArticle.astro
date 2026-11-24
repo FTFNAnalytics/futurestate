@@ -1,0 +1,75 @@
+---
+import {getCollection} from 'astro:content';
+import ReviewHeader from './ReviewHeader.astro';
+import RegistryDetail from './RegistryDetail.astro';
+import editions from '../../data/phase-202-accessible-multilingual-low-bandwidth-editions.json';
+import operations from '../../data/phase-207-current-operations.json';
+import {readerCatalog} from '../../lib/reader-catalog.mjs';
+import {currentEvidenceLedger,evidenceReceiptsForRoute} from '../../lib/current-evidence.mjs';
+import {canonicalAnnualBindings,canonicalAnnualForArticle,canonicalAnnualContext,canonicalAnnualGateContexts,canonicalAnnualRelatedReadings} from '../../lib/canonical-annual-reader-bindings.mjs';
+import {readerPresentation,readerSourceReviewContexts} from '../../lib/reader-presentation.mjs';
+import AnnualCaseReview from './AnnualCaseReview.astro';
+import AnnualAiReview from './AnnualAiReview.astro';
+import {translationsForEnglish} from '../../lib/translated-readers.mjs';
+interface Article { record_id: string; title: string; overview: string; authored_date: string; inherited_as_of_date: string; review_status: string; mode?: string; sections: {heading: string; paragraphs: string[]}[]; source_ids: string[]; related_paths?: string[]; }
+interface Props { article: Article; record?: any; registry?: any; phase?: number; embedded?: boolean; }
+const {article,record,registry,phase,embedded=false}=Astro.props;
+const binding=canonicalAnnualForArticle(article,{route:Astro.url.pathname});
+if(embedded&&!binding)throw Error('Embedded annual reader requires an exact canonical binding');
+if(!embedded&&(!record||!registry||!phase))throw Error('Standalone reader requires its research contract');
+const presentationRoute=binding?.article_route??Astro.url.pathname;
+const originalBinding=canonicalAnnualBindings.records.find(r=>r.article_record_id===article.record_id&&r.article_route===Astro.url.pathname);
+const datedContext=binding?canonicalAnnualContext(binding):null;
+const programContexts=binding?canonicalAnnualGateContexts(binding):[];
+const relatedDossiers=binding?canonicalAnnualRelatedReadings(binding):[];
+const sources=await getCollection('sources');
+const byId=new Map(sources.map(source=>[source.data.id,source.data]));
+const view=readerPresentation(article,sources.map(s=>s.data),editions.edition_contracts,readerCatalog,{route:presentationRoute});
+const visibleReceiptIds=new Set(evidenceReceiptsForRoute(Astro.url.pathname).map(r=>r.receipt_id));
+const sourceContexts=readerSourceReviewContexts(article,currentEvidenceLedger,operations,{route:presentationRoute}).filter(r=>!visibleReceiptIds.has(r.id));
+const translations=translationsForEnglish(article.record_id);
+---
+<article class="reference-reader" data-reader-article={article.record_id}>
+  {embedded?<header class="page-section"><div class="eyebrow">Dated annual reading · Canonical Atlas integration</div><h2>{view.title}</h2><p class="lede">{view.overview}</p></header>:<ReviewHeader eyebrow="FTFN Reference · Reader edition" title={view.title} summary={view.overview} />}
+  <div class="page-section prose-page">
+    {binding&&<aside data-canonical-annual-binding={binding.binding_id}>
+      <h2>About this dated reading</h2><p>Connected to this Atlas page on {canonicalAnnualBindings.integration_date}. {binding.correction_review_date?<span data-annual-clarification-date>The clarification remains dated {binding.correction_review_date}, with its original AI assessment on {binding.original_review_date}.</span>:<span data-annual-assessment-only>The AI assessment and its wording corrections remain dated {binding.original_review_date}.</span>} This integration is not a new source inspection.</p>
+      <p>{binding.identity_boundary}</p><p>{binding.current_status_boundary}</p>
+      <p><a href={binding.article_route}>Original annual reading and preserved research contract</a> · <a href="/data/build-decisions.json">Exact integration decision</a></p>
+      {datedContext&&binding.context_role==='Related policy only'&&<section data-related-policy-context={datedContext.receipt_id}><h3>Separate Loudoun policy watch</h3><p>{datedContext.bounded_finding}</p><p>{datedContext.evidence_boundary}</p><p>Policy inspected {datedContext.source_checked_date}. Next policy check {datedContext.next_check_date}. This is not a Golden-Mars or GS-5 project appointment.</p><a href={datedContext.gate_route}>Open the dated policy watch and its access limits</a></section>}
+      {programContexts.length>0&&<section data-annual-program-context><h3>Independent evidence follow-ups</h3><p>Each question keeps its own saved check and follow-up date. These are not new inspections or evidence of accepted service. Read the full findings and access limits in the dated notices above.</p>{programContexts.map(gate=><section data-annual-program-gate={gate.cycle_id} data-annual-program-receipt={gate.receipt?.receipt_id}><h4>{gate.receipt?<a href={gate.receipt.gate_route}>{gate.label}</a>:gate.label}</h4>{gate.receipt?<p>Inspection {gate.receipt.source_checked_date}; decision {gate.receipt.decision_status.replaceAll('_',' ')}. Next bounded check {gate.receipt.next_check_date}.</p>:<p>No matching saved current receipt is available; no outcome or appointment is inferred.</p>}</section>)}</section>}
+      {relatedDossiers.length>0&&<nav aria-label="Separately scoped dossiers" data-annual-related-dossiers><ul>{relatedDossiers.map(link=><li><a href={link.route}>{link.label}</a></li>)}</ul></nav>}
+    </aside>}
+    {originalBinding&&<p data-canonical-annual-return={originalBinding.binding_id}><a href={originalBinding.target_route}>Read this account on its canonical Atlas page</a>, with separately dated later context. The original assessment below is unchanged.</p>}
+    <p class="card-note">Written {article.authored_date}. Evidence inherited through {article.inherited_as_of_date}; this writing pass is not a new source check.</p>
+    {!view.annualAiReview && <p><strong>{article.review_status}</strong>. Factual acceptance, accessibility certification and public release remain separate.</p>}
+    {view.annualAiReview && <AnnualAiReview decision={view.annualAiReview} reading={view.annualAiReading} changes={view.annualAiChanges} sourceChecks={view.annualAiSourceChecks} additionalInputs={view.annualAiAdditionalInputs} localInputs={view.annualAiLocalInputs} updateRoute={view.annualAiUpdateRoute!} originalStatus={article.review_status} />}
+    {view.annualReview && (view.annualAiReview ? <details data-annual-ai-prior-clarification={article.record_id}><summary>Earlier editorial clarification and retained source checks</summary><AnnualCaseReview review={view.annualReview} /></details> : <AnnualCaseReview review={view.annualReview} />)}
+    {view.alternatives.length>0&&<nav aria-label="Other English reading format"><ul>{view.alternatives.map(other=><li><a data-edition-alternative={other.id} href={other.route}>{other.label}</a></li>)}</ul></nav>}
+    {translations.length>0&&<nav aria-label="AI-reviewed translations"><p>Translations of the dated plain-English edition; linguistic fidelity reviewed by Codex AI. No new source check or independent human review is claimed.</p><ul>{translations.map(other=><li><a data-translation-alternative={other.record_id} href={other.route} lang={other.locale} hreflang={other.locale}>{other.ui.language}</a></li>)}</ul></nav>}
+    {sourceContexts.length>0&&<aside aria-label="Later checks on cited sources" data-reader-source-context>
+      <h2>Later checks on cited sources</h2>
+      <p>These dated checks share exact source IDs with this article. They are source context, not independent review of the whole article. {view.annualReview || view.annualAiReview ? 'The dated source text and its cutoff remain preserved in the reader export; any current wording clarification is identified separately above.' : 'The original text and evidence cutoff below are unchanged; research, qualification and publication approvals remain separate.'}</p>
+      {sourceContexts.map(context=><section data-reader-source-review={context.id}>
+        <h3><a href={context.route}>{context.title}</a></h3>
+        <p>{context.summary}</p><p>{context.kind}. Checked {context.checked_date}.{context.next_check_date&&` Next bounded check ${context.next_check_date}.`}</p>
+        <p>Cited sources: {context.matched_source_ids.map((id,i)=><>{i>0?'; ':''}<a href={`/atlas/sources/${id}/`}>{byId.get(id)!.name}</a></>)}</p>
+      </section>)}
+    </aside>}
+    <nav aria-label="On this page" data-reader-contents><ul>{view.sections.map(section=><li><a href={`#${section.anchor}`}>{section.heading}</a></li>)}<li><a href={`#${article.record_id.toLowerCase()}-sources`}>Sources and further reading</a></li></ul></nav>
+    {view.sections.map(section=><section data-annual-reader-section={section.anchor}><h2 id={section.anchor} tabindex="-1">{section.heading}</h2>{section.paragraphs.map(paragraph=><p>{paragraph}</p>)}</section>)}
+    <section><h2 id={`${article.record_id.toLowerCase()}-sources`} tabindex="-1">Sources and further reading</h2><ul>{view.sources.map(source=><li data-reader-source={source.id}><a href={source.url}>{source.name} (original source)</a> · <a href={source.profile_route}>Source notes: {source.name}</a></li>)}</ul>{view.related.length>0&&<ul>{view.related.map(link=><li><a href={link.route}>{link.title}</a></li>)}</ul>}</section>
+    <p><a href={binding?.article_route??registry.routes.hub}>{binding?'Open the original collection reading':'Return to this collection'}</a> · <a href="/data/phase-204-reader-completion.json">Download the dated reader edition</a></p>
+  </div>
+  {!embedded&&(article.mode === 'low-bandwidth'
+    ? <p class="page-section"><a href={record.route.replace('/reference/','/review/v1ref/')}>Inspect the preserved September 1 research contract</a></p>
+    : <details class="page-section"><summary>Inspect the preserved September 1 research contract</summary><div data-reader-contract={article.record_id}><RegistryDetail registry={registry} record={record} phase={phase!} release="v1ref" embedded /></div></details>)}
+</article>
+<style>
+  .reference-reader :global(.prose-page){max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere;}
+  .reference-reader :global(.prose-page h2){margin-top:2rem;}
+  summary{cursor:pointer;font-size:1rem;padding:1rem 0;}
+  summary:focus-visible{outline:3px solid currentColor;outline-offset:4px;}
+  h2:focus-visible{outline:3px solid currentColor;outline-offset:4px;}
+  @media print{details{display:none;}}
+</style>

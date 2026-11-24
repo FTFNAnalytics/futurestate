@@ -1,0 +1,43 @@
+import first from './reference-attribution-reviews.json' with {type:'json'};
+import second from './reference-attribution-57x-reviews.mjs';
+import third from './reference-attribution-57w-reviews.mjs';
+import fourth from './reference-attribution-57v-reviews.mjs';
+import fifth from './reference-attribution-57u-reviews.mjs';
+import sixth from './reference-attribution-57t-reviews.mjs';
+import {reviews57s,reviews57r} from './reference-attribution-57rs-reviews.mjs';
+import {reviews57q,reviews57p} from './reference-attribution-57pq-reviews.mjs';
+import {reviews57o,reviews57n} from './reference-attribution-57no-reviews.mjs';
+import reviews57m from './reference-attribution-57m-reviews.mjs';
+import reviews57l from './reference-attribution-57l-reviews.mjs';
+import reviews56t from './reference-attribution-56t-reviews.mjs';
+import reviews57k from './reference-attribution-57k-reviews.mjs';
+import reviews57j from './reference-attribution-57j-reviews.mjs';
+import reviews57i from './reference-attribution-57i-reviews.mjs';
+import reviews57h from './reference-attribution-57h-reviews.mjs';
+import reviews57g from './reference-attribution-57g-reviews.mjs';
+import {reviews56g,reviews56h} from './reference-attribution-56gh-reviews.mjs';
+export const attributionTranches=[
+ {key:'57y',reviews:first,update_id:'update-2026-09-14-reference-attribution-57y',collection_slug:'federation-remediation-witness-rotation-recusal-time-holdover-coordinated-rollout-legacy-recovery-2026',briefing_slug:'research-watch-055-federation-remediation-and-long-term-recovery',historical_heading:'What Phase 57Y proves'},
+  {key:'57x',reviews:second,update_id:'update-2026-09-15-reference-attribution-57x',collection_slug:'federation-health-witness-diversity-fork-adjudication-time-corroboration-patch-provenance-legacy-decommissioning-2026',briefing_slug:'research-watch-054-federation-health-and-reversible-decommissioning',historical_heading:'What Phase 57X proves'},
+  {key:'57w',reviews:third,update_id:'update-2026-09-15-reference-attribution-57w',collection_slug:'quorum-ceremonies-witness-availability-fork-accountability-time-failover-build-provenance-reissuance-2026',briefing_slug:'research-watch-053-quorum-operations-and-post-compromise-reissuance',historical_heading:'What Phase 57W proves'},
+  {key:'57v',reviews:fourth,update_id:'update-2026-09-15-reference-attribution-57v',collection_slug:'threshold-authorization-witness-gossip-trusted-time-verifier-diversity-compromise-recovery-2026',briefing_slug:'research-watch-052-threshold-trust-and-compromise-recovery',historical_heading:'What Phase 57V proves'},
+  {key:'57u',reviews:fifth,update_id:'update-2026-09-15-reference-attribution-57u',collection_slug:'governed-keys-transparency-multi-origin-incidents-recovery-objectives-2026',briefing_slug:'research-watch-051-governed-keys-transparency-and-incident-recovery',historical_heading:'What Phase 57U proves'},
+  {key:'57t',reviews:sixth,update_id:'update-2026-09-15-reference-attribution-57t',collection_slug:'canonical-verification-endpoints-signed-release-indexes-cache-mirror-recovery-2026',briefing_slug:'research-watch-050-canonical-verification-delivery-and-recovery',historical_heading:'What Phase 57T proves'},
+  {key:'57s',reviews:reviews57s,update_id:'update-2026-09-15-reference-attribution-57s',collection_slug:'reader-verifiable-lifecycle-manifests-stale-view-provenance-exports-2026',briefing_slug:'research-watch-049-reader-verification-status-freshness-provenance-exports',historical_heading:'What Phase 57S proves'},
+  {key:'57r',reviews:reviews57r,update_id:'update-2026-09-15-reference-attribution-57r',collection_slug:'publication-status-change-notices-restore-republication-provenance-2026',briefing_slug:'research-watch-048-publication-status-change-notices-provenance',historical_heading:'What Phase 57R proves'},
+  {key:'57q',reviews:reviews57q,update_id:'update-2026-09-15-reference-attribution-57q',collection_slug:'manual-release-authorization-publication-bundles-withdrawal-rollback-receipts-2026',briefing_slug:'research-watch-047-manual-release-publication-bundles-rollback-receipts',historical_heading:'What Phase 57Q proves'},
+  {key:'57p',reviews:reviews57p,update_id:'update-2026-09-15-reference-attribution-57p',collection_slug:'dual-review-audit-chains-adjudication-publication-decision-receipts-2026',briefing_slug:'research-watch-046-dual-review-audit-chains-adjudication-publication-receipts',historical_heading:'What Phase 57P proves'},
+  {key:'57o',reviews:reviews57o,update_id:'update-2026-09-15-reference-attribution-57o',collection_slug:'reviewer-authorization-receipt-integrity-publication-handoff-state-machines-2026',briefing_slug:'research-watch-045-reviewer-authorization-receipt-integrity-publication-handoffs',historical_heading:'What Phase 57O proves'},
+  {key:'57n',reviews:reviews57n,update_id:'update-2026-09-15-reference-attribution-57n',collection_slug:'adapter-conformance-packet-validation-reviewer-receipt-ledgers-2026',briefing_slug:'research-watch-044-adapter-conformance-packet-validation-receipts',historical_heading:'What Phase 57N proves'},
+  {key:'57m',reviews:reviews57m,update_id:'update-2026-09-15-reference-attribution-57m',collection_slug:'source-schema-adapters-candidate-evidence-packet-templates-human-review-decision-tables-2026',briefing_slug:'research-watch-043-source-schema-adapters-packet-review-controls',historical_heading:'What Phase 57M adds'},
+  {key:'57l',reviews:reviews57l,update_id:'update-2026-09-15-reference-attribution-57l',collection_slug:'contract-field-coverage-first-eligible-record-intake-exception-playbooks-2026',briefing_slug:'research-watch-042-contract-field-coverage-intake-playbooks',historical_heading:'What Phase 57L adds'},
+  {key:'56t',reviews:reviews56t,update_id:'update-2026-09-15-reference-attribution-56t',collection_slug:'gao-official-response-acquisition-artifact-sufficiency-decision-queue-2026',briefing_slug:'research-watch-024-official-response-acquisition-queue',historical_heading:'What Phase 56T adds'},
+  {key:'57k',reviews:reviews57k,update_id:'update-2026-09-15-reference-attribution-57k',collection_slug:'cross-version-transition-matrices-longitudinal-panels-reopening-trigger-registry-2026',briefing_slug:'research-watch-041-cross-version-transition-matrices-longitudinal-panels',historical_heading:'What Phase 57K adds'},
+  {key:'57j',reviews:reviews57j,update_id:'update-2026-09-15-reference-attribution-57j',collection_slug:'historical-backfill-rejection-taxonomy-review-queue-execution-2026',briefing_slug:'research-watch-040-historical-backfill-rejection-taxonomy-review-queue-execution',historical_heading:'What Phase 57J adds'},
+  {key:'57i',reviews:reviews57i,update_id:'update-2026-09-15-reference-attribution-57i',collection_slug:'versioned-registry-change-detection-bounded-observation-ingestion-2026',briefing_slug:'research-watch-039-versioned-registry-change-detection-bounded-observation-ingestion',historical_heading:'What Phase 57I adds'},
+];
+attributionTranches.push({key:'57h',reviews:reviews57h,update_id:'update-2026-09-15-reference-attribution-57h',collection_slug:'registry-revision-provenance-compatible-observation-joins-2026',briefing_slug:'research-watch-038-registry-revision-provenance-compatible-observation-joins',historical_heading:'What Phase 57H adds'});
+attributionTranches.push({key:'57g',reviews:reviews57g,update_id:'update-2026-09-15-reference-attribution-57g',collection_slug:'named-asset-project-cohort-registry-expansion-2026',briefing_slug:'research-watch-037-named-asset-project-cohort-registry-expansion',historical_heading:'What Phase 57G adds'});
+attributionTranches.push({key:'56g',reviews:reviews56g,update_id:'update-2026-09-15-reference-attribution-56g',collection_slug:'operating-record-acquisition-closure-batch-two-2026',briefing_slug:'research-watch-011-operating-record-acquisition',historical_heading:'Acquisition result'});
+attributionTranches.push({key:'56h',reviews:reviews56h,update_id:'update-2026-09-15-reference-attribution-56h',collection_slug:'open-rail-acquisition-partial-closure-deepening-2026',briefing_slug:'research-watch-012-acquisition-and-deepening',historical_heading:'Acquisition result'});
+export default {...first,as_of_date:reviews56h.as_of_date,selection_basis:'Twenty-two complete local attribution tranches: Phase 57Y through Phase 57G and Phases 56T, 56G and 56H, totalling 839 research documents and twenty-two briefings. This does not set or approve final launch scope or certify the remaining research corpus.',tranches:attributionTranches.map(({reviews,...t})=>({...t,review_date:reviews.as_of_date,record_ids:reviews.records.map(r=>r.id)})),records:attributionTranches.flatMap(t=>t.reviews.records)};

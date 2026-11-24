@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import AndesMetroCityDossierArticle from '../../../components/review/AndesMetroCityDossierArticle.astro';
+import {andesMetroCityDossiers} from '../../../lib/andes-metro-city-named-dossiers.mjs';
+const record=andesMetroCityDossiers.records.find(r=>r.record_id==='project-lima-callao-line-2')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><AndesMetroCityDossierArticle record={record}/></BaseLayout>

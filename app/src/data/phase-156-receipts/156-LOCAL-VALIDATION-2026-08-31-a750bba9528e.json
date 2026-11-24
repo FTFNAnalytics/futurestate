@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+  "phase": 156,
+  "candidate_effective_date": "2026-08-31",
+  "validated_date": "2026-08-31",
+  "validated_at": "2026-09-01T04:02:41.909Z",
+  "status": "Passed",
+  "validation_result": "Passed local release-candidate checks",
+  "validator_contract_version": "phase-156-local-validator-v2",
+  "scope": "Local v1 release-candidate validation only; this receipt is not evidence admission, owner acceptance, repository publication, hosted deployment, or public-launch authorization.",
+  "artifact_digest_algorithm": "sha256",
+  "artifact_digest_contract": "SHA-256 over normalized schema-1.0 v1-RC source exports, the complete current route inventory, and every explicitly inventoried v1-RC publication/lifecycle update; receipt- and owner-derived Phase 156 fields are normalized to their pre-receipt state to avoid self-reference.",
+  "artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+  "validation_bundle_digest": "a750bba9528e95a1c13bac398c4a833c8da87362992867718743ca0563eebbb4",
+  "metrics": {
+    "html_pages_excluding_downloads": 6562,
+    "top_level_data_json_exports": 99,
+    "update_entries_rendered": 181,
+    "v1rc_public_html_routes": 58,
+    "v1rc_public_json_exports": 13,
+    "schema_1_0_v1rc_exports": 13,
+    "structurally_audited_v1rc_routes": 58
+  },
+  "checks": [
+    {
+      "check_id": "production-html-inventory",
+      "status": "Passed",
+      "detail": "6562 HTML pages outside /downloads"
+    },
+    {
+      "check_id": "public-json-inventory",
+      "status": "Passed",
+      "detail": "99 top-level /data JSON exports"
+    },
+    {
+      "check_id": "update-index-rendering",
+      "status": "Passed",
+      "detail": "181 update entries rendered"
+    },
+    {
+      "check_id": "v1rc-route-inventory",
+      "status": "Passed",
+      "detail": "58 unique v1-RC routes"
+    },
+    {
+      "check_id": "v1rc-route-structure",
+      "status": "Passed",
+      "detail": "58 v1-RC routes structurally audited"
+    },
+    {
+      "check_id": "v1rc-export-inventory",
+      "status": "Passed",
+      "detail": "13 unique v1-RC JSON exports"
+    },
+    {
+      "check_id": "v1rc-schema-contract",
+      "status": "Passed",
+      "detail": "13 v1-RC exports use schema_version 1.0"
+    },
+    {
+      "check_id": "owner-authority-boundary",
+      "status": "Passed",
+      "detail": "owner acceptance, public launch, hosted deployment, and v1 promotion remain unauthorized"
+    },
+    {
+      "check_id": "npm-run-validate-candidates",
+      "status": "Passed",
+      "command": "npm run validate:candidates"
+    },
+    {
+      "check_id": "npm-run-validate-content",
+      "status": "Passed",
+      "command": "npm run validate:content"
+    },
+    {
+      "check_id": "npm-run-source-health",
+      "status": "Passed",
+      "command": "npm run source:health"
+    },
+    {
+      "check_id": "npm-run-verify-phase58",
+      "status": "Passed",
+      "command": "npm run verify:phase58"
+    },
+    {
+      "check_id": "npm-run-verify-phase59",
+      "status": "Passed",
+      "command": "npm run verify:phase59"
+    },
+    {
+      "check_id": "npm-run-verify-phase60",
+      "status": "Passed",
+      "command": "npm run verify:phase60"
+    },
+    {
+      "check_id": "npm-run-verify-phase60c",
+      "status": "Passed",
+      "command": "npm run verify:phase60c"
+    },
+    {
+      "check_id": "npm-run-verify-phase61",
+      "status": "Passed",
+      "command": "npm run verify:phase61"
+    },
+    {
+      "check_id": "npm-run-test-v09",
+      "status": "Passed",
+      "command": "npm run test:v09"
+    },
+    {
+      "check_id": "npm-run-test-v1rc",
+      "status": "Passed",
+      "command": "npm run test:v1rc"
+    },
+    {
+      "check_id": "npm-run-check",
+      "status": "Passed",
+      "command": "npm run check"
+    },
+    {
+      "check_id": "npm-run-build",
+      "status": "Passed",
+      "command": "npm run build"
+    },
+    {
+      "check_id": "npm-run-verify-v1rc",
+      "status": "Passed",
+      "command": "npm run verify:v1rc"
+    }
+  ],
+  "evidence_admission_authorized": false,
+  "owner_acceptance": false,
+  "github_publication_authorized": false,
+  "hosted_deployment_authorized": false,
+  "public_launch_authorized": false,
+  "v1_promotion_state": "Held",
+  "next_action": "Regenerate Phases 145–156 so the receipt is embedded, rebuild, reverify the stable digest contract, update the deployment manifest, and present the remaining owner and calendar gates without promoting v1."
+}

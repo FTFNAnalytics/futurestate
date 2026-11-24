@@ -1,0 +1,35 @@
+{
+  "id": "source-161-fbi-ic3-2025-report",
+  "name": "FBI 2025 Internet Crime Report",
+  "url": "https://www.fbi.gov/file-repository/2025_ic3report.pdf",
+  "source_type": "Government Agency",
+  "credibility_level": "Tier 1",
+  "primary_topics": [
+    "Cybersecurity",
+    "Human Futures",
+    "Finance and Risk"
+  ],
+  "framework_layers": [
+    "Frontier Domains",
+    "Human Systems"
+  ],
+  "country_or_region": "United States",
+  "update_frequency": "Artifact family dependent; inspect the exact dated release and its revision history before reuse.",
+  "capture_priority": "High",
+  "known_limitations": "Complaint data are self-reported rather than a national-incidence estimate; categories can overlap, and reported losses are not necessarily recovered or adjudicated. The figures do not prove that AI caused the underlying fraud.",
+  "last_checked_date": "2026-08-31",
+  "watch_lanes": [
+    "Security and Standards"
+  ],
+  "live_access_type": "Data Download",
+  "data_download_url": "https://www.fbi.gov/file-repository/2025_ic3report.pdf",
+  "review_cadence_days": 30,
+  "monitoring_status": "Active",
+  "coverage_role": [
+    "Primary Data"
+  ],
+  "jurisdiction": "United States",
+  "source_owner": "Federal Bureau of Investigation",
+  "automation_notes": "Phase 161 exact-artifact rail. Preserve artifact date, data-through period, evidence type, and excluded inference in every downstream use.",
+  "notes": "Phase 161 Stack Watch exact artifact checked 2026-08-31. Inclusion as a source profile is not evidence admission or an outcome decision."
+}

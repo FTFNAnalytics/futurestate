@@ -2,28 +2,103 @@
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import atlas from "../../../data/phase-119-deep-project-place-atlas.json";
+import montanaDossiers from '../../../data/montana-project-dossiers.json';
+import {nevadaProjects,nevadaDossiers} from '../../../lib/nevada-named-dossiers.mjs';
+import {europeProjects,europeDossiers} from '../../../lib/europe-named-dossiers.mjs';
+import {southAsiaProjects,southAsiaDossiers} from '../../../lib/south-asia-named-dossiers.mjs';
+import {southernAfricaProjects,southernAfricaDossiers} from '../../../lib/southern-africa-named-dossiers.mjs';
+
+import {chileProjects,chileDossiers} from '../../../lib/chile-named-dossiers.mjs';
+import {brazilProjects,brazilDossiers} from '../../../lib/brazil-named-dossiers.mjs';
+import {northSeaProjects,northSeaDossiers} from '../../../lib/north-sea-named-dossiers.mjs';
+import {stockholmProjects,stockholmDossiers} from '../../../lib/stockholm-named-dossiers.mjs';
+import {aucklandProjects,aucklandDossiers} from '../../../lib/auckland-named-dossiers.mjs';
+import {tuasProjects,tuasDossiers} from '../../../lib/tuas-named-dossiers.mjs';
+import {portCitiesProjects,portCitiesDossiers} from '../../../lib/port-cities-named-dossiers.mjs';
+import {urbanServicesProjects,urbanServicesDossiers} from '../../../lib/urban-services-named-dossiers.mjs';
+import {nordicCitiesProjects,nordicCitiesDossiers} from '../../../lib/nordic-cities-named-dossiers.mjs';
+import {swissRailCityProjects,swissRailCityDossiers} from '../../../lib/swiss-rail-city-named-dossiers.mjs';
+import {kenyaCorridorProjects,kenyaCorridorDossiers} from '../../../lib/kenya-corridor-named-dossiers.mjs';
+import {gautengMetroProjects,gautengMetroDossiers} from '../../../lib/gauteng-metro-named-dossiers.mjs';
+import {malaysiaMetroProjects,malaysiaMetroDossiers} from '../../../lib/malaysia-metro-named-dossiers.mjs';
+import {colombiaRailProjects,colombiaRailDossiers} from '../../../lib/colombia-rail-named-dossiers.mjs';
+import {moroccoCorridorProjects,moroccoCorridorDossiers} from '../../../lib/morocco-corridor-named-dossiers.mjs';
+import {portugalWaterCitiesProjects,portugalWaterCitiesDossiers} from '../../../lib/portugal-water-cities-named-dossiers.mjs';
+import {italyRailLagoonProjects,italyRailLagoonDossiers} from '../../../lib/italy-rail-lagoon-named-dossiers.mjs';
+import {austriaHousingCitiesProjects,austriaHousingCitiesDossiers} from '../../../lib/austria-housing-cities-named-dossiers.mjs';
+import {ruhrWaterCityProjects,ruhrWaterCityDossiers} from '../../../lib/ruhr-water-city-named-dossiers.mjs';
+import {koreaEnergyCitiesProjects,koreaEnergyCitiesDossiers} from '../../../lib/korea-energy-cities-named-dossiers.mjs';
+import {istanbulCrossingsProjects,istanbulCrossingsDossiers} from '../../../lib/istanbul-crossings-named-dossiers.mjs';
+import {finlandMetroCitiesProjects,finlandMetroCitiesDossiers} from '../../../lib/finland-metro-cities-named-dossiers.mjs';
+import {andesMetroCityProjects,andesMetroCityDossiers} from '../../../lib/andes-metro-city-named-dossiers.mjs';
+import {czechMetroCitiesProjects,czechMetroCitiesDossiers} from '../../../lib/czech-metro-cities-named-dossiers.mjs';
+import {indonesiaRailCityProjects,indonesiaRailCityDossiers} from '../../../lib/indonesia-rail-city-named-dossiers.mjs';
+import {senegalMobilityEnergyProjects,senegalMobilityEnergyDossiers} from '../../../lib/senegal-mobility-energy-named-dossiers.mjs';
 
 const projects = atlas.projects;
 const governed = projects.filter((record) => record.coverage.tier_id === "Tier A");
 const curated = projects.filter((record) => record.coverage.tier_id === "Tier B");
 ---
 
-<BaseLayout title="Project Atlas | FTFN" description="Twenty-four named project and adoption cases with explicit evidence relationships, conversion boundaries, and next artifacts.">
+<BaseLayout title="Project Atlas | FTFN" description={`Named project and adoption cases, plus ${montanaDossiers.records.length} distinct Montana proposal-stage dossiers, with explicit evidence boundaries and next artifacts.`}>
   <section class="page-section">
     <div class="eyebrow">Atlas / Projects</div>
     <h1 class="page-title">Named projects, explicit evidence boundaries.</h1>
+    <p>The regional directory links to every expanded dossier. Open a named project for its full account, sources and next evidence requirements.</p>
     <p class="lede">
       The Project Atlas joins every public casebook to stable identity, chronology,
       evidence rails, unresolved gates, next artifacts, and update responsibility.
       Coverage tiers describe the record structure—not project quality or readiness.
     </p>
     <div class="meta-row">
-      <MetaPill label={`${projects.length} named cases`} tone="published" />
+      <MetaPill label={`${projects.length} historical named cases`} tone="published" />
+      <MetaPill label={`${montanaDossiers.records.length} new Montana dossiers`} />
       <MetaPill label={`${governed.length} governed conversion files`} tone="review" />
       <MetaPill label={`${curated.length} curated evidence cases`} />
     </div>
   </section>
 
+  <section class="page-section">
+    <h2>{montanaDossiers.records.length} distinct Montana broadband projects</h2>
+    <p>Owner-authorized AI review has cleared these identities and their bounded proposal-stage accounts. The program parent remains context and is not counted again. <a href="/method/portfolio-decisions/">See the counting decisions</a>.</p>
+    <p><a class="button" href="/atlas/projects/montana-bead/">Browse all {montanaDossiers.records.length} Montana dossiers</a></p>
+    <div class="grid">{montanaDossiers.records.slice(0,6).map(record=><article class="record-card"><div class="eyebrow">{record.record_id}</div><h3><a href={record.route}>{record.title}</a></h3><p>{record.answer}</p><p class="card-note">Proposal identity and funding, not construction or service acceptance.</p></article>)}</div>
+  </section>
+
+  <section class="page-section">
+    <h2>Two distinct Nevada lithium projects</h2>
+    <p>Reviewed {nevadaDossiers.inspected_date}. Construction at Thacker Pass and the pending Rhyolite Ridge investment decision remain separate. <a href="/atlas/places/humboldt-county-nevada/">Read the Humboldt County receiving-system account</a>.</p>
+    <ul class="project-directory">{nevadaProjects.map(record=><li data-nevada-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul>
+  </section>
+  <section class="page-section"><h2>European nuclear construction and operation</h2><p>Reviewed {europeDossiers.inspected_date}. A construction baseline and an operating unit's outage record answer different questions. <a href="/atlas/places/somerset-council-area/">Read the Somerset housing account</a>.</p><ul class="project-directory">{europeProjects.map(record=><li data-europe-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>South Asian urban rail</h2><p>Reviewed {southAsiaDossiers.inspected_date}. Mumbai and Dhaka connect operating milestones with transfer, congestion and distributional evidence.</p><ul class="project-directory">{southAsiaProjects.map(record=><li data-south-asia-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Southern African water construction and delivery</h2><p>Reviewed {southernAfricaDossiers.inspected_date}. The integrated Lesotho project connects engineering milestones with resettlement and eventual transfer service. <a href="/atlas/places/mokhotlong-district/">Read the Mokhotlong district account</a>.</p><ul class="project-directory">{southernAfricaProjects.map(record=><li data-southern-africa-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Chile geothermal power and drinking-water supply</h2><p>Reviewed {chileDossiers.inspected_date}. A geothermal plant and a separate coastal desalination system connect engineering choices with grid protection and municipal delivery.</p><ul class="project-directory">{chileProjects.map(record=><li data-chile-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Brazil freight and industrial infrastructure</h2><p>Reviewed {brazilDossiers.inspected_date}. A central railway subconcession and a separate port-industrial complex distinguish investment milestones, operating activity and delivered service. No direct rail connection between them is asserted.</p><ul class="project-directory">{brazilProjects.map(record=><li data-brazil-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>North Sea carbon transport and storage</h2><p>Reviewed {northSeaDossiers.inspected_date}. Northern Lights connects a receiving terminal, cargo interfaces and offshore storage. First injection, formal completion and expansion remain separate milestones.</p><ul class="project-directory">{northSeaProjects.map(record=><li data-north-sea-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Stockholm road and interchange delivery</h2><p>Reviewed {stockholmDossiers.inspected_date}. The E4 bypass and Slussen redevelopment keep scheduled openings, asset handovers and operating readiness separate.</p><ul class="project-directory">{stockholmProjects.map(record=><li data-stockholm-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Auckland rail and wastewater connections</h2><p>Reviewed {aucklandDossiers.inspected_date}. City Rail Link and Central Interceptor connect major tunnel infrastructure to the journeys and catchments they serve. Operational reports retain their dates, units and geographic boundaries.</p><ul class="project-directory">{aucklandProjects.map(record=><li data-auckland-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Tuas port and integrated water–waste systems</h2><p>Reviewed {tuasDossiers.inspected_date}. Tuas Port and Tuas Nexus connect freight, water, waste and energy systems. Operating stages, construction milestones and future capacities retain separate dates and evidence.</p><ul class="project-directory">{tuasProjects.map(record=><li data-tuas-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Busan New Port and its logistics connections</h2><p>Reviewed {portCitiesDossiers.inspected_date}. One cross-boundary port development, with terminal automation, opening, energy and inland links kept distinct from wider expansion and measured performance.</p><ul class="project-directory">{portCitiesProjects.map(record=><li data-port-cities-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Madrid Nuevo Norte and its delivery dependencies</h2><p>Reviewed {urbanServicesDossiers.inspected_date}. One urban regeneration development, with planning, housing, rail and water stages kept distinct from completed services.</p><ul class="project-directory">{urbanServicesProjects.map(record=><li data-urban-services-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Cityringen: opening and operating evidence</h2><p>Reviewed {nordicCitiesDossiers.inspected_date}. One ring railway, with shared-line reports and a future operator transfer kept separate.</p><ul class="project-directory">{nordicCitiesProjects.map(record=><li data-nordic-cities-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Gotthard and Ceneri rail systems</h2><p>Reviewed {swissRailCityDossiers.inspected_date}. Two distinct tunnels connect opening, recovery and wider operating dependencies.</p><ul class="project-directory">{swissRailCityProjects.map(record=><li data-swiss-rail-city-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Kenya’s coastal rail corridor</h2><p>Reviewed {kenyaCorridorDossiers.inspected_date}. One railway phase connects service milestones, freight handling and receiving networks.</p><ul class="project-directory">{kenyaCorridorProjects.map(record=><li data-kenya-corridor-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Gautrain and its urban connections</h2><p>Reviewed {gautengMetroDossiers.inspected_date}. One regional railway connects opening stages, feeder services, financing history and station uses.</p><ul class="project-directory">{gautengMetroProjects.map(record=><li data-gauteng-metro-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Putrajaya MRT and its city connections</h2><p>Reviewed {malaysiaMetroDossiers.inspected_date}. One regional railway connects staged opening, accessible equipment and the onward journey.</p><ul class="project-directory">{malaysiaMetroProjects.map(record=><li data-malaysia-metro-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Colombia’s new and established railways</h2><p>Reviewed {colombiaRailDossiers.inspected_date}. Bogotá’s construction and Medellín’s operating railway have distinct tests for delivery, renewal and usable access.</p><ul class="project-directory">{colombiaRailProjects.map(record=><li data-colombia-rail-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Morocco’s original high-speed corridor</h2><p>Reviewed {moroccoCorridorDossiers.inspected_date}. Al Boraq connects a new high-speed line with a conventional receiving network; later orders and expansion works retain separate delivery stages.</p><ul class="project-directory">{moroccoCorridorProjects.map(record=><li data-morocco-corridor-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Alqueva’s water and energy system</h2><p>Reviewed {portugalWaterCitiesDossiers.inspected_date}. Conditional allocations, pumping electricity and named expansion components retain separate operating questions.</p><ul class="project-directory">{portugalWaterCitiesProjects.map(record=><li data-portugal-water-cities-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Italian rail and lagoon projects</h2><p>Reviewed {italyRailLagoonDossiers.inspected_date}. MOSE and Milan M4 connect operating infrastructure with maintenance, public responsibility and access.</p><ul class="project-directory">{italyRailLagoonProjects.map(record=><li data-italy-rail-lagoon-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Seestadt housing and neighbourhood services</h2><p>Reviewed {austriaHousingCitiesDossiers.inspected_date}. One phased development programme connects housing, education and public space while retaining future delivery milestones.</p><ul class="project-directory">{austriaHousingCitiesProjects.map(record=><li data-austria-housing-cities-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Emscher sewer and PHOENIX See</h2><p>Reviewed {ruhrWaterCityDossiers.inspected_date}. Two bounded water projects distinguish sewer operation, river recovery and the continuing management of a public lake.</p><ul class="project-directory">{ruhrWaterCityProjects.map(record=><li data-ruhr-water-city-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Sihwa tidal generation</h2><p>Reviewed {koreaEnergyCitiesDossiers.inspected_date}. One named tidal plant distinguishes engineering capacity, commercial operation, reported generation and water circulation.</p><ul class="project-directory">{koreaEnergyCitiesProjects.map(record=><li data-korea-energy-cities-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Istanbul's rail and road crossings</h2><p>Reviewed {istanbulCrossingsDossiers.inspected_date}. Two separate operating projects distinguish corridor stages, reported use, concession structure and proposed future relief.</p><ul class="project-directory">{istanbulCrossingsProjects.map(record=><li data-istanbul-crossings-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>West Metro lifecycle and service</h2><p>Reviewed {finlandMetroCitiesDossiers.inspected_date}. One two-phase operating project connects asset ownership, station energy results and passenger access during maintenance.</p><ul class="project-directory">{finlandMetroCitiesProjects.map(record=><li data-finland-metro-cities-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Quito and Lima–Callao metro delivery</h2><p>Reviewed {andesMetroCityDossiers.inspected_date}. Two named metro projects distinguish operating sections, excavation milestones, maintenance and passenger access from future delivery.</p><ul class="project-directory">{andesMetroCityProjects.map(record=><li data-andes-metro-city-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Prague Metro D construction and interfaces</h2><p>Reviewed {czechMetroCitiesDossiers.inspected_date}. One staged railway connects construction contracts, renamed stations, monitoring and neighbourhood access while retaining a material systems-scope discrepancy.</p><ul class="project-directory">{czechMetroCitiesProjects.map(record=><li data-czech-metro-cities-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Jakarta urban and intercity railways</h2><p>Reviewed {indonesiaRailCityDossiers.inspected_date}. Two named railways distinguish existing passenger service, staged construction, ticket access and onward connections. Reporting periods and future opening scopes remain explicit.</p><ul class="project-directory">{indonesiaRailCityProjects.map(record=><li data-indonesia-rail-city-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
+  <section class="page-section"><h2>Senegal mobility and wind power</h2><p>Reviewed {senegalMobilityEnergyDossiers.inspected_date}. Dakar BRT and Taïba N’Diaye distinguish operating assets from service integration, expansion and storage proposals. The wind farm is not assumed to supply the buses directly.</p><ul class="project-directory">{senegalMobilityEnergyProjects.map(record=><li data-senegal-mobility-energy-index={record.record_id} data-compact-project-link={record.record_id}><a href={record.route}>{record.title}</a></li>)}</ul></section>
   <section class="page-section review-columns">
     {atlas.coverage_tiers.map((tier) => (
       <article>
@@ -68,3 +143,7 @@ const curated = projects.filter((record) => record.coverage.tier_id === "Tier B"
     <p><a class="inline-link" href={atlas.routes.public_export}>Download the canonical Atlas registry</a></p>
   </section>
 </BaseLayout>
+<style>
+  .project-directory{max-width:76ch;line-height:1.65;padding-inline-start:1.5rem;}
+  .project-directory li{margin-block:.5rem;overflow-wrap:anywhere;}
+</style>

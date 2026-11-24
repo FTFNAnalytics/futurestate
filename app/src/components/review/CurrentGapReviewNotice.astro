@@ -1,0 +1,16 @@
+---
+import {gapReviewsForRoute} from '../../lib/current-gap-reviews.mjs';
+const reviews=gapReviewsForRoute(Astro.url.pathname);
+---
+{reviews.map(review=>(
+  <section class="page-section" data-current-gap-review={review.receipt_id} aria-label="Separate acceptance review">
+    <div class="eyebrow">{review.phase} · separate acceptance review</div>
+    <h2>{review.decision}: {review.gap_id}</h2>
+    <p>Scheduled {review.scheduled_check_date}; inspected {review.source_checked_date}; next check {review.next_check_date}.</p>
+    <p>{review.stage_result}</p>
+    <p>{review.evidence_boundary}</p>
+    <p>{review.next_action}</p>
+    <details><summary>Official records and inspection limits</summary><ul>{review.official_surface_checks.map(check=>(<li><a href={check.url}>{check.locator}</a>: {check.finding} {check.limitation}</li>))}</ul></details>
+    <p><a href="/data/current-gap-reviews.json">Dated acceptance receipt</a>. Historical review retained; not another cycle gate. Production verification and external release remain held.</p>
+  </section>
+))}

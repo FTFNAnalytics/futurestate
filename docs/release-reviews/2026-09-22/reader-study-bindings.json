@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0",
+  "prepared_date": "2026-09-23",
+  "status": "Protocol preparation only; no participants recruited, contacted or tested.",
+  "candidate_binding": {
+    "source_commit": "824734092ec6af6171c273527c532587808f605a",
+    "candidate_digest": "c341284d9defad5635a12d52d77aa065cfbd666f545d8b6a013da44472088e3b",
+    "validation_receipt": "204-FULL-LOCAL-VALIDATION-2026-09-25-2058af752c4f",
+    "validation_results": "outputs/validation/2026-09-25T21-33-22.087Z-MdLWKr/results.json",
+    "recovery_report": "outputs/release-checkpoints/2026-09-25T21-56-05.587Z-Av7lZ0/git-recovery-verification.json",
+    "boundary": "Application-version pins only. These later protocol materials are not claimed to be inside that recovered source commit."
+  },
+  "start_route": "/",
+  "required_actual_readers": 5,
+  "required_successes_on_each_task": 4,
+  "actual_readers": 0,
+  "completed_attempts": 0,
+  "tasks": [
+    {
+      "task": 1,
+      "prompt": "Find the quantum edition. What does its selected result not establish about deployment?",
+      "success_criterion": "Finds the edition and distinguishes bounded memory/logical-operation evidence from a general economical application.",
+      "moderator_answer_key": {
+        "id": "184-TOPIC-015",
+        "title": "Quantum progress: memory, logical operations and useful applications are different tests",
+        "route": "/reference/topic-canon/quantum--edition-2/",
+        "record_sha256": "56542cfa1becda4d3a98412c207ecbf0e2b0884f9cd0f66e702cea21844b17ae",
+        "rendered_sha256": "9fb5e7fecfbec694e53096f62f685f973158fbdbd3fd81ee363c2ca7873445d9"
+      },
+      "successful_readers": null,
+      "acceptance": null
+    },
+    {
+      "task": 2,
+      "prompt": "Find Toronto application 24 254930. What is decided, and what later evidence is still needed?",
+      "success_criterion": "Distinguishes Council adoption, withheld bills/conditions, enactment and a project-specific permit; does not infer permit nonexistence from bounded searches.",
+      "moderator_answer_key": {
+        "id": "191-PROJECT-001",
+        "title": "Toronto 24 254930: adoption and enactment remain separate questions",
+        "route": "/reference/international-projects/toronto-24-254930/",
+        "record_sha256": "b3ad31442d6feed5e5f6c0138b3378204bff94dac390ad575a27ea80bd45cefa",
+        "rendered_sha256": "85a552ea0a4c1f324b82021bb21bfaeba255dfa6df365c672a00c170e3eafa0f"
+      },
+      "successful_readers": null,
+      "acceptance": null
+    },
+    {
+      "task": 3,
+      "prompt": "Find the South Australia lens. Why is there no regional battery performance score?",
+      "success_criterion": "Explains separate assets, periods, customer populations and service definitions; does not treat nameplate capacity as observed reliability.",
+      "moderator_answer_key": {
+        "id": "192-PLACE-002",
+        "title": "South Australia: distinguish generation, network services and household electricity costs",
+        "route": "/reference/global-places-ii/south-australia-grid-storage/",
+        "record_sha256": "e1730cf0669a3f3d8e4fafa75af8f5132eb21a9cc31f65da8877ad7a8e178aac",
+        "rendered_sha256": "5ad4664e24725943cfbc7fec0c3f41a2fc9cc12d16644568f3b8bfd6cd5ca677"
+      },
+      "successful_readers": null,
+      "acceptance": null
+    },
+    {
+      "task": 4,
+      "prompt": "Find the Amtrak 24-test correction. What was the original headline, and who performed the tests?",
+      "success_criterion": "Identifies the original headline and FTFN adapter tests; does not attribute software-test passage to Amtrak operating outcomes.",
+      "moderator_answer_key": {
+        "id": "signal-57n-amtrak-24-accepted-label-conformance-tests",
+        "title": "FTFN adapter passes 24 Amtrak-label conformance tests",
+        "route": "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
+        "record_sha256": "e6ac0e6db4728c586763f5882e0b5ccd997f2e8804d8ed79db0e9efe11aa7519",
+        "original_title": "Amtrak passes 24 accepted-label conformance tests",
+        "rendered_sha256": "3a3bdee0557e399fe34d200de755fbfedec47d868a56f75762918d41d36dc7c1"
+      },
+      "successful_readers": null,
+      "acceptance": null
+    },
+    {
+      "task": 5,
+      "prompt": "Find the September 23 Nevada permit correction update. What changed, and what remains unapproved?",
+      "success_criterion": "Identifies the Rhyolite Ridge/Thacker Pass distinction in two paired readings and retained prior corrections, while recognizing that no completed compliance, operating status, independent approval, admitted series, deployment or launch was established.",
+      "moderator_answer_key": {
+        "id": "update-2026-09-23-annual-nevada-permit-identity",
+        "title": "Rhyolite Ridge permit distinguished from Thacker Pass financing",
+        "route": "/updates/update-2026-09-23-annual-nevada-permit-identity/",
+        "record_sha256": "c3a0fe6ce5f7a33a8673aa68ee0ae7cf62efb044cd065308e35161b956d78598",
+        "rendered_sha256": "895ded5de38a94b65abfccc66e7554afcda79dd2b6fd85863617bbebeeb74aa9"
+      },
+      "successful_readers": null,
+      "acceptance": null
+    }
+  ],
+  "format_routes": [
+    {
+      "id": "202-EDITION-001",
+      "route": "/reference/accessible-editions/advanced-manufacturing-plain-language-en/",
+      "title": "Advanced manufacturing: from factory plans to dependable production",
+      "kind": "Plain English",
+      "rendered_sha256": "4df479f604b439a65719dd94341a17a7f4146dcfbc3a873e6b30beebe0af4901"
+    },
+    {
+      "id": "202-EDITION-002",
+      "route": "/reference/accessible-editions/advanced-manufacturing-low-bandwidth-en/",
+      "title": "Advanced manufacturing: from factory plans to dependable production — concise edition",
+      "kind": "Compact",
+      "rendered_sha256": "47f884e6a9713ae754651f3506dcc7fb83979c4462e69703660770d0af74b4b9"
+    }
+  ],
+  "participants": [
+    {
+      "code": "P1",
+      "assigned": false,
+      "recording_permission": null,
+      "actual_session_date": null,
+      "device": null,
+      "browser": null,
+      "assistive_technology": null,
+      "attempts": [
+        {
+          "task": 1,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 2,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 3,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 4,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 5,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        }
+      ]
+    },
+    {
+      "code": "P2",
+      "assigned": false,
+      "recording_permission": null,
+      "actual_session_date": null,
+      "device": null,
+      "browser": null,
+      "assistive_technology": null,
+      "attempts": [
+        {
+          "task": 1,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 2,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 3,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 4,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 5,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        }
+      ]
+    },
+    {
+      "code": "P3",
+      "assigned": false,
+      "recording_permission": null,
+      "actual_session_date": null,
+      "device": null,
+      "browser": null,
+      "assistive_technology": null,
+      "attempts": [
+        {
+          "task": 1,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 2,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 3,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 4,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 5,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        }
+      ]
+    },
+    {
+      "code": "P4",
+      "assigned": false,
+      "recording_permission": null,
+      "actual_session_date": null,
+      "device": null,
+      "browser": null,
+      "assistive_technology": null,
+      "attempts": [
+        {
+          "task": 1,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 2,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 3,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 4,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 5,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        }
+      ]
+    },
+    {
+      "code": "P5",
+      "assigned": false,
+      "recording_permission": null,
+      "actual_session_date": null,
+      "device": null,
+      "browser": null,
+      "assistive_technology": null,
+      "attempts": [
+        {
+          "task": 1,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 2,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 3,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 4,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        },
+        {
+          "task": 5,
+          "attempted": false,
+          "success_unaided": null,
+          "duration_seconds": null,
+          "wrong_turns": null,
+          "search_terms": null,
+          "misunderstood_wording": null,
+          "assistance": null,
+          "reader_comments": null
+        }
+      ]
+    }
+  ],
+  "accessibility_checks": [
+    {
+      "id": "keyboard",
+      "routes": [
+        "/",
+        "/reference/explore/1/",
+        "/reference/topic-canon/quantum--edition-2/",
+        "/reference/international-projects/toronto-24-254930/",
+        "/reference/global-places-ii/south-australia-grid-storage/",
+        "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/"
+      ],
+      "method": "Actual keyboard navigation: skip link, focus/order/visibility, search and pagination, source links, current/original details; record observed behavior.",
+      "performed": false,
+      "result": null
+    },
+    {
+      "id": "assistive-technology",
+      "routes": [
+        "/reference/topic-canon/quantum--edition-2/",
+        "/reference/international-projects/toronto-24-254930/",
+        "/reference/global-places-ii/south-australia-grid-storage/",
+        "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/",
+        "/reference/accessible-editions/advanced-manufacturing-plain-language-en/",
+        "/reference/accessible-editions/advanced-manufacturing-low-bandwidth-en/"
+      ],
+      "method": "Actual assistive-technology reading of headings, landmarks, link names, corrections/history and format switching; record software/version and findings.",
+      "performed": false,
+      "result": null
+    },
+    {
+      "id": "zoom-200",
+      "routes": [
+        "/reference/topic-canon/quantum--edition-2/",
+        "/reference/international-projects/toronto-24-254930/",
+        "/reference/global-places-ii/south-australia-grid-storage/",
+        "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/",
+        "/reference/accessible-editions/advanced-manufacturing-plain-language-en/",
+        "/reference/accessible-editions/advanced-manufacturing-low-bandwidth-en/"
+      ],
+      "method": "Demonstrate actual 200% enlargement, record the confirmed setting and inspect content/control usability. A shortcut alone is not evidence.",
+      "performed": false,
+      "result": null
+    },
+    {
+      "id": "narrow-reflow",
+      "routes": [
+        "/reference/topic-canon/quantum--edition-2/",
+        "/reference/international-projects/toronto-24-254930/",
+        "/reference/global-places-ii/south-australia-grid-storage/",
+        "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/",
+        "/reference/accessible-editions/advanced-manufacturing-plain-language-en/",
+        "/reference/accessible-editions/advanced-manufacturing-low-bandwidth-en/"
+      ],
+      "method": "Inspect narrow reflow, long titles, source URLs and history panels; record actual viewport and any clipping or unintended horizontal scrolling.",
+      "performed": false,
+      "result": null
+    },
+    {
+      "id": "tables",
+      "routes": [
+        "/reference/topic-canon/quantum--edition-2/",
+        "/reference/international-projects/toronto-24-254930/",
+        "/reference/global-places-ii/south-australia-grid-storage/",
+        "/signals/57n-amtrak-24-accepted-label-conformance-tests/",
+        "/updates/update-2026-09-23-annual-nevada-permit-identity/"
+      ],
+      "method": "Inspect any tables encountered for structure and reading order. Record route and actual finding; a justified no-table result is not a blanket accessibility pass.",
+      "performed": false,
+      "result": null
+    }
+  ],
+  "ui_automation_permission": "Stopped after prior user intervention; do not resume without explicit permission.",
+  "independent_accessibility_acceptance": null,
+  "boundary": "Use actual people and observations. Prepared prompts, byte hashes and automated checks do not supply reader success, assistive-technology results, approval or authority."
+}

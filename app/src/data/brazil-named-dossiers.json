@@ -1,0 +1,512 @@
+{
+  "edition_id": "BRAZIL-NAMED-DOSSIERS-2026-11-22",
+  "inspected_date": "2026-11-22",
+  "timezone": "America/Edmonton",
+  "review_policy": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "review_state": "Dated article authored and AI self-reviewed; production verification pending",
+  "independent_review": false,
+  "phase_60_identity_added": false,
+  "sources": [
+    {
+      "id": "rmc-antt-profile",
+      "title": "Norte–Sul central segment concession profile",
+      "publisher": "ANTT",
+      "role": "Regulator's concession identity",
+      "url": "https://www.gov.br/antt/pt-br/assuntos/ferrovias/concessoes-ferroviarias/ferrovia-norte-sul-tramo-central-fnstc",
+      "publication_date": null,
+      "reference_period": "Subconcession start July 31, 2019",
+      "language": "Portuguese",
+      "interpretation_note": "Tramo central is the central segment, not the entire Norte–Sul corridor.",
+      "locator": "Concession length, start and term fields",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The undated profile identifies the subconcession; it is not a current traffic or reliability report."
+    },
+    {
+      "id": "rmc-fourth-amendment",
+      "title": "Fourth amendment to the Rumo Malha Central subconcession",
+      "publisher": "ANTT / Infra S.A. / Rumo Malha Central",
+      "role": "Executed contractual instrument",
+      "url": "https://www.gov.br/antt/pt-br/assuntos/ferrovias/concessoes-ferroviarias/ferrovia-norte-sul-tramo-central-fnstc/contrato-de-subconcessao/4o-termo-aditivo-ao-contrato-de-subconcessao-da-rumo-malha-central.pdf",
+      "publication_date": null,
+      "document_date": "2024-05-10",
+      "effective_date": null,
+      "index_publication_date": "2026-06-26",
+      "index_url": "https://www.gov.br/antt/pt-br/assuntos/ferrovias/concessoes-ferroviarias/ferrovia-norte-sul-tramo-central-fnstc/contrato-de-subconcessao",
+      "reference_period": "Electronic signatures May 20–28, 2024",
+      "language": "Portuguese",
+      "interpretation_note": "The instrument date, electronic signatures, index upload and effectiveness on official extract publication are distinct.",
+      "locator": "All four PDF pages; clauses 1–3 and signatures",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The official-gazette extract was not retrieved. The 2026 index date is not the amendment's issuance or effective date; extending obligations does not certify completion."
+    },
+    {
+      "id": "rmc-alvorada-opening",
+      "title": "Alvorada road–rail terminal inauguration",
+      "publisher": "ANTT / Ministry of Transport",
+      "role": "Official inauguration account",
+      "url": "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/antt-e-ministerio-dos-transportes-inauguram-terminal-rodoferroviario-em-alvorada-to",
+      "publication_date": "2024-09-10",
+      "event_date": "2024-09-10",
+      "updated_date": "2024-09-11",
+      "language": "Portuguese",
+      "interpretation_note": "Capacidade is loading capacity, not measured annual throughput.",
+      "locator": "Terminal capacity, storage and inauguration paragraphs",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The ceremony account does not resolve the later inspection's formal-authorization condition."
+    },
+    {
+      "id": "rmc-alvorada-inspection",
+      "title": "ANTT inspection of Alvorada terminal completion",
+      "publisher": "ANTT",
+      "role": "Regulator's inspection account",
+      "url": "https://www.gov.br/antt/pt-br/assuntos/ultimas-noticias/fiscalizacao-da-antt-assegura-obras-na-ferrovia-carajas-reforca-seguranca-em-passagens-e-libera-terminal-no-centro-norte",
+      "publication_date": "2025-06-05",
+      "reference_period": "Inspections May 19–23, 2025",
+      "language": "Portuguese",
+      "interpretation_note": "Ready for operation upon formal authorization is not the authorization instrument itself.",
+      "locator": "Alvorada terminal paragraph; separate railway inspection sections",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "Carajás works and southern-network crossing observations in the same article do not apply to the central Norte–Sul segment."
+    },
+    {
+      "id": "rmc-tariff-125",
+      "title": "SUFER Decision 125: Rumo Malha Central reference tariffs",
+      "publisher": "ANTT",
+      "role": "Regulatory tariff decision",
+      "url": "https://anttlegis.antt.gov.br/action/UrlPublicasAction.php?acao=abrirAtoPublico&cod_menu=9230&cod_modulo=623&num_ato=00000125&seq_ato=000&sgl_orgao=SUFER%2FANTT%2FMT&sgl_tipo=DCS&vlr_ano=2025",
+      "publication_date": "2025-07-18",
+      "document_date": "2025-07-02",
+      "effective_date": "2025-07-18",
+      "application_date": "2025-07-31",
+      "language": "Portuguese",
+      "interpretation_note": "Maximum reference tariffs are not the actual all-in amounts paid by shippers.",
+      "locator": "Articles 1–3 and freight/right-of-passage tariff tables",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The adjustment and tables establish a pricing framework, not shipment availability, realized charges or delivered journey times."
+    },
+    {
+      "id": "acu-port-profile",
+      "title": "Porto do Açu integrated-complex profile",
+      "publisher": "Porto do Açu",
+      "role": "Operator's complex description",
+      "url": "https://portodoacu.com.br/o-porto/",
+      "publication_date": null,
+      "reference_period": "Operations since 2014; profile contains statistics of different vintages",
+      "language": "Portuguese",
+      "interpretation_note": "The integrated complex includes distinct terminal and industrial operators.",
+      "locator": "Operating history and industrial/logistics activities",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "Mixed-vintage profile totals are not used to construct a current growth series. The whole complex is counted once."
+    },
+    {
+      "id": "acu-2025-cargo",
+      "title": "Porto do Açu reports 2025 cargo movements",
+      "publisher": "Porto do Açu",
+      "role": "Operator's annual cargo announcement",
+      "url": "https://portodoacu.com.br/porto-do-acu-bate-recorde-historico-em-movimentacoes/",
+      "publication_date": "2026-04-13",
+      "reference_period": "Calendar year 2025",
+      "language": "Portuguese",
+      "interpretation_note": "Tonnes and barrels are different quantities; terminal totals are not additional whole-complex movements.",
+      "locator": "Complex total and individual-terminal paragraphs",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The operator reports 89 million tonnes for the complex and 2.1 million tonnes for TMult; the release is not an independently reconstructed throughput series."
+    },
+    {
+      "id": "acu-january-terminal",
+      "title": "Southeast port and terminal movements in January 2026",
+      "publisher": "Ministry of Ports and Airports",
+      "role": "Official monthly statistical account citing ANTAQ",
+      "url": "https://www.gov.br/portos-e-aeroportos/pt-br/assuntos/noticias/2026/03/portos-e-terminais-do-sudeste-movimentam-56-5-milhoes-de-toneladas-em-janeiro",
+      "publication_date": "2026-03-18",
+      "reference_period": "January 2026",
+      "language": "Portuguese",
+      "interpretation_note": "The 7.6-million-tonne field belongs to a named terminal, not the entire complex.",
+      "locator": "Named-terminal table paragraph for TPET/TOIL–Açu",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The malformed regional-total unit in the opening paragraph is not used or silently repaired. A single month is not annualized."
+    },
+    {
+      "id": "acu-bndes-gna2",
+      "title": "BNDES financing account for GNA II at Porto do Açu",
+      "publisher": "BNDES",
+      "role": "Public lender's project account",
+      "url": "https://agenciadenoticias.bndes.gov.br/noticia/BNDES-apoia-com-R$-375-milhoes-a-construcao-de-termeletrica-a-gas-natural-no-Porto-do-Acu",
+      "publication_date": "2026-01-30",
+      "updated_date": "2026-05-15",
+      "reference_period": "Reported commercial operation begins May 2025",
+      "language": "Portuguese",
+      "interpretation_note": "Combined-cycle natural-gas generation and a potential hydrogen blend are different operating claims.",
+      "locator": "Financing, 1,672.6 MW, commercial operation and hydrogen-capability paragraphs",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The account does not establish actual hydrogen use, recurring net generation or permanent resident employment. Construction jobs are not continuing municipal jobs."
+    },
+    {
+      "id": "acu-financial-2025",
+      "title": "Porto do Açu financial statements for 2025",
+      "publisher": "Porto do Açu",
+      "role": "Company financial filing and licence inventory",
+      "url": "https://portodoacu.com.br/wp-content/uploads/2026/03/Porto-do-Acu-Demonstracoes-Financeiras-31.12.2025.pdf",
+      "publication_date": null,
+      "document_date": "2026-03-03",
+      "reference_period": "Financial year ended December 31, 2025; comparative 2024",
+      "language": "Portuguese",
+      "interpretation_note": "LP IN006946 concerns the location of a future hydrogen and derivatives hub, not operating hydrogen production.",
+      "locator": "PDF pages 1–5 for report context; page 15 licence table and continuation on page 16",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "The table lists issuance January 26, 2024 and validity through January 26, 2029. The underlying INEA instrument and current licence status were not independently inspected; upload month is not a known exact publication date."
+    },
+    {
+      "id": "sjb-education-plan",
+      "title": "São João da Barra full-time education action plan",
+      "publisher": "Municipality of São João da Barra",
+      "role": "Official municipal plan reporting census and school-system data",
+      "url": "https://www.sjb.rj.gov.br/arquivos/diario_oficial/202_24_diario_oficial_eletronico_de_25_de_outubro_de_2024-edicao_202.pdf",
+      "publication_date": "2024-10-25",
+      "event_date": "2024-10-01",
+      "reference_period": "2022 census population; 2023 municipal school network",
+      "language": "Portuguese",
+      "interpretation_note": "Município and its six districts are not the port footprint or a metropolitan region.",
+      "locator": "PDF page 3, embedded sections 1.2–1.4 and Table 1",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "Population is the municipal plan's citation of IBGE, not a newly inspected census dataset. The historical school count is not a 2026 service-coverage measure."
+    },
+    {
+      "id": "sjb-environment-minutes",
+      "title": "September 2026 environmental council minutes",
+      "publisher": "Municipality of São João da Barra",
+      "role": "Published municipal council meeting record",
+      "url": "https://www.sjb.rj.gov.br/arquivos/diario_oficial/208_26_do-18112026-ed208.pdf",
+      "publication_date": "2026-11-18",
+      "event_date": "2026-09-24",
+      "language": "Portuguese",
+      "interpretation_note": "Ata records an earlier meeting. Modelling products, proposed cooperation and accepted construction works are distinct stages.",
+      "locator": "PDF pages 6–9, especially sections 3.5–3.6 on page 8 and closing date on page 9",
+      "inspection": "Relevant substantive text and context read; no visual PDF verification claimed",
+      "boundary": "These minutes do not establish a sanitation concession award, completed coastal works, subsequent study acceptance or a final causal finding about water quality."
+    }
+  ],
+  "records": [
+    {
+      "record_id": "project-norte-sul-central",
+      "kind": "Project",
+      "slug": "norte-sul-central",
+      "title": "Norte–Sul central railway: loading access, obligations and freight service",
+      "route": "/atlas/projects/norte-sul-central/",
+      "aliases": [
+        "Ferrovia Norte–Sul",
+        "Ferrovia Norte Sul",
+        "Rumo Malha Central",
+        "FNSTC",
+        "Porto Nacional to Estrela d’Oeste"
+      ],
+      "scope": "One central Norte–Sul subconcession from Porto Nacional, Tocantins, to Estrela d’Oeste, São Paulo, counted once. The separately contracted northern segment and individual loading terminals add no identities here. This account does not assert a direct rail link to Porto do Açu.",
+      "answer": "The central Norte–Sul line connects a long railway corridor with local loading points. Its public value depends on usable terminal access, delivery of contractual obligations and the freight service shippers actually receive.",
+      "stage": "Named subconcession and terminal milestones established; sustained freight performance and the exact Alvorada authorization remain separate evidence questions",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The counted identity is the regulator-defined central subconcession, not the entire Norte–Sul system or each terminal along it. Its endpoints and operator distinguish it from the northern concession. Alvorada is contextual infrastructure within this account, not an extra portfolio project; no earlier counted record names this same identity."
+      },
+      "historical_acquisition": {
+        "record_id": "191-PROJECT-030",
+        "route": "/review/global/projects/brazil-acquisition-1/",
+        "decision": "Named central-railway account added to the historical Brazil acquisition docket; original packet and outcome holds retained"
+      },
+      "timeline": [
+        {
+          "date": "2019-07-31",
+          "event": "Subconcession start recorded in ANTT's profile.",
+          "source_ids": [
+            "rmc-antt-profile"
+          ]
+        },
+        {
+          "date": "2024-05-10",
+          "event": "Date on the fourth amendment; later electronic signatures and official publication are distinct.",
+          "source_ids": [
+            "rmc-fourth-amendment"
+          ]
+        },
+        {
+          "date": "2024-09-10",
+          "event": "ANTT reported inauguration of the Alvorada loading terminal.",
+          "source_ids": [
+            "rmc-alvorada-opening"
+          ]
+        },
+        {
+          "date": "2025-07-18",
+          "event": "Publication of the reference-tariff decision, with the adjusted table applicable from July 31.",
+          "source_ids": [
+            "rmc-tariff-125"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "A defined segment, not every kilometre called Norte–Sul",
+          "text": "ANTT identifies the central subconcession as 1,544 kilometres, with a thirty-year term beginning on July 31, 2019. The contractual instrument defines its endpoints as Porto Nacional and Estrela d’Oeste. This boundary matters when comparing delivery claims: works, operators and obligations elsewhere on Norte–Sul cannot be assumed to belong to this contract. A corridor-level story becomes more useful when it shows the handover points between networks and keeps the responsibility for each section visible, rather than treating a shared railway name as a single operating company.",
+          "source_ids": [
+            "rmc-antt-profile",
+            "rmc-fourth-amendment"
+          ]
+        },
+        {
+          "heading": "Loading infrastructure connects farms and trains",
+          "text": "The September 2024 inauguration account presents Alvorada as a road–rail terminal with capacity for 1.5 million tonnes a year and storage of 75,000 tonnes. Those quantities describe a loading and buffering installation, not the volume actually handled over a completed year. Storage can help separate the arrival pattern of trucks from the departure pattern of trains, but a useful service account must also track queues, loading delays and missed departures. The terminal's role is therefore more specific than simply adding another point to a railway map.",
+          "source_ids": [
+            "rmc-alvorada-opening"
+          ]
+        },
+        {
+          "heading": "An opening ceremony and a later authorization condition",
+          "text": "ANTT's June 2025 inspection account says the Alvorada works were complete and ready to operate once formal authorization was given. That wording sits alongside the earlier inauguration announcement; neither should silently overwrite the other. The exact authorization, its facility scope and its effective date are needed to explain the sequence. The later article also covers other railways, whose inspection findings cannot be transferred to this terminal. Until the records are reconciled, the account should not invent a first-service date or conclude that the whole central line was unavailable.",
+          "source_ids": [
+            "rmc-alvorada-opening",
+            "rmc-alvorada-inspection"
+          ]
+        },
+        {
+          "heading": "A contractual extension keeps its own calendar",
+          "text": "The fourth amendment is dated May 10, 2024 and carries electronic signatures later that month. Its June 2026 appearance in the regulator's index is not a new issuance. The document extends specified investment deadlines by twelve months and ties effectiveness to publication of an official extract, which was not retrieved in this review. Extending an obligation is different from accepting the resulting asset. The next delivery account should identify the original milestone, the applicable revised deadline and the evidence that the corresponding work was completed.",
+          "source_ids": [
+            "rmc-fourth-amendment"
+          ]
+        },
+        {
+          "heading": "Reference tariffs do not reveal the delivered freight price",
+          "text": "SUFER Decision 125, dated July 2, 2025 and published July 18, makes its adjusted table applicable from July 31. The tables distinguish commodity-specific fixed and distance-related charges and a separate right-of-passage schedule. These are maximum reference tariffs, not a record of what a particular shipper paid. Comparing transport options requires compatible shipment size, distance, loading services and onward connections. The regulatory table supplies part of that framework; it does not demonstrate that capacity was available on the required day or that the cargo arrived on time.",
+          "source_ids": [
+            "rmc-tariff-125"
+          ]
+        },
+        {
+          "heading": "The useful outcome is a repeatable shipment",
+          "text": "A stronger operating account would follow comparable shipments across several periods: tonnes tendered and carried, loading and transit time, cancellations, damage and total charges. It would identify where the railway's responsibility ends and another carrier's begins. Seasonal peaks deserve their own treatment because a yearly average can conceal the weeks in which access matters most. This proposed evidence test is not a finding that service is poor. It is a way to distinguish a commissioned corridor from a dependable logistics product that different shippers can actually use.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "The exact Alvorada operating authorization, reconciled with the 2024 ceremony and 2025 inspection condition.",
+        "An investment-completion account tied to original and amended contractual deadlines, including the official effectiveness record.",
+        "Comparable shipment, terminal-dwell, delivered-price and reliability records with explicit network boundaries."
+      ],
+      "related": [
+        {
+          "route": "/atlas/projects/porto-do-acu/",
+          "title": "Porto do Açu: a comparison of terminal and complex reporting, not an asserted rail connection"
+        }
+      ]
+    },
+    {
+      "record_id": "project-porto-do-acu",
+      "kind": "Project",
+      "slug": "porto-do-acu",
+      "title": "Porto do Açu: cargo, industrial energy and expansion stages",
+      "route": "/atlas/projects/porto-do-acu/",
+      "aliases": [
+        "Porto do Açu",
+        "Porto do Acu",
+        "Açu port-industrial complex",
+        "Acu port"
+      ],
+      "scope": "One integrated port-industrial complex in São João da Barra, counted once across its distinct terminal and industrial operators. TMult, T-Oil, Ferroport, GNA II and a proposed hydrogen hub are contextual components, not extra counted projects in this cohort.",
+      "answer": "Porto do Açu combines cargo handling with industrial energy and development land. Its scale is best understood by separating whole-complex movements, individual terminals and facilities that are operating from those still being developed.",
+      "stage": "Operating complex with dated cargo and power accounts; future hydrogen facilities and sustained whole-system outcomes remain separate",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The identity is the integrated Açu port-industrial complex, not each corporate entity, terminal, generating unit or future proposal within it. Component evidence remains individually scoped but contributes zero extra project counts. The receiving municipality is separately identified as a place, not counted again as the port's land area."
+      },
+      "historical_acquisition": {
+        "record_id": "191-PROJECT-031",
+        "route": "/review/global/projects/brazil-acquisition-2/",
+        "decision": "Named port-industrial account added to the historical Brazil acquisition docket; original packet and outcome holds retained"
+      },
+      "timeline": [
+        {
+          "date": "2014",
+          "event": "Operations began according to the operator's complex profile.",
+          "source_ids": [
+            "acu-port-profile"
+          ]
+        },
+        {
+          "date": "2025-05",
+          "event": "GNA II commercial operation began, as later reported by BNDES; no exact day is supplied.",
+          "source_ids": [
+            "acu-bndes-gna2"
+          ]
+        },
+        {
+          "date": "2026-04-13",
+          "event": "The operator published its account of calendar-year 2025 cargo movements.",
+          "source_ids": [
+            "acu-2025-cargo"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "One complex contains several operating businesses",
+          "text": "The operator describes Açu as an integrated complex operating since 2014, bringing together port logistics and industrial activities. This is not one homogeneous terminal with a single cargo stream. The distinctions between companies, facilities and shared infrastructure matter for accountability: a cargo result, licence or investment at one facility does not automatically describe every tenant. The profile contains statistics from different periods, so those values are not assembled into an apparently continuous growth series. A useful current map would connect each operating activity to its responsible entity and access arrangements.",
+          "source_ids": [
+            "acu-port-profile"
+          ]
+        },
+        {
+          "heading": "Annual movements need a consistent counting boundary",
+          "text": "In April 2026, the operator reported 89 million tonnes moved across the complex during 2025, including a separate 2.1-million-tonne figure for TMult. These are not two independent complex totals to be added together. The same release reports oil activity in barrels, which cannot be added directly to tonnes. For readers comparing ports, the essential questions are what operations the total includes, whether transfers are counted more than once and which period each component covers. The release supplies a dated operator account, not a reconstructed, independently verified cargo ledger.",
+          "source_ids": [
+            "acu-2025-cargo"
+          ]
+        },
+        {
+          "heading": "A busy terminal month is not a whole-port year",
+          "text": "The Ministry of Ports and Airports reports 7.6 million tonnes for TPET/TOIL–Açu in January 2026, drawing on ANTAQ statistics. The named-terminal scope and single-month period remain attached to that figure. It is neither a replacement for the complex's annual total nor a basis for multiplying by twelve and calling the result observed annual throughput. A fair comparison would use the same terminal definition and reporting period in each year, with revisions visible. This article does not use the ministry page's malformed regional-total unit.",
+          "source_ids": [
+            "acu-january-terminal"
+          ]
+        },
+        {
+          "heading": "Gas generation and hydrogen capability are different stages",
+          "text": "BNDES describes GNA II as a 1,672.6 MW combined-cycle natural-gas plant that entered commercial operation in May 2025. The lender also describes equipment capable of using a hydrogen blend of up to fifty percent. Capability is not a report of the fuel actually used. Neither the financing announcement nor the generating rating supplies a recurring net-output or emissions series. The account therefore keeps operating gas generation distinct from potential fuel conversion, and treats the power plant as context within the port-complex identity rather than adding another project count.",
+          "source_ids": [
+            "acu-bndes-gna2"
+          ]
+        },
+        {
+          "heading": "A future hub's location licence is not production",
+          "text": "The company's 2025 financial statements list LP IN006946 for the location of a future hydrogen and low-carbon derivatives hub, with issuance in January 2024. This is a company licence inventory describing a prospective facility, not an inspected operating hydrogen plant. The underlying environmental instrument was not independently retrieved in this review. The distinction changes what the next milestone should be: a detailed facility scope, applicable permissions and construction or commissioning evidence, followed separately by measured output. Existing cargo or gas-generation activity cannot stand in for those hydrogen-specific records.",
+          "source_ids": [
+            "acu-financial-2025"
+          ]
+        },
+        {
+          "heading": "Shared infrastructure needs a service-level account",
+          "text": "The next useful operating picture would connect terminal access, nautical services, energy and water to the businesses using them. It should report disruption duration and affected activity, not only annual cargo. Environmental obligations should remain facility-specific while showing any shared responsibilities across the complex. A local-benefit account needs its own geography and reporting period, because workers, suppliers and residents are not interchangeable populations. Together these records would explain how an industrial platform performs through interruptions and expansion, without turning every proposed tenant into an already operating facility.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "A consistent cargo series with terminal boundaries, units, reporting periods and any double-counting rules.",
+        "Facility-specific net generation, actual fuel mix and emissions records, separate from hydrogen-capable design.",
+        "The underlying hydrogen-hub permissions and subsequent delivery records, alongside shared-service reliability and local-benefit measures."
+      ],
+      "related": [
+        {
+          "route": "/atlas/places/sao-joao-da-barra/",
+          "title": "São João da Barra: the municipality receiving industrial development"
+        },
+        {
+          "route": "/atlas/projects/norte-sul-central/",
+          "title": "Norte–Sul central segment: a separate freight-infrastructure case"
+        }
+      ]
+    },
+    {
+      "record_id": "place-sao-joao-da-barra",
+      "kind": "Place",
+      "slug": "sao-joao-da-barra",
+      "title": "São João da Barra: municipal services beside a major industrial port",
+      "route": "/atlas/places/sao-joao-da-barra/",
+      "aliases": [
+        "São João da Barra",
+        "Sao Joao da Barra",
+        "São João da Barra municipality",
+        "Atafona"
+      ],
+      "scope": "One municipality of São João da Barra in Rio de Janeiro state, including its six districts. It is not Campos dos Goytacazes, the wider Norte Fluminense region or Porto do Açu's industrial footprint; district names add no extra place identities.",
+      "answer": "São João da Barra's industrial scale and municipal needs require different evidence. Schools, sanitation planning and coastal protection must be followed where residents live, not inferred from port cargo or construction employment.",
+      "stage": "Named host municipality with dated education and environmental-planning records; current household-service and coastal-protection outcomes remain unresolved",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "The counted place is the administrative municipality, with population and service records tied to that boundary. Its six districts remain parts of the same local identity rather than six additional entries. The port complex is a project within the municipality, while neighbouring Campos dos Goytacazes and the wider region remain outside this count."
+      },
+      "historical_acquisition": {
+        "record_id": "192-PLACE-015",
+        "route": "/review/global/places/brazil-place-acquisition/",
+        "decision": "Named host-municipality account added to the historical Brazil place acquisition docket; national context and outcome holds retained"
+      },
+      "timeline": [
+        {
+          "date": "2022",
+          "event": "Census reference year for the population cited by the later municipal education plan.",
+          "source_ids": [
+            "sjb-education-plan"
+          ]
+        },
+        {
+          "date": "2024-10-25",
+          "event": "The official gazette published the full-time education action plan approved earlier that month.",
+          "source_ids": [
+            "sjb-education-plan"
+          ]
+        },
+        {
+          "date": "2026-09-24",
+          "event": "The environmental council met; its minutes were published separately on November 18.",
+          "source_ids": [
+            "sjb-environment-minutes"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Residents are not the port's workforce denominator",
+          "text": "The municipal education plan cites an IBGE population of 36,573 for 2022 and describes six districts. These are administrative and census boundaries, not a count of port workers or people employed by nearby construction. The direct census profile was unavailable in this review, so the figure is explicitly attributed to the municipality's published compilation. Keeping the boundary visible helps avoid an easy mistake: dividing an industrial investment or regional jobs estimate by the resident population and presenting the result as a household benefit.",
+          "source_ids": [
+            "sjb-education-plan"
+          ]
+        },
+        {
+          "heading": "District-level services make the place visible",
+          "text": "The plan reports 39 municipal education units in its 2023 network, distributed across the six districts. That historical inventory identifies an existing service system; it does not by itself demonstrate current coverage, travel times or successful implementation of full-time schooling. A useful update would connect the plan's commitments to actual places, enrolment, staffing and attendance. This is also why a port-centred map is insufficient for the municipality: residents' everyday access needs must be described through the services and journeys they use, not only the industrial site's location.",
+          "source_ids": [
+            "sjb-education-plan"
+          ]
+        },
+        {
+          "heading": "Sanitation studies precede a delivered service change",
+          "text": "Minutes of the September 24, 2026 environmental council meeting describe ongoing FGV sanitation modelling, revisions and the need for updated operational, municipal and tariff data. They were published on November 18, not held that day. Study delivery and technical review are steps in deciding an arrangement; they are not a concession award or proof that households received improved water and sewage services. The next account should identify accepted study versions and decisions, then trace any implementation to connections, continuity, treatment performance and customer costs.",
+          "source_ids": [
+            "sjb-environment-minutes"
+          ]
+        },
+        {
+          "heading": "Coastal analysis is not completed protection",
+          "text": "The same minutes describe the coastal-erosion feasibility study as under way and cooperation with INPH as proposed to support technical review. These statements do not establish a signed cooperation agreement, accepted design or completed shoreline works. They identify an active decision process whose outputs still need to be followed. For a coastal community, useful evidence would connect the selected intervention to locations, environmental conditions, expected protection and residual risk. Neither an announced study nor a model review should be presented as proof that erosion has been resolved.",
+          "source_ids": [
+            "sjb-environment-minutes"
+          ]
+        },
+        {
+          "heading": "Construction activity needs a resident-benefit follow-through",
+          "text": "BNDES's GNA II account places the generating project in São João da Barra and discusses employment during construction. Construction employment is not the same measure as continuing jobs held by municipal residents. The relevant follow-through would distinguish temporary and permanent positions, residence, qualifications, procurement and the time period covered. This is an evidence question, not a finding that residents did or did not benefit. It also prevents the port's total activity from standing in for a distributional account of who gains access to work and who bears additional service demands.",
+          "source_ids": [
+            "acu-bndes-gna2"
+          ]
+        },
+        {
+          "heading": "A municipal account should survive a change in project headlines",
+          "text": "A durable local dashboard would track school access, household water and sanitation, coastal exposure and employment using stable district boundaries and repeated reporting periods. It would identify the responsible institution and the next decision for each unresolved issue. Those measures should remain readable when industrial construction accelerates or a new tenant is announced. The purpose is not to force every outcome into a single development score; it is to show where progress reaches residents, where uncertainty remains and what evidence would support a practical change in policy or service delivery.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "District-level implementation and access records for education, with dates and comparable service denominators.",
+        "Accepted sanitation-study versions, the resulting institutional decision and subsequent household-service records.",
+        "Coastal-study acceptance and intervention decisions, followed by location-specific performance and residual-risk observations."
+      ],
+      "related": [
+        {
+          "route": "/atlas/projects/porto-do-acu/",
+          "title": "Porto do Açu's cargo and industrial development"
+        }
+      ]
+    }
+  ]
+}

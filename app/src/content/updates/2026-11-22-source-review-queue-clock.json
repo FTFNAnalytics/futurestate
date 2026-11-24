@@ -1,0 +1,24 @@
+{
+  "id": "update-2026-11-22-source-review-queue-clock",
+  "effective_date": "2026-11-22",
+  "entry_type": "Correction",
+  "title": "Source review queue uses the calculation date instead of an old classification date",
+  "summary": "The queue previously calculated age at September 15, showing 162 profiles due. The corrected November 22 calculation shows 685 due, 87 approaching review and 61 within the public metadata window. Source inspection dates are unchanged; these are review prompts, not failed endpoint checks.",
+  "affected_record_ids": [
+    "source-city-toronto-application-information-centre",
+    "source-nist-pqc",
+    "source-doe-office-electricity-energy-storage"
+  ],
+  "related_paths": [
+    "/atlas/",
+    "/atlas/sources/",
+    "/atlas/source-monitor/",
+    "/atlas/source-coverage/",
+    "/data/shelves/sources.json"
+  ],
+  "evidence_note": "This is a local calculation correction across the 833-profile inventory, not a new source inspection. The listed records are representative examples. Invalid or future dates and invalid declared cadences cannot acquire Current status. Irregular-source fallback no longer accidentally matches the word regular. Reconcile later scoped receipts and independent appointments before selecting a live check.",
+  "publication_effect": "The build-date calculation is separate from evidence dates and from the command-only November 22 monitoring-policy overrides. The public queue retains labeled raw-profile fallback windows. No source, evidence gate, project stage, publication status or launch authority is promoted. Production rendering and release verification remain pending.",
+  "schema_version": "1.0",
+  "update_type": "Correction"
+}
+

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Agriculture and Bioeconomy translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-005",
+  "source_record_sha256": "ae79aeb972844589b4a48b1fc80f87f9852665128f72554a341c3ed46ed9c91b",
+  "source_to_contract_mapping": "Translate the later September 10 plain-language reader; preserve the original canonical-contract digest and source list as historical provenance.",
+  "checks": [
+    "Compared the complete English overview and all six sections with both complete translations.",
+    "Retained separate subjects: crop variety, feedstock, processing plant and final product.",
+    "Preserved funding versus commercial availability and assessment rules versus a particular variety being distributed, planted or adopted.",
+    "Preserved the research-assessment-multiplication-distribution-use sequence and the definition of multiplication.",
+    "Preserved the one-season causal limit, changing weather and prices, revised statistics, and participants who discontinued use.",
+    "Preserved input/output/loss/destination measures, eligible-versus-actual participant denominators, distributional limits and all evidence dates.",
+    "Preserved the five original source IDs and URLs; links do not claim current retrieval."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Rendement retains crop yield, production utilisable retains usable output, and multiplication explicitly means seeds or planting material. Financements avoids implying that a research award is a prize or commercial outcome."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Mejoramiento vegetal, insumos, financiamiento and manejo fit the selected regional convention. Rendimiento and producción utilizable stay separate; neither a larger harvest nor processing investment is made a universal household benefit."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/agriculture-bioeconomy-fr-CA-ai-reviewed.md",
+      "file_sha256": "0ba07d62ca6e01aae8b36645c74459c89ac5bbd2258d11e0a75af5b1872bca88",
+      "proposed_contract_id": "202-EDITION-007"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/agriculture-bioeconomy-es-419-ai-reviewed.md",
+      "file_sha256": "1846488872ab7afcbc135797e66ae655be179bec107d61f1e3b992df9a5e0842",
+      "proposed_contract_id": "202-EDITION-008"
+    }
+  ],
+  "integration_state": "Complete local reader texts accepted for integration with separate original-contract provenance and any later exact-source context.",
+  "boundary": "AI linguistic-fidelity review of dated English content only. No independent human review, fresh fact-check, accessibility certification, measurement admission or publication authorization."
+}

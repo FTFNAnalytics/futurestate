@@ -4,7 +4,7 @@ export type SourceFreshnessStatus = "Current" | "Watch soon" | "Review due";
 export type SourceHealthStatus = "Probe ready" | "Manual review" | "Needs endpoint" | "Paused" | "Blocked";
 
 export interface SourceFreshnessResult {
-  ageDays: number;
+  ageDays: number | null;
   reviewAfterDays: number;
   status: SourceFreshnessStatus;
   tone: MetaTone;
@@ -31,12 +31,32 @@ export interface SourceHealthResult {
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 
+export function sourceReviewCalendarDate(now = new Date()): string {
+  return new Intl.DateTimeFormat('en-CA', {timeZone:'America/Edmonton',year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
+}
+
+// One calculation date per build process, separate from any evidence review date.
+export const sourceReviewAsOfDate = sourceReviewCalendarDate();
+
+function calendarDay(value: Date | string): number | null {
+  if (value instanceof Date) {
+    if (!Number.isFinite(value.valueOf())) return null;
+    value = value.toISOString().slice(0,10);
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return null;
+  const time = Date.parse(`${value}T00:00:00Z`);
+  return Number.isFinite(time) && new Date(time).toISOString().slice(0,10) === value ? time : null;
+}
+
+const validCadence = (value: number | undefined): value is number =>
+  Number.isSafeInteger(value) && Number(value) > 0 && Number(value) <= 3650;
+
 export function getSourceReviewWindowDays(
   updateFrequency: string,
   capturePriority: string,
   reviewCadenceDays?: number
 ): number {
-  if (reviewCadenceDays) {
+  if (validCadence(reviewCadenceDays)) {
     return reviewCadenceDays;
   }
 
@@ -51,14 +71,14 @@ export function getSourceReviewWindowDays(
     reviewAfterDays = 45;
   } else if (normalized.includes("ongoing")) {
     reviewAfterDays = 30;
+  } else if (normalized.includes("irregular")) {
+    reviewAfterDays = 120;
   } else if (normalized.includes("regular")) {
     reviewAfterDays = 60;
   } else if (normalized.includes("annual")) {
     reviewAfterDays = 400;
   } else if (normalized.includes("varies")) {
     reviewAfterDays = 75;
-  } else if (normalized.includes("irregular")) {
-    reviewAfterDays = 120;
   }
 
   if (capturePriority === "High" && reviewAfterDays > 90 && !normalized.includes("annual")) {
@@ -73,17 +93,28 @@ export function getSourceReviewWindowDays(
 }
 
 export function getSourceFreshness(
-  lastCheckedDate: Date,
+  lastCheckedDate: Date | string,
   updateFrequency: string,
   capturePriority: string,
-  generatedAt = new Date(),
+  generatedAt: Date | string = sourceReviewAsOfDate,
   reviewCadenceDays?: number
 ): SourceFreshnessResult {
   const reviewAfterDays = getSourceReviewWindowDays(updateFrequency, capturePriority, reviewCadenceDays);
-  const ageDays = Math.max(
-    0,
-    Math.floor((generatedAt.valueOf() - lastCheckedDate.valueOf()) / millisecondsPerDay)
-  );
+  const checkedDay = calendarDay(lastCheckedDate);
+  const generatedDay = calendarDay(generatedAt);
+  if (generatedDay === null) throw new Error('Source review requires a valid calculation date');
+  if (checkedDay === null || checkedDay > generatedDay || (reviewCadenceDays !== undefined && !validCadence(reviewCadenceDays))) {
+    return {
+      ageDays: null,
+      reviewAfterDays,
+      status: 'Review due',
+      tone: 'urgency',
+      note: checkedDay === null ? 'Invalid recorded inspection date; resolve the metadata before reuse.'
+        : checkedDay > generatedDay ? 'Recorded inspection date is later than the calculation date; no current-source status is inferred.'
+          : 'Invalid declared review cadence; resolve the metadata before reuse.'
+    };
+  }
+  const ageDays = (generatedDay - checkedDay) / millisecondsPerDay;
 
   if (ageDays > reviewAfterDays) {
     return {
@@ -91,7 +122,7 @@ export function getSourceFreshness(
       reviewAfterDays,
       status: "Review due",
       tone: "urgency",
-      note: "Review before using this source for new publication claims."
+      note: "Reconcile later scoped receipts and appointments before deciding whether a new source check is due."
     };
   }
 
@@ -101,7 +132,7 @@ export function getSourceFreshness(
       reviewAfterDays,
       status: "Watch soon",
       tone: "review",
-      note: "Keep this source in the next manual review pass."
+      note: "Reconcile scoped receipts when planning the next manual review pass."
     };
   }
 
@@ -110,7 +141,7 @@ export function getSourceFreshness(
     reviewAfterDays,
     status: "Current",
     tone: "possibility",
-    note: "Fresh enough for the current manual review cadence."
+      note: "Within the recorded metadata window; not a new source check or approval of related claims."
   };
 }
 

@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import TuasDossierArticle from '../../../components/review/TuasDossierArticle.astro';
+import {tuasDossiers} from '../../../lib/tuas-named-dossiers.mjs';
+const record=tuasDossiers.records.find(r=>r.record_id==='project-tuas-nexus')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><TuasDossierArticle record={record}/></BaseLayout>

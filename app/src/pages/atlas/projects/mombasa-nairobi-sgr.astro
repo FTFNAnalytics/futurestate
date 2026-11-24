@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import KenyaCorridorDossierArticle from '../../../components/review/KenyaCorridorDossierArticle.astro';
+import {kenyaCorridorDossiers} from '../../../lib/kenya-corridor-named-dossiers.mjs';
+const record=kenyaCorridorDossiers.records.find(r=>r.record_id==='project-mombasa-nairobi-sgr')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><KenyaCorridorDossierArticle record={record}/></BaseLayout>

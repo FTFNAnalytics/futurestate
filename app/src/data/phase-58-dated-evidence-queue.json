@@ -84,14 +84,45 @@
       "underlying_signal_status": "In Review",
       "source_id": "source-57b-louisiana-starlink-bead-agreement",
       "source_url": "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
-      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
-      "last_checked_date": "2026-08-10",
-      "next_check_date": "2026-09-01",
-      "review_cadence_days": 22,
-      "current_decision": "queued_watch",
-      "latest_receipt_id": null,
-      "bounded_finding": "The agreement describes planned access for 10,635 locations but not observed installations or subscriptions.",
-      "stop_rule": "Do not treat a grant agreement, planned access, or eligible locations as realized adoption."
+      "exact_next_artifact": "A ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with observation period and method.",
+      "last_checked_date": "2026-09-01",
+      "next_check_date": "2026-09-08",
+      "review_cadence_days": 7,
+      "current_decision": "no_material_change",
+      "latest_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+      "bounded_finding": "ConnectLA’s current official surfaces continue to establish planned access for 10,635 locations. Adjacent official material describes a 270-home-and-business Pecan Island plan and a Vermilion Parish discount; none reports actual installations, subscriptions, take-up, an observation period, or a compatible cohort method.",
+      "stop_rule": "Do not infer nonexistence, zero adoption, availability, program success, or program failure. Planned locations, offer terms, statutory reporting duties, and provider-wide totals do not substitute for a fixed-cohort observed installation or subscription return.",
+      "supporting_source_ids": [
+        "source-165-led-spacex-louisiana-campus-starlink-offer",
+        "source-165-starlink-louisiana-community-discount",
+        "source-165-louisiana-broadband-reporting-law",
+        "source-165-connectla-resource-library"
+      ],
+      "companion_rechecks": [
+        {
+          "receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change",
+          "prior_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+          "source_checked_date": "2026-09-08",
+          "decision_status": "no_material_change",
+          "receipt_type": "No Material Change",
+          "counts_as_cycle_decision": false,
+          "checked_source_ids": [
+            "source-57b-louisiana-starlink-bead-agreement",
+            "source-165-led-spacex-louisiana-campus-starlink-offer",
+            "source-165-starlink-louisiana-community-discount",
+            "source-165-connectla-resource-library",
+            "source-60-connectla-spacex-pecan-island-plan-2026",
+            "source-60-connectla-starlink-final-proposal-location-cohort-2026",
+            "source-60-starlink-2025-progress-report"
+          ],
+          "bounded_finding": "Seventeen current official ConnectLA, Louisiana, Starlink, and SpaceX surfaces fixed the planning cohort at 10,635 unique location IDs but supplied no compatible installation, subscription, or service-taken return with an observation period and disclosed method.",
+          "data_quality_note": "ConnectLA Exhibit B project descriptions sum to 10,636 because CM61-BEAD-LA-351-3003 says 2,937 locations while location-level Exhibit C maps 2,936. The issuer announcement and Exhibit C both support 10,635; the mismatch does not establish an outcome.",
+          "next_check_date": "2026-10-09",
+          "next_check_trigger": "Review earlier if ConnectLA or SpaceX publishes a compatible cohort outcome before the final Evidence Cycle 001 audit.",
+          "content_propagation_status": "complete",
+          "git_backed_release_status": "held"
+        }
+      ]
     },
     {
       "queue_id": "58-QUEUE-MONTANA-COMPLETED-QUARTER",
@@ -174,5 +205,7 @@
       "stop_rule": "Do not use an adjacent GAO recommendation, agency plan, or partial baseline to close this exact recommendation."
     }
   ],
-  "last_operated_date": "2026-08-23"
+  "last_operated_date": "2026-09-01",
+  "latest_companion_recheck_date": "2026-09-08",
+  "latest_companion_receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change"
 }

@@ -1,0 +1,111 @@
+{
+  "review_id": "TUAS-NAMED-ARTICLES-AI-REVIEW-2026-11-22",
+  "review_date": "2026-11-22",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision": "Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review": false,
+  "edition_sha256": "0d67f3a8a47ed835d55ae7110aa658f99a75f1739385e7a8eeaa38189400e333",
+  "sources_sha256": "d59a6e79c045a16c14c65c34a5936807290d8357309cd101ec0fa3a2641e1cd1",
+  "records": [
+    {
+      "record_id": "project-tuas-port",
+      "sha256": "2056c13d07395d5ced1c1769416f8593344d462ff1f91f6a53cd7477bd83ab6d",
+      "determination": "One staged port. Initial berth operation, formal opening, cumulative handling, reclamation and terminal construction retain different dates. Fourteen berths is explicitly the November 10 statement, not a current census. Future Phase 2 capacity and automation are not admitted as operating inventory."
+    },
+    {
+      "record_id": "project-tuas-nexus",
+      "sha256": "9d24b573a0a47e3077659c5e81dc8c3e772ab7603bb69cc5fb69b048fbb8c3ad",
+      "determination": "One co-located integrated development, with water and waste components distinct and no DTSS double count. Historical construction starts remain; older 2025–26 forecasts are superseded by current 2027 descriptions. Design flows, full-build waste capacity and another site's pilot results do not establish integrated Tuas performance."
+    },
+    {
+      "record_id": "place-singapore-west-region",
+      "sha256": "ac7c4c1a2e84bbe5a3084754bb2bcbe36b28ffc6789ba65378b4ba3fa5588601",
+      "determination": "One named URA planning region, not a municipality, country, port or catchment. Plan adoption, opened links, scheduled rail, ideas competition and district-level targets retain their own boundaries; no national-to-local transfer or uniform regional outcome."
+    }
+  ],
+  "review_checks": [
+    "Fifteen primary-source records inspected November 22 in America/Edmonton. Relevant complete article sections, date labels, capacities and forecast wording were read; search snippets were used for discovery.",
+    "English sources were read directly. No translation contract, independent subject review, on-site observation or usability session is newly claimed.",
+    "Three articles provide eighteen substantive sections, thirteen chronology events and three next-artifact requests each. Citations accompany sourced sections; synthesis requests are explicitly editorial evidence tests.",
+    "The port's early December 2021 berth operation and September 2022 formal opening remain separate. PSA's August cumulative total uses its own September 2022 reporting start. It is not annual throughput, current capacity or a count of identical physical boxes.",
+    "MPA's November 10 reclamation completion and PSA's November 20 terminal groundbreaking are different milestones. The latter forecasts progressive service from 2028. The dated 14-berth statement is not asserted as a November 22 census.",
+    "Water-module cubic metres per day, phased waste capacity and the Ulu Pandan pilot's combined tonnes per day retain their units and sites. Historical forecasts do not establish commissioning, and energy self-sufficiency remains prospective.",
+    "URA article update dates are separated from publication and event dates; global site-footer dates are not treated as article updates. The Master Plan gazette is adoption context. West Region is a subnational planning geography; Jurong Lake District targets are not region-wide observations.",
+    "Existing exact identity and route records were screened before additions. Original Phase 191/192 inputs, prior cohorts, 103 historical determinations, all 34 translated readings and the current cycle ledger remain unchanged.",
+    "Local integration adds two eligible project identities and one place, not a new cycle gate, comparable outcome-series admission, production acceptance, Git publication, launch or stewardship completion."
+  ],
+  "historical_inputs_retained": [
+    {
+      "path": "src/data/portfolio-eligibility-decisions.json",
+      "sha256": "b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"
+    },
+    {
+      "path": "src/data/phase-119-deep-project-place-atlas.json",
+      "sha256": "cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"
+    },
+    {
+      "path": "src/data/phase-61-project-conversion-registry.json",
+      "sha256": "9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"
+    },
+    {
+      "path": "src/data/phase-191-international-named-project-conversion-cohort.json",
+      "sha256": "0f57d402c94cf3ae867fedcbe0faaacf119264a559aee4ffe229dd84cf12ac71"
+    },
+    {
+      "path": "src/data/phase-192-global-place-systems-atlas.json",
+      "sha256": "2d0d9c46823e0716fb9f1ccda364b929f8172e5be1a0706fb1db17d1ef2d3ecc"
+    },
+    {
+      "path": "src/data/chile-named-dossiers.json",
+      "sha256": "2917226c524e13706985b9823e46f09ab4e273250c27179d0824bcf5cb53092e"
+    },
+    {
+      "path": "src/data/chile-named-dossier-reviews.json",
+      "sha256": "5884961882b9db3f88f9867e04b3a690067a5ee03312d4d669e4cca203a496b8"
+    },
+    {
+      "path": "src/data/phase-60-current-decisions.json",
+      "sha256": "3d39efa26c08b1964c13f212849569e00504ac2b191ccc256b5ad9fcab634b63"
+    },
+    {
+      "path": "src/data/ai-reviewed-translations.json",
+      "sha256": "73f2ee14df297b244f37ff38b6dd2df03b5681f41d85bf3cb3cf63078d4fa191"
+    },
+    {
+      "path": "src/data/brazil-named-dossiers.json",
+      "sha256": "7911e702eee06d075f35de4e4cf129bd93e7c2cae9f8560abc2a3519e67d8bcb"
+    },
+    {
+      "path": "src/data/brazil-named-dossier-reviews.json",
+      "sha256": "6fa3aabb7c255291d46a83395d60c5aff6972522377d06ac41bf862b1b03817c"
+    },
+    {
+      "path": "src/data/north-sea-named-dossiers.json",
+      "sha256": "4e6d20affdafd2cbb883f7fffadb85aa1f33b662df6339ae7ed9ac5f57e42ebf"
+    },
+    {
+      "path": "src/data/north-sea-named-dossier-reviews.json",
+      "sha256": "0de26a1e1355fafce36b742ccd6e4427bf065999082f8235a093c14818db3a3b"
+    },
+    {
+      "path": "src/data/stockholm-named-dossiers.json",
+      "sha256": "60c42bd8ff99214e47c75ee8641fb8fef7c7f9ef5bc7c010c35c83d11526b8b1"
+    },
+    {
+      "path": "src/data/stockholm-named-dossier-reviews.json",
+      "sha256": "9b87396e549828ad783c1a49abf14181795fe5f07303d9a4f5a821a5ac827111"
+    },
+    {
+      "path": "src/data/auckland-named-dossiers.json",
+      "sha256": "6f8a590b45adcc5f397d150be7d26d42d7de37c56a7c5ae524e2923f19578827"
+    },
+    {
+      "path": "src/data/auckland-named-dossier-reviews.json",
+      "sha256": "41d81c1fede5522e1933b66f662de5db427f204a661ecf3d22b2a03c97bf2e58"
+    }
+  ],
+  "publication_authorized": false,
+  "launch_authorized": false,
+  "phase_216_complete": false
+}

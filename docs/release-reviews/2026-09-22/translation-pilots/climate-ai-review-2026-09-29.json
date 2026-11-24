@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-29",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "source_retrieval_performed": false,
+  "decision": "Accept linguistic fidelity of both complete dated Climate translations",
+  "source_file": "app/src/data/phase-204-reader-completion.json",
+  "source_record_id": "202-EDITION-021",
+  "source_record_sha256": "8a1fbd2ddfa14a777488fa41c5807cb80bbf8539394a2d96fd4966d4ddd65771",
+  "source_to_contract_mapping": "Translate the September 10 plain-language reader; retain the different original canonical-contract digest and source list as historical provenance.",
+  "checks": [
+    "Compared the English title, complete overview and all six sections with both complete translations.",
+    "Preserved observation, model, exposure, vulnerability and adaptation as distinct claims; completion does not establish lasting benefit.",
+    "Preserved the dated ENSO outlook, national transportation risk assessment, administrative funding record and one Kennedy Space Center burn event without asserting avoided damage or a repeated adaptation program.",
+    "Preserved basin/asset/population identity, responsible institution and unresolved procurement, construction, maintenance and actual protection.",
+    "Preserved interruption, recovery, maintenance, repeated observations and alternative explanations involving hazard intensity, demand and socioeconomic change.",
+    "Preserved scenario/model-family compatibility, geographic and exposure changes, distribution of remaining burdens and revision histories.",
+    "Preserved the request for repeated local evidence and explicit absence of new weather observations or attribution of later events.",
+    "Preserved the September 1 evidence cutoff and September 10 English authorship date; September 29 is the actual AI translation-review date.",
+    "Preserved all 4 original source IDs and exact URLs; no fresh retrieval is claimed."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept",
+      "rationale": "Aléa, exposition and vulnérabilité retain their separate physical-risk roles. Brûlage dirigé preserves the controlled burn action without promising protection. Rétablissement describes recovery of the service, not an inferred economic return. No observation is translated as a projection or vice versa."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept",
+      "rationale": "Amenaza, exposición and vulnerabilidad retain their separate roles. Quema prescrita is the completed local action, not an avoided-damage result. Activos, continuidad and recuperación preserve the receiving-system scope. Model uncertainty and attribution limits remain explicit."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/climate-fr-CA-ai-reviewed.md",
+      "file_sha256": "b62794dea1ae3a5945c2e4ea397873f14fceaba470ea23a5d3b51be6220c85a5",
+      "proposed_contract_id": "202-EDITION-023",
+      "historical_contract_sha256": "ac0a4a9e76b85f79faebe4c486edb3ff9fb265b3ff6f792974eeab51fcd2ac2c"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/climate-es-419-ai-reviewed.md",
+      "file_sha256": "8c7943dff10c770a47297dc99c3715206b5b0c4d3eb35366b7273b88ca6ea2bc",
+      "proposed_contract_id": "202-EDITION-024",
+      "historical_contract_sha256": "0364fed9dfa4489a14404a2baac4de9e3cf3695fb5f9f0d721a5b308f90de75b"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "id": "source-56x-gao-iija-ira-agency-status-2026",
+      "name": "GAO-26-108434 full report: agency-specific IIJA and IRA funding status",
+      "url": "https://www.gao.gov/assets/gao-26-108434.pdf",
+      "path": "app/src/content/sources/source-56x-gao-iija-ira-agency-status-2026.json",
+      "sha256": "e95ec56a03756b6f5b681261cfb075f628b8dc8aea0620c7ca2c0cc2b789d75c"
+    },
+    {
+      "id": "source-nasa-ksc-prescribed-burn-2026",
+      "name": "NASA Kennedy Active-Countdown Prescribed Burn Record",
+      "url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-demonstrates-new-prescribed-burn-capability-for-spaceport/",
+      "path": "app/src/content/sources/source-nasa-ksc-prescribed-burn-2026.json",
+      "sha256": "e07f5d064334af7bf9c83c6b94dfd990d5ca19bc48fb4df55178a2e561f395b7"
+    },
+    {
+      "id": "source-usgcrp-nca5-transportation",
+      "name": "Fifth National Climate Assessment Chapter 13: Transportation",
+      "url": "https://nca2023.globalchange.gov/chapter/13/",
+      "path": "app/src/content/sources/source-usgcrp-nca5-transportation.json",
+      "sha256": "d1d89a705d411438e9215eb27afadcc40e7cda45d85148afcab27d0dcc5912f7"
+    },
+    {
+      "id": "source-noaa-cpc-enso",
+      "name": "NOAA Climate Prediction Center ENSO Diagnostic Discussion",
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+      "path": "app/src/content/sources/source-noaa-cpc-enso.json",
+      "sha256": "a7b3c926500051c55d64777c8d175ac5abc1c8ce939b6268869a41bd75703da3"
+    }
+  ],
+  "integration_state": "Complete local texts assessed for the next application batch; not integrated and not counted among the ten current translated reading pages.",
+  "boundary": "AI linguistic-fidelity review of retained English content only. No independent human review, fresh fact-check, accessibility certification, measurement admission or publication authorization. Later exact-source context must remain separate during integration. The annual appendix inventory review binds the earlier ten-translation version; preserve that exact version before adding translations."
+}

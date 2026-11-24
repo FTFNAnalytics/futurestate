@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-25",
+  "reviewer": "Codex (AI author and reviewer; not independent)",
+  "human_review_claimed": false,
+  "decision": "Accept linguistic fidelity for the two bounded, dated local translation texts",
+  "source_record_id": "202-EDITION-001",
+  "source_record_sha256": "0e11cb60a07d78b0f5576ae2393ff0e48886bbe4713f358a5db6c37de08fcd72",
+  "source_to_contract_mapping": "Approved: translate the later plain-language reader text; retain the different canonical contract digest and source list as historical provenance.",
+  "canonical_contract_digest_preserved": "e154996dce938374bb41f92971fed1cbfedb55add366bf71c69c6141ec6db244",
+  "original_manifest_sha256": "250478c3a3f8c9f6b530047136606f6d7650c895e6e6f45a099f278bc7dbfbde",
+  "source_retrieval_performed": false,
+  "checks": [
+    "Read the complete English overview and all six sections against each complete translation.",
+    "Preserved installed versus qualified versus accepted-output distinctions.",
+    "Preserved the non-causal limit on training and production, denominators for yield/rework, and separate aircraft delivery and mission availability.",
+    "Preserved September 1 evidence cutoff, September 10 authorship and the distinction from September 25 AI review.",
+    "Preserved all five exact source URLs and IDs; no outside sources or operating claims were added."
+  ],
+  "findings": [
+    {
+      "locale": "fr-CA",
+      "decision": "Accept fidelity with an updated AI-review status paragraph",
+      "rationale": "Qualification, customer acceptance, yield, rework and mission availability are distinguished; the explanatory rendering of yield as taux de produits conformes avoids confusing quality yield with throughput."
+    },
+    {
+      "locale": "es-419",
+      "decision": "Accept fidelity after locale terminology normalization",
+      "rationale": "Use calificación / calificó / calificados for process, equipment and operators; retain retrabajo, desempeño and the full denominator and causal qualifications."
+    }
+  ],
+  "texts": [
+    {
+      "locale": "fr-CA",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/advanced-manufacturing-fr-CA-ai-reviewed.md",
+      "file_sha256": "cf1da0fd8bcf9bb1334c890582871623284655f3d1efec28d9d9c159df01ef04",
+      "original_path": "docs/release-reviews/2026-09-22/translation-pilots/advanced-manufacturing-fr.md",
+      "original_file_sha256": "c90838fbfb86eb274888ce175e2c2a33b3dd9b871144f5d19bd285b7c74a5980",
+      "proposed_contract_id": "202-EDITION-003"
+    },
+    {
+      "locale": "es-419",
+      "path": "docs/release-reviews/2026-09-22/translation-pilots/advanced-manufacturing-es-419-ai-reviewed.md",
+      "file_sha256": "498647992c792a63bbe4b62f22fcba7af474fe799dee4c91786da6f1ac25839e",
+      "original_path": "docs/release-reviews/2026-09-22/translation-pilots/advanced-manufacturing-es.md",
+      "original_file_sha256": "7d8fa16258c1f60a9ceefefa85c61cc029fa0c7c19c533504f3048eb432b547d",
+      "proposed_contract_id": "202-EDITION-004"
+    }
+  ],
+  "integration_state": "Two AI-reviewed local text artifacts ready for application integration; 34-contract application state is not rewritten by this language review.",
+  "boundary": "This is actual AI linguistic review, not a fresh primary-source fact-check, independent human review, full accessibility study, publication permission or acceptance of all 34 contracts."
+}

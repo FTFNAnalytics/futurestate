@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../../../components/layout/BaseLayout.astro';
+import NevadaDossierArticle from '../../../../components/review/NevadaDossierArticle.astro';
+import {nevadaProjects} from '../../../../lib/nevada-named-dossiers.mjs';
+export function getStaticPaths(){return nevadaProjects.map(record=>({params:{project:record.slug},props:{record}}));}
+const {record}=Astro.props;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><NevadaDossierArticle record={record}/></BaseLayout>

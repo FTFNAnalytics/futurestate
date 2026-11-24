@@ -1,0 +1,588 @@
+{
+  "edition_id": "SENEGAL-MOBILITY-ENERGY-NAMED-DOSSIERS-2026-11-22",
+  "inspected_date": "2026-11-22",
+  "timezone": "America/Edmonton",
+  "review_policy": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "reviewer": "Codex (author and AI self-reviewer)",
+  "review_state": "Dated article authored and AI self-reviewed; production verification pending",
+  "independent_review": false,
+  "phase_60_identity_added": false,
+  "sources": [
+    {
+      "id": "brt-contract",
+      "title": "BRT concession and corridor",
+      "publisher": "CETUD",
+      "role": "Transport authority's network description",
+      "url": "https://cetud.sn/reseaux-de-transport/bus-regional-transit-brt/",
+      "publication_date": null,
+      "language": "French",
+      "interpretation_note": "French source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Concession paragraph and corridor figures",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Undated service description, not a daily availability or emissions measurement.",
+      "contract_date": "2022-03-21"
+    },
+    {
+      "id": "brt-services",
+      "title": "SunuBRT service patterns",
+      "publisher": "Dakar Mobilité / SunuBRT",
+      "role": "Official indexed passenger information",
+      "url": "https://www.sunubrt.sn/",
+      "publication_date": null,
+      "language": "French",
+      "interpretation_note": "French source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "B1–B4 and introductory energy description",
+      "access_mode": "Official indexed text",
+      "inspection": "Official indexed text inspected on 2026-11-22; direct homepage retrieval returned 503 and no live journey was tested",
+      "boundary": "B4 is marked forthcoming; eventual solar supply is not present traction-energy proof."
+    },
+    {
+      "id": "brt-isr",
+      "title": "BRT implementation status, October 2025",
+      "publisher": "World Bank",
+      "role": "Dated project implementation report",
+      "url": "https://documents1.worldbank.org/curated/en/099100125171039446/pdf/P156186-09845e2c-8f26-4aeb-8553-d832bcfa7258.pdf",
+      "publication_date": "2025-10-01",
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "PDF page 2, implementation status narrative",
+      "access_mode": "PDF extracted text",
+      "inspection": "PDF narrative text inspected on 2026-11-22; screenshot calls returned no viewable image, so tables and layout were not visually verified",
+      "boundary": "June 2025 construction observations and a closing-date extension are historical, not November 2026 acceptance.",
+      "reporting_period": "2025-06",
+      "progressive_operation_period": "2024-05",
+      "scheduled_closing_date": "2026-06-30"
+    },
+    {
+      "id": "brt-integration",
+      "title": "Financing transport integration",
+      "publisher": "World Bank",
+      "role": "Approval announcement for a separate mobility program",
+      "url": "https://www.worldbank.org/en/news/press-release/2025/06/17/world-bank-supports-senegal-with-100-million-to-transform-urban-mobility-in-dakar-and-secondarary-cities",
+      "publication_date": "2025-06-17",
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Approval and network-restructuring paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Approved finance and proposed integration are not completed feeder services."
+    },
+    {
+      "id": "brt-market",
+      "title": "Early market consultation for BRT access works",
+      "publisher": "World Bank / CETUD / AGEROUTE",
+      "role": "Procurement preparation notice",
+      "url": "https://www.worldbank.org/en/events/2026/10/06/senegal-avis-d-engagement-pr-coce-de-march",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Overview and four consultation objectives",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "URL carries October 6, 2026; body does not independently establish publication or event date. Consultation is not award.",
+      "url_date": "2026-10-06"
+    },
+    {
+      "id": "wind-history",
+      "title": "Taïba N’Diaye development history",
+      "publisher": "Mainstream Renewable Holdings",
+      "role": "Developer's historical project account",
+      "url": "https://www.mainstreamrp.com/markets-projects/africa__trashed/senegal/taiba-ndiaye-wind-farm/",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Project profile and commercial-operation history",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Historical ownership and annual headline figures are not a current audited operating series.",
+      "financial_close_period": "2018-07",
+      "first_phase_inauguration_period": "2020-02",
+      "commercial_operation_period": "2021"
+    },
+    {
+      "id": "wind-epc",
+      "title": "Vestas Senegal EPC order",
+      "publisher": "Vestas",
+      "role": "Equipment and maintenance contract announcement",
+      "url": "https://www.vestas.com/en/media/company-news/2018/vestas-enters-new-market-with-159-mw-epc-order-for-the--c2963339",
+      "publication_date": "2018-09-03",
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "September 3 order and service-agreement paragraphs",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "The 2018 delivery schedule is a forecast in that announcement, not actual commissioning."
+    },
+    {
+      "id": "wind-study",
+      "title": "Temporal dynamics of Taïba Ndiaye production",
+      "publisher": "Niang and colleagues, Discover Energy",
+      "role": "Original research using operator-provided observations",
+      "url": "https://link.springer.com/article/10.1007/s43937-023-00018-0",
+      "publication_date": "2023-10-20",
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Sections 2.1–2.2 and qualitative seasonal discussion",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "2021 production and ERA5 reanalysis are not current availability or on-site mast measurements.",
+      "reporting_period": "2021"
+    },
+    {
+      "id": "wind-pipeline",
+      "title": "Operating wind and development inventory",
+      "publisher": "Infinity Power",
+      "role": "Owner's project inventory",
+      "url": "https://weareinfinitypower.com/projects",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Taiba operation, wind development and storage listings",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Wind expansion and storage remain development entries; no commissioning inferred. MW and MWh differ."
+    },
+    {
+      "id": "wind-community",
+      "title": "Taïba community activities",
+      "publisher": "Vestas",
+      "role": "Supplier's community-program account",
+      "url": "https://www.vestas.com/en/sustainability/social/csr",
+      "publication_date": null,
+      "language": "English",
+      "interpretation_note": "English source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Senegal skills and community-infrastructure sections",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Reported activities do not establish independently measured income, health or consent outcomes.",
+      "training_period": "2025",
+      "market_work_period": "2026"
+    },
+    {
+      "id": "dakar-boundary",
+      "title": "Dakar census regional geography",
+      "publisher": "ANSD",
+      "role": "Official indexed regional census report",
+      "url": "https://www.ansd.sn/sites/default/files/recensements/rapport/RGPH-5_DAKAR_Avril%202026.pdf",
+      "publication_date": null,
+      "language": "French",
+      "interpretation_note": "French source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Administrative-organization excerpt identifying five departments",
+      "access_mode": "Official indexed PDF text",
+      "inspection": "Official indexed excerpt inspected on 2026-11-22; direct PDF retrieval timed out, with no visual inspection",
+      "boundary": "Only the indexed administrative excerpt was inspected; population tables and maps were not verified.",
+      "census_reporting_period": "2023",
+      "administrative_decree_date": "2021-05-28"
+    },
+    {
+      "id": "dakar-sanitation",
+      "title": "Dakar on-site sanitation program",
+      "publisher": "ONAS",
+      "role": "Program scope and implementation arrangements",
+      "url": "https://onas.sn/projets/projet-d-assainissement-autonome-de-la-region-de-dakar-paad",
+      "publication_date": null,
+      "language": "French",
+      "interpretation_note": "French source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "PAAD status, scope and technical-verification roles",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Project-area toilet access is not region-wide safely managed sanitation or completed works.",
+      "listed_start_date": "2025-03-01"
+    },
+    {
+      "id": "dakar-mobility",
+      "title": "PAMUS Dakar program",
+      "publisher": "CETUD",
+      "role": "Regional mobility program scope",
+      "url": "https://cetud.sn/projet/pamus-dakar/",
+      "publication_date": null,
+      "language": "French",
+      "interpretation_note": "French source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Program phases and five components",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Program estimates and studies do not establish spending, delivered routes or accepted assets.",
+      "phase_start_period": "2025",
+      "phase_end_period": "2029"
+    },
+    {
+      "id": "dakar-water",
+      "title": "Water preparation for Dakar 2026 sites",
+      "publisher": "SEN’EAU",
+      "role": "Operator account of targeted network and reservoir work",
+      "url": "https://www.seneau.sn/joj-dakar-2026-seneau-renforce-son-dispositif-pour-securiser-lalimentation-en-eau-des-sites/",
+      "publication_date": null,
+      "language": "French",
+      "interpretation_note": "French source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "Network reinforcement and October reservoir interventions",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Pre-event account is not a post-event review; selected Mamelles conduits do not establish full desalination-plant acceptance.",
+      "reservoir_work_start_date": "2026-10-23",
+      "reservoir_work_end_date": "2026-10-24"
+    },
+    {
+      "id": "dakar-flood",
+      "title": "PROGEP II steering review",
+      "publisher": "Ministry of Hydraulics and Sanitation, Senegal",
+      "role": "Ministry's dated program review",
+      "url": "https://mha.gouv.sn/13712-2/",
+      "publication_date": "2025-08-20",
+      "language": "French",
+      "interpretation_note": "French source interpreted and self-reviewed by Codex; no independent language or subject review claimed.",
+      "locator": "August 19 meeting and cumulative works paragraph",
+      "access_mode": "HTML body",
+      "inspection": "Specified source body or segment inspected on 2026-11-22; linked files, forms and live services were not tested",
+      "boundary": "Reported totals span Dakar and other regions; not a Dakar-only count or storm-protection guarantee.",
+      "meeting_date": "2025-08-19"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "project-dakar-brt",
+      "kind": "Project",
+      "title": "Dakar BRT / SunuBRT",
+      "route": "/atlas/projects/dakar-brt/",
+      "aliases": [
+        "Dakar BRT",
+        "SunuBRT",
+        "Dakar Guediawaye bus rapid transit",
+        "Dakar Mobilite BRT"
+      ],
+      "answer": "Dakar's electric BRT puts a high-capacity bus corridor into service while access works, feeder integration and operating assurance remain separate tasks. Its contract, passenger offer and construction record answer different questions.",
+      "scope": "One Dakar–Guédiawaye BRT corridor, including its stations and service patterns. The proposed second BRT line, TER railway and wider PAMUS program are not additional components counted as this project.",
+      "stage": "Progressive operation began in May 2024. The inspected 2025 implementation report and 2026 access-works notice do not establish full corridor closeout or a current reliability series.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Count the named Dakar–Guédiawaye BRT corridor once. SunuBRT is its passenger-service identity, not a second project; stations, B1–B4 patterns and access contracts do not multiply the count. Neither the separate TER railway nor a proposed second BRT corridor is admitted by this account. No prior portfolio or historical acquisition identity is reused."
+      },
+      "timeline": [
+        {
+          "date": "2022-03-21",
+          "event": "CETUD dates the public-service concession signature to this day.",
+          "source_ids": [
+            "brt-contract"
+          ]
+        },
+        {
+          "date": "2024-05",
+          "event": "The implementation report dates progressive passenger operation to this month.",
+          "source_ids": [
+            "brt-isr"
+          ]
+        },
+        {
+          "date": "2025-06-17",
+          "event": "The World Bank announced finance for the separate mobility-integration project.",
+          "source_ids": [
+            "brt-integration"
+          ]
+        },
+        {
+          "date": "2025-10-01",
+          "event": "The implementation report retained outstanding integration and handover work.",
+          "source_ids": [
+            "brt-isr"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "A corridor with an operating contract",
+          "text": "CETUD describes an 18-kilometre reserved corridor with 23 stations and an electric articulated-bus fleet. The March 2022 concession assigns Dakar Mobilité operation, maintenance and acquisition of rolling stock and associated equipment for fifteen years. That allocation makes equipment upkeep part of the service model, rather than something established by the physical busway alone. The station-solar description concerns stations, not proof of the electricity used for every vehicle charge. Contract obligations and fleet size should therefore be read alongside actual availability: a listed bus is not necessarily a bus providing service on a particular day.",
+          "source_ids": [
+            "brt-contract"
+          ]
+        },
+        {
+          "heading": "Service patterns are not four separate projects",
+          "text": "The operator's indexed French information distinguishes stopping and semi-express services and marks B4 as forthcoming. B1's eventual station coverage is also phrased prospectively. These qualifications matter for a rider choosing an origin, destination and transfer, even though all patterns belong to the same corridor. Direct homepage retrieval returned a service error, so the indexed description is not a tested live timetable. Nor does eventual solar supply establish today's traction-energy mix. The practical next record is a dated operating map identifying active stops and patterns, rather than assuming every advertised future service is already available.",
+          "source_ids": [
+            "brt-services"
+          ]
+        },
+        {
+          "heading": "Operation can precede final handover",
+          "text": "The October 2025 World Bank report records progressive operation from May 2024 while retaining control-centre, system-integration and station-handover work. Its observations describe a historical delivery stage, not the state of those items in November 2026. A revised June 2026 project closing date is likewise not evidence that every handover occurred. This distinction explains why a usable transport service and an unfinished investment project can coexist. The account does not convert extracted tables into current performance statistics; final acceptance, defect resolution and a later operating report would be needed to establish what changed after that snapshot.",
+          "source_ids": [
+            "brt-isr"
+          ]
+        },
+        {
+          "heading": "The connecting network has its own delivery path",
+          "text": "The World Bank's June 2025 approval provides $100 million for a separate urban-mobility operation. Its intended work links BRT and TER to restructured bus routes and supports professionalization of informal operators. Preparatory studies for another BRT line are part of that wider ambition, not evidence of an operating second corridor. For passengers, integration depends on transfers, connecting service and the conditions under which existing operators participate. An approved financing announcement does not settle those details or prove they have been delivered. Keeping the programs separate makes the next interchange and feeder-service milestones easier to follow.",
+          "source_ids": [
+            "brt-integration"
+          ]
+        },
+        {
+          "heading": "Street access remains a construction question",
+          "text": "The World Bank's 2026 market-consultation page describes preparation for road works connected to the pilot corridor. It specifically raises dense urban construction, utility coordination, traffic flow and residents' access before the eventual tender. These are concrete interfaces between the bus system and surrounding streets. Market sounding is not a contract award or an accepted road. The date in the page's address is retained only as URL metadata because the retrieved body does not independently date the event. No consultation attendance, tender submission or street inspection was performed as part of this account.",
+          "source_ids": [
+            "brt-market"
+          ]
+        },
+        {
+          "heading": "Evidence test for a dependable connected journey",
+          "text": "Editorial evidence test: choose a named stop pair and preserve the active service pattern, observation period and transfer conditions. Separate scheduled frequency from observed waits, and record the availability of accessible boarding and pedestrian crossings. Match final handovers to the assets actually used rather than treating a financial closing date as blanket acceptance. Trace feeder contracts and changes affecting existing operators on their own terms. A useful operating series would combine consistent passenger definitions, vehicle availability, disruption recovery and access observations. None should be inferred from fleet size, a construction percentage or a promotional emissions estimate.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Dated active-service map and stop-level passenger information.",
+        "Final station, control-centre and integrated-system handover records.",
+        "Comparable operating observations with fleet and accessibility denominators.",
+        "Award and acceptance records for the separately prepared access works."
+      ],
+      "related": [
+        {
+          "title": "Dakar regional services",
+          "route": "/atlas/places/dakar-region/"
+        },
+        {
+          "title": "Taïba N’Diaye wind farm",
+          "route": "/atlas/projects/taiba-ndiaye-wind/"
+        }
+      ]
+    },
+    {
+      "record_id": "project-taiba-ndiaye-wind",
+      "kind": "Project",
+      "title": "Taïba N’Diaye wind farm",
+      "route": "/atlas/projects/taiba-ndiaye-wind/",
+      "aliases": [
+        "Taiba Ndiaye wind farm",
+        "Parc Eolien Taiba Ndiaye",
+        "PETN wind farm",
+        "Taïba N’Diaye"
+      ],
+      "answer": "Taïba N’Diaye is an operating wind project whose commissioning history, seasonal generation and development pipeline need separate treatment. A proposed battery or expansion cannot be added to the operating plant by association.",
+      "scope": "One named wind farm in the Thiès region. Turbines are components, not separate projects. Proposed wind expansion and battery storage remain related development context; the farm is outside the counted Dakar administrative region.",
+      "stage": "The developer records full commercial operation in 2021. The current owner inventory separates the operating wind farm from development entries. No current comparable generation series, storage commissioning or dedicated BRT power supply is admitted.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Count the named Taïba N’Diaye wind farm once, preserving PETN and spelling variants as aliases. Individual turbines and proposed expansion or storage do not add identities in this group. Its Thiès location is not annexed to the Dakar place account, and national-grid context does not prove a dedicated supply arrangement with SunuBRT. No historical acquisition docket is reused."
+      },
+      "timeline": [
+        {
+          "date": "2018-07",
+          "event": "Mainstream dates financial close to this month.",
+          "source_ids": [
+            "wind-history"
+          ]
+        },
+        {
+          "date": "2018-09-03",
+          "event": "Vestas announced the EPC and maintenance order.",
+          "source_ids": [
+            "wind-epc"
+          ]
+        },
+        {
+          "date": "2020-02",
+          "event": "Mainstream dates the first-phase inauguration to this month.",
+          "source_ids": [
+            "wind-history"
+          ]
+        },
+        {
+          "date": "2021",
+          "event": "The developer records full commercial operation in this year.",
+          "source_ids": [
+            "wind-history"
+          ]
+        },
+        {
+          "date": "2023-10-20",
+          "event": "The production-dynamics paper was published using 2021 observations.",
+          "source_ids": [
+            "wind-study"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Commissioning has more than one date",
+          "text": "Mainstream's project history distinguishes July 2018 financial close, a first-phase inauguration in February 2020 and full commercial operation in 2021. That sequence is more informative than selecting one opening date for all purposes. The page is a developer's historical account and marks the asset sold; it should not be treated as an up-to-date ownership or operating audit. Its annual energy and avoided-emissions headlines have no named reporting year. They are therefore not entered here as measured 2026 output. Financing, ceremonial opening and full operation remain different milestones attached to the same physical project.",
+          "source_ids": [
+            "wind-history"
+          ]
+        },
+        {
+          "heading": "Equipment capacity is not delivered energy",
+          "text": "Vestas's September 2018 announcement identifies 46 turbines rated at 3.45 MW each and a twenty-year service agreement. The arithmetic gives 158.7 MW of nameplate power, consistent with the announcement's rounded 159 MW description. Power capacity is not an annual energy total: delivery depends on wind, equipment condition and grid constraints over time. The original installation timetable was prospective, so later commissioning history is needed rather than assuming it occurred exactly as forecast. The service contract establishes a maintenance arrangement, not proof that contractual availability or output was achieved in any particular reporting year.",
+          "source_ids": [
+            "wind-epc"
+          ]
+        },
+        {
+          "heading": "A measured year and a modelled wind field",
+          "text": "Niang and colleagues' 2023 paper analyses operator-provided production from 2021 alongside hourly ERA5 wind estimates at 100 metres. The production observations and modelled atmospheric field are different inputs; the latter is not an on-site mast measurement. The authors describe seasonal variation, with stronger production in winter and spring than during the rainy season. This helps explain why a nameplate rating cannot represent every hour's delivery. The study remains a bounded historical analysis, not a current availability certificate. A new comparison would need the same production definitions and treatment of outages, curtailment and changing equipment.",
+          "source_ids": [
+            "wind-study"
+          ]
+        },
+        {
+          "heading": "Development entries do not enlarge the operating plant",
+          "text": "Infinity Power's inventory lists Taiba as operating wind while placing a 100 MW expansion and battery storage in development categories. Its storage listings include an energy quantity of 160 MWh and a power quantity of 40 MW; these units describe different characteristics, not interchangeable capacities. No commissioning date or acceptance instrument was retrieved for those additions. The inventory also uses an MWp label for the wind entry, which is retained as a source-label issue rather than silently recasting wind as solar generation. This account counts the existing named farm once and keeps future additions outside admitted operating capacity.",
+          "source_ids": [
+            "wind-pipeline"
+          ]
+        },
+        {
+          "heading": "Community programs need their own outcomes",
+          "text": "Vestas describes local food-processing and cooperative training in 2025, dairy-processing training in 2026 and work on a public market at Taiba Mbaye. These activities broaden the account beyond turbine equipment and connect the project to surrounding livelihoods. They remain the supplier's program descriptions, however, not independent measurements of household income or lasting job creation. A market described as being built is not an accepted, fully occupied facility. Evaluation would need participants, completion dates, operating responsibility and follow-up results. Community investment also cannot stand in for evidence that all land, consent or grievance questions have been resolved.",
+          "source_ids": [
+            "wind-community"
+          ]
+        },
+        {
+          "heading": "Evidence test from wind production to useful supply",
+          "text": "Editorial evidence test: retain annual metered generation, availability, curtailment and grid-delivery definitions together, with a consistent reporting period. Keep modelled weather separate from on-site measurements and distinguish a commercial-operation milestone from a recurring performance series. For storage, require the exact asset, usable energy, rated power, acceptance and dispatch observations before describing an operating system. For local programs, follow actual completion and sustained use rather than adding projected beneficiaries. Finally, do not infer a dedicated electricity link to Dakar's buses from geographic proximity or national-grid participation; such a claim needs its own supply evidence.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Current annual generation, availability and curtailment with consistent definitions.",
+        "Exact acceptance and operating records for any storage or wind expansion.",
+        "Community-program completion and follow-up evidence.",
+        "Verified current ownership and asset boundaries."
+      ],
+      "related": [
+        {
+          "title": "Dakar BRT / SunuBRT",
+          "route": "/atlas/projects/dakar-brt/"
+        },
+        {
+          "title": "Dakar regional services",
+          "route": "/atlas/places/dakar-region/"
+        }
+      ]
+    },
+    {
+      "record_id": "place-dakar-region",
+      "kind": "Place",
+      "title": "Dakar region: mobility, water and flood management",
+      "route": "/atlas/places/dakar-region/",
+      "aliases": [
+        "Dakar region",
+        "Region de Dakar",
+        "Dakar regional services",
+        "Région de Dakar"
+      ],
+      "answer": "The Dakar administrative region is a useful boundary for examining transport, sanitation, water and drainage together. It is not the same geography as Dakar city, an individual project area or every place served by national infrastructure.",
+      "scope": "One administrative region comprising Dakar, Pikine, Guédiawaye, Rufisque and Keur Massar departments. Dakar city is not used as a synonym for the whole region. External dependencies and national programs are described without annexing Thiès, Mbour or Saint-Louis.",
+      "stage": "The inspected records establish regional boundaries and distinct service programs, including targeted October 2026 water interventions. They do not establish region-wide continuous supply, completed sanitation coverage or universal protection against flooding.",
+      "identity_decision": {
+        "eligible_count": 1,
+        "rationale": "Count the Dakar administrative region once as a place-system account, not five additional departmental dossiers or the city alone. Its BRT project is counted separately as an infrastructure identity; PAAD, PAMUS and drainage examples do not create extra projects here. Multi-region results and the Thiès wind farm do not expand this boundary. No existing portfolio or historical acquisition identity is reused."
+      },
+      "timeline": [
+        {
+          "date": "2021-05-28",
+          "event": "The indexed census excerpt dates the decree creating Keur Massar department.",
+          "source_ids": [
+            "dakar-boundary"
+          ]
+        },
+        {
+          "date": "2025-03-01",
+          "event": "ONAS lists this start date for PAAD.",
+          "source_ids": [
+            "dakar-sanitation"
+          ]
+        },
+        {
+          "date": "2025-08-19",
+          "event": "The ministry held the PROGEP II steering review.",
+          "source_ids": [
+            "dakar-flood"
+          ]
+        },
+        {
+          "date": "2025-08-20",
+          "event": "The ministry published its account of the preceding day's meeting.",
+          "source_ids": [
+            "dakar-flood"
+          ]
+        },
+        {
+          "date": "2026-10-23",
+          "event": "SEN’EAU dates the start of the cited reservoir interventions.",
+          "source_ids": [
+            "dakar-water"
+          ]
+        },
+        {
+          "date": "2026-10-24",
+          "event": "SEN’EAU records follow-up checks at the selected sites.",
+          "source_ids": [
+            "dakar-water"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Start with the regional boundary",
+          "text": "ANSD's indexed regional census excerpt identifies five departments: Dakar, Pikine, Guédiawaye, Rufisque and Keur Massar. The account uses that administrative region rather than stretching the city name to cover any connected asset. The excerpt links the creation of Keur Massar to a May 2021 decree. Direct retrieval of the report timed out, so its maps and population tables were not visually verified and no population denominator is imported here. Departmental, municipal and project-area statistics would need their own labels before comparison. This boundary keeps a regional service problem from becoming an untraceable metropolitan aggregate.",
+          "source_ids": [
+            "dakar-boundary"
+          ]
+        },
+        {
+          "heading": "Mobility is a network-governance task",
+          "text": "CETUD's PAMUS Dakar description combines network restructuring, professionalization of informal operators, traffic management, future mass-transit studies and institutional work. Its first phase spans 2025–2029 within a longer planning horizon. These components show why operating one corridor cannot by itself establish universal regional access. They also assign different jobs to vehicles, streets, operators and public authorities. The listed financing estimates are not proof of expenditure or completed facilities. This place account treats PAMUS as a regional coordination framework, while retaining the existing BRT as its own named project and proposed additional lines as separate future decisions.",
+          "source_ids": [
+            "dakar-mobility"
+          ]
+        },
+        {
+          "heading": "Sanitation extends beyond having a toilet",
+          "text": "ONAS describes PAAD as an ongoing on-site sanitation program involving household works, school facilities and sludge treatment. Its planned 10,000 household installations or rehabilitations are a delivery target, not a completed connection count. The high toilet-access figure reported for the project area does not establish safe containment, emptying and treatment, still less region-wide coverage. Technical assistance and an independent sampling-verification role are named in the implementation arrangements, but those roles are not actual inspection results. The useful next evidence is accepted installations linked to functioning collection and treatment, with the population and service area kept explicit.",
+          "source_ids": [
+            "dakar-sanitation"
+          ]
+        },
+        {
+          "heading": "Targeted water preparation is not a regional guarantee",
+          "text": "SEN’EAU's pre-event account describes network reinforcement and October 23–24 reservoir interventions for selected Dakar 2026 sites. It reports checks after cleaning and still-pending corrections at another facility. The article is not a post-event assessment of uninterrupted service across the region. It also mentions early use of certain Mamelles project conduits, which does not establish acceptance of the whole desalination plant. Event preparation covers locations beyond this place boundary as well. The relevant service evidence would connect each site's work to pressure, continuity and water-quality observations without treating selected satisfactory checks as universal performance.",
+          "source_ids": [
+            "dakar-water"
+          ]
+        },
+        {
+          "heading": "Drainage totals need a geographic denominator",
+          "text": "The ministry's August 2025 PROGEP II review reports 46 kilometres of drainage and 30 kilometres of paved roads across named areas that include departments outside Dakar region. Its beneficiary figure therefore cannot be reassigned wholesale to Dakar. The meeting also addresses monitoring, financing and drainage equipment, illustrating the continuing management work behind installed infrastructure. A cumulative construction total does not establish protection through every later storm or show that drains remain clear. Regional evaluation needs asset locations, maintenance and observed flood exposure on a consistent boundary, rather than interpreting a multisite program announcement as a guarantee for every neighbourhood.",
+          "source_ids": [
+            "dakar-flood"
+          ]
+        },
+        {
+          "heading": "Evidence test for connected regional services",
+          "text": "Editorial evidence test: map each service observation to the region, department, municipality or project area it actually describes. Follow drainage maintenance alongside sanitation and water interruptions, while keeping their separate operators and responsibilities visible. Compare intended transport connections with usable journeys, not merely proximity to a corridor. For major events, retain site-specific preparation records without extending their findings to ordinary households or later months. A regional assessment should join compatible dated observations, explain gaps and preserve external dependencies. It should not manufacture a single readiness score from unrelated construction totals, program budgets and selected operational checks.",
+          "source_ids": [],
+          "claim_type": "Editorial evidence test"
+        }
+      ],
+      "next_artifacts": [
+        "Full regional census tables and geographic definitions when retrievable.",
+        "PAAD acceptance and sludge-treatment evidence with exact service areas.",
+        "Dated water-continuity and quality observations beyond selected event sites.",
+        "Geolocated drainage assets, maintenance and subsequent storm observations."
+      ],
+      "related": [
+        {
+          "title": "Dakar BRT / SunuBRT",
+          "route": "/atlas/projects/dakar-brt/"
+        },
+        {
+          "title": "Taïba N’Diaye wind farm outside the region",
+          "route": "/atlas/projects/taiba-ndiaye-wind/"
+        }
+      ]
+    }
+  ]
+}

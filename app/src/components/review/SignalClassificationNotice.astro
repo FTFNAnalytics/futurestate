@@ -1,0 +1,6 @@
+---
+import {signalClassification} from '../../lib/signal-classification.mjs';
+interface Props {id:string;}
+const record=signalClassification(Astro.props.id);
+---
+{record&&<aside class="page-section" data-classification-notice={record.id}><h2>Current editorial classification</h2><p><strong>{record.content_type}</strong> — {record.action_date}</p><p>{record.reason}</p><p>{record.disposition}. The original publication state and history are retained; they do not override this current-feed hold.</p>{record.correction&&<p>Previous headline: “{record.prior.title}”. Previous metadata: {record.prior.evidence_quality}; {record.prior.verification_status}. Current presentation follows the dated classification decision above.</p>}<a href="/method/editorial-review/">Inspect the review cohort and correction history</a></aside>}

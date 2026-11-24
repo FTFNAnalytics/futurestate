@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "phase": 157,
+  "program_id": "FTFN-PHASE-157",
+  "dataset": "phase_157_v1_candidate_preservation_ledger",
+  "title": "v1 candidate preservation ledger",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Bind the September overlay to the exact immutable Phase 156 receipt and candidate digest without rewriting that baseline.",
+  "record_scope": "Append-only Phase 157 record over the immutable Phase 145–156 v1-RC baseline.",
+  "publication_boundaries": [
+    "The Phase 157–164 overlay adds operating plans and bounded content without rewriting the immutable Phase 145–156 release candidate.",
+    "Future September checks, desk decisions, edition inputs, publication receipts, and month-end findings remain null until their lawful dates.",
+    "Alternative official artifacts remain candidate pointers unless a dated authorized adjudication admits them; discovery is not evidence admission.",
+    "No project stage, longitudinal observation, outcome, causal finding, score, rank, owner decision, repository publication, hosted deployment, or v1 promotion is inferred."
+  ],
+  "routes": {
+    "hub": "/review/v1month/candidate-preservation/",
+    "public_export": "/data/phase-157-v1-candidate-preservation-ledger.json"
+  },
+  "counts": {
+    "preservation_records": 1,
+    "baseline_phases": 12,
+    "baseline_public_html_routes": 58,
+    "baseline_public_json_exports": 13,
+    "baseline_update_records": 12,
+    "matching_phase156_digests": 1
+  },
+  "preservation_records": [
+    {
+      "preservation_id": "157-PRESERVATION-001",
+      "slug": "immutable-v1rc-baseline",
+      "title": "Immutable Phase 145–156 v1-RC baseline",
+      "preservation_state": "Passed — exact receipt and digest bound",
+      "baseline_program_id": "FTFN-V1-RELEASE-CANDIDATE",
+      "baseline_effective_date": "2026-08-31",
+      "baseline_receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+      "baseline_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+      "baseline_public_html_routes": 58,
+      "baseline_public_json_exports": 13,
+      "baseline_update_records": 12,
+      "overlay_rule": "Phases 157–164 are hashed and validated independently. Whole-site growth cannot stale the exact Phase 156 route, export, update, or candidate digest contract.",
+      "repository_boundary": "This record is a content-level preservation control, not a Git commit, push, deployment, or owner acceptance receipt.",
+      "next_action": "Keep the Phase 156 receipt immutable and bind any later v1 promotion to a verified commit and an explicit owner receipt."
+    }
+  ],
+  "public_html_routes": [
+    "/review/v1month/candidate-preservation/"
+  ],
+  "public_json_exports": [
+    "/data/phase-157-v1-candidate-preservation-ledger.json"
+  ]
+}

@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import GautengMetroDossierArticle from '../../../components/review/GautengMetroDossierArticle.astro';
+import {gautengMetroDossiers} from '../../../lib/gauteng-metro-named-dossiers.mjs';
+const record=gautengMetroDossiers.records.find(r=>r.record_id==='project-gautrain')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><GautengMetroDossierArticle record={record}/></BaseLayout>

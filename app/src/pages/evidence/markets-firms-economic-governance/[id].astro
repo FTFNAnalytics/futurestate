@@ -1,4 +1,5 @@
 ---
+import {projectBriefing} from "../../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
@@ -16,7 +17,7 @@ export function getStaticPaths() {
 }
 
 const { kind, record } = Astro.props as { kind: "firm" | "market" | "power" | "governance"; record: any };
-const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings"), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
+const [briefings, dependencyMaps, signals, sources] = await Promise.all([getCollection("briefings").then(records => records.map(projectBriefing)), getCollection("dependencyMaps"), getCollection("signals"), getCollection("sources")]);
 const briefingById = new Map(briefings.map((item) => [item.data.id, item]));
 const mapById = new Map(dependencyMaps.map((item) => [item.data.id, item]));
 const signalById = new Map(signals.map((item) => [item.data.id, item]));

@@ -1,0 +1,1551 @@
+{
+  "schema_version": "1.0",
+  "phase": 181,
+  "program_id": "FTFN-PHASE-181",
+  "dataset": "phase_181_canonical_resource_map",
+  "title": "Canonical Resource Map",
+  "effective_date": "2026-09-01",
+  "record_status": "Built locally",
+  "build_status": "Complete — route integration pending",
+  "summary": "Establish one canonical, evidence-bounded reader contract for each of seventeen topics and an exhaustive first-match route-family classification over the Phase 180 validated site baseline.",
+  "publication_boundaries": [
+    "This is an append-only synthesis over existing repository records; it does not rewrite an upstream source, signal, project, place, mission, or validation receipt.",
+    "A mapped authority rail, candidate artifact, prepared case, or longitudinal passport does not establish implementation, acceptance, recurring operation, outcome, causation, score, or rank.",
+    "No future-dated evidence check, owner disposition, publication decision, Git operation, hosted deployment, public launch, or v1 promotion is inferred.",
+    "Repository-bounded absence identifies what the inspected corpus has not established; it is never a claim that qualifying evidence does not exist elsewhere."
+  ],
+  "baseline_binding": {
+    "phase_180_receipt_id": "180-LOCAL-VALIDATION-2026-09-01-e42929fa956a",
+    "validated_html_routes": 7014,
+    "classification_scope": "Every validated HTML route is governed by the first matching family below; individual legacy URLs remain in their existing manifests."
+  },
+  "route_family_classification": [
+    {
+      "family": "Canonical topic resources",
+      "first_match_rule": "/reference/topics/:slug/",
+      "disposition": "Preferred reader entry"
+    },
+    {
+      "family": "Entity and atlas records",
+      "first_match_rule": "/atlas/, /projects/, /places/, or entity-specific review paths",
+      "disposition": "Supporting canonical entity record"
+    },
+    {
+      "family": "Evidence and source records",
+      "first_match_rule": "/signals/, /sources/, evidence, gap, outcome, or comparison paths",
+      "disposition": "Supporting evidence record"
+    },
+    {
+      "family": "Method and operating records",
+      "first_match_rule": "/review/ and phase/program operating paths not matched above",
+      "disposition": "Governance, method, or dated operating record"
+    },
+    {
+      "family": "Reader navigation and synthesis",
+      "first_match_rule": "Home, topic indexes, briefs, collections, pathways, reports, and non-record explainers",
+      "disposition": "Reader navigation or synthesis"
+    },
+    {
+      "family": "Exports and utility surfaces",
+      "first_match_rule": "/data/, downloads, search, feeds, status, and machine-readable utility paths",
+      "disposition": "Export or utility surface"
+    }
+  ],
+  "counts": {
+    "canonical_topic_resources": 17,
+    "validated_baseline_html_routes_governed": 7014,
+    "upstream_record_kinds_per_topic": 6,
+    "numeric_rankings": 0
+  },
+  "routes": {
+    "hub": "/reference/",
+    "public_export": "/data/phase-181-canonical-resource-map.json"
+  },
+  "canonical_topic_resources": [
+    {
+      "canonical_resource_id": "181-RESOURCE-001",
+      "topic_id": "topic-advanced-manufacturing",
+      "topic_name": "Advanced Manufacturing",
+      "slug": "advanced-manufacturing",
+      "title": "Advanced Manufacturing: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf now reaches operating training and research facilities, delivered graduate counts, and named industrial receiving systems while keeping projected throughput, aggregate outcomes, qualified production, and regional workforce sufficiency separate.",
+      "canonical_answer": [
+        "The Published shelf shows advanced manufacturing as a coupled production system rather than a collection of factory announcements. Drive48 reports an operating training facility and more than 2,000 graduates; Monaghan Medical's certified project record pairs completed investment with a current employment count; the F-15EX record fixes delivery to a named receiving wing; and the KC-46 plan separates three availability workstreams. Together they show that facilities, workforce, delivered assets and operational readiness are related but non-interchangeable forms of evidence.",
+        "The central editorial conclusion is therefore procedural: capacity should be traced through facility readiness, workforce preparation, process qualification, accepted output and performance in the receiving system. A completed building or funded expansion can remove a constraint without proving stable yield, dependable throughput or mission availability."
+      ],
+      "historical_baseline": "The repository baseline begins with annual manufacturing statistics and named program commitments, then advances to operating training capacity, certified project completion, realized aircraft receipt and readiness planning. This is a bounded history of what the current shelf can document; it is not a complete history of manufacturing technology or industrial policy.",
+      "current_evidence_state": "Current records are strongest at the infrastructure and acceptance boundary. They identify operating training, completed projects, present employment, named delivery receipts and explicit readiness plans. They remain thinner on comparable line-level yield, supplier continuity, rework, maintenance burden and recurring accepted output across stable periods.",
+      "conversion_chain": [
+        {
+          "stage": "Commitment and facility",
+          "reading": "Fix the named project, promised capability, site, equipment and completion record."
+        },
+        {
+          "stage": "Workforce and process",
+          "reading": "Show trained people, certified procedures, tooling, quality controls and material availability."
+        },
+        {
+          "stage": "Accepted output",
+          "reading": "Record the receiving party, acceptance basis, quantity, date and any remediation still open."
+        },
+        {
+          "stage": "Repeated performance",
+          "reading": "Measure stable yield, delivery cadence, availability and quality over a declared period."
+        }
+      ],
+      "decisive_evidence": [
+        "A stable facility-and-line denominator with accepted units, yield, rework and downtime for repeated periods.",
+        "Receiving-system acceptance records that identify configuration, date and unresolved deficiencies.",
+        "Workforce evidence that links graduates or hires to qualified roles and retained operating capacity."
+      ],
+      "claim_boundaries": [
+        "Training completions do not prove regional workforce sufficiency.",
+        "Certified project completion does not prove recurring qualified production.",
+        "Delivery does not prove readiness, availability or public outcome."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-001",
+        "evidence_review_id": "128-REVIEW-001",
+        "living_desk_id": "140-DESK-001",
+        "field_guide_id": "152-GUIDE-001",
+        "mission_ids": [
+          "121-MISSION-001",
+          "121-MISSION-002",
+          "121-MISSION-003",
+          "121-MISSION-004"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56j-kc46-readiness-plan",
+        "signal-56k-f15ex-ex16-portland-receipt",
+        "signal-56l-monaghan-medical-certified-project",
+        "signal-drive48-graduates-operating-workforce-comparator"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56j-kc46-readiness-plan-2026",
+        "source-56k-f15ex-ex16-portland-receipt-2026",
+        "source-56l-monaghan-medical-ccida-fye2025",
+        "source-aca-future48-battery-accelerator-2025"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-018",
+        "136-CHRONICLE-016",
+        "136-CHRONICLE-015",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-019",
+        "136-CHRONICLE-017",
+        "136-CHRONICLE-020",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-024",
+        "136-CHRONICLE-001"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-009",
+        "137-LEDGER-002",
+        "137-LEDGER-011",
+        "137-LEDGER-005"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/advanced-manufacturing/",
+      "route": "/reference/topics/advanced-manufacturing/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-002",
+      "topic_id": "topic-agriculture-and-bioeconomy",
+      "topic_name": "Agriculture and Bioeconomy",
+      "slug": "agriculture-and-bioeconomy",
+      "title": "Agriculture and Bioeconomy: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf spans crop outlook revisions, plant-trait assessment rules, and funded breeding and genomics programs. It supports dated market, regulatory, and research stages while field performance, seed availability, producer adoption, water use, yield, and regional resilience remain downstream. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 001: Agriculture Needs A Field-Outcome Chain,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The agriculture shelf contains four distinct forms of evidence: crop-market outlook revisions, plant-trait assessment rules, a named set of breeding awards and funded production-and-resilience research. Those records clarify expectations, authorization conditions and research direction. None by itself establishes that a trait is commercially available, adopted by producers or improving yields and resilience under field conditions.",
+        "A useful public account must follow a trait or practice through research, assessment, multiplication, distribution, adoption and seasonally comparable results. The geographic and climatic context matters because performance cannot be transferred from a funded research objective to a farm, crop or region without a matching field record."
+      ],
+      "historical_baseline": "The current dated baseline moves from federal breeding support and production-resilience research to 2026 Canadian assessment rules and a July 2026 U.S. crop outlook revision. It records the shelf's policy, research and market sequence rather than a comprehensive history of agricultural innovation.",
+      "current_evidence_state": "The evidence is bounded and upstream: named awards, defined regulatory treatment and revised commodity expectations. There is no admitted chain in this chapter from a named funded trait to commercial seed, a defined producer cohort, measured water or input use, and repeated regional yield or resilience outcomes.",
+      "conversion_chain": [
+        {
+          "stage": "Research",
+          "reading": "Identify the funded trait, crop, institution, method and intended production or resilience problem."
+        },
+        {
+          "stage": "Assessment and release",
+          "reading": "Document the applicable rule, authorization disposition and any use conditions."
+        },
+        {
+          "stage": "Availability and adoption",
+          "reading": "Fix seed or input availability, eligible geography and a stable producer or acreage denominator."
+        },
+        {
+          "stage": "Field outcome",
+          "reading": "Compare yield, input, water and resilience measures across declared seasons and conditions."
+        }
+      ],
+      "decisive_evidence": [
+        "Named release or assessment decisions tied to the same trait and intended use as the research award.",
+        "Commercial availability and adoption records with acreage, producer and geography denominators.",
+        "Repeated field results with methods, comparator, season and local water or climate conditions."
+      ],
+      "claim_boundaries": [
+        "A grant establishes funded work, not a delivered agricultural capability.",
+        "A crop outlook is a dated forecast and revision record, not a realized harvest outcome.",
+        "Authorization does not establish adoption, yield or regional resilience."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-002",
+        "evidence_review_id": "128-REVIEW-002",
+        "living_desk_id": "140-DESK-002",
+        "field_guide_id": "152-GUIDE-002",
+        "mission_ids": [
+          "121-MISSION-005",
+          "121-MISSION-006",
+          "121-MISSION-007",
+          "121-MISSION-008"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-cfia-2026-plant-novel-trait-assessment-rules",
+        "signal-sample-008",
+        "signal-usda-2026-plant-breeding-awards",
+        "signal-usda-july-2026-wasde-grain-stocks-revision"
+      ],
+      "direct_evidence_source_ids": [
+        "source-cfia-plants-novel-traits",
+        "source-cfia-2026-directive-94-08",
+        "source-usda-nifa-plant-genomics",
+        "source-usda-nifa-plant-breeding-awards-2026",
+        "source-usda-wasde"
+      ],
+      "named_project_ids": [],
+      "receiving_place_ids": [],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/agriculture-and-bioeconomy/",
+      "route": "/reference/topics/agriculture-and-bioeconomy/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-003",
+      "topic_id": "topic-ai-for-science",
+      "topic_name": "AI for Science",
+      "slug": "ai-for-science",
+      "title": "AI for Science: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf now connects federal AI direction to a completed NIST multi-level evaluation pilot, a metrology method-selection layer, and a TEVV standards trail while preserving the gap to institutional authorization, production monitoring, incidents, and measured outcomes. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 008: AI For Science Needs Reproduced Work,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The current shelf connects federal research priorities, a national AI research-resource pilot, a completed NIST ARIA evaluation pilot and a metrology method-selection layer. This establishes public direction, access infrastructure and concrete evaluation practice. It does not establish that AI-generated findings have been independently reproduced, incorporated into scientific workflows or translated into durable research outcomes.",
+        "The chapter therefore treats compute access, data access, evaluation design and scientific validation as separate dependencies. A larger inventory of AI uses or a completed pilot can describe activity and evaluation capability; neither substitutes for task-level performance, external replication, monitoring in use or evidence that research decisions improved."
+      ],
+      "historical_baseline": "The shelf's baseline starts with federal R&D priorities and the NAIRR pilot, then adds NIST's completed multi-level ARIA pilot and an explicit metrology-selection layer. It shows an institutional move from general direction toward testable infrastructure and evaluation, without asserting a general history of AI-enabled science.",
+      "current_evidence_state": "Evidence supports the existence of research-access and assurance mechanisms. It is less complete at the transition from evaluation to authorized institutional workflow, reproduced result, production monitoring and observed scientific or operational benefit.",
+      "conversion_chain": [
+        {
+          "stage": "Research access",
+          "reading": "Identify compute, data, tools, eligible users and the duration of access."
+        },
+        {
+          "stage": "Task evaluation",
+          "reading": "Declare the scientific task, comparator, method, failure mode and performance boundary."
+        },
+        {
+          "stage": "Independent validation",
+          "reading": "Record reproduction by an independent group and resolution of contradictory results."
+        },
+        {
+          "stage": "Institutional use",
+          "reading": "Show authorization, workflow integration, monitoring, incidents and measurable decision effects."
+        }
+      ],
+      "decisive_evidence": [
+        "Task-specific evaluations with declared comparators, error analysis and accessible methods.",
+        "Independent reproduction records tied to the same model, data and scientific claim.",
+        "Authorized workflow use with monitoring, incidents and a bounded measure of changed research performance."
+      ],
+      "claim_boundaries": [
+        "Access to compute and data is infrastructure, not a scientific result.",
+        "A completed pilot does not authorize production use or prove broad reliability.",
+        "Inventory growth does not establish adoption quality or scientific outcome."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-003",
+        "evidence_review_id": "128-REVIEW-003",
+        "living_desk_id": "140-DESK-003",
+        "field_guide_id": "152-GUIDE-003",
+        "mission_ids": [
+          "121-MISSION-009",
+          "121-MISSION-010",
+          "121-MISSION-011",
+          "121-MISSION-012"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-federal-rd-priorities-full-stack-technology",
+        "signal-nist-ai-metrology-method-selection-layer",
+        "signal-nist-aria-pilot-multilevel-evaluation",
+        "signal-nsf-nairr-two-year-research-infrastructure"
+      ],
+      "direct_evidence_source_ids": [
+        "source-fy2027-rd-priorities-m-25-34",
+        "source-americas-ai-action-plan-2025",
+        "source-nist-ai-metrology-center",
+        "source-nist-ai-tevv-program",
+        "source-nist-aria-pilot-evaluation-2025",
+        "source-nist-aria-evaluation-program",
+        "source-nairr-pilot",
+        "source-nsf-2026-nairr-progress"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-007"
+      ],
+      "receiving_place_ids": [],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/ai-for-science/",
+      "route": "/reference/topics/ai-for-science/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-004",
+      "topic_id": "topic-aviation",
+      "topic_name": "Aviation",
+      "slug": "aviation",
+      "title": "Aviation: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf now separates powered-lift operating rules, eight federal pilot selections, a company-reported conforming-aircraft milestone, and a dated DARPA field-trial plan. It supports regulatory and selection stages while aircraft certification, approved operators, sites, flights, safety performance, and service remain distinct gates. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 005: Aviation Integration Is Not Recurring Service,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The aviation shelf separates a final powered-lift operating rule, eight federal integration-pilot selections, DARPA's measured Lift Challenge result and annual carrier-service reporting. These records span permission, planned integration, experimental performance and established service measurement. Their value comes from not collapsing them into a single claim that advanced aircraft service has arrived.",
+        "The measured Lift Challenge result closes one competition gate, including named ratios and awards, while leaving maturation, manufacture, certification and deployment open. Likewise, the powered-lift rule supplies an operating framework but not a certified aircraft, approved operator, usable vertiport network or repeated passenger service."
+      ],
+      "historical_baseline": "Within the current repository, the baseline runs from mature annual air-carrier reporting to a new powered-lift operating rule, selected integration pilots and the August 2026 Lift Challenge result. This juxtaposition makes the missing denominators for emerging service visible without treating incumbent and experimental aviation as directly comparable.",
+      "current_evidence_state": "The strongest new evidence concerns rules, selections and a bounded field-trial result. Carrier cancellation reporting provides an example of what recurring service evidence looks like: a defined reporting population and period. Equivalent denominators are not yet present for powered-lift passenger service.",
+      "conversion_chain": [
+        {
+          "stage": "Rule and design",
+          "reading": "Separate operating rules from aircraft type, production and airworthiness approvals."
+        },
+        {
+          "stage": "Operator and place",
+          "reading": "Identify the approved operator, routes, sites, airspace and local emergency arrangements."
+        },
+        {
+          "stage": "Trial and acceptance",
+          "reading": "Publish measured test conditions, failures, acceptance basis and unresolved restrictions."
+        },
+        {
+          "stage": "Recurring service",
+          "reading": "Count completed service, exposure, cancellations, incidents and reliability on a stable denominator."
+        }
+      ],
+      "decisive_evidence": [
+        "Aircraft and operator approvals linked to named routes and service geographies.",
+        "Accepted site, airspace, maintenance and emergency-response records.",
+        "Repeated service and safety exposure with comparable flight, passenger and event denominators."
+      ],
+      "claim_boundaries": [
+        "A rule does not certify an aircraft or operator.",
+        "A selected pilot does not establish completed flights or public service.",
+        "A field-trial prize does not establish production, certification or deployment."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-004",
+        "evidence_review_id": "128-REVIEW-004",
+        "living_desk_id": "140-DESK-004",
+        "field_guide_id": "152-GUIDE-004",
+        "mission_ids": [
+          "121-MISSION-013",
+          "121-MISSION-014",
+          "121-MISSION-015",
+          "121-MISSION-016"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56a-air-travel-consumer",
+        "signal-darpa-lift-challenge-2026-scheduled-field-trial",
+        "signal-faa-2026-evtol-integration-pilot-selections",
+        "signal-faa-powered-lift-final-operating-rule",
+        "signal-us-airline-cancellation-rate-2024"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56a-dot-atcr-2022",
+        "source-56a-dot-atcr-2023",
+        "source-56a-dot-atcr-2024",
+        "source-darpa-lift-challenge-2026",
+        "source-faa-eipp-selections-2026",
+        "source-faa-aam",
+        "source-faa-powered-lift-final-rule-2024",
+        "source-55z-bts-air-travel-consumer-report-2024",
+        "source-55z-bts-airline-on-time-tables-2025"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-016",
+        "136-CHRONICLE-015",
+        "136-CHRONICLE-017",
+        "136-CHRONICLE-004"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-001"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/aviation/",
+      "route": "/reference/topics/aviation/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-005",
+      "topic_id": "topic-chips-and-compute",
+      "topic_name": "Chips and Compute",
+      "slug": "chips-and-compute",
+      "title": "Chips and Compute: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf now connects semiconductor and AI infrastructure to a Northern Virginia compute corridor where regional demand must pass through large-load tariffs, transmission, local standards, air permits, water service, construction, and energization.",
+      "canonical_answer": [
+        "The shelf anchors compute expansion in two receiving systems. In Phoenix, a planning envelope, fab construction milestone, apprenticeship pipeline and wastewater agreement expose the dependencies around a named semiconductor campus. In Northern Virginia, load concentration, a new very-large-load rate class and generator-permit controls show how compute demand meets utility planning, cost allocation and local environmental authority.",
+        "These records demonstrate why headline investment is an incomplete denominator. A topped-out facility is not commissioned output; a service-territory statement is not customer capacity; a tariff is not energized load; and a wastewater agreement is not measured reuse. The chapter follows each dependency to the record that would prove actual conversion."
+      ],
+      "historical_baseline": "The repository baseline starts with planning and service-territory records, then adds construction, workforce, utility, water and permitting artifacts around named corridors. It is a history of documented project conversion in those places, not a global history or market estimate for semiconductors and compute.",
+      "current_evidence_state": "Evidence is dense around authority and infrastructure commitments. It supports named planning envelopes, construction stages, workforce mechanisms, rate treatment and permit conditions. It does not yet provide a complete common record for energized demand, fab acceptance, qualified production yield, measured customer output or project-specific water reuse.",
+      "conversion_chain": [
+        {
+          "stage": "Site and permission",
+          "reading": "Fix the parcel, planning envelope, permits, conditions and legal authority."
+        },
+        {
+          "stage": "Utility and workforce readiness",
+          "reading": "Name power, transmission, water, wastewater and qualified-labor dependencies with dates and capacity bounds."
+        },
+        {
+          "stage": "Facility acceptance",
+          "reading": "Distinguish construction milestones from commissioning, energization and accepted process tools."
+        },
+        {
+          "stage": "Qualified output",
+          "reading": "Report product, yield, customer qualification, volume and operating period without transferring corporate projections."
+        }
+      ],
+      "decisive_evidence": [
+        "Named energization and utility-capacity records tied to a facility and service date.",
+        "Commissioning and customer-qualification records for the same fab, process and product family.",
+        "Measured power, water, wastewater and output on compatible project operating periods."
+      ],
+      "claim_boundaries": [
+        "Planning approval and construction progress do not establish operating capacity.",
+        "A workforce program does not prove role placement or sufficient qualified staffing.",
+        "Regional load and water evidence cannot be attributed to a customer without a named record."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-005",
+        "evidence_review_id": "128-REVIEW-005",
+        "living_desk_id": "140-DESK-005",
+        "field_guide_id": "152-GUIDE-005",
+        "mission_ids": [
+          "121-MISSION-017",
+          "121-MISSION-018",
+          "121-MISSION-019",
+          "121-MISSION-020"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-phoenix-tsmc-fab3-topping-out",
+        "signal-phoenix-z37-20-1-tsmc-campus-planning-record",
+        "signal-tsmc-arizona-apprenticeship-workforce-pipeline",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "signal-virginia-data-center-load-concentration",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "direct_evidence_source_ids": [
+        "source-phoenix-tsmc-fab3-topping-out-2026",
+        "source-phoenix-north-3500-pud-2026",
+        "source-phoenix-planning-development",
+        "source-aca-tsmc-registered-technician-apprenticeship-2024",
+        "source-phoenix-2025-semiconductor-apprenticeship-agenda",
+        "source-maricopa-association-governments-open-data",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-phoenix-2026-water-security-council-update",
+        "source-virginia-jlarc-data-centers-2024",
+        "source-virginia-scc-large-load-gs5-2025"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-001"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-003",
+        "137-LEDGER-005"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/chips-and-compute/",
+      "route": "/reference/topics/chips-and-compute/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-006",
+      "topic_id": "topic-climate",
+      "topic_name": "Climate",
+      "slug": "climate",
+      "title": "Climate: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf separates global observation, seasonal forecasting, national transportation-risk synthesis, and emissions-accounting methods. It supports climate conditions and dependency analysis, while local hazards, losses, adaptation, and resilience still require named regional and asset records. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 004: Climate Observation Needs A Local Decision Rail,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The climate shelf connects a dated NOAA ENSO discussion, the Fifth National Climate Assessment's transportation-risk synthesis and an EPA infrastructure-funding review denominator. A Kennedy Space Center record adds one completed prescribed-burn event coordinated during an active launch countdown. Together these establish observed or assessed conditions, lifecycle risk, administrative state and a bounded local operating adaptation; they do not automatically establish reduced loss or durable resilience.",
+        "The necessary translation is geographic and institutional. A climate condition becomes decision evidence only after it is connected to a named place, asset or population; an accountable authority; an exposure and vulnerability baseline; an adopted response; delivered work; and an outcome measured over a defined event or period. The Kennedy event demonstrates feasibility in one context, not a repeated program or quantified resilience benefit."
+      ],
+      "historical_baseline": "The current shelf's dated baseline includes a recurring climate-risk clock, a national assessment that frames transportation resilience across the asset lifecycle, a later review of infrastructure award states and one 2026 Space Coast operating adaptation. It deliberately avoids presenting this shelf as a complete climate history or emissions inventory.",
+      "current_evidence_state": "Evidence supports high-level observation, assessment, administrative status and one place-specific operating event. It remains thin at the fully joined record: asset-level hazard, vulnerable users, accepted and repeated adaptation, maintenance, event performance and avoided-loss analysis with a defensible counterfactual.",
+      "conversion_chain": [
+        {
+          "stage": "Condition and hazard",
+          "reading": "Separate observed climate condition, forecast, scenario and local hazard footprint."
+        },
+        {
+          "stage": "Exposure and authority",
+          "reading": "Identify affected assets and populations, responsible authority and decision threshold."
+        },
+        {
+          "stage": "Adaptation delivery",
+          "reading": "Track funding, design, construction, acceptance, maintenance and service continuity."
+        },
+        {
+          "stage": "Resilience outcome",
+          "reading": "Compare losses, outages or recovery under declared events, exposure and baseline assumptions."
+        }
+      ],
+      "decisive_evidence": [
+        "Named local hazard and vulnerability records linked to exposed assets and populations.",
+        "Accepted adaptation works with maintenance and service-continuity evidence.",
+        "Event or longitudinal outcomes with exposure-adjusted losses, outages or recovery measures."
+      ],
+      "claim_boundaries": [
+        "A forecast is not an observed local impact.",
+        "A national assessment is not an asset-specific vulnerability finding.",
+        "Funding status does not prove delivery, resilience or avoided loss."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-006",
+        "evidence_review_id": "128-REVIEW-006",
+        "living_desk_id": "140-DESK-006",
+        "field_guide_id": "152-GUIDE-006",
+        "mission_ids": [
+          "121-MISSION-021",
+          "121-MISSION-022",
+          "121-MISSION-023",
+          "121-MISSION-024"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56x-epa-infrastructure-review-denominator",
+        "signal-ksc-active-countdown-prescribed-burn",
+        "signal-nca5-transportation-climate-adaptation-stack",
+        "signal-sample-001"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56x-gao-iija-ira-agency-status-2026",
+        "source-nasa-ksc-prescribed-burn-2026",
+        "source-usgcrp-nca5-transportation",
+        "source-noaa-cpc-enso"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-014",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-013"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-015",
+        "137-LEDGER-014",
+        "137-LEDGER-009",
+        "137-LEDGER-002",
+        "137-LEDGER-012",
+        "137-LEDGER-013"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/climate/",
+      "route": "/reference/topics/climate/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-007",
+      "topic_id": "topic-critical-minerals",
+      "topic_name": "Critical Minerals",
+      "slug": "critical-minerals",
+      "title": "Critical Minerals: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf spans national mineral baselines and a Nevada project corridor where resources, federal land decisions, state permits, water rights, federal credit, construction, qualification, production, and industrial use remain distinct stages.",
+      "canonical_answer": [
+        "The critical-minerals shelf spans national production and import-reliance data, federal project selections, named Nevada land and water decisions, a financial close, air-permit compliance and reclamation assurance. It therefore makes a long conversion chain visible: strategic concern, resource and project identity, authority, finance, construction, processing, qualification and customer use.",
+        "No upstream artifact can stand in for the last stages. A mineral occurrence is not a reserve; a federal land decision is not construction; a loan closing is not production; and production is not necessarily qualified material accepted into a named industrial process. Environmental compliance and closure liabilities remain part of the operating case rather than external footnotes."
+      ],
+      "historical_baseline": "The repository baseline combines annual mineral-production and import-exposure records with named project decisions and financing artifacts. Later permit and assurance records add conditions that remain active through operation and closure. This is a conversion history for the covered records, not a global reserve or supply forecast.",
+      "current_evidence_state": "The corpus is comparatively strong on resource context, authorization and project conditions. It has named federal selections, land decisions, state permits and finance. The open edge is the complete chain from constructed plant through commissioned process, specification-conforming batches, recurring output and identified customer acceptance.",
+      "conversion_chain": [
+        {
+          "stage": "Resource and need",
+          "reading": "Fix commodity, deposit, grade or import denominator without converting it into recoverable supply."
+        },
+        {
+          "stage": "Authority and finance",
+          "reading": "Track land, water, air, reclamation and credit decisions as distinct conditions."
+        },
+        {
+          "stage": "Construction and process",
+          "reading": "Record built assets, commissioned equipment, recovery process and operating constraints."
+        },
+        {
+          "stage": "Qualified supply",
+          "reading": "Show specification, batch, volume, period and customer acceptance for recurring material."
+        }
+      ],
+      "decisive_evidence": [
+        "Commissioning and operating records for the named mine and processing facilities.",
+        "Repeated specification-conforming batch and volume records with a stable period.",
+        "Named customer qualification, compliance performance and closure-liability updates."
+      ],
+      "claim_boundaries": [
+        "Production-value and import data do not establish project-level supply.",
+        "Land, water and air decisions do not establish construction or operation.",
+        "Financial close does not establish qualified material or reduced import reliance."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-007",
+        "evidence_review_id": "128-REVIEW-007",
+        "living_desk_id": "140-DESK-007",
+        "field_guide_id": "152-GUIDE-007",
+        "mission_ids": [
+          "121-MISSION-025",
+          "121-MISSION-026",
+          "121-MISSION-027",
+          "121-MISSION-028"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-doe-2026-critical-minerals-nineteen-project-selections",
+        "signal-rhyolite-ridge-federal-land-authorization",
+        "signal-rhyolite-ridge-water-permit-preoperation-gates",
+        "signal-thacker-pass-air-permit-compliance-contract",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-us-mineral-production-and-import-reliance-2025"
+      ],
+      "direct_evidence_source_ids": [
+        "source-doe-critical-minerals-materials-program",
+        "source-blm-rhyolite-ridge-rod-2024",
+        "source-ndep-rhyolite-ridge-water-permit-2025",
+        "source-ndep-thacker-pass-project",
+        "source-doe-thacker-pass-loan-2024",
+        "source-usgs-mineral-commodity-summaries",
+        "source-55z-usgs-mcs-2026-data-release"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-005"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-002"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/critical-minerals/",
+      "route": "/reference/topics/critical-minerals/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-008",
+      "topic_id": "topic-cybersecurity",
+      "topic_name": "Cybersecurity",
+      "slug": "cybersecurity",
+      "title": "Cybersecurity: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf connects exploited-vulnerability deadlines, recurring federal asset visibility, AI and national-security infrastructure risk, and protocol-level post-quantum testing. It supports obligations and technical limits while agency compliance, non-federal adoption, incident reduction, and completed migration require separate records.",
+      "canonical_answer": [
+        "The cybersecurity shelf joins recurring federal asset-visibility obligations, monitoring-data quality limits, hospital control tests, open NASA recommendations and post-quantum interoperability work. This makes cybersecurity observable as an institutional operating discipline rather than a collection of policy declarations or technical specifications.",
+        "The evidence also resists a common shortcut: compliance activity is not automatically reduced risk. An agency can inventory assets incompletely, close some recommendations while others remain open, or test one institution effectively without establishing sector-wide performance. The unit of claim must stay attached to the assessed system, period, control set and reviewer."
+      ],
+      "historical_baseline": "The repository baseline begins with binding asset-visibility and vulnerability-management obligations, then follows annual assessments, data-quality findings and named remediation portfolios. Post-quantum records add a forward migration problem whose success requires inventory, interoperability, cutover and retirement evidence.",
+      "current_evidence_state": "Current evidence is strongest for obligations, assessments and explicit open work. It contains recurring institutional findings and bounded control tests. It is weaker on completed remediation linked to verified control effectiveness, exposure-adjusted incidents and durable risk reduction across comparable reporting periods.",
+      "conversion_chain": [
+        {
+          "stage": "Obligation and inventory",
+          "reading": "Identify covered assets, deadline, control owner and completeness test."
+        },
+        {
+          "stage": "Implementation",
+          "reading": "Record deployed controls, exceptions, remediation owner and evidence of configuration."
+        },
+        {
+          "stage": "Independent effectiveness",
+          "reading": "Use scoped tests, audit findings and closure evidence rather than self-attestation alone."
+        },
+        {
+          "stage": "Operating outcome",
+          "reading": "Measure incidents, exposure, recovery and recurrence with stable system and time denominators."
+        }
+      ],
+      "decisive_evidence": [
+        "Complete asset and dependency inventories tested against an independent denominator.",
+        "Closure records paired with configuration or operating tests for the same control population.",
+        "Comparable incident, exposure and recovery series with changes in scope disclosed."
+      ],
+      "claim_boundaries": [
+        "A directive establishes an obligation, not compliance.",
+        "One effective institutional test does not generalize to a sector.",
+        "A migration draft or procurement path does not establish completed cryptographic cutover."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-008",
+        "evidence_review_id": "128-REVIEW-008",
+        "living_desk_id": "140-DESK-008",
+        "field_guide_id": "152-GUIDE-008",
+        "mission_ids": [
+          "121-MISSION-029",
+          "121-MISSION-030",
+          "121-MISSION-031",
+          "121-MISSION-032"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56m-hhs-small-hospital-effective-cyber-test",
+        "signal-56m-nasa-gao-sixteen-open-recommendations",
+        "signal-cisa-bod-23-01-asset-visibility-obligation",
+        "signal-federal-cdm-data-quality-requires-manual-correction",
+        "signal-nccoe-pqc-interoperability-preliminary-draft"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56m-hhs-small-hospital-cyber-controls-2026",
+        "source-56d-nasa-gao-risk-management-2025",
+        "source-cisa-bod-23-01-asset-visibility",
+        "source-cisa-cybersecurity-directives",
+        "source-55z-gao-cdm-network-monitoring-2025",
+        "source-nccoe-pqc-migration",
+        "source-nist-csrc-publications"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-006",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-007",
+        "136-CHRONICLE-008"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-006",
+        "137-LEDGER-007",
+        "137-LEDGER-008"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/cybersecurity/",
+      "route": "/reference/topics/cybersecurity/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-009",
+      "topic_id": "topic-discovery-technologies",
+      "topic_name": "Discovery Technologies",
+      "slug": "discovery-technologies",
+      "title": "Discovery Technologies: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf spans funded scientific data systems, public NISAR radar products, next-generation national elevation design, and ocean mapping and field operations. It distinguishes data availability and survey activity from validated models, institutional adoption, and changed decisions. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 002: Discovery Infrastructure Is Not Discovery Impact,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The Published shelf joins four concrete discovery infrastructures. NSF's integrated data-systems awards fund the layer between datasets and AI-enabled research; NISAR's public radar products move a named Earth-observation mission from promise to accessible data; NIST METIS exposes initial semiconductor-metrology datasets; and a funded AI-Materials Institute defines an institutional attempt to connect models, multimodal data and experiments. These records establish awards, access surfaces and a bounded beta—not validated discovery impact.",
+        "The records do not complete the impact chain. Data availability says nothing by itself about calibration quality for a particular use, independent validation of derived models, delivery of the proposed materials portal, adoption by a public or scientific institution, or a changed decision. The chapter makes those downstream questions explicit and keeps each observation, metrology and materials system separate."
+      ],
+      "historical_baseline": "The current baseline contains four bounded transitions: funded scientific data infrastructure, a funded AI-to-materials institute, initial data in a metrology exchange beta and July 2026 access to public NISAR radar products. This selected Published shelf is not a proxy for the history or total state of discovery technology.",
+      "current_evidence_state": "The shelf establishes investment in data systems, a delivered observation product and an initial shared-data surface. It does not yet establish a common documented sequence through user access, method validation, portal delivery, reproduced finding, institutional adoption and measurable decision or scientific effect.",
+      "conversion_chain": [
+        {
+          "stage": "Instrument and data system",
+          "reading": "Identify mission or program, product, coverage, method and operating status."
+        },
+        {
+          "stage": "Access and fitness",
+          "reading": "Show discoverability, usable formats, calibration, limitations and fitness for a named task."
+        },
+        {
+          "stage": "Validated knowledge",
+          "reading": "Record analysis method, independent reproduction and contradictory results."
+        },
+        {
+          "stage": "Decision or research effect",
+          "reading": "Identify the institution, decision, prior baseline and observable change linked to use."
+        }
+      ],
+      "decisive_evidence": [
+        "Stable usage and access measures separated from mere download availability.",
+        "Independently reproduced analyses tied to the same product version and method.",
+        "Named institutional decisions or scientific workflows with documented before-and-after evidence."
+      ],
+      "claim_boundaries": [
+        "A grant is evidence of funded infrastructure, not completed capability.",
+        "Public data availability is not validation of every downstream use.",
+        "A derived finding does not establish institutional adoption or impact."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-009",
+        "evidence_review_id": "128-REVIEW-009",
+        "living_desk_id": "140-DESK-009",
+        "field_guide_id": "152-GUIDE-009",
+        "mission_ids": [
+          "121-MISSION-033",
+          "121-MISSION-034",
+          "121-MISSION-035",
+          "121-MISSION-036"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-nisar-july-2026-public-radar-data",
+        "signal-nist-metis-semiconductor-metrology-data-exchange",
+        "signal-nsf-2026-idss-data-infrastructure-awards",
+        "signal-nsf-ai-materials-institute-award-2433348"
+      ],
+      "direct_evidence_source_ids": [
+        "source-nasa-nisar-public-data-july-2026",
+        "source-nasa-earthdata-cmr-api",
+        "source-nist-semiconductor-metrology-program",
+        "source-nist-metis-semiconductor-data-exchange",
+        "source-nsf-2026-idss-awards",
+        "source-nsf-2026-nairr-progress",
+        "source-nsf-award-search-api"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-007"
+      ],
+      "receiving_place_ids": [],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/discovery-technologies/",
+      "route": "/reference/topics/discovery-technologies/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-010",
+      "topic_id": "topic-energy",
+      "topic_name": "Energy",
+      "slug": "energy",
+      "title": "Energy: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "Electricity systems, grid capacity, generation, data center load, industrial power demand, utility regulation, and the energy infrastructure required for frontier systems to scale.",
+      "canonical_answer": [
+        "The energy shelf contains unusually rich asset-level battery records. Manatee has a stable nameplate panel and a named monthly operating record; Hornsdale combines capacity, service-setting limits, enforcement and later event response; Dalrymple exposes multi-service operation and state-of-charge constraints; Gateway and Moss Landing show how thermal events, audits and corrective actions complicate capacity-only readings.",
+        "This evidence demonstrates that megawatts are an identity and capability measure, not an outcome. Useful claims require duration, availability, dispatch context, state of charge, service definition, constraint and safety records. Even a documented response event remains one observation unless it joins a stable repeated series."
+      ],
+      "historical_baseline": "The repository baseline follows named storage assets across annual capacity panels, later official project and market records, individual response or constraint events, incident review and corrective-action status. It is not a complete grid history or a cross-market ranking; each asset retains its own identity and reporting context.",
+      "current_evidence_state": "The shelf can distinguish stable nameplate, confirmed later operation, individual event response, visible constraints and safety remediation. It does not yet support a common longitudinal comparison of availability, dispatched energy, reliability contribution, avoided cost or public value across all covered assets.",
+      "conversion_chain": [
+        {
+          "stage": "Capacity identity",
+          "reading": "Fix asset, site, power, duration, ownership and commissioning status."
+        },
+        {
+          "stage": "Connection and acceptance",
+          "reading": "Record network connection, testing, acceptance and service eligibility."
+        },
+        {
+          "stage": "Dispatch and constraint",
+          "reading": "Observe state of charge, response, dispatch, outage, constraint and incident context."
+        },
+        {
+          "stage": "Repeated system value",
+          "reading": "Use stable periods and service definitions for reliability, cost and resilience analysis."
+        }
+      ],
+      "decisive_evidence": [
+        "Recurring asset-level availability, dispatch and outage data using a stable operating denominator.",
+        "Service-specific performance linked to event conditions and market or network requirements.",
+        "Safety, remediation and return-to-service records kept with the same facility identity."
+      ],
+      "claim_boundaries": [
+        "Nameplate power does not establish duration, availability or delivered energy.",
+        "A later operating record does not by itself establish longitudinal system value.",
+        "Different assets and market periods are not comparable until definitions align."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-010",
+        "evidence_review_id": "128-REVIEW-010",
+        "living_desk_id": "140-DESK-010",
+        "field_guide_id": "152-GUIDE-010",
+        "mission_ids": [
+          "121-MISSION-037",
+          "121-MISSION-038",
+          "121-MISSION-039",
+          "121-MISSION-040"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56b-manatee-capacity-panel",
+        "signal-56d-gateway-repeat-test",
+        "signal-56h-dalrymple-constraint-event",
+        "signal-56j-hornsdale-event-operation",
+        "signal-56j-manatee-monthly-operation",
+        "signal-56k-moss-landing-corrective-action-status"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56b-eia860-2021",
+        "source-56b-eia860-2022",
+        "source-56b-eia860-2023",
+        "source-56d-gateway-cpuc-resolution-e5428-2025",
+        "source-56d-gateway-epa-bess-safety-2025",
+        "source-56h-dalrymple-aemo-constraint-report-2026",
+        "source-56j-hornsdale-h1-2024-operations",
+        "source-56j-manatee-eia923-plant-60014",
+        "source-56k-moss-landing-go167-corrective-action-2025"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-014",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-004",
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-013"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-015",
+        "137-LEDGER-001",
+        "137-LEDGER-014",
+        "137-LEDGER-002",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-012",
+        "137-LEDGER-005",
+        "137-LEDGER-013"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/energy/",
+      "route": "/reference/topics/energy/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-011",
+      "topic_id": "topic-finance-and-risk",
+      "topic_name": "Finance and Risk",
+      "slug": "finance-and-risk",
+      "title": "Finance and Risk: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf connects financing conditions and construction intentions to large-load rate risk, federal project credit, state infrastructure programs, and the downstream evidence needed to show that financed futures were actually built and operated.",
+      "canonical_answer": [
+        "The finance shelf connects construction intentions, a Toronto housing pipeline, a preliminary capital-project pipeline, a federal loan closing and a special utility rate class for very large loads. Each record changes the conditions under which projects may proceed, yet none can be read as a completed asset or outcome.",
+        "Finance is therefore both an enabling layer and a risk-allocation system. A closed loan identifies capital and obligations; a tariff identifies who may bear service costs and risks; an approved or proposed pipeline identifies intended activity. The next records are executed procurement, actual expenditure, construction progress, acceptance, service and liabilities that remain after delivery."
+      ],
+      "historical_baseline": "The current baseline moves from permits and development applications through stage-specific housing data, project pipeline publication, financial close and new rate treatment. It documents several points where financial and administrative records precede physical conversion, not a comprehensive financial-market history.",
+      "current_evidence_state": "Evidence is strong enough to separate intention, authority, financing and cost-allocation decisions. It remains insufficient to attribute completed output or public benefit to those instruments without linked contract, expenditure, asset and operating records.",
+      "conversion_chain": [
+        {
+          "stage": "Intention and underwriting",
+          "reading": "Identify project, sponsor, amount, conditions, risk assumptions and contingent liabilities."
+        },
+        {
+          "stage": "Commitment and procurement",
+          "reading": "Distinguish announced pipeline, budget authority, executed finance and awarded contract."
+        },
+        {
+          "stage": "Physical delivery",
+          "reading": "Track expenditure, schedule, change orders, completion and acceptance."
+        },
+        {
+          "stage": "Operating return and public value",
+          "reading": "Measure service, revenue, affordability, liability and outcome on a declared period."
+        }
+      ],
+      "decisive_evidence": [
+        "Executed contracts and expenditure tied to the same project and financial commitment.",
+        "Construction, completion and acceptance records with scope and schedule changes disclosed.",
+        "Operating revenue, service, affordability and liability evidence on a stable period."
+      ],
+      "claim_boundaries": [
+        "A permit or financing instrument is not a completed asset.",
+        "A pipeline is not procurement, construction or delivered supply.",
+        "Modeled benefits or projected returns are not realized public value."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-011",
+        "evidence_review_id": "128-REVIEW-011",
+        "living_desk_id": "140-DESK-011",
+        "field_guide_id": "152-GUIDE-011",
+        "mission_ids": [
+          "121-MISSION-041",
+          "121-MISSION-042",
+          "121-MISSION-043",
+          "121-MISSION-044"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-cmhc-june-2026-toronto-construction-stage-baseline",
+        "signal-statcan-building-permits-construction-intentions-signal",
+        "signal-thacker-pass-doe-loan-financial-close",
+        "signal-toronto-2025-development-pipeline-delivery-gap",
+        "signal-toronto-2026-capital-project-pipeline-procurement-boundary",
+        "signal-virginia-gs5-large-load-rate-class"
+      ],
+      "direct_evidence_source_ids": [
+        "source-cmhc-june-2026-housing-starts-construction",
+        "source-statcan-building-permits-survey",
+        "source-statcan-building-permits-may-2026",
+        "source-cmhc-housing-market-information-portal",
+        "source-cmhc-starts-completions-under-construction",
+        "source-doe-thacker-pass-loan-2024",
+        "source-toronto-development-pipeline-2025",
+        "source-toronto-capital-projects-pipeline",
+        "source-virginia-scc-large-load-gs5-2025"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-014",
+        "136-CHRONICLE-011",
+        "136-CHRONICLE-012",
+        "136-CHRONICLE-009",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-013"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-014",
+        "137-LEDGER-004",
+        "137-LEDGER-012",
+        "137-LEDGER-013"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/finance-and-risk/",
+      "route": "/reference/topics/finance-and-risk/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-012",
+      "topic_id": "topic-human-futures",
+      "topic_name": "Human Futures",
+      "slug": "human-futures",
+      "title": "Human Futures: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "Housing, labor, public trust, institutions, land use, affordability, local legitimacy, and the social systems that receive frontier signals.",
+      "canonical_answer": [
+        "The Human Futures shelf grounds abstract social impact in named administrative and place records. Toronto's 24 254930 application clears a council gate while enactment conditions remain. Phoenix and Maricopa workforce baselines describe wages and covered employment without proving fab readiness. HHS and VA recommendation files show how public institutions can carry named implementation work over time.",
+        "These records support a receiving-system interpretation: technical capacity becomes socially meaningful through housing, labor access, services, affordability, institutional capability and legitimate authority. A regional growth projection or project announcement cannot reveal who can participate, who bears cost, whether services remain available or whether a public institution can deliver its assigned work."
+      ],
+      "historical_baseline": "The bounded baseline includes regional projections, local workforce and wage measures, a named housing-authority sequence and public-agency implementation findings. It is not a general social history. It shows the kinds of receiving-system records that must be joined to a technical project before distributional claims are made.",
+      "current_evidence_state": "The corpus identifies local authority, workforce conditions and institutional implementation gaps. It is less complete on joined household-level affordability, access, displacement, service quality and distribution across communities over time. Those missing joins are treated as gaps, not filled by regional averages.",
+      "conversion_chain": [
+        {
+          "stage": "Population and place baseline",
+          "reading": "Define affected people, geography, services, labor market and housing conditions."
+        },
+        {
+          "stage": "Authority and participation",
+          "reading": "Identify who decides, who has standing, conditions, appeals and unresolved public process."
+        },
+        {
+          "stage": "Access and distribution",
+          "reading": "Measure who can use the capability, who bears burdens and which supports are available."
+        },
+        {
+          "stage": "Experienced outcome",
+          "reading": "Track affordability, security, health, service quality and remedy for a stable cohort and period."
+        }
+      ],
+      "decisive_evidence": [
+        "Joined project and place measures for jobs, qualification, housing cost, service access and displacement.",
+        "Dated implementation and remedy records from responsible public institutions.",
+        "Distributional outcomes for identified communities, with aggregate and subgroup denominators kept visible."
+      ],
+      "claim_boundaries": [
+        "Regional employment and wage baselines do not prove project attribution or equitable access.",
+        "Authority does not establish delivery or consent from every affected public.",
+        "Institutional plans and recommendations do not establish implemented service outcomes."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-012",
+        "evidence_review_id": "128-REVIEW-012",
+        "living_desk_id": "140-DESK-012",
+        "field_guide_id": "152-GUIDE-012",
+        "mission_ids": [
+          "121-MISSION-045",
+          "121-MISSION-046",
+          "121-MISSION-047",
+          "121-MISSION-048"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56p-va-health-system-enterprise-risk-practices",
+        "signal-bls-maricopa-q4-2025-employment-wage-baseline",
+        "signal-bls-phoenix-2025-workforce-baseline",
+        "signal-mag-2023-projections-phoenix-region-growth-evidence-layer",
+        "signal-toronto-24-254930-community-council-recommendation"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56p-va-priority-letter-full-report-2026",
+        "source-bls-qcew-data-files",
+        "source-bls-oews-tables",
+        "source-bls-phoenix-oews-may-2025",
+        "source-maricopa-association-governments-open-data",
+        "source-toronto-2026-sc33-9-item-history",
+        "source-toronto-24-254930-june-2026-decision-report",
+        "source-toronto-building-permits"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-021",
+        "136-CHRONICLE-018",
+        "136-CHRONICLE-019",
+        "136-CHRONICLE-020",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-024",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-008"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-010",
+        "137-LEDGER-006",
+        "137-LEDGER-015",
+        "137-LEDGER-001",
+        "137-LEDGER-009",
+        "137-LEDGER-007",
+        "137-LEDGER-008",
+        "137-LEDGER-011",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-005"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/human-futures/",
+      "route": "/reference/topics/human-futures/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-013",
+      "topic_id": "topic-mobility",
+      "topic_name": "Mobility",
+      "slug": "mobility",
+      "title": "Mobility: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf now reaches effective fared driverless passenger-service authority in named California geographies and measured public-road testing exposure while keeping authority, testing, service, and comparative safety distinct.",
+      "canonical_answer": [
+        "The mobility shelf reaches two unusually concrete forms of service evidence. California has effective authority for expanded fared Waymo driverless service and a later named recall that bounds a weather-handling constraint. Amtrak records station projects turned over for passenger use, final completions, accessibility backlogs and incompatible passenger-information deployment inventories.",
+        "Together these cases show why a mobility claim must keep operator, geography, asset and user state attached. Regulatory authority is not a trip count; passenger use is not necessarily final closeout; an inventory total can change because its cohort or method changed; and a recall is a bounded safety intervention rather than a general verdict on all automated service."
+      ],
+      "historical_baseline": "The repository baseline follows autonomous mobility from public-road testing and service authority into an operating recall, while the intercity-rail shelf follows designs and projects into passenger use, final completion, accessibility and revised deployment counts. It is a conversion history for selected systems, not a comprehensive modal comparison.",
+      "current_evidence_state": "Current records are strongest for named authority, project-stage inventories and particular operating constraints. They remain incomplete for recurring service quality by named asset, compatible passenger exposure, accessibility in actual journeys and safety comparison across stable operating domains.",
+      "conversion_chain": [
+        {
+          "stage": "Authority and operating domain",
+          "reading": "Fix operator, geography, service type, conditions and effective date."
+        },
+        {
+          "stage": "Asset and user acceptance",
+          "reading": "Separate construction, substantial completion, passenger use, final closeout and accessible use."
+        },
+        {
+          "stage": "Service operation",
+          "reading": "Count trips, passengers, asset availability, cancellations, defects and incidents."
+        },
+        {
+          "stage": "Reliable and equitable access",
+          "reading": "Measure repeat performance and user access on stable asset, journey and exposure denominators."
+        }
+      ],
+      "decisive_evidence": [
+        "Named-asset service, reliability and accessibility records tied to actual passenger use.",
+        "Autonomous-service exposure, intervention, incident and recall data within a stable operating domain.",
+        "Reconciled inventories whose cohort, completion definition and revision history remain stable."
+      ],
+      "claim_boundaries": [
+        "Permission does not prove service volume, reliability or comparative safety.",
+        "Passenger-use turnover is not identical to final completion or program closeout.",
+        "Inventory counts cannot be trended across a documented cohort or method break without reconciliation."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-013",
+        "evidence_review_id": "128-REVIEW-013",
+        "living_desk_id": "140-DESK-013",
+        "field_guide_id": "152-GUIDE-013",
+        "mission_ids": [
+          "121-MISSION-049",
+          "121-MISSION-050",
+          "121-MISSION-051",
+          "121-MISSION-052"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-57b-amtrak-eight-station-final-completion-cohort",
+        "signal-57b-amtrak-eleven-station-passenger-use-cohort",
+        "signal-57c-amtrak-station-portfolio-coverage",
+        "signal-57e-amtrak-pids-cross-report-reconciliation",
+        "signal-cpuc-waymo-fared-driverless-expansion-2024",
+        "signal-nhtsa-waymo-flooded-roadway-recall-2026"
+      ],
+      "direct_evidence_source_ids": [
+        "source-57b-amtrak-ada-progress-june-2026",
+        "source-57e-amtrak-accessibility-progress-june-2026",
+        "source-cpuc-waymo-al2-disposition-2024",
+        "source-cpuc-av-advice-letter-status-2026",
+        "source-nhtsa-waymo-26e026-recall-2026",
+        "source-nhtsa-safety-recalls"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-021",
+        "136-CHRONICLE-008"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-010",
+        "137-LEDGER-006"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/mobility/",
+      "route": "/reference/topics/mobility/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-014",
+      "topic_id": "topic-policy-and-standards",
+      "topic_name": "Policy and Standards",
+      "slug": "policy-and-standards",
+      "title": "Policy and Standards: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf shows how rules, standards, permits, rate decisions, land decisions, environmental review, and site licenses turn possibility into permission while leaving construction, acceptance, operation, and outcomes downstream.",
+      "canonical_answer": [
+        "The shelf spans FAA operator transition, GSA post-quantum procurement paths and agency recommendation portfolios in which some actions are closed while others remain open. These records show policy as an executable sequence: a responsible authority adopts a requirement, covered entities identify scope, implementation work is assigned, evidence is tested and a reviewer records disposition.",
+        "A publication date is therefore not an adoption outcome. Standards can remain drafts, final texts can await implementation profiles, and a closed recommendation can address one named action while adjacent weaknesses persist. The chapter treats revision, exceptions, conformance and retirement of legacy practice as first-class records."
+      ],
+      "historical_baseline": "The current baseline moves from adopted rules and standards into procurement mappings, operator transition and recommendation follow-up. It illustrates how text becomes administrative work, without claiming that the selected U.S. records represent all jurisdictions or the whole history of standardization.",
+      "current_evidence_state": "The corpus is strong on issued requirements, named implementation actions and granular open-or-closed dispositions. It is less complete on cross-entity conformance, production use, monitored exceptions and demonstrated performance after adoption.",
+      "conversion_chain": [
+        {
+          "stage": "Authority and text",
+          "reading": "Identify issuer, legal status, version, effective date, scope and required outcome."
+        },
+        {
+          "stage": "Implementation plan",
+          "reading": "Name covered systems, owners, inventory, procurement path, deadline and exception process."
+        },
+        {
+          "stage": "Conformance and closure",
+          "reading": "Require evidence against explicit criteria and preserve open, partial and closed states."
+        },
+        {
+          "stage": "Operating effect",
+          "reading": "Monitor use, failures, incidents, costs and revision needs after implementation."
+        }
+      ],
+      "decisive_evidence": [
+        "Covered-system inventories and owner-approved implementation plans tied to the exact standard version.",
+        "Independent conformance or closure evidence with exception and residual-risk records.",
+        "Post-adoption operating evidence, including incidents, performance and legacy-system retirement."
+      ],
+      "claim_boundaries": [
+        "Publication or finalization does not establish implementation.",
+        "A procurement path does not prove acquisition, deployment or conformance.",
+        "Recommendation closure is bounded to the named criterion and reviewed evidence."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-014",
+        "evidence_review_id": "128-REVIEW-014",
+        "living_desk_id": "140-DESK-014",
+        "field_guide_id": "152-GUIDE-014",
+        "mission_ids": [
+          "121-MISSION-053",
+          "121-MISSION-054",
+          "121-MISSION-055",
+          "121-MISSION-056"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56n-dhs-ai-recommendations-two-closed-one-open",
+        "signal-56n-doe-ai-inventory-recommendation-open",
+        "signal-56n-va-ai-inventory-recommendation-closed",
+        "signal-faa-part450-operator-transition",
+        "signal-gsa-pqc-procurement-paths"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56n-gao-federal-ai-recommendation-status-2026",
+        "source-faa-part450-transition-2026",
+        "source-faa-commercial-space-licenses",
+        "source-gsa-pqc-buyers-guide-2025"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-021",
+        "136-CHRONICLE-016",
+        "136-CHRONICLE-015",
+        "136-CHRONICLE-006",
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-017",
+        "136-CHRONICLE-023",
+        "136-CHRONICLE-010",
+        "136-CHRONICLE-007",
+        "136-CHRONICLE-024",
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-004",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-001",
+        "136-CHRONICLE-008"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-010",
+        "137-LEDGER-006",
+        "137-LEDGER-015",
+        "137-LEDGER-001",
+        "137-LEDGER-009",
+        "137-LEDGER-007",
+        "137-LEDGER-008",
+        "137-LEDGER-011",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-005"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/policy-and-standards/",
+      "route": "/reference/topics/policy-and-standards/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-015",
+      "topic_id": "topic-quantum",
+      "topic_name": "Quantum",
+      "slug": "quantum",
+      "title": "Quantum: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf separates final 2024 PQC standards, the 2025 HQC backup-algorithm selection, preliminary credential specifications, and federal migration planning. It supports standards and selection milestones while implementation, validation, procurement, inventory, and completed migration remain downstream. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 003: Quantum Readiness Runs Through Migration,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The quantum shelf is deliberately centered on post-quantum cryptography. It separates final 2024 standards, NIST's 2025 selection of HQC as a backup algorithm, preliminary PIV credential specifications and federal migration plans with dated transitions. This gives the topic an implementation spine rather than relying on generalized quantum-computing expectations.",
+        "The resulting question is not whether an algorithm has been selected, but whether organizations know which systems and dependencies are exposed, acquire interoperable implementations, validate them, complete cutover and retire vulnerable legacy components. A backup-algorithm selection is not yet a standard, and a working draft is not a deployed credential system."
+      ],
+      "historical_baseline": "Within the repository, the baseline runs from NIST's final PQC standards to a later backup-algorithm selection, working credential drafts and federal migration obligations. It documents the beginning of a long transition and does not claim completed migration or characterize the full state of quantum computing.",
+      "current_evidence_state": "Evidence establishes standards, selections, draft implementation guidance and planning requirements. It does not yet establish complete cryptographic inventories, interoperable production implementations, accepted cutovers or retired legacy cryptography across a named institution.",
+      "conversion_chain": [
+        {
+          "stage": "Standard and selection",
+          "reading": "Preserve algorithm, version, status, intended role and unresolved specification work."
+        },
+        {
+          "stage": "Inventory and dependency",
+          "reading": "Identify systems, data lifetimes, protocols, credentials, suppliers and owners."
+        },
+        {
+          "stage": "Procurement and validation",
+          "reading": "Test implementations, interoperability, performance, fallback and migration safety."
+        },
+        {
+          "stage": "Cutover and retirement",
+          "reading": "Record accepted production use, exceptions, incidents and verified legacy removal."
+        }
+      ],
+      "decisive_evidence": [
+        "Complete institution-level cryptographic inventories with system and owner denominators.",
+        "Interoperability and conformance results for production candidate implementations.",
+        "Accepted cutover, monitored operation and verified retirement records for named systems."
+      ],
+      "claim_boundaries": [
+        "A final standard is not organization-level implementation.",
+        "An algorithm selection is not a completed standard or procurement.",
+        "A migration plan or draft does not prove cutover, validation or legacy retirement."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-015",
+        "evidence_review_id": "128-REVIEW-015",
+        "living_desk_id": "140-DESK-015",
+        "field_guide_id": "152-GUIDE-015",
+        "mission_ids": [
+          "121-MISSION-057",
+          "121-MISSION-058",
+          "121-MISSION-059",
+          "121-MISSION-060"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-federal-pqc-migration-plans-and-deadlines",
+        "signal-nist-hqc-backup-algorithm-selection",
+        "signal-nist-piv-pqc-working-drafts",
+        "signal-sample-007"
+      ],
+      "direct_evidence_source_ids": [
+        "source-white-house-eo-14412-pqc-migration",
+        "source-omb-m-26-15-pqc-migration",
+        "source-nist-pqc",
+        "source-nist-piv-pqc-working-drafts-2026",
+        "source-nist-hqc-selection-2025"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-006"
+      ],
+      "receiving_place_ids": [],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/quantum/",
+      "route": "/reference/topics/quantum/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-016",
+      "topic_id": "topic-space",
+      "topic_name": "Space",
+      "slug": "space",
+      "title": "Space: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf connects lunar architecture and hardware to a Florida Space Coast corridor where master plans, site licenses, environmental decisions, state capital, construction, mission licensing, safety, and utilization remain separate stages. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 007: Space Activity Needs Operator And Mission Denominators,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The space shelf connects NASA's Moon to Mars architecture, two final environmental decisions, a multi-user Kennedy master plan, an operational causeway bridge, a current Launch Complex 46 site licence and a rising annual count of FAA-licensed operations. The evidence therefore spans system design, place planning, authority, infrastructure and aggregate activity.",
+        "Those stages must remain separate. A system architecture is not integrated mission hardware; an environmental decision is not a construction or launch authorization; a site licence is not an operator or mission licence; and an aggregate operation count does not identify utilization, reliability or economic benefit at a particular facility."
+      ],
+      "historical_baseline": "The repository baseline moves from architecture and master planning through federal environmental decisions, completed local infrastructure, continuing site authority and an annual licensed-operation rail. It is a selected institutional and Space Coast conversion history rather than a comprehensive account of world space activity.",
+      "current_evidence_state": "The corpus supports named plans, site and environmental authority, one operational enabling asset and increasing licensed activity. It remains incomplete at the join among site, operator, mission, payload, range availability, turnaround, reliability and recurring utilization.",
+      "conversion_chain": [
+        {
+          "stage": "Architecture and mission need",
+          "reading": "Identify capability, interfaces, mission sequence and dependencies without treating architecture as delivered hardware."
+        },
+        {
+          "stage": "Site and environmental authority",
+          "reading": "Separate land, site licence, environmental decision, construction and mission-specific approval."
+        },
+        {
+          "stage": "Integrated mission",
+          "reading": "Record accepted hardware, operator, range, payload, launch licence and completed event."
+        },
+        {
+          "stage": "Cadence and utilization",
+          "reading": "Measure repeat operations, turnaround, reliability and use by named site and operator."
+        }
+      ],
+      "decisive_evidence": [
+        "Mission-specific licences and completed operations tied to the same operator and site.",
+        "Accepted infrastructure and range-availability records with maintenance and safety constraints.",
+        "Recurring mission, turnaround and utilization series using stable site and operation definitions."
+      ],
+      "claim_boundaries": [
+        "Architecture is not integrated, accepted mission capability.",
+        "Environmental and site decisions are not mission authorization or completion.",
+        "Aggregate national operations do not establish named-site cadence or outcomes."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-016",
+        "evidence_review_id": "128-REVIEW-016",
+        "living_desk_id": "140-DESK-016",
+        "field_guide_id": "152-GUIDE-016",
+        "mission_ids": [
+          "121-MISSION-061",
+          "121-MISSION-062",
+          "121-MISSION-063",
+          "121-MISSION-064"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-56a-faa-commercial-space",
+        "signal-faa-starship-lc39a-environmental-decision",
+        "signal-kennedy-multiuser-master-plan",
+        "signal-ksc-causeway-bridge-operational",
+        "signal-nasa-2025-moon-to-mars-architecture-rev-c",
+        "signal-slc40-final-environmental-decision"
+      ],
+      "direct_evidence_source_ids": [
+        "source-56a-faa-commercial-space-operations-fy2022",
+        "source-56a-faa-commercial-space-operations-fy2023",
+        "source-56a-faa-commercial-space-operations-fy2024",
+        "source-faa-starship-lc39a-final-eis-rod",
+        "source-nasa-kennedy-master-plan-2026",
+        "source-nasa-ksc-causeway-bridge-2025",
+        "source-nasa-moon-to-mars-architecture-rev-c-2025",
+        "source-nasa-artemis",
+        "source-faa-slc40-final-ea"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-004"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-001"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/space/",
+      "route": "/reference/topics/space/"
+    },
+    {
+      "canonical_resource_id": "181-RESOURCE-017",
+      "topic_id": "topic-water",
+      "topic_name": "Water",
+      "slug": "water",
+      "title": "Water: canonical resource map",
+      "resource_state": "Built locally — canonical reader contract; upstream evidence remains authoritative",
+      "reader_promise": "The current shelf now adds Chandler as an operating reclaimed-water and industrial comparator with measured municipal scale, completed treatment assets, and attributed operator metrics, while Phoenix TSMC project-specific reuse remains unproven. Phase 65 adds a four-record reporting shelf and the Published briefing “Frontier Topic 006: Water Plans Need Measured Service,” with explicit authority, implementation, acceptance, operating, and outcome boundaries.",
+      "canonical_answer": [
+        "The water shelf distinguishes an operating reclaimed-water system in Chandler, Phoenix groundwater-management requirements, a preliminary wastewater capital program, a project-specific TSMC agreement and Toronto Water's long-horizon capital constraints. It pairs system operation with governance and future capacity rather than converting all water references into a single availability claim.",
+        "Chandler's reported operating scale is a real municipal comparator, but it cannot be attributed to TSMC's project-specific reuse. Conversely, a named agreement and planned treatment facility define dependencies and milestones without proving delivered volume. Water-security claims require provider, source, treatment, quality, customer, period and competing-use denominators."
+      ],
+      "historical_baseline": "The bounded baseline joins an established reclaimed-water operating record with 2026 conservation, provider and capital-plan records. It documents how existing municipal service and proposed industrial infrastructure appear in the current shelf, not a complete hydrological or regional water history.",
+      "current_evidence_state": "Evidence supports existing municipal reclaimed-water scale, formal conservation and compliance layers, and named capital and customer agreements. The unresolved edge is accepted project infrastructure and measured customer-specific supply, reuse, quality and reliability over time.",
+      "conversion_chain": [
+        {
+          "stage": "Source and authority",
+          "reading": "Identify provider, right, allocation, conservation rule, quality standard and affected users."
+        },
+        {
+          "stage": "Infrastructure commitment",
+          "reading": "Separate plan, budget, agreement, design, procurement and construction."
+        },
+        {
+          "stage": "Accepted service",
+          "reading": "Record treatment and conveyance acceptance, customer connection, capacity and quality tests."
+        },
+        {
+          "stage": "Repeated water outcome",
+          "reading": "Measure delivered and reused volume, reliability, quality, cost and ecosystem or household effects."
+        }
+      ],
+      "decisive_evidence": [
+        "Accepted treatment and conveyance assets tied to the named customer or service area.",
+        "Metered supply, reuse, discharge and quality records on a stable monthly or annual period.",
+        "Reliability, cost and competing-use evidence that retains provider and user identities."
+      ],
+      "claim_boundaries": [
+        "Municipal system scale cannot be attributed to a project without a customer-specific record.",
+        "A plan or agreement does not establish completed water infrastructure.",
+        "Conserved or reused volume from different entities and periods is not automatically comparable."
+      ],
+      "upstream_record_bindings": {
+        "encyclopedia_chapter_id": "118-TOPIC-017",
+        "evidence_review_id": "128-REVIEW-017",
+        "living_desk_id": "140-DESK-017",
+        "field_guide_id": "152-GUIDE-017",
+        "mission_ids": [
+          "121-MISSION-065",
+          "121-MISSION-066",
+          "121-MISSION-067",
+          "121-MISSION-068"
+        ]
+      },
+      "direct_evidence_signal_ids": [
+        "signal-chandler-reclaimed-water-operating-scale",
+        "signal-phoenix-2026-2031-north-gateway-wrp-capital-program",
+        "signal-phoenix-ama-fifth-management-plan-industrial-water",
+        "signal-toronto-water-2026-capital-delivery-constraint",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement"
+      ],
+      "direct_evidence_source_ids": [
+        "source-chandler-reclaimed-water-system",
+        "source-chandler-water-conservation-in-action",
+        "source-phoenix-capital-improvement-program",
+        "source-adwr-ama-management-plans",
+        "source-adwr-groundwater-site-inventory",
+        "source-toronto-water-budget-capital-plan",
+        "source-toronto-water-2026-capital-plan",
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "source-phoenix-2026-water-security-council-update"
+      ],
+      "named_project_ids": [
+        "136-CHRONICLE-022",
+        "136-CHRONICLE-005",
+        "136-CHRONICLE-003",
+        "136-CHRONICLE-002",
+        "136-CHRONICLE-001"
+      ],
+      "receiving_place_ids": [
+        "137-LEDGER-009",
+        "137-LEDGER-002",
+        "137-LEDGER-003",
+        "137-LEDGER-004",
+        "137-LEDGER-005"
+      ],
+      "canonicality_contract": "This is the preferred topic-level reader entry. It resolves to, rather than supersedes, the evidence review, living desk, field guide, project/place records, source profiles, and priority missions.",
+      "canonical_route": "/reference/topics/water/",
+      "route": "/reference/topics/water/"
+    }
+  ],
+  "public_html_routes": [
+    "/reference/",
+    "/reference/topics/advanced-manufacturing/",
+    "/reference/topics/agriculture-and-bioeconomy/",
+    "/reference/topics/ai-for-science/",
+    "/reference/topics/aviation/",
+    "/reference/topics/chips-and-compute/",
+    "/reference/topics/climate/",
+    "/reference/topics/critical-minerals/",
+    "/reference/topics/cybersecurity/",
+    "/reference/topics/discovery-technologies/",
+    "/reference/topics/energy/",
+    "/reference/topics/finance-and-risk/",
+    "/reference/topics/human-futures/",
+    "/reference/topics/mobility/",
+    "/reference/topics/policy-and-standards/",
+    "/reference/topics/quantum/",
+    "/reference/topics/space/",
+    "/reference/topics/water/"
+  ],
+  "public_json_exports": [
+    "/data/phase-181-canonical-resource-map.json"
+  ]
+}

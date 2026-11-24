@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import ColombiaRailDossierArticle from '../../../components/review/ColombiaRailDossierArticle.astro';
+import {colombiaRailDossiers} from '../../../lib/colombia-rail-named-dossiers.mjs';
+const record=colombiaRailDossiers.records.find(r=>r.record_id==='project-medellin-metro-railway')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><ColombiaRailDossierArticle record={record}/></BaseLayout>

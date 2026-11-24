@@ -1,0 +1,60 @@
+# Evidence receipts and historical comparisons hash exact file bytes. Preserve
+# the validated source on checkout/archive across Windows and Unix, including
+# intentional mixed historical line endings. -text leaves normal diff detection
+# enabled; it disables only automatic line-ending conversion.
+/app/** -text
+/docs/** -text
+/deployment/** -text
+/supabase/** -text
+/README.md -text
+
+# Tooling metadata has a conventional, stable encoding.
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+
+# Raw CRLF is intentional in this exact-byte Windows evidence repository.
+# Markdown hard breaks and trailing blank lines are valid document syntax.
+# These rules do not relax code-content, evidence-hash or release assertions.
+* whitespace=cr-at-eol
+*.md whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Preserved generated Markdown templates and frozen official-link transcripts.
+/app/scripts/build-phase179-assets.mjs whitespace=cr-at-eol,-blank-at-eol
+/app/scripts/build-phase180-state-report.mjs whitespace=cr-at-eol,-blank-at-eol
+/app/public/downloads/dated-evidence-return-council-adoption-results-gates-hold-resolution-decisions-2026/official-links/*-phase57z-record.txt whitespace=cr-at-eol,-blank-at-eol
+# Original candidate-bound EOF bytes; later phases retain these exact hashes.
+/app/scripts/build-phase181-204-content.mjs whitespace=cr-at-eol,-blank-at-eof
+/app/scripts/content-205-216/reference-attribution-57h-inputs.json whitespace=cr-at-eol,-blank-at-eof
+/app/scripts/lib/v1ref-config.mjs whitespace=cr-at-eol,-blank-at-eof
+
+# These eight AI-reviewed evidence files include a trailing blank line in their
+# recorded SHA-256. Preserve those exact review artifacts; continue checking
+# trailing spaces and all other whitespace errors, and all source-code files.
+/docs/release-reviews/2026-09-22/translation-pilots/policy-and-standards-es-419-ai-reviewed.md whitespace=-blank-at-eof
+/docs/release-reviews/2026-09-22/translation-pilots/policy-and-standards-fr-CA-ai-reviewed.md whitespace=-blank-at-eof
+/docs/release-reviews/2026-09-22/translation-pilots/quantum-es-419-ai-reviewed.md whitespace=-blank-at-eof
+/docs/release-reviews/2026-09-22/translation-pilots/quantum-fr-CA-ai-reviewed.md whitespace=-blank-at-eof
+/docs/release-reviews/2026-09-22/translation-pilots/space-es-419-ai-reviewed.md whitespace=-blank-at-eof
+/docs/release-reviews/2026-09-22/translation-pilots/space-fr-CA-ai-reviewed.md whitespace=-blank-at-eof
+/docs/release-reviews/2026-09-22/translation-pilots/water-es-419-ai-reviewed.md whitespace=-blank-at-eof
+/docs/release-reviews/2026-09-22/translation-pilots/water-fr-CA-ai-reviewed.md whitespace=-blank-at-eof
+
+# Exact-byte validated application inputs retained from the approved candidate.
+# Later dossiers also pin earlier inputs, so formatting cannot rewrite history.
+# Only their existing trailing blank lines are permitted; all other checks stay on.
+/app/scripts/assert-italy-rail-lagoon-dossiers.mjs whitespace=-blank-at-eof
+/app/scripts/assert-source-currency.mjs whitespace=-blank-at-eof
+/app/scripts/assert-source-review-clock.mjs whitespace=-blank-at-eof
+/app/scripts/lib/assert-italy-rail-lagoon-dossiers.mjs whitespace=-blank-at-eof
+/app/scripts/verify-italy-rail-lagoon-dossiers.mjs whitespace=-blank-at-eof
+/app/src/components/review/ItalyRailLagoonDossierArticle.astro whitespace=-blank-at-eof
+/app/src/content/updates/2026-11-22-italy-rail-lagoon-named-dossiers.json whitespace=-blank-at-eof
+/app/src/content/updates/2026-11-22-source-review-queue-clock.json whitespace=-blank-at-eof
+/app/src/data/italy-rail-lagoon-named-dossier-reviews.json whitespace=-blank-at-eof
+/app/src/data/italy-rail-lagoon-named-dossiers.json whitespace=-blank-at-eof
+/app/src/data/source-monitoring-policy.json whitespace=-blank-at-eof
+/app/src/lib/italy-rail-lagoon-named-dossiers.mjs whitespace=-blank-at-eof
+/app/src/lib/source-currency.mjs whitespace=-blank-at-eof
+/app/src/pages/atlas/places/venice.astro whitespace=-blank-at-eof
+/app/src/pages/atlas/projects/milan-m4.astro whitespace=-blank-at-eof
+/app/src/pages/atlas/projects/mose.astro whitespace=-blank-at-eof

@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import CurrentResearchArticle from '../../../components/review/CurrentResearchArticle.astro';
+import corpus from '../../../data/phase-205-216-current-editorial.json';
+const edition=corpus.records.find(r=>r.record_id==='212-REPORT-001')!;
+const chapters=['198-CASE-016','198-CASE-002','198-CASE-013','198-CASE-014'].map(id=>corpus.records.find(r=>r.record_id===id)!);
+---
+<BaseLayout title={`${edition.title} | FTFN`} description={edition.answer}>
+  <CurrentResearchArticle article={edition} />
+  <nav class="page-section" aria-label="Field edition chapters"><h2>Read the four cases</h2><ol>{chapters.map(c=><li><a href={`#${c.record_id}`}>{c.title}</a></li>)}</ol></nav>
+  {chapters.map(chapter=><section class="page-section" id={chapter.record_id} data-selected-case-reference={chapter.record_id}><h2>{chapter.title}</h2><p><a href={`${chapter.route}#${chapter.record_id}-ai-review`}>Read the current case and its own AI decision</a>. Its dated corrections and evidence limits belong to that exact article.</p><details data-prior-report-chapter><summary>Original September 14 chapter — retained history</summary><CurrentResearchArticle article={chapter} embedded /></details></section>)}
+  <section class="page-section"><h2>Earlier edition and wider reading</h2><p><a href="/reference/state-of-future-systems/">Inspect the earlier State of Future Systems draft collection</a>. Its coverage and review state remain separate from this selected edition.</p><p><a href="/reference/explore/1/?kind=Topic">Topic orientation</a> · <a href="/reference/explore/1/?kind=Question">Scoped factual answers</a> · <a href="/method/editorial-review/">Corrections and measurement limits</a></p></section>
+</BaseLayout>

@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import NevadaDossierArticle from '../../../components/review/NevadaDossierArticle.astro';
+import {nevadaPlaces} from '../../../lib/nevada-named-dossiers.mjs';
+const record=nevadaPlaces.find(r=>r.record_id==='place-humboldt-county-nevada')!;
+---
+<BaseLayout title={`${record.title} | FTFN Place Atlas`} description={record.answer}><NevadaDossierArticle record={record}/></BaseLayout>

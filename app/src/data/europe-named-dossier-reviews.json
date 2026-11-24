@@ -1,0 +1,32 @@
+{
+  "review_id":"EUROPE-NAMED-ARTICLES-AI-REVIEW-2026-11-21",
+  "review_date":"2026-11-21",
+  "reviewer":"Codex (author and AI self-reviewer)",
+  "policy_id":"OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision":"Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "independent_review":false,
+  "edition_sha256":"ecda9d3c1bcd760d1feab859353bf664616483b688d9708c17726b34e6d006aa",
+  "sources_sha256":"7498b78aeea1bc1a001434f9c4eefa7d513096a859e4369f802d0ff242bb8bdc",
+  "records":[
+    {"record_id":"project-hinkley-point-c","sha256":"23fea001374cb4f28b7109737add8b5a6cf6374a735e11eb90953c2fd8c2d7ba","determination":"One integrated two-unit project. February issuer targets retain 2015 sterling, exclusion of interim interest and conditional delay. Concrete-volume progress is not whole-plant readiness. November fire compliance is limited to the named alliance notices. No operating-output admission."},
+    {"record_id":"project-olkiluoto-3","sha256":"e9268c078d746cce6bc1ae1496157726a97f3c86cebaadd0e06d63d8d370a467","determination":"One generating unit, not the site or Posiva. Separate STUK recommendation, licensee report of government licence, actual reconnection and projected ramp. The 18,113 GWh station total is not unit output; continuous generation is not continuous full power. Outage corrective actions remain separate."},
+    {"record_id":"place-somerset-council-area","sha256":"ec809c50c522b08bc5ad9d625cb4bc9f6aa544c0eb3b10f6101c027447ab5fe0","determination":"One unitary-authority area E06000066, not the ceremonial county or neighbouring authorities. April assessment retains its July 2025 workforce reference and earlier campus proposal. June Homefinder registrations are not homelessness or Hinkley displacement. Planned housing is not occupied supply."}
+  ],
+  "review_checks":[
+    "Eleven official or council-commissioned source texts inspected November 21 in America/Edmonton; search snippets were discovery only.",
+    "English releases published by TVO and STUK were used; no new translated-reading count or independent language review is claimed.",
+    "Two PDFs were text-inspected. EDF screenshot returned no inspectable image; Somerset screenshot returned 403. Visual verification is not claimed.",
+    "The ONR reactor-vessel link returned unsupported DOCX, government licence release returned 403 and July Somerset advisory folder required sign-in. Their contents were not used as inspected evidence.",
+    "Each article has six substantive sections, an explicitly sourced chronology, next artifacts and related accounts. Dates and source boundaries remain visible.",
+    "Existing Phase 191 and 192 docket search and the retained eligibility inventory showed no duplicate of these three counted identities. The historical census remains unchanged.",
+    "No Phase 60 decision or identity is added, no Phase 61 file is promoted and no production or launch acceptance is implied."
+  ],
+  "historical_inputs_retained":[
+    {"path":"src/data/portfolio-eligibility-decisions.json","sha256":"b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"},
+    {"path":"src/data/phase-119-deep-project-place-atlas.json","sha256":"cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"},
+    {"path":"src/data/phase-61-project-conversion-registry.json","sha256":"9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"}
+  ],
+  "publication_authorized":false,
+  "launch_authorized":false,
+  "phase_216_complete":false
+}

@@ -1,0 +1,324 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "decision_date": "2026-09-27",
+  "reviewer": "Codex (AI editorial reviewer; not independent and not claiming professional credentials)",
+  "human_review_required": false,
+  "human_review_claimed": false,
+  "fresh_external_source_check": false,
+  "review_scope": "Full reading of all four topic articles, 21 main sections, all 16 nested case paragraphs, citations and complete source notes, plus the identified complete related question. These are editorial dispositions of dated source-based accounts, not external fact-checks, numerical replication, clinical/agricultural advice or legal opinions.",
+  "reviewed_articles": 4,
+  "total_distinct_selected_assessments": 23,
+  "selected_article_target": 33,
+  "remaining_unassessed_selected_articles": 10,
+  "application_projection_integrated": false,
+  "records": [
+    {
+      "record_id": "184-TOPIC-006",
+      "route": "/reference/topic-canon/climate--edition-2/",
+      "title": "Climate constraints: connect the regional signal to the actual asset",
+      "decision": "Accept dated climate interpretation after replacing the obsolete human-review gate",
+      "rationale": "All six sections and four nested case paragraphs maintain geographic scale, period and stock/flow distinctions. The regional temperature comparisons have named baselines and are not used to estimate facility losses. The July reservoir snapshot stays historical while the separately dated August return is visible. Entitlement, conveyance and operator service remain different questions. The substantive account is acceptable as dated interpretation, not a local causal assessment or fresh balance reproduction.",
+      "findings": [
+        {
+          "location": "Case 1 and update interval",
+          "disposition": "Accept scale and comparator discipline",
+          "finding": "54.6°F/2.6°F annual and 75.6°F/3.5°F monthly statements remain source-attributed regional comparisons. Annual, August, summer and September 1 drought periods cannot be combined into a named-asset exceedance or outage claim."
+        },
+        {
+          "location": "Case 2 and September 22 return",
+          "disposition": "Accept preserved chronology; reject incomplete balance",
+          "finding": "The July 84/482 thousand acre-feet and 5.39 million acre-feet snapshot is not relabeled August. The August 1/481 thousand and 5.14 million quantities remain separately dated flows/stock; neither is a complete accounting or customer-delivery record."
+        },
+        {
+          "location": "Project bridge and review boundary",
+          "disposition": "Replace review gate only",
+          "finding": "Keep local exposure, asset limits, operator records and alternate explanations. Specialist legal interpretation is outside this article; no water right or operating consequence is determined. Substitute actual AI editorial assessment for the pending-human sentence, retaining the original history."
+        }
+      ],
+      "source_record_sha256": "6abdb4d86bd0c4c83d5904cc02fca23761dfb9c64861ac7eb2b856230386de0f",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Case 1 — heat is an observed condition, not an outage attribution",
+          "sha256": "75af05226714a9be0e2fb2f63e4cbb66a24a09cf4d2285ea132ae7f2878a4904"
+        },
+        {
+          "heading": "Keep the update interval visible",
+          "sha256": "53e2332df913298dae41dc6fd7b74db949b582f11ad1092421281d482bd27bf1"
+        },
+        {
+          "heading": "Case 2 — Lake Powell separates observations from operating projections",
+          "sha256": "cbb21c13132c632078b7f56fd66d2a5b5df6208921ecaec564a0e67aaccadd05"
+        },
+        {
+          "heading": "September 22 source return — a newer observation is not a rewritten history",
+          "sha256": "63a7b639b9bd72137ae62beb95538feb83554050364ad75541d4ce6a5c7803e1"
+        },
+        {
+          "heading": "How the constraint reaches a project",
+          "sha256": "2d65b81982f2746acefb91039c0720b83b4d889f77005c8e64a5d7ef0b5f8873"
+        },
+        {
+          "heading": "Next evidence and review boundary",
+          "sha256": "9d3f55fe44259ad5b7063ff85114b20b3d0ea60b7add5029c20d71dba5e6c7ef"
+        }
+      ],
+      "reviewed_source_notes_sha256": "cb774554076c9147a4635125f65015d3edae15479c974dd9242643c060e39af5",
+      "source_notes_absent": false,
+      "related_article_inputs": [],
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            5,
+            "text"
+          ],
+          "heading": "Next evidence and review boundary",
+          "prior": "The next useful additions are local time-stamped observations and the corresponding operator records: load, outages, cooling restrictions, withdrawals, deliveries or curtailment instructions with defined units and periods. Record the event and the comparator before attributing a consequence. Independent subject review remains pending. No legal water allocation, causal attribution, project-stage change or future operating outcome is admitted by this edition.",
+          "replacement": "The next useful additions are local time-stamped observations and the corresponding operator records: load, outages, cooling restrictions, withdrawals, deliveries or curtailment instructions with defined units and periods. Record the event and the comparator before attributing a consequence. This exact dated article has an owner-authorized AI editorial assessment; linked claims are not approved by association. No legal water allocation, causal attribution, project-stage change or future operating outcome is admitted by this edition.",
+          "original_preservation": "Keep the complete original paragraph in native history and retain the original record/export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply the exact current-presentation changes and preserve original paragraphs, source dates and records; validate all nested paragraphs/citations, designated route and current decision. No independent human review or new external inspection may be claimed.",
+      "sha256": "8e9d53674438a51948f3627345beb8a49f23084c09bda38f5bd5febaf3136a6a"
+    },
+    {
+      "record_id": "184-TOPIC-002",
+      "route": "/reference/topic-canon/agriculture-and-bioeconomy--edition-2/",
+      "title": "Genome-edited livestock: authorization is not a field-outcome series",
+      "decision": "Accept bounded livestock account with explicit trial-exclusion and AI-policy clarification",
+      "rationale": "All five sections and four nested case paragraphs distinguish the regulated alteration, animal genotype, experimental endpoint, lineage and regulatory instrument. They do not infer commercial adoption or farm benefits. The excluded challenge is currently in the source notes and should also be stated beside the main pig-study description. The ending must no longer require a human reviewer under the owner policy.",
+      "findings": [
+        {
+          "location": "Pig case and nested paragraphs",
+          "disposition": "Accept genotype/endpoint scope; surface trial exclusion",
+          "finding": "Preserve CD163 exon 7, homozygous resistance indication, one/two-copy breeding-food scope, day-21 RNA/antibody endpoint and KS06 exception. Add the already recorded Table VIII.4 exclusion where the experiment is described. No current strain-surveillance claim follows."
+        },
+        {
+          "location": "PRLR-SLICK case",
+          "disposition": "Accept instrument and lineage distinction",
+          "finding": "The two reviewed cattle and progeny are not all slick alterations. Not approved, conditionally approved or indexed is a different regulatory position from the pig approval; safety assessment and natural mutation context do not estimate farm productivity."
+        },
+        {
+          "location": "Field-performance and final section",
+          "disposition": "Accept outcome requirements; remove human gate",
+          "finding": "Cohort, management, genotype, exposure, preselected outcomes, comparator and adverse/null results remain required. No food, treatment, buying or legal recommendation is supplied, and no fresh PDF inspection or study replication is claimed."
+        }
+      ],
+      "source_record_sha256": "4a9d36159f70ded9c3d831a0ea9ee4832b13d0b1507712adbbecc49ea88adb75",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Case 1 — what the PRRS-resistant-pig approval actually covers",
+          "sha256": "ea3a7f200adc4dac460b919221084233cf4df90199a1a4a5192c13c6be377b3c"
+        },
+        {
+          "heading": "Durability is part of the delivery system",
+          "sha256": "9dbbfc89d50e703d187cc713878569223a398941e26f7c739abcdbee7ea04027"
+        },
+        {
+          "heading": "Case 2 — a low-risk determination is a different regulatory instrument",
+          "sha256": "c55cb0307092689325284456aa7584b8aeda6d3bf2dbbfdbf2776b01a4edae4e"
+        },
+        {
+          "heading": "What would establish useful performance beyond a trial?",
+          "sha256": "b5b44840a8bf182f4b3abfd33cbe96df7689e6295dee9b1bdc4f649a72c3f318"
+        },
+        {
+          "heading": "Current answer and next decisive record",
+          "sha256": "4d3341aea06f8f55145384b51271ea76d60a18a7a96333728219b3e2b98b10ae"
+        }
+      ],
+      "reviewed_source_notes_sha256": "75f70f68c809c63ff978a0749bdecde72314bc49e26c94c48cb09a8483328de6",
+      "source_notes_absent": false,
+      "related_article_inputs": [],
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            0,
+            "text"
+          ],
+          "heading": "Case 1 — what the PRRS-resistant-pig approval actually covers",
+          "prior": "FDA’s April 29, 2025 approval concerns deletion of exon 7 of CD163 in domestic pigs. The resistance indication applies to homozygous animals. The review describes controlled viral challenges and an assessment at 21 days, rather than a national farm-outcome survey. Importantly, the summary reports an exception for the KS06 strain; heterozygous and unedited pigs were not resistant in the studies. A headline saying that all edited pigs are immune to every PRRS virus would lose both the genetic and strain boundaries of the evidence.",
+          "replacement": "FDA’s April 29, 2025 approval concerns deletion of exon 7 of CD163 in domestic pigs. The resistance indication applies to homozygous animals. The review describes controlled viral challenges and an assessment at 21 days, rather than a national farm-outcome survey. Importantly, the summary reports an exception for the KS06 strain; heterozygous and unedited pigs were not resistant in the studies. A headline saying that all edited pigs are immune to every PRRS virus would lose both the genetic and strain boundaries of the evidence. The retained source note also identifies Table VIII.4’s exclusion of a challenge in which the controls were not infected; its aggregate is not an unrestricted pool of trials.",
+          "original_preservation": "Keep the complete original paragraph in native history and retain the original record/export unchanged."
+        },
+        {
+          "path": [
+            "sections",
+            4,
+            "text"
+          ],
+          "heading": "Current answer and next decisive record",
+          "prior": "The reviewed artifacts establish two specific regulatory decisions and their bounded safety/effectiveness reasoning. They do not settle whether a named commercial deployment has delivered repeatable benefits under field conditions. Seek disclosed post-authorization monitoring, exact commercial-cohort evidence and independently reviewed outcome methods. This is a source-checked editorial draft; independent subject review is still required. It makes no recommendation about food, animal treatment or farm purchasing.",
+          "replacement": "The reviewed artifacts establish two specific regulatory decisions and their bounded safety/effectiveness reasoning. They do not settle whether a named commercial deployment has delivered repeatable benefits under field conditions. Seek disclosed post-authorization monitoring, exact commercial-cohort evidence and independently reviewed outcome methods. This is a dated source-based article with owner-authorized AI editorial assessment, not a new external fact-check or independent human review. It makes no recommendation about food, animal treatment or farm purchasing.",
+          "original_preservation": "Keep the complete original paragraph in native history and retain the original record/export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply the exact current-presentation changes and preserve original paragraphs, source dates and records; validate all nested paragraphs/citations, designated route and current decision. No independent human review or new external inspection may be claimed.",
+      "sha256": "02d58067eb8294123370e80995058862fa5fe12f1e52888a85aeccbfc3e0c065"
+    },
+    {
+      "record_id": "184-TOPIC-015",
+      "route": "/reference/topic-canon/quantum--edition-2/",
+      "title": "Quantum progress: memory, logical operations and useful applications are different tests",
+      "decision": "Accept separated quantum results with retained-access qualification and AI-policy wording",
+      "rationale": "All five sections and four nested paragraphs separate surface-code memory, the repetition-code figure correction, selected logical circuits and model/code-design results. They retain v3, post-selection and the corrected physical teleportation baseline, and do not rank architectures or infer economic application performance. The related question’s September 22 access limitations must not become a fresh topic-paper inspection; this assessment retains those limitations explicitly.",
+      "findings": [
+        {
+          "location": "Willow and Figure 3a",
+          "disposition": "Accept distinct experiment/correction scope",
+          "finding": "Memory lifetime under tested code/decoder conditions is not arbitrary computation. The April 28 correction concerns the repetition-code axis/legend, not blanket withdrawal or an application result."
+        },
+        {
+          "location": "Trapped-ion and code-design sections",
+          "disposition": "Accept version, selection and baseline conditions",
+          "finding": "Pin arXiv v3 dated November 17, 2024, corrected physical teleportation comparison, rejected-attempt cost and physical CNOT baseline scope. The IBM author-hosted exact-paper record is not a substituted QIP abstract or an installed processor result."
+        },
+        {
+          "location": "Comparison/review limits and access context",
+          "disposition": "Replace human gate; preserve non-reproduction",
+          "finding": "No platform winner, cross-platform improvement ratio or commercial advantage is established. The related September 22 checks failed to retrieve both Nature texts and retained earlier findings; IBM/arXiv access is not raw-data, code or full-paper reproduction."
+        }
+      ],
+      "source_record_sha256": "56542cfa1becda4d3a98412c207ecbf0e2b0884f9cd0f66e702cea21844b17ae",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Case 1 — Willow demonstrates a memory result with a defined code",
+          "sha256": "5307b09d0cfcd1059707ef842a864358cb5cfeb5c12a337a1b94957c521999cd"
+        },
+        {
+          "heading": "Case 2 — compare logical circuits with the stated physical baseline",
+          "sha256": "88623b75a10f25be086aecb2c14b4a547f66d8126c0a5f53418ff14d29f088a2"
+        },
+        {
+          "heading": "Code design is evidence of a different kind",
+          "sha256": "799645554236cf91e370faa2ca3a6ca75e2a85a75523a08de20b11c76c021bea"
+        },
+        {
+          "heading": "The next bridge to useful capability",
+          "sha256": "3e71d46bf0cf0816ae43e02eabaf37963ae5487a96405d4f2dee1a7bb8a5ccff"
+        },
+        {
+          "heading": "Comparison and review limits",
+          "sha256": "dc9be563cf5be6c650abaaf260c23c7c9cd3c8d98c2488e380a43f68d6c02944"
+        }
+      ],
+      "reviewed_source_notes_sha256": "8d93785229c564ccdee765e01e977467092854ca7a02ae1c599f751fbad5256c",
+      "source_notes_absent": false,
+      "related_article_inputs": [
+        {
+          "path": "app/src/data/phase-205-216-current-editorial.json",
+          "record_id": "195-BRIEF-057",
+          "sha256": "a44c5ba4f970bdf76c9b392fe9dfcc820853746bac7c249afa203bb7dc9ecd21",
+          "reviewed_scope": "Complete related question and its dated source/access notes; not a new source inspection or transfer of its assessment."
+        }
+      ],
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            4,
+            "text"
+          ],
+          "heading": "Comparison and review limits",
+          "prior": "This edition does not rank platforms, assert an economic advantage or declare a winning architecture. Its evidence set consists of distinct experimental and code-design studies, not a common benchmark series. Before publication, independent subject review should check paper versions, corrections, the exact logical-versus-physical comparison and any application-level interpretation. The next decisive artifact is a reproducible task result whose resources and uncertainty can be compared on a genuinely shared basis.",
+          "replacement": "This edition does not rank platforms, assert an economic advantage or declare a winning architecture. Its evidence set consists of distinct experimental and code-design studies, not a common benchmark series. This AI assessment checked the dated article’s versions, corrections and comparison boundaries; it did not reproduce the experiments or newly retrieve the papers. The related September 22 question record reports failed retrieval of the Nature paper and correction, so their September 14 findings remain inherited. The next decisive artifact is a reproducible task result whose resources and uncertainty can be compared on a genuinely shared basis.",
+          "original_preservation": "Keep the complete original paragraph in native history and retain the original record/export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply the exact current-presentation changes and preserve original paragraphs, source dates and records; validate all nested paragraphs/citations, designated route and current decision. No independent human review or new external inspection may be claimed.",
+      "sha256": "604ddc802ddc619f5039cab2e211afd8f7a35f8b3d992306c8d40115eb75c215"
+    },
+    {
+      "record_id": "184-TOPIC-009",
+      "route": "/reference/topic-canon/discovery-technologies--edition-2/",
+      "title": "From instrument to discovery: preserve the measurement and inference boundary",
+      "decision": "Accept dated discovery cases after replacing the obsolete human-review gate",
+      "rationale": "All five sections and four nested paragraphs distinguish acquired images, selected catalog candidates, communications service and scientific inference. Rubin’s interval and forecasts remain historical; GWTC-3 counts are conditioned on version/selection and not the latest universe event count; DSS-23 does not validate another instrument or catalog. The pending-human sentence is the only required current-presentation change.",
+      "findings": [
+        {
+          "location": "Rubin case",
+          "disposition": "Accept initial data-product milestone without extrapolation",
+          "finding": "The June 2025 release’s roughly ten million galaxies, 2,104 asteroids and just-over-ten-hour test interval are attributed initial products. They cannot supply a constant ten-year discovery rate or complete September 2026 survey state."
+        },
+        {
+          "location": "GWTC-3 case",
+          "disposition": "Accept version-specific candidate count",
+          "finding": "Retain 35 O3b candidates, 90 across three runs, exact v11 interval and p-astro above 0.5. Selection, sensitivity, observing time and revised membership prevent a simple productivity interpretation or universal component identification."
+        },
+        {
+          "location": "Network, reading method and next evidence",
+          "disposition": "Accept separate capability tests",
+          "finding": "DSS-23 communications, telescope calibration and catalog false-positive behavior need their own records. No strain-data reanalysis, current service series or new source retrieval was performed by this editorial assessment."
+        }
+      ],
+      "source_record_sha256": "ae2964bc7a2daf361828edc9ab4c2238644f0bada989b9975097d05a9c08f657",
+      "reviewed_section_hashes": [
+        {
+          "heading": "Case 1 — Rubin’s first imagery is a real milestone with a bounded meaning",
+          "sha256": "47abcbad21b48b5d0ac3ec25f6e04e0ba69a4e7ac1091d151ba5aaed2e116e73"
+        },
+        {
+          "heading": "Case 2 — GWTC-3 is a versioned candidate catalog, not a raw event counter",
+          "sha256": "de7de2a2d162d82d12f10a1ecd8bb32767243da3c9fdcad4b0c8539b92681962"
+        },
+        {
+          "heading": "The enabling network deserves its own evidence",
+          "sha256": "96a2b5f8d180ea0bbf4da37e0badf50a252489aa7888cd77c5314bffe21d63ce"
+        },
+        {
+          "heading": "How to read a discovery claim",
+          "sha256": "bb5c62c0d173332105509bd3110fbe761351297575e1fba118daa6038611feab"
+        },
+        {
+          "heading": "Next decisive evidence",
+          "sha256": "27ea36456f6781f6345b1b57733515702d252284259369340b81f7a8b6de2608"
+        }
+      ],
+      "reviewed_source_notes_sha256": "24efdcd0b6e64bf79d64881a09e1b0dce831cf6a4030d58b33780094aebee3c8",
+      "source_notes_absent": false,
+      "related_article_inputs": [],
+      "receipt_inputs": [],
+      "pilot_inputs": [],
+      "required_presentational_changes": [
+        {
+          "path": [
+            "sections",
+            4,
+            "text"
+          ],
+          "heading": "Next decisive evidence",
+          "prior": "For a survey, seek dated observing coverage, calibration and validated data-release documentation. For a catalog, preserve the event-selection contract and reproducible analysis. For network service, seek named capacity, availability and delivery records. Independent subject review remains pending for this draft. No alert count, discovery rate, causal claim or cross-instrument score is manufactured to fill an absent denominator.",
+          "replacement": "For a survey, seek dated observing coverage, calibration and validated data-release documentation. For a catalog, preserve the event-selection contract and reproducible analysis. For network service, seek named capacity, availability and delivery records. The dated article has an owner-authorized AI editorial assessment; this is not independent human review or a new source check. No alert count, discovery rate, causal claim or cross-instrument score is manufactured to fill an absent denominator.",
+          "original_preservation": "Keep the complete original paragraph in native history and retain the original record/export unchanged."
+        }
+      ],
+      "operating_outcomes_admitted": false,
+      "current_external_status_verified": false,
+      "original_record_changed": false,
+      "application_projection_integrated": false,
+      "acceptance_condition": "Apply the exact current-presentation changes and preserve original paragraphs, source dates and records; validate all nested paragraphs/citations, designated route and current decision. No independent human review or new external inspection may be claimed.",
+      "sha256": "e1346c860462ea35034e9282593367408b279a6a0bc640c0de5e7402d1721f55"
+    }
+  ],
+  "boundary": "Four exact assessments and five paragraph changes are prepared, not integrated. Together with prior ledgers, 23 distinct selected articles have decisions; six projects and four places remain unassessed. Disposition is not completed implementation of its required changes or blanket acceptance of reachable historical content or 58 annual readings."
+}

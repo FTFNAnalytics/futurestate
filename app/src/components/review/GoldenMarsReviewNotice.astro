@@ -1,0 +1,23 @@
+---
+import {goldenMarsWiderContext} from '../../lib/golden-mars-wider-review.mjs';
+interface Props {recordId:string;}
+const review = goldenMarsWiderContext(Astro.props.recordId);
+---
+{review && <aside class="page-section" data-golden-mars-followthrough={review.record.id} aria-label="Dated Golden-Mars clarification">
+  <h2>Golden-Mars clarification · {review.review_date}</h2>
+  <p>{review.boundary}</p>
+  <p><a href={`/updates/${review.update_id}/`}>Dated correction record</a> · <a href={review.retained_review_route}>Annual case and retained artifact checks</a></p>
+  <details data-golden-mars-exact-sources={review.record.id}>
+    <summary>Exact artifacts and September 22 inspection limits</summary>
+    {review.source_checks.map(source => <section>
+      <h3><a href={source.url}>{source.locator}</a></h3>
+      {'relation' in source && source.relation && <p>{source.relation}</p>}
+      <p>{source.finding}</p><p>{source.access}</p>
+    </section>)}
+  </details>
+  {review.record.changes.length > 0 && <details data-golden-mars-prior-fields={review.record.id}>
+    <summary>Earlier wording retained for comparison</summary>
+    <dl>{review.record.changes.map(change => <div><dt>{change.label}</dt><dd>{change.prior}</dd></div>)}</dl>
+    <p>The original source file is unchanged. Retained source SHA-256: <code>{review.record.source_sha256}</code>.</p>
+  </details>}
+</aside>}

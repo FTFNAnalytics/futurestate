@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import AustriaHousingCitiesDossierArticle from '../../../components/review/AustriaHousingCitiesDossierArticle.astro';
+import {austriaHousingCitiesDossiers} from '../../../lib/austria-housing-cities-named-dossiers.mjs';
+const record=austriaHousingCitiesDossiers.records.find(r=>r.record_id==='project-seestadt-aspern')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><AustriaHousingCitiesDossierArticle record={record}/></BaseLayout>

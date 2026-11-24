@@ -4,9 +4,9 @@
   "ledger_id": "evidence-return-envelope-ledger-001",
   "title": "Evidence Return Envelope Ledger",
   "captured_date": "2026-08-12",
-  "as_of_date": "2026-08-23",
+  "as_of_date": "2026-09-01",
   "structural_status": "Complete",
-  "operational_status": "Wave 60B Complete; Wave 60C Scheduled",
+  "operational_status": "Wave 60B Complete; Wave 60C In Progress — September 1 Decision Propagated; Git Held",
   "scope": "Thirteen public-safe return envelopes preserving every Phase 60 Evidence Cycle 001 gate, exact artifact, date, source, signal, binding decision, and propagation surface.",
   "interpretation_boundary": "An envelope is a scheduled intake contract. Future envelopes have no attempted surfaces, access results, receipts, decisions, or propagation claims.",
   "metrics": {
@@ -16,9 +16,12 @@
     "wave_60d": 5,
     "named_file_bound": 3,
     "no_transfer": 10,
-    "receipts_created": 2,
-    "decisions_completed": 2,
-    "propagation_completed": 2
+    "receipts_created": 3,
+    "decisions_completed": 3,
+    "propagation_completed": 3,
+    "content_propagation_completed": 3,
+    "git_backed_release_verified": 2,
+    "git_backed_release_held": 1
   },
   "envelope_records": [
     {
@@ -127,8 +130,8 @@
       "target": "Louisiana Starlink observed adoption",
       "origin_record_id": "58-QUEUE-LOUISIANA-STARLINK-ADOPTION",
       "scheduled_check_date": "2026-09-01",
-      "envelope_state": "Scheduled",
-      "exact_next_artifact": "Observed subscription or installation evidence for a fixed eligible-location cohort after service becomes available.",
+      "envelope_state": "Propagation Complete — Git Held",
+      "exact_next_artifact": "A ConnectLA- or SpaceX-issued project return that fixes the eligible-location cohort and reports actual installations, subscriptions, or service taken with observation period and method.",
       "source_ids": [
         "source-57b-louisiana-starlink-bead-agreement"
       ],
@@ -147,15 +150,58 @@
         "dependency-map-artifact-return-to-reader-state"
       ],
       "local_system_ids": [],
-      "attempted_surfaces": [],
-      "access_result": null,
-      "receipt_type": null,
-      "receipt_id": null,
-      "decision_date": null,
-      "decision_status": "scheduled",
-      "propagation_status": "not_started",
-      "next_check_date": null,
-      "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
+      "attempted_surfaces": [
+        "https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access",
+        "https://connect.la.gov/press-releases",
+        "https://connect.la.gov/resource-library",
+        "https://www.opportunitylouisiana.gov/news/spacex-launches-new-era-of-commercial-spaceflight-with-100-billion-louisiana-campus",
+        "https://starlink.com/support/article/5a00b427-520c-faa3-2de2-f74c1ddaa6cc",
+        "https://legis.la.gov/legis/Law.aspx?d=1337853",
+        "https://connect.la.gov/media/gvrfqkff/draft-subrecipient-agreement-final-10-11-24.pdf",
+        "https://broadbandusa.ntia.gov/sites/default/files/2026-01/BEAD_FP_Overview_LA.pdf",
+        "https://help.bdc.fcc.gov/hc/en-us/articles/10476040597787-How-to-Submit-an-Availability-Challenge"
+      ],
+      "access_result": "Nine official public surfaces were reviewed. They support planned access and adjacent offer/reporting context, but not a compatible fixed-cohort observed adoption result; this is not a nonexistence or zero-adoption finding.",
+      "receipt_type": "No Material Change",
+      "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+      "decision_date": "2026-09-01",
+      "decision_status": "no_material_change",
+      "propagation_status": "complete_locally_git_held",
+      "next_check_date": "2026-09-08",
+      "publication_boundary": "This envelope records a dated No Material Change decision and complete content propagation. Git-backed release remains Held; the result does not establish nonexistence, zero adoption, availability, success, or failure and does not authorize any named-file or matrix advance.",
+      "checked_source_ids": [
+        "source-57b-louisiana-starlink-bead-agreement",
+        "source-165-led-spacex-louisiana-campus-starlink-offer",
+        "source-165-starlink-louisiana-community-discount",
+        "source-165-louisiana-broadband-reporting-law",
+        "source-165-connectla-resource-library"
+      ],
+      "content_propagation_status": "complete",
+      "git_backed_release_status": "held",
+      "companion_rechecks": [
+        {
+          "receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change",
+          "prior_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+          "source_checked_date": "2026-09-08",
+          "decision_status": "no_material_change",
+          "receipt_type": "No Material Change",
+          "counts_as_cycle_decision": false,
+          "checked_source_ids": [
+            "source-57b-louisiana-starlink-bead-agreement",
+            "source-165-led-spacex-louisiana-campus-starlink-offer",
+            "source-165-starlink-louisiana-community-discount",
+            "source-165-connectla-resource-library",
+            "source-60-connectla-spacex-pecan-island-plan-2026",
+            "source-60-connectla-starlink-final-proposal-location-cohort-2026",
+            "source-60-starlink-2025-progress-report"
+          ],
+          "access_result": "Seventeen official surfaces fixed the planning cohort at 10,635 unique location IDs but supplied no compatible actual installation, subscription, or service-taken return with an observation period and method.",
+          "named_file_transfer": "none_no_matching_phase61_identity",
+          "next_check_date": "2026-10-09",
+          "content_propagation_status": "complete",
+          "git_backed_release_status": "held"
+        }
+      ]
     },
     {
       "envelope_id": "67-RETURN-004",
@@ -575,5 +621,7 @@
       "next_check_date": null,
       "publication_boundary": "This envelope schedules and bounds a future human-reviewed source check. It does not establish that the artifact exists or authorize publication before the real check date."
     }
-  ]
+  ],
+  "latest_companion_recheck_date": "2026-09-08",
+  "latest_companion_receipt_id": "receipt-60-louisiana-starlink-2026-09-08-follow-up-no-material-change"
 }

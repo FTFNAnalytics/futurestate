@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import StockholmDossierArticle from '../../../components/review/StockholmDossierArticle.astro';
+import {stockholmDossiers} from '../../../lib/stockholm-named-dossiers.mjs';
+const record=stockholmDossiers.records.find(r=>r.record_id==='project-stockholm-bypass')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><StockholmDossierArticle record={record}/></BaseLayout>

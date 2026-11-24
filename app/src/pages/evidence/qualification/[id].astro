@@ -1,9 +1,11 @@
 ---
+import {projectBriefing} from "../../../lib/reference-attribution.mjs";
 import { getCollection } from "astro:content";
 import BaseLayout from "../../../components/layout/BaseLayout.astro";
 import MetaPill from "../../../components/ui/MetaPill.astro";
 import qualificationRegistry from "../../../data/phase-67-qualification-packet-registry.json";
 import returnLedger from "../../../data/phase-67-evidence-return-envelope-ledger.json";
+import { projectEvidenceRecord } from '../../../lib/current-evidence.mjs';
 
 export function getStaticPaths() {
   return [
@@ -18,10 +20,12 @@ export function getStaticPaths() {
   ];
 }
 
-const { recordKind, record } = Astro.props as { recordKind: string; record: any };
+const { recordKind, record: baselineRecord } = Astro.props as { recordKind: string; record: any };
+const record = recordKind === 'evidence_return_envelope' ? projectEvidenceRecord(baselineRecord) : baselineRecord;
 const isPacket = recordKind === "qualification_packet";
+const isCompletedEnvelope = !isPacket && record.decision_status !== "scheduled";
 const [briefings, dependencyMaps, signals] = await Promise.all([
-  getCollection("briefings"),
+  getCollection("briefings").then(records => records.map(projectBriefing)),
   getCollection("dependencyMaps"),
   getCollection("signals")
 ]);
@@ -47,7 +51,7 @@ const signalIds = isPacket ? record.signal_ids : [record.underlying_signal_id];
     <div class="meta-row">
       <MetaPill label={isPacket ? record.packet_state : record.envelope_state} tone="review" />
       <MetaPill label={isPacket ? record.current_decision_state : record.wave} />
-      <MetaPill label={isPacket ? record.stage_label : record.scheduled_check_date} />
+      <MetaPill label={isPacket ? record.stage_label : (record.decision_date ?? record.scheduled_check_date)} />
       <MetaPill label="Published contract" tone="possibility" />
     </div>
   </section>
@@ -139,8 +143,8 @@ const signalIds = isPacket ? record.signal_ids : [record.underlying_signal_id];
       <section class="page-section">
         <div class="status-panel">
           <article class="status-item">
-            <h2>Scheduled check</h2>
-            <p>{record.scheduled_check_date}. No attempted surface or access result is recorded before this date.</p>
+            <h2>{isCompletedEnvelope ? "Decision date" : "Scheduled check"}</h2>
+            <p>{isCompletedEnvelope ? `${record.decision_date}. ${record.receipt_type} receipt ${record.receipt_id}.` : `${record.scheduled_check_date}. No attempted surface or access result is recorded before this date.`}</p>
           </article>
           <article class="status-item">
             <h2>Binding decision</h2>
@@ -148,7 +152,7 @@ const signalIds = isPacket ? record.signal_ids : [record.underlying_signal_id];
           </article>
           <article class="status-item">
             <h2>Propagation state</h2>
-            <p>{record.propagation_status}. Receipt, decision date, and next check remain empty.</p>
+            <p>{isCompletedEnvelope ? `${record.propagation_status}. Next bounded check: ${record.next_check_date}.` : `${record.propagation_status}. Receipt, decision date, and next check remain empty.`}</p>
           </article>
         </div>
       </section>
@@ -166,22 +170,70 @@ const signalIds = isPacket ? record.signal_ids : [record.underlying_signal_id];
               : <p>No named-file append is authorized.</p>}
           </article>
           <article class="record-card">
-            <h2>Future-state integrity</h2>
-            <ul>
-              <li>Attempted surfaces: {record.attempted_surfaces.length}</li>
-              <li>Access result: none</li>
-              <li>Receipt: none</li>
-              <li>Decision: scheduled</li>
-              <li>Propagation: not started</li>
-            </ul>
+            <h2>{isCompletedEnvelope ? "Dated decision" : "Future-state integrity"}</h2>
+            {isCompletedEnvelope ? (
+              <>
+                <ul>
+                  <li>Attempted official surfaces: {record.attempted_surfaces.length}</li>
+                  <li>Receipt: {record.receipt_id}</li>
+                  <li>Decision: {record.decision_status}</li>
+                  <li>Propagation: {record.propagation_status}</li>
+                  <li>Git-backed state: {record.envelope_state}</li>
+                </ul>
+                <p>{record.access_result}</p>
+              </>
+            ) : (
+              <ul>
+                <li>Attempted surfaces: {record.attempted_surfaces.length}</li>
+                <li>Access result: none</li>
+                <li>Receipt: none</li>
+                <li>Decision: scheduled</li>
+                <li>Propagation: not started</li>
+              </ul>
+            )}
           </article>
         </div>
       </section>
 
+      {isCompletedEnvelope && record.attempted_surfaces.length > 0 && (
+        <section class="page-section">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">Official Review</div>
+              <h2>Attempted public surfaces.</h2>
+            </div>
+          </div>
+          <ul class="source-list">
+            {record.attempted_surfaces.map((url: string) => <li><a href={url}>{url}</a></li>)}
+          </ul>
+        </section>
+      )}
+
+      {isCompletedEnvelope && record.companion_rechecks?.length > 0 && (
+        <section class="page-section">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">Append-only companion history</div>
+              <h2>The original envelope decision remains canonical.</h2>
+            </div>
+          </div>
+          <div class="source-list">
+            {record.companion_rechecks.map((recheck: any) => (
+              <article class="source-row">
+                <h3>{recheck.source_checked_date} · {recheck.receipt_type}</h3>
+                <p><code>{recheck.receipt_id}</code></p>
+                <p>{recheck.access_result ?? recheck.bounded_finding}</p>
+                <p>Counts as another cycle decision: {recheck.counts_as_cycle_decision ? "yes" : "no"}. Named-file transfer: {recheck.named_file_transfer ?? "none"}. Next review: {recheck.next_check_date}.</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section class="page-section briefing-band">
         <div class="briefing-band__copy">
           <div class="eyebrow">Boundary</div>
-          <h2>A scheduled envelope is not a completed check.</h2>
+          <h2>{isCompletedEnvelope ? "A bounded decision is not a broader outcome claim." : "A scheduled envelope is not a completed check."}</h2>
           <p>{record.publication_boundary}</p>
         </div>
       </section>

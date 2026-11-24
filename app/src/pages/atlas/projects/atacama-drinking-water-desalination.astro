@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../../components/layout/BaseLayout.astro';
+import ChileDossierArticle from '../../../components/review/ChileDossierArticle.astro';
+import {chileDossiers} from '../../../lib/chile-named-dossiers.mjs';
+const record=chileDossiers.records.find(r=>r.record_id==='project-atacama-drinking-water-desalination')!;
+---
+<BaseLayout title={`${record.title} | FTFN Project Atlas`} description={record.answer}><ChileDossierArticle record={record}/></BaseLayout>

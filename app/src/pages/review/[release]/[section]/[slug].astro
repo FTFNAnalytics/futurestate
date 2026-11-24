@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../../../../components/layout/BaseLayout.astro";
 import RegistryDetail from "../../../../components/review/RegistryDetail.astro";
+import {placeIdentityTitle} from '../../../../lib/place-identity-reviews.mjs';
+import {localityDossierFor} from '../../../../lib/locality-dossiers.mjs';
+import LocalityArticle from '../../../../components/review/LocalityArticle.astro';
 import p134 from "../../../../data/phase-134-mission-decision-register.json";
 import p136 from "../../../../data/phase-136-named-project-chronicles.json";
 import p137 from "../../../../data/phase-137-place-delivery-ledgers.json";
@@ -8,14 +11,59 @@ import p139 from "../../../../data/phase-139-comparative-dossier-rereview.json";
 import p140 from "../../../../data/phase-140-living-topic-desks.json";
 import p142 from "../../../../data/phase-142-topic-delivery-roadmaps.json";
 import p143 from "../../../../data/phase-143-editorial-cadence-editions.json";
+import p150 from "../../../../data/phase-150-comparison-passports-2-0.json";
+import p152 from "../../../../data/phase-152-frontier-topic-field-guides.json";
+import p153 from "../../../../data/phase-153-future-state-report-series.json";
+import p154 from "../../../../data/phase-154-september-edition-packets.json";
+import p155 from "../../../../data/phase-155-public-method-corrections-library.json";
+import p158 from "../../../../data/phase-158-september-evidence-operations-desk.json";
+import p159 from "../../../../data/phase-159-owner-decision-sprint.json";
+import p160 from "../../../../data/phase-160-longitudinal-pilot-matrices.json";
+import p161 from "../../../../data/phase-161-stack-watch.json";
+import p162 from "../../../../data/phase-162-local-system-expansion.json";
+import p163 from "../../../../data/phase-163-september-editorial-runbooks.json";
+import p165 from "../../../../data/phase-165-live-evidence-operations-cycle-001.json";
+import p166 from "../../../../data/phase-166-weekly-desk-closures-and-editions.json";
+import p167 from "../../../../data/phase-167-authority-resolution-hearings.json";
+import p168 from "../../../../data/phase-168-requirement-mission-adjudication.json";
+import p169 from "../../../../data/phase-169-longitudinal-pilot-adjudication.json";
+import p170 from "../../../../data/phase-170-fifteen-place-systems-atlas.json";
+import p171 from "../../../../data/phase-171-frontier-systems-compendium.json";
+import p173 from "../../../../data/phase-173-september-closeout-october-opening-ledger.json";
+import p174 from "../../../../data/phase-174-evidence-cycle-closure-intake.json";
+import p175 from "../../../../data/phase-175-owner-disposition-sprint-ii.json";
+import p176 from "../../../../data/phase-176-longitudinal-admission-and-zero-series-decision.json";
+import p177 from "../../../../data/phase-177-october-stack-watch-and-source-currency-sweep.json";
+import p178 from "../../../../data/phase-178-systems-atlas-and-compendium-depth-expansion.json";
+import p179 from "../../../../data/phase-179-october-weekly-editions-and-month-end-synthesis.json";
+import { v1refDefinitions } from "../../../../data/v1ref-registry";
 
 export function getStaticPaths() {
   const definitions: any[] = [
     ["v07", "missions", p134, p134.mission_decisions], ["v08", "projects", p136, p136.project_chronicles], ["v08", "places", p137, p137.place_ledgers], ["v08", "comparisons", p139, p139.comparison_reviews], ["v09", "desks", p140, p140.topic_desks], ["v09", "roadmaps", p142, p142.topic_roadmaps], ["v09", "editions", p143, p143.editions],
+    ["v1rc", "comparison-passports", p150, p150.comparison_passports], ["v1rc", "field-guides", p152, p152.field_guides], ["v1rc", "reports", p153, p153.flagship_reports], ["v1rc", "edition-packets", p154, p154.edition_packets], ["v1rc", "method-library", p155, p155.method_records],
+    ["v1month", "september-operations", p158, p158.operation_packets], ["v1month", "owner-sprint", p159, p159.authority_mission_boards], ["v1month", "longitudinal-pilots", p160, p160.pilot_matrices],
+    ["v1month", "stack-watch", p161, p161.stack_watch_packets], ["v1month", "local-systems", p162, p162.local_system_briefs], ["v1month", "editorial-runbooks", p163, p163.editorial_runbooks],
+    ["v1cycle", "live-operations", p165, p165.operation_runs], ["v1cycle", "weekly-editions", p166, p166.weekly_cycles], ["v1cycle", "authority-hearings", p167, p167.authority_hearings], ["v1cycle", "mission-adjudication", p168, p168.adjudication_dockets],
+    ["v1cycle", "longitudinal-adjudication", p169, p169.longitudinal_adjudication_packets], ["v1cycle", "systems-atlas", p170, p170.place_system_dossiers], ["v1cycle", "systems-compendium", p171, p171.compendium_records],
+    ["v1oct", "operating-foundation", p173, p173.carryover_records], ["v1oct", "cycle-closure-intake", p174, [...p174.cycle_001_closeout.audit_items, ...p174.cycle_002_intake.candidates]],
+    ["v1oct", "owner-dispositions", p175, p175.owner_disposition_packets], ["v1oct", "longitudinal-decisions", p176, [...p176.pilot_admission_packets, p176.zero_series_owner_disposition]],
+    ["v1oct", "october-stack-watch", p177, p177.packets], ["v1oct", "atlas-depth", p178, [...p178.place_system_dossiers, ...p178.comparison_overlays, ...p178.interpretive_essays]], ["v1oct", "october-editions", p179, p179.editorial_cycles],
+    ...v1refDefinitions.map(({ release, section, registry, items }) => [release, section, registry, items]),
   ];
-  return definitions.flatMap(([release, section, registry, items]) => items.map((record: any) => ({ params: { release, section, slug: record.slug }, props: { registry, record, phase: registry.phase } })));
+  return definitions.flatMap(([release, section, registry, items]) => items.map((record: any) => {
+    const slug = record.slug ?? record.route?.split("/").filter(Boolean).at(-1);
+    if (!slug) throw new Error(`Missing detail-route slug for Phase ${registry.phase}: ${record.id ?? record.title ?? "unknown record"}`);
+    return {
+      params: { release, section, slug },
+      props: { registry, record, phase: registry.phase, canonicalRoute: release === "v1ref" ? `/reference/${section}/${slug}/` : undefined },
+    };
+  }));
 }
-const { registry, record, phase } = Astro.props;
+const { registry, record, phase, canonicalRoute } = Astro.props;
 const { release } = Astro.params;
+const locality=localityDossierFor(record);
 ---
-<BaseLayout title={`${record.title} | FTFN`} description={registry.summary}><RegistryDetail registry={registry} record={record} phase={phase} release={release} /></BaseLayout>
+<BaseLayout title={`${locality?.title ?? placeIdentityTitle(record) ?? record.title ?? record.question ?? record.institution_name ?? record.project_name ?? record.place_name ?? record.slug} | FTFN`} description={locality?.answer ?? registry.summary} canonical={canonicalRoute}>
+  {locality?<><LocalityArticle article={locality}/><details id="locality-history" class="page-section" data-locality-history={locality.record_id}><summary>Original record and earlier source checks — retained history</summary><h2>{record.title}</h2><p>The material below keeps its original dates, wording and review states. The current AI-reviewed account above does not rewrite these records or claim that older source checks establish present outcomes.</p><RegistryDetail registry={registry} record={record} phase={phase} release={release} embedded/></details></>:<RegistryDetail registry={registry} record={record} phase={phase} release={release}/>}
+</BaseLayout>

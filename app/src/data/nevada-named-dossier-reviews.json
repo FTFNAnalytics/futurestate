@@ -1,0 +1,28 @@
+{
+  "review_id":"NEVADA-NAMED-ARTICLES-AI-REVIEW-2026-11-21",
+  "review_date":"2026-11-21",
+  "reviewer":"Codex (author and AI self-reviewer)",
+  "policy_id":"OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "independent_review":false,
+  "decision":"Accept the exact dated articles for local source integration; production acceptance remains pending",
+  "edition_sha256":"97cd5dd76acf738c75f3a4f85db9e93c882c1302c7f842343d42d08536e17348",
+  "sources_sha256":"2f431dfa4a2c566421d46a1e3e9d31673b25c0d92c545f9206a1acb1891af0d5",
+  "records":[
+    {"record_id":"project-thacker-pass-nevada","sha256":"816b1d4f3cc102a9d1a8b298543d3598dba61b1a138e32e372ffa94d45ebdef1","determination":"One named project. Construction and revised cost guidance remain issuer-reported; completion and ramp-up remain forecasts. NDEP permit history, DOE financing scope and attributed rights research answer different questions. No qualification or recurring-output admission."},
+    {"record_id":"project-rhyolite-ridge-nevada","sha256":"ff6b5c2cba6c2dc4f45d1317d52f6744a6637d728b4e36d66e60d8e23af5c61c","determination":"One separate Esmeralda County project. Preserve October 24 signature versus October 29 announcement. The inspected filing leaves FID TBA; non-binding MOUs and exploration preparations are not a production plant. Tiehm's buckwheat rule dates remain distinct. Appeal status is attributed; Tooele is outside the project."},
+    {"record_id":"place-humboldt-county-nevada","sha256":"19886a37d3d040e636549b6f1ee27188fc7d5eb8122723a0b63f8fa3cbf9a54e","determination":"One Nevada county, FIPS 32013, distinct from the broader materials corridor and from Humboldt County California. County housing stock is not vacancy, ACS rent is not a current asking rent, and construction headcounts do not establish net local employment. County jurisdiction does not replace Tribal authority."}
+  ],
+  "review_checks":["Claim-level source references resolve to inspected text; discovery snippets are not used as settled facts.","Publication, signature, effective, reporting and inspection dates are separate.","Issuer forecasts and original rights research are attributed; no independent-review claim is made.","The two PDF sources were text-inspected only; screenshots failed with Cache miss.","Historical Nevada comparison remains non-counting; no Phase 60 identity, Phase 61 admission or qualification packet is changed.","Each article contains six connected sections, next evidence and related routes; eligibility is not blanket content completion of the historical inventory."],
+  "historical_inputs_retained":[
+    {"path":"src/data/portfolio-eligibility-decisions.json","sha256":"b42f23d106b892f0e8a858b4b45836db8572735d8e32987f6e4d328825000803"},
+    {"path":"src/data/phase-119-deep-project-place-atlas.json","sha256":"cadf86ddc1948633be5cd620ad851f182dbdfb46afb922d37cf9eb59d199e496"},
+    {"path":"src/data/phase-61-project-conversion-registry.json","sha256":"9b1f9c6237ebdc9692a748798d400229410c475e5510f2af14a1e2ff22ab8e00"}
+  ],
+  "batch_baseline_checks":[
+    {"path":"src/data/phase-60-current-decisions.json","sha256":"3d39efa26c08b1964c13f212849569e00504ac2b191ccc256b5ad9fcab634b63","scope":"Unchanged in this article batch; later genuine evidence receipts may append."},
+    {"path":"src/data/ai-reviewed-translations.json","sha256":"73f2ee14df297b244f37ff38b6dd2df03b5681f41d85bf3cb3cf63078d4fa191","scope":"All 34 integrated readings unchanged by this batch."}
+  ],
+  "publication_authorized":false,
+  "launch_authorized":false,
+  "phase_216_complete":false
+}

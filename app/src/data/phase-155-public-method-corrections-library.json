@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0",
+  "phase": 155,
+  "program_id": "FTFN-PHASE-155",
+  "dataset": "phase_155_public_method_corrections_library",
+  "title": "Public method and corrections library",
+  "effective_date": "2026-08-31",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Publish durable evidence, authority, longitudinal, comparison, revision, correction, and launch-governance methods.",
+  "record_scope": "Public method and corrections library records governed by the stated publication boundaries.",
+  "publication_boundaries": [
+    "Alternative official-source discovery expands the review shelf; it does not by itself admit evidence or answer a mission.",
+    "Calendar-bound checks remain unoperated until their lawful date, and shared-date gates retain separate identities, decisions, and receipts.",
+    "No project stage, place state, longitudinal observation, comparison verdict, outcome, score, rank, causal finding, recommendation, owner decision, or public-launch authorization is inferred.",
+    "A bounded repository result describes the reviewed corpus and search path; it never proves that qualifying evidence does not exist elsewhere."
+  ],
+  "routes": {
+    "hub": "/review/v1rc/method-library/",
+    "public_export": "/data/phase-155-public-method-corrections-library.json"
+  },
+  "counts": {
+    "public_method_records": 8,
+    "correction_paths": 8,
+    "silent_revision_paths": 0,
+    "owner_only_authorizations_automated": 0
+  },
+  "method_records": [
+    {
+      "method_id": "155-METHOD-001",
+      "slug": "evidence-admission",
+      "title": "Evidence admission and adjudication",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Separate discovery, source checking, relevance screening, admissibility, requirement disposition, and mission conclusion.",
+      "rules": [
+        "A candidate is not admitted evidence.",
+        "Every terminal requirement state needs a dated receipt and rationale.",
+        "Accepted sources must belong to the reviewed candidate set.",
+        "Rejected, inadmissible, and bounded results are legitimate terminal decisions.",
+        "A mission conclusion cannot precede all required-evidence dispositions."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "A source identity, candidate set, decision rationale, reviewer authority, or receipt binding changes.",
+      "route": "/review/v1rc/method-library/evidence-admission/"
+    },
+    {
+      "method_id": "155-METHOD-002",
+      "slug": "authority-and-alternative-sources",
+      "title": "Authority roles and alternative sources",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Use alternatives to resolve a missing role without silently lowering the evidence contract.",
+      "rules": [
+        "Name the authority role before selecting the source.",
+        "Prefer the controlling regulator, receiver, auditor, operator, or public data steward for the exact claim.",
+        "Record an alternative's fit and known limitation.",
+        "A portal is a discovery rail unless the exact artifact and version are bound.",
+        "A bounded search cannot establish nonexistence."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "A controlling artifact, version, publisher role, access path, or material limitation changes.",
+      "route": "/review/v1rc/method-library/authority-and-alternative-sources/"
+    },
+    {
+      "method_id": "155-METHOD-003",
+      "slug": "calendar-gates-and-receipts",
+      "title": "Calendar gates and receipts",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Operate evidence checks lawfully and preserve independent outcomes.",
+      "rules": [
+        "Never predate a check or receipt.",
+        "Create a receipt for Material Change, No Material Change, bounded blocker, or contract-compliant reschedule.",
+        "Keep same-date gates independent.",
+        "Propagate only the decision supported by the checked artifact.",
+        "Record the next exact artifact and date."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "A gate identity, scheduled date, source, decision, receipt, or propagation target is wrong or incomplete.",
+      "route": "/review/v1rc/method-library/calendar-gates-and-receipts/"
+    },
+    {
+      "method_id": "155-METHOD-004",
+      "slug": "longitudinal-compatibility",
+      "title": "Longitudinal compatibility and no-series boundaries",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Prevent isolated observations and legacy panels from becoming false trends.",
+      "rules": [
+        "Identity, period, measure, method, and denominator must all pass.",
+        "Legacy observations never transfer automatically.",
+        "Breaks, revisions, and acceptance states remain visible.",
+        "Dual review precedes admission.",
+        "A zero-series launch must be explicitly disclosed and owner accepted."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "An observation, definition, denominator, revision, series break, admission, or launch-boundary receipt changes.",
+      "route": "/review/v1rc/method-library/longitudinal-compatibility/"
+    },
+    {
+      "method_id": "155-METHOD-005",
+      "slug": "comparison-integrity",
+      "title": "Comparison integrity",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Compare evidence chains without converting non-equivalent measures into a score or rank.",
+      "rules": [
+        "Test identity, stage, geography, period, measure, method, and denominator.",
+        "State what is comparable and what is prohibited.",
+        "Context only remains controlling until a governed re-review changes it.",
+        "No normalization is inferred from similar language.",
+        "Publish the decisive evidence that could change the verdict."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "A compatibility determination, common measure, denominator, verdict, or prohibited comparison changes.",
+      "route": "/review/v1rc/method-library/comparison-integrity/"
+    },
+    {
+      "method_id": "155-METHOD-006",
+      "slug": "changefeed-and-revisions",
+      "title": "Changefeed and revision lineage",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Make maintenance legible without treating activity as evidence change.",
+      "rules": [
+        "Every review has a date and scope.",
+        "No change is a reportable result.",
+        "A material change names its affected records.",
+        "Old states and reasons remain recoverable.",
+        "Governed decisions invalidate earlier candidate digests."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "A review date, affected-record list, state transition, prior-state reference, or digest is incomplete.",
+      "route": "/review/v1rc/method-library/changefeed-and-revisions/"
+    },
+    {
+      "method_id": "155-METHOD-007",
+      "slug": "corrections-and-retractions",
+      "title": "Corrections, retractions, and contested records",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Provide a visible path for errors, source revisions, disputes, and withdrawn claims.",
+      "rules": [
+        "Do not silently overwrite a material statement.",
+        "Describe the original state, corrected state, reason, date, and affected routes.",
+        "Retractions remain discoverable.",
+        "Contested evidence keeps the dispute and adjudication authority visible.",
+        "Rebuild and revalidate after governed changes."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "A published statement is materially wrong, misleading, unsupported, superseded, or no longer reproducible.",
+      "route": "/review/v1rc/method-library/corrections-and-retractions/"
+    },
+    {
+      "method_id": "155-METHOD-008",
+      "slug": "launch-and-deployment-authority",
+      "title": "Launch, repository, hosting, and deployment authority",
+      "publication_date": "2026-08-31",
+      "state": "Published method",
+      "purpose": "Keep technical readiness distinct from owner acceptance and public availability.",
+      "rules": [
+        "A passing build is not owner acceptance.",
+        "A GitHub push is not a hosted deployment.",
+        "Hosting is not public-launch authorization.",
+        "A custom domain and DNS are separate mutations.",
+        "The owner receipt binds the exact commit, build digest, gate snapshot, limitations, and authorization."
+      ],
+      "minimum_receipt_fields": [
+        "stable record and receipt IDs",
+        "real decision or review date",
+        "reviewer or authority role",
+        "exact source or artifact identity",
+        "candidate or artifact-set digest",
+        "state and rationale",
+        "affected records and routes",
+        "limitations and reopen trigger"
+      ],
+      "correction_trigger": "The commit, digest, gate state, accepted boundary, deployment status, domain, or authorization changes.",
+      "route": "/review/v1rc/method-library/launch-and-deployment-authority/"
+    }
+  ],
+  "publication_snapshot_version": "v1rc-initial-publication-2026-08-31-v2",
+  "publication_snapshot_digest": "11221995b549aa3c5719ef7c0dee3b75dc10279bc4cbf094be6077ad062068c5",
+  "revision_mode": false,
+  "revision_receipt_id": null,
+  "public_html_routes": [
+    "/review/v1rc/method-library/",
+    "/review/v1rc/method-library/evidence-admission/",
+    "/review/v1rc/method-library/authority-and-alternative-sources/",
+    "/review/v1rc/method-library/calendar-gates-and-receipts/",
+    "/review/v1rc/method-library/longitudinal-compatibility/",
+    "/review/v1rc/method-library/comparison-integrity/",
+    "/review/v1rc/method-library/changefeed-and-revisions/",
+    "/review/v1rc/method-library/corrections-and-retractions/",
+    "/review/v1rc/method-library/launch-and-deployment-authority/"
+  ],
+  "public_json_exports": [
+    "/data/phase-155-public-method-corrections-library.json"
+  ]
+}

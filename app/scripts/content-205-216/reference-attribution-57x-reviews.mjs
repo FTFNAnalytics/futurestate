@@ -1,0 +1,57 @@
+import inputs from './reference-attribution-57x-inputs.json' with {type:'json'};
+
+// Authored dispositions for the exact nine-contract / seven-record matrix read
+// on September 15. Unknown identities cannot inherit a recipe or a fresh pin.
+const contracts=[
+ ['amtrak-pids','Amtrak PIDS closeout','Amtrak station and accessibility links are contextual; this record does not supply FRA final closeout acceptance.'],
+ ['amtrak-reliability','Amtrak named-asset reliability','The linked station/accessibility material does not turn a workflow test into a named-asset reliability observation.'],
+ ['la-nextlink-adoption','Louisiana Nextlink adoption','The method records link primarily to Montana planning material; the held docket links to a Louisiana tower release. Neither makes these FTFN tests a Louisiana subscription measurement.'],
+ ['la-starlink-adoption','Louisiana Starlink adoption','Montana planning material and the separate Louisiana agreement link remain different contextual sources; neither makes this historical workflow a measured Starlink adoption return.'],
+ ['mt-bead-quarter','Montana BEAD completed quarter','Planning and reporting-guidance links do not establish a completed project-quarter outcome. This August 10 docket is separate from any later dated official-source review.'],
+ ['hanford-mass-balance','Hanford complete material balance','The animation and meeting-record links are contextual and do not turn synthetic workflow counts into a complete Hanford material balance.'],
+ ['nnsa-qualified-rate','NNSA recurring qualified rate','Budget and pit-production context does not make a tested control a recurring qualified production-rate observation.'],
+ ['nnsa-accepted-capacity','NNSA accepted operating capacity','Budget and environmental-review context is not facility acceptance or measured operating capacity; the workflow label must not imply either.'],
+ ['nnsa-gao-baseline','NNSA GAO enterprise baseline','Budget and GAO recommendation context does not establish that an enterprise baseline was accepted, comparable or closed by these FTFN tests.'],
+];
+const methods=[
+ {key:'federation-health-budgets-partition-policy',title:'health-budget and partition-policy tests',counts:'30 synthetic health cases: eight bounded routes and 22 rejections',claim:'The one-hour windows, stale-member exclusions and fixed three-of-five threshold describe FTFN control tests, not a measured production service budget.',limit:'No production availability, actual partition or operating-outcome observation is supplied.'},
+ {key:'independent-witness-diversity-audits',title:'witness-diversity test contract',counts:'28 synthetic diversity cases: seven bounded routes and 21 rejections',claim:'The four ownership, codebase, infrastructure and jurisdiction dimensions and outside-auditor requirement are FTFN test conditions, not a completed independent agency audit.',limit:'No production witness inventory, actual auditor independence or institutional diversity result is established.'},
+ {key:'fork-adjudication-appeal-receipts',title:'fork-adjudication and appeal tests',counts:'30 synthetic adjudication cases: eight bounded routes and 22 rejections',claim:'The separate three-actor panel, appeal panel and quarantine rules are simulated FTFN review controls; technical attribution is not a finding of human responsibility.',limit:'No real adjudication, appeal, misconduct, accusation or independent acceptance is reported.'},
+ {key:'cross-authority-time-corroboration',title:'cross-authority time-corroboration tests',counts:'27 synthetic time-comparison cases: seven bounded routes and 20 rejections',claim:'Three time domains, bounded skew and nonregressive counters are FTFN test requirements, not measurements of an outside organization’s clock accuracy.',limit:'No production time comparison or clock-accuracy guarantee is established; ordered receipts do not prove a claim true.'},
+ {key:'verifier-vulnerability-disclosure-patch-provenance',title:'verifier-disclosure and patch-provenance tests',counts:'30 synthetic patch-provenance cases: eight bounded routes and 22 rejections',claim:'The advisory, preserved vulnerable build, SBOM and three-verifier reproduction requirements are FTFN fixtures; they are not an actual vulnerability disclosure or deployed patch.',limit:'No production vulnerability, executed remediation or rollout authorization is created by the historical record or this review.'},
+ {key:'legacy-artifact-decommission-reader-rollback-notification',title:'reversible decommissioning and notification tests',counts:'32 synthetic decommissioning cases: eight bounded preservation routes and 24 rejections',claim:'Preserved legacy artifacts, replacement checks, notice, grace periods and rollback targets describe FTFN test controls, not a completed migration or actual reader notification.',limit:'No production decommissioning, rollback, reader acceptance or notification is reported.'},
+];
+const documents=[];
+function makeDocument(id,subject,boundary,method){
+ const pin=inputs.docs.find(r=>r.id===id);if(!pin)throw Error(`Missing reviewed attribution input: ${id}`);
+ const docket=!method;
+ const summary=docket
+  ? `FTFN retained its ${subject} research hold in the August 10, 2026 workflow snapshot. The record reports 177 synthetic cases per contract, not an external evidence return or a finding that such evidence does not exist. This attribution review does not rerun those cases or refresh the historical hold.`
+  : `The August 10 FTFN record reports ${method.counts} for its ${subject} workflow. ${method.limit} These historical counts were not rerun or independently verified in this attribution review.`;
+ return {id,record_kind:'research_document',source_file:pin.source_file,reviewed_source_sha256:pin.reviewed_source_sha256,review_date:inputs.review_date,
+  content_type:docket?'Research docket':'FTFN method/test note',
+  reason:`${subject}: ${docket?'The record is an FTFN research hold and rehearsal summary, not an agency technical report. Its statement that no evidence event exists is limited to that historical workflow, not the outside world.':method.claim} ${boundary} The inherited publisher label (${pin.publisher}) does not establish authorship of the FTFN record.`,
+  inherited_publisher_label:pin.publisher,
+  historical_download:{path:pin.download,sha256:pin.download_sha256,boundary:'Original August 10 link file retained unchanged; current authorship and content-type corrections have a separate September 15 download.'},
+  related_signal_id:id.replace(/^research-doc-/,'signal-'),
+  correction:{title:docket?`FTFN historical research docket: ${subject}`:`FTFN ${method.title} for ${subject}`,summary,publisher:'FTFN',document_type:docket?'Research docket':'FTFN method/test note',capture_status:'FTFN-authored link record — not an external document capture',local_capture_path:`/downloads/editorial-attribution-${inputs.review_date}/${id}.txt`,
+   key_findings:docket?[
+    `FTFN retained the ${subject} hold in its August 10 workflow snapshot.`,
+    'The historical account reports 177 synthetic cases per contract: 30 health, 28 diversity, 30 adjudication, 27 time-corroboration, 30 patch-provenance and 32 decommissioning cases.',
+    'These are test-case counts, not 177 real decisions, notifications, production events or observations. The account does not prove an external artifact nonexistent.',
+    boundary,
+    'The original reopening requirement remains a historical contract; read any later dated evidence decision separately.'
+   ]:[`The historical FTFN account reports ${method.counts}.`,method.claim,method.limit,boundary,'This review corrects attribution only; the reported tests were not rerun and no external evidence or independent approval is supplied.'],
+   why_it_matters:'Correct authorship prevents FTFN control tests and historical research holds from being mistaken for agency publications or real operating evidence.',
+   ftfn_relevance:['Retains exact historical identity and workflow lineage while correcting present-day attribution.','Separates synthetic controls, contextual source links, external measurements and editorial acceptance.'],
+   evidence_limits:['This is an FTFN-authored record, not the linked organization’s technical report.','The linked sources and their dates are retained as context and were not newly verified by this attribution review.','No agency contact, FOIA request, production vulnerability, human blame, rollout, notification, publication approval or closure is created.','Historical test counts and holds do not establish current evidence absence, readiness, reliability, rankings or causal outcomes.','Original source records, publication state and dates remain unchanged; September 15 is the attribution-review date.']}};
+}
+for(const [key,subject,boundary]of contracts){
+ for(const method of methods)documents.push(makeDocument(`research-doc-57x-${key}-${method.key}`,subject,boundary,method));
+ documents.push(makeDocument(`research-doc-57x-preserved-${key}`,subject,boundary,null));
+}
+if(documents.length!==inputs.docs.length||new Set(documents.map(d=>d.id)).size!==63)throw Error('Incomplete or duplicate reviewed matrix');
+const briefing={id:'briefing-research-watch-054-federation-health-and-reversible-decommissioning',record_kind:'briefing',...inputs.briefing,review_date:inputs.review_date,content_type:'FTFN method/test synthesis',
+ reason:'The complete briefing reports 1,593 synthetic cases and unchanged historical holds. Its unqualified takeaways about independent audits and operational measurability describe FTFN test design, not actual agency audits, deployments or accepted production results. The August 10 watch list and body remain historical.',
+ correction:{title:'FTFN method retrospective: federation health and reversible decommissioning',summary:'An August 10 FTFN workflow retrospective reports 1,593 synthetic cases across nine contracts. The health, diversity, adjudication, time, patch and retirement controls are internal method work, not evidence of agency operations. This attribution review does not rerun the tests, refresh external sources or approve the historical watch list.',claim_scope:'Internal FTFN record',local_evidence_level:'Not local operating evidence',top_takeaways:['The historical FTFN account reports six simulated control families and 177 cases per contract, for 1,593 across nine contracts.','Witness independence, panel separation, nonregressive time, patch reproduction and reversible retirement are test requirements; no real audit, appeal, vulnerability disclosure or reader migration is established.','Nine holds remained in that August 10 snapshot. Later evidence decisions and source inspections have their own dates and do not retroactively refresh this briefing.']}};
+export default {schema_version:'1.0',as_of_date:inputs.review_date,phase_state:'In progress — not complete',selection_basis:'Second complete attribution tranche: all 63 Phase 57X research records and Research Watch 054. Confirmed authorship/claim defects on existing public routes are corrected; no owner-approved launch scope is inferred.',reviewer:'Codex — editorial attribution pass',review_boundary:'Full local narrative/metadata/link-file attribution review; no fresh external-artifact verification, test rerun, independent approval or publication-state change.',records:[...documents.sort((a,b)=>a.source_file.localeCompare(b.source_file)),briefing]};

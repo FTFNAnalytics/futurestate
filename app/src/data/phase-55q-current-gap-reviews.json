@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "as_of_date": "2026-11-21",
+  "records": [
+    {
+      "receipt_id": "receipt-55q-gap-002-2026-11-21-dated-hold",
+      "phase": "Phase 55Q",
+      "gap_id": "gap-002",
+      "prior_receipt_id": "receipt-55q-gap-002-2026-09-22-dated-hold",
+      "scheduled_check_date": "2026-11-21",
+      "source_checked_date": "2026-11-21",
+      "decision_date": "2026-11-21",
+      "next_check_date": "2026-12-21",
+      "receipt_type": "No Material Change",
+      "decision": "Dated Hold",
+      "cycle_item_id": null,
+      "counts_as_cycle_decision": false,
+      "shared_inspection_id": "arizona-official-surfaces-2026-11-21",
+      "related_cycle_receipt_id": "receipt-60-arizona-2026-11-21-watch-note",
+      "stage_result": "Retain the authorized agreement and the Source Added gap. The inspected City records establish authorization and acceptance requirements, not completed named-project acceptance. No asset, operating or qualification admission.",
+      "evidence_boundary": "This is the separate November 21 Phase 55Q appointment, not a replacement for the October 9 Phase 60 follow-up. It reuses the six explicitly shared City inspections below; it does not claim a second independent fetch. No qualifying completed acceptance was retrieved; nonexistence is not established.",
+      "next_action": "Recheck the named Phoenix/TSMC conveyance acceptance on December 21 against completed as-builts, testing and engineer/City acceptance records. Keep the IRWP contract deadline and Phase 60 operating-evidence gate separate. Earlier reopening requires an exact newly discovered official artifact; this date is an editorial appointment, not a publication forecast.",
+      "official_surface_checks": [
+        {
+          "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Agenda-FINAL.pdf",
+          "source_date": "2026-05-20",
+          "locator": "Physical pages 198–199; Item 73, S-52899",
+          "finding": "Authorization covers new force/gravity lines and two lift-station improvements; increased flow is conditional on completion. The initial IRWP deadline is June 30, 2028.",
+          "limitation": "Agenda authorization and an earlier 2021 contract are not execution or acceptance of these improvements. Text only; no new screenshot attempt.",
+          "access_result": "Official text inspected.",
+          "accessed_date": "2026-11-21"
+        },
+        {
+          "url": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2026/5-20-26%20Formal%20Results-FINAL.pdf",
+          "source_date": "2026-05-20",
+          "locator": "Physical page 8; Item 73",
+          "finding": "The results record adoption of the authorization.",
+          "limitation": "Not a completed-project acceptance instrument. Text only; no new screenshot attempt.",
+          "access_result": "Official text inspected.",
+          "accessed_date": "2026-11-21"
+        },
+        {
+          "url": "https://www.phoenix.gov/administration/departments/pdd/site-development/civil-plan-reviews.html",
+          "source_date": null,
+          "locator": "Water and Sewer sections",
+          "finding": "The official index links acceptance requirements and an engineer certificate template.",
+          "limitation": "An index does not establish a completed TSMC acceptance.",
+          "access_result": "Official text inspected.",
+          "accessed_date": "2026-11-21"
+        },
+        {
+          "url": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00920.pdf",
+          "source_date": null,
+          "locator": "Physical pages 1–3; revision 04/26",
+          "finding": "Requirements include as-builts, certification and City-witnessed tests; the project fields are blank.",
+          "limitation": "Month-level revision only. Guidance is not a completed TSMC acceptance checklist. Text-only inspection.",
+          "access_result": "Official text inspected.",
+          "accessed_date": "2026-11-21"
+        },
+        {
+          "url": "https://www.phoenix.gov/content/dam/phoenix/pddsite/documents/trt/external/dsd_trt_pdf_00208.pdf",
+          "source_date": null,
+          "locator": "Physical page 1; revision 01/20; body heading Water/Sewage Engineer’s Certificate of Completion",
+          "finding": "The certificate is a blank template, without identified TSMC project, permit or completed engineer fields.",
+          "limitation": "Use the document body, not the mismatched PDF metadata title. The screenshot request returned a reference but no inspectable image; no visual/signature verification.",
+          "access_result": "Official text inspected.",
+          "accessed_date": "2026-11-21"
+        },
+        {
+          "url": "https://www.phoenix.gov/administration/departments/waterservices/development-infrastructure.html",
+          "source_date": null,
+          "locator": "Development and Infrastructure body; infrastructure and resource links",
+          "finding": "The page provides citywide water/sewer resources and project links.",
+          "limitation": "This inspected index body is not a named-project acceptance record; its subpages were not exhaustively searched.",
+          "access_result": "Official text inspected.",
+          "accessed_date": "2026-11-21"
+        }
+      ],
+      "affected_record_ids": [
+        "source-phoenix-tsmc-2026-wastewater-development-agreement",
+        "signal-tsmc-phoenix-wastewater-infrastructure-agreement",
+        "gap-002"
+      ],
+      "affected_routes": [
+        "/atlas/evidence-gaps/gap-002-arizona-industrial-water-capacity/",
+        "/signals/phoenix-tsmc-wastewater-infrastructure-reclaimed-water-milestones/",
+        "/atlas/sources/source-phoenix-tsmc-2026-wastewater-development-agreement/",
+        "/updates/",
+        "/atlas/evidence-gaps/"
+      ],
+      "publication_authorized": false,
+      "independent_stage_admission": false,
+      "human_reviewer": null,
+      "content_propagation_status": "complete",
+      "git_backed_release_status": "held",
+      "production_verified": false,
+      "update_id": "update-2026-11-21-phase-55q-arizona-acceptance-hold",
+      "artifact_digest": "a8989216b6f605f4e125b27bbc5231b66c9d5ceb3afeb5fbaeedfec1f50b59e6"
+    }
+  ]
+}

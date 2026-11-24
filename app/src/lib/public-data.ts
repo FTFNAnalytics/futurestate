@@ -1,4 +1,13 @@
 import type { CollectionEntry } from "astro:content";
+import {projectResearchDocument} from './reference-attribution.mjs';
+import { currentEvidenceLedger } from './current-evidence.mjs';
+import {gapReviewsForRecord} from './current-gap-reviews.mjs';
+import {projectSignal,signalClassification} from './signal-classification.mjs';
+import currentOperations from '../data/phase-207-current-operations.json' with {type:'json'};
+import {backlogReviewsFor} from './backlog-research.mjs';
+import {projectChecksFor as projectChecks} from './current-project-checks.mjs';
+import {goldenMarsSignalContext} from './golden-mars-signal-review.mjs';
+import {goldenMarsWiderContext,goldenMarsSourceExportContext,projectGoldenMarsRecordData} from './golden-mars-wider-review.mjs';
 
 export const PUBLIC_DATA_SCHEMA_VERSION = "1.0";
 
@@ -7,12 +16,13 @@ function isoDate(date: Date | null | undefined): string | null {
 }
 
 export function serializePublicSource(source: CollectionEntry<"sources">) {
-  const data = source.data;
+  const data = projectGoldenMarsRecordData(source.data);
 
   return {
     id: data.id,
     name: data.name,
     path: `/atlas/sources/${data.id}/`,
+    dated_golden_mars_review: goldenMarsSourceExportContext(data.id),
     url: data.url,
     source_type: data.source_type,
     credibility_level: data.credibility_level,
@@ -35,6 +45,10 @@ export function serializePublicSource(source: CollectionEntry<"sources">) {
     coverage_role: data.coverage_role,
     jurisdiction: data.jurisdiction ?? null,
     source_owner: data.source_owner ?? null
+    ,dated_project_checks: projectChecks(data.id)
+    ,bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id})
+    ,dated_review_receipts: currentEvidenceLedger.receipts.filter(receipt => receipt.checked_source_ids.includes(data.id))
+    ,dated_acceptance_reviews: gapReviewsForRecord(data.id)
   };
 }
 
@@ -55,13 +69,18 @@ export function serializePublicTopic(topic: CollectionEntry<"topics">) {
 }
 
 export function serializePublicSignal(signal: CollectionEntry<"signals">) {
-  const data = signal.data;
+  const data = projectSignal(signal).data;
 
   return {
     id: data.id,
     title: data.title,
     slug: data.slug,
     path: `/signals/${data.slug}/`,
+    editorial_classification: signalClassification(data.id),
+    dated_signal_review: goldenMarsSignalContext(data.id),
+    dated_acceptance_reviews: gapReviewsForRecord(data.id),
+    dated_project_checks: projectChecks(data.id),
+    bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id}),
     record_status: data.record_status,
     summary: data.summary,
     source_ids: data.source_ids,
@@ -82,7 +101,8 @@ export function serializePublicSignal(signal: CollectionEntry<"signals">) {
     evidence_gap_ids: data.evidence_gap_ids,
     claim_scope: data.claim_scope,
     local_evidence_level: data.local_evidence_level,
-    last_reviewed_date: isoDate(data.last_reviewed_date)
+    last_reviewed_date: isoDate(data.last_reviewed_date),
+    dated_review_receipts: currentEvidenceLedger.receipts.filter(receipt => receipt.underlying_signal_id === data.id)
   };
 }
 
@@ -107,10 +127,14 @@ export function serializePublicResearchCollection(collection: CollectionEntry<"r
 }
 
 export function serializePublicResearchDocument(document: CollectionEntry<"researchDocuments">) {
-  const data = document.data;
+  const data = projectResearchDocument(document).data;
 
   return {
     record_kind: "research_document",
+    dated_golden_mars_review: goldenMarsWiderContext(data.id),
+    editorial_attribution: data.editorial_attribution,
+    source_artifact_label: data.source_artifact_label,
+    local_capture_path: data.local_capture_path,
     id: data.id,
     collection_id: data.collection_id,
     title: data.title,
@@ -129,6 +153,8 @@ export function serializePublicResearchDocument(document: CollectionEntry<"resea
     framework_layers: data.framework_layers,
     constraint_tags: data.constraint_tags,
     source_id: data.source_id,
+    supporting_source_ids: data.supporting_source_ids,
+    bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id}),
     official_url: data.official_url,
     capture_status: data.capture_status,
     captured_date: isoDate(data.captured_date)
@@ -136,7 +162,7 @@ export function serializePublicResearchDocument(document: CollectionEntry<"resea
 }
 
 export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPathways">) {
-  const data = pathway.data;
+  const data = projectGoldenMarsRecordData(pathway.data);
 
   return {
     id: data.id,
@@ -145,6 +171,9 @@ export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPat
     record_status: data.record_status,
     summary: data.summary,
     current_state_summary: data.current_state_summary,
+    dated_golden_mars_review: goldenMarsWiderContext(data.id),
+    dated_project_checks: projectChecks(data.id),
+    bounded_backlog_research: backlogReviewsFor(currentOperations, {recordId: data.id}),
     current_state: data.current_state,
     primary_topics: data.primary_topics,
     topic_ids: data.topic_ids,
@@ -159,18 +188,21 @@ export function serializePublicReaderPathway(pathway: CollectionEntry<"readerPat
     evidence_gap_ids: data.evidence_gap_ids,
     dependency_stack: data.dependency_stack,
     evidence_limits: data.evidence_limits,
-    next_records: data.next_records
+    next_records: data.next_records,
+    dated_review_receipts: currentEvidenceLedger.receipts.filter(receipt => receipt.reader_pathway_ids.includes(data.id))
   };
 }
 
 export function publicDatasetResponse(
   dataset: "sources" | "topics" | "signals" | "research" | "pathways" | "evidence_queue" | "operating_cycle" | "project_conversion" | "conversion_events" | "conversion_gates" | "conversion_stage_matrix" | "qualification_packets" | "evidence_return_envelopes" | "phase_60c_editorial_desk" | "compatible_series_outcome_cohorts" | "measurement_specifications" | "observation_review_series_admission" | "longitudinal_panels_outcome_claims" | "outcome_evidence_counterfactual_designs" | "analysis_execution_result_adjudication",
   recordScope: string,
-  records: unknown[]
+  records: unknown[],
+  context: { related_cycle_reviews?: unknown[] } = {}
 ): Response {
   return new Response(
     JSON.stringify(
       {
+        ...context,
         schema_version: PUBLIC_DATA_SCHEMA_VERSION,
         dataset,
         record_scope: recordScope,

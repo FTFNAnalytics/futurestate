@@ -1,0 +1,28 @@
+{
+  "id": "update-2026-09-15-atlas-relationship-navigation",
+  "effective_date": "2026-09-15",
+  "entry_type": "Correction",
+  "title": "Atlas relationship archives become paginated and graph duplicates become explicit",
+  "summary": "Shared Atlas templates retain complete linked-record and graph archives without rendering every result on the overview. Primary versus supporting references, shared sources, topic matches and explicit citations remain distinct. Repeated historical graph rows are visible as duplicates, not additional evidence.",
+  "affected_record_ids": [
+    "dependency-map-autonomy-rules-are-not-service",
+    "dependency-map-comparative-outcomes-require-common-denominators"
+  ],
+  "related_paths": [
+    "/atlas/",
+    "/atlas/sources/",
+    "/atlas/organizations/",
+    "/atlas/technologies/",
+    "/atlas/evidence-gaps/",
+    "/atlas/dependency-maps/",
+    "/atlas/dependency-maps/autonomy-rules-are-not-service/",
+    "/atlas/dependency-maps/comparative-outcomes-require-common-denominators/",
+    "/browse/atlas-maps-all/1/"
+  ],
+  "evidence_note": "A navigation and graph-presentation correction, not an external source refresh. The affected IDs identify the highlighted graph cases; the shared-template change applies to all source, organization, technology, evidence-gap and dependency-map profiles. The autonomy graph retains 14 node rows with 10 distinct IDs and 16 link rows with 10 distinct complete rows. No original graph or evidence receipt is rewritten, no duplicate is counted as new evidence, and all classification/feed holds remain.",
+  "receipt_id": "208-ATLAS-NAVIGATION-2026-09-15",
+  "receipt_type": "Correction",
+  "materiality": "Correction",
+  "publication_effect": "Local candidate presentation only. Static archive routes preserve no-JavaScript access and search uses the same projected records. Production byte budgets, type/build checks and actual reader/assistive-technology acceptance remain pending.",
+  "work_package": "docs/work-packages/phase-208-reader-navigation-search-and-page-performance.md"
+}

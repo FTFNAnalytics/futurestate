@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "216-OWNER-CONDITIONAL-RELEASE-2026-11-23",
+  "recorded_date": "2026-11-23",
+  "authority": "Explicit user approval in this chat",
+  "user_instruction": "I approve the conditional release plan in the report. Proceed with the remaining checks and launch only once they all pass. Circle back when it’s complete.",
+  "approved_report": "docs/phase-216-release-rollback-checks-2026-11-23.md",
+  "candidate_digest": "39ba66d3b6168c2507f16e0bd0d07c014e6f8c3d7a30719844bb90071d1e33c7",
+  "validation_receipt": "204-FULL-LOCAL-VALIDATION-2026-11-23-09d54992be87",
+  "release_name": "FTFN Reference Beta",
+  "permissions": {
+    "scoped_github_commit_push_pr_merge": true,
+    "github_repository": "FTFNAnalytics/futurestate",
+    "release_branch": "codex/phase216-release",
+    "base_branch": "main",
+    "sites_project_id": "appgprj_6a614e1092d08191bf65779fc35df959",
+    "private_deployment_and_hosted_rollback_rehearsal": true,
+    "ftfn_only_browser_qa": true,
+    "domain_account_inspection": true,
+    "website_only_dns_cutover": true,
+    "canonical_domain": "ftfn.io",
+    "www_redirect_to_apex": true,
+    "email_and_unrelated_dns_must_be_preserved": true,
+    "conditional_public_access": true,
+    "emergency_owner_only_and_saved_version_80_rollback": true,
+    "thirty_day_stewardship_after_actual_launch": true
+  },
+  "conditions": [
+    "All applicable release, hosted/browser, rollback, source-cutoff, DNS/TLS and access checks must actually pass before public launch.",
+    "Exact source, lockfile, output, archive, saved version and deployment must be bound. Changed candidate inputs require new validation; material content or scope changes require renewed approval.",
+    "Preserve prior version 80 and the complete pre-change DNS zone; do not change nameservers or unrelated records.",
+    "No new project, subscription, purchase, security weakening, invented evidence or independent-human-review claim is authorized.",
+    "Full-v1 promotion and unadmitted measured outcomes remain held. Evidence Cycle 001 and thirty real operating days remain separate."
+  ],
+  "launch_executed": false,
+  "phase_216_complete": false,
+  "public_launch_time": null,
+  "operating_period_start": null
+}

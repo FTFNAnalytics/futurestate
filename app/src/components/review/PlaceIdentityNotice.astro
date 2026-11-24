@@ -1,0 +1,68 @@
+---
+import {placeIdentityNotes, placeIdentityFollowups, placeIdentityReview} from '../../lib/place-identity-reviews.mjs';
+interface Props { record: any; }
+const notes = placeIdentityNotes(Astro.props.record);
+const followups = placeIdentityFollowups(Astro.props.record);
+const sources = new Map(placeIdentityReview.sources.map(s => [s.key, s]));
+---
+{notes.length > 0 && <aside class="page-section prose-page" data-place-identity-notice>
+  <h2>Location and evidence check · {placeIdentityReview.checked_date}</h2>
+  <p>{placeIdentityReview.review_state}. {placeIdentityReview.boundary}</p>
+  {notes.map(note => <section data-place-identity={note.record_id}>
+    <h3>{note.historical_label}</h3>
+    {note.current_title && <p>Historical dossier label retained: {note.historical_label}. {Astro.props.record.route === note.route && <>Original heading: {Astro.props.record.title}. </>}The current heading distinguishes the source label from the contact address.</p>}
+    <p>{note.finding}</p>
+    <p><strong>Geographic scope:</strong> {note.geographic_scope}</p>
+    <p><strong>Still needed:</strong> {note.next_artifact}</p>
+    <ul>{note.source_keys.map(key => { const source = sources.get(key)!; return <li><a href={source.url}>{source.title}</a> — {source.locator} {source.access}</li>; })}</ul>
+    {followups.filter(followup => followup.record_id === note.record_id).map(followup => <section data-place-identity-followup={followup.review_id}>
+      <h4>{followup.title} · {followup.checked_date}</h4>
+      <p>{followup.finding}</p>
+      <p><strong>Geographic scope:</strong> {followup.geographic_scope}</p>
+      {followup.parcel_records && <>
+        <div class="table-wrap" role="region" tabindex="0" aria-label="Retained Vermont corporate-property identifiers">
+          <table class="matrix-table" data-parcel-identifiers={followup.review_id}>
+            <caption>Corporate-owner matches in the retained state response — not a fab-boundary table</caption>
+            <thead><tr><th scope="col">Municipality in source</th><th scope="col">Parcel ID</th><th scope="col">Grand-list SPAN</th><th scope="col">GLYEAR</th><th scope="col">YEAR</th></tr></thead>
+            <tbody>{followup.parcel_records.map(row => <tr><th scope="row">{row.municipality}</th><td>{row.parcel_id}</td><td>{row.grand_list_span}</td><td>{row.grand_list_year}</td><td>{row.source_year}</td></tr>)}</tbody>
+          </table>
+        </div>
+        <p><strong>Retained query:</strong> <code>{followup.query_scope.where}</code>; {followup.query_scope.returned_rows} rows returned against a {followup.query_scope.record_limit}-record limit, without an exceeded-transfer-limit flag. {followup.query_scope.boundary}</p>
+        <p data-municipal-parcel-match={followup.review_id}><strong>Separate {followup.municipal_record.grand_list_year} Williston row:</strong> {followup.municipal_record.reported_owner}; parcel-ID parts {followup.municipal_record.parcel_id_parts.join(' / ')}; E911 number {followup.municipal_record.e911_number}, {followup.municipal_record.street}; SPAN {followup.municipal_record.grand_list_span}. The SPAN matches the retained Williston state-layer row; this does not locate the fab within that parcel.</p>
+      </>}
+      {followup.municipal_records && <>
+        <p data-municipal-period={followup.review_id}><strong>Owner-name period:</strong> <time datetime={followup.owner_name_period}>{followup.owner_name_period}</time>. {followup.period_note}</p>
+        <p data-municipal-owner={followup.review_id}><strong>Reported owner in both rows:</strong> {followup.municipal_records[0].reported_owner}.</p>
+        <div class="table-wrap" role="region" tabindex="0" aria-label="Separate 2026 Essex municipal parcel records">
+          <table class="matrix-table" data-essex-municipal-identifiers={followup.review_id}>
+            <caption>Separate 2026 municipal records — not a fab-boundary table</caption>
+            <thead><tr><th scope="col">Municipal source</th><th scope="col">Parcel ID</th><th scope="col">Tax map #</th><th scope="col">SPAN</th><th scope="col">E911 number / suffix / street</th></tr></thead>
+            <tbody>{followup.municipal_records.map(row => <tr><th scope="row">{row.municipality}</th><td>{row.parcel_id}</td><td>{row.tax_map_id}</td><td>{row.grand_list_span}</td><td>{row.e911_number} / {row.e911_suffix} / {row.street}</td></tr>)}</tbody>
+          </table>
+        </div>
+        <p>{followup.identifier_note}</p>
+      </>}
+      {followup.source_contexts && <>
+        {followup.source_contexts.map(context => <section data-facility-source-context={context.key}>
+          <h5>{context.label}</h5>
+          <p>{context.statement}</p>
+          <p><a href={followup.sources.find(source => source.key === context.source_key)!.url}>{followup.sources.find(source => source.key === context.source_key)!.title}</a> · Physical PDF pages {context.physical_pages.join(', ')}.</p>
+        </section>)}
+        <p data-facility-discrepancy={followup.review_id}><strong>Parcel/location reconciliation:</strong> {followup.planning_discrepancy.state}.</p>
+        <p data-facility-extent-note={followup.review_id}>{followup.extent_note}</p>
+        <div class="table-wrap" role="region" tabindex="0" aria-label="Distinct source-reported solar extents">
+          <table class="matrix-table" data-facility-extents={followup.review_id}>
+            <caption>Different source extents — not verified fab or current parcel areas</caption>
+            <thead><tr><th scope="col">Extent described</th><th scope="col">Source-reported area</th><th scope="col">Physical PDF page</th></tr></thead>
+            <tbody>{followup.extent_records.map(row => <tr><th scope="row">{row.extent}</th><td>{row.source_value}</td><td>{row.physical_page}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </>}
+      <p><strong>Still needed after this check:</strong> {followup.next_artifact}</p>
+      <p>{followup.review_state}.</p>
+      <ul>{followup.sources.map(source => <li><a href={source.url}>{source.title}</a> — {source.source_date}. {source.locator} {source.access}</li>)}</ul>
+    </section>)}
+    {Astro.url.pathname !== note.route && <p><a href={note.route}>Read the dated location note and original dossier</a></p>}
+  </section>)}
+  <p><a href="/data/place-identity-reviews.json">Download these dated source findings</a>. The original phase export remains unchanged.</p>
+</aside>}

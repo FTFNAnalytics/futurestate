@@ -1,0 +1,30 @@
+---
+import {canonicalProjectRefreshes as edition,projectRefreshSources,projectRefreshAccessLimits,projectRefreshCatalogKind} from '../../lib/canonical-project-refreshes.mjs';
+interface Props {record:(typeof edition.records)[number]}
+const {record}=Astro.props;
+const sources=projectRefreshSources(record);
+const displayKind=projectRefreshCatalogKind(record);
+const secondaryCount=sources.filter(s=>s.role==='Secondary reported warning').length;
+const limits: typeof edition.access_limits=projectRefreshAccessLimits(record);
+const retainedOpenRail='retained_open_rail' in record?record.retained_open_rail:null;
+const retainedResearch=('retained_research' in record?record.retained_research:[])??[];
+const retainedEvidence='retained_evidence' in record?record.retained_evidence:null;
+---
+<article class="page-section project-refresh" data-canonical-project-refresh={record.record_id}>
+ <div class="eyebrow">{displayKind==='Context'?'Dated system context':'Dated project account'} · {edition.review_date}</div>
+ {displayKind==='Context'&&<p data-refresh-excluded-context>Context only · zero eligible-project contribution. The assessed narrative and its historical identity are unchanged.</p>}
+ <h2>{record.title}</h2><p class="lede">{record.answer}</p><p><strong>{record.stage}</strong></p>
+ <p>Written and AI self-reviewed by Codex on {edition.review_date} under the <a href="/method/editorial-review/">owner-authorized review policy</a>. This is not independent review.</p>
+ <section><h3>Scope</h3><p>{record.scope}</p></section>
+ <section><h3>Dated events</h3><ol>{record.timeline.map(item=><li data-refresh-event><time datetime={item.date}>{item.date}</time>: {item.event} {item.source_ids.map(id=><a href={`#refresh-source-${id}`}>{sources.find(s=>s.id===id)!.title}</a>)}</li>)}</ol></section>
+ {record.sections.map(section=><section data-refresh-section><h3>{section.heading}</h3><p>{section.text}</p>{section.source_ids.length>0&&<p class="citations">Sources: {section.source_ids.map((id,i)=><>{i>0?' · ':''}<a href={`#refresh-source-${id}`}>{sources.find(s=>s.id===id)!.title}</a></>)}</p>}</section>)}
+ {record.retained_pilot_id?<section data-refresh-pilot-boundary><h3>Retained measurement decision</h3><p>The September 14 pilot and September 22/25 follow-ups retain their original findings. No comparable monthly formal-acceptance series is admitted by this narrative.</p></section>:<section data-refresh-decision-boundary><h3>Retained decision boundary</h3><p>{record.decision_boundary}</p></section>}
+ {retainedEvidence&&<aside data-refresh-retained-evidence={retainedEvidence.acquisition_id}><h3>Earlier monthly evidence</h3><p><time datetime={retainedEvidence.checked_date}>{retainedEvidence.checked_date}</time> · {retainedEvidence.closure_status} · {retainedEvidence.reporting_period}</p><p>{retainedEvidence.statement}</p><p><a href={retainedEvidence.route}>Read the retained casebook and evidence</a>.</p></aside>}
+ {retainedOpenRail&&<aside data-refresh-retained-open-rail={retainedOpenRail.coverage_id}><h3>Earlier review boundary</h3><p><time datetime={retainedOpenRail.captured_date}>{retainedOpenRail.captured_date}</time> · {retainedOpenRail.closure_status} · {retainedOpenRail.selected_record}</p><p>{retainedOpenRail.statement}</p><p><a href={retainedOpenRail.route}>Read the retained casebook and evidence</a>.</p></aside>}
+ {retainedResearch.length>0&&<section data-refresh-retained-research><h3>Earlier saved research</h3>{retainedResearch.map(item=><aside data-retained-research-id={item.id}><h4>{item.title}</h4><p><time datetime={item.checked_date}>{item.checked_date}</time> · {item.status}</p><p>{item.text}</p><p><a href={item.route}>Read the earlier decision and evidence</a>.</p></aside>)}</section>}
+ <section><h3>Next decisive evidence</h3><ul>{record.next_artifacts.map(item=><li>{item}</li>)}</ul></section>
+ <section><h3>Sources and dates</h3><p>These {sources.length} public {secondaryCount?`records (${sources.length-secondaryCount} primary and ${secondaryCount} secondary)`:'primary records'} were inspected on {edition.review_date}, America/Edmonton, within the access scope recorded below. Publication, event, update and inspection dates remain separate.</p><ol>{sources.map(source=><li id={`refresh-source-${source.id}`} data-refresh-source={source.id}><p><a href={source.url}>{source.title}</a> — {source.publisher}; {source.role}.</p><details><summary>Dates and source scope</summary><ul>{Object.entries(source).filter(([key,value])=>key.endsWith('_date')&&value).map(([key,value])=><li>{key.replaceAll('_',' ')}: {value}</li>)}</ul><p>{source.access}. {source.locator}.</p><p>{source.boundary}</p></details></li>)}</ol></section>
+ {limits.length>0&&<details data-refresh-access-limits><summary>Retrieval limits for this review</summary><ul>{limits.map(limit=><li><a href={limit.url}>{limit.url}</a> — {limit.inspection_date}: {limit.result}</li>)}</ul></details>}
+ <nav aria-label="Related dated readings"><h3>Related readings</h3><ul>{record.related.map(link=><li><a href={link.route}>{link.title}</a></li>)}</ul><p>{record.counting_note??'This is the same existing program, not a new counted project.'} <a href="/data/build-decisions.json">Download the dated account and exact-version assessment</a>.</p></nav>
+</article>
+<style>.project-refresh{max-width:76ch;margin-inline:auto;line-height:1.75;overflow-wrap:anywhere}section,nav{margin-block:1.75rem}.citations{font-size:.9rem}li{margin-block:.6rem}summary{cursor:pointer}summary:focus-visible{outline:3px solid currentColor;outline-offset:4px}</style>

@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0",
+  "phase": 172,
+  "program_id": "FTFN-PHASE-172",
+  "dataset": "phase_172_september_state_report",
+  "title": "September State Report",
+  "effective_date": "2026-09-01",
+  "record_status": "Published",
+  "build_status": "Complete locally",
+  "summary": "Derive a fourteen-gate state report that distinguishes completed content and local validation from future calendar work, owner decisions, Git publication, and v1 promotion.",
+  "record_scope": "Append-only Phase 165–172 evidence-to-publication overlay over immutable Phase 156 and Phase 164 validation receipts.",
+  "publication_boundaries": [
+    "This is an append-only operating and content layer over the immutable Phase 156 and Phase 164 receipts; it does not rewrite either validated baseline.",
+    "Only evidence checks lawful on or before 2026-09-01 may carry a decision. Later September and October outcomes remain null until their recorded dates.",
+    "Candidate sources, planned capacity, service availability, offers, forecasts, and adjacent facts do not substitute for the exact observation, authority, period, method, and denominator required by a gate.",
+    "No owner decision, project or place stage, admitted longitudinal series, causal result, score, rank, repository publication, hosted deployment, or v1 promotion is inferred."
+  ],
+  "routes": {
+    "hub": "/review/v1cycle/september-state/",
+    "public_export": "/data/phase-172-september-state-report.json"
+  },
+  "counts": {
+    "readiness_gates": 14,
+    "passed": 7,
+    "held": 7,
+    "pending_build": 0,
+    "false_passes": 0
+  },
+  "state_report_gates": [
+    {
+      "gate_id": "172-GATE-01-IMMUTABLE-BASELINES",
+      "title": "Immutable validation baselines",
+      "state": "Pass",
+      "evidence": "Phase 156 156-LOCAL-VALIDATION-2026-08-31-a750bba9528e and Phase 164 164-LOCAL-VALIDATION-2026-09-01-d2846dc22604 remain exact and unchanged.",
+      "next_action": "Preserve both receipts and validate later layers independently.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-02-SEPTEMBER-01-EVIDENCE",
+      "title": "September 1 evidence decision",
+      "state": "Pass",
+      "evidence": "receipt-60-louisiana-starlink-2026-09-01-no-material-change records a bounded No Material Change and retains the signal In Review.",
+      "next_action": "Recheck the official public surface on September 8 without inferring nonexistence or zero adoption.",
+      "receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change"
+    },
+    {
+      "gate_id": "172-GATE-03-FUTURE-OPERATIONS",
+      "title": "Remaining evidence operations",
+      "state": "Held",
+      "evidence": "Nine September operations remain future as of the effective date; the October tail remains in Evidence Cycle 001.",
+      "next_action": "Operate each gate only on or after its lawful date and keep shared-date identities separate.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-04-DESK-CLOSURES",
+      "title": "Weekly desk closures",
+      "state": "Held",
+      "evidence": "Sixty-eight desk windows across four future weekly cycles remain open.",
+      "next_action": "Close all seventeen same-date windows before deriving an edition scope.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-05-SEPTEMBER-EDITIONS",
+      "title": "September edition decisions",
+      "state": "Held",
+      "evidence": "Four edition decisions remain time-gated with null future content, input digests, and receipts.",
+      "next_action": "Issue a publication or explicit no-publication receipt only after all due inputs are terminal.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-06-AUTHORITY-HEARINGS",
+      "title": "Authority resolution hearings",
+      "state": "Held",
+      "evidence": "Twelve owner hearings remain pending; thirty official alternatives remain candidates rather than admitted evidence.",
+      "next_action": "Obtain a dated close, carry, or exclusion disposition for each candidate-set digest.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-07-REQUIREMENT-MISSION",
+      "title": "Requirement and mission adjudication",
+      "state": "Held",
+      "evidence": "Eighteen requirement and six mission dockets remain owner-pending.",
+      "next_action": "Resolve each requirement before its dependent mission decision.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-08-LONGITUDINAL",
+      "title": "Longitudinal admission or zero-series boundary",
+      "state": "Held",
+      "evidence": "Eighteen pilot tests remain unadjudicated; zero series and zero observations are admitted.",
+      "next_action": "Pass all six tests for one pilot or obtain owner acceptance of the disclosed zero-series boundary.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-09-FIFTEEN-PLACE-ATLAS",
+      "title": "Fifteen-place systems atlas",
+      "state": "Pass",
+      "evidence": "Fifteen place identities carry ninety layers, sixty bounded timeline entries, and seventy-five noncausal dependency edges.",
+      "next_action": "Maintain place and project identities separately and revise only through dated evidence.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-10-COMPENDIUM",
+      "title": "Frontier Systems Compendium",
+      "state": "Pass",
+      "evidence": "Eight lane chapters preserve twenty-four packets and seventy-two source-bound claim blocks once; four essays add bounded synthesis.",
+      "next_action": "Do not describe inherited August 31 artifacts as September refreshes without a new source check.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-11-MACHINE-CONTRACT",
+      "title": "Machine-readable release contract",
+      "state": "Pass",
+      "evidence": "Eight phase registries, ninety HTML routes, nine JSON exports, and eight dated updates are declared.",
+      "next_action": "Keep every route, export, update, and primary-record inventory exact.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-12-CONTENT-INTEGRITY",
+      "title": "Content and evidence-boundary integrity",
+      "state": "Pass",
+      "evidence": "Every new content layer preserves exact next artifacts, null future outcomes, source IDs, and anti-inference boundaries.",
+      "next_action": "Run candidate, content-reference, source-health, phase, and whole-release assertions.",
+      "receipt_id": null
+    },
+    {
+      "gate_id": "172-GATE-13-LOCAL-VALIDATION",
+      "title": "Local build and release validation",
+      "state": "Pass",
+      "evidence": "Receipt 172-LOCAL-VALIDATION-2026-09-01-65326aad9d30 matches the normalized Phase 165–172 candidate digest.",
+      "next_action": "Validate the exact candidate, archive the receipt, rebuild, and verify deterministic output.",
+      "receipt_id": "172-LOCAL-VALIDATION-2026-09-01-65326aad9d30"
+    },
+    {
+      "gate_id": "172-GATE-14-OWNER-PROMOTION",
+      "title": "Owner acceptance and Git-backed publication",
+      "state": "Held",
+      "evidence": "No owner receipt or repository-publication authorization binds this cycle; v1 promotion remains Held.",
+      "next_action": "Obtain explicit owner acceptance and separate authorization before commit, push, hosting, DNS, or public launch.",
+      "receipt_id": null
+    }
+  ],
+  "report_state": "Complete locally — future calendar and owner gates remain Held",
+  "v1_promotion_state": "Held",
+  "owner_authority": {
+    "evidence_admission": false,
+    "authority_disposition": false,
+    "mission_decision": false,
+    "zero_series_acceptance": false,
+    "repository_publication": false,
+    "hosting": false,
+    "dns": false,
+    "public_launch": false,
+    "v1_promotion": false
+  },
+  "local_validation_receipt": {
+    "schema_version": "1.0",
+    "receipt_id": "172-LOCAL-VALIDATION-2026-09-01-65326aad9d30",
+    "receipt_type": "Local Validation",
+    "phase": 172,
+    "effective_date": "2026-09-01",
+    "validated_date": "2026-09-01",
+    "validated_at": "2026-09-01T08:35:00.884Z",
+    "status": "Passed",
+    "validation_result": "Passed local Phase 165–172 evidence-to-publication-cycle checks",
+    "validator_contract_version": "phase-172-local-validator-v1",
+    "scope": "Local validation of the append-only Phase 165–172 September evidence-to-publication cycle. The receipt validates content, routes, exports, and release assertions only; it does not create evidence, supply an owner decision, authorize repository publication or hosting, close future calendar work, or promote v1.",
+    "artifact_digest_algorithm": "sha256",
+    "artifact_digest_contract": "SHA-256 over the normalized nine schema-1.0 Phase 165–172 exports, exact ninety-route inventory, and eight dated updates. Only receipt-derived Phase 172 fields are normalized; evidence, calendar, owner, and publication states remain bound.",
+    "artifact_digest": "cdf822b6451e02523dbdcadfc0f21470011285033de55c919718785aaffd9b34",
+    "validation_bundle_digest": "65326aad9d3001cf04cd465a116d300e0095d9adbf64903acc2d174d7daf3e6d",
+    "public_html_routes": 90,
+    "public_json_exports": 9,
+    "publication_updates": 8,
+    "metrics": {
+      "overlay_public_html_routes": 90,
+      "structurally_audited_overlay_routes": 90,
+      "overlay_public_json_exports": 9,
+      "schema_1_0_overlay_exports": 9,
+      "overlay_update_records": 8,
+      "primary_records": 95,
+      "baseline_phase156_receipt_id": "156-LOCAL-VALIDATION-2026-08-31-a750bba9528e",
+      "baseline_phase156_artifact_digest": "5a8041408c755e79e4ddde898fe9639d04d85cdcf4bdba5a5d4014d21c14b31a",
+      "baseline_phase164_receipt_id": "164-LOCAL-VALIDATION-2026-09-01-d2846dc22604",
+      "baseline_phase164_artifact_digest": "c306c3db8f861805be0482f82985df7de7fa1124b055f8e76023b5ba680c8a19",
+      "evidence_decision_receipt_id": "receipt-60-louisiana-starlink-2026-09-01-no-material-change",
+      "whole_site_snapshot": {
+        "html_pages_excluding_downloads": 6744,
+        "top_level_data_json_exports": 117,
+        "update_entries_rendered": 197,
+        "canonical_source_records": 820
+      }
+    },
+    "checks": [
+      {
+        "check_id": "immutable-baselines",
+        "status": "Passed",
+        "detail": "Exact Phase 156 and Phase 164 receipt/digest bindings preserved"
+      },
+      {
+        "check_id": "september-evidence-receipt",
+        "status": "Passed",
+        "detail": "receipt-60-louisiana-starlink-2026-09-01-no-material-change"
+      },
+      {
+        "check_id": "route-export-update-contract",
+        "status": "Passed",
+        "detail": "90 routes / 9 exports / 8 updates"
+      },
+      {
+        "check_id": "calendar-owner-boundary",
+        "status": "Passed",
+        "detail": "Future operations and all owner decisions remain unpredated and Held"
+      },
+      {
+        "check_id": "npm-run-validate-candidates",
+        "status": "Passed",
+        "detail": "npm run validate:candidates"
+      },
+      {
+        "check_id": "npm-run-validate-content",
+        "status": "Passed",
+        "detail": "npm run validate:content"
+      },
+      {
+        "check_id": "npm-run-source-health",
+        "status": "Passed",
+        "detail": "npm run source:health"
+      },
+      {
+        "check_id": "npm-run-test-v1rc",
+        "status": "Passed",
+        "detail": "npm run test:v1rc"
+      },
+      {
+        "check_id": "npm-run-test-v1month",
+        "status": "Passed",
+        "detail": "npm run test:v1month"
+      },
+      {
+        "check_id": "npm-run-test-v1cycle",
+        "status": "Passed",
+        "detail": "npm run test:v1cycle"
+      },
+      {
+        "check_id": "npm-run-check",
+        "status": "Passed",
+        "detail": "npm run check"
+      },
+      {
+        "check_id": "npm-run-build",
+        "status": "Passed",
+        "detail": "npm run build"
+      },
+      {
+        "check_id": "npm-run-verify-v1rc",
+        "status": "Passed",
+        "detail": "npm run verify:v1rc"
+      },
+      {
+        "check_id": "npm-run-verify-v1month",
+        "status": "Passed",
+        "detail": "npm run verify:v1month"
+      },
+      {
+        "check_id": "npm-run-verify-v1cycle",
+        "status": "Passed",
+        "detail": "npm run verify:v1cycle"
+      }
+    ],
+    "evidence_admission_authorized": false,
+    "owner_acceptance": false,
+    "github_publication_authorized": false,
+    "hosted_deployment_authorized": false,
+    "public_launch_authorized": false,
+    "v1_promotion_state": "Held",
+    "next_action": "Embed this receipt, rebuild, verify deterministic output, update the manifest, then operate the September 6 desk closures only on their lawful date."
+  },
+  "next_calendar_action": {
+    "date": "2026-09-06",
+    "action": "Close the first seventeen desk windows and derive the Evidence Watch scope only from terminal inputs."
+  },
+  "evidence_cycle_close_date": "2026-10-09",
+  "public_html_routes": [
+    "/review/v1cycle/september-state/"
+  ],
+  "public_json_exports": [
+    "/data/phase-172-september-state-report.json"
+  ]
+}

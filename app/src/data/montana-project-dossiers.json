@@ -1,0 +1,2555 @@
+{
+  "schema_version": "1.1",
+  "updated_date": "2026-09-27",
+  "completion": {
+    "review_date": "2026-09-27",
+    "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+    "human_review_claimed": false,
+    "source_retrieval_performed": false,
+    "completed_proposal_dossiers": 32,
+    "operating_outcomes_admitted": 0,
+    "initial_batch_ids": [
+      "CM61-BEAD-MT-4655",
+      "CM61-BEAD-MT-4654",
+      "CM61-BEAD-MT-4685",
+      "CM61-BEAD-MT-4657",
+      "CM61-BEAD-MT-4658"
+    ],
+    "initial_batch_sha256": "2359424b053785e19762982e5af12d529ee6bd41f783a73e437eee7e2f19863d",
+    "new_dossier_ids": [
+      "CM61-BEAD-MT-4644",
+      "CM61-BEAD-MT-4669",
+      "CM61-BEAD-MT-4648",
+      "CM61-BEAD-MT-4673",
+      "CM61-BEAD-MT-4672",
+      "CM61-BEAD-MT-4670",
+      "CM61-BEAD-MT-4662",
+      "CM61-BEAD-MT-4677",
+      "CM61-BEAD-MT-4679",
+      "CM61-BEAD-MT-4651",
+      "CM61-BEAD-MT-4686",
+      "CM61-BEAD-MT-4668",
+      "CM61-BEAD-MT-4675",
+      "CM61-BEAD-MT-4661",
+      "CM61-BEAD-MT-4693",
+      "CM61-BEAD-MT-4692",
+      "CM61-BEAD-MT-4691",
+      "CM61-BEAD-MT-4689",
+      "CM61-BEAD-MT-4645",
+      "CM61-BEAD-MT-4256",
+      "CM61-BEAD-MT-4261",
+      "CM61-BEAD-MT-4246",
+      "CM61-BEAD-MT-4218",
+      "CM61-BEAD-MT-4206",
+      "CM61-BEAD-MT-4149",
+      "CM61-BEAD-MT-4212",
+      "CM61-BEAD-MT-4678"
+    ],
+    "source_manuscript": {
+      "path": "docs/montana-next-five-2026-09-27.md",
+      "sha256": "675e47165335325ae30336913223248d11c9a2dc214e7ecd364d510fc878a56e"
+    },
+    "decision": "Accept all 32 distinct, exact-source-bound proposal-stage accounts; the original five records remain unchanged. This completes the Montana dossier cohort, not the 100-project or 70-place portfolio targets.",
+    "checks": [
+      "Compared each added narrative with its retained project, subgrantee and deployment-reconciliation rows.",
+      "Kept 30 terrestrial and two LEO reporting designations separate from raw deployment type L and technology codes.",
+      "Retained Hill-2 zero BSL, 21 anchor rows and empty technology-code list; no household adoption denominator was invented.",
+      "Kept shared UEIs as operator relationships, not project consolidation; the two Ziply entities remain distinct.",
+      "Preserved estimated dates, proposed funding, raw flags and consent-name fields without claiming execution, permission, construction, accepted service or adoption.",
+      "Kept all operating observations empty; no missing record is converted into a zero-valued outcome."
+    ]
+  },
+  "reporting_contexts": [
+    {
+      "record_id": "CM61-BEAD-MT-4644",
+      "reporting_contract": "LEO quarterly and ten-year post-availability contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4655",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4654",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4685",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4669",
+      "reporting_contract": "LEO quarterly and ten-year post-availability contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4657",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4658",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4648",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4673",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4672",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4670",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4662",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4677",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4679",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4651",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4686",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4668",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4675",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4661",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4693",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4692",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4691",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4689",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4645",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4256",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4261",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4246",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4218",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4206",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4149",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Location cohort"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4212",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "L",
+      "cohort_kind": "Separate location and anchor-institution cohorts"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4678",
+      "reporting_contract": "Terrestrial quarterly, testing, monitoring, reimbursement, and closeout contract",
+      "raw_deployment_project_type": "C",
+      "cohort_kind": "Anchor institutions only"
+    }
+  ],
+  "distinct_entity_comparisons": [
+    {
+      "project_ids": [
+        "CM61-BEAD-MT-4218",
+        "CM61-BEAD-MT-4206"
+      ],
+      "relation": "Similar branding, different legal entities and UEIs; not a same-operator join."
+    }
+  ],
+  "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+  "authored_date": "2026-09-25",
+  "reviewer": "Codex (AI reviewer)",
+  "review_basis": "Retained source data and source-pinned reconciliation, not a new external retrieval.",
+  "proposal_approval_date": "2026-01-05",
+  "baseline_captured_date": "2026-08-03",
+  "deployment_source": {
+    "url": "https://doa.mt.gov/_docs/connectmt/fp_deployment_projects-1.5.26.csv",
+    "sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+    "capture_checked_at": "2026-09-23T01:23:33.025Z",
+    "locator": "Deployment CSV: header row 1, exact data row and project ID recorded per dossier."
+  },
+  "baseline_boundary": "The registry is an approved-proposal identity and denominator baseline. Raw codes remain untranslated unless an official schema is joined. No row establishes executed agreement, construction, service, subscriber adoption, test passage, retention, affordability, state acceptance, or closeout.",
+  "shared_explanation": "Dates in the deployment source are estimates: subaward March 4, 2026, performance start April 3, 2026, and performance end April 2, 2030. The passage of a scheduled date does not establish an executed agreement, actual start, completion or service. Raw technology codes remain untranslated here. All outcome observations remain empty; they are not zero-valued results.",
+  "privacy_boundary": "Project-level totals only. No individual broadband-location identifiers or anchor-institution details are published.",
+  "records": [
+    {
+      "record_id": "CM61-BEAD-MT-4655",
+      "slug": "mt-4655",
+      "route": "/atlas/projects/montana-bead/mt-4655/",
+      "title": "Blackfoot / Missoula broadband project",
+      "source_name": "Blackfoot Telephone Cooperative Inc - Missoula - 1",
+      "answer": "This is Blackfoot’s separately identified Missoula proposal project, not the whole cooperative, all Montana broadband or a measured result for Missoula County.",
+      "authored_date": "2026-09-25",
+      "reviewer": "Codex (owner-authorized AI reviewer)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4655",
+        "uei": "KU6LTS39K9N4",
+        "legal_name": "BLACKFOOT TELEPHONE COOPERATIVE, INC.",
+        "csv_row": 3,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "c9055763656459a95361276c3dfe7e8c351cbecb56b97f7842df8d3a4fefee26",
+        "reconciliation_record_sha256": "4f151e5710382d215afbb4627de06497e4020cef40de56ad1849941a574529f3",
+        "subgrantee_record_sha256": "2880af5e0612824d7566728686af802e982ec8ad6fb2fdc9450a8d3fd9359d13"
+      },
+      "proposal": {
+        "bead_support_usd": 26234612,
+        "subgrantee_match_usd": 8744870,
+        "broadband_serviceable_location_rows": 3724,
+        "community_anchor_institution_rows": 24,
+        "raw_technology_codes": [
+          "70",
+          "50"
+        ],
+        "intersects_tribal_land": true,
+        "tribal_consent_field": "Flathead",
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Identity and denominator",
+          "text": "The retained baseline associates this project with 3,724 broadband-serviceable location rows and 24 community-anchor-institution rows. Those are separate proposal inventories: adding them and calling the result connected households would change both the unit and the claim. The project ID is the stable join key for later reports; the Missoula name is not a verified service-area polygon."
+        },
+        {
+          "heading": "Funding is not expenditure",
+          "text": "The proposal carries US$26,234,612 in BEAD support and US$8,744,870 in subgrantee match. These amounts identify planned financing, not disbursements or the value of accepted construction. A later payment record must name this project before it can update the financial account."
+        },
+        {
+          "heading": "Project-specific evidence boundary",
+          "text": "The baseline flags an intersection with tribal land and names Flathead in the tribal-consent field. That field is not itself a signed consent instrument. Retain its exact project relationship, while seeking any applicable executed agreement, mapped scope and separately documented consent before making an authorization claim."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4655, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4655, with a reporting period and the same eligible-location cohort.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions and its denominator."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "5f6a81e073fb4f8ce2ecc6004cb394596f527da0d95bac983bc8e209ca5a2066"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4654",
+      "slug": "mt-4654",
+      "route": "/atlas/projects/montana-bead/mt-4654/",
+      "title": "Gallatin Wireless / Park broadband project",
+      "source_name": "Gallatin Wireless Internet-Park-1",
+      "answer": "Park is one Gallatin Wireless project ID. It remains separate from the operator’s Stillwater project even though both have the same UEI.",
+      "authored_date": "2026-09-25",
+      "reviewer": "Codex (owner-authorized AI reviewer)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4654",
+        "uei": "K9JTRFBU4DH1",
+        "legal_name": "GALLATIN WIRELESS INTERNET, LLC",
+        "csv_row": 4,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "2daa9a20a25ab471326da9237b93f66bc8b26425550481e58c26f997dbb36fba",
+        "reconciliation_record_sha256": "3d4ea864503159e4db0b3d650e9fff1728f44910b3dfa5def666bfb8e7bb3aac",
+        "subgrantee_record_sha256": "6db40b5a157748c56083df6145365ce69b7dbf9316752e93c02f75a2bf27e941"
+      },
+      "proposal": {
+        "bead_support_usd": 92428300,
+        "subgrantee_match_usd": 16310876,
+        "broadband_serviceable_location_rows": 6495,
+        "community_anchor_institution_rows": 60,
+        "raw_technology_codes": [
+          "71",
+          "50"
+        ],
+        "intersects_tribal_land": true,
+        "tribal_consent_field": "Crow",
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Identity and denominator",
+          "text": "The retained Park baseline contains 6,495 broadband-serviceable location rows and 60 anchor-institution rows. These denominators describe this proposal inventory only. Neither the company’s total customers nor a different Gallatin Wireless project can supply this project’s adoption numerator."
+        },
+        {
+          "heading": "Funding is not expenditure",
+          "text": "The source row records US$92,428,300 of BEAD support and US$16,310,876 of match. Its larger proposed support than the Stillwater row is not a cost-efficiency verdict: engineering scope, terrain, eligible locations and accepted expenditure would have to be aligned first."
+        },
+        {
+          "heading": "Project-specific evidence boundary",
+          "text": "The baseline marks tribal-land intersection and names Crow. A completed quarterly return should preserve the Park project ID and its location cohort, rather than aggregate Park and Stillwater under the subgrantee. Consent, construction progress, service availability and household subscription each require their own evidence."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4654, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4654, with a reporting period and the same eligible-location cohort.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions and its denominator."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4657"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "507c82844860b17c5e69316df2072770cf98f534ff5f28bc4fe4145f59a08275"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4685",
+      "slug": "mt-4685",
+      "route": "/atlas/projects/montana-bead/mt-4685/",
+      "title": "Inland MT / Rosebud broadband project",
+      "source_name": "InlandMT-Rosebud-1",
+      "answer": "This is Inland MT’s Rosebud proposal project. A different operator’s Rosebud project is not the same entity merely because the names share a county label.",
+      "authored_date": "2026-09-25",
+      "reviewer": "Codex (owner-authorized AI reviewer)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4685",
+        "uei": "FBU3ABAM3KE7",
+        "legal_name": "INLAND MT LLC",
+        "csv_row": 5,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "f96c02a38321cbd3b1c828b3ff91ddea5c1ae310b493e3aa84560e5f6cf15c78",
+        "reconciliation_record_sha256": "edc3ca2996e032f7908b029732106b9152f5b84486374cdc8516950e7fb6985b",
+        "subgrantee_record_sha256": "96ad631e35dde7eb33237ec32398a7cb8c67a4018fe92ddb7d192cdefd90473f"
+      },
+      "proposal": {
+        "bead_support_usd": 2023515,
+        "subgrantee_match_usd": 674505,
+        "broadband_serviceable_location_rows": 135,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "71"
+        ],
+        "intersects_tribal_land": true,
+        "tribal_consent_field": "Crow; Northern Cheyenne",
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Identity and denominator",
+          "text": "The retained baseline assigns 135 broadband-serviceable location rows and zero anchor-institution rows to this project. Zero anchor rows is an attribute of the captured proposal inventory, not a finding that the area has no schools, libraries or other institutions. The exact project ID prevents a geographic-name join from importing another provider’s locations."
+        },
+        {
+          "heading": "Funding is not expenditure",
+          "text": "The deployment row lists US$2,023,515 of BEAD support and US$674,505 of subgrantee match. They are proposed amounts; this dossier contains no disbursement series or accepted construction cost. A project total divided by location rows would still not be an observed cost per connected subscriber."
+        },
+        {
+          "heading": "Project-specific evidence boundary",
+          "text": "The tribal-consent field names Crow and Northern Cheyenne, and the baseline flags tribal-land intersection. The two names are not two extra projects and do not prove completed consent. The next usable operating record must identify this project, a completed period and the status of the same location cohort."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4685, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4685, with a reporting period and the same eligible-location cohort.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions and its denominator."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "7d2cca3a6035d5ddeea325f081ef7086922d12caef707c729f34672802ad7936"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4657",
+      "slug": "mt-4657",
+      "route": "/atlas/projects/montana-bead/mt-4657/",
+      "title": "Gallatin Wireless / Stillwater broadband project",
+      "source_name": "Gallatin Wireless Internet-Stillwater-1",
+      "answer": "Stillwater is a distinct Gallatin Wireless deployment project, not a reporting version or subset inferred from the operator’s Park project.",
+      "authored_date": "2026-09-25",
+      "reviewer": "Codex (owner-authorized AI reviewer)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4657",
+        "uei": "K9JTRFBU4DH1",
+        "legal_name": "GALLATIN WIRELESS INTERNET, LLC",
+        "csv_row": 7,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "1e1756b1f8d882946f58c0bd5cc992bdbe3e3290223c4b519d909038d2e18560",
+        "reconciliation_record_sha256": "4b8a3b43cb4ef1c022f86819f3378487f47e512961356845a3088d7abde11a3b",
+        "subgrantee_record_sha256": "6db40b5a157748c56083df6145365ce69b7dbf9316752e93c02f75a2bf27e941"
+      },
+      "proposal": {
+        "bead_support_usd": 10196154,
+        "subgrantee_match_usd": 3398899,
+        "broadband_serviceable_location_rows": 1275,
+        "community_anchor_institution_rows": 14,
+        "raw_technology_codes": [
+          "71",
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Identity and denominator",
+          "text": "The retained baseline has 1,275 broadband-serviceable location rows and 14 anchor-institution rows. Preserve these as two kinds of proposal records. Shared ownership is useful for navigation but cannot merge the Stillwater denominator with Park or move observations between the two files."
+        },
+        {
+          "heading": "Funding is not expenditure",
+          "text": "The row records US$10,196,154 of BEAD support and US$3,398,899 of match. These are neither amounts spent nor proof that construction has begun. A later company-wide announcement would need an explicit Stillwater allocation or project-level crosswalk to update this account."
+        },
+        {
+          "heading": "Project-specific evidence boundary",
+          "text": "The baseline’s tribal-intersection flag is false. This is a retained proposal attribute, not a general legal finding about rights or obligations. The terrestrial reporting path calls for a completed project-specific quarter; estimated performance dates alone cannot stand in for that return."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4657, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4657, with a reporting period and the same eligible-location cohort.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions and its denominator."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4654"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "242819497ca62dc384df9b909896854a9dbb0ecd616821e805222d59a9e80bbc"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4658",
+      "slug": "mt-4658",
+      "route": "/atlas/projects/montana-bead/mt-4658/",
+      "title": "Grizzly Broadband / Ravalli broadband project",
+      "source_name": "Grizzly Broadband-Ravalli-1",
+      "answer": "This is Grizzly Broadband’s Ravalli proposal project. It is not the operator’s whole network or a claim that all Ravalli locations will receive the same service.",
+      "authored_date": "2026-09-25",
+      "reviewer": "Codex (owner-authorized AI reviewer)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4658",
+        "uei": "U3USRJUWGMN6",
+        "legal_name": "GRIZZLY BROADBAND LLC",
+        "csv_row": 8,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "880b20aa10669853dbff6e5f896e7239999027b57eb123b676111d3a83d4bd58",
+        "reconciliation_record_sha256": "91bcd63d5bfe5518d043f9808a9628628f27dd28b001083b2885dcfc180c0f85",
+        "subgrantee_record_sha256": "5a97f7960edb266a0935b39fd427f0a1d466cdbc36d83135cc5b630596798850"
+      },
+      "proposal": {
+        "bead_support_usd": 8523919,
+        "subgrantee_match_usd": 2841419,
+        "broadband_serviceable_location_rows": 1122,
+        "community_anchor_institution_rows": 43,
+        "raw_technology_codes": [
+          "50",
+          "71"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Identity and denominator",
+          "text": "The retained baseline identifies 1,122 broadband-serviceable location rows and 43 anchor-institution rows. Neither population is a subscriber count. A later take-rate claim needs observed subscriptions and a fixed eligible household/service cohort, with the anchor institutions treated separately."
+        },
+        {
+          "heading": "Funding is not expenditure",
+          "text": "The deployment row records US$8,523,919 of BEAD support and US$2,841,419 of match. Financing in the proposal is distinct from executed award terms, reimbursement and qualified service. Changes to any of those stages should remain separately dated events in this dossier."
+        },
+        {
+          "heading": "Project-specific evidence boundary",
+          "text": "The baseline includes more than one raw technology code. Without an explicit schema and project-level location crosswalk, those codes should not be translated into a claim that every location receives a particular technology or performance level. Testing and acceptance must address the actual deployed scope."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4658, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4658, with a reporting period and the same eligible-location cohort.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions and its denominator."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "178f8e8451ca0eccb33498740f0f13f64031a0d6dc1f21bd801a480eab4a629f"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4644",
+      "slug": "mt-4644",
+      "route": "/atlas/projects/montana-bead/mt-4644/",
+      "title": "Amazon Kuiper / Montana eligible-location project",
+      "source_name": "AKCS - Montana - All Counties",
+      "answer": "This is a named Montana proposal cohort, not the entire satellite network, every Montana household or evidence that the stated locations can already receive accepted service.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4644",
+        "uei": "PX3CHN4WCPG3",
+        "legal_name": "AMAZON KUIPER COMMERCIAL SERVICES LLC",
+        "csv_row": 2,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "ef721b97e8d0c1ee202109d6f2abeaebc963e14ab228c909b4a14f664ca39fb1",
+        "reconciliation_record_sha256": "1abf3c38bd21e18bddcc00e3cb8a52d980994ddab2d3d100a2d201fd00c07b39",
+        "subgrantee_record_sha256": "e9fb52234f430400f527508bb53e33e4265c0b7a64fad8639c16701244844d59"
+      },
+      "proposal": {
+        "bead_support_usd": 14974200,
+        "subgrantee_match_usd": 4991400,
+        "broadband_serviceable_location_rows": 24957,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "61"
+        ],
+        "intersects_tribal_land": true,
+        "tribal_consent_field": "Flathead; Crow; Northern Cheyenne; Blackfeet; Fort Peck",
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Identity and denominator",
+          "text": "The baseline assigns 24,957 broadband-serviceable location rows and no anchor-institution rows to this project. “All Counties” is the source's project name, not a verified claim that every location in every county is eligible or served. Later availability, subscription and retention records must join to this project's own eligible-location cohort. A statewide marketing footprint or network-wide customer total cannot supply that denominator."
+        },
+        {
+          "heading": "Financing and reported availability",
+          "text": "The proposal records US$14,974,200 of BEAD support and US$4,991,400 of match. These identify planned financing, not paid reimbursements, installed customer equipment or accepted service. The baseline associates the project with LEO quarterly and ten-year post-availability reporting. That reporting designation does not establish the date availability began; it identifies the kind of evidence needed before a long-term service account can be assembled."
+        },
+        {
+          "heading": "Tribal scope and separate service claims",
+          "text": "The tribal-land flag is true and the consent field lists Flathead, Crow, Northern Cheyenne, Blackfeet and Fort Peck. Listing those names is not a signed consent instrument. The exact affected scope, applicable permissions, service availability, testing and actual subscriptions must remain separate questions. Raw technology code 61 is retained as source data, not independently decoded into an engineering or performance claim."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4644, with scope and effective dates.",
+        "A completed LEO quarterly report for CM61-BEAD-MT-4644, with an actual reporting period, exact eligible-location cohort and dated availability account.",
+        "Separate service-availability, testing and acceptance records, followed by compatible subscription and retention observations; the ten-year post-availability reporting designation is not an observed service history."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "fe274fbbbe97ed3ab0948f090fa4e17a6574e7712633d173c20fcd8a2c61b4a6"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4669",
+      "slug": "mt-4669",
+      "route": "/atlas/projects/montana-bead/mt-4669/",
+      "title": "Starlink / Montana eligible-location project",
+      "source_name": "Starlink Montana BEAD",
+      "answer": "This is Starlink's separately identified Montana BEAD proposal, not an observed result for its global customer base or for the other Montana LEO project.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4669",
+        "uei": "C6M7C2FLKER5",
+        "legal_name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+        "csv_row": 6,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "5e80fe09a409c53b4678f7a4efdffd1eba1903eaa348e9d1f55ec3612e968d8d",
+        "reconciliation_record_sha256": "7045a239e60e14ff21fabd64208e11e8c055913886682e80d1e065d4da72e36d",
+        "subgrantee_record_sha256": "1d8402c88acde6c7c818f260afdb291b42957a49f94dbb43b51dc951879ea609"
+      },
+      "proposal": {
+        "bead_support_usd": 31008075,
+        "subgrantee_match_usd": 28443945,
+        "broadband_serviceable_location_rows": 18705,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "61"
+        ],
+        "intersects_tribal_land": true,
+        "tribal_consent_field": "Flathead; Crow; Northern Cheyenne; Blackfeet; Fort Peck",
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Identity and denominator",
+          "text": "The source baseline contains 18,705 broadband-serviceable location rows and no anchor-institution rows. Its eligible cohort must remain distinct from the 24,957 rows assigned to the Amazon Kuiper project. Shared state coverage, technology coding or tribal names do not establish that the cohorts overlap, are interchangeable or have equal service conditions. A comparison needs verified cohort definitions before either project can supply a meaningful adoption rate."
+        },
+        {
+          "heading": "Financing is not a cost-effectiveness result",
+          "text": "Proposed BEAD support is US$31,008,075 and proposed match is US$28,443,945. The larger match figure compared with the Kuiper proposal is not evidence of delivered value, lower public cost per active subscriber or a better service outcome. Such conclusions require compatible executed financial scope, actual payments, eligible locations and an accepted-service period. None of those observations is supplied by this financing row."
+        },
+        {
+          "heading": "What a LEO return must distinguish",
+          "text": "The retained reporting designation is LEO quarterly and ten-year post-availability reporting. Availability, an installed terminal, an active subscription, service testing and continued use answer different questions; one should not stand in for the others. The consent field names Flathead, Crow, Northern Cheyenne, Blackfeet and Fort Peck, but does not itself supply executed permissions. Preserve the project ID and the separate evidence required for each claim."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4669, with scope and effective dates.",
+        "A completed LEO quarterly report for CM61-BEAD-MT-4669, with an actual reporting period, exact eligible-location cohort and dated availability account.",
+        "Separate service-availability, testing and acceptance records, followed by compatible subscription and retention observations; the ten-year post-availability reporting designation is not an observed service history."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "d770ebd729bd17cb9a6045a9f4d7bf1d26fd2cfbb590777b46ab393368bf693a"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4648",
+      "slug": "mt-4648",
+      "route": "/atlas/projects/montana-bead/mt-4648/",
+      "title": "Inland MT / Lewis and Clark broadband project",
+      "source_name": "InlandMT-LewisClark-1",
+      "answer": "This is Inland MT’s Lewis-and-Clark-labelled proposal, with its own 458-location cohort. It is not a service result for Inland’s other Montana projects.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4648",
+        "uei": "FBU3ABAM3KE7",
+        "legal_name": "INLAND MT LLC",
+        "csv_row": 9,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "9c667994daeba80683bc97c764184e6b3afb79d3f6c426c4e73c14ffd01e1663",
+        "reconciliation_record_sha256": "063d4c9219fc209cb810a266957d3ccfdd70bc1681cdce8df46c6a6ec67dde00",
+        "subgrantee_record_sha256": "96ad631e35dde7eb33237ec32398a7cb8c67a4018fe92ddb7d192cdefd90473f"
+      },
+      "proposal": {
+        "bead_support_usd": 6813095,
+        "subgrantee_match_usd": 2272000,
+        "broadband_serviceable_location_rows": 458,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "71"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Keep the Lewis and Clark cohort identifiable",
+          "text": "The baseline assigns 458 broadband-serviceable location rows and no anchor-institution rows to this project. The operator also has Rosebud, Pondera and Cascade/Fergus projects, but those inventories cannot supply this project’s adoption denominator. The county-like label locates the proposal in the source; it does not establish a service-area polygon or that every location in the named county is eligible."
+        },
+        {
+          "heading": "Finance the named scope, not the operator as a whole",
+          "text": "Proposed BEAD support is US$6,813,095 with US$2,272,000 of match. A later invoice or reimbursement must identify this project and eligible work before it can update that proposal financing account. Company-wide capital expenditure or a payment for the much larger Cascade/Fergus project cannot be allocated to this cohort without an explicit, documented project join."
+        },
+        {
+          "heading": "Follow a compatible terrestrial return",
+          "text": "The retained reporting designation is terrestrial and the raw technology list contains code 71. This dossier does not decode that code into a speed, construction method or reliability promise. The next useful return would retain the project identity, reporting period and original eligible cohort, then separately establish construction, testing, accepted availability and any subscriptions. A missing tribal-land flag is not a complete permissions assessment."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4648, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4648, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4685",
+        "CM61-BEAD-MT-4256",
+        "CM61-BEAD-MT-4261"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "1b71794aae0332f7cefd440226e2bc1a50e3e2bf430879ee39d952f02a6119fc"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4673",
+      "slug": "mt-4673",
+      "route": "/atlas/projects/montana-bead/mt-4673/",
+      "title": "InterBel / Flathead application 1 broadband project",
+      "source_name": "InterBel-FlatheadCounty-Application1",
+      "answer": "Application 1 is a distinct InterBel project with 379 location rows and one anchor row. It is not the combined Flathead footprint of all InterBel applications.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4673",
+        "uei": "VKTRZ9JF5RB3",
+        "legal_name": "INTERBEL TELEPHONE COOPERATIVE INC",
+        "csv_row": 10,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "04cb6b15bd9113558baffba1d14731ca88f834676735c54a7220e9ddb68ab5ba",
+        "reconciliation_record_sha256": "41dc5f20c8bf2b32876043676b2025f8e45b4c3a348f44c3662774aaba50f1fe",
+        "subgrantee_record_sha256": "2f01edd07c58b57bc02389388f173e89ffe5cab7bc3a7921f6ec7d98bee23272"
+      },
+      "proposal": {
+        "bead_support_usd": 3148600,
+        "subgrantee_match_usd": 3148600,
+        "broadband_serviceable_location_rows": 379,
+        "community_anchor_institution_rows": 1,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "One application, two kinds of recipient",
+          "text": "The proposal inventory contains 379 broadband-serviceable location rows and one community-anchor-institution row. They should remain separate in progress and acceptance reports: one institution is not one household, and neither inventory is an observed subscriber count. InterBel’s other Flathead applications have their own IDs and different cohorts, even though they share the same subgrantee UEI."
+        },
+        {
+          "heading": "Equal financing amounts are not equal outcomes",
+          "text": "The baseline records US$3,148,600 in BEAD support and the same amount in subgrantee match. This is a proposal funding split, not confirmation that either party has paid or that half the work is complete. Payment, eligible expenditure and accepted construction require dated documents naming this application; those records cannot be replaced by the financing ratio."
+        },
+        {
+          "heading": "Separate institution acceptance from household availability",
+          "text": "A useful completed return would retain the anchor institution as a distinct reporting unit and show which location cohort was available during the period. The raw code 50 is preserved without a performance interpretation. Tests and acceptance for the institution do not establish service to all 379 location rows, while a residential subscription series cannot verify that the institution received its specified service."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4673, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4673, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4672",
+        "CM61-BEAD-MT-4670",
+        "CM61-BEAD-MT-4662"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "cb316f4bdb86acb64c9a87223a00368f95f4693bfd4f73657721a7f435e4a697"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4672",
+      "slug": "mt-4672",
+      "route": "/atlas/projects/montana-bead/mt-4672/",
+      "title": "InterBel / Flathead application 2 broadband project",
+      "source_name": "InterBel-FlatheadCounty-Application2",
+      "answer": "This is InterBel’s separately identified 83-location Flathead application. A small cohort is still a separate project, not an extra reporting row for application 1.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4672",
+        "uei": "VKTRZ9JF5RB3",
+        "legal_name": "INTERBEL TELEPHONE COOPERATIVE INC",
+        "csv_row": 11,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "03910c6751df02b96ac024519141611df416861452d73bbd8c8181db7156f96f",
+        "reconciliation_record_sha256": "acb3dbf98f2abf0f9388435dcd5c10da2ffe4fe259b0df148d9ec515a659f503",
+        "subgrantee_record_sha256": "2f01edd07c58b57bc02389388f173e89ffe5cab7bc3a7921f6ec7d98bee23272"
+      },
+      "proposal": {
+        "bead_support_usd": 620925,
+        "subgrantee_match_usd": 206975,
+        "broadband_serviceable_location_rows": 83,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Do not merge similarly named applications",
+          "text": "Application 2 has 83 broadband-serviceable location rows and no anchor-institution rows in the retained baseline. Its source name resembles applications 1 and 3, and all share an operator, but the project IDs differ. Those similarities do not prove a common service area, a shared construction contract or interchangeable customer populations. Keep later returns attached to this exact project."
+        },
+        {
+          "heading": "A proposal amount is not a paid work package",
+          "text": "The recorded financing is US$620,925 of BEAD support and US$206,975 of match. A small total does not establish a short delivery time or a low unit cost for accepted service. Before comparing it with another InterBel application, align eligible work, location definitions, executed funding terms and the reporting period; none of those comparisons follows from the proposal amounts alone."
+        },
+        {
+          "heading": "Preserve non-users in an adoption account",
+          "text": "A future subscription account should retain the eligible 83-row cohort, including locations that have not subscribed or that discontinue use. Counting only active customers would erase the denominator needed to understand adoption. The terrestrial reporting designation and code 50 do not supply those observations; availability, tests, acceptance and actual use must each be established in their own records."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4672, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4672, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4673",
+        "CM61-BEAD-MT-4670",
+        "CM61-BEAD-MT-4662"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "ef2b66e040a3aa5ff6d56374b72c6d9582394893a93223f01306c14669139fd3"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4670",
+      "slug": "mt-4670",
+      "route": "/atlas/projects/montana-bead/mt-4670/",
+      "title": "InterBel / Lincoln application 2 broadband project",
+      "source_name": "InterBel-LincolnCounty-Application2",
+      "answer": "This Lincoln-labelled InterBel proposal has 19 location rows and two anchor rows. The shared application number does not make it the Flathead application 2 project.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4670",
+        "uei": "VKTRZ9JF5RB3",
+        "legal_name": "INTERBEL TELEPHONE COOPERATIVE INC",
+        "csv_row": 12,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "78c6e59c1230c3abb923e4bd9a49e9e682755a3cdf1f7acc1652d7c9483c7a00",
+        "reconciliation_record_sha256": "8c2e7b8e45aee729e04c9bf308d022271c8a4a137370c5c0afb9c1333b00fcde",
+        "subgrantee_record_sha256": "2f01edd07c58b57bc02389388f173e89ffe5cab7bc3a7921f6ec7d98bee23272"
+      },
+      "proposal": {
+        "bead_support_usd": 218500,
+        "subgrantee_match_usd": 72834,
+        "broadband_serviceable_location_rows": 19,
+        "community_anchor_institution_rows": 2,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "The county label and project ID both matter",
+          "text": "The retained inventory contains 19 broadband-serviceable location rows and two community-anchor-institution rows. Flathead application 2 belongs to the same operator and uses the same application number, but it is a different project. A return labelled only “InterBel application 2” is therefore insufficient to identify this cohort without the project ID or equivalent exact scope."
+        },
+        {
+          "heading": "Keep anchor and location costs distinguishable",
+          "text": "The proposal records US$218,500 of BEAD support and US$72,834 of match. Dividing a financing total by 21 and calling it cost per household would combine two distinct inventory units. Any eventual cost comparison needs executed scope, accepted expenditure and a justified allocation between the location and institution services; the proposal does not provide that allocation."
+        },
+        {
+          "heading": "Small cohorts still need a complete chronology",
+          "text": "The estimate dates do not show that work began or finished. A complete project account would connect the executed subaward to a period-specific terrestrial return and separate tests for the services delivered. Neither an accepted institution connection nor progress at an InterBel project in Flathead establishes completion here. Keep raw code 50 and the baseline’s unflagged tribal field without extending either into a permissions or performance claim."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4670, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4670, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4673",
+        "CM61-BEAD-MT-4672",
+        "CM61-BEAD-MT-4662"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "beb5b8b5148148f428a5867b2b6cd0d31e9c545633b5eb6765c735bdf0ea3e05"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4662",
+      "slug": "mt-4662",
+      "route": "/atlas/projects/montana-bead/mt-4662/",
+      "title": "InterBel / Flathead application 3 broadband project",
+      "source_name": "InterBel-FlatheadCounty-Application3",
+      "answer": "This 200-location proposal is InterBel’s third separately named Flathead application. Its inventory and financing remain distinct from applications 1 and 2.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4662",
+        "uei": "VKTRZ9JF5RB3",
+        "legal_name": "INTERBEL TELEPHONE COOPERATIVE INC",
+        "csv_row": 13,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "e500e9bd629d29a1bbfcc3a83728a35416651d4e3885a86b7def3d2d7c9d5409",
+        "reconciliation_record_sha256": "6f017091d9b5c735c1e46a66b1b32d433bcdfc8c452c12a412178cb81f0abfff",
+        "subgrantee_record_sha256": "2f01edd07c58b57bc02389388f173e89ffe5cab7bc3a7921f6ec7d98bee23272"
+      },
+      "proposal": {
+        "bead_support_usd": 1687140,
+        "subgrantee_match_usd": 908460,
+        "broadband_serviceable_location_rows": 200,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "An application sequence is not a construction sequence",
+          "text": "The source calls this Flathead application 3 and assigns 200 broadband-serviceable location rows with no anchor-institution rows. The number in the name does not establish that it follows two completed construction phases or depends on their acceptance. Its own project ID is the join key for subsequent scope, progress and service records."
+        },
+        {
+          "heading": "Preserve the financing mix",
+          "text": "Proposed support is US$1,687,140 and proposed match is US$908,460. That mix differs from the equal support and match recorded for application 1, but it is not evidence of a better or worse outcome. A comparison requires the work and eligible-location definitions, actual expenditure and accepted services to be aligned rather than treating different proposal funding shares as performance scores."
+        },
+        {
+          "heading": "Track the same population over time",
+          "text": "A completed terrestrial return should identify this 200-row cohort and explain any authorized changes to it. Later availability or adoption percentages need their numerator, denominator and period, including exclusions and revisions. The retained code 50 and common operator UEI do not supply a production series or permit borrowing observations from the other two Flathead applications."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4662, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4662, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4673",
+        "CM61-BEAD-MT-4672",
+        "CM61-BEAD-MT-4670"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "e94db7ce9acce4e8fc2dd13db470593b71b324c3c9dce84f456ff1aaedf8fb53"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4677",
+      "slug": "mt-4677",
+      "route": "/atlas/projects/montana-bead/mt-4677/",
+      "title": "LincTel / Lewis and Clark broadband project",
+      "source_name": "LincTel Communications - Lewis and Clark - 2",
+      "answer": "The LincTel-labelled project is bound to Lincoln Telephone Co and a 70-location proposal cohort. It is not Inland MT’s similarly located project.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4677",
+        "uei": "WFF1YRLNLA35",
+        "legal_name": "LINCOLN TELEPHONE CO",
+        "csv_row": 14,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "66595fd36eea12d072c3863097ee8f480d3cfb81d36ad013726f3c16bde2a5f3",
+        "reconciliation_record_sha256": "720294ac4a7191727abcd2734274b7b93701b6ed122030389e189eca6f544ba9",
+        "subgrantee_record_sha256": "b479fbac605ea4b39f51698285249386498f6305c3c4250b5c5447eb3e5a387d"
+      },
+      "proposal": {
+        "bead_support_usd": 770603,
+        "subgrantee_match_usd": 256867,
+        "broadband_serviceable_location_rows": 70,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Resolve the trading label through the legal entity",
+          "text": "The deployment name is “LincTel Communications - Lewis and Clark - 2”; the retained subgrantee legal name is LINCOLN TELEPHONE CO. The project ID and UEI connect those labels without asserting any additional corporate relationship. Its 70 broadband-serviceable location rows are separate from the 458 rows assigned to Inland MT’s Lewis-and-Clark-labelled project."
+        },
+        {
+          "heading": "Payments need the exact project join",
+          "text": "The baseline identifies US$770,603 of BEAD support and US$256,867 of match. A document mentioning Lincoln Telephone or Lewis and Clark alone would not necessarily establish payment for this proposal. The useful financial follow-up names the project, eligible work, amount and effective period, while preserving the original proposal figures as a dated starting point."
+        },
+        {
+          "heading": "A place label cannot substitute for mapped scope",
+          "text": "The project name does not supply a service-area polygon or prove that all premises in a locality will be connected. The terrestrial reporting designation points toward project-specific progress, testing and closeout documents. Keep the zero anchor count and raw code 50 as baseline fields; availability, acceptance and adoption still require distinct evidence for the same 70-row cohort."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4677, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4677, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "5ab99fcc67199e9f5c22f704612f82976c9bd541f84710a779306b95b63a4e38"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4679",
+      "slug": "mt-4679",
+      "route": "/atlas/projects/montana-bead/mt-4679/",
+      "title": "Montana Internet / Broadwater broadband project",
+      "source_name": "Montana Internet Corporation-Broadwater County ",
+      "answer": "This Broadwater-labelled proposal contains separate location and anchor cohorts. Its proposed private match is not a record of money spent or service accepted.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4679",
+        "uei": "UN1WNQVV11X7",
+        "legal_name": "MONTANA INTERNET CORPORATION",
+        "csv_row": 15,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "ab42dc042bd309b9778650286367f73fdf668e375fbf5792ce06b3f4a2a133c2",
+        "reconciliation_record_sha256": "7cb838b0c8bb417c0f26af497e25fc8d811fa6adac2f9602b1929d43d50c6c79",
+        "subgrantee_record_sha256": "336d2fb8419c9eb9dc10bb5b6cbea78e60b96797e27bac5ae22d1073c9052918"
+      },
+      "proposal": {
+        "bead_support_usd": 4600623,
+        "subgrantee_match_usd": 6241873,
+        "broadband_serviceable_location_rows": 1154,
+        "community_anchor_institution_rows": 10,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Two inventories, not one subscriber total",
+          "text": "The retained baseline has 1,154 broadband-serviceable location rows and ten anchor-institution rows. They describe this proposal’s recipient inventories, not connected households or active accounts. Later reports should distinguish the ten institutions from the location cohort and explain any changes in scope. Neither the county label nor the company’s broader customer base establishes the project’s service footprint."
+        },
+        {
+          "heading": "A larger match remains proposed financing",
+          "text": "The proposal carries US$4,600,623 in BEAD support and US$6,241,873 in match. Match exceeding support does not prove that the private investment occurred or that the proposal delivers more public benefit than another project. Executed funding conditions, actual eligible expenditure and accepted service must be established before the financial account can support those conclusions."
+        },
+        {
+          "heading": "Retain different acceptance requirements",
+          "text": "A service acceptance for one anchor institution cannot stand in for service availability at all residential or other location rows. A useful terrestrial return preserves the project ID and period, then distinguishes construction, tests and accepted services for each cohort. The single raw code 50 and the baseline’s false tribal-land flag do not eliminate the need for a documented engineering scope and applicable permissions."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4679, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4679, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "5c883ae061216e69c7c21483c57bac06e203e618924b2fec1cc15fa09522b11c"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4651",
+      "slug": "mt-4651",
+      "route": "/atlas/projects/montana-bead/mt-4651/",
+      "title": "Project Telephone / Absarokee broadband project",
+      "source_name": "Project Telephone Absarokee Town",
+      "answer": "The Absarokee-named proposal is a 132-location project. The word “Town” in the source name is not a verified municipal or service boundary.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4651",
+        "uei": "PTVEPVDJH2K5",
+        "legal_name": "PROJECT TELEPHONE COMPANY",
+        "csv_row": 16,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "c581a44575f3d980cae6ecd7b74300ed11877a56d467827d5ffabc5f132c4d77",
+        "reconciliation_record_sha256": "eb86babe45cbfa6da536ab3ee71de1e40050ea9f80d507cfed3fe25346c29f4c",
+        "subgrantee_record_sha256": "effd536af78234ff7c9585031684895781543eff0e7492f2eea04dc603306165"
+      },
+      "proposal": {
+        "bead_support_usd": 1000000,
+        "subgrantee_match_usd": 1073776,
+        "broadband_serviceable_location_rows": 132,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Name the proposal without enlarging its geography",
+          "text": "The source name is “Project Telephone Absarokee Town,” and its retained inventory has 132 broadband-serviceable location rows with no anchor rows. This dossier preserves that label without making a claim about incorporation, municipal limits or all households in Absarokee. The exact project identity, rather than a presumed town boundary, should connect later scope and service documents."
+        },
+        {
+          "heading": "Match slightly exceeds support",
+          "text": "The financing baseline contains US$1,000,000 of BEAD support and US$1,073,776 of match. Their proximity does not establish a completed funding agreement or equal shares of delivered work. A later account needs the executed terms, actual payments, eligible costs and any amendments before it can distinguish committed financing from expenditure on this project."
+        },
+        {
+          "heading": "Availability is separate from use",
+          "text": "A completed terrestrial quarterly report should retain the same eligible-location cohort and a clear period. Construction progress and a service-availability statement still do not identify active subscriptions, retention or affordability. Raw code 50 remains source coding; it does not prove an operating speed or reliability outcome. Any adoption claim needs actual users and an explicit eligible denominator."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4651, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4651, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "96a0fcabd8fd9603a891099c55398257ec4a3329400f8d10d676d545769a0595"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4686",
+      "slug": "mt-4686",
+      "route": "/atlas/projects/montana-bead/mt-4686/",
+      "title": "Range / Rosebud broadband project",
+      "source_name": "Range - Rosebud",
+      "answer": "Range’s Rosebud project is distinct from both its Treasure project and Inland MT’s Rosebud proposal. A county name alone cannot identify its financing or service cohort.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4686",
+        "uei": "JJVXC1A7BYG6",
+        "legal_name": "RANGE TELEPHONE COOPERATIVE INC",
+        "csv_row": 17,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "5fd2cc1215b0ecb39aa3887a74fe04a8c27151b62c17cbe1b4ea4acb10d89d0e",
+        "reconciliation_record_sha256": "ad5f560965f1f0a1ff7f41845139ceaa865236a3668b7831e4bc8f38c28fef71",
+        "subgrantee_record_sha256": "fea1e740d661fbaa69a840f59a9f6c7a4eecf2d511ded285cf0025ff1deaa140"
+      },
+      "proposal": {
+        "bead_support_usd": 1758075,
+        "subgrantee_match_usd": 3125465,
+        "broadband_serviceable_location_rows": 120,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Distinguish two operators using Rosebud",
+          "text": "This project has 120 broadband-serviceable location rows and no anchor-institution rows. Inland MT’s separate Rosebud project has a different ID, UEI and inventory. Shared geography in the source names does not establish overlapping service areas or allow either operator’s subscribers to count for the other. Range’s Treasure proposal is also a separate project despite sharing this operator’s UEI."
+        },
+        {
+          "heading": "Keep the match-heavy proposal in its own account",
+          "text": "The baseline records US$1,758,075 of BEAD support and US$3,125,465 of match. That financing mix does not establish disbursement, cost efficiency or a service result. A comparison with Treasure or Inland’s Rosebud row must first align executed scope, cohort definitions, actual eligible expenditure and accepted services; division by the proposal row count alone would not do so."
+        },
+        {
+          "heading": "Different flags are not contradictory findings",
+          "text": "The retained tribal-land flag is false here, while another Rosebud-labelled project can carry a different flag. Different projects can have different scopes; a shared place name is not evidence that either source field is wrong. Retain the fields as dated baseline facts and seek mapped scope and applicable documents before making an authorization claim or interpreting code 50 as a performance promise."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4686, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4686, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4668"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "794544c3dd6b0176b21c74e3bce2d6543925e32c3f7f4d9b507ddd6d4539f6d3"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4668",
+      "slug": "mt-4668",
+      "route": "/atlas/projects/montana-bead/mt-4668/",
+      "title": "Range / Treasure broadband project",
+      "source_name": "Range - Treasure",
+      "answer": "This is Range’s separately identified Treasure proposal, with 184 location rows. It is not a county-wide service result or a continuation row for Rosebud.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4668",
+        "uei": "JJVXC1A7BYG6",
+        "legal_name": "RANGE TELEPHONE COOPERATIVE INC",
+        "csv_row": 18,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "f0be1b6c337f54dd0cbfea0b5b96dedba7041e5ac588b29d3723f53ac3f76f24",
+        "reconciliation_record_sha256": "92479169578032e0455c79bcc55b6f3b7a872fb8d0031f5ad62669552e4e40c9",
+        "subgrantee_record_sha256": "fea1e740d661fbaa69a840f59a9f6c7a4eecf2d511ded285cf0025ff1deaa140"
+      },
+      "proposal": {
+        "bead_support_usd": 2356969,
+        "subgrantee_match_usd": 785656,
+        "broadband_serviceable_location_rows": 184,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Keep Treasure’s cohort separate",
+          "text": "The baseline identifies 184 broadband-serviceable location rows and no anchor-institution rows. Range’s Rosebud project uses the same subgrantee UEI but has its own 120-row inventory. A combined operator report must still identify which observations belong to Treasure before it can update this dossier; company totals or a county label cannot provide that allocation."
+        },
+        {
+          "heading": "Different financing does not rank the projects",
+          "text": "Proposed BEAD support is US$2,356,969 and match is US$785,656. Rosebud’s different financing mix is not evidence that one project is more efficient, easier to build or more valuable. Useful comparison requires compatible work scope, eligible locations and actual accepted expenditure. These proposal amounts can anchor a later financial chronology but do not establish payments or delivered capacity."
+        },
+        {
+          "heading": "Observe a period, not an estimated milestone",
+          "text": "The baseline contains a terrestrial reporting designation and raw technology code 50, together with estimated dates. A reporting requirement is not a completed report, and a date that has passed is not a verified construction or acceptance event. The next return should identify the period, changes to the eligible cohort, tests and accepted availability before any observed use or retention is assessed."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4668, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4668, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4686"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "ddbc1040f6f9c072f04b077e311ce0625a154ff270d89ff77b2f6dd55a70e953"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4675",
+      "slug": "mt-4675",
+      "route": "/atlas/projects/montana-bead/mt-4675/",
+      "title": "Safelink / Anthem Gallatin broadband project",
+      "source_name": "Safelink Internet dba Anthem Broadband- Gallatin County",
+      "answer": "This proposal joins a Safelink legal entity to an Anthem trading label and 217 location rows. The Gallatin place label does not make it a Gallatin Wireless project.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4675",
+        "uei": "DCJTA84G5C75",
+        "legal_name": "SAFELINK INTERNET, L.L.C.",
+        "csv_row": 19,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "2141fc2725bb7118a1ce02ee22cfa2ffc8d5353befc672b9ca10118d6c6b16eb",
+        "reconciliation_record_sha256": "da64a233abe0a9c178ff7a61670e453beb8c4b5ac8e6a9b81e887e4f7388156b",
+        "subgrantee_record_sha256": "5d0d2551a989e27d653d30e9811198392b9413fd5bf2b903277c9deb0861b667"
+      },
+      "proposal": {
+        "bead_support_usd": 1348584,
+        "subgrantee_match_usd": 449527,
+        "broadband_serviceable_location_rows": 217,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "72",
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Trading name, legal entity and geography",
+          "text": "The source names Safelink Internet doing business as Anthem Broadband in Gallatin County; the retained legal entity is SAFELINK INTERNET, L.L.C. These labels attach to this exact project and UEI. They must not be confused with Gallatin Wireless, whose separately identified Park and Stillwater projects use a different entity and different cohorts. The baseline here contains 217 location rows and no anchor rows."
+        },
+        {
+          "heading": "Keep project finance attached to the correct entity",
+          "text": "The proposal lists US$1,348,584 of BEAD support and US$449,527 of match. A later company release using only the Anthem brand is not automatically a payment or completion record for this project. The useful document explicitly names the project or provides an unambiguous scope join, and distinguishes the financing commitment from expenditure and accepted delivery."
+        },
+        {
+          "heading": "Two raw codes do not reveal the deployment mix",
+          "text": "Codes 72 and 50 appear in the retained technology list, but their presence does not allocate locations between technologies or establish redundancy, speed or reliability. A completed terrestrial return should supply the applicable schema, mapped scope and compatible location cohort before such engineering claims are made. Testing, accepted availability and actual subscriptions remain separate evidence requirements."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4675, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4675, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "7ce768dcce20a31de018d453b281cfe644279065b6ed89af2e83bc6fccab57b9"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4661",
+      "slug": "mt-4661",
+      "route": "/atlas/projects/montana-bead/mt-4661/",
+      "title": "Siyeh / Flathead broadband project",
+      "source_name": "Siyeh Communications - Flathead County",
+      "answer": "Siyeh’s Flathead-labelled proposal has 894 location rows and four anchor rows. Its operator name and place label do not determine consent, legal scope or operating performance.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4661",
+        "uei": "KY5RFTW5TEU3",
+        "legal_name": "SIYEH COMMUNICATIONS CO",
+        "csv_row": 20,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "9440abe674395a1b133fd25309678409e6e69f060df87057181c7f82102db2c9",
+        "reconciliation_record_sha256": "e4248846330e8e89f80a104985d0c745013f80fce3595fa20f62dc560b975bf7",
+        "subgrantee_record_sha256": "db81e81f9357caed87f4d2d2c5ccd516bd7a86e441cd1b786e26eaef98069a1c"
+      },
+      "proposal": {
+        "bead_support_usd": 8960175,
+        "subgrantee_match_usd": 2986725,
+        "broadband_serviceable_location_rows": 894,
+        "community_anchor_institution_rows": 4,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Retain both recipient cohorts",
+          "text": "The baseline assigns 894 broadband-serviceable location rows and four community-anchor-institution rows to this project. Neither set is an observed subscriber count, and the two should not be added into a household total. Other operators have Flathead-labelled projects; the place name alone does not establish overlapping locations, a shared service footprint or equivalent recipients."
+        },
+        {
+          "heading": "Financing awaits a project-specific execution record",
+          "text": "The source records US$8,960,175 in proposed BEAD support and US$2,986,725 in proposed match. These do not establish a signed subaward, actual disbursement or accepted construction. A financial update needs the same project identity, eligible work and dated amount; an institution connection or company-wide capital figure cannot substitute for the project’s expenditure account."
+        },
+        {
+          "heading": "Do not infer tribal scope from a name",
+          "text": "The retained tribal-land-intersection flag is false and its consent-name field is empty. This dossier neither overrides those fields from the operator’s name nor treats them as proof that all permissions are satisfied. Mapped scope and applicable authority records are separate evidence. Raw code 50 and the terrestrial reporting designation likewise do not establish accepted service for either the location or anchor cohort."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4661, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4661, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "851faf5e48f3b767ac3fa387cabae38f39bfaad2f1c757efedfe6d1c7f1172b7"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4693",
+      "slug": "mt-4693",
+      "route": "/atlas/projects/montana-bead/mt-4693/",
+      "title": "Spectrum Pacific West / Missoula broadband project",
+      "source_name": "Spectrum Pacific West – Missoula",
+      "answer": "This is Spectrum Pacific West’s 171-location Missoula proposal. It is distinct from its other county-labelled projects and Blackfoot’s Missoula project.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4693",
+        "uei": "L5W6ZMH9GM51",
+        "legal_name": "SPECTRUM PACIFIC WEST LLC",
+        "csv_row": 21,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "a2c3e490805e566f3c96fa24e656259b89353dcf6185ce990b9b07c271c2fc2c",
+        "reconciliation_record_sha256": "4ce18016df50e4fb86f285fac8cc2770797443b748b1db4be7ad6bd7f35a04fa",
+        "subgrantee_record_sha256": "2b4d676b54f4980b9679f04adaa2b229e94d4765d3ac1da5814b926ca287ddc5"
+      },
+      "proposal": {
+        "bead_support_usd": 2468674,
+        "subgrantee_match_usd": 822891,
+        "broadband_serviceable_location_rows": 171,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "A shared county name is not a shared cohort",
+          "text": "The source assigns 171 broadband-serviceable location rows and no anchor rows to this project. Blackfoot’s Missoula proposal has a different operator and inventory, while Spectrum’s Flathead, Cascade and Carbon proposals share this operator but remain separate project IDs. Neither relationship permits subscriber totals, service tests or payments to be transferred into this cohort without an exact join."
+        },
+        {
+          "heading": "Use the proposal as a dated financial baseline",
+          "text": "Proposed BEAD support is US$2,468,674 and match is US$822,891. Those amounts do not establish an executed award or completion. Later amendments, disbursements and accepted expenditure should be recorded with their dates and scope, preserving the original values rather than silently replacing them or treating a brand-wide investment announcement as this project’s financial return."
+        },
+        {
+          "heading": "Look for same-project acceptance",
+          "text": "The terrestrial reporting designation identifies the kind of return to seek, not an observed period of operation. A useful report would name this Missoula project and show changes to its eligible cohort, construction and tests, followed by accepted availability. Raw code 50 supplies no independent speed or reliability guarantee, and availability does not by itself establish subscriptions or continued use."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4693, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4693, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4692",
+        "CM61-BEAD-MT-4691",
+        "CM61-BEAD-MT-4689"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "59bee51fa21e517d08373df05bfbfd4a03bab60cd1f7d971abde7abf86d59383"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4692",
+      "slug": "mt-4692",
+      "route": "/atlas/projects/montana-bead/mt-4692/",
+      "title": "Spectrum Pacific West / Flathead broadband project",
+      "source_name": "Spectrum Pacific West – Flathead",
+      "answer": "Spectrum’s Flathead proposal has the largest location inventory among its four retained Montana projects. That size is not a measure of completion or benefit.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4692",
+        "uei": "L5W6ZMH9GM51",
+        "legal_name": "SPECTRUM PACIFIC WEST LLC",
+        "csv_row": 22,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "e355a9f3534101dcb37e3ae7bb28e111a11aa138d5e1a92991fd335bf7a6793d",
+        "reconciliation_record_sha256": "bbf7020d6f862abb669c1dfa3e512047e4b5aec8c44f989ba6381661afef7501",
+        "subgrantee_record_sha256": "2b4d676b54f4980b9679f04adaa2b229e94d4765d3ac1da5814b926ca287ddc5"
+      },
+      "proposal": {
+        "bead_support_usd": 19159362,
+        "subgrantee_match_usd": 6386455,
+        "broadband_serviceable_location_rows": 1483,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "A larger proposal inventory is not more delivered service",
+          "text": "The retained baseline has 1,483 broadband-serviceable location rows and no anchor-institution rows. This is larger than Spectrum’s Missoula, Cascade and Carbon inventories, but it is still a proposal cohort rather than connected premises. Other Flathead-labelled operators have separate IDs and recipients; no overlap or absence of overlap is established by their names alone."
+        },
+        {
+          "heading": "Size the financing without ranking performance",
+          "text": "The proposal records US$19,159,362 of BEAD support and US$6,386,455 of match. These are not accepted costs or proof that financing has been drawn. A larger proposal amount may accompany a different scope, but the baseline does not provide a causal explanation for costs. Engineering scope, executed terms, eligible locations and actual expenditure are needed before comparing performance."
+        },
+        {
+          "heading": "Preserve the denominator through revisions",
+          "text": "A completed terrestrial quarterly return should retain the Flathead project ID and explain any additions, removals or exclusions from the 1,483-row cohort. Without that account, a later availability percentage cannot be compared safely with another period. Testing, state or receiving-party acceptance, subscriptions and retention remain distinct claims; the raw code 50 and estimated dates do not supply those observations."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4692, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4692, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4693",
+        "CM61-BEAD-MT-4691",
+        "CM61-BEAD-MT-4689"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "c03d01ce97cdb9e1550b9782929d87e9440d257ac5c663708ed9a81dd7e380e5"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4691",
+      "slug": "mt-4691",
+      "route": "/atlas/projects/montana-bead/mt-4691/",
+      "title": "Spectrum Pacific West / Cascade broadband project",
+      "source_name": "Spectrum Pacific West – Cascade",
+      "answer": "This Spectrum Cascade proposal has 283 location rows. Other Cascade-named projects belong to different entities and must not be combined solely by geography.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4691",
+        "uei": "L5W6ZMH9GM51",
+        "legal_name": "SPECTRUM PACIFIC WEST LLC",
+        "csv_row": 23,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "5da2887d2b6043bbbf62d7a7cffd3ce590242fb929ef037d6403a11bc9a9a800",
+        "reconciliation_record_sha256": "c330fe1e9f5f7e231313565ef0bfab69c12cc948314809716762254a4c175f6d",
+        "subgrantee_record_sha256": "2b4d676b54f4980b9679f04adaa2b229e94d4765d3ac1da5814b926ca287ddc5"
+      },
+      "proposal": {
+        "bead_support_usd": 2162620,
+        "subgrantee_match_usd": 720873,
+        "broadband_serviceable_location_rows": 283,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Separate the Cascade-labelled identities",
+          "text": "The baseline assigns 283 broadband-serviceable location rows and no anchor rows to this Spectrum project. Inland’s Cascade/Fergus project and the KDS-labelled Cascade projects carry different project identities and legal entities. A county-wide progress statement cannot tell which of these cohorts received service without a project-level allocation, and no overlap is inferred from the names."
+        },
+        {
+          "heading": "Financing is attached to one proposal",
+          "text": "Proposed support is US$2,162,620 with US$720,873 of match. This account should not absorb payments for Spectrum’s three other Montana projects or another Cascade-labelled operator. A useful follow-up identifies the project, eligible work, executed terms and payment period, then separates actual expenditure from the value of work or services accepted."
+        },
+        {
+          "heading": "Require a compatible operating period",
+          "text": "The retained reporting designation is terrestrial, with raw code 50. A completed return needs an actual reporting period and the same eligible-location definition before it can establish a chronology of construction or availability. An acceptance test at a subset of locations does not automatically cover all 283 rows, and a service-availability claim remains different from measured subscriptions or retention."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4691, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4691, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4693",
+        "CM61-BEAD-MT-4692",
+        "CM61-BEAD-MT-4689"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "7c3264c30a00b0d649b0f32f98d7d2e60dd0a59cd1b90d4f11f07150a8f792c8"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4689",
+      "slug": "mt-4689",
+      "route": "/atlas/projects/montana-bead/mt-4689/",
+      "title": "Spectrum Pacific West / Carbon broadband project",
+      "source_name": "Spectrum Pacific West – Carbon",
+      "answer": "This is Spectrum’s separately identified Carbon proposal, with 442 location rows. It remains a project account rather than a county-wide coverage claim.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4689",
+        "uei": "L5W6ZMH9GM51",
+        "legal_name": "SPECTRUM PACIFIC WEST LLC",
+        "csv_row": 24,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "3c6f489b59f54a43d22bca0e9c6b4639f1f7428c8ce4a5250e6f73cc79135aac",
+        "reconciliation_record_sha256": "76f03948922257cbdba2c3ee98dd6398b777887dc4323f4237855f1a73513611",
+        "subgrantee_record_sha256": "2b4d676b54f4980b9679f04adaa2b229e94d4765d3ac1da5814b926ca287ddc5"
+      },
+      "proposal": {
+        "bead_support_usd": 3478221,
+        "subgrantee_match_usd": 1159407,
+        "broadband_serviceable_location_rows": 442,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "A named county does not supply a service polygon",
+          "text": "The retained project has 442 broadband-serviceable location rows and no anchor-institution rows. Its Carbon label identifies the proposal in the source but does not establish every eligible address or complete county coverage. The same operator’s other Montana projects remain separate; a company-level report needs a precise project join before its observations can be assigned here."
+        },
+        {
+          "heading": "Keep commitments separate from expenditure",
+          "text": "The baseline records US$3,478,221 of proposed BEAD support and US$1,159,407 of proposed match. Neither figure is an invoice, payment or value of accepted construction. Later financial records should retain the project identity and reporting period, distinguish amendments from disbursements, and explain any scope change instead of making the original proposal appear to be observed spending."
+        },
+        {
+          "heading": "Do not collapse the service chain",
+          "text": "A construction milestone, a completed test, accepted availability and an active subscription answer different questions. A terrestrial quarterly return can be a starting point for that chain only if its actual contents establish the claimed step for this cohort. Code 50 and the estimated dates are baseline descriptors, not proof of service performance, household adoption or affordability."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4689, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4689, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4693",
+        "CM61-BEAD-MT-4692",
+        "CM61-BEAD-MT-4691"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "3b11966c2bfd3a553a5879c938698c72ecf9ab747b237f37d4a0dbaf2ab822d2"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4645",
+      "slug": "mt-4645",
+      "route": "/atlas/projects/montana-bead/mt-4645/",
+      "title": "Triangle / Hill location-cohort broadband project",
+      "source_name": "Triangle Communications - Hill - 1",
+      "answer": "Hill-1 is Triangle’s 388-location proposal. It must remain separate from Hill-2, which carries 21 anchor-institution rows and no broadband-location rows.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4645",
+        "uei": "KVGRDKXST245",
+        "legal_name": "TRIANGLE COMMUNICATION SYSTEM, INC",
+        "csv_row": 25,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "433cbe0a5ca531d62f86993d244d502f81baca5f98e02f18506c15becf45a353",
+        "reconciliation_record_sha256": "7e2690e62aced579b375c2cf1797a5758d59ae0b904861c3245e2919cbdcb425",
+        "subgrantee_record_sha256": "8b3047921b76d029c395287a947354f83e78f9e1e5aba12ddcab61812cdf4394"
+      },
+      "proposal": {
+        "bead_support_usd": 599573,
+        "subgrantee_match_usd": 199858,
+        "broadband_serviceable_location_rows": 388,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "71"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Two Hill projects use different units",
+          "text": "The Hill-1 baseline contains 388 broadband-serviceable location rows and no anchor-institution rows. Triangle’s Hill-2 project shares the UEI but has the inverse kind of inventory: zero location rows and 21 anchor rows. These are not duplicate entries or successive observations of one denominator. Preserve both project IDs and their distinct recipients in later reporting."
+        },
+        {
+          "heading": "Compare finance only after aligning the unit",
+          "text": "This proposal carries US$599,573 of BEAD support and US$199,858 of match. Hill-2’s smaller proposed amounts are not evidence that it is cheaper per household, because its cohort is institutions rather than household-location rows. A defensible cost comparison needs actual eligible expenditure, service scope and an appropriate unit, not a ratio across incompatible proposal inventories."
+        },
+        {
+          "heading": "Technology and progress remain explicit unknowns",
+          "text": "The source retains raw code 71 here, while Hill-2’s technology list is empty. Do not fill the other project’s missing code from this one, or infer a common construction schedule because the names and operator match. A completed terrestrial return must identify Hill-1 and its actual period, then separately establish tests, acceptance and any observed use for the 388-row cohort."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4645, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4645, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4678"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "3fa9685c3f48054bfea2ec558f5793baf49d293b60ae0808518734119c54f040"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4256",
+      "slug": "mt-4256",
+      "route": "/atlas/projects/montana-bead/mt-4256/",
+      "title": "Inland MT / Pondera broadband project",
+      "source_name": "Inland MT- Pondera- 1",
+      "answer": "The Pondera proposal is a distinct Inland MT project with 561 location rows. Its identity is not implied by the operator’s other county-labelled proposals.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4256",
+        "uei": "FBU3ABAM3KE7",
+        "legal_name": "INLAND MT LLC",
+        "csv_row": 26,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "7a72571106aa5ccebbeeb47e0ecf9b3d24c53a0411d80eccfba0f03f0c0388fb",
+        "reconciliation_record_sha256": "021f9256d6c6ee82d59eae85586ded9709a8ded3a4a37e406cbe8782af2586ce",
+        "subgrantee_record_sha256": "96ad631e35dde7eb33237ec32398a7cb8c67a4018fe92ddb7d192cdefd90473f"
+      },
+      "proposal": {
+        "bead_support_usd": 7807654,
+        "subgrantee_match_usd": 2602552,
+        "broadband_serviceable_location_rows": 561,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "71"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Keep the Pondera inventory intact",
+          "text": "The retained baseline assigns 561 broadband-serviceable location rows and no anchor-institution rows to this project. Inland’s Rosebud, Lewis and Clark, and Cascade/Fergus projects share the legal entity but carry separate IDs and inventories. A later report that names only Inland MT cannot establish which Pondera locations were included, excluded, tested or available during its reporting period."
+        },
+        {
+          "heading": "Track finance through project-specific documents",
+          "text": "The proposal records US$7,807,654 of BEAD support and US$2,602,552 of match. These are a starting point for the financial chronology, not proof of money spent or facilities accepted. Executed award terms, amendments and payments should retain this project ID and their effective scope before changing the account. Operator-wide capital expenditure is not a substitute."
+        },
+        {
+          "heading": "A shared raw code is not shared performance",
+          "text": "Code 71 also appears in other Inland proposals, but that does not establish equivalent engineering conditions, speeds or reliability. The terrestrial reporting designation directs attention to completed project returns and tests. An actual service or adoption claim still needs the same eligible cohort, a defined observation period and a numerator that does not borrow outcomes from another Inland project."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4256, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4256, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4685",
+        "CM61-BEAD-MT-4648",
+        "CM61-BEAD-MT-4261"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "be7bc573eb94a965f9c809749d9897337bbe1d17915cfb3ddce2498afffb6871"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4261",
+      "slug": "mt-4261",
+      "route": "/atlas/projects/montana-bead/mt-4261/",
+      "title": "Inland MT / Cascade and Fergus broadband project",
+      "source_name": "Inland MT- Cascade and Fergus Counties",
+      "answer": "The combined Cascade-and-Fergus source label identifies one project with 2,894 location rows. Two county names do not create two independently countable projects.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4261",
+        "uei": "FBU3ABAM3KE7",
+        "legal_name": "INLAND MT LLC",
+        "csv_row": 27,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "8f0343fdb59bd3e30aaf85147acbb3db373f1483777c206f97aab6b9dd25e55a",
+        "reconciliation_record_sha256": "d6fbc1351a305bb3975f35d81d606b56a246d1a681aedd376c0d31c95a1c0ea6",
+        "subgrantee_record_sha256": "96ad631e35dde7eb33237ec32398a7cb8c67a4018fe92ddb7d192cdefd90473f"
+      },
+      "proposal": {
+        "bead_support_usd": 43394500,
+        "subgrantee_match_usd": 39546500,
+        "broadband_serviceable_location_rows": 2894,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "71"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "One project spans a two-name source label",
+          "text": "The baseline assigns a single project ID to the Cascade-and-Fergus-labelled proposal, with 2,894 broadband-serviceable location rows and no anchor rows. This is one eligible project identity, not two projects inferred from the names. The record does not allocate the cohort between counties or provide a verified polygon; neither allocation should be invented for a local comparison."
+        },
+        {
+          "heading": "Keep the large financing account bounded",
+          "text": "Proposed BEAD support is US$43,394,500 with US$39,546,500 of match. These amounts are not payments or accepted expenditure, and their size does not establish more reliable service than Inland’s smaller proposals. Later records need the same project ID, executed scope and reporting period. Splitting the amounts between counties without an explicit source allocation would change the evidence."
+        },
+        {
+          "heading": "Do not borrow a Cascade result from another operator",
+          "text": "Spectrum and KDS-labelled proposals also use Cascade in their names, but they are different projects and entities. A county-wide construction announcement cannot resolve this project’s condition without an exact scope join. The terrestrial designation and raw code 71 remain baseline fields; completed returns, testing, acceptance and actual subscriptions must identify this combined project and a compatible cohort."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4261, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4261, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4685",
+        "CM61-BEAD-MT-4648",
+        "CM61-BEAD-MT-4256"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "dc93e5073fc0406fa6b80f54fbfd5ea33ae1aa4ba3bfa4e062b081528a5330b5"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4246",
+      "slug": "mt-4246",
+      "route": "/atlas/projects/montana-bead/mt-4246/",
+      "title": "Visionary / Whitehall broadband project",
+      "source_name": "VCN-BEAD-Whitehall",
+      "answer": "The VCN-BEAD-Whitehall label is joined to Visionary Communications and a proposal with 758 location rows plus one anchor row. Three raw codes do not define its engineering mix.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4246",
+        "uei": "T6NTQ7J74C95",
+        "legal_name": "VISIONARY COMMUNICATIONS LLC",
+        "csv_row": 28,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "9290a0e70417d40483ada00c4c99b321d44fc036c85c3526399e6821dd666202",
+        "reconciliation_record_sha256": "96e6faf881339c25eea735c08544ac6b6417db1e5edcd059a5a75e17f0ddb3d4",
+        "subgrantee_record_sha256": "721faa11e064637c39666f9f311db6f0fe93200cba52663dc025ff39eeb664e2"
+      },
+      "proposal": {
+        "bead_support_usd": 828823,
+        "subgrantee_match_usd": 169231,
+        "broadband_serviceable_location_rows": 758,
+        "community_anchor_institution_rows": 1,
+        "raw_technology_codes": [
+          "71",
+          "72",
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Connect the abbreviation to its retained entity",
+          "text": "The source name is “VCN-BEAD-Whitehall”; the retained subgrantee is VISIONARY COMMUNICATIONS LLC. The UEI and project ID connect those labels without requiring an inferred corporate structure. Its 758 broadband-serviceable location rows and one anchor-institution row are separate inventories, and Whitehall in the name does not establish a municipal boundary or complete local coverage."
+        },
+        {
+          "heading": "Preserve the exact funding proposal",
+          "text": "The baseline records US$828,823 of BEAD support and US$169,231 of match. No conclusion about unusual efficiency or a funding exception follows from those figures alone. The relevant follow-up is the executed award and eligible scope, followed by dated payments and accepted work. Comparing this proposal’s cost per row with another project would require aligned units and actual expenditure."
+        },
+        {
+          "heading": "Three codes are not three delivered networks",
+          "text": "The technology list contains raw codes 71, 72 and 50. It does not allocate the location or anchor inventory among them, establish redundant connections or prove that three networks are operating. A completed terrestrial return should identify the schema and the work performed for this project. Institution acceptance, location availability and subscriptions remain distinct claims with separate denominators and periods."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4246, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4246, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "991f70c948f5f9743363e032643c33f612f3d4a8d2d08bebf4f8ec5f41f1bd94"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4218",
+      "slug": "mt-4218",
+      "route": "/atlas/projects/montana-bead/mt-4218/",
+      "title": "Ziply Fiber Pacific / Montana proposal",
+      "source_name": "Ziply Fiber Pacific, LLC",
+      "answer": "This is the project attached to the Pacific legal entity and UEI. Similar branding does not merge it with Ziply Fiber of Montana's separate project.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4218",
+        "uei": "H14NYL2SZJF9",
+        "legal_name": "ZIPLY FIBER PACIFIC, LLC",
+        "csv_row": 29,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "6606d7ed2f18f95e1d8ebce2056d23ad344156cd8b7b1e9acddc5f7855b58bd1",
+        "reconciliation_record_sha256": "af7347423a2498266f4c8366b948a0ca9920fa53d27f41fdc820828c0fa41355",
+        "subgrantee_record_sha256": "3d6bd58253aeea42d5570414bf474175a03480969e0c3575e27950c12e456a69"
+      },
+      "proposal": {
+        "bead_support_usd": 1823196,
+        "subgrantee_match_usd": 5551078,
+        "broadband_serviceable_location_rows": 686,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Entity and project remain separate keys",
+          "text": "The baseline associates 686 broadband-serviceable location rows and no anchor-institution rows with this project. The legal name, UEI and project ID identify its proposal, but the name alone does not establish a municipality or service-area polygon. Keep the project distinct from CM61-BEAD-MT-4206, whose different legal entity and UEI carry a separate 214-location cohort. The shared Ziply name does not authorize consolidation."
+        },
+        {
+          "heading": "Match exceeds support, not proof of investment",
+          "text": "The proposed match of US$5,551,078 exceeds the US$1,823,196 of proposed BEAD support. That arithmetic describes a financing plan, not money invested or an accepted network. Its significance depends on executed funding terms, eligible costs, actual expenditure and the same project scope. Neither the match ratio nor a comparison with the other Ziply row establishes cost efficiency or a service benefit."
+        },
+        {
+          "heading": "Scope before a service claim",
+          "text": "The source retains raw technology code 50 and a false tribal-land-intersection flag. Neither establishes a complete engineering design, a mapped legal boundary or that construction has started. The terrestrial reporting designation points toward quarterly, testing, monitoring, reimbursement and closeout evidence. Each later return must preserve the Pacific entity and this project ID before it can change the dossier's proposal-stage account."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4218, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4218, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "7f51450e8d86b6678de2405e8e68effdfc4af18db44870357c8b7881fa4683d9"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4206",
+      "slug": "mt-4206",
+      "route": "/atlas/projects/montana-bead/mt-4206/",
+      "title": "Ziply Fiber of Montana / Montana proposal",
+      "source_name": "Ziply Fiber of Montana LLC",
+      "answer": "This proposal's 214-location cohort belongs to its own legal entity and project identity. It is not a second label for the Pacific-entity proposal.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4206",
+        "uei": "ZXZSJJQPHEB9",
+        "legal_name": "ZIPLY FIBER OF MONTANA LLC",
+        "csv_row": 30,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "59d815f2a370160b712055e9a3ec99fbe9eb9801c2c93c8befe8d86f72f61f72",
+        "reconciliation_record_sha256": "e0e6248fd62b09a8fd458480ddc7ce65583004c0a6a3d103f1e9446b6040c5e1",
+        "subgrantee_record_sha256": "94d2b80c16bab619831b493e9f5f1a4ac2b3fb466e615ff6c2fd5217b729b391"
+      },
+      "proposal": {
+        "bead_support_usd": 2234435,
+        "subgrantee_match_usd": 744811,
+        "broadband_serviceable_location_rows": 214,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "A distinct entity and denominator",
+          "text": "The retained project contains 214 broadband-serviceable location rows and no anchor-institution rows. The different UEI is a meaningful identity boundary from Ziply Fiber Pacific, even though the two names share a brand. A financial or service return for the Pacific entity cannot update this dossier merely because it mentions Ziply. An explicit project join is required; neither company name supplies a verified municipal geography."
+        },
+        {
+          "heading": "Separate funding accounts",
+          "text": "The proposal records US$2,234,435 of BEAD support and US$744,811 of match. Those figures must not be blended with the Pacific entity's support or match before establishing a legitimate combined scope. They do not demonstrate payment, built capacity or customer receipt. A later award amendment could change the account, but the dated proposal baseline should remain available rather than being silently replaced."
+        },
+        {
+          "heading": "A reporting designation is not a return",
+          "text": "Raw technology code 50, the terrestrial reporting designation and the estimated schedule describe the baseline, not performed construction or service. The false tribal-land-intersection flag is not evidence of every applicable permission. A completed quarterly report still needs an actual reporting period, the project ID and compatible eligible locations. Testing, acceptance and observed subscriptions must then be identified separately."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4206, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4206, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "2d22660e14c11426bde3dc66396e533d129fb6eed57060963b547f72f39871b1"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4149",
+      "slug": "mt-4149",
+      "route": "/atlas/projects/montana-bead/mt-4149/",
+      "title": "KDS / Cascade CBG-1 broadband project",
+      "source_name": "KDS_Cascade_County_Fber_Project-CBG_1",
+      "answer": "This KDS-labelled proposal is bound to Bialeki Holdings and a 36-location inventory. The label CBG-1 is retained without inventing a Census geography.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4149",
+        "uei": "FEHNV13B9994",
+        "legal_name": "BIALEKI HOLDINGS LLC",
+        "csv_row": 31,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "9c2b455e3a488d8adf2f509a0d0a39f7917cb77d625a01412d0ba1090eaea87d",
+        "reconciliation_record_sha256": "05ac4d7770b68a290843fee19124b37950c9434687c400233747f0be4b7cf572",
+        "subgrantee_record_sha256": "0fb0b2adb6f882ccaeabdbf34527ea4cbc0ebc6fe86d52a7c550ffecbbd0f7cc"
+      },
+      "proposal": {
+        "bead_support_usd": 331803,
+        "subgrantee_match_usd": 110601,
+        "broadband_serviceable_location_rows": 36,
+        "community_anchor_institution_rows": 0,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Use the legal entity without expanding the abbreviation",
+          "text": "The source name is “KDS_Cascade_County_Fber_Project-CBG_1,” while the retained legal entity is BIALEKI HOLDINGS LLC. The project ID and UEI bind those names. This account preserves the source spelling and CBG-1 label without deciding what the abbreviation denotes or mapping it to a Census unit. The baseline has 36 location rows and no anchor rows."
+        },
+        {
+          "heading": "A small proposal still needs executed finance",
+          "text": "The recorded financing is US$331,803 of BEAD support and US$110,601 of match. Its size does not prove that work has been purchased, completed or accepted. A later payment needs the CBG-1 project identity, eligible work and date; a document for the same entity’s CBG-2 project cannot change this financial account without a documented allocation."
+        },
+        {
+          "heading": "Keep CBG-1 and CBG-2 distinct",
+          "text": "The same UEI also holds CBG-2, but that proposal has a different location count and includes anchor institutions. A combined report must preserve those project-level differences before it can support either dossier. Raw code 50 and the terrestrial reporting designation do not establish actual performance. The next useful evidence connects an exact reporting period to tests, accepted availability and, separately, any actual use."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4149, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4149, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4212"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "3fc6e7d4397c0084b552245e926886ae0a73882bad62fa98db8945f22ac473ff"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4212",
+      "slug": "mt-4212",
+      "route": "/atlas/projects/montana-bead/mt-4212/",
+      "title": "KDS / Cascade CBG-2 broadband project",
+      "source_name": "KDS_Cascade_County_Fber_Project-CBG_2",
+      "answer": "This is Bialeki Holdings’ separately identified KDS CBG-2 proposal, with 76 location rows and three anchor rows. It is not a second observation of the CBG-1 cohort.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4212",
+        "uei": "FEHNV13B9994",
+        "legal_name": "BIALEKI HOLDINGS LLC",
+        "csv_row": 32,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "7ee2c20a9defea2c28defcdd43e64a3cbce4a30af6c971614be75284e738c391",
+        "reconciliation_record_sha256": "56c78417861d18d79c5566832991ebcfdb7befc49ee97cf0ce3bc6880e1b0dd9",
+        "subgrantee_record_sha256": "0fb0b2adb6f882ccaeabdbf34527ea4cbc0ebc6fe86d52a7c550ffecbbd0f7cc"
+      },
+      "proposal": {
+        "bead_support_usd": 692479,
+        "subgrantee_match_usd": 230827,
+        "broadband_serviceable_location_rows": 76,
+        "community_anchor_institution_rows": 3,
+        "raw_technology_codes": [
+          "50"
+        ],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "Retain the mixed recipient inventory",
+          "text": "The retained project contains 76 broadband-serviceable location rows and three community-anchor-institution rows. Those units must not be converted into 79 households or merged with CBG-1’s separate 36-row cohort. The source label “CBG_2” is not sufficient evidence of a particular Census geography or an exact service polygon; the project identity remains the reliable join key."
+        },
+        {
+          "heading": "Do not pool the two project budgets",
+          "text": "Proposed BEAD support is US$692,479 and match is US$230,827. These figures belong to CBG-2, even though BIALEKI HOLDINGS LLC is also the retained entity for CBG-1. Later financial returns should show the project allocation, executed scope and dated expenditure. A pooled company total would obscure whether money or accepted work relates to the location cohort, the anchors or the other project."
+        },
+        {
+          "heading": "Institution service is not household adoption",
+          "text": "A useful terrestrial return should distinguish tests and acceptance for the three anchors from service availability at the 76 location rows. Subscriptions, retention and affordability require their own observations and denominators. Code 50 and the source’s unflagged tribal field do not establish those results or replace mapped scope and applicable permission records. Preserve both projects without counting an additional operator-level parent."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4212, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4212, with an actual reporting period and the same eligible-location and any anchor-institution cohorts.",
+        "Separate service-availability, testing and acceptance records; any adoption claim additionally needs observed subscriptions, an eligible denominator and a reporting period."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4149"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "68950ade89f5ff0fcef222c24839713851b320a802c608e1ab12fd2ef13472dd"
+    },
+    {
+      "record_id": "CM61-BEAD-MT-4678",
+      "slug": "mt-4678",
+      "route": "/atlas/projects/montana-bead/mt-4678/",
+      "title": "Triangle / Hill anchor-institution project",
+      "source_name": "Triangle Communications - Hill - 2",
+      "answer": "This proposal has an anchor-institution cohort, not a household-location cohort. Its zero broadband-location count must not erase the project or turn its 21 anchor rows into households.",
+      "authored_date": "2026-09-27",
+      "reviewer": "Codex (owner-authorized AI author and reviewer; not independent)",
+      "review_state": "Accepted as a bounded proposal-stage reader dossier; not an operating-outcome admission",
+      "policy_id": "OWNER-AUTHORIZED-AI-REVIEW-2026-09-25",
+      "source_identity": {
+        "project_id": "CM61-BEAD-MT-4678",
+        "uei": "KVGRDKXST245",
+        "legal_name": "TRIANGLE COMMUNICATION SYSTEM, INC",
+        "csv_row": 33,
+        "source_sha256": "5339c206b44c6d7c6196869d5945318ce05a1046fa772ac3e4f2f2839fbe98d2",
+        "project_record_sha256": "1bebb817153f45f96737c5bb1a495e9c5bf1668783646be481248460e14888d5",
+        "reconciliation_record_sha256": "bafe4a2657698f9f6c795cdb65f46720a8930a8204bcaacc62cde0c6895332bb",
+        "subgrantee_record_sha256": "8b3047921b76d029c395287a947354f83e78f9e1e5aba12ddcab61812cdf4394"
+      },
+      "proposal": {
+        "bead_support_usd": 33124,
+        "subgrantee_match_usd": 11042,
+        "broadband_serviceable_location_rows": 0,
+        "community_anchor_institution_rows": 21,
+        "raw_technology_codes": [],
+        "intersects_tribal_land": false,
+        "tribal_consent_field": null,
+        "estimated_subaward_date": "3/4/2026",
+        "estimated_performance_start": "4/3/2026",
+        "estimated_performance_end": "4/2/2030"
+      },
+      "sections": [
+        {
+          "heading": "An anchor-only denominator",
+          "text": "The retained baseline has zero broadband-serviceable location rows and 21 community-anchor-institution rows. These describe different units. A household subscription rate cannot be calculated from this record by dividing by zero, substituting the 21 anchors or borrowing locations from Triangle's Hill-1 project. The zero is a source inventory value; it is not an observed count of users, connected institutions or service outcomes."
+        },
+        {
+          "heading": "Small financing does not imply completion",
+          "text": "The proposal records US$33,124 of BEAD support and US$11,042 in match. Their size does not establish that work is simple, complete or accepted. Any later reimbursement must retain the Hill-2 project ID and identify the work it covers. Comparing this proposal with a household-location project by dollars per row would conflate anchor service with residential service and omit actual scope and accepted expenditure."
+        },
+        {
+          "heading": "Preserve absent technical coding",
+          "text": "The baseline's raw technology-code list is empty; it must remain empty until appropriate source evidence supplies the missing coding. The deployment row's project-type value C is retained separately and is not a substitute for a technology code. Hill-1 shares the operator UEI but is a different project. The lack of a tribal-land flag here is a property of this baseline, not a universal legal or geographic clearance."
+        }
+      ],
+      "next_artifacts": [
+        "Executed subaward and any amendments explicitly naming CM61-BEAD-MT-4678, with scope and effective dates.",
+        "A completed terrestrial quarterly report for CM61-BEAD-MT-4678, retaining its 21-anchor cohort rather than substituting household-location rows.",
+        "Institution-service testing and acceptance records, with period and scope; no household adoption rate may use this zero-location denominator."
+      ],
+      "operating_observations": [],
+      "related_project_ids": [
+        "CM61-BEAD-MT-4645"
+      ],
+      "source_ids": [
+        "source-57g-montana-bead-final-proposal-january-2026",
+        "source-57g-montana-deployment-projects-csv",
+        "source-57g-montana-locations-csv",
+        "source-57g-montana-subgrantees-csv",
+        "source-57g-montana-cai-csv",
+        "source-57f-montana-bead-resource-index-august-2026",
+        "source-57f-montana-leo-quarterly-instructions-june-2026",
+        "source-57e-montana-quarterly-report-instructions-june-2026",
+        "source-57e-montana-project-monitoring-guide-june-2026"
+      ],
+      "sha256": "a5919cf4fe62264e83d600336b0bcba517ac2e9c0247bea6298f7f523b668714"
+    }
+  ]
+}
