@@ -1,3 +1,4 @@
+import {assertOnlyApprovedAnalyticsScripts} from './lib/assert-approved-analytics.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
@@ -50,7 +51,7 @@ for(const article of pack.records){
  }
  if(article.mode==='low-bandwidth'){
    assert(!html.includes('data-reader-contract='),'Compact reading must link to, not embed, the machine contract');
-   assert(!/<script\b/i.test(html),'Compact reading must not require a script');
+   assertOnlyApprovedAnalyticsScripts(html);
    assert(Buffer.byteLength(html)<64000,`Compact HTML exceeds the retained 64 kB target: ${route}`);
    const cssPaths=[...new Set([...html.matchAll(/<link\b[^>]*>/gi)].filter(m=>/\brel="stylesheet"/.test(m[0])).map(m=>m[0].match(/\bhref="([^"]+)"/)?.[1]))];
    let bytes=Buffer.byteLength(html);

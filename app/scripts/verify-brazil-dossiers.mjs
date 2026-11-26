@@ -1,3 +1,4 @@
+import {assertOnlyApprovedAnalyticsScripts} from './lib/assert-approved-analytics.mjs';
 import assert from 'node:assert/strict';
 import canonicalEdition from '../src/data/v1-public-reference-edition.json' with {type:'json'};
 import {assertCanonicalSitemapEntry} from './lib/assert-canonical-sitemap-entry.mjs';
@@ -43,6 +44,6 @@ for(const r of brazilDossiers.records){
  assert.equal(catalog.filter(c=>c.id===r.record_id).length,1);assert.equal(catalog.find(c=>c.id===r.record_id).route,r.route);
  const page=Math.floor(catalog.findIndex(c=>c.id===r.record_id)/40)+1;assert((await read(`/reference/explore/${page}/index.html`)).includes(`href="${r.route}"`));
  assert((await read(`/atlas/${r.kind==='Project'?'projects':'places'}/index.html`)).includes(`data-brazil-index="${r.record_id}"`));
- assert(Buffer.byteLength(html)<64000);assert(!/<script\b/i.test(html));
+ assert(Buffer.byteLength(html)<64000);assertOnlyApprovedAnalyticsScripts(html);
 }
 console.log('Brazil production verification passed: full articles, exact dates and source scopes, export, catalog, sitemap, Atlas hubs and retained historical determinations.');

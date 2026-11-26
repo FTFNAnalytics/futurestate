@@ -1,3 +1,4 @@
+import {assertOnlyApprovedAnalyticsScripts} from './lib/assert-approved-analytics.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
@@ -79,7 +80,7 @@ for(const d of data.montana_dossiers.records){
  const page=Math.floor(catalog.records.findIndex(r=>r.id===d.record_id)/40)+1;assert((await read(`dist/reference/explore/${page}/index.html`)).includes(`href="${d.route}"`));
  for(const artifact of d.next_artifacts)assert(text.includes(artifact));
  if(d.record_id==='CM61-BEAD-MT-4678')assert(text.includes('None recorded in the retained baseline')&&text.includes('21-anchor cohort')&&text.includes('zero-location denominator'));
- assert(Buffer.byteLength(html)<64000);assert(!/<script\b/i.test(html));
+ assert(Buffer.byteLength(html)<64000);assertOnlyApprovedAnalyticsScripts(html);
 }
 for(const d of [...data.portfolio.canonical,...data.portfolio.named_places,...data.portfolio.new_editorial_candidates]){
  const html=await read(`dist${d.route}index.html`),text=decodeHtmlText(html);
