@@ -1,3 +1,4 @@
+import {assertOnlyApprovedAnalyticsScripts} from './lib/assert-approved-analytics.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {parse} from 'parse5';
@@ -25,7 +26,7 @@ for(const r of nevadaDossiers.records){
  assert.equal(catalog.filter(c=>c.id===r.record_id).length,1);assert.equal(catalog.find(c=>c.id===r.record_id).route,r.route);
  const page=Math.floor(catalog.findIndex(c=>c.id===r.record_id)/40)+1;assert((await read(`/reference/explore/${page}/index.html`)).includes(`href="${r.route}"`));
  assert((await read(`/atlas/${r.kind==='Project'?'projects':'places'}/index.html`)).includes(`data-nevada-index="${r.record_id}"`));
- assert(Buffer.byteLength(html)<64000);assert(!/<script\b/i.test(html));
+ assert(Buffer.byteLength(html)<64000);assertOnlyApprovedAnalyticsScripts(html);
 }
 for(const route of ['/atlas/projects/nevada-lithium-to-qualified-material/','/atlas/places/nevada-lithium-battery-materials-corridor/']){const dom=parse(await read(`${route}index.html`)),panels=all(dom,n=>attr(n,'data-nevada-current-links')!==undefined);assert.equal(panels.length,1);for(const r of nevadaDossiers.records)assert(all(panels[0],n=>n.tagName==='a').some(n=>attr(n,'href')===r.route));}
 console.log('Nevada production verification passed: exact three full articles, source locators/dates, citations, export, catalog, sitemap, parent links and 103 retained historical determinations.');

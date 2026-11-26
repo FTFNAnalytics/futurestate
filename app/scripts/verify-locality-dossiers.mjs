@@ -1,3 +1,4 @@
+import {assertOnlyApprovedAnalyticsScripts} from './lib/assert-approved-analytics.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {parse} from 'parse5';
@@ -19,7 +20,7 @@ for(const r of data.records){
  for(const value of [r.answer,r.scope,r.ai_review_date,r.sha256,r.next_artifact,...r.sections.flatMap(s=>[s.heading,s.text]),...r.timeline.flatMap(t=>[t.date,t.kind,t.text])])assert(body.includes(value),`${r.record_id}: missing current article text`);
  const links=all(article,n=>n.tagName==='a').map(n=>attr(n,'href'));for(const source of r.source_checks){assert(links.includes(source.url));for(const value of [source.title,source.locator,source.access,source.recorded_check_date])assert(body.includes(value));}
  const old=history.place_system_dossiers.find(o=>o.place_system_dossier_id===r.record_id);assert(text(histories[0]).includes(old.title));assert(text(histories[0]).includes(old.reader_narrative));assert(text(histories[0]).includes(old.source_factual_nucleus));
- assert(html.includes('class="skip-link" href="#main-content"'));assert(html.includes('tabindex="-1"'));assert(!/<script\b/i.test(html));const ids=all(dom,n=>attr(n,'id')!==undefined).map(n=>attr(n,'id'));assert.equal(ids.length,new Set(ids).size);for(const href of links.filter(h=>h.startsWith('#')))assert(ids.includes(href.slice(1)));
+ assert(html.includes('class="skip-link" href="#main-content"'));assert(html.includes('tabindex="-1"'));assertOnlyApprovedAnalyticsScripts(html);const ids=all(dom,n=>attr(n,'id')!==undefined).map(n=>attr(n,'id'));assert.equal(ids.length,new Set(ids).size);for(const href of links.filter(h=>h.startsWith('#')))assert(ids.includes(href.slice(1)));
  assert(places.includes(`href="${r.route}"`));assert(hub.includes(`href="${r.route}"`));assert(sitemap.includes(`<loc>https://ftfn.io${r.route}</loc>`));assert.equal(catalog.filter(c=>c.id===r.record_id).length,1);assert.equal(catalog.find(c=>c.id===r.record_id).title,r.title);
  const page=Math.floor(readerCatalog.findIndex(c=>c.id===r.record_id)/40)+1;assert((await read(`/reference/explore/${page}/index.html`)).includes(`href="${r.route}"`));
  for(const related of r.related_record_ids)assert(links.includes(data.records.find(d=>d.record_id===related).route));

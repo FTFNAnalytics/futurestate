@@ -6,6 +6,7 @@ import CurrentOperationsNotice from '../review/CurrentOperationsNotice.astro';
 import CurrentGapReviewNotice from '../review/CurrentGapReviewNotice.astro';
 import BacklogResearchNotice from '../review/BacklogResearchNotice.astro';
 import PortfolioDecisionNotice from '../review/PortfolioDecisionNotice.astro';
+import GoogleAnalytics from '../GoogleAnalytics.astro';
 
 interface Props {
   title?: string;
@@ -29,6 +30,7 @@ const socialImageUrl = new URL("/og.png", Astro.url).href;
 <!doctype html>
 <html lang={lang}>
   <head>
+    <GoogleAnalytics />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />

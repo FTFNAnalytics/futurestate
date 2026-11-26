@@ -1,0 +1,16 @@
+---
+// Keep development-server visits out of the production analytics property.
+const enabled = import.meta.env.PROD;
+---
+
+{enabled && (
+  <>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-8DR04KSE6W"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8DR04KSE6W');
+    </script>
+  </>
+)}

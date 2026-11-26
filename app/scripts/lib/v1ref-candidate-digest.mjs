@@ -1407,6 +1407,10 @@ const integrationFiles = [
   "src/components/review/RegistryHub.astro",
   "src/components/review/RegistryDetail.astro",
   "src/components/layout/BaseLayout.astro",
+  "src/components/GoogleAnalytics.astro",
+  "scripts/verify-google-analytics.mjs",
+  "scripts/lib/assert-approved-analytics.mjs",
+  "scripts/test-google-analytics-policy.mjs",
   "public/og.png",
 ];
 
