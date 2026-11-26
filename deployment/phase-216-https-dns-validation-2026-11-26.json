@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "recorded_date": "2026-11-26",
+  "authority": "User requested HTTPS and remaining release checks, then a prompt for Hostinger's DNS agent when ready",
+  "status": "Certificate request paused awaiting two DNS-01 TXT records; website cutover not ready",
+  "host": "168.231.74.70",
+  "certificate_client": "Existing Certbot 2.9.0 with existing production ACME account",
+  "certificate_name": "ftfn-io",
+  "domains": ["ftfn.io", "www.ftfn.io"],
+  "challenge_method": "dns-01",
+  "validation_submitted": false,
+  "certificate_issued": false,
+  "pending_exec_session_id": 81350,
+  "remote_command_timeout_seconds": 1800,
+  "session_boundary": "Real tokens from this pending request only. Reconcile the live session before continuing. If the timeout or cancellation ends this request, regenerate and re-verify challenges rather than assuming these values remain valid.",
+  "temporary_dns_records_to_add": [
+    {
+      "type": "TXT",
+      "relative_name": "_acme-challenge",
+      "fqdn": "_acme-challenge.ftfn.io",
+      "value": "vCEh2FT1EeobMAMsozS3u7S2oFFIN7LQV59Y8xByfDI",
+      "requested_ttl": 300
+    },
+    {
+      "type": "TXT",
+      "relative_name": "_acme-challenge.www",
+      "fqdn": "_acme-challenge.www.ftfn.io",
+      "value": "eiF8PAcbsxo8gxNnezLMfp4x20e-Y9aXAVkuUWywYvI",
+      "requested_ttl": 300
+    }
+  ],
+  "dns_edit_boundary": "Append these exact values only. Preserve existing values at either challenge name. Do not change A, AAAA, www CNAME, MX, SPF, DKIM, DMARC, verification records, nameservers or any other records. Capture a DNS snapshot/export first. No DNS change has been made by Codex.",
+  "user_supplied_dns_snapshot": {
+    "provided_date": "2026-11-26",
+    "scope": "Eight-record table supplied by owner; selected values independently matched in DNS queries. Not a provider-generated full-zone snapshot ID.",
+    "records": [
+      {"type": "CNAME", "name": "www", "content": "ghs.googlehosted.com", "ttl": 14400},
+      {"type": "TXT", "name": "@", "content": "v=spf1 include:_spf.google.com ~all", "ttl": 14400},
+      {"type": "MX", "name": "@", "priority": 1, "content": "aspmx.l.google.com", "ttl": 14400},
+      {"type": "MX", "name": "@", "priority": 10, "content": "alt3.aspmx.l.google.com", "ttl": 14400},
+      {"type": "MX", "name": "@", "priority": 10, "content": "alt4.aspmx.l.google.com", "ttl": 14400},
+      {"type": "MX", "name": "@", "priority": 5, "content": "alt1.aspmx.l.google.com", "ttl": 14400},
+      {"type": "MX", "name": "@", "priority": 5, "content": "alt2.aspmx.l.google.com", "ttl": 14400},
+      {"type": "A", "name": "@", "content": "198.49.23.145", "ttl": 14400}
+    ]
+  },
+  "preflight_checked_at": "2026-11-26T17:08:08.531Z",
+  "public_nginx_config_sha256": "1399bc2f8b407165d63314285362d0011d1993358d7544a195c448a4492394dc",
+  "public_nginx_master_pid": 3560039,
+  "public_nginx_reloaded": false,
+  "new_evidence_receipts_created": false,
+  "new_full_validation_run": false,
+  "website_dns_cutover_ready": false,
+  "public_launch_executed": false,
+  "remaining_checks": [
+    "Verify both exact TXT values on authoritative DNS before continuing this certificate request",
+    "Verify certificate identity, validity, key correspondence and TLS chain",
+    "Complete independent due Amtrak named-asset reliability and NNSA recurring-rate operations and required validation of any changed candidate",
+    "Complete browser-managed download-save check after browser service recovery",
+    "Test dedicated HTTPS configuration, scoped activation/withdrawal and canonical redirects while retaining the conditional release boundary",
+    "Configure and test FTFN certificate renewal; a manual DNS request alone does not establish automatic renewal",
+    "Preserve full provider DNS snapshot and deliver the final website-only cutover prompt only when ready"
+  ]
+}

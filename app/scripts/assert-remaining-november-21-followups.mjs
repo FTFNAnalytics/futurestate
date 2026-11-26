@@ -63,7 +63,7 @@ for(const mutation of ['rollback','drop_history','redate_authority','wrong_next_
  assert.throws(()=>{assertReceiptControlExport(prior,invalid,'desk');assertReceiptControlExport(slf,invalid,'desk');});
 }
 assert.equal(cycle.records.length,13);assert.equal(cycle.records.map(r=>projectEvidenceRecord(r)).filter(r=>r.receipt_id&&r.decision_date).length,13);
-for(const id of ['60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY','60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE']){assert.equal(currentDecisionFor({cycle_item_id:id}).decision_date,'2026-10-28');assert.equal(currentDecisionFor({cycle_item_id:id}).next_check_date,'2026-11-25');}
+for(const id of ['60-CYCLE-AMTRAK-NAMED-ASSET-RELIABILITY','60-CYCLE-NNSA-RECURRING-QUALIFIED-RATE']){assert.equal(currentDecisionFor({cycle_item_id:id},evidenceReviewDate).decision_date,'2026-10-28');assert.equal(currentDecisionFor({cycle_item_id:id},evidenceReviewDate).next_check_date,'2026-11-25');}
 await assert.rejects(()=>prepareRemainingFollowups({asOfDate:'2026-11-20'}));
 await assert.rejects(()=>prepareRemainingFollowups({asOfDate:evidenceReviewDate,ledger:{...ledger,receipts:ledger.receipts.map((r,i)=>i===0?{...r,next_check_date:'2026-12-31'}:r)}}));
 for(const mutation of [{named_file_ids:['invented']},{decision_date:'2026-11-22'},{follow_up_scheduled_date:'2026-11-21'},{decision_status:'material_change'}]){const reviews=structuredClone(remainingReviews);Object.assign(reviews[0],mutation);await assert.rejects(()=>prepareRemainingFollowups({asOfDate:evidenceReviewDate,reviews}));}

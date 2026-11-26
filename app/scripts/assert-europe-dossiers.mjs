@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -24,7 +25,7 @@ for(const mutate of [
  d=>d.phase_60_identity_added=true
 ]){const changed=structuredClone(europeDossiers);mutate(changed);assert.throws(()=>assertEuropeDossiers(changed,reviews));}
 const forged=structuredClone(reviews);forged.launch_authorized=true;assert.throws(()=>assertEuropeDossiers(europeDossiers,forged));
-for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
+for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
 // Retain the post-Europe snapshot; current totals must also include later reviewed cohorts.
 const throughEurope=[...nevadaDossiers.records,...europeDossiers.records];
 const count=(records,kind)=>records.filter(r=>r.kind===kind).reduce((sum,r)=>sum+r.identity_decision.eligible_count,0);

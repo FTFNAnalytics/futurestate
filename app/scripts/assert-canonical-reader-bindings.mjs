@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -32,7 +33,7 @@ const negative=[
  ...['human_review_claimed','fresh_external_source_check','operating_outcomes_admitted','publication_authorized','launch_authorized','phase_216_complete'].map(key=>d=>{d[key]=true;})
 ];
 for(const mutate of negative){const changed=structuredClone(data);mutate(changed);assert.notDeepEqual(changed,data);assert.throws(()=>validateCanonicalReaderBindings(changed));}
-for(const pin of data.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,pin.path);
+for(const pin of data.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,pin.path);
 for(const binding of data.records){
  const article=editorial.records.find(a=>a.record_id===binding.article_record_id),isPlace=article.kind==='Place';
  const idKey=isPlace?'atlas_place_id':'atlas_project_id',project=atlas[isPlace?'places':'projects'].find(p=>p[idKey]===binding.atlas_record_id);

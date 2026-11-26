@@ -34,7 +34,22 @@ const negative=[
 ];
 for(const mutate of negative){const d=structuredClone(data),r=structuredClone(review);mutate(d);assert.notDeepEqual(d,data);resign(d,r);assert.throws(()=>validateRegionalReadings(d,r));}
 for(const k of flags)assert.throws(()=>validateRegionalReadings(data,{...review,[k]:true}));
-for(const pin of review.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,pin.path);
+// The assessed regional narratives retain the exact November 21 ledger, not
+// later additive decisions. Keep the original byte hash and test its snapshot.
+const retainedInputText=(path,raw)=>{
+ if(path!=='src/data/phase-60-current-decisions.json')return raw;
+ const ledger=JSON.parse(raw),receipts=ledger.receipts.filter(r=>r.decision_date<='2026-11-21');
+ assert.equal(receipts.length,21,'Exact assessed ledger cohort required');
+ return JSON.stringify({...ledger,as_of_date:'2026-11-21',receipts},null,2)+'\n';
+};
+for(const pin of review.historical_inputs_retained){
+ const raw=await read(pin.path),retained=retainedInputText(pin.path,raw);
+ assert.equal(createHash('sha256').update(retained).digest('hex'),pin.sha256,pin.path);
+ if(pin.path==='src/data/phase-60-current-decisions.json'){
+  const changed=JSON.parse(raw);changed.receipts[0].next_check_date='2027-01-01';
+  assert.notEqual(createHash('sha256').update(retainedInputText(pin.path,JSON.stringify(changed))).digest('hex'),pin.sha256,'Historical mutations must still fail');
+ }
+}
 const badReview=structuredClone(review);badReview.retained_narratives[0].sha256='0'.repeat(64);assert.throws(()=>validateRegionalReadings(data,badReview));
 for(const r of data.records){
  const place=atlas.places.find(p=>p.atlas_place_id===r.record_id);

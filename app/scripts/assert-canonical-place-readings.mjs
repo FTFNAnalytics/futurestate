@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -56,7 +57,7 @@ const negative=[
 ];
 for(const mutate of negative){const d=structuredClone(data),r=structuredClone(review);mutate(d);assert.notDeepEqual(d,data);resign(d,r);assert.throws(()=>validatePlaceReadings(d,r));}
 for(const k of ['human_review_claimed','independent_review_claimed','fresh_external_source_check','operating_outcomes_admitted','publication_authorized','launch_authorized','phase_216_complete'])assert.throws(()=>validatePlaceReadings(data,{...review,[k]:true}));
-for(const pin of review.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,pin.path);
+for(const pin of review.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,pin.path);
 for(const pin of data.retained_receipts){
  const ledger=structuredClone(currentEvidenceLedger);ledger.receipts.find(r=>r.receipt_id===pin.receipt_id).bounded_finding+=' Changed.';assert.throws(()=>validatePlaceReadings(data,review,{ledger}));
 }
@@ -79,10 +80,14 @@ for(const r of data.records){
 assert.equal(sections,48);assert.equal(sources,55);assert.equal(data.records[2].receipt_ids.length,2,'Retain renewal and later access blocker');
 for(const r of data.records){
  const assigned=placeReadingAssignedGateContexts(r);assert.equal(assigned.length,r.record_id==='119-PLACE-010'?1:r.record_id==='119-PLACE-011'?2:0);
+ const historical=placeReadingAssignedGateContexts(r,{ledger:{...currentEvidenceLedger,as_of_date:'2026-11-25'}});
+ assert(historical.every(({receipt})=>r.receipt_ids.includes(receipt.receipt_id)),'Assessed November place narrative retains its original receipt bindings');
  for(const {receipt} of assigned){
-  assert(r.receipt_ids.includes(receipt.receipt_id));assert(receipt.affected_routes.includes(r.route)&&receipt.affected_record_ids.includes(r.record_id));
+  const capacity=receipt.cycle_item_id==='60-CYCLE-NNSA-ACCEPTED-CAPACITY';
+  assert(r.receipt_ids.includes(capacity?receipt.receipt_id:receipt.prior_receipt_id));assert(receipt.affected_routes.includes(r.route)&&receipt.affected_record_ids.includes(r.record_id));
   assert.equal(receipt.counts_as_cycle_decision,true);assert.notEqual(receipt.cycle_item_id,placeReadingContext(r).cycle_item_id);
-  const capacity=receipt.cycle_item_id==='60-CYCLE-NNSA-ACCEPTED-CAPACITY';assert.equal(receipt.source_checked_date,capacity?'2026-11-21':'2026-10-28');assert.equal(receipt.next_check_date,capacity?'2026-12-21':'2026-11-25');
+  assert.equal(receipt.source_checked_date,capacity?'2026-11-21':'2026-11-26');assert.equal(receipt.next_check_date,capacity?'2026-12-21':'2026-12-26');
+  if(!capacity){assert.equal(receipt.follow_up_scheduled_date,'2026-11-25');assert.equal(receipt.prior_receipt_id,historical.find(x=>x.receipt.cycle_item_id===receipt.cycle_item_id).receipt.receipt_id);}
   const missing=structuredClone(currentEvidenceLedger);missing.receipts=missing.receipts.filter(x=>x.cycle_item_id!==receipt.cycle_item_id);
   assert.deepEqual(placeReadingAssignedGateContexts(r,{ledger:missing}).map(x=>x.receipt.cycle_item_id),assigned.filter(x=>x.receipt.cycle_item_id!==receipt.cycle_item_id).map(x=>x.receipt.cycle_item_id));
   for(const change of [x=>{x.affected_routes=['/unrelated/'];},x=>{x.affected_record_ids=['unrelated'];},x=>{x.cycle_item_id='unrelated';},x=>{x.decision_date='2099-01-01';},x=>{x.source_checked_date='2099-01-01';}]){
@@ -122,4 +127,4 @@ const candidate=JSON.parse(await read('src/data/v1-public-reference-edition.json
 for(const p of ['src/data/canonical-place-readings.json','src/data/canonical-place-reading-reviews.json','src/lib/canonical-place-readings.mjs','src/components/review/CanonicalPlaceReading.astro','scripts/assert-canonical-place-readings.mjs','scripts/verify-canonical-place-readings.mjs','src/content/updates/2026-11-22-canonical-place-readings.json'])assert(candidate.candidate_digest.artifact_paths.includes(p),p);
 assert(candidate.candidate_digest.artifact_paths.includes('src/content/updates/2026-11-22-broadband-place-readings.json'));
 assert(candidate.candidate_digest.artifact_paths.includes('src/content/updates/2026-11-22-amtrak-nnsa-system-readings.json'));
-console.log('Canonical place/context source checks passed: 8 readings (6 places, 2 excluded contexts), 48 complete sections, 55 retained source checks and 13 receipt pins; '+negative.length+' rehashed invalid editions plus review, runtime and receipt mutations rejected. Preceding six accounts/assessments exact; three additional assigned gates keep October/November dates and November/December appointments separate from the related-only Starlink companion. 100/70 eligibility unchanged; no new inspections, outcomes or early November 25 review.');
+console.log('Canonical place/context source checks passed: 8 readings (6 places, 2 excluded contexts), 48 complete sections, 55 retained source checks and 13 receipt pins; '+negative.length+' rehashed invalid editions plus review, runtime and receipt mutations rejected. Preceding six accounts/assessments exact; three assigned gates preserve historical bindings while reliability/rate expose actual November 26 context and December 26 appointments. 100/70 eligibility unchanged; no narrative rewrite, outcome admission or backdated November 25 review.');
