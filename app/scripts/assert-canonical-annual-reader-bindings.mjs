@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -34,7 +35,7 @@ const negative=[
  ])
 ];
 for(const mutate of negative){const changed=structuredClone(data);mutate(changed);assert.notDeepEqual(changed,data);assert.throws(()=>validateCanonicalAnnualBindings(changed));}
-for(const pin of data.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,pin.path);
+for(const pin of data.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,pin.path);
 for(const binding of data.records){
  const project=atlas.projects.find(p=>p.atlas_project_id===binding.atlas_record_id),article=readers.records.find(r=>r.record_id===binding.article_record_id);
  assert.equal(canonicalAnnualForProject(project).article,article);

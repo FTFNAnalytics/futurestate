@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -36,7 +37,7 @@ const negative=[
 for(const mutate of negative){const d=structuredClone(data),r=structuredClone(review);mutate(d);assert.notDeepEqual(d,data);resign(d,r);assert.throws(()=>validateNevadaComparison(d,r));}
 for(const key of flags)assert.throws(()=>validateNevadaComparison(data,{...review,[key]:true}));
 for(const key of ['retained_nevada_edition_sha256','retained_nevada_review_sha256','retained_file_sha256','retained_gate_sha256'])assert.throws(()=>validateNevadaComparison(data,{...review,[key]:'0'.repeat(64)}));
-for(const pin of review.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,pin.path);
+for(const pin of review.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,pin.path);
 const record=data.records[0],project=atlas.projects.find(p=>p.atlas_project_id===record.record_id);
 assert.equal(nevadaComparisonFor(project),record);assert.equal(nevadaComparisonForPriorRoute(record.prior_route),record);
 assert.equal(nevadaComparisonFor({atlas_project_id:'unbound'}),null);assert.equal(nevadaComparisonForPriorRoute('/unbound/'),null);

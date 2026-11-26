@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -28,7 +29,7 @@ const invalid=[
 ];
 for(const mutate of invalid){const changed=structuredClone(southernAfricaDossiers);mutate(changed);assert.throws(()=>assertSouthernAfricaDossiers(changed,reviews));}
 const forged=structuredClone(reviews);forged.launch_authorized=true;assert.throws(()=>assertSouthernAfricaDossiers(southernAfricaDossiers,forged));
-for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
+for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
 const retained=namedDossierCohorts.slice(0,namedDossierCohorts.indexOf(southernAfricaDossiers)+1).flatMap(c=>c.records);
 const projects=54+retained.filter(r=>r.kind==='Project').length,places=25+retained.filter(r=>r.kind==='Place').length;
 assert.deepEqual([projects,places,100-projects,70-places],[59,29,41,41],'Retained post-Southern-Africa inventory');

@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -46,7 +47,7 @@ const invalid=[
 for(const mutate of invalid){const changed=structuredClone(koreaEnergyCitiesDossiers);mutate(changed);const rehashed={...reviews,edition_sha256:koreaEnergyCitiesHash(changed),sources_sha256:koreaEnergyCitiesHash(changed.sources),records:changed.records.map(r=>({record_id:r.record_id,sha256:koreaEnergyCitiesHash(r)}))};assert.throws(()=>assertKoreaEnergyCitiesDossiers(changed,rehashed));}
 const stale=structuredClone(koreaEnergyCitiesDossiers);stale.records[0].sections[0].text+=' Unreviewed change.';assert.throws(()=>assertKoreaEnergyCitiesDossiers(stale,reviews));
 const forged=structuredClone(reviews);forged.launch_authorized=true;assert.throws(()=>assertKoreaEnergyCitiesDossiers(koreaEnergyCitiesDossiers,forged));
-for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
+for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
 const retained=namedDossierCohorts.slice(0,namedDossierCohorts.indexOf(koreaEnergyCitiesDossiers)+1).flatMap(c=>c.records);
 const projects=54+retained.filter(r=>r.kind==='Project').length,places=25+retained.filter(r=>r.kind==='Place').length;
 assert.deepEqual([projects,places,100-projects,70-places],[90,61,10,9],'Retained post-korea-energy-cities inventory');

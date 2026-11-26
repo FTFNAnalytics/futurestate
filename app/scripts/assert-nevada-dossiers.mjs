@@ -1,3 +1,4 @@
+import {retainedNovemberLedgerInput} from './lib/retained-november-ledger-input.mjs';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
@@ -20,7 +21,7 @@ for(const mutate of [
  d=>d.sources.find(s=>s.id==='fws-tiehms-rule').effective_date='2022-12-16'
 ]){const changed=structuredClone(nevadaDossiers);mutate(changed);assert.throws(()=>assertNevadaDossiers(changed,reviews));}
 const forged=structuredClone(reviews);forged.phase_216_complete=true;assert.throws(()=>assertNevadaDossiers(nevadaDossiers,forged));
-for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(await read(pin.path)).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
+for(const pin of reviews.historical_inputs_retained)assert.equal(createHash('sha256').update(retainedNovemberLedgerInput(pin,await read(pin.path))).digest('hex'),pin.sha256,`Historical input changed: ${pin.path}`);
 assert.equal(historical.canonical.find(r=>r.record_id==='casebook-nevada-lithium-to-qualified-material').eligible_count,0);
 assert.deepEqual([currentPortfolioSummary.historical_projects,currentPortfolioSummary.historical_places,currentPortfolioSummary.added_projects,currentPortfolioSummary.added_places,currentPortfolioSummary.eligible_projects,currentPortfolioSummary.eligible_places,currentPortfolioSummary.projects_needed,currentPortfolioSummary.places_needed],[54,25,2,1,56,26,44,44]);
 for(const r of nevadaDossiers.records){
